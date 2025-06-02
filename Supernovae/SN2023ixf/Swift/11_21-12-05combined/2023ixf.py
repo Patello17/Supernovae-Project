@@ -38,7 +38,7 @@ print("Got Confidence.")
 # Format Plot
 print("Formatting Plot(s)...")
 # plot("bkg")
-plot_fit_delchi(color="royalblue")
+plot_fit(color="royalblue")
 # plot_bkg_fit(overplot=True)
 plt.xlim(0.3, 4)
 plt.ylim(0, 0.015)
