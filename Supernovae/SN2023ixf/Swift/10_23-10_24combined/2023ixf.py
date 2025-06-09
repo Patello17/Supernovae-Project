@@ -1,9 +1,9 @@
 import matplotlib.pyplot as plt
 
-data = "combined_src.pi"
-arf = "combined_src.arf" # same for source and background
-rmf = "combined_src.rmf" # same for source and background
-bkg_data = "combined_bkg.pi"
+data = "combinedPC.pi"
+arf = "combinedPC_exp.arf" # same for source and background
+rmf = "swxpc0to12s6_20210101v016.rmf" # same for source and background
+bkg_data = "combinedPCback.pi"
 
 # Load Data
 print("Loading Data...")
@@ -53,7 +53,7 @@ plt.yticks(fontsize=11)
 ax1.lines[0].set_linewidth(4)
 ax1.lines[2].set_color("sandybrown")
 ax1.lines[2].set_linewidth(3)
-plt.title("Combined Swift Data Plot (Nov. 21, 2023 - Dec. 05, 2023)")
+plt.title("Combined Swift Data Plot (Oct. 23, 2024 - Oct. 24, 2024)")
 # plt.setp(ax1.spines.values(), linewidth=3)
 
 plt.sca(ax2)

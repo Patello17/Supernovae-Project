@@ -58,7 +58,7 @@ plt.yticks(fontsize=11)
 ax1.lines[0].set_linewidth(4)
 ax1.lines[2].set_color("sandybrown")
 ax1.lines[2].set_linewidth(3)
-plt.title("Combined Swift Data Plot (Nov. 21, 2023 - Dec. 05, 2023)")
+plt.title("Combined Swift Data Plot (Dec. 23, 2024 - Dec. 24, 2024)")
 # plt.setp(ax1.spines.values(), linewidth=3)
 
 plt.sca(ax2)
