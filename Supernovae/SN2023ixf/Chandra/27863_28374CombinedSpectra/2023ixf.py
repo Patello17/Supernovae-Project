@@ -10,13 +10,14 @@ set_xsxset("APECROOT", "/home/prayag/Software/ciao-4.17/spectral/modelData/apec_
 set_source(xstbabs.abs1*xsvapec.v1) # Fit APEC Model
 # set_source(xstbabs.abs1*xsvmekal.v1)
 # g1.Sigma=0.2 # (No Gaussian Necessary)
+set_par("abs1.nH", min=0.0115)
 set_xsabund("wilm")
 # thaw(v1.Si)
 
 fit()
 fres = get_fit_results()
 
-# conf()
+conf()
 # set_ylog()
 
 
@@ -48,4 +49,5 @@ ax2.lines[0].set_linewidth(2)
 plt.setp(ax2.spines.values(), linewidth=2)
 
 # s1=sample_flux(v1+g1,0.3,8,num=1000) # Calculate uncertainty for flux
+s1=sample_flux(v1,0.3,8,num=1000) # Calculate uncertainty for flux
 plt.savefig("2023ixf_plot.pdf")

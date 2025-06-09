@@ -1,18 +1,26 @@
 import matplotlib.pyplot as plt
 
 data = "combinedPC.pi"
-arf = "combined_src.arf" # same for source and background
-rmf = "combined_src.rmf" # same for source and background
-bkg_data = "combined_bkg.pi"
+arf = "combinedPC_exp.arf"# same for source and background
+rmf = "swxpc0to12s6_20210101v016.rmf" # same for source and background
+bkg_data = "combinedPCback.pi"
 
 # Load Data
 print("Loading Data...")
 load_pha(data)
 load_bkg(bkg_data)
+# load_rmf(rmf)
+# load_bkg_rmf(rmf)
 print("Data Loaded.")
+
+print(get_arf())
+print(get_rmf())
+print(get_bkg_arf())
+print(get_bkg_rmf())
 
 print("Configuring...")
 notice(0.3,8)
+group_counts(1)
 set_xsxset("APECROOT", "/home/prayag/Software/ciao-4.17/spectral/modelData/apec_v3.0.9") # Use correct APECROOT
 set_source(xstbabs.abs1*xsvapec.v1) # Fit APEC Model
 set_bkg_model(powlaw1d.p1)
