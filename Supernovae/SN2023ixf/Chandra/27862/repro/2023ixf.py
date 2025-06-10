@@ -9,7 +9,7 @@ group_counts(15)
 set_xsxset("APECROOT", "/home/prayag/Software/ciao-4.17/spectral/modelData/apec_v3.0.9") # Use correct APECROOT
 set_source(xstbabs.abs1*(xsvapec.v1+xsgaussian.g1)) # Fit APEC Model
 # set_source(xstbabs.abs1*xsvmekal.v1)
-g1.Sigma=0.2 # (No Gaussian Necessary)
+g1.Sigma=0.2
 set_par("abs1.nH", min=0.0115)
 set_xsabund("wilm")
 # thaw(v1.Si)
@@ -34,7 +34,7 @@ plt.yticks(fontsize=11)
 #ax1.lines[0].set_linewidth(4)
 ax1.lines[2].set_color("orange")
 ax1.lines[2].set_linewidth(3)
-plt.title("2023ixf APEC Model Fit (Source: Chandra 27862)")
+plt.title("2023ixf APEC Model Fit with Gaussian (Source: Chandra 27862)")
 plt.setp(ax1.spines.values(), linewidth=3)
 
 plt.sca(ax2)
