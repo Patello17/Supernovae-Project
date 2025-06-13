@@ -1,7 +1,13 @@
-data = "2023ixf.pi"
+data = "2023ixf_2.pi"
 
 # Load and Group Data
 load_data(data)
+
+print(get_arf())
+print(get_rmf())
+print(get_bkg_arf())
+print(get_bkg_rmf())
+
 notice(0.3,8)
 subtract()
 group_counts(15)
@@ -11,8 +17,10 @@ set_source(xstbabs.abs1*(xsvapec.v1+xsgaussian.g1)) # Fit APEC Model
 # set_source(xstbabs.abs1*xsvmekal.v1)
 g1.Sigma=0.2
 set_par("abs1.nH", min=0.0115)
+v1.kT = 34
+freeze(v1.kT)
 set_xsabund("wilm")
-# thaw(v1.Si)
+# thaw(v1.Fe)
 
 fit()
 fres = get_fit_results()
@@ -49,5 +57,5 @@ ax2.lines[0].set_linewidth(2)
 plt.setp(ax2.spines.values(), linewidth=2)
 
 # s1=sample_flux(v1+g1,0.3,8,num=1000) # Calculate uncertainty for flux
-s1=sample_flux(v1,0.3,8,num=1000) # Calculate uncertainty for flux
+s1=sample_flux(v1+g1,0.3,8,num=1000) # Calculate uncertainty for flux
 plt.savefig("2023ixf_plot.pdf")

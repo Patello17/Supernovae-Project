@@ -8,9 +8,10 @@ group_counts(15)
 
 set_xsxset("APECROOT", "/home/prayag/Software/ciao-4.17/spectral/modelData/apec_v3.0.9") # Use correct APECROOT
 set_source(xstbabs.abs1*xsvapec.v1) # Fit APEC Model
-# set_source(xstbabs.abs1*xsvmekal.v1)
 # g1.Sigma=0.2 # (No Gaussian Necessary)
 set_par("abs1.nH", min=0.0115)
+v1.kT = 21
+freeze(v1.kT)
 set_xsabund("wilm")
 # thaw(v1.Si)
 
