@@ -15,7 +15,6 @@ print(get_arf())
 print(get_rmf())
 print(get_bkg_arf())
 print(get_bkg_rmf())
-print(get_dep())
 
 print("Configuring...")
 notice(0.3,8)

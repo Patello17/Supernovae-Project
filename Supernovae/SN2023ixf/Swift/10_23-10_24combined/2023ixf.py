@@ -11,12 +11,6 @@ load_pha(data)
 load_bkg(bkg_data)
 print("Data Loaded.")
 
-print(get_arf())
-print(get_rmf())
-print(get_bkg_arf())
-print(get_bkg_rmf())
-print(get_dep())
-
 print("Configuring...")
 notice(0.3,8)
 set_xsxset("APECROOT", "/home/prayag/Software/ciao-4.17/spectral/modelData/apec_v3.0.9") # Use correct APECROOT
