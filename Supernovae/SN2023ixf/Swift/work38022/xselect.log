@@ -1,7 +1,8 @@
-!xselect 18:38:46 11-May-2025
+!xselect 09:51:44 23-Jun-2025
 xsel443954:XRISM > read event
 > Enter the Event file dir >[.]
-> Enter Event file list >[sw00016038022xpcw3po_cl.evt]
+> Enter Event file list >[sw00016038013xpcw3po_cl.evt]  sw00016038022xpcw3po_cl
+.evt
 Got new mission: SWIFT
 > Reset the mission ? >[yes]
  Notes: XSELECT set up for      SWIFT
@@ -19,15 +20,18 @@ Got min and max for PI:     0   1023
 Got the minimum time resolution of the read data:   2.5073
 MJDREF =  5.1910000742870E+04 with TIMESYS = TT
  Number of files read in:            1
-tmp outfile=/home/prayag/Supernovae/SN2023ixf/Swift/work38022/xsel443954_read
-_cat.xsl keywords=@/home/prayag/Supernovae/SN2023ixf/Swift/work38022/xsel4439
-54_obslist.def maxlen=11 minlen=0 iform=I8 eform=E8.2 quiet=yes omit=no
+8022/xsel443954_obscat.tmp outfile=/home/prayag/git/Supernovae-Project/Supern
+ovae/SN2023ixf/Swift/work38022/xsel443954_read_cat.xsl keywords=@/home/prayag
+/git/Supernovae-Project/Supernovae/SN2023ixf/Swift/work38022/xsel443954_obslist
+.def maxlen=11 minlen=0 iform=I8 eform=E8.2 quiet=yes omit=no
 ******************** Observation Catalogue ********************
  
-Data Directory is: /home/prayag/Supernovae/SN2023ixf/Swift/work38022/
-HK Directory is: /home/prayag/Supernovae/SN2023ixf/Swift/work38022/
-TDOUT @xsel443954_display.def - prhead = no pagewidth = 128 wrap = yes show
-unit = no tdisp = yes
+Data Directory is: /home/prayag/git/Supernovae-Project/Supernovae/SN2023ixf/Swi
+ft/work38022/
+HK Directory is: /home/prayag/git/Supernovae-Project/Supernovae/SN2023ixf/Swift
+/work38022/
+l443954_read_cat.xsl STDOUT @xsel443954_display.def - prhead = no pagewidt
+h = 128 wrap = yes showunit = no tdisp = yes
  
  
         OBJECT      OBS_ID      DATE-OBS                 DATAMODE
@@ -43,8 +47,8 @@ scii_out.xsl timeref = 40000.00 wtmapb = yes wtmapfix = yes swmapx = no swma
 py = no wmapver = 2 stokes = NONE gtinam = GTI exitnow = no clobber=yes
 extractor v6.17    25 Mar 2025
  Getting FITS WCS Keywords
- Doing file: /home/prayag/Supernovae/SN2023ixf/Swift/work38022/sw00016038022xpc
-w3po_cl.evt
+ Doing file: /home/prayag/git/Supernovae-Project/Supernovae/SN2023ixf/Swift/wor
+k38022/sw00016038022xpcw3po_cl.evt
           Total      Good    Bad: Time     Phase     Grade       Cut
            2655      2655            0         0         0         0
 ===============================================================================
@@ -53,28 +57,4 @@ w3po_cl.evt
    in  8795.6     seconds
  Image            has     2655 counts for  0.3019     counts/sec
 Keyword TLM2FITS has two values: 'V6.4' and 'V6.4    '
-xsel443954:SWIFT-XRT-PHOTON > extract spectrum
-ile = xsel443954_region.xsl qdpfile = NONE fitsbinlc = NONE unbinlc = NONE ph
-afile = xsel443954_hist.xsl imgfile = NONE timefile = NONE adjustgti=yes gstr
-ing = NONE usetpixrsel = no timeorder = no xcolf = X ycolf = Y xcolh = X ycolh 
-= Y xfkey = TLMAX yfkey = TLMAX xhkey = TLMAX yhkey = TLMAX phamax = TLMAX spec
-bin = 1 binh = 1 binf = 1 binlc = 5.0000000E+00 tcol = TIME ecol = PI ccol = 
-NONE gcol = GRADE polwcol = NONE gti = GTI events = EVENTS gtitxt = xsel443954
-_ascii_out.xsl timeref = 40000.00 wtmapb = yes wtmapfix = yes swmapx = no sw
-mapy = no wmapver = 2 stokes = NONE gtinam = GTI exitnow = no clobber=yes
-extractor v6.17    25 Mar 2025
- Getting FITS WCS Keywords
- Doing file: /home/prayag/Supernovae/SN2023ixf/Swift/work38022/sw00016038022xpc
-w3po_cl.evt[regfilter("xsel443954_region.xsl",X,Y)]
-          Total      Good    Bad: Time     Phase     Grade       Cut
-             19        19            0         0         0         0
-===============================================================================
-    Grand Total      Good    Bad: Time     Phase     Grade       Cut
-             19        19            0         0         0         0
-   in  8795.6     seconds
- Spectrum         has       19 counts for  2.1602E-03 counts/sec
-Keyword TLM2FITS has two values: 'V6.4' and 'V6.4    '
- ... wrote the PHA data Extension
-Wrote spectrum to PC.pi
-xsel443954:SWIFT-XRT-PHOTON > quit
 > Save this session? >[no]

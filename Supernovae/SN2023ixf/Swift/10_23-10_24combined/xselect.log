@@ -1,7 +1,7 @@
-!xselect 14:02:59 09-Jun-2025
+!xselect 11:04:18 23-Jun-2025
 xsel443954:XRISM > read event
 > Enter the Event file dir >[.]
-> Enter Event file list >[sw00016038021xpcw3po_cl.evt] sw00016038018xpcw3po_cl.
+> Enter Event file list >[sw00016038015xpcw3po_cl.evt] sw00016038018xpcw3po_cl.
 evt
 Got new mission: SWIFT
 > Reset the mission ? >[yes]
@@ -37,8 +37,6 @@ o pagewidth = 128 wrap = yes showunit = no tdisp = yes
  
         OBJECT      OBS_ID      DATE-OBS                 DATAMODE
       1 SN2023ixf   00016038018 2024-10-23T04:31:22.1534 PHOTON
-xsel443954:SWIFT-XRT-PHOTON > sw00016038019xpcw3po_cl.evt
- Command not found; type ? for a command listing
 xsel443954:SWIFT-XRT-PHOTON > read event
 > Enter Event file list >[sw00016038018xpcw3po_cl.evt] sw00016038019xpcw3po_cl.
 evt
@@ -76,7 +74,7 @@ o pagewidth = 128 wrap = yes showunit = no tdisp = yes
         OBJECT      OBS_ID      DATE-OBS                 DATAMODE
       1 SN2023ixf   00016038018 2024-10-23T04:31:22.1534 PHOTON
       2 SN2023ixf   00016038019 2024-10-24T08:51:35.1492 PHOTON
-xsel443954:SWIFT-XRT-PHOTON > extract event copyall=yes
+xsel443954:SWIFT-XRT-PHOTON > extract events copyall=yes
 out_event.xsl copyall=yes regionfile = NONE qdpfile = NONE fitsbinlc = NONE un
 binlc = NONE phafile = NONE imgfile = NONE timefile = NONE adjustgti=yes gstrin
 g = NONE usetpixrsel = no timeorder = no xcolf = X ycolf = Y xcolh = X ycolh = 
@@ -129,57 +127,4 @@ extractor v6.17    25 Mar 2025
    in  8865.8     seconds
  Image            has     4467 counts for  0.5038     counts/sec
 Keyword TLM2FITS has two values: 'V6.4' and 'V6.4    '
-xsel443954:SWIFT-XRT-PHOTON > extract spectrum
-onfile = xsel443954_region.xsl qdpfile = NONE fitsbinlc = NONE unbinlc = NONE
- phafile = xsel443954_hist.xsl imgfile = NONE timefile = NONE adjustgti=yes g
-string = NONE usetpixrsel = no timeorder = no xcolf = X ycolf = Y xcolh = X yco
-lh = Y xfkey = TLMAX yfkey = TLMAX xhkey = TLMAX yhkey = TLMAX phamax = TLMAX s
-pecbin = 1 binh = 1 binf = 1 binlc = 5.0000000E+00 tcol = TIME ecol = PI ccol
- = NONE gcol = GRADE polwcol = NONE gti = GTI events = EVENTS gtitxt = xsel443
-954_ascii_out.xsl timeref = 40000.00 wtmapb = yes wtmapfix = yes swmapx = no
- swmapy = no wmapver = 2 stokes = NONE gtinam = GTI exitnow = no clobber=yes
-extractor v6.17    25 Mar 2025
- Getting FITS WCS Keywords
- Doing file: xsel443954_out_event.xsl[regfilter("xsel443954_region.xsl",X,Y)]
-          Total      Good    Bad: Time     Phase     Grade       Cut
-             33        33            0         0         0         0
-===============================================================================
-    Grand Total      Good    Bad: Time     Phase     Grade       Cut
-             33        33            0         0         0         0
-   in  8865.8     seconds
- Spectrum         has       33 counts for  3.7222E-03 counts/sec
-Keyword TLM2FITS has two values: 'V6.4' and 'V6.4    '
- ... wrote the PHA data Extension
-Wrote spectrum to combinedPC.pi
-xsel443954:SWIFT-XRT-PHOTON > clear region
-*********************************************************************
-N.B. If you did the FILTER REGION before doing EXTRACT EVENTS
-you will also need to do CLEAR EVENTS now to remove its effects
-*********************************************************************
-xsel443954:SWIFT-XRT-PHOTON > filter region combinedPCback.pi
-REGION selection file combinedPCback.pi not found
-xsel443954:SWIFT-XRT-PHOTON > filter region combined_ds9bkg.reg
-xsel443954:SWIFT-XRT-PHOTON > extract spectrum
-onfile = xsel443954_region.xsl qdpfile = NONE fitsbinlc = NONE unbinlc = NONE
- phafile = xsel443954_hist.xsl imgfile = NONE timefile = NONE adjustgti=yes g
-string = NONE usetpixrsel = no timeorder = no xcolf = X ycolf = Y xcolh = X yco
-lh = Y xfkey = TLMAX yfkey = TLMAX xhkey = TLMAX yhkey = TLMAX phamax = TLMAX s
-pecbin = 1 binh = 1 binf = 1 binlc = 5.0000000E+00 tcol = TIME ecol = PI ccol
- = NONE gcol = GRADE polwcol = NONE gti = GTI events = EVENTS gtitxt = xsel443
-954_ascii_out.xsl timeref = 40000.00 wtmapb = yes wtmapfix = yes swmapx = no
- swmapy = no wmapver = 2 stokes = NONE gtinam = GTI exitnow = no clobber=yes
-extractor v6.17    25 Mar 2025
- Getting FITS WCS Keywords
- Doing file: xsel443954_out_event.xsl[regfilter("xsel443954_region.xsl",X,Y)]
-          Total      Good    Bad: Time     Phase     Grade       Cut
-              3         3            0         0         0         0
-===============================================================================
-    Grand Total      Good    Bad: Time     Phase     Grade       Cut
-              3         3            0         0         0         0
-   in  8865.8     seconds
- Spectrum         has        3 counts for  3.3838E-04 counts/sec
-Keyword TLM2FITS has two values: 'V6.4' and 'V6.4    '
- ... wrote the PHA data Extension
-Wrote spectrum to combinedPCback.pi
-xsel443954:SWIFT-XRT-PHOTON > exit
 > Save this session? >[no]

@@ -1,0 +1,285 @@
+import numpy
+from sherpa.astro.ui import *
+
+######### Load Data Sets
+
+load_pha(1, "combinedPC.pi")
+group(1)
+
+######### Data Spectral Responses
+
+load_arf(1, "combinedPC_exp.arf", resp_id=1)
+load_rmf(1, "swxpc0to12s6_20210101v016.rmf", resp_id=1)
+
+######### Load Background Data Sets
+
+load_bkg(1, "combinedPCback.pi", bkg_id=1)
+group(1, bkg_id=1)
+
+######### Background Spectral Responses
+
+load_arf(1, "combinedPC_exp.arf", resp_id=1, bkg_id=1)
+load_rmf(1, "swxpc0to12s6_20210101v016.rmf", resp_id=1, bkg_id=1)
+
+######### Set Energy or Wave Units
+
+set_analysis(1, quantity="energy", type="rate", factor=0)
+
+######### Filter Data
+
+notice_id(1, "0.300000011921:8.000000000000")
+notice_id(1, bkg_id=1)
+notice_id(1, "0.300000011921:8.000000000000", bkg_id=1)
+
+
+######### Set Statistic
+
+set_stat("cash")
+
+
+######### Set Fitting Method
+
+set_method("levmar")
+
+set_method_opt("epsfcn", 1.1920928955078125e-07)
+set_method_opt("factor", 100.0)
+set_method_opt("ftol", 1.1920928955078125e-07)
+set_method_opt("gtol", 1.1920928955078125e-07)
+set_method_opt("maxfev", None)
+set_method_opt("numcores", 1)
+set_method_opt("verbose", 0)
+set_method_opt("xtol", 1.1920928955078125e-07)
+
+
+######### Set Model Components and Parameters
+
+create_model_component("xsvapec", "v1")
+v1.integrate = True
+
+v1.kT.default_val = 14.611582395152558
+v1.kT.default_min = 0.0808
+v1.kT.default_max = 68.447
+v1.kT.val     = 2.6617447098779006
+v1.kT.min     = 0.0808
+v1.kT.max     = 68.447
+v1.kT.units   = "keV"
+v1.kT.frozen  = False
+
+v1.He.default_val = 1.0
+v1.He.default_min = 0.0
+v1.He.default_max = 1000.0
+v1.He.val     = 1.0
+v1.He.min     = 0.0
+v1.He.max     = 1000.0
+v1.He.units   = ""
+v1.He.frozen  = True
+
+v1.C.default_val = 1.0
+v1.C.default_min = 0.0
+v1.C.default_max = 1000.0
+v1.C.val     = 1.0
+v1.C.min     = 0.0
+v1.C.max     = 1000.0
+v1.C.units   = ""
+v1.C.frozen  = True
+
+v1.N.default_val = 1.0
+v1.N.default_min = 0.0
+v1.N.default_max = 1000.0
+v1.N.val     = 1.0
+v1.N.min     = 0.0
+v1.N.max     = 1000.0
+v1.N.units   = ""
+v1.N.frozen  = True
+
+v1.O.default_val = 1.0
+v1.O.default_min = 0.0
+v1.O.default_max = 1000.0
+v1.O.val     = 1.0
+v1.O.min     = 0.0
+v1.O.max     = 1000.0
+v1.O.units   = ""
+v1.O.frozen  = True
+
+v1.Ne.default_val = 1.0
+v1.Ne.default_min = 0.0
+v1.Ne.default_max = 1000.0
+v1.Ne.val     = 1.0
+v1.Ne.min     = 0.0
+v1.Ne.max     = 1000.0
+v1.Ne.units   = ""
+v1.Ne.frozen  = True
+
+v1.Mg.default_val = 1.0
+v1.Mg.default_min = 0.0
+v1.Mg.default_max = 1000.0
+v1.Mg.val     = 1.0
+v1.Mg.min     = 0.0
+v1.Mg.max     = 1000.0
+v1.Mg.units   = ""
+v1.Mg.frozen  = True
+
+v1.Al.default_val = 1.0
+v1.Al.default_min = 0.0
+v1.Al.default_max = 1000.0
+v1.Al.val     = 1.0
+v1.Al.min     = 0.0
+v1.Al.max     = 1000.0
+v1.Al.units   = ""
+v1.Al.frozen  = True
+
+v1.Si.default_val = 1.0
+v1.Si.default_min = 0.0
+v1.Si.default_max = 1000.0
+v1.Si.val     = 1.0
+v1.Si.min     = 0.0
+v1.Si.max     = 1000.0
+v1.Si.units   = ""
+v1.Si.frozen  = True
+
+v1.S.default_val = 1.0
+v1.S.default_min = 0.0
+v1.S.default_max = 1000.0
+v1.S.val     = 1.0
+v1.S.min     = 0.0
+v1.S.max     = 1000.0
+v1.S.units   = ""
+v1.S.frozen  = True
+
+v1.Ar.default_val = 1.0
+v1.Ar.default_min = 0.0
+v1.Ar.default_max = 1000.0
+v1.Ar.val     = 1.0
+v1.Ar.min     = 0.0
+v1.Ar.max     = 1000.0
+v1.Ar.units   = ""
+v1.Ar.frozen  = True
+
+v1.Ca.default_val = 1.0
+v1.Ca.default_min = 0.0
+v1.Ca.default_max = 1000.0
+v1.Ca.val     = 1.0
+v1.Ca.min     = 0.0
+v1.Ca.max     = 1000.0
+v1.Ca.units   = ""
+v1.Ca.frozen  = True
+
+v1.Fe.default_val = 1.0
+v1.Fe.default_min = 0.0
+v1.Fe.default_max = 1000.0
+v1.Fe.val     = 1.0
+v1.Fe.min     = 0.0
+v1.Fe.max     = 1000.0
+v1.Fe.units   = ""
+v1.Fe.frozen  = True
+
+v1.Ni.default_val = 1.0
+v1.Ni.default_min = 0.0
+v1.Ni.default_max = 1000.0
+v1.Ni.val     = 1.0
+v1.Ni.min     = 0.0
+v1.Ni.max     = 1000.0
+v1.Ni.units   = ""
+v1.Ni.frozen  = True
+
+v1.Redshift.default_val = 0.0
+v1.Redshift.default_min = -0.999
+v1.Redshift.default_max = 10.0
+v1.Redshift.val     = 0.0
+v1.Redshift.min     = -0.999
+v1.Redshift.max     = 10.0
+v1.Redshift.units   = ""
+v1.Redshift.frozen  = True
+
+v1.norm.default_val = 0.0008646538418759309
+v1.norm.default_min = 0.0
+v1.norm.default_max = 1e+24
+v1.norm.val     = 0.00012901574032440934
+v1.norm.min     = 0.0
+v1.norm.max     = 1e+24
+v1.norm.units   = ""
+v1.norm.frozen  = False
+
+create_model_component("powlaw1d", "p1")
+p1.integrate = True
+
+p1.gamma.default_val = 1.0
+p1.gamma.default_min = -10.0
+p1.gamma.default_max = 10.0
+p1.gamma.val     = 3.7870098683282953
+p1.gamma.min     = -10.0
+p1.gamma.max     = 10.0
+p1.gamma.units   = ""
+p1.gamma.frozen  = False
+
+p1.ref.default_val = 1.0
+p1.ref.default_min = -3.4028234663852886e+38
+p1.ref.default_max = 3.4028234663852886e+38
+p1.ref.val     = 1.0
+p1.ref.min     = -3.4028234663852886e+38
+p1.ref.max     = 3.4028234663852886e+38
+p1.ref.units   = ""
+p1.ref.frozen  = True
+
+p1.ampl.default_val = 1.0
+p1.ampl.default_min = 0.0
+p1.ampl.default_max = 3.4028234663852886e+38
+p1.ampl.val     = 3.502751082743311e-06
+p1.ampl.min     = 0.0
+p1.ampl.max     = 3.4028234663852886e+38
+p1.ampl.units   = ""
+p1.ampl.frozen  = False
+
+create_model_component("xstbabs", "abs1")
+abs1.integrate = True
+
+abs1.nH.default_val = 2.670902775699225
+abs1.nH.default_min = 0.0
+abs1.nH.default_max = 1000000.0
+abs1.nH.val     = 0.3262801659078187
+abs1.nH.min     = 0.0767
+abs1.nH.max     = 1000000.0
+abs1.nH.units   = "10^22 atoms / cm^2"
+abs1.nH.frozen  = False
+
+
+
+######### Set Source, Pileup and Background Models
+
+set_source(1, xstbabs.abs1 * xsvapec.v1)
+
+set_bkg_source(1, powlaw1d.p1, bkg_id=1)
+
+
+######### XSPEC Module Settings
+
+set_xschatter(10)
+set_xsabund("wilm")
+set_xscosmo(70, 0, 0.73)
+set_xsxsect("vern")
+set_xsxset("APECROOT", "/home/prayag/Software/ciao-4.17/spectral/modelData/apec_v3.0.9")
+
+######### Calculated Fluxes
+
+Absorbed Flux: 7.751715690233201e-14 +5.926865070465889e-14, 4.679947380091242e-14
+Unabsorbed Flux: 1.9368609512076103e-13 +6.625640604884568e-14, 6.045179501648499e-14
+
+######### Calculated Confidences
+
+datasets    = (1,)
+methodname  = confidence
+iterfitname = none
+fitname     = levmar
+statname    = cash
+sigma       = 1
+percent     = 68.26894921370858
+parnames    = ('abs1.nH', 'v1.kT', 'v1.norm', 'p1.gamma', 'p1.ampl')
+parvals     = (0.3262801659078187, 2.6617447098779006, 0.00012901574032440934, 3.7870098683282953, 3.502751082743311e-06)
+parmins     = (None, -1.8654749174887075, -4.123235126151785e-05, -0.7904460568102465, -3.3640794500776732e-06)
+parmaxes    = (2.3446226097914065, 11.949837685274657, 0.0007356381015515216, 3.176701491414471, 2.999275998401214e-06)
+nfits       = 101
+
+######## Counts and Count Rate
+
+Counts: 33.0
+Count Rate: 0.0037370900525457514
