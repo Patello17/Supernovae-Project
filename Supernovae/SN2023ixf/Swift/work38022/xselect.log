@@ -1,8 +1,7 @@
-!xselect 09:51:44 23-Jun-2025
+!xselect 15:54:55 23-Jun-2025
 xsel443954:XRISM > read event
 > Enter the Event file dir >[.]
-> Enter Event file list >[sw00016038013xpcw3po_cl.evt]  sw00016038022xpcw3po_cl
-.evt
+> Enter Event file list >[sw00016038022xpcw3po_cl.evt]
 Got new mission: SWIFT
 > Reset the mission ? >[yes]
  Notes: XSELECT set up for      SWIFT
@@ -57,4 +56,102 @@ k38022/sw00016038022xpcw3po_cl.evt
    in  8795.6     seconds
  Image            has     2655 counts for  0.3019     counts/sec
 Keyword TLM2FITS has two values: 'V6.4' and 'V6.4    '
+ile = NONE qdpfile = NONE fitsbinlc = NONE unbinlc = NONE phafile = NONE imgfil
+e = xsel443954_image.xsl fullimage = yes timefile = NONE adjustgti=yes gstrin
+g = NONE usetpixrsel = no timeorder = no xcolf = X ycolf = Y xcolh = X ycolh = 
+Y xfkey = TLMAX yfkey = TLMAX xhkey = TLMAX yhkey = TLMAX phamax = TLMAX specbi
+n = 1 binh = 1 binf = 1 binlc = 5.0000000E+00 tcol = TIME ecol = PI ccol = NO
+NE gcol = GRADE polwcol = NONE gti = GTI events = EVENTS gtitxt = xsel443954_a
+scii_out.xsl timeref = 40000.00 wtmapb = yes wtmapfix = yes swmapx = no swma
+py = no wmapver = 2 stokes = NONE gtinam = GTI exitnow = no clobber=yes
+extractor v6.17    25 Mar 2025
+ Getting FITS WCS Keywords
+ Doing file: /home/prayag/git/Supernovae-Project/Supernovae/SN2023ixf/Swift/wor
+k38022/sw00016038022xpcw3po_cl.evt
+          Total      Good    Bad: Time     Phase     Grade       Cut
+           2655      2655            0         0         0         0
+===============================================================================
+    Grand Total      Good    Bad: Time     Phase     Grade       Cut
+           2655      2655            0         0         0         0
+   in  8795.6     seconds
+ Image            has     2655 counts for  0.3019     counts/sec
+Keyword TLM2FITS has two values: 'V6.4' and 'V6.4    '
+xsel443954:SWIFT-XRT-PHOTON > extract spectrum
+ile = xsel443954_region.xsl qdpfile = NONE fitsbinlc = NONE unbinlc = NONE ph
+afile = xsel443954_hist.xsl imgfile = NONE timefile = NONE adjustgti=yes gstr
+ing = NONE usetpixrsel = no timeorder = no xcolf = X ycolf = Y xcolh = X ycolh 
+= Y xfkey = TLMAX yfkey = TLMAX xhkey = TLMAX yhkey = TLMAX phamax = TLMAX spec
+bin = 1 binh = 1 binf = 1 binlc = 5.0000000E+00 tcol = TIME ecol = PI ccol = 
+NONE gcol = GRADE polwcol = NONE gti = GTI events = EVENTS gtitxt = xsel443954
+_ascii_out.xsl timeref = 40000.00 wtmapb = yes wtmapfix = yes swmapx = no sw
+mapy = no wmapver = 2 stokes = NONE gtinam = GTI exitnow = no clobber=yes
+extractor v6.17    25 Mar 2025
+ Getting FITS WCS Keywords
+ Doing file: /home/prayag/git/Supernovae-Project/Supernovae/SN2023ixf/Swift/wor
+k38022/sw00016038022xpcw3po_cl.evt[regfilter("xsel443954_region.xsl",X,Y)]
+          Total      Good    Bad: Time     Phase     Grade       Cut
+             19        19            0         0         0         0
+===============================================================================
+    Grand Total      Good    Bad: Time     Phase     Grade       Cut
+             19        19            0         0         0         0
+   in  8795.6     seconds
+ Spectrum         has       19 counts for  2.1602E-03 counts/sec
+Keyword TLM2FITS has two values: 'V6.4' and 'V6.4    '
+ ... wrote the PHA data Extension
+> File already exists, overwrite it? >[yes]
+Wrote spectrum to PC2.pi
+xsel443954:SWIFT-XRT-PHOTON > clear region
+xsel443954:SWIFT-XRT-PHOTON > clear filter
+clear_what argument not found. Options are :
+ALL                 -->  clears all files, and logicals
+CLEAN               -->  deletes the cleaned event list
+COLUMN              -->  clears any filters on columns in the event file
+DAT*A               -->  clears the filename list, and filters
+DATAMODE            -->  clears the datamode
+DETECTOR            -->  clears the detector filters
+EVENTS              -->  deletes the output event list from extract
+IN_EVENTS           -->  clears the input event list to extract
+INTENSITY           -->  clears the intensity filters
+FAINT               -->  clears faint logical and files
+FAST                -->  clears fast logical and files
+GRADE               -->  clears grade filtering
+HKSEL               -->  clears HK selection gti
+MKFSEL              -->  clears filter file selection output
+OBSCATS             -->  deletes selected obscats
+PHA_CUTOFF          -->  clears PHA upper and lower bounds
+PHASE               -->  clears the phase selection
+REGION              -->  clears region filter
+SELECTION           -->  clears selection and product files
+SMOOTH              -->  clears the smoothed image
+TIME                -->  clears the various timing filters
+XYCENTER            -->  resets XYCENTER to the center of the instrument
+XYSIZE              -->  resets the XSIZING to the default behaviour
+WORKSPACE           -->  clears the workspace files
+xsel443954:SWIFT-XRT-PHOTON > filter region ds9bkg.reg
+xsel443954:SWIFT-XRT-PHOTON > extract spectrum
+ile = xsel443954_region.xsl qdpfile = NONE fitsbinlc = NONE unbinlc = NONE ph
+afile = xsel443954_hist.xsl imgfile = NONE timefile = NONE adjustgti=yes gstr
+ing = NONE usetpixrsel = no timeorder = no xcolf = X ycolf = Y xcolh = X ycolh 
+= Y xfkey = TLMAX yfkey = TLMAX xhkey = TLMAX yhkey = TLMAX phamax = TLMAX spec
+bin = 1 binh = 1 binf = 1 binlc = 5.0000000E+00 tcol = TIME ecol = PI ccol = 
+NONE gcol = GRADE polwcol = NONE gti = GTI events = EVENTS gtitxt = xsel443954
+_ascii_out.xsl timeref = 40000.00 wtmapb = yes wtmapfix = yes swmapx = no sw
+mapy = no wmapver = 2 stokes = NONE gtinam = GTI exitnow = no clobber=yes
+extractor v6.17    25 Mar 2025
+ Getting FITS WCS Keywords
+ Doing file: /home/prayag/git/Supernovae-Project/Supernovae/SN2023ixf/Swift/wor
+k38022/sw00016038022xpcw3po_cl.evt[regfilter("xsel443954_region.xsl",X,Y)]
+          Total      Good    Bad: Time     Phase     Grade       Cut
+              7         7            0         0         0         0
+===============================================================================
+    Grand Total      Good    Bad: Time     Phase     Grade       Cut
+              7         7            0         0         0         0
+   in  8795.6     seconds
+ Spectrum         has        7 counts for  7.9585E-04 counts/sec
+Keyword TLM2FITS has two values: 'V6.4' and 'V6.4    '
+ ... wrote the PHA data Extension
+> File already exists, overwrite it? >[yes]
+Wrote spectrum to PC2back.pi
+xsel443954:SWIFT-XRT-PHOTON >
+xsel443954:SWIFT-XRT-PHOTON > quit
 > Save this session? >[no]

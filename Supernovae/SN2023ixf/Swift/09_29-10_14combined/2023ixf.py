@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 
 # Dataset(s) 89625002, 16038016, 16038017
 data = "combinedPC2.pi"
-arf = "combinedPC_exp.arf" # same for source and background
+arf = "combinedPC2_exp.arf" # same for source and background
 rmf = "swxpc0to12s6_20210101v016.rmf" # same for source and background
 bkg_data = "combinedPC2back.pi"
 

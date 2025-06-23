@@ -1,18 +1,12 @@
-!xselect 18:23:39 11-May-2025
+!xselect 15:29:08 23-Jun-2025
 xsel443954:XRISM > read event
 > Enter the Event file dir >[.]
-> Enter Event file list >[sw00016038020xpcw3po_cl.evt]
-Cannot find file /home/prayag/Supernovae/SN2023ixf/Swift/work38021//sw000160380
-20xpcw3po_cl.evt
-No files read
-xsel443954:XRISM > read event
-> Enter Event file list >[sw00016038020xpcw3po_cl.evt] sw00016038021xpcw3po_cl.
-evt
+> Enter Event file list >[sw00016038021xwtw2sl_cl.evt]
 Got new mission: SWIFT
 > Reset the mission ? >[yes]
  Notes: XSELECT set up for      SWIFT
  Time keyword is TIME       in units of s
- Default timing binsize =   5.0000
+ Default timing binsize =   1.0000
  
 Setting...
  Image  keywords   = X          Y           with binning =    1
@@ -22,70 +16,24 @@ Setting...
 Getting Min and Max for Energy Column...
 Got min and max for PI:     0   1023
  
-Got the minimum time resolution of the read data:   2.5073
+Got the minimum time resolution of the read data:  0.17791E-02
 MJDREF =  5.1910000742870E+04 with TIMESYS = TT
  Number of files read in:            1
-tmp outfile=/home/prayag/Supernovae/SN2023ixf/Swift/work38021/xsel443954_read
-_cat.xsl keywords=@/home/prayag/Supernovae/SN2023ixf/Swift/work38021/xsel4439
-54_obslist.def maxlen=11 minlen=0 iform=I8 eform=E8.2 quiet=yes omit=no
+8021/xsel443954_obscat.tmp outfile=/home/prayag/git/Supernovae-Project/Supern
+ovae/SN2023ixf/Swift/work38021/xsel443954_read_cat.xsl keywords=@/home/prayag
+/git/Supernovae-Project/Supernovae/SN2023ixf/Swift/work38021/xsel443954_obslist
+.def maxlen=11 minlen=0 iform=I8 eform=E8.2 quiet=yes omit=no
 ******************** Observation Catalogue ********************
  
-Data Directory is: /home/prayag/Supernovae/SN2023ixf/Swift/work38021/
-HK Directory is: /home/prayag/Supernovae/SN2023ixf/Swift/work38021/
-TDOUT @xsel443954_display.def - prhead = no pagewidth = 128 wrap = yes show
-unit = no tdisp = yes
+Data Directory is: /home/prayag/git/Supernovae-Project/Supernovae/SN2023ixf/Swi
+ft/work38021/
+HK Directory is: /home/prayag/git/Supernovae-Project/Supernovae/SN2023ixf/Swift
+/work38021/
+l443954_read_cat.xsl STDOUT @xsel443954_display.def - prhead = no pagewidt
+h = 128 wrap = yes showunit = no tdisp = yes
  
  
         OBJECT      OBS_ID      DATE-OBS                 DATAMODE
-      1 SN2023ixf   00016038021 2024-12-24T00:46:00.7055 PHOTON
-xsel443954:SWIFT-XRT-PHOTON > filter region ds9bkg.reg
-xsel443954:SWIFT-XRT-PHOTON > extract spectrum
-ile = xsel443954_region.xsl qdpfile = NONE fitsbinlc = NONE unbinlc = NONE ph
-afile = xsel443954_hist.xsl imgfile = NONE timefile = NONE adjustgti=yes gstr
-ing = NONE usetpixrsel = no timeorder = no xcolf = X ycolf = Y xcolh = X ycolh 
-= Y xfkey = TLMAX yfkey = TLMAX xhkey = TLMAX yhkey = TLMAX phamax = TLMAX spec
-bin = 1 binh = 1 binf = 1 binlc = 5.0000000E+00 tcol = TIME ecol = PI ccol = 
-NONE gcol = GRADE polwcol = NONE gti = GTI events = EVENTS gtitxt = xsel443954
-_ascii_out.xsl timeref = 40000.00 wtmapb = yes wtmapfix = yes swmapx = no sw
-mapy = no wmapver = 2 stokes = NONE gtinam = GTI exitnow = no clobber=yes
-extractor v6.17    25 Mar 2025
- Getting FITS WCS Keywords
- Doing file: /home/prayag/Supernovae/SN2023ixf/Swift/work38021/sw00016038021xpc
-w3po_cl.evt[regfilter("xsel443954_region.xsl",X,Y)]
-          Total      Good    Bad: Time     Phase     Grade       Cut
-              4         4            0         0         0         0
-===============================================================================
-    Grand Total      Good    Bad: Time     Phase     Grade       Cut
-              4         4            0         0         0         0
-   in  4264.9     seconds
- Spectrum         has        4 counts for  9.3788E-04 counts/sec
-Keyword TLM2FITS has two values: 'V6.4' and 'V6.4    '
- ... wrote the PHA data Extension
-Wrote spectrum to PCback.pi
-xsel443954:SWIFT-XRT-PHOTON > clear region
-xsel443954:SWIFT-XRT-PHOTON > filter region ds9.reg
-xsel443954:SWIFT-XRT-PHOTON > extract spectrum
-ile = xsel443954_region.xsl qdpfile = NONE fitsbinlc = NONE unbinlc = NONE ph
-afile = xsel443954_hist.xsl imgfile = NONE timefile = NONE adjustgti=yes gstr
-ing = NONE usetpixrsel = no timeorder = no xcolf = X ycolf = Y xcolh = X ycolh 
-= Y xfkey = TLMAX yfkey = TLMAX xhkey = TLMAX yhkey = TLMAX phamax = TLMAX spec
-bin = 1 binh = 1 binf = 1 binlc = 5.0000000E+00 tcol = TIME ecol = PI ccol = 
-NONE gcol = GRADE polwcol = NONE gti = GTI events = EVENTS gtitxt = xsel443954
-_ascii_out.xsl timeref = 40000.00 wtmapb = yes wtmapfix = yes swmapx = no sw
-mapy = no wmapver = 2 stokes = NONE gtinam = GTI exitnow = no clobber=yes
-extractor v6.17    25 Mar 2025
- Getting FITS WCS Keywords
- Doing file: /home/prayag/Supernovae/SN2023ixf/Swift/work38021/sw00016038021xpc
-w3po_cl.evt[regfilter("xsel443954_region.xsl",X,Y)]
-          Total      Good    Bad: Time     Phase     Grade       Cut
-              8         8            0         0         0         0
-===============================================================================
-    Grand Total      Good    Bad: Time     Phase     Grade       Cut
-              8         8            0         0         0         0
-   in  4264.9     seconds
- Spectrum         has        8 counts for  1.8758E-03 counts/sec
-Keyword TLM2FITS has two values: 'V6.4' and 'V6.4    '
- ... wrote the PHA data Extension
-Wrote spectrum to PC.pi
-xsel443954:SWIFT-XRT-PHOTON > quit
+      1 SN2023ixf   00016038021 2024-12-24T00:45:20.3663 WINDOWED
+xsel443954:SWIFT-XRT-WINDOWED > quit
 > Save this session? >[no]
