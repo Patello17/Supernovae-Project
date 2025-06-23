@@ -8,7 +8,7 @@ group(1)
 
 ######### Data Spectral Responses
 
-load_arf(1, "combinedPC_exp.arf", resp_id=1)
+load_arf(1, "combinedPC2_exp.arf", resp_id=1)
 load_rmf(1, "swxpc0to12s6_20210101v016.rmf", resp_id=1)
 
 ######### Load Background Data Sets
@@ -18,7 +18,7 @@ group(1, bkg_id=1)
 
 ######### Background Spectral Responses
 
-load_arf(1, "combinedPC_exp.arf", resp_id=1, bkg_id=1)
+load_arf(1, "combinedPC2_exp.arf", resp_id=1, bkg_id=1)
 load_rmf(1, "swxpc0to12s6_20210101v016.rmf", resp_id=1, bkg_id=1)
 
 ######### Set Energy or Wave Units
@@ -56,10 +56,10 @@ set_method_opt("xtol", 1.1920928955078125e-07)
 create_model_component("xsvapec", "v1")
 v1.integrate = True
 
-v1.kT.default_val = 68.447
+v1.kT.default_val = 6.5
 v1.kT.default_min = 0.0808
 v1.kT.default_max = 68.447
-v1.kT.val     = 68.24495324506448
+v1.kT.val     = 17.739135422067097
 v1.kT.min     = 0.0808
 v1.kT.max     = 68.447
 v1.kT.units   = "keV"
@@ -194,7 +194,7 @@ v1.Redshift.frozen  = True
 v1.norm.default_val = 1.0
 v1.norm.default_min = 0.0
 v1.norm.default_max = 1e+24
-v1.norm.val     = 9.03209182610386e-05
+v1.norm.val     = 8.523810476524359e-05
 v1.norm.min     = 0.0
 v1.norm.max     = 1e+24
 v1.norm.units   = ""
@@ -206,7 +206,7 @@ p1.integrate = True
 p1.gamma.default_val = 1.0
 p1.gamma.default_min = -10.0
 p1.gamma.default_max = 10.0
-p1.gamma.val     = 2.780046244538986
+p1.gamma.val     = 2.7385440092798206
 p1.gamma.min     = -10.0
 p1.gamma.max     = 10.0
 p1.gamma.units   = ""
@@ -224,7 +224,7 @@ p1.ref.frozen  = True
 p1.ampl.default_val = 1.0
 p1.ampl.default_min = 0.0
 p1.ampl.default_max = 3.4028234663852886e+38
-p1.ampl.val     = 4.291623137037069e-06
+p1.ampl.val     = 4.200599926066047e-06
 p1.ampl.min     = 0.0
 p1.ampl.max     = 3.4028234663852886e+38
 p1.ampl.units   = ""
@@ -233,10 +233,10 @@ p1.ampl.frozen  = False
 create_model_component("xstbabs", "abs1")
 abs1.integrate = True
 
-abs1.nH.default_val = 1.526720249201216
+abs1.nH.default_val = 2.422494793213946
 abs1.nH.default_min = 0.0
 abs1.nH.default_max = 1000000.0
-abs1.nH.val     = 0.07682160205582914
+abs1.nH.val     = 0.07672878171758453
 abs1.nH.min     = 0.0767
 abs1.nH.max     = 1000000.0
 abs1.nH.units   = "10^22 atoms / cm^2"
@@ -261,8 +261,8 @@ set_xsxset("APECROOT", "/home/prayag/Software/ciao-4.17/spectral/modelData/apec_
 
 ######### Calculated Fluxes
 
-Absorbed Flux: 9.263776015115131e-14 +2.2579323425324422e-14, 2.169889684968931e-14
-Unabsorbed Flux: 1.238360927639333e-13 +2.618069338870561e-14, 2.589179015395553e-14
+Absorbed Flux: 8.939744351074851e-14 +3.371375826737886e-14, 2.71795698039776e-14
+Unabsorbed Flux: 1.3777577585656635e-13 +3.898114732574902e-14, 3.703177978245828e-14
 
 ######### Calculated Confidences
 
@@ -274,10 +274,10 @@ statname    = cash
 sigma       = 1
 percent     = 68.26894921370858
 parnames    = ('abs1.nH', 'v1.kT', 'v1.norm', 'p1.gamma', 'p1.ampl')
-parvals     = (0.07682160205582914, 68.24495324506448, 9.03209182610386e-05, 2.780046244538986, 4.291623137037069e-06)
-parmins     = (None, -57.58864155719723, -3.072631810529525e-05, -0.5499852468233062, -1.2972265976005992e-06)
-parmaxes    = (1.4498986471453867, None, 3.44122264014842e-05, 0.5354474401316889, 1.945839896400898e-06)
-nfits       = 99
+parvals     = (0.07672878171758453, 17.739135422067097, 8.523810476524359e-05, 2.7385440092798206, 4.200599926066047e-06)
+parmins     = (None, -12.490267402860287, -2.153819147927453e-05, -0.6345993511447143, -1.1653544843402099e-06)
+parmaxes    = (2.3457660114963614, None, 8.756833924210045e-05, 0.7380297288979958, 3.9929714342026485e-06)
+nfits       = 81
 
 ######## Counts and Count Rate
 

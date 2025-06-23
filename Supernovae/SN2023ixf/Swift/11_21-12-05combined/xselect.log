@@ -1,7 +1,8 @@
-!xselect 10:40:50 23-Jun-2025
+!xselect 14:36:07 23-Jun-2025
 xsel443954:XRISM > read event
 > Enter the Event file dir >[.]
-> Enter Event file list >[summed_events_cl.evt] sw00032481062xpcw3po_cl.evt
+> Enter Event file list >[sw00016038017xpcw3po_cl.evt] sw00032481062xpcw3po_cl.
+evt
 Got new mission: SWIFT
 > Reset the mission ? >[yes]
  Notes: XSELECT set up for      SWIFT
@@ -228,4 +229,10 @@ extractor v6.17    25 Mar 2025
    in  15553.     seconds
  Image            has     5885 counts for  0.3784     counts/sec
 Keyword TLM2FITS has two values: 'V6.4' and 'V6.4    '
+Wrote events list to file summed_events_cl.evt
+> Use filtered events as input data file ? >[yes]
+Changing Data directory from:
+    /home/prayag/git/Supernovae-Project/Supernovae/SN2023ixf/Swift/11_21-12-05c
+ombined/
+to the current working directory.
 > Save this session? >[no]
