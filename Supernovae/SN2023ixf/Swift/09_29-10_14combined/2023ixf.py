@@ -39,15 +39,15 @@ print("Fitted.")
 print("Getting Confidence...")
 conf()
 confidence = get_conf_results()
-# set_ylog()
 print("Got Confidence.")
 
 # Format Plot
 print("Formatting Plot(s)...")
 # plot("bkg")
+# set_ylog()
 plot_fit(color="royalblue")
 # plot_bkg_fit(overplot=True)
-plt.xlim(0.3, 4)
+plt.xlim(0.3, 8)
 plt.ylim(0, 0.015)
 
 fig = plt.gcf()

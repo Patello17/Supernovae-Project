@@ -8,7 +8,7 @@ bkg_rmf = "2023ixf_bkg.rmf"
 
 # Load and Group Data
 load_pha(data)
-notice(0.3,8)
+notice(0.3, 8)
 subtract()
 group_counts(15)
 
@@ -25,6 +25,7 @@ set_par("abs1.nH", min=0.0767)
 v1.kT = 34
 freeze(v1.kT) # freeze temperature like Chandra 2024 does
 set_xsabund("wilm")
+# thaw(v1.Fe)
 print("Configured.")
 
 print("Fitting...")
@@ -36,15 +37,15 @@ print("Fitted.")
 print("Getting Confidence...")
 conf()
 confidence = get_conf_results()
-# set_ylog()
 print("Got Confidence.")
 
 # Format Plot
 print("Formatting Plot(s)...")
 # plot("bkg")
+set_ylog()
 plot_fit(color="royalblue")
 # plot_bkg_fit(overplot=True)
-plt.xlim(0.3, 4)
+plt.xlim(0.3, 8)
 plt.ylim(0, 0.015)
 
 fig = plt.gcf()
