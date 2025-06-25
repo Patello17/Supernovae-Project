@@ -83,7 +83,7 @@ print("Saving Plot...")
 plt.savefig("2023ixf_plot.pdf")
 print("Plot Saved.")
 
-# Save Data
+# # Save Data
 print("Saving Data...")
 save_all("results.log", clobber=True) # Saves everything except the flux
 absorbed_fluxes = s1[0]
