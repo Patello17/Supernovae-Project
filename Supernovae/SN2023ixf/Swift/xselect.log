@@ -1,9 +1,11 @@
-!xselect 15:47:15 01-Jul-2025
+!xselect 16:45:55 01-Jul-2025
  Command not found; type ? for a command listing
-!xsel129647:XRISM > read eve sw00032481002xwtw2st_cl.evt
-!> Enter the Event file dir >[./work81002] ./work81002//
+!xsel159387:XRISM > read event
+!> Enter the Event file dir >[./work81025//] ./work81025
+!> Enter Event file list >[sw00032481025xwtw2st_cl.evt] sw00032481025xwtw2sl_uf
+re.evt
 Got new mission: SWIFT
-!> Reset the mission ? >[yes]
+!> Reset the mission ? >[yes] yes
  Notes: XSELECT set up for      SWIFT
  Time keyword is TIME       in units of s
  Default timing binsize =   1.0000
@@ -19,81 +21,52 @@ Got min and max for PI:     0   1023
 Got the minimum time resolution of the read data:  0.17791E-02
 MJDREF =  5.1910000742870E+04 with TIMESYS = TT
  Number of files read in:            1
-29647_obscat.tmp outfile=/home/prayag/git/Supernovae-Project/Supernovae/SN202
-3ixf/Swift/xsel129647_read_cat.xsl keywords=@/home/prayag/git/Supernovae-Proj
-ect/Supernovae/SN2023ixf/Swift/xsel129647_obslist.def maxlen=11 minlen=0 iform
+59387_obscat.tmp outfile=/home/prayag/git/Supernovae-Project/Supernovae/SN202
+3ixf/Swift/xsel159387_read_cat.xsl keywords=@/home/prayag/git/Supernovae-Proj
+ect/Supernovae/SN2023ixf/Swift/xsel159387_obslist.def maxlen=11 minlen=0 iform
 =I8 eform=E8.2 quiet=yes omit=no
 ******************** Observation Catalogue ********************
  
 Data Directory is: /home/prayag/git/Supernovae-Project/Supernovae/SN2023ixf/Swi
-ft/work81002/
+ft/work81025/
 HK Directory is: /home/prayag/git/Supernovae-Project/Supernovae/SN2023ixf/Swift
-/work81002/
-ad_cat.xsl STDOUT @xsel129647_display.def - prhead = no pagewidth = 128 wr
+/work81025/
+ad_cat.xsl STDOUT @xsel159387_display.def - prhead = no pagewidth = 128 wr
 ap = yes showunit = no tdisp = yes
  
  
-        OBJECT      OBS_ID      DATE-OBS                 DATAMODE
-      1 N5457-X9    00032481002 2023-05-20T11:17:58.3660 WINDOWED
-!xsel129647:SWIFT-XRT-WINDOWED > set wmapname X Y
-Warning : downstream software assumes that the WMAP is
-          in detector coordinates
-!xsel129647:SWIFT-XRT-WINDOWED > set xyname X Y
-!xsel129647:SWIFT-XRT-WINDOWED > filter region ./work81002/sw00032481002xwtw2st
-.reg
-!xsel129647:SWIFT-XRT-WINDOWED > set binsize 0.1
-!xsel129647:SWIFT-XRT-WINDOWED > extract spectrum
-ile = xsel129647_region.xsl qdpfile = NONE fitsbinlc = NONE unbinlc = NONE ph
-afile = xsel129647_hist.xsl imgfile = NONE timefile = NONE adjustgti=yes gstr
-ing = NONE usetpixrsel = no timeorder = no xcolf = X ycolf = Y xcolh = X ycolh 
-= Y xfkey = TLMAX yfkey = TLMAX xhkey = TLMAX yhkey = TLMAX phamax = TLMAX spec
-bin = 1 binh = 1 binf = 1 binlc = 1.0000000E-01 tcol = TIME ecol = PI ccol = 
-NONE gcol = GRADE polwcol = NONE gti = GTI events = EVENTS gtitxt = xsel129647
-_ascii_out.xsl timeref = 40000.00 wtmapb = yes wtmapfix = yes swmapx = no sw
-mapy = no wmapver = 2 stokes = NONE gtinam = GTI exitnow = no clobber=yes
+        OBJECT      OBS_ID      DATE-OBS            DATAMODE
+      1 N5457-X9    00032481025 2023-06-03T06:56:38 WINDOWED
+!xsel159387:SWIFT-XRT-WINDOWED > filter time file ./work81025/sw00032481025xwtw
+2sl_clgti.fits
+!xsel159387:SWIFT-XRT-WINDOWED > filter grade "0-2"
+!xsel159387:SWIFT-XRT-WINDOWED > extract events
+out_event.xsl copyall=no regionfile = NONE qdpfile = NONE fitsbinlc = NONE unb
+inlc = NONE phafile = NONE imgfile = NONE timefile = @xsel_timefile.asc adjus
+tgti=yes gstring = 0-2 usetpixrsel = no timeorder = no xcolf = X ycolf = Y xcol
+h = X ycolh = Y xfkey = TLMAX yfkey = TLMAX xhkey = TLMAX yhkey = TLMAX phamax 
+= TLMAX specbin = 1 binh = 1 binf = 1 binlc = 1.0000000E+00 tcol = TIME ecol 
+= PI ccol = NONE gcol = GRADE polwcol = NONE gti = GTI events = EVENTS gtitxt =
+ xsel159387_ascii_out.xsl timeref = 40000.00 wtmapb = yes wtmapfix = yes sw
+mapx = no swmapy = no wmapver = 2 stokes = NONE gtinam = GTI exitnow = no clobb
+er=yes
 extractor v6.17    25 Mar 2025
  Getting FITS WCS Keywords
  Doing file: /home/prayag/git/Supernovae-Project/Supernovae/SN2023ixf/Swift/wor
-k81002/sw00032481002xwtw2st_cl.evt[regfilter("xsel129647_region.xsl",X,Y)]
+k81025/sw00032481025xwtw2sl_ufre.evt
           Total      Good    Bad: Time     Phase     Grade       Cut
-             15        15            0         0         0         0
+             70        54            1         0        15         0
+ Writing events file
+     54 events written to the output file
 ===============================================================================
     Grand Total      Good    Bad: Time     Phase     Grade       Cut
-             15        15            0         0         0         0
-   in  107.49     seconds
- Spectrum         has       15 counts for  0.1396     counts/sec
-Keyword TLM2FITS has two values: 'V6.4' and 'V6.4    '
- ... wrote the PHA data Extension
-sr.pha
-Wrote spectrum to ./work81002/sw00032481002xwtw2stsr.pha
-!xsel129647:SWIFT-XRT-WINDOWED > filter pha_cutoff 30 1000
-!xsel129647:SWIFT-XRT-WINDOWED > extract curve exposure=0.0
-ile = xsel129647_region.xsl qdpfile = NONE fitsbinlc = xsel129647_fits_curve
-.xsl lcthresh = 0.0000000E+00 lctzero = yes xronwn = /home/prayag/git/Super
-novae-Project/Supernovae/SN2023ixf/Swift/xsel129647_xronos_out.xsl unbinlc = N
-ONE phafile = NONE imgfile = NONE timefile = NONE adjustgti=yes gstring = NONE 
-usetpixrsel = no timeorder = no xcolf = X ycolf = Y xcolh = X ycolh = Y xfkey =
- TLMAX yfkey = TLMAX xhkey = TLMAX yhkey = TLMAX phamax = TLMAX specbin = 1 bin
-h = 1 binf = 1 binlc = 1.0000000E-01 tcol = TIME ecol = PI ccol = NONE gcol =
- GRADE polwcol = NONE gti = GTI events = EVENTS gtitxt = xsel129647_ascii_out.
-xsl timeref = 40000.00 wtmapb = yes wtmapfix = yes swmapx = no swmapy = no w
-mapver = 2 stokes = NONE gtinam = GTI exitnow = no clobber=yes
-extractor v6.17    25 Mar 2025
- Getting FITS WCS Keywords
- Doing file: /home/prayag/git/Supernovae-Project/Supernovae/SN2023ixf/Swift/wor
-k81002/sw00032481002xwtw2st_cl.evt[regfilter("xsel129647_region.xsl",X,Y)]
-          Total      Good    Bad: Time     Phase     Grade       Cut
-             15        11            0         0         0         4
-===============================================================================
-    Grand Total      Good    Bad: Time     Phase     Grade       Cut
-             15        11            0         0         0         4
-   in  107.49     seconds
- Fits light curve has   11.00     counts for  0.1023     counts/sec
-Keyword TLM2FITS has two values: 'V6.4' and 'V6.4    '
- Thresholding removed more than half the bins
- Try exposure=0.0 on the extract command in xselect
- or lcthresh=0.0 if running extractor stand-alone
-lc
-Wrote FITS light curve to file ./work81002/sw00032481002xwtw2stsr.lc
-!xsel129647:SWIFT-XRT-WINDOWED > quit
+             70        54            1         0        15         0
+   in  11.819     seconds
+ Command not found; type ? for a command listing
+!xsel159387:SWIFT-XRT-WINDOWED > save events ./work81025/xselect159388evt.flt
+Wrote events list to file ./work81025/xselect159388evt.flt
+!> Use filtered events as input data file ? >[yes] yes
+Changing Data directory from:
+    /home/prayag/git/Supernovae-Project/Supernovae/SN2023ixf/Swift/work81025/
+to the current working directory.
 !> Save this session? >[no] no
