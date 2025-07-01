@@ -1,0 +1,15 @@
+xsel117290
+read eve sw00016043009xwtw2st_cl.evt
+./work43009//
+
+set wmapname X Y
+set xyname X Y
+filter region ./work43009/sw00016043009xwtw2st.reg
+set binsize 0.1
+extract spectrum
+save spectrum ./work43009/sw00016043009xwtw2stsr.pha
+filter pha_cutoff 30 1000
+extract curve exposure=0.0
+save curve ./work43009/sw00016043009xwtw2stsr.lc
+quit
+no
