@@ -1,8 +1,8 @@
-!xselect 16:45:55 01-Jul-2025
+!xselect 17:49:29 01-Jul-2025
  Command not found; type ? for a command listing
-!xsel159387:XRISM > read event
-!> Enter the Event file dir >[./work81025//] ./work81025
-!> Enter Event file list >[sw00032481025xwtw2st_cl.evt] sw00032481025xwtw2sl_uf
+!xsel182775:XRISM > read event
+!> Enter the Event file dir >[./work81041//] ./work81041
+!> Enter Event file list >[sw00032481041xwtw2st_cl.evt] sw00032481041xwtw2sl_uf
 re.evt
 Got new mission: SWIFT
 !> Reset the mission ? >[yes] yes
@@ -21,52 +21,52 @@ Got min and max for PI:     0   1023
 Got the minimum time resolution of the read data:  0.17791E-02
 MJDREF =  5.1910000742870E+04 with TIMESYS = TT
  Number of files read in:            1
-59387_obscat.tmp outfile=/home/prayag/git/Supernovae-Project/Supernovae/SN202
-3ixf/Swift/xsel159387_read_cat.xsl keywords=@/home/prayag/git/Supernovae-Proj
-ect/Supernovae/SN2023ixf/Swift/xsel159387_obslist.def maxlen=11 minlen=0 iform
+82775_obscat.tmp outfile=/home/prayag/git/Supernovae-Project/Supernovae/SN202
+3ixf/Swift/xsel182775_read_cat.xsl keywords=@/home/prayag/git/Supernovae-Proj
+ect/Supernovae/SN2023ixf/Swift/xsel182775_obslist.def maxlen=11 minlen=0 iform
 =I8 eform=E8.2 quiet=yes omit=no
 ******************** Observation Catalogue ********************
  
 Data Directory is: /home/prayag/git/Supernovae-Project/Supernovae/SN2023ixf/Swi
-ft/work81025/
+ft/work81041/
 HK Directory is: /home/prayag/git/Supernovae-Project/Supernovae/SN2023ixf/Swift
-/work81025/
-ad_cat.xsl STDOUT @xsel159387_display.def - prhead = no pagewidth = 128 wr
+/work81041/
+ad_cat.xsl STDOUT @xsel182775_display.def - prhead = no pagewidth = 128 wr
 ap = yes showunit = no tdisp = yes
  
  
         OBJECT      OBS_ID      DATE-OBS            DATAMODE
-      1 N5457-X9    00032481025 2023-06-03T06:56:38 WINDOWED
-!xsel159387:SWIFT-XRT-WINDOWED > filter time file ./work81025/sw00032481025xwtw
+      1 N5457-X9    00032481041 2023-07-11T19:38:38 WINDOWED
+!xsel182775:SWIFT-XRT-WINDOWED > filter time file ./work81041/sw00032481041xwtw
 2sl_clgti.fits
-!xsel159387:SWIFT-XRT-WINDOWED > filter grade "0-2"
-!xsel159387:SWIFT-XRT-WINDOWED > extract events
+!xsel182775:SWIFT-XRT-WINDOWED > filter grade "0-2"
+!xsel182775:SWIFT-XRT-WINDOWED > extract events
 out_event.xsl copyall=no regionfile = NONE qdpfile = NONE fitsbinlc = NONE unb
 inlc = NONE phafile = NONE imgfile = NONE timefile = @xsel_timefile.asc adjus
 tgti=yes gstring = 0-2 usetpixrsel = no timeorder = no xcolf = X ycolf = Y xcol
 h = X ycolh = Y xfkey = TLMAX yfkey = TLMAX xhkey = TLMAX yhkey = TLMAX phamax 
 = TLMAX specbin = 1 binh = 1 binf = 1 binlc = 1.0000000E+00 tcol = TIME ecol 
 = PI ccol = NONE gcol = GRADE polwcol = NONE gti = GTI events = EVENTS gtitxt =
- xsel159387_ascii_out.xsl timeref = 40000.00 wtmapb = yes wtmapfix = yes sw
+ xsel182775_ascii_out.xsl timeref = 40000.00 wtmapb = yes wtmapfix = yes sw
 mapx = no swmapy = no wmapver = 2 stokes = NONE gtinam = GTI exitnow = no clobb
 er=yes
 extractor v6.17    25 Mar 2025
  Getting FITS WCS Keywords
  Doing file: /home/prayag/git/Supernovae-Project/Supernovae/SN2023ixf/Swift/wor
-k81025/sw00032481025xwtw2sl_ufre.evt
+k81041/sw00032481041xwtw2sl_ufre.evt
           Total      Good    Bad: Time     Phase     Grade       Cut
-             70        54            1         0        15         0
+            389       128            0         0       261         0
  Writing events file
-     54 events written to the output file
+    128 events written to the output file
 ===============================================================================
     Grand Total      Good    Bad: Time     Phase     Grade       Cut
-             70        54            1         0        15         0
-   in  11.819     seconds
+            389       128            0         0       261         0
+   in  121.22     seconds
  Command not found; type ? for a command listing
-!xsel159387:SWIFT-XRT-WINDOWED > save events ./work81025/xselect159388evt.flt
-Wrote events list to file ./work81025/xselect159388evt.flt
+!xsel182775:SWIFT-XRT-WINDOWED > save events ./work81041/xselect182776evt.flt
+Wrote events list to file ./work81041/xselect182776evt.flt
 !> Use filtered events as input data file ? >[yes] yes
 Changing Data directory from:
-    /home/prayag/git/Supernovae-Project/Supernovae/SN2023ixf/Swift/work81025/
+    /home/prayag/git/Supernovae-Project/Supernovae/SN2023ixf/Swift/work81041/
 to the current working directory.
 !> Save this session? >[no] no
