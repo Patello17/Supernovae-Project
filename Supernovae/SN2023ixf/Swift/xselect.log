@@ -1,8 +1,8 @@
-!xselect 17:49:29 01-Jul-2025
+!xselect 16:46:31 02-Jul-2025
  Command not found; type ? for a command listing
-!xsel182775:XRISM > read event
-!> Enter the Event file dir >[./work81041//] ./work81041
-!> Enter Event file list >[sw00032481041xwtw2st_cl.evt] sw00032481041xwtw2sl_uf
+!xsel43181:XRISM > read event
+!> Enter the Event file dir >[./work81058//] ./work81058
+!> Enter Event file list >[sw00032481058xwtw2st_cl.evt] sw00032481058xwtw2sl_uf
 re.evt
 Got new mission: SWIFT
 !> Reset the mission ? >[yes] yes
@@ -21,52 +21,52 @@ Got min and max for PI:     0   1023
 Got the minimum time resolution of the read data:  0.17791E-02
 MJDREF =  5.1910000742870E+04 with TIMESYS = TT
  Number of files read in:            1
-82775_obscat.tmp outfile=/home/prayag/git/Supernovae-Project/Supernovae/SN202
-3ixf/Swift/xsel182775_read_cat.xsl keywords=@/home/prayag/git/Supernovae-Proj
-ect/Supernovae/SN2023ixf/Swift/xsel182775_obslist.def maxlen=11 minlen=0 iform
-=I8 eform=E8.2 quiet=yes omit=no
+3181_obscat.tmp outfile=/home/prayag/git/Supernovae-Project/Supernovae/SN2023
+ixf/Swift/xsel43181_read_cat.xsl keywords=@/home/prayag/git/Supernovae-Projec
+t/Supernovae/SN2023ixf/Swift/xsel43181_obslist.def maxlen=11 minlen=0 iform=I8
+ eform=E8.2 quiet=yes omit=no
 ******************** Observation Catalogue ********************
  
 Data Directory is: /home/prayag/git/Supernovae-Project/Supernovae/SN2023ixf/Swi
-ft/work81041/
+ft/work81058/
 HK Directory is: /home/prayag/git/Supernovae-Project/Supernovae/SN2023ixf/Swift
-/work81041/
-ad_cat.xsl STDOUT @xsel182775_display.def - prhead = no pagewidth = 128 wr
-ap = yes showunit = no tdisp = yes
+/work81058/
+d_cat.xsl STDOUT @xsel43181_display.def - prhead = no pagewidth = 128 wrap
+ = yes showunit = no tdisp = yes
  
  
         OBJECT      OBS_ID      DATE-OBS            DATAMODE
-      1 N5457-X9    00032481041 2023-07-11T19:38:38 WINDOWED
-!xsel182775:SWIFT-XRT-WINDOWED > filter time file ./work81041/sw00032481041xwtw
-2sl_clgti.fits
-!xsel182775:SWIFT-XRT-WINDOWED > filter grade "0-2"
-!xsel182775:SWIFT-XRT-WINDOWED > extract events
-out_event.xsl copyall=no regionfile = NONE qdpfile = NONE fitsbinlc = NONE unb
-inlc = NONE phafile = NONE imgfile = NONE timefile = @xsel_timefile.asc adjus
-tgti=yes gstring = 0-2 usetpixrsel = no timeorder = no xcolf = X ycolf = Y xcol
-h = X ycolh = Y xfkey = TLMAX yfkey = TLMAX xhkey = TLMAX yhkey = TLMAX phamax 
-= TLMAX specbin = 1 binh = 1 binf = 1 binlc = 1.0000000E+00 tcol = TIME ecol 
-= PI ccol = NONE gcol = GRADE polwcol = NONE gti = GTI events = EVENTS gtitxt =
- xsel182775_ascii_out.xsl timeref = 40000.00 wtmapb = yes wtmapfix = yes sw
-mapx = no swmapy = no wmapver = 2 stokes = NONE gtinam = GTI exitnow = no clobb
-er=yes
+      1 N5457-X9    00032481058 2023-09-21T23:46:38 WINDOWED
+!xsel43181:SWIFT-XRT-WINDOWED > filter time file ./work81058/sw00032481058xwtw2
+sl_clgti.fits
+!xsel43181:SWIFT-XRT-WINDOWED > filter grade "0-2"
+!xsel43181:SWIFT-XRT-WINDOWED > extract events
+t_event.xsl copyall=no regionfile = NONE qdpfile = NONE fitsbinlc = NONE unbin
+lc = NONE phafile = NONE imgfile = NONE timefile = @xsel_timefile.asc adjustg
+ti=yes gstring = 0-2 usetpixrsel = no timeorder = no xcolf = X ycolf = Y xcolh 
+= X ycolh = Y xfkey = TLMAX yfkey = TLMAX xhkey = TLMAX yhkey = TLMAX phamax = 
+TLMAX specbin = 1 binh = 1 binf = 1 binlc = 1.0000000E+00 tcol = TIME ecol = 
+PI ccol = NONE gcol = GRADE polwcol = NONE gti = GTI events = EVENTS gtitxt = 
+xsel43181_ascii_out.xsl timeref = 40000.00 wtmapb = yes wtmapfix = yes swmap
+x = no swmapy = no wmapver = 2 stokes = NONE gtinam = GTI exitnow = no clobber=
+yes
 extractor v6.17    25 Mar 2025
  Getting FITS WCS Keywords
  Doing file: /home/prayag/git/Supernovae-Project/Supernovae/SN2023ixf/Swift/wor
-k81041/sw00032481041xwtw2sl_ufre.evt
+k81058/sw00032481058xwtw2sl_ufre.evt
           Total      Good    Bad: Time     Phase     Grade       Cut
-            389       128            0         0       261         0
+             54        15            0         0        39         0
  Writing events file
-    128 events written to the output file
+     15 events written to the output file
 ===============================================================================
     Grand Total      Good    Bad: Time     Phase     Grade       Cut
-            389       128            0         0       261         0
-   in  121.22     seconds
+             54        15            0         0        39         0
+   in  30.619     seconds
  Command not found; type ? for a command listing
-!xsel182775:SWIFT-XRT-WINDOWED > save events ./work81041/xselect182776evt.flt
-Wrote events list to file ./work81041/xselect182776evt.flt
+!xsel43181:SWIFT-XRT-WINDOWED > save events ./work81058/xselect43182evt.flt
+Wrote events list to file ./work81058/xselect43182evt.flt
 !> Use filtered events as input data file ? >[yes] yes
 Changing Data directory from:
-    /home/prayag/git/Supernovae-Project/Supernovae/SN2023ixf/Swift/work81041/
+    /home/prayag/git/Supernovae-Project/Supernovae/SN2023ixf/Swift/work81058/
 to the current working directory.
 !> Save this session? >[no] no

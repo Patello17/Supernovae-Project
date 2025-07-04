@@ -1,0 +1,17 @@
+xsel26912
+read eve sw00032481056xpcw3po_cl.evt
+./work81056//
+
+extract image
+save image ./work81056/sw00032481056xpcw3po_sk.img
+set wmapname X Y
+set xyname X Y
+filter region ./work81056/sw00032481056xpcw3po.reg
+set binsize 2.51
+extract spectrum
+save spectrum ./work81056/sw00032481056xpcw3posr.pha
+filter pha_cutoff 30 1000
+extract curve exposure=0.0
+save curve ./work81056/sw00032481056xpcw3posr.lc
+quit
+no
