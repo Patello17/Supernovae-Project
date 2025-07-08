@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt 
 
-# Dataset(s) 160380011, 160380012, 32481016, 32481017
+# Dataset(s) 16043012, 16043013
 data = "combinedPC.pi"
 arf = "combinedPC_exp.arf" # same for source and background
 rmf = "swxpc0to12s6_20210101v016.rmf" # same for source and background
@@ -60,7 +60,7 @@ plt.yticks(fontsize=11)
 ax1.lines[0].set_linewidth(4)
 ax1.lines[2].set_color("sandybrown")
 ax1.lines[2].set_linewidth(3)
-plt.title("Swift Data Plot (May 24, 2023)")
+plt.title("Swift Data Plot (June 5, 2023)")
 # plt.setp(ax1.spines.values(), linewidth=3)
 
 plt.sca(ax2)
