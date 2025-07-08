@@ -1,0 +1,13 @@
+xsel177773
+read event
+./work81038
+sw00032481038xwtw2st_ufre.evt
+yes
+filter time file ./work81038/sw00032481038xwtw2st_clgti.fits
+filter grade "0-2"
+extract events
+yes
+save events ./work81038/xselect177774evt.flt
+yes
+quit
+no

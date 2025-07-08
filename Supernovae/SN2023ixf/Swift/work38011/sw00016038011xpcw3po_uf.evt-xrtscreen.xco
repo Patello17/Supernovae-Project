@@ -1,0 +1,13 @@
+xsel102321
+read event
+./work38011
+sw00016038011xpcw3po_uf.evt
+yes
+filter time file ./work38011/sw00016038011xpcw3po_clgti.fits
+filter grade "0-12"
+extract events
+yes
+save events ./work38011/xselect102322evt.flt
+yes
+quit
+no
