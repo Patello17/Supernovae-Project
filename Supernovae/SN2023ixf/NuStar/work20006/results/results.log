@@ -116,7 +116,7 @@ v1.integrate = True
 v1.kT.default_val = 6.5
 v1.kT.default_min = 0.0808
 v1.kT.default_max = 68.447
-v1.kT.val     = 10.910195833353173
+v1.kT.val     = 11.273621382980352
 v1.kT.min     = 0.0808
 v1.kT.max     = 68.447
 v1.kT.units   = "keV"
@@ -221,14 +221,14 @@ v1.Ca.max     = 1000.0
 v1.Ca.units   = ""
 v1.Ca.frozen  = True
 
-v1.Fe.default_val = 1.0
+v1.Fe.default_val = 2.672232329782136
 v1.Fe.default_min = 0.0
 v1.Fe.default_max = 1000.0
-v1.Fe.val     = 1.0
+v1.Fe.val     = 0.023987668038976295
 v1.Fe.min     = 0.0
 v1.Fe.max     = 1000.0
 v1.Fe.units   = ""
-v1.Fe.frozen  = True
+v1.Fe.frozen  = False
 
 v1.Ni.default_val = 1.0
 v1.Ni.default_min = 0.0
@@ -251,11 +251,41 @@ v1.Redshift.frozen  = True
 v1.norm.default_val = 1.0
 v1.norm.default_min = 0.0
 v1.norm.default_max = 1e+24
-v1.norm.val     = 0.0006585701431272012
+v1.norm.val     = 0.0006928011400036594
 v1.norm.min     = 0.0
 v1.norm.max     = 1e+24
 v1.norm.units   = ""
 v1.norm.frozen  = False
+
+create_model_component("xsgaussian", "g1")
+g1.integrate = True
+
+g1.LineE.default_val = 13895.117053938786
+g1.LineE.default_min = 0.0
+g1.LineE.default_max = 1000000.0
+g1.LineE.val     = 6.759478365654823
+g1.LineE.min     = 0.0
+g1.LineE.max     = 1000000.0
+g1.LineE.units   = "keV"
+g1.LineE.frozen  = False
+
+g1.Sigma.default_val = 20.0
+g1.Sigma.default_min = 0.0
+g1.Sigma.default_max = 20.0
+g1.Sigma.val     = 0.0829600568980263
+g1.Sigma.min     = 0.0
+g1.Sigma.max     = 20.0
+g1.Sigma.units   = "keV"
+g1.Sigma.frozen  = False
+
+g1.norm.default_val = 1.0
+g1.norm.default_min = 0.0
+g1.norm.default_max = 1e+24
+g1.norm.val     = 2.4753858290995435e-06
+g1.norm.min     = 0.0
+g1.norm.max     = 1e+24
+g1.norm.units   = ""
+g1.norm.frozen  = False
 
 create_model_component("xstbabs", "abs1")
 abs1.integrate = True
@@ -263,7 +293,7 @@ abs1.integrate = True
 abs1.nH.default_val = 1.0
 abs1.nH.default_min = 0.0
 abs1.nH.default_max = 1000000.0
-abs1.nH.val     = 5.56923839371162
+abs1.nH.val     = 6.039338478801399
 abs1.nH.min     = 0.0767
 abs1.nH.max     = 1000000.0
 abs1.nH.units   = "10^22 atoms / cm^2"
@@ -273,9 +303,9 @@ abs1.nH.frozen  = False
 
 ######### Set Source, Pileup and Background Models
 
-set_source(1, xstbabs.abs1 * xsvapec.v1)
+set_source(1, xstbabs.abs1 * (xsvapec.v1 + xsgaussian.g1))
 
-set_source(2, xstbabs.abs1 * xsvapec.v1)
+set_source(2, xstbabs.abs1 * (xsvapec.v1 + xsgaussian.g1))
 
 
 ######### XSPEC Module Settings
@@ -288,8 +318,8 @@ set_xsxset("APECROOT", "/home/prayag/Software/ciao-4.17/spectral/modelData/apec_
 
 ######### Calculated Fluxes
 
-Absorbed Flux: 5.492240068065854e-13 +1.0218428860114342e-13, 8.459053858897606e-14
-Unabsorbed Flux: 8.144570093248194e-13 +7.64904377708487e-14, 7.354274503512977e-14
+Absorbed Flux: 6.419127782788258e-13 +1.5440481313666137e-13, 1.4210353597352097e-13
+Unabsorbed Flux: 9.041889503034178e-13 +1.8253054408091015e-13, 1.6271079052844219e-13
 
 ######### Calculated Confidences
 
@@ -300,11 +330,11 @@ fitname     = levmar
 statname    = chi2gehrels
 sigma       = 1
 percent     = 68.26894921370858
-parnames    = ('abs1.nH', 'v1.kT', 'v1.norm')
-parvals     = (5.56923839371162, 10.910195833353173, 0.0006585701431272012)
-parmins     = (-2.140184183331569, -3.2043595723414837, -8.821836961312205e-05)
-parmaxes    = (2.4206873115807648, 9.064181088176609, 8.72994282629854e-05)
-nfits       = 45
+parnames    = ('abs1.nH', 'v1.kT', 'v1.Fe', 'v1.norm', 'g1.LineE', 'g1.Sigma', 'g1.norm')
+parvals     = (6.039338478801399, 11.273621382980352, 0.023987668038976295, 0.0006928011400036594, 6.759478365654823, 0.0829600568980263, 2.4753858290995435e-06)
+parmins     = (-4.496781167478784, -9.881769837421011, None, -0.00027757471551883965, None, None, None)
+parmaxes    = (8.015448837259848, None, 2.64824466174316, 0.0030141685944090066, None, None, 0.0003099577281366758)
+nfits       = 223
 
 ######## Counts and Count Rate
 

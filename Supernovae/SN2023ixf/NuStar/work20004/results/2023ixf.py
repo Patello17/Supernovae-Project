@@ -33,9 +33,8 @@ data_cnt_rate = calc_data_sum()/get_exposure()
 print("Data Counts Rate =", data_cnt_rate)
 
 set_xsxset("APECROOT", "/home/prayag/Software/ciao-4.17/spectral/modelData/apec_v3.0.9") # Use correct APECROOT
-set_source(1, xstbabs.abs1*xsvapec.v1) # Fit APEC Model
-set_source(2, abs1*v1) # Fit APEC Model
-# g1.Sigma=0.2
+set_source(1, xstbabs.abs1*(xsvapec.v1+xsgaussian.g1)) # Fit APEC Model
+set_source(2, xstbabs.abs1*(xsvapec.v1+xsgaussian.g1)) # Fit APEC Model
 set_par("abs1.nH", min=0.0767)
 thaw(v1.Fe)
 set_xsabund("wilm")
