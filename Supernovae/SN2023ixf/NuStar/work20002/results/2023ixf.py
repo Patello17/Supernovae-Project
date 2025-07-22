@@ -21,8 +21,10 @@ load_arf(2, arf_B)
 load_rmf(1, rmf_A)
 load_rmf(2, rmf_B)
 notice(0.3,8)
-subtract()
-group_counts(15)
+subtract(1)
+subtract(2)
+group_counts(1, 15)
+group_counts(2, 15)
 
 # Calculate Counts and Count Rate
 data_sum = calc_data_sum()
@@ -31,11 +33,11 @@ data_cnt_rate = calc_data_sum()/get_exposure()
 print("Data Counts Rate =", data_cnt_rate)
 
 set_xsxset("APECROOT", "/home/prayag/Software/ciao-4.17/spectral/modelData/apec_v3.0.9") # Use correct APECROOT
-set_source(xstbabs.abs1*xsvapec.v1) # Fit APEC Model + Gaussian
+set_source(1, xstbabs.abs1*xsvapec.v1) # Fit APEC Model
+set_source(2, abs1*v1) # Fit APEC Model
 # g1.Sigma=0.2
 set_par("abs1.nH", min=0.0767)
-# v1.kT = 21
-# freeze(v1.kT) # freeze temperature like Chandra 2024 does
+thaw(v1.Fe)
 set_xsabund("wilm")
 print("Configured.")
 
@@ -54,6 +56,7 @@ print("Got Confidence.")
 print("Formatting Plot(s)...")
 # plot("bkg")
 set_ylog()
+# plot("fit", 1, "fit", 2)
 plot_fit(color="royalblue")
 # plot_bkg_fit(overplot=True)
 plt.xlim(0.3, 8)
