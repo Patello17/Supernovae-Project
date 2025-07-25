@@ -14,7 +14,6 @@ rmf_B = "../productsB/nu90902520006B01_sr.rmf"
 bkg_rmf_B = "../productsB/nu90902520006B01_sr.rmf"
 
 # Load and Group Data
-# Load and Group Data
 load_pha(1, data_A)
 load_pha(2, data_B)
 load_arf(1, arf_A)
@@ -87,7 +86,7 @@ print("Plot Formatted.")
 
 # Get Flux
 print("Calculating Flux...")
-s1 = sample_flux(v1, 0.3, 8, num=1000) # Calculate Uncertainty for Flux
+s1 = sample_flux(v1+g1, 0.3, 8, num=1000) # Calculate Uncertainty for Flux
 print("Calculated Flux.")
 
 # Save Plot

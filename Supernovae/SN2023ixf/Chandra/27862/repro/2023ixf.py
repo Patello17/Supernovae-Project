@@ -25,7 +25,7 @@ set_par("abs1.nH", min=0.0767)
 v1.kT = 34
 freeze(v1.kT) # freeze temperature like Chandra 2024 does
 set_xsabund("wilm")
-# thaw(v1.Fe)
+thaw(v1.Fe)
 print("Configured.")
 
 print("Fitting...")

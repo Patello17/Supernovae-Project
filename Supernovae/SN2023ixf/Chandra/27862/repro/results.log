@@ -179,14 +179,14 @@ v1.Ca.max     = 1000.0
 v1.Ca.units   = ""
 v1.Ca.frozen  = True
 
-v1.Fe.default_val = 1.0
+v1.Fe.default_val = 4.924550515148496
 v1.Fe.default_min = 0.0
 v1.Fe.default_max = 1000.0
-v1.Fe.val     = 1.0
+v1.Fe.val     = 0.02969893971622173
 v1.Fe.min     = 0.0
 v1.Fe.max     = 1000.0
 v1.Fe.units   = ""
-v1.Fe.frozen  = True
+v1.Fe.frozen  = False
 
 v1.Ni.default_val = 1.0
 v1.Ni.default_min = 0.0
@@ -209,7 +209,7 @@ v1.Redshift.frozen  = True
 v1.norm.default_val = 1.0
 v1.norm.default_min = 0.0
 v1.norm.default_max = 1e+24
-v1.norm.val     = 0.0006774162979889766
+v1.norm.val     = 0.0007127574177612044
 v1.norm.min     = 0.0
 v1.norm.max     = 1e+24
 v1.norm.units   = ""
@@ -221,7 +221,7 @@ g1.integrate = True
 g1.LineE.default_val = 6.5
 g1.LineE.default_min = 0.0
 g1.LineE.default_max = 1000000.0
-g1.LineE.val     = 6.439340567753154
+g1.LineE.val     = 6.44631708953742
 g1.LineE.min     = 0.0
 g1.LineE.max     = 1000000.0
 g1.LineE.units   = "keV"
@@ -230,7 +230,7 @@ g1.LineE.frozen  = False
 g1.Sigma.default_val = 0.2
 g1.Sigma.default_min = 0.0
 g1.Sigma.default_max = 20.0
-g1.Sigma.val     = 0.832218165886787
+g1.Sigma.val     = 0.6737822894600618
 g1.Sigma.min     = 0.0
 g1.Sigma.max     = 20.0
 g1.Sigma.units   = "keV"
@@ -239,7 +239,7 @@ g1.Sigma.frozen  = False
 g1.norm.default_val = 1.0
 g1.norm.default_min = 0.0
 g1.norm.default_max = 1e+24
-g1.norm.val     = 2.4235058190848164e-05
+g1.norm.val     = 2.1798747362645217e-05
 g1.norm.min     = 0.0
 g1.norm.max     = 1e+24
 g1.norm.units   = ""
@@ -251,7 +251,7 @@ abs1.integrate = True
 abs1.nH.default_val = 1.0
 abs1.nH.default_min = 0.0
 abs1.nH.default_max = 1000000.0
-abs1.nH.val     = 3.1491964425182406
+abs1.nH.val     = 3.2633500942840348
 abs1.nH.min     = 0.0767
 abs1.nH.max     = 1000000.0
 abs1.nH.units   = "10^22 atoms / cm^2"
@@ -274,8 +274,8 @@ set_xsxset("APECROOT", "/home/prayag/Software/ciao-4.17/spectral/modelData/apec_
 
 ######### Calculated Fluxes
 
-Absorbed Flux: 8.817619619827493e-13 +1.6636013980015653e-13, 1.5064650169476652e-13
-Unabsorbed Flux: 1.3224091284955198e-12 +2.0033401185441452e-13, 2.042188010732907e-13
+Absorbed Flux: 9.434097694648662e-13 +1.4313275964155885e-13, 1.2522150881885898e-13
+Unabsorbed Flux: 1.4228653833970985e-12 +1.786896540853652e-13, 1.5618825062492583e-13
 
 ######### Calculated Confidences
 
@@ -286,11 +286,11 @@ fitname     = levmar
 statname    = chi2gehrels
 sigma       = 1
 percent     = 68.26894921370858
-parnames    = ('abs1.nH', 'v1.norm', 'g1.LineE', 'g1.Sigma', 'g1.norm')
-parvals     = (3.1491964425182406, 0.0006774162979889766, 6.439340567753154, 0.832218165886787, 2.4235058190848164e-05)
-parmins     = (-2.5959735785824773, None, -2.421233734389417, -0.49317298580993124, -1.1091422303625081e-05)
-parmaxes    = (0.6166885499583148, 9.312357664685491e-05, 3.6779594230373167, None, 0.0009668480395240751)
-nfits       = 131
+parnames    = ('abs1.nH', 'v1.Fe', 'v1.norm', 'g1.LineE', 'g1.Sigma', 'g1.norm')
+parvals     = (3.2633500942840348, 0.02969893971622173, 0.0007127574177612044, 6.44631708953742, 0.6737822894600618, 2.1798747362645217e-05)
+parmins     = (-2.695259793842181, None, None, -2.371235392673583, -0.3263939071652048, -8.923570021726719e-06)
+parmaxes    = (0.5161109006083096, 4.894851575432274, 6.979709897627121e-05, 2.5635558603056587, 13.89339695052004, 0.0008905377575411347)
+nfits       = 140
 
 ######## Counts and Count Rate
 

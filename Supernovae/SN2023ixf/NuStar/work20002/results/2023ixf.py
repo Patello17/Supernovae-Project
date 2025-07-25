@@ -35,7 +35,8 @@ print("Data Counts Rate =", data_cnt_rate)
 set_xsxset("APECROOT", "/home/prayag/Software/ciao-4.17/spectral/modelData/apec_v3.0.9") # Use correct APECROOT
 set_source(1, xstbabs.abs1*(xsvapec.v1+xsgaussian.g1)) # Fit APEC Model
 set_source(2, xstbabs.abs1*(xsvapec.v1+xsgaussian.g1)) # Fit APEC Model
-set_par("g1.Sigma", val=2, frozen=True)
+set_par("g1.Sigma", val=0.2, frozen=True)
+set_par("g1.LineE", val=6.5)
 set_par("abs1.nH", min=0.0767)
 thaw(v1.Fe)
 set_xsabund("wilm")
@@ -87,7 +88,9 @@ print("Plot Formatted.")
 
 # Get Flux
 print("Calculating Flux...")
-s1 = sample_flux(v1, 0.3, 8, num=1000) # Calculate Uncertainty for Flux
+s1 = sample_flux(v1+g1, 0.3, 8, num=1000) # Calculate Uncertainty for Flux
+# s2 = sample_flux(g1, 0.3, 8, num=1000) # Calculate Uncertainty for Flux due to Gaussian
+# print(s2)
 print("Calculated Flux.")
 
 # Save Plot

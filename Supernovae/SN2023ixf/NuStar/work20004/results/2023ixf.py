@@ -86,7 +86,9 @@ print("Plot Formatted.")
 
 # Get Flux
 print("Calculating Flux...")
-s1 = sample_flux(v1, 0.3, 8, num=1000) # Calculate Uncertainty for Flux
+s1 = sample_flux(v1+g1, 0.3, 8, num=1000) # Calculate Uncertainty for Flux
+# s2 = sample_flux(g1, 0.3, 8, num=1000) # Calculate Uncertainty for Flux due to Gaussian
+# print(s2)
 print("Calculated Flux.")
 
 # Save Plot
