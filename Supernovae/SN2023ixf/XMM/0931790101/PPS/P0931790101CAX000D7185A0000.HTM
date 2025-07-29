@@ -1,0 +1,219 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of VII/185</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Wed Jun 28 17:16:23 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0931790101OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of VII/185 :<BR>IRAS 1.2 Jy IRAS Redshift Survey (Strauss+ 1990-1995)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0931790101OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>VII/185</B>    IRAS 1.2 Jy IRAS Redshift Survey            (Strauss+ 1990-1995)
+================================================================================
+IRAS 1.2 Jy Redshift Survey Data File
+   Strauss M., Davis M., Yahil A., Huchra J.P.
+  &lt;Astrophys. J. 361, 49 (1990)&gt;
+  =<A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=1990ApJ...361...49S">1990ApJ...361...49S</A>
+   Strauss M., Huchra J.P., Davis M., Yahil A., Fisher K.B., Tonry J.
+  &lt;Astrophys. J. Suppl. 83, 29 (1992)&gt;
+  =<A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=1992ApJS...83...29S">1992ApJS...83...29S</A>
+   Fisher K.B., Huchra J.P., Strauss M.A., Davis M., Yahil A., Schlegel D.
+  &lt;Astrophys. J. Suppl. 100, 69 (1995)&gt;
+  =<A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=1995ApJS..100...69F">1995ApJS..100...69F</A>
+  =<A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=1995yCat.7185....0S">1995yCat.7185....0S</A>
+================================================================================
+<B>ADC_Keywords</B>: Infrared sources ; Photometry, infrared ; Redshifts
+
+
+<A NAME="sRM11.1"><B>Description</B>:
+    This is an explanation of the redshift survey of Fisher, Huchra,
+    Strauss, Davis, Yahil and Schlegel; the data set is described in full
+    in ApJ 361, 49 (1990). The data for the brighter half are included in
+    ApJ Supp 1992, 83, 29; the data for the fainter half are included in a
+    paper submitted for publication to the Astrophysical Journal
+    Supplement. The survey contains 9897 objects selected from the IRAS
+    database according to the criteria listed in that paper, briefly:
+                F60    &gt; 1.2 Jy;
+                F60<SUP>2</SUP> &gt; F12 f25;
+                |b|    &gt; 5;
+                high source density flag at 60 microns not raised.
+    Thus, the file consists of both galaxies and Galaxian contaminants;
+    this is explained below. The sample contains ~5320 galaxies, and 14
+    objects without id's at the present time.
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.36">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.37">&#215; <A HREF="#sRM2.1">catalog.dat</A>      132     9897   The data file
+<A NAME="sRM-F.38">&#215; exclude.lis        6     1465   Numbers of the lune bins that are excluded
+<A NAME="sRM-F.39">&#215; exclude.f         80      281   Fortran program to define excluded regions
+<HR>
+
+<A NAME="sRM13.1"><B>See also</B>:
+    <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=II/125">II/125</A> : IRAS catalogue of Point Sources, Version 2.0 (IPAC 1986)
+    <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=II/174">II/174</A> : IRAS 2Jy Redshift Survey Data File (Strauss+ 1992)
+
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.37"> catalog.dat</A>
+<HR>
+   Bytes Format  Units   Label   Explanations
+<HR>
+   1-  2  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?h" TARGET="explain">h</A>       RAh     <A HREF="#sRM3.1">Right Ascension B1950 (hours) (1)</A>
+   3-  4  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?min" TARGET="explain">min</A>     RAm     <A HREF="#sRM3.1">Right Ascension B1950 (minutes) (1)</A>
+   5-  8  F4.1   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>       RAs     <A HREF="#sRM3.1">Right Ascension B1950 (seconds) (1)</A>
+       9  A1     ---     DE-     <A HREF="#sRM3.1">Declination B1950 (sign) (1)</A>
+  10- 11  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEd     <A HREF="#sRM3.1">Declination B1950 (degrees) (1)</A>
+  12- 13  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>  DEm     <A HREF="#sRM3.1">Declination B1950 (minutes) (1)</A>
+  14- 15  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  DEs     <A HREF="#sRM3.1">Declination B1950 (seconds) (1)</A>
+  17- 20  I4   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?10-3%5bdJy%5d" TARGET="explain">10-3[dJy]</A> nf12    ? <A HREF="#sRM3.2">12&#181;m flux (2)</A>
+  21- 24  I4   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?10-3%5bdJy%5d" TARGET="explain">10-3[dJy]</A> nf25    ? <A HREF="#sRM3.2">25&#181;m flux (2)</A>
+  25- 28  I4   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?10-3%5bdJy%5d" TARGET="explain">10-3[dJy]</A> nf60    ? <A HREF="#sRM3.2">60&#181;m flux (2)</A>
+  29- 32  I4   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?10-3%5bdJy%5d" TARGET="explain">10-3[dJy]</A> nf100   ? <A HREF="#sRM3.2">100&#181;m flux (2)</A>
+      34  I1     ---     id      [0/4] <A HREF="#sRM3.9">IRAS-PSC association type (9)</A>
+      35  I1     ---     x       [0/8] <A HREF="#sRM3.3">IRAS-PSC extended object flag (3)</A>
+      36  A1     ---     CC      [A-L] <A HREF="#sRM3.4">IRAS-PSC correlation (4)</A>
+      37  A1     ---     v       [0-9Vnv] <A HREF="#sRM3.5">IRAS-PSC variability flag (5)</A>
+      38  A1     ---     s       <A HREF="#sRM3.6">Type of source (statusflag) (6)</A>
+      39  I1     ---     q_nf12  [1/3]? <A HREF="#sRM3.7">IRAS flux quality flag 12um (7)</A>
+      40  I1     ---     q_nf25  [1/3]? <A HREF="#sRM3.7">IRAS flux quality flag 25um (7)</A>
+      41  I1     ---     q_nf60  [1/3]? <A HREF="#sRM3.7">IRAS flux quality flag 60um (7)</A>
+      42  I1     ---    q_nf100  [1/3]? <A HREF="#sRM3.7">IRAS flux quality flag 100um (7)</A>
+  43- 53  A11    ---     optID   <A HREF="#sRM3.8">Optical counterpart name to the object (8)</A>
+      54  A1     ---    n_optID  [M] Unexplained note on optID
+  55- 59  F5.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     mag     ? Optical magnitude, where available
+  61- 65  I5     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    Hvel    ? Heliocentric velocity, from literature
+                                   (see (<A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/193">VII/193</A>)) or measured by us
+  66- 68  I3     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    e_Hvel  ? Heliocentric velocity error
+  69- 72  A4     ---     r_Hvel  Code for source of redshift in ZCAT (<A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/193">VII/193</A>)
+  73- 77  A5     ---     Ttype   de Vaucouleurs' T-type from ZCAT (<A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/193">VII/193</A>)
+  79- 84  A6     ---    UGC/ESO  Object ID from UGC or ESO catalog
+  90- 95  A6     ---     Sp      Internal flag coding the optical spectrum
+                                 in the CfA database
+  97-116  A20    ---     Comm    Miscellaneous comments from ZCAT (<A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/193">VII/193</A>)
+ 117-120  I4   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?10-3%5bdJy%5d" TARGET="explain">10-3[dJy]</A> pf12    ? <A HREF="#sRM3.2">IRAS-PSC 12&#181;m flux (2)</A>
+ 121-124  I4   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?10-3%5bdJy%5d" TARGET="explain">10-3[dJy]</A> pf25    ? <A HREF="#sRM3.2">IRAS-PSC 25&#181;m flux (2)</A>
+ 125-128  I4   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?10-3%5bdJy%5d" TARGET="explain">10-3[dJy]</A> pf60    ? <A HREF="#sRM3.2">IRAS-PSC 60&#181;m flux (2)</A>
+ 129-132  I4   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?10-3%5bdJy%5d" TARGET="explain">10-3[dJy]</A> pf100   ? <A HREF="#sRM3.2">IRAS-PSC 100&#181;m flux (2)</A>
+<HR>
+<A NAME="sRM3.1"><B>Note (1)</B>: The coordinates for all objects that appear in the IRAS PSC,
+     Version 2 (<A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=II/125">II/125</A>), are from that source, and are given as B1950.0;
+     there are also a few very large galaxies whose fluxes and coordinates
+     are taken from the Large Optical Galaxy Catalog (Rice et al. 1988,
+     Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/109">VII/109</A>)
+<A NAME="sRM3.2"><B>Note (2)</B>: The IRAS fluxes are coded in a compact logarithmic form:
+  nFx=1000*log(10Fx), or Fx=10<SUP>(nFx/1000-1)</SUP> for x=12, 25, 60, 100.
+  The fluxes are taken from the PSC, unless:
+  *  The object is extended at 60 microns (see the Note (3) below)
+  *  The object is variable (see the Note (5) below)
+  *  The object is of moderate flux quality at 60 microns (see q_nf60)
+  In these cases, we have obtained one-dimensional addscan's of the data and
+  used the zero-crossing flux from the median scan's in all four bands, as
+  supplied by SCANPI. Those sources flagged as extended in Rice et al.
+  (<A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/109">VII/109</A>) have fluxes from that source.
+<A NAME="sRM3.3"><B>Note (3)</B>: The extendflag indicates whether or not an object is flagged as
+  extended (SES(2) flag) in the IRAS-PSC. Values are:
+     0 = Not extended
+     1 = Extended at 12 microns
+     2 = Extended at 25 microns
+     3 = Extended at 12 and 25 microns
+     4 = Extended at 60 microns
+     5 = Extended at 12 and 60 microns
+     6 = Extended at 25 and 60 microns
+     7 = Extended at 12, 25, and 60 microns
+     8 = Extended in Rice et al (<A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/109">VII/109</A>)
+<A NAME="sRM3.4"><B>Note (4)</B>: The correlation coefficient is taken from the PSC and represents
+     the best correlation coefficient between a hours-confirmed scan and
+     the point source template at 60&#181;m in the Point Source Data Base;
+     see the Explanatory Supplement for details.  A means 99% or better
+     correlation, B is between 98 and 99% and so on.
+<A NAME="sRM3.5"><B>Note (5)</B>: The varflag is a measure of variability in 12 and 25 microns:
+   n = No measure of variability available.
+   0 = No variability measured.
+   N = Variability between 1 and 10%.
+   1 = Variability between 10 and 20%
+   2 = Variability between 20 and 30%
+   3 = Variability between 30 and 40%
+   4 = Variability between 40 and 50%
+   5 = Variability between 50 and 60%
+   6 = Variability between 60 and 70%
+   7 = Variability between 70 and 80%
+   8 = Variability between 80 and 90%
+   9 = Variability between 90 and 100%
+<A NAME="sRM3.6"><B>Note (6)</B>: The statusflag indicates the identification of the source, and,
+    if it is a galaxy, the source of the redshift:
+  * Galaxies: O,H,Z,F,B,D. The distinction between these is uninteresting,
+    although Z indicates a source drawn from John Huchra's private version
+    of ZCAT.
+  * L indicates a Local Group galaxy.
+  * Non-galaxies:
+    M = HII region in external galaxy.
+    S = Star
+    s = Emission line star
+    C = Cirrus or dark cloud
+    P = Planetary nebula
+    R = Reflection Nebula
+    ? or E = Unidentified field.
+
+  These labels are by no means complete; we observed only a fraction of these
+  sources at the telescope.  See Strauss et al. 1990 (Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/185">VII/185</A>) and
+  Yahil et al. (<A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=1991ApJ...372..380Y">1991ApJ...372..380Y</A>) for a discussion of our estimate of the
+  number of sources flagged as cirrus that are indeed galaxies.
+<A NAME="sRM3.7"><B>Note (7)</B>: The flux qualities are taken from the PSC; one number between
+  one and three is given for each band:
+       1 = Not detected
+       2 = Moderate flux quality
+       3 = Good flux quality
+  If the flux given is from the PSC (as opposed to ADDSCAN), the flux listed
+  in a band with flux quality 1 will be an upper limit.
+<A NAME="sRM3.8"><B>Note (8)</B>: Optical identification is from a matching of the combined UGC,
+   Zwicky, and NGC catalogs.
+<A NAME="sRM3.9"><B>Note (9)</B>: The idtype is taken directly from the PSC; it ranges from 1 to 4:
+    1 = association found in an extragalactic catalogs
+    2 = association found in stellar catalogs
+    3 = association found in other catalogs
+    4 = association found in multiple types of catalogs
+<HR>
+
+<A NAME="sRM99.1"><B>Remark</B>:
+  There is a supplementary file, exclude.lis which contains the number of
+  the lune bins that are excluded (see Paper 1 for a full description).
+  There is a series of Fortran programs in exclude.f that should be used
+  to decide if a given object is in the excluded regions or not.  First,
+  run the program write_lmask, which reads the exclude.lis file and creates
+  a binary file lmask.lis, which has much faster I/O.  This only need be
+  done once. Your code will need to call init_lmask to read in lmask.lis,
+  and thereafter zones or not.
+--------------------------------------------------------------------------------
+
+  People may contact Michael Strauss at <A HREF="mailto:strauss@astro.princeton.edu">strauss@astro.princeton.edu</A>
+  if they have questions about these files.
+
+<A NAME="sRM99.2"><B>History</B>:
+  * 1995-02-06: Files prepared by Michael Strauss
+  * 1997-10-10: MCG and PK numbers which were truncated in the original
+    catalogue file have been replaced at CDS (Francois Ochsenbein)
+  * 2015-12-11: cosmetic changes at CDS
+================================================================================
+<B>(End)</B>  Michael Strauss [IAS]                                          1995-02-06
+
+</PRE><!-- ....wait for 1 children: %0=14508 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

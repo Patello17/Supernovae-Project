@@ -1,0 +1,491 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of VII/145</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Wed Jun 28 19:44:27 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0921180101OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of VII/145 :<BR>Nearby Galaxies Catalogue (NBG) (Tully 1988)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0921180101OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>VII/145</B>         Nearby Galaxies Catalogue  (NBG)     (Tully 1988)
+================================================================================
+Nearby Galaxies Catalogue
+      Tully R.B
+     &lt;Cambridge University Press (1988)&gt;
+================================================================================
+<B>ADC_Keywords</B>: Galaxy catalogs ;
+
+
+<A NAME="sRM11.1"><B>Description (Introduction of Catalog)</B>:
+    This compendium is a companion to the Nearby Galaxies Atlas (ref. 29;
+    hereafter NBG Atlas). Data has been accumulated on 2367 galaxies with
+    systemic velocities less than 3000 kilometers/second. Any galaxy was
+    admitted to the catalog if it had a known velocity in 1978 that
+    satisfied the specified limit of 3000 kilometers/second, or if it was
+    subsequently observed to have a suitable velocity in surveys of the
+    entire sky by the author and collaborators (ref. 6, 11, 22).
+
+    There are many sources of velocities, so this catalog could
+    potentially be quite heterogeneous. However, two sources dominate.
+    One of these is the magnitude-limited Shapley-Ames sample, which
+    assures the inclusion of all galaxies brighter than 12th magnitude in
+    the blue passband (ref. 25). There are 1053 Shapley-Ames galaxies
+    within the velocity limit. The other source was already mentioned: the
+    all-sky survey in the neutral hydrogen line by the author and
+    collaborators. This survey was undertaken after a complete
+    reinspection of photographic atlases of the sky. This survey was
+    insensitive to gas-deficient systems and has severe incompletion
+    problems at velocities beyond 2000 kilometers/second (discussed in
+    ref. 11). However, the virtue of our survey is homogeneous coverage
+    across the unobscured part of the sky. The neutral hydrogen survey
+    provides 1515 velocities to the catalog. There is some overlap
+    between the two principal sources. It is this cumulative sample that
+    is mapped in the NBG Atlas.
+
+    There are three parts to the catalog. The first and by far the largest
+    section (catalog) provides information about each of the 2367
+    galaxies. One element of that information is a group affiliation, and
+    in a second section (groups) there is a reordered listing that
+    clarifies the composition of each group. The final, very short section
+    (clusters) identifies the rich clusters of galaxies that delineate the
+    supercluster complexes mapped in the last two plates of the NBG Atlas.
+
+    The text of the atlas is written at a level that can be appreciated by
+    a wide audience. The material in this catalog and the following
+    description are of a more technical nature. This catalog is intended
+    for an audience of professional and motivated amateur astronomers.
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.52">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.53">&#215; <A HREF="#sRM2.1">catalog.dat</A>      328     2367   The Nearby Galaxies Catalog (NBG)
+<A NAME="sRM-F.54">&#215; <A HREF="#sRM2.2">groups.dat</A>        48     2368  *Lists by groups
+<A NAME="sRM-F.55">&#215; <A HREF="#sRM2.3">clusters.dat</A>      49      382   Identification of Rich clusters
+<HR>
+<A NAME="sRM3.1"><B>Note on groups</B>: this table contains all galaxies in "catalog", plus
+     our Galaxy (the Milky Way)
+<HR>
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.53"> catalog.dat</A>
+<HR>
+   Bytes Format  Units   Label    Explanations
+<HR>
+   1-  4  I4     ---     NBG      [1/2367]+ Running number
+   6- 13  A8     ---     Name     <A HREF="#sRM3.2">Galaxy Name (1)</A>
+  15- 16  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?h" TARGET="explain">h</A>       RAh      Right Ascension 1950 (hours)
+  17- 20  F4.1   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?min" TARGET="explain">min</A>     RAm      Right Ascension 1950 (minutes)
+      22  A1     ---     DE-      Declination 1950 (sign)
+  23- 24  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEd      Declination 1950 (degrees)
+  25- 26  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>  DEm      Declination 1950 (minutes)
+  28- 29  I2     ---     HubCode  [-5/13] <A HREF="#sRM3.3">Morphological type code (2)</A>
+  30- 31  A2     ---     HubPec   [BAXP ] <A HREF="#sRM3.3">Morphological peculiarities (2)</A>
+  34- 38  F5.1   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>  D25      ?=<A HREF="#sRM3.4">0 Observed diameter at 25mag/arcsec2</A>
+                                    isophote in blue (3)
+  40- 44  F5.1   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>  D25bi    ?=<A HREF="#sRM3.5">0 Corrected diameter (4)</A>
+      46  A1     ---     r_D25bi  [926451] <A HREF="#sRM3.6">Reference for D25bi (5)</A>
+  48- 51  F4.2   ---     d/D      ]0/1]?=0. Axial ratio of minor to
+                                    major diameter (= 1/R25)
+  54- 56  F3.0   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     i        <A HREF="#sRM3.7">inclination from face-on (6)</A>
+  58- 62  F5.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     BTbi     ?=<A HREF="#sRM3.8">0. Blue apparent magnitude adjusted</A>
+                                    for reddening (7)
+      64  A1     ---     r_BTbi   [0127635] <A HREF="#sRM3.9">Source for blue magnitudes (8)</A>
+  66- 70  F5.0   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    RVel     Heliocentric velocity
+  72- 74  I3     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    e_RVel   Mean error on RVel
+      76  I1     ---     RefHI    ]0/7]?=<A HREF="#sRM3.10">0 Reference to HI observation (9)</A>
+  78- 82  F5.0   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    V0       Systemic velocity (solar motion of 300km/s)
+  85- 90  F6.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     GLON     Galactic longitude
+  92- 97  F6.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     GLAT     Galactic latitude
+  99-104  F6.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     SGLON    Supergalactic longitude as in RC2
+ 106-111  F6.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     SGLAT    Supergalactic latitude as in RC2
+ 113-118  F6.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     MB       ?=0 Absolute blue magnitude of galaxy
+ 120-124  F5.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     m-M      Distance modulus (5log(R)+25)
+ 126-129  F4.1   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Mpc" TARGET="explain">Mpc</A>     R        <A HREF="#sRM3.11">Distance, assuming H=75km/s/Mpc (10)</A>
+ 131-135  F5.1   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?kpc" TARGET="explain">kpc</A>     Delta25  ?=0 Linear diameter (0.292 . D25bi * R)
+ 137-141  F5.1   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Mpc" TARGET="explain">Mpc</A>     SGX      X coordinate in SuperGalactic frame
+ 143-147  F5.1   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Mpc" TARGET="explain">Mpc</A>     SGY      Y coordinate in SuperGalactic frame
+ 149-153  F5.1   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Mpc" TARGET="explain">Mpc</A>     SGZ      Z coordinate in SuperGalactic frame
+ 156-160  F5.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     H-0.5bi  ?=<A HREF="#sRM3.11">0 Apparent magnitude at 1.6um</A>
+                                    adjusted for reddening (10)
+ 162-166  F5.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     B-H      color (note: different apertures in B and H)
+ 168-171  F4.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     ABi0     <A HREF="#sRM3.11">Obscuration within candidate galaxy (10)</A>
+ 173-176  F4.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     ABb      Obscuration within Milky Way
+ 179-181  I3     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    W20      ?=<A HREF="#sRM3.11">0 HI line width at 20% maximum (10)</A>
+ 182-184  I3     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    e_W20    ?=0 Uncertainty on W20
+ 186-188  I3     ---     r_W20    [2/301]?=<A HREF="#sRM3.12">0 Source for W20 (11)</A>
+ 190-193  F4.0   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    WR       ?=<A HREF="#sRM3.11">0 Rotational velocity profile width</A>
+                                    parameter (10)
+ 195-198  F4.0   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    WDi      ?=<A HREF="#sRM3.11">0 Global velocity, dynamical profile</A>
+                                    width parameter (10)
+ 201-205  F5.2 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%5b10%2b6solMass/Mpc2%5d" TARGET="explain">[10+6solMass/Mpc2]</A> logFc  ?=-9.99 log of HI flux
+                                    adjusted for resolution effects
+ 206-208  I3     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%25" TARGET="explain">%</A>       e_logFc  ]0/100]?=0 Relative error on logFc
+ 210-212  I3     ---     r_logFc  ?=<A HREF="#sRM3.12">0 Reference (source) for logFc (11)</A>
+ 214-217  F4.2   ---     fH       ?=<A HREF="#sRM3.13">0 Flux correction factor (12)</A>
+ 219-223  F5.2 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%5bsolMass%5d" TARGET="explain">[solMass]</A> log(MH)  ?=<A HREF="#sRM3.11">0 mass of HI (10)</A>
+ 225-229  F5.2 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%5bsolMass%5d" TARGET="explain">[solMass]</A> log(MT)  ?=<A HREF="#sRM3.11">0 Total mass of Galaxy (10)</A>
+ 231-235  F5.3   ---     MH/MT    ?=<A HREF="#sRM3.17">0 ratio of HI to total mass (16)</A>
+ 237-241  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%5bsolLum%5d" TARGET="explain">[solLum]</A> log(LB)  ?=<A HREF="#sRM3.11">0 Intrinsic blue luminosity of galaxy (10)</A>
+ 243-246  F4.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Sun" TARGET="explain">Sun</A>     MH/LB    ?=0 ratio of HI to blue luminosity
+ 248-252  F5.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Sun" TARGET="explain">Sun</A>     MT/LB    ?=0 Mass to blue luminosity ratio
+ 255-258  F4.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Mpc-3" TARGET="explain">Mpc-3</A>   rho      ?=<A HREF="#sRM3.14">0 Density of galaxies (13)</A>
+ 260-267  A8     ---     Group    [ 0-9+-] <A HREF="#sRM3.15">Group affiliation (14)</A>
+ 270-275  A6     ---     UGC/ESO  Designation in UGC (number &lt;= 12921) or ESO
+ 277-285  A9     ---     MCG      designation in MCG (Ref. 35)
+     287  A1     ---     inRC2    [2] '2' when the galaxy in RC2 (ref. 9)
+ 289-328  A40    ---  OtherNames  <A HREF="#sRM3.16">Other names separated by a comma (15)</A>
+<HR>
+<A NAME="sRM3.2"><B>Note (1)</B>: Entries are identified, in order of priority, by a
+  NGC number (preceded by N), or by an UGC number (preceded by U),
+  or by a name constructed from equatorial coordinates. See also
+  other names in the four rightmost columns.
+<A NAME="sRM3.3"><B>Note (2)</B>: the morphological type is given by a numeric code
+        that is slightly different from RC2 one
+        -5   E   Elliptical
+        -3 E/SO  Elliptical/Lenticular (classification uncertain)
+        -2  SO   Lenticular
+         0  SO/a Lenticular/Spiral
+         1  Sa   Spiral
+         2  Sab  Spiral
+         3  Sb   Spiral
+         4  Sbc  Spiral
+         5  Sc   Spiral
+         6  Scd  Spiral
+         7  Sd   Spiral
+         8  Sdm  Spiral
+         9  Sm   Spiral/irregular
+        10  Ir   Irregular
+        12  S    Spiral/irregular (classification uncertain)
+        13  P    Peculiar
+    Following the morphology number is a "B" (bar), "A" (absence of
+    a bar), "X" (intermediate case), "P" (existence of a peculiarity)
+<A NAME="sRM3.4"><B>Note (3)</B>: Conversions from diameters in the major catalogues are:
+   log(D25) = 0.983(D(UGC) + 0.3) - 0.051
+   log(D25) = 0.998(D(ESO) + 0.3) - 0.132
+   log(D25) = 1.020(D(MCG) + 0.3) - 0.007
+<A NAME="sRM3.5"><B>Note (4)</B>: Diameter adjusted for effects of projection and obscuration.
+    Adjustments are made according to the equation
+    log(D25bi) = log(D25) - c log(d/D) + ABb.KD25,  where
+        d/D  is the ratio of major to minor diameter (=1/R25)
+        c    = 0.22
+        ABb  is the Galactic (Milky Way) absorption in blue
+        KD25 = 0.09
+<A NAME="sRM3.6"><B>Note (5)</B>: Source of diameter in decreasing order of priority
+    9 = standards (ref.12)
+    2 = UGC (ref.20)
+    6 = ESO (ref.16)
+    4 = MCG (ref.35)
+    5 = BCG (ref.7)
+    1 ** unspecified
+<A NAME="sRM3.7"><B>Note (6)</B>: The inclination is almost always given by
+    i = 3deg + acos(sqrt(((d/D)^2 - 0.2^2)/(1 - 0.2^2)))
+<A NAME="sRM3.8"><B>Note (7)</B>: BTbi is computed from:
+    BTbi = BT - ABb - ABi0
+<A NAME="sRM3.9"><B>Note (8)</B>: Source of blue magnitudes in decreasing order of priority:
+    1 = Holmberg (ref.14)
+    2 = RC2 (ref.9)
+    7 = deVaucouleurs (ref.8)
+    6 = miscellaneous
+    3 = CGCG (ref.36)
+    5 = Harvard (ref.7)
+<A NAME="sRM3.10"><B>Note (9)</B>: The telescopes used are NRAO 91m and 43m,
+    the Max-Planck-Institut 100m and Parkes 64m, according
+    to the following code:
+    Code Telescope  Resolution
+      1        91      22 km/s
+      2        43      22
+      3        91       5.5
+      4        43       5.5
+      5       100       5.5
+      6       100      22
+      7        64       4.9
+<A NAME="sRM3.11"><B>Note (10)</B>: See also notes in the printed catalogue
+
+<A NAME="sRM3.12"><B>Note (11)</B>: Hydrogen line width and Flux literature references
+    2 R.J. Allen, B.F. Darchy, and R. Lauque, A&amp;A 10,198, 1971.
+    3 R.J. Allen, W.M. Goss, R. Sancisi, W.T. Sullivan, III, and
+           H. van Woerden. In "The Formahon and Dynamics of Galaxies",
+           IAU Symposium, no. 58, ed. J.R. Shakeshaft, p.425.
+           Dordrecht: Reidel, 1974.
+    5 C. Balkowski, L. Bottinelli, P. Chamaraux, L. Gouguenheim, and
+           J. Heidmann, A&amp;A 34, 43, 1974.
+    6 C. Balkowski, L. Bottinelli, L. Gouguenheim, and J. Heidmann,
+           A&amp;A 21, 303, 1972.
+    7 C. Balkowski, L. Bottinelli, L. Gouguenheim, and J. Heidmann,
+           A&amp;A 23, 139, 1973.
+   10 L. Bottinelli, P. Chamaraux, L. Gouguenheim, and J. Heidmann,
+           A&amp;A 29, 217, 1973.
+   11 L. Bottinelli, P. Chamaraux, L. Gouguenheim, and R. Lauque,
+           A&amp;A 6, 453, 1970.
+   12 L. Bottinelli, R. Duflot, L. Gouguenheim, and J. Heidmann,
+           A&amp;A 41, 61, 1975.
+   17 L. Bottinelli, L. Gouguenheim, and J. Heidmann, A&amp;A 22, 281, 1973.
+   20 N. Carozzi, P. Chamaraux, and R. Duflot-Augarde, A&amp;A 30, 21, 1974.
+   21 P. Chamaraux, J. Heidmann, and R. LauqueLA, A&amp;A 8, 424, 1970.
+   24 R.D. Davies, and B.M. Lewis, MNRAS 165, 231, 1973.
+   25 J. E Dean, and R. D. Davies, MNRAS 170, 503, 1975.
+   36 L. Gouguenheim, A&amp;A 3, 281, 1969.
+   41 W. Huchtmeier, A&amp;A 17, 207, 1972.
+   51 B.M. Lewis, and R.D. Davies, MNRAS 165, 213, 1973.
+   54 W.H. McCutcheon, and R.D. Davies, MNRAS 150, 337, 1970.
+   56 S.D. Peterson, and G.S. Shostak, AJ 79, 767, 1974.
+   60 M.S. Roberts, AJ, 73, 945, 1968.
+   66 B.J. Robinson, and K.J. van Damme, Australian J. Physics, 19, 111, 1966.
+   67 B.J. Robinson, and J.A. Koehler, Nature, 208, 993, 1965.
+   69 D.H. Rogstad, I.A. Lockhard, and M.C.H. Wright, ApJ 193, 309, 1974.
+   72 D.H. Rogstad, and G.S. Shostak, A&amp;A 22, 111, 1973.
+   76 R.R. Sholbrook, and B.J. Robinson, Australian J. Physics, 20, 131, 1967.
+   77 G.S. Shostak, ApJ 187, 19, 1974.
+   79 G.S. Shostak, ApJ 198, 527, 1975.
+   80 G.S. Shostak, and D.H. Rogstad, A&amp;A 24, 405, 411, 1973.
+   96 E.E. Epstein, AJ 69, 490, 1964.
+  102 J.V. Hindman, F.J. Kerr, and R.X. McGee, Australian J. Physics,
+            16, 570, 1963.
+  105 L. Volders, and J.A. Hogbom, Bull. Astron. Inst. NL, 15, 307, 1961.
+  106 J. Heidmann, Bull. Astron. Inst. NL, 15, 314, 1961.
+  201 W.K. Huchtmeier, G.A. Tammann, and H.J. Wendker, A&amp;A 46, 381, 1976.
+  202 W.K. Huchtmeier, G.A. Tammann, and H.J. Wendker, A&amp;A 57, 313, 1977.
+  203 B. Balick, S.M. Faber, and J.S. Gallagher, ApJ 209, 710, 1976.
+  204 J.S. Gallagher, S.M. Faber, and B. Balick, ApJ 202, 7, 1976.
+  205 G.R. Knapp, J.S. Gallagher, S.M. Faber, and B. Balick, ApJ 82, 106, 1977.
+  206 A. Bosma, R.D. Ekers, J. Lequeux, A&amp;A 57, 97, 1977.
+  208 D.A. Cesarsky, E.G. Falgarone, and J. Lequeux, A&amp;A 59, L5, 1977.
+  209 P. Chamaraux, A&amp;A 60, 67, 1977.
+  210 J.H. Bieging, and P. Biermann, A&amp;A 6b, 361, 1977.
+  211 J.R. Dickel, and H.J. Rood, ApJ 223, 391, 1978.
+  212 R.J. Allen, J.M. van der Hulst, W.M. Goss, and W. Huchtmeier,
+          A&amp;A 64, 359, 1978.
+  214 C. Balkowski, P. Chamaraux, and L. Weliachew, A&amp;A 69, 263, 1978.
+  216 J.H. Bieging, A&amp;A 64, 23, 1978.
+  217 G.S. Shostak, A&amp;A 68, 321, 1978.
+  218 T.D. Kinman, V.C. Rubin, N. Thonnard, W.K. Ford, Jr., and
+            C.J. Peterson, ApJ 82, 871, 1977.
+  220 G.D. van Albada, A&amp;A 61, 297, 1977.
+  222 A.J. Longmore, T.G. Hawarden, B.L. Webster, W.M. Goss, and
+            U. Mebold, MNRAS 184, 97P, 1978.
+  223 N. Krumm, and E.E. Salpeter, ApJ 227, 776, 1979.
+  225 K.Y. Lo, and W.L.W. Sargent, ApJ 227, 756, 1979.
+  226 T.X. Thuan, and P.D. Seitzer, ApJ 231, 327, 1979.
+  300 G. Helou, C. Giovanardi, E.E. Salpeter, and N. Krumm, ApJS 46, 267, 1981.
+  301 K. Reif, U. Mebold, W.M. Goss, H. van Woerden, and B. Siegman,
+          A&amp;AS 50, 451, 1982.
+<A NAME="sRM3.13"><B>Note (12)</B>: All HI observations by the author and collaborators were
+    single-beam measurements with a beam that is frequently smaller
+    than the size of the source. The corrections are discussed in Ref.11
+<A NAME="sRM3.14"><B>Note (13)</B>: density of galaxies brighter than -16mag in the vicinity
+    of the entry. The local density was determined on a 3D-grid at
+    0.5Mpc spacing. See the details in the printed catalogue
+<A NAME="sRM3.15"><B>Note (14)</B>: galaxies may be affiliated with other galaxies in groups,
+    associations, or clouds. The affiliations are described by a code
+    in the form  AB&#177;CD+EF :
+    a galaxy is located in cloud AB (see Note (1) in table "<B>groups</B>"),
+    group -CD  or first level association +CD,
+    and second level association +EF.
+    Galaxies are ordered by group in table "<B>groups</B>"
+<A NAME="sRM3.16"><B>Note (15)</B>: The alternative names are that date back before 1976 can be
+    found in BGC (ref.7) and RC2 (ref.9). More recent sources are designated
+      Arak   = Arakelian       (ref. 3)
+      CVndw  = Lo and Sargent  (ref.18)
+      Kar    = Karachentseva   (ref.15)
+      M81dw  = Lo and Sargent  (ref.18)
+      RMB    = Rubin et al.    (ref.24)
+      SAGDIG = Cesarsky et al. (ref. 5)
+      SCLDIG = Laustsen et al. (ref.17)
+      Scl    = Rubin et al.    (ref.23)
+      Turn   = Turner          (ref.32)
+      UGCA   = Nilson          (ref.21)
+      UKS    = Longmore et al. (ref.19)
+    At the very end of this column there may be a notation that indicates
+    if the galaxy has a Seyfert(S) or LINER(L) active nucleus;
+    the number that follows specifies whether the type is 1, or 2,
+    or an intermediate case.
+<A NAME="sRM3.17"><B>Note (16)</B>: is sometimes larger than 1 due to the different methods
+    for the computations of MH and MT
+<HR>
+
+<A NAME="sRM2.2"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.54"> groups.dat</A>
+<HR>
+   Bytes Format  Units   Label    Explanations
+<HR>
+   1-  8  A8     ---     Group    [ 0-9+-] <A HREF="#sRM3.18">Group identification (1)</A>
+  13- 20  A8     ---     Name     Galaxy name, as in catalog
+  24- 25  I2     ---     HubCode  [-5/13] Morphological type code
+  26- 27  A2     ---     HubBar   [BAXP ]
+  31- 36  F6.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     MB       ? Absolute blue magnitude of galaxy
+      37  A1     ---     MWay     [*] flag for our Galaxy
+  41- 45  F5.0   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    V0       Systemic velocity
+<HR>
+<A NAME="sRM3.18"><B>Note (1)</B>: the first two digits designate the Cloud, as follows:
+    11=Virgo Cluster and Southern Extension
+    12=Ursa Major Cloud
+    13=Ursa Major Southern Spur
+    14=Coma - Sculptor Cloud
+    15=Leo Spur
+    16=Centaurus Spur
+    17=Triangulum Spur
+    18=Perseus Cloud
+    19=Pavo - Ara Cloud
+    21=Leo Cloud
+    22=Crater Cloud
+    23=Centaurus Cloud
+    24=Lynx Cloud
+    31=Antlia - Hydra Cloud
+    32=Cancer - Leo Cloud
+    33=Carina Cloud
+    34=Lepus Cloud
+    41=Virgo - Libra Cloud
+    42=Canes Venatici - Camelopardalis Cloud
+    43=Canes Venatici Spur
+    44=Draco Cloud
+    45=Coma Cloud
+    51=Fornax Cluster and Eridanus Cloud
+    52=Cetus - Aries Cloud
+    53=Dorado Cloud
+    54=Antlia Cloud
+    55=Apus Cloud
+    61=Telescopium - Grus Cloud
+    62=Pavo - Indus Spur
+    63=Pisces - Austrinus Spur
+    64=Pegasus Cloud
+    65=Pegasus Spur
+    66=Sagittarius Cloud
+    71=Serpens Cloud
+    72=Bootes Cloud
+    73=Ophiuchus Cloud
+    Other (multiple of 10) are Isolated groups.
+<HR>
+
+<A NAME="sRM2.3"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.55"> clusters.dat</A>
+<HR>
+   Bytes Format  Units   Label    Explanations
+<HR>
+   1-  3  A3     ---     SuperCl  <A HREF="#sRM3.19">Complex/Supercluster designation (1)</A>
+       5  A1     ---     Flag     [+*] <A HREF="#sRM3.20">See Note (2)</A>
+   7- 17  A11    ---     Cluster  designation (Abell or Anonymous)
+  21- 26  F6.4   ---     z        Redshift
+  31- 35  F5.0   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Mpc" TARGET="explain">Mpc</A>     SGX      X coordinate in SuperGalactic frame
+  38- 42  F5.0   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Mpc" TARGET="explain">Mpc</A>     SGY      Y coordinate in SuperGalactic frame
+  45- 49  F5.0   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Mpc" TARGET="explain">Mpc</A>     SGZ      Z coordinate in SuperGalactic frame
+<HR>
+<A NAME="sRM3.19"><B>Note (1)</B>: the notation is A.B, where A designates a complex, and A.B
+       the Supercluster, as follows:
+    1   PISCES - CETUS SUPERCLUSTER COMPLEX
+    1.1    Pisces - Cetus Supercluster
+    1.2    Perseus - Pegasus Chain
+    1.3    Pegasus - Pisces Chain
+    1.4    Sculptor Region
+    1.5    Virgo - Hydra - Centaurus Supercluster
+    2   AQUARIUS SUPERCLUSTER COMPLEX
+    2.1    Aquarius - Capricornus Region
+    2.2    Aquarius Region
+    3   HERCULES - CORONA BOREALIS SUPERCLUSTER COMPLEX
+    3.1    Hercules Supercluster
+    3.2    Bootes Supercluster
+    3.3    Corona Borealis Supercluster
+    3.4    Corona Borealis - Hercules Supercluster
+    4   LEO SUPERCLUSTER COMPLEX
+    4.1    Leo Supercluster
+    4.2    Leo - Coma Supercluster
+    4.3    Sextans Supercluster
+    5   URSA MAJOR SUPERCLUSTER COMPLEX
+    5.1    Ursa Major Supercluster
+    5.2    Draco Supercluster
+<A NAME="sRM3.20"><B>Note (2)</B>: the '*' indicates the cluster is in a sufficiently dense region
+    in the core of the complex that a pathway can be found to every other
+    cluster with an '*' in the same complex with cluster-to-cluster steps
+    of less than 40Mpc.
+    The '+' designates associations with the incompletely surveyed
+    Indus region.
+<HR>
+
+<A NAME="sRM90.1"><B>References</B>:
+   1. Aaronson, M., J. Huchra, J.R. Mould, R.B. Tully, J.R. Fisher,
+      H. van Woerden, W.M. Goss, P. Chamaraux, U. Mebold, B. Siegman,
+      G. Berriman, and S.E. Persson. ApJS 50, 241, 1982.
+   2. Aaronson, M., J.R. Mould, and J. Huchra, ApJ 237, 655, 1980.
+   3. Arakelian, M.A., Soobshcheniya Byurakanskoj Observatorii, 47, 3, 1975.
+   4. Burstein, D., and C. Heiles. ApJ 225, 40, 1978.
+   5. Cesarsky, D.A., S. Lausten, J. Lequeux, H.E. Schuster, and
+      R.M. West, A&amp;A 61, L31, 1977.
+   6. Chamaraux, P., W.M. Goss, U. Mebold, R.B. Tully, and
+      H. van Woerden, unpublished.
+   7. de Vaucouleurs, G., and A. de Vaucouleurs. Reference Catalogue of
+      Bright Galaxies. Austin: University of Texas Press, 1964 (BGC).
+   8. de Vaucouleurs, G., A. de Vaucouleurs, and R. Buta.
+      AJ 86, 1429, 1981.
+   9. de Vaucouleurs, G., A. de Vaucouleurs, and H.G. Corwin, Jr. Second
+      Reference Cahlogue of Bright Galaxies. Austin: University of Texas
+      Press, 1976 (RC2).
+  10. Dreyer, J.L.E. New General Catalogue of Nebulae and Clusters of
+      Stars, 1888. Reprinted in Mem. R. Astron. Soc., 1962 (NGC).
+  11. Fisher, J.R., and R.B. Tully. ApJS 47, 139, 1981.
+  12. Fouque, P., and G. Paturel. A&amp;AS 53, 351, 1983.
+  13. Fouque, P., and G. Paturel. A&amp;A 150, 192, 1985.
+  14. Holmberg, E.B., Meddelande Lunds Obs., Series II, No. 136, 1958.
+  15. Karachentseva, V., Soobshcheniya Byurakanskoj Obs. 39, 61, 1968.
+  16. Lauberts, A., ESO/Uppsala Survey of the ESO(B) Atlas, Garching bei
+      Munchen (Germany): European Southern Observatory, 1982 (ESO).
+  17. Laustsen, S., W. Richter, J. van der Lans, R.M. West, and
+      R.N. Wilson. A&amp;A 54, 639, 1977.
+  18. Lo, K.Y., and W.L.W. Sargent, ApJ 227, 756, 1979.
+  19. Longmore, A.J., T.G. Hawarden, B.L. Webster, W.M. Goss, and
+      U. Mebold, MNRAS 184, 97P, 1978.
+  20. Nilson, P., Uppsala General Catalogue of Galaxies. Uppsala, Sweden:
+      Societatis Scientiarum Upsaliensis, 1973 (UGC).
+  21. Nilson, P., Catalogue of Selected Non-UGC Galaxies, Uppsala
+      Astron. Obs. Rep. No. 5, 1974.
+  22. Reif, K., U. Mebold, W.M. Goss, H. van Woerden, and B. Siegman,
+      A&amp;A 50, 451, 1982.
+  23. Rubin, V.C., W.K. Ford, Jr., N. Thonnard, M.S. Roberts, and
+      J.A. Graham, AJ 81, 687, 1976.
+  24. Rubin, V.C., S. Moore, and E.C. Bertiau, AJ 72, 59, 1967.
+  25. Sandage, A., AJ 83, 711, 1978.
+  26. Tully, R.B., ApJ 321, 280, 1987.
+  27. Tully, R.B., ApJ 323, 1, 1987.
+  28. Tully, R.B. AJ 96, 73, 1988.
+  29. Tully, R.B., and J.R. Fisher. Nearby Galaxies Atlas. Cambridge:
+      Cambridge University Press, 1987 (NBG Atlas).
+  30. Tully, R.B., and P. Fouque, ApJS 58, 67, 1985.
+  31. Tully, R.B., and E.J. Shaya. ApJ 281, 31, 1984.
+  32. Turner, E.L., ApJ 208, 20, 1976.
+  33. van den Bergh, S., ApJ 131, 215, 1960.
+  34. van den Bergh, S., AJ 71, 922, 1966.
+  35. Vorontsov-Velyaminov, B.A., A.A. Krasnogorskaya, and V.P. Arkipova.
+      Morphological Cahlogue of Galaxies, Vols.  1-5. Moscow:
+      Sternberg Institution, 1962-74 (MCG).
+  36. Zwicky, E,E. Herzog, P. Wild, M. Karpowicz, and C.T. Kowal,
+      Catalogue of Galaxies and Clusters of Galaxies, Vols.  1-6.
+      Pasadena: California Institute of Technology, 1961-68 (CGCG).
+
+<A NAME="sRM99.1"><B>Historical Notes</B>:
+  * The original files were received from ADC/Greenbelt in 1994
+    as 3 data files tully.data1, tully.data2 and tully.data3,
+    and a Fortran program tully.software to read the parameters of
+    a galaxy which are on three lines in the file tully.data3
+  * 04-Jul-1995: data files converted to standard tables.
+    A control character \001 in record#2168 (2119-45)
+    has been removed, and the ReadMe file was generated.
+================================================================================
+<B>(End)</B>                                    Francois Ochsenbein [CDS]   20-Jul-1994
+
+</PRE><!-- ....wait for 1 children: %0=26606 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

@@ -1,0 +1,807 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of VII/290</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Sun Jul 23 17:43:43 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0921180301OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of VII/290 :<BR>The Million Quasars (Milliquas) catalogue, version 7.2 (Flesch, 2021)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0921180301OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>VII/290</B>    The Million Quasars (Milliquas) catalogue, version 7.2 (Flesch, 2021)
+================================================================================
+The Million Quasars (MILLIQUAS) catalogue, version 7.2.
+   Flesch E.W.
+   &lt;Pub. Astron. Soc. Australia 32, 10 (2015)&gt;
+   =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2015PASA...32...10F">2015PASA...32...10F</A>
+   =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2021yCat.7290....0F">2021yCat.7290....0F</A>
+================================================================================
+<B>ADC_Keywords</B>: QSOs ; Active gal. nuclei ; Redshifts ; Magnitudes
+
+<B>Keywords</B>: catalogs - quasars: general
+
+
+<A NAME="sRM11.1"><B>Description</B>:
+    This is a compendium of 829666 type-I QSOs and AGN, largely complete
+    from the literature to 30 April 2021 including SDSS-DR16 quasars and
+    VLASS radio. Also included are 703348 candidates which are calculated
+    as 60%-100% likely to be quasars, including 225051 which are
+    radio/X-ray associated. Type-II and Bl Lac objects are also included,
+    bringing the total count to 1573824. Gaia-DR2 astrometry is used
+    where available, amounting to ~66% of all objects.
+
+    Changes from version 7.1 are:
+    (1) Quasars added from publications to 30 April 2021.
+    (2) The VLASS Quick Look radio catalog is included, which adds 34189
+        new radio core associations and 6793 probable double radio lobe
+        associations.
+    (3) Ongoing audits of SDSS &amp; LAMOST quasars have led to a few
+         additions &amp; drops. Some WISEA-supported SDSS/LAMOST pipeline
+         quasars are now accepted which were otherwise marginal. Also
+         some likely galaxies removed.
+
+    Low-confidence/quality or questionable objects (so deemed by their
+    researchers) are not included in Milliquas. Additional quality cuts
+    can apply as detailed in the HMQ paper (Flesch, <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2015PASA...32...10F">2015PASA...32...10F</A>).
+    Full QSO/AGN classification is via spectral lines, thus hidden /
+    occluded objects may be absent from Milliquas. Two NIQs offset
+    &lt;2-arcsecs can be reported as a single object if within the same host.
+    The aim here is to present one unique reliable object per each data
+    row.
+
+    The catalog format is simple, each object is shown as one line bearing
+    the J2000 coordinates, its original name, object class, red and blue
+    optical magnitudes, PSF class, redshift, the citations for the name
+    and redshift, plus up to four radio/X-ray identifiers where
+    applicable.
+
+    Please cite as Milliquas v7.2, Flesch, E.W. 2021, arXiv:2105.12985 or
+    as Milliquas v7.2 (2021) update, Flesch, E.W. <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2015PASA...32...10F">2015PASA...32...10F</A>.
+
+    Questions/comments/praise/complaints may be directed to me at
+    eric(at)flesch.org.
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.55">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.56">&#215; <A HREF="#sRM2.1">catalog.dat</A>      192  1573824   The catalogue (v7.2), 30-April-2021
+<A NAME="sRM-F.57">&#215; <A HREF="#sRM2.2">refs.dat</A>         162     2171   References (for numerical references)
+<HR>
+
+<A NAME="sRM13.1"><B>See also</B>:
+  <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/273">VII/273</A> : The Half Million Quasars (HMQ) catalogue (Flesch, 2015)
+  <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/277">VII/277</A> : The Million Quasars (Milliquas) catalogue (V4.8) (Flesch, 2016)
+  <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/280">VII/280</A> : The Million Quasars (Milliquas) catalogue (V5.2) (Flesch, 2017)
+  <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/283">VII/283</A> : The Million Quasars (Milliquas) catalogue (V6.3) (Flesch, 2019)
+
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.56"> catalog.dat</A>
+<HR>
+   Bytes Format Units   Label    Explanations
+<HR>
+   1- 11  F11.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     RAdeg    <A HREF="#sRM3.1">Right ascension J2000 (degrees) (1)</A>
+  13- 23  F11.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEdeg    <A HREF="#sRM3.1">Declination J2000 (degrees) (1)</A>
+  26- 50  A25   ---     Name     <A HREF="#sRM3.2">ID from the literature, or J2000 (2)</A>
+  52- 55  A4    ---     Type     <A HREF="#sRM3.3">Classification of object, and associations (3)</A>
+  57- 61  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Rmag     ?=<A HREF="#sRM3.4">0 Red optical magnitude (4)</A>
+  63- 67  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Bmag     ?=<A HREF="#sRM3.4">0 Blue optical magnitude (4)</A>
+  69- 71  A3    ---     Comment  <A HREF="#sRM3.5">Comment on optical object (5)</A>
+      73  A1    ---     R        <A HREF="#sRM3.6">Red Optical PSF class (6)</A>
+      75  A1    ---     B        <A HREF="#sRM3.6">Blue Optical PSF class (6)</A>
+  77- 82  F6.3  ---     z        ? <A HREF="#sRM3.7">Redshift from the literature or estimated (7)</A>
+  84- 89  A6    ---     rName    <A HREF="#sRM3.8">Citation for name (8)</A>
+  91- 96  A6    ---     rz       <A HREF="#sRM3.8">Citation for redshift (8)</A>
+  98-100  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pct" TARGET="explain">pct</A>     Qpct     ? <A HREF="#sRM3.9">Probability that this object is a QSO (9)</A>
+ 102-123  A22   ---     XName    <A HREF="#sRM3.10">X-ray ID, if any (10)</A>
+ 125-146  A22   ---     RName    <A HREF="#sRM3.10">Radio ID, if any (10)</A>
+ 148-169  A22   ---     Lobe1    <A HREF="#sRM3.10">Radio lobe ID or extra R/X ID, if any (10)</A>
+ 171-192  A22   ---     Lobe2    <A HREF="#sRM3.10">Radio lobe ID or extra R/X ID, if any (10)</A>
+<HR>
+<A NAME="sRM3.1"><B>Note (1)</B>: These are to 7 decimals which suits Gaia-DR2 astrometry.
+
+<A NAME="sRM3.2"><B>Note (2)</B>: Nameless radio/X-ray associated objects here show the J2000 position
+     in HHMMSS.SS+DDMMSS.S for the convenience of the user.  If needing a name
+     for it, just preface the J2000 with "MQ", e.g., MQ J000001.89+443053.8 .
+<A NAME="sRM3.3"><B>Note (3)</B>: Legend of type/class:
+     Q = QSO, type-I broad-line core-dominated, 790776 of these.
+     A = AGN, type-I Seyferts/host-dominated, 38890 of these.
+     B = BL Lac object, 2704 of these.
+     L = lensed quasar extra image, only 64 of these in this optical data.
+     K = NLQSO, type-II narrow-line core-dominated, 5316 of these.
+     N = NLAGN, type-II Seyferts/host-dominated, 32726 of these.  Includes an
+                unquantified residue of legacy NELGs/ELGs/LINERs.
+     q = quasar candidate of the displayed QSO likelihood, 559424 of these.
+     R = radio association displayed.
+     X = X-ray association displayed.
+     2 = double radio lobes displayed (declared by data-driven algorithm).
+<A NAME="sRM3.4"><B>Note (4)</B>: Optical data is mostly from the ASP optical catalog
+     (Flesch, <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2017PASA...34...25F">2017PASA...34...25F</A>) which presents data from the APM 
+     (<A HREF="http://www.ast.cam.ac.uk/~mike/apmcat">http://www.ast.cam.ac.uk/~mike/apmcat</A>), USNO-A &amp; USNO-B 
+     (<A HREF="http://www.nofs.navy.mil">http://www.nofs.navy.mil</A>), and the SDSS (<A HREF="http://sdss.org">http://sdss.org</A>).
+     APM/USNO-A magnitudes were recalibrated as documented in
+     <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2004A%26A...427..387F">2004A&A...427..387F</A>, so such USNO-A magnitudes are often used in
+     preference to USNO-B. APM/USNO-B galaxies &lt; mag 17 are usually shown
+     too bright due to PSF modelling. Integer magnitudes (e.g., 22.00) are
+     estimates if both bands are integer or one band empty. Note: many SDSS
+     magnitudes are "extinction-corrected" ~0.3 mag brighter than observed.
+<A NAME="sRM3.5"><B>Note (5)</B>: Legend as follows:
+     p = optical magnitudes are POSS-I O (violet 4050A) and E (red 6400A).
+          These are preferred because O is well-offset from E, and those plates
+          were always taken on the same night, thus the red-blue color is
+          correct even for variable objects.  Epoch is 1950's.
+     j = optical magnitudes are SERC J (Bj 4850A) and R (red 6400A) from the
+          POSS-II or UKST surveys.  Red-blue color is less reliable because the
+          red &amp; blue plates were taken in different epochs, i.e., years apart.
+     b = blue magnitude is Vega 4400A (Johnson), red is 6400A (Cousins).
+     g = blue magnitude is SDSS-type green 4900A, red is r 6200A.
+     u = blue magnitude is SDSS ultraviolet 3850A.
+     v = red magnitude is visual., i.e., white, 5500A midpoint.
+     i = red magnitude is infrared 7500A.
+     z = red magnitude is infrared z 8600A.
+     r = red magnitude is r 6200A.
+     (blank) =  Pan-STARRS r 6200A &amp; g 4900A, but red alone is 6400A (Cousins).
+     G = Gaia-DR2 astrometry shown, precessed to J2000 by CDS.  If 'G' is alone
+          then the magnitudes are Gaia RP &amp; BP, or Gaia G if red band only.
+     + = variability nominally detected in both red/blue over multi-epoch data.
+     m = proper motion nominally detected, from USNO-B.
+     % = swap of two "unplugged" SDSS spectra which crossed wires (7 of these).
+     a = object is host-dominated with faint nuclear activity, such as an SDSS
+          pipeline galaxy with an AGN subclass or AGN-classed elsewhere, see its
+          citation.  Milliquas class is 'A' if BROADLINE, else 'N'. (see note 2)
+<A NAME="sRM3.6"><B>Note (6)</B>: The APM, USNO-B, and SDSS provide PSF class, albeit using different
+     criteria. These are shown here as:
+     - = point source / stellar PSF (APM notation: -1, here truncated)
+     1 = fuzzy / galaxy shape       (APM notation: 1 and some 2)
+     n = no PSF available, whether borderline or too faint to tell, etc.
+     x = not seen in this band (fainter than plate depth, or confused, etc.)
+<A NAME="sRM3.7"><B>Note (7)</B>:  Spectroscopic/grism redshifts are required for objects classified as
+     Q/A/K/N/L and is optional for B (BL Lac type).  Photometric redshifts
+     rounded to 0.1z can be displayed for <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=B/R/X/2">B/R/X/2</A> objects, and are either taken
+     from the cited catalogue or calculated here using the four-colour method of
+     Flesch <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2015PASA...32...10F">2015PASA...32...10F</A>, Appendix 2, using 4 colours from SDSS ugriz,
+     Pan-STARRS grizy, or, for WISEA, the 4 colours B-R, R-W1, W1-W2, and W2-W3.
+<A NAME="sRM3.8"><B>Note (8)</B>: Legend (with counts of name and redshift) and references:
+  (for numerical reference code, see refs.dat file):
+
+  2dF (357,211)         : 2dF galaxy survey, Colless M. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2001MNRAS.328.1039C">2001MNRAS.328.1039C</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/250">VII/250</A>
+
+  2QZ (27520,24157)     : Croom S.M. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2004MNRAS.349.1397C">2004MNRAS.349.1397C</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/241">VII/241</A>
+
+  2SLAQ (10353,8679)    : Croom S.M. et al., 2009, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/MNRAS/392/19">J/MNRAS/392/19</A>
+
+  3FGL (16,11)          : Fermi cleanups, Paiano S. et al.,  <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2017ApJ...851..135P">2017ApJ...851..135P</A>
+
+  3FGL2 (21,19)         : Fermi cleanups II, Paiano S. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2019ApJ...871..162P">2019ApJ...871..162P</A>
+
+  3HSP (819,999)        : 3HSP blazars, Chang Y.-L. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2019A%26A...632A..77C">2019A&A...632A..77C</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/A%2BA/632/A77">J/A+A/632/A77</A>
+
+  3XLSS (25,25)         : The XXL Survey, Pierre M. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2016A%26A...592A...1P">2016A&A...592A...1P</A>, Cat, <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/49">IX/49</A>
+
+  4FGL1 (15,3)          : Fermi cleanups, de Menezes R. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2019A%26A...630A..55D">2019A&A...630A..55D</A>
+
+  4FGL2 (18,22)         : Fermi cleanups X, de Menezes R. et al.,
+                           2020Ap&amp;SS.365..12D
+
+  4LAC (367,349)        : Fermi AGN v4 + LL, Fermi-LAT collab.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2020ApJ...892..105A">2020ApJ...892..105A</A>
+
+  6dF (315,223)         : 6dF galaxy survey, Jones D.H. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2009MNRAS.399..683J">2009MNRAS.399..683J</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/259">VII/259</A>
+
+  AAOz (1491,1498)      : AAOmega XXL-South: Lidman C. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2016PASA...33....1L">2016PASA...33....1L</A>
+
+  AGES (2046,2046)      : AGES survey, Kochanek C.S. et al.,
+                           2012, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/ApJS/200/8">J/ApJS/200/8</A>
+
+  AGNELL (2,3)          : DES lenses, Agnello A. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2015MNRAS.454.1260A">2015MNRAS.454.1260A</A>
+
+  AGNELA (4,4)          : SDSS J1433+6007 4-lens, Agnello A. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018MNRAS.474.3391A">2018MNRAS.474.3391A</A>
+
+  AGNEL2 (13,13)        : VST-Gaia QSO pairs, Agnello A. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018MNRAS.475.2086A">2018MNRAS.475.2086A</A>
+
+  AKARI (1,1)           : overlooked luminous quasar, Aoki K. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2011PASJ...63S.457A">2011PASJ...63S.457A</A>
+
+  ALMA (4,4)            : ALMA hi-z, Roberto Decarli R. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018ApJ...854...97D">2018ApJ...854...97D</A>
+
+  ANDIKA (2,2)          : Hi-z starbursts: Andika I.T. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2020ApJ...903...34A">2020ApJ...903...34A</A>
+
+  ANGUIT (1,1)          : COSMOS lens, Anguita T. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2009A%26A...507...35A">2009A&A...507...35A</A>
+
+  ATel (5,5)            : Astronomers Telegraph posts,
+                           <A HREF="http://www.astronomerstelegram.org">http://www.astronomerstelegram.org</A>
+
+  ATHENS (86,108)       : VIPERS AGN SEDs, Pouliasis E. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2020MNRAS.495.1853P">2020MNRAS.495.1853P</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/MNRAS/495/1853">J/MNRAS/495/1853</A>
+
+  ATLAS (229,269)       : Mao M.Y. et al., 2012, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/MNRAS/426/3334">J/MNRAS/426/3334</A>
+
+  BAHM (24,24)          : dust-reddened QSOs, Banerji M. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2015MNRAS.447.3368B">2015MNRAS.447.3368B</A>
+
+  BASS (16,113)         : Swift-BAT AGN, Koss M. et al., 2017, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/ApJ/850/74">J/ApJ/850/74</A>
+
+  BERGHE (1,1)          : Pan-STARRS lens, Berghea C.T. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2017ApJ...844...90B">2017ApJ...844...90B</A>
+
+  BGGFC (4,4)           : COSMOS hi-z, Boutsia K. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018ApJ...869...20B">2018ApJ...869...20B</A>
+
+  BLAZZ (0,8)           : Blazar redshifts, Goldini P. et al.,
+                           2020,arXiv:2012.05176
+
+  BMCGCS (1,1)          : Belladitta S. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2019A%26A...629A..68B">2019A&A...629A..68B</A>
+
+  BMCS (1,1)            : Blazar at z&gt;6, Belladitta S. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2020A%26A...635L...7B">2020A&A...635L...7B</A>
+
+  BQLS (16,16)          : BOSS QSO lenses &amp; pairs, More A. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2016MNRAS.456.1595M">2016MNRAS.456.1595M</A>
+
+  BZCAT (4,3)           : Blazars catalog, Massaro E. et al.,
+                           <A HREF="http://www.asdc.asi.it/bzcat">http://www.asdc.asi.it/bzcat</A>
+
+  C-COSM (180,180)      : Chandra COSMOS IDs, Marchesi S. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2016ApJ...817...34M">2016ApJ...817...34M</A>
+
+  ChaMP (191,187)       : Trichas M. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2012ApJS..200...17T">2012ApJS..200...17T</A>
+
+  DABAST (1,1)          : Diaz-Santos T. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018Sci...362.1034D">2018Sci...362.1034D</A>
+
+  Dart (26,25)          : Heavily Obscured QSOs, Hviding R. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018MNRAS.474.1955H">2018MNRAS.474.1955H</A>
+
+  DDC2 (14,14)          : variable AGN, De Cicco D. et al., 2019,
+                           Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/A%2BA/627/A33">J/A+A/627/A33</A>
+
+  DEEP (143,139)        : DEEP2, Newman J. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2013ApJS..208....5N">2013ApJS..208....5N</A>;
+                           deep.ps.uci.edu/DR4
+
+  DES (1,1)             : Dark Energy hi-z, Reed S.L. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2015MNRAS.454.3952R">2015MNRAS.454.3952R</A>
+
+  DESQQ (26,26)         : STRIDES lenses, Anguita T. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018MNRAS.480.5017A">2018MNRAS.480.5017A</A>
+
+  DESQQ2 (12,12)        : STRIDES lenses, Treu T. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018MNRAS.481.1041T">2018MNRAS.481.1041T</A>
+
+  DPeake (683,656)      : Double-peaked NELGs, Ge J.-Q. et al., 2012,
+                           Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/ApJS/201/31">J/ApJS/201/31</A>
+
+  DR12 (6,6)            : Alam S. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2015ApJS..219...12A">2015ApJS..219...12A</A>,
+                           https://sdss.org/dr12
+
+  DR12Q (244,15)        : SDSS-DR12Q, Paris I. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2017A%26A...597A..79P">2017A&A...597A..79P</A>,
+                           Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/279">VII/279</A>
+
+  DR14 (12,44)          : Abolfathi B. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018ApJS..235...42A">2018ApJS..235...42A</A>, pipeline,
+                           data at
+                           https://data.sdss.org/sas/dr14/sdss/spectro/redux
+
+  DR14Q (1527,1538)     : SDSS-DR14Q, Paris I. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018A%26A...613A..51P">2018A&A...613A..51P</A>
+                           data at
+                           https://data.sdss.org/sas/dr14/eboss/qso/DR14Q
+
+  DR16 (41065,374519)   : Ahumada R. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2020ApJS..249....3A">2020ApJS..249....3A</A>, pipeline,
+                           data at
+                           https://data.sdss.org/sas/dr16/sdss/spectro/redux
+
+  DR16Q (715827,395233) : SDSS-DR16Q, Lyke B. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2020ApJS..250....8L">2020ApJS..250....8L</A>
+                           2 files, data at
+                           https://data.sdss.org/sas/dr16/eboss/qso/DR16Q
+
+  DR16QN (0,2132)       : same as above, using the QuasarNET redshift supplied.
+
+  DR7 (2,26)            : SDSS DR7, Abazajian K.N. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2009ApJS..182..543A">2009ApJS..182..543A</A>
+                           files at
+               <A HREF="http://classic.sdss.org/dr7/products/spectra/getspectra.html">http://classic.sdss.org/dr7/products/spectra/getspectra.html</A>
+
+  DR7Q (1967,200)       : SDSS Quasar DR7, Schneider D. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2010AJ....139.2360S">2010AJ....139.2360S</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/26">VII/26</A> data
+               <A HREF="http://classic.sdss.org/dr7/products/value_added/qsocat_dr7.html">http://classic.sdss.org/dr7/products/value_added/qsocat_dr7.html</A>
+
+  DUALQ (1,1)           : Dual QSOs HSC, Silverman J.D. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2020ApJ...899..154S">2020ApJ...899..154S</A>
+
+  DUHIZ (2,2)           : DECaLS-UKIRT hi-z, Wang F. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2017ApJ...839...27W">2017ApJ...839...27W</A>
+
+  Dusty (11,11)         : Dusty Starbursts, Rodighiero G. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2019ApJ...877...38H">2019ApJ...877...38H</A>
+
+  DUz6 (18,18)          : DESI &amp; UKIRT hi-z, Wang F. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2019ApJ...884...30W">2019ApJ...884...30W</A>
+
+  eHAQ (82,80)          : Extended High AV, Krogager J.-K., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2016ApJ...832...49K">2016ApJ...832...49K</A>
+
+  ELQ-PS (216,215)      : ELQS on PS1, Schindler J.-T. et al.,
+                           2019, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/ApJS/243/5">J/ApJS/243/5</A>
+
+  ELQS-N (38,38)        : ELQS in NGC, Schindler J.-T. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018ApJ...863..144S">2018ApJ...863..144S</A>
+
+  ELQS-S (126,126)      : ELQS in SGC, Schindler J.-T. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2019ApJ...871..258S">2019ApJ...871..258S</A>
+
+  FISCBA (1,1)          : HST lens, Fischer/Schade/Barrientos,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1998ApJ...503L.127F">1998ApJ...503L.127F</A>
+
+  FLES40 (40,0)         : Salvaged QSOs, Flesch E.W., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2021MNRAS.504..621F">2021MNRAS.504..621F</A>
+
+  FYNBO (1,1)           : LiBAL QSO, Fynbo J.P.U. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2020A%26A...634A..11D">2020A&A...634A..11D</A>
+
+  GAIA1 (21,21)         : Gaia DR1, Gaia Collaboration et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2016A%26A...595A...1G">2016A&A...595A...1G</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/337">I/337</A>
+
+  GAIA2 (236,232)       : Gaia DR2, Gaia Collaboration et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018A%26A...616A...1G">2018A&A...616A...1G</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/345">I/345</A> (GAIA data as
+                           presented by SIMBAD,
+                           <A HREF="http://simbad.u-strasbg.fr/simbad">http://simbad.u-strasbg.fr/simbad</A>)
+
+  GEIER (1,1)           : Geier S.J. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2019A%26A...625L...9G">2019A&A...625L...9G</A>
+
+  GGLS (3,4)            : Gaia GraL, Krone-Martins A. et al.,
+                           2019, arXiv:1912.08977
+
+  GLDD (1,1)            : Lensed QSO data-driven, Ostrovski F. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2017MNRAS.465.4325O">2017MNRAS.465.4325O</A>
+
+  GLIKMA (28,28)        : red WISE QSOs, Glikman E. et al.,
+                           2018, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/ApJ/861/37">J/ApJ/861/37</A>
+
+  GLOH (1,1)            : Grav Lensed Objs HSC, Jaelani A.T. et al.,
+                           2020,arXiv:2006.16584
+
+  GLRED (1,1)           : lensed red QSO, Glikman E. et al.,
+                           2018,arXiv:1807.05434
+
+  GQ (2,2)              : serendipitous binary, Altamura E. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2020AJ....159..122A">2020AJ....159..122A</A>
+
+  GRAL4 (10,10)         : Gaia Grav Lens quads, Stern D. et al.,
+                           2020,arXiv:2012.10051
+
+  GUTI (1,1)            : not a ULX, Gutierrez C.M., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2013A%26A...549A..81G">2013A&A...549A..81G</A>
+
+  GZPM (23,23)          : Gaia zero pm, Heintz K.E. et al.,
+                           2020, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/A%2BA/644/A17">J/A+A/644/A17</A>
+
+  H-DOGs (16,16)        : Herschel DOGs, Riguccini L.A. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2019A%26A...625A...9D">2019A&A...625A...9D</A>
+
+  HAQ (2,2)             : High AV serendipitous, Heintz K.E. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2016AJ....152...13H">2016AJ....152...13H</A>
+
+  HAQC (1,1)            : High AV in COSMOS, Heintz K.E. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2016A%26A...595A..13H">2016A&A...595A..13H</A>
+
+  HE2QS (103,103)       : HeII quasar survey, Schmidt T.M. et al.,
+                           2017, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/ApJ/847/81">J/ApJ/847/81</A>
+
+  HE2QS2 (5,5)          : HeII HST/COS quasars, Worseck G. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2019ApJ...875..111W">2019ApJ...875..111W</A>
+
+  HEINTZ (1,1)          : dusty absorbed QSO, Heintz K.E. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018A%26A...615A..43H">2018A&A...615A..43H</A>
+
+  HIZ7.5 (1,1)          : QSO z=7.5, Banados E. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018Natur.553..473B">2018Natur.553..473B</A>
+
+  HSC (3,3)             : Low-luminosity QSOs, Niida M. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2020ApJ...904...89N">2020ApJ...904...89N</A>
+
+  HSTvar (42,42)        : variable AGN, Pouliasis E. et al.,
+                           2019, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/MNRAS/487/4285">J/MNRAS/487/4285</A>
+
+  ICECUB (9,12)         : IceCube spectra, Paiano S. et al.,
+                           2021,arXiv:2104.05290
+
+  IGMCP (10,10)         : IGM close pairs, Rorai A. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2017Sci...356..418R">2017Sci...356..418R</A>
+
+  IKEDA (1,1)           : Ikeda H. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2017ApJ...846...57I">2017ApJ...846...57I</A>
+
+  IMDS (3,3)            : IR medium-deep hi-z VII, Shin S. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2020ApJ...893...45S">2020ApJ...893...45S</A>
+
+  IMS (1,1)             : IR medium-deep hi-z, Kim Y. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2015ApJ...813...35H">2015ApJ...813...35H</A>
+
+  IMS2 (10,11)          : IR medium-deep hi-z, Kim Y. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2019ApJ...870...86K">2019ApJ...870...86K</A>
+
+  INAF (1,1)            : UV bright hi-z, Grazian A. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2020ApJ...897...94G">2020ApJ...897...94G</A>
+
+  JERAM (1,1)           : extremely bright, Jeram S. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2020ApJ...899...76J">2020ApJ...899...76J</A>
+
+  JPLUS (24,24)         : luminous Ly, Spinoso D. et al.,
+                           2020, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/A%2BA/643/A149">J/A+A/643/A149</A>
+
+  K4K (2,2)             : K4000 bz, Uwitonze/Nkundabakura/Mutabazi,
+                           2020, arXiv:2004.03154
+
+  KHOR1 (7,6)           : 3XMM hi-z, Khorunzhev G.A. et al., 2017,AstL,43,135
+
+  KHOR2 (11,11)         : 3XMM hi-z, Khorunzhev G.A. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2019AstL...45..411K">2019AstL...45..411K</A>
+
+  KHOR3 (1,1)           : X-ray luminous, Khorunzhev G.A. et al.,
+                           2021, arXiv:2104.05142
+
+  KODQ3 (4,4)           : KODIAQ DR3, O'Meara J.M. et al., 2020,arXiv:2010.09061
+
+  KOVACS (1,1)          : bright QSO behind Milky Way, Kovacs T. et al.,
+                           2019, RNAAS, 3, 3
+
+  LAMDR6 (2966,3341)    : LAMOST-DR6, pipeline, <A HREF="http://dr6.lamost.org">http://dr6.lamost.org</A>
+
+  LAMQ1 (684,625)       : LAMOST QUASAR DR1, Ai Y.L. et al.,
+                           2016, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/AJ/151/24">J/AJ/151/24</A>
+
+  LAMQ3 (6698,6587)     : LAMOST QUASAR DR3/DR2, Dong X.Y. et al.,
+                           2018, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/AJ/155/189">J/AJ/155/189</A>
+  LAMQ5 (7938,7937)     : LAMOST QUASAR DR5/DR4, Yao S. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2019ApJS..240....6Y">2019ApJS..240....6Y</A>
+
+  LEMON (40,40)         : 24 Gaia lenses, Lemon C. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018MNRAS.479.5060L">2018MNRAS.479.5060L</A>
+
+  LEMON2 (30,30)        : 22 Gaia lenses, Lemon/Auger/McMahon,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2019MNRAS.483.4242L">2019MNRAS.483.4242L</A>
+
+  LEMON3 (53,52)        : STRIDES lenses etc, Lemon C. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2020MNRAS.494.3491L">2020MNRAS.494.3491L</A>
+
+  LGGS (11,11)          : M31/M33 area, Massey/Neugent/Levesque,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2019AJ....157..227M">2019AJ....157..227M</A>
+
+  LIDMAN (1,1)          : SN Host Galaxy redshifts, Lidman C. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2013PASA...30....1L">2013PASA...30....1L</A>
+
+  LIN (1,1)             : DES lens, Lin H. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2017ApJ...838...15L">2017ApJ...838...15L</A>
+
+  LIRAS (169,154)       : LoCuSS IR AGNs, Xu, L. et al.,
+                           2015, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/ApJS/219/18">J/ApJS/219/18</A>
+
+  LOZAGN (38,10997)     : Low-redshift AGN, Liu H.-Y. et al.,
+                           2019, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/ApJS/243/21">J/ApJS/243/21</A>
+
+  LSSA (2,1)            : 2 lenses, Lucey/Schechter/Smith/Anguita,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018MNRAS.476..927L">2018MNRAS.476..927L</A>
+
+  LUMIz5 (66,66)        : Luminous hi-z, Yang J. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2019ApJ...871..199Y">2019ApJ...871..199Y</A>
+
+  M31UV (1,1)           : UV flare QSO on M31, Meusinger H. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2010A%26A...512A...1M">2010A&A...512A...1M</A>
+
+  MALS-N (69,68)        : MEERKAT QSOs, Krogager J.-K. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018ApJS..235...10K">2018ApJS..235...10K</A>
+
+  MFJC (52,51)          : McGreer I.D., Fan X., Jiang L. &amp; Cai Z.,
+                           2018, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/AJ/155/131">J/AJ/155/131</A>
+
+  MQ (143925,539324)    : MILLIQUAS, original data in this catalog, Flesch E.,
+                           2021
+
+  NBCKDE (2559,2656)    : Richards G.T. et al., 2009, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/ApJS/180/67">J/ApJS/180/67</A>
+
+  NBCKv3 (13224,67795)  : NBCKDE v3, Richards G.T. et al.,
+                           2015, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/ApJS/219/39">J/ApJS/219/39</A>
+
+  NED (5,6)             : NASA/IPAC Extragalactic Database,
+                           https://ned.ipac.caltech.edu
+
+  OGLE2 (2,2)           : OGLE quasars, Kozlowski S. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2019ApJ...878..115K">2019ApJ...878..115K</A>
+
+  OVRLAP (5,5)          : SDSS overlap hi-z QSOs, Jiang L. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2015AJ....149..188J">2015AJ....149..188J</A>
+
+  OzDES (608,435)       : Dark Energy SN QSOs, Tie S.S. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2017AJ....153..107T">2017AJ....153..107T</A>
+
+  OzDES2 (751,921)      : DESN QSOs, Lidman C. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2020MNRAS.496...19L">2020MNRAS.496...19L</A>
+
+  P352-1 (1,1)          : P352-15, Banados E. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018ApJ...861L..14B">2018ApJ...861L..14B</A>
+
+  PETERS (245,268)      : photo special., Peters C.M. et al, <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2015ApJ...811...95P">2015ApJ...811...95P</A>
+
+  PFTS (2,11)           : blazar spectroscopy, Paiano S. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2020MNRAS.497...94P">2020MNRAS.497...94P</A>
+
+  PGC (12914,8)         : Principal Galaxy Catalog, Paturel G. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2003A%26A...412...45P">2003A&A...412...45P</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/237">VII/237</A>
+
+  PHILLI (1,0)          : MERLIN lens, Phillips P.M. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2000MNRAS.319L...7P">2000MNRAS.319L...7P</A>
+
+  PS1 (63,63)           : PAN-STARRS1 hi-z, Banados E. et al.,
+                           2016, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/ApJS/227/11">J/ApJS/227/11</A>
+
+  PS1hiz (1,1)          : Tang, Ji-Jia et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2017MNRAS.466.4568T">2017MNRAS.466.4568T</A>
+
+  PS1MAZ (6,6)          : Mazzucchelli C. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2017ApJ...849...91M">2017ApJ...849...91M</A>
+
+  PSO (3,3)             : PAN-STARRS z-dropouts, Venemans B.P. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2015ApJ...801L..11V">2015ApJ...801L..11V</A>
+
+  QLSV (21,20)          : QUEST-La Silla, Sanchez-Saez P. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2019ApJS..242...10S">2019ApJS..242...10S</A>
+
+  QPQ10 (70,70)         : Quasar pair DB, Findlay J.R. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018ApJS..236...44F">2018ApJS..236...44F</A>
+
+  QUBRIC (91,91)        : QUBRICS I, Calderone G. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2019ApJ...887....2Y">2019ApJ...887....2Y</A>
+
+  QUBRIX (249,252)      : QUBRICS II, Boutsia K. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2020ApJS..250...26B">2020ApJS..250...26B</A>
+
+  RBS (3,3)             : Laporte N. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2017ApJ...851...40L">2017ApJ...851...40L</A>
+
+  Redden (25,25)        : Reddened QSOs, Temple M.J. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2019MNRAS.487.2594R">2019MNRAS.487.2594R</A>
+
+  REQ4 (6,6)            : Reionization-Era quasars, Yang J. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2019AJ....157..236Y">2019AJ....157..236Y</A>
+
+  REQ7 (1,1)            : Reionization-Era QSO z=7.5,Yang J. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2020ApJ...897...14C">2020ApJ...897...14C</A>
+
+  RLQ (4,3)             : Tuccillo D./Gonzalez-Serrano J.I./Benn C.R.,
+                           2015, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/MNRAS/449/2818">J/MNRAS/449/2818</A>
+
+  RSG (1,1)             : Dorn-Wallenstein T.Z. &amp; Levesque E.,
+                           2017, IAUS, 329, 376
+
+  S82X (71,75)          : Stripe 82 AGN, LaMassa S.M. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2019ApJ...876...50L">2019ApJ...876...50L</A>
+
+  S82XRQ (8,8)          : Red Quasars, LaMassa S.M. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2017ApJ...847..100L">2017ApJ...847..100L</A>
+
+  SAGE1 (1,1)           : SAGE IR AGN, Hony S. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2011A%26A...531A.137H">2011A&A...531A.137H</A>
+
+  SCULPT (2,3)          : Sculptor X-ray, Arnason R. M. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2019MNRAS.485.2259A">2019MNRAS.485.2259A</A>
+
+  SDLENS (3,3)          : SDSS Lenses, Williams P.R. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018MNRAS.477L..70W">2018MNRAS.477L..70W</A>
+
+  SDSSHI (6,6)          : SDSS hi-z, Jiang L. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2016ApJ...833..222J">2016ApJ...833..222J</A>
+
+  SELMAN (1,1)          : serendipitous, Selman F.J. et al., 2020AN...341...26S
+
+  SFM201 (1,1)          : Schulze S. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2012A%26A...546A..20S">2012A&A...546A..20S</A>
+
+  SHELLQ (33,33)        : Subaru hi-z, Matsuoka Y. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018PASJ...70S..35M">2018PASJ...70S..35M</A>
+
+  SHELQ3 (28,28)        : Subaru hi-z, Matsuoka Y. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2019ApJ...883..183M">2019ApJ...883..183M</A>
+
+  SHELQS (30,30)        : SHELLQS hi-z, Matsuoka Y. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018ApJS..237....5M">2018ApJS..237....5M</A>
+
+  SHELz7 (1,1)          : SHELLQS z=7, Matsuoka Y. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2019ApJ...872L...2M">2019ApJ...872L...2M</A>
+
+  SMSSQ (2,2)           : SkyMapper hi-z, Zefeng Li Z. et al.,
+                           2018,arXiv:1805.03429
+
+  SOLARZ (13,13)        : AllWISE anomalies, Solarz A. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2020A%26A...642A.103S">2020A&A...642A.103S</A>
+
+  SPIN18 (1,1)          : KiDS-SQuaD lens, Spiniello C. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018MNRAS.480.1163S">2018MNRAS.480.1163S</A>
+
+  SPIN19 (2,2)          : 2 lensed quasars, Spiniello C. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2019MNRAS.485.5086S">2019MNRAS.485.5086S</A>
+
+  SQLS (60,51)          : SDSS DR7 QSO Lens Search, Inada N. et al.,
+                           2012, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/AJ/143/119">J/AJ/143/119</A>
+
+  SQUAD (13,13)         : UVES DB DR1, Murphy M.T. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2019MNRAS.482.3458M">2019MNRAS.482.3458M</A>
+
+  SSLENS (3,3)          : South sky lenses, Spiniello C. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2019MNRAS.483.3888S">2019MNRAS.483.3888S</A>
+
+  SUV (22,22)           : SDSS-ULAS/VHS QSOs, Yang J. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2017AJ....153..184Y">2017AJ....153..184Y</A>
+
+  SXDF (39,39)          : Subaru-XMMDF redshifts, Simpson C. et al.,
+                           2012, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/MNRAS/421/3060">J/MNRAS/421/3060</A>
+
+  SXDS (307,306)        : Subaru-XMMDF spectra, Akiyama M. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2015PASJ...67...82A">2015PASJ...67...82A</A>
+
+  ULTRA (1,1)           : Ultraluminous hi-z, Wu, X.-B. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2015Natur.518..512W">2015Natur.518..512W</A>
+
+  UVQS (435,503)        : UV QSOs, Monroe T.R. et al., 2016, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/AJ/152/25">J/AJ/152/25</A>
+
+  VAHIZ (2,2)           : VST ATLAS hi-z, Carnall A.C. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2015MNRAS.451L..16C">2015MNRAS.451L..16C</A>
+
+  VAHIZ2 (1,1)          : bright z&gt;6 QSOs, Chehade B. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018MNRAS.478.1649C">2018MNRAS.478.1649C</A>
+
+  VAHIZ3 (1,1)          : VST-ATLAS lens, Schechter P.L. et al.,
+                           2018, RNAAS, 2b, 21
+
+  VAQL (11,11)          : VST-ATLAS quasar systems,Schechter P.L. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2017AJ....153..219S">2017AJ....153..219S</A>
+
+  VDES (8,8)            : VISTA Dark Energy QSOs, Reed S.L. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2017MNRAS.468.4702R">2017MNRAS.468.4702R</A>
+
+  VDES2 (2,2)           : more VHS-DES quasars, Reed S.L. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2019MNRAS.487.1874R">2019MNRAS.487.1874R</A>
+
+  VIKING (4,4)          : VIKING IR, Venemans, G.A. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2015MNRAS.453.2259V">2015MNRAS.453.2259V</A>
+
+  VIPERS (241,283)      : VIPERS PDR-2, Scodeggio M. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018A%26A...609A..84S">2018A&A...609A..84S</A>
+
+  VMC (34,34)           : Magellanic IR QSOs, Ivanov V.D. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2016A%26A...588A..93I">2016A&A...588A..93I</A>
+
+  WARSAW (3,3)          : OGLE lens, Kostrzewa-Rutkowska Z. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018MNRAS.476..663K">2018MNRAS.476..663K</A>
+
+  WERTZ (1,1)           : Gaia GraL lens, Wertz O. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2019A%26A...628A..17W">2019A&A...628A..17W</A>
+
+  WGD (2,2)             : DES/Gaia lenses; Agnello A. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018MNRAS.479.4345A">2018MNRAS.479.4345A</A>
+
+  WILLIG (1,1)          : Williger, G., 2020, p comm., data on LJMU Robotic
+                           Telescope
+
+  WISEA (522905,0)      : AllWISE QSO candidates, Secrest N. et al.,
+                           2015, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/ApJS/221/12">J/ApJS/221/12</A>
+
+  WISEHI (72,70)        : Hi-z QSOs from WISE, Wang F. et al.,
+                           2016, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/ApJ/819/24">J/ApJ/819/24</A>
+
+  WOLF1 (1,0)           : most ultraluminous QSO, Wolf C. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018PASA...35...24W">2018PASA...35...24W</A>
+
+  WOLF2 (16,16)         : hi-z ultraluminous QSOs, Wolf C. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2020MNRAS.491.1970W">2020MNRAS.491.1970W</A>
+
+  WYFH (1,1)            : z=7.642 quasar, Wang F. et al., 2021,arXiv:2101.03179
+
+  XDQSO (20119,0)       : SDSS-XDQSO, Bovy J. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2011ApJ...729..141B">2011ApJ...729..141B</A>
+
+  XLSS (306,118)        : Stalin C.S. et al., 2010, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/MNRAS/401/294">J/MNRAS/401/294</A>
+
+  XMM2 (12,12)          : 2XMM-Newton cross-search, Combi J.A. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2011Ap%26SS.331...53C">2011Ap&SS.331...53C</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=V/138">V/138</A>
+
+  XMMSMC (6,6)          : SMC quasars, Maitral C. et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2019A%26A...622A..29M">2019A&A...622A..29M</A>
+
+  XMSS (182,148)        : Barcons X. et al., 2007, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/A%2BA/476/1191">J/A+A/476/1191</A>
+
+  XWAS (490,449)        : Esquej P. et al., 2013, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/A%2BA/557/A123">J/A+A/557/A123</A>
+
+  YQLF (25,25)          : deep CFHT QSOs, Yang J. et al.,
+                           2018, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/AJ/155/110">J/AJ/155/110</A>
+
+  YSZ (0,414)           : Type 2 QSOs IDd, Yuan/Strauss/Zakamska,
+                           2016,arXiv:1606.04976
+
+  z6.51 (1,1)           : lensed quasar z=6.51, Fan X. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2019ApJ...870L..11F">2019ApJ...870L..11F</A>
+
+  z6.82 (1,1)           : radio-loud z=6.82, Banados E. et al.,
+                           2021,arXiv:2103.03295
+
+  z7.02 (1,1)           : lensed quasar z=7.02, Wang F. et al.,
+                           <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018ApJ...869L...9W">2018ApJ...869L...9W</A>
+
+  4-digit numeric citations are indexed in the HMQ (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2015PASA...32...10F">2015PASA...32...10F</A>)
+  references list. The citation for the classification (e.g., that the
+  object is a quasar) is from either the name or redshift citation.
+<A NAME="sRM3.9"><B>Note (9)</B>: For QSO candidates (class starting with q/R/X/2) this shows its pQSO
+  (percent chance that it is a QSO) based on radio/X-ray association and/or
+  photometric analysis. Radio/X-ray based likelihoods are calculated as
+  described in Flesch &amp; Hardcastle, <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2004A%26A...427..387F">2004A&A...427..387F</A>. WISEA photometric
+  pQSOs are calibrated all-sky via the colours B-R, R-W1, W1-W2, and W2-W3,
+  using the method of Flesch <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2015PASA...32...10F">2015PASA...32...10F</A>, Appendix 2.  SDSS-based
+  candidates from NBCKDE/NBCKv3/XDQSO/Peters (see Note 7 for citations)
+  photometric catalogs can also have photometric-based pQSOs which are here
+  calibrated against SDSS-DR16Q classified objects using 4-colour matching.
+
+  The calibrated photometric pQSO (P1) and radio/X-ray derived pQSO (P2),
+  if both present, are combined into a single pQSO as
+    pQSO = 1/(1+((1-P1)*(1-P2))/(P1*P2)).
+
+  For a fully classified object (class starting with Q/A/B/K/N/L), this
+  shows the percent chance that a shown radio/X-ray detection(s) is truly
+  associated to it. If no radio/X-ray detection, value is blank.
+<A NAME="sRM3.10"><B>Note (10)</B>: Four columns of Radio/X-ray detections are presented:
+   * 1st column: best X-ray detection (i.e. highest probability association).
+   * 2nd column: best core Radio detection.
+   * 3rd column: a radio lobe if the description (see note 2) shows a "2",
+                 otherwise this is an additional radio or X-ray detection.
+   * 4th column: a radio lobe if the description (see note 2) shows a "2",
+                 otherwise this is an additional radio or X-ray detection.
+
+   Legend of Radio/X-ray detection prefixes and catalog home pages:
+
+   FIRST: VLA FIRST survey, 13Jun05 version, <A HREF="http://sundog.stsci.edu">http://sundog.stsci.edu</A>
+   VL0 (abbrev of VLASS1QLCIR): VLASS Quick Look, https://cirada.ca/catalogues
+   NVSS: NRAO VLA sky survey, <A HREF="http://www.cv.nrao.edu/nvss">http://www.cv.nrao.edu/nvss</A>
+   SUMSS: Sydney U. Molonglo, <A HREF="http://www.astrop.physics.usyd.edu.au/sumsscat/">http://www.astrop.physics.usyd.edu.au/sumsscat/</A>
+   MGPS: Molonglo galactic plane, www.astrop.physics.usyd.edu.au/mgpscat/
+   ROSAT catalogs available from <A HREF="http://cdsarc.u-strasbg.fr/cats/IX.htx">http://cdsarc.u-strasbg.fr/cats/IX.htx</A> are:
+    - <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/28A">IX/28A</A> is 1RXH: ROSAT HRI (high resolution imager)
+    - <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/30">IX/30</A> is 2RXP: ROSAT PSPC (position sensitive proportional counter)
+    - <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/10A">IX/10A</A> &amp; <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/29">IX/29</A> are 1RXS: ROSAT RASS (all-sky survey, bright &amp; faint)
+   2RXF: https://heasarc.gsfc.nasa.gov/W3Browse/rosat/rospspcftot.html
+   2RXS: 2nd RASS source catalog, <A HREF="http://www.mpe.mpg.de/ROSAT">http://www.mpe.mpg.de/ROSAT</A>
+   1WGA: White, Giommi &amp; Angelini, wgacat.gsfc.nasa.gov/wgacat/wgacat.html
+   CXOG: Chandra ACIS source catalog, Wang S. et al., 2016,ApJS,224,40
+   CXO:  Chandra Source Catalog v1.1, <A HREF="http://cxc.harvard.edu/csc">http://cxc.harvard.edu/csc</A>
+   2CXO: Chandra Source Catalog v2, <A HREF="http://cxc.harvard.edu/csc">http://cxc.harvard.edu/csc</A>
+   CXOX: XAssist Chandra source list, <A HREF="http://xassist.pha.jhu.edu/">http://xassist.pha.jhu.edu/</A>
+   2XMM/2XMMi: XMM-Newton DR3, <A HREF="http://cdsarc.u-strasbg.fr/cats/IX.htx">http://cdsarc.u-strasbg.fr/cats/IX.htx</A> <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/39%2640">IX/39&40</A>
+   4XMM: XMM-Newton DR10, https://www.cosmos.esa.int/web/xmm-newton/xsa
+   XMMSL: XMM-Newton Slew Survey Release 2.0, same attribution as 4XMM
+   XMMX: XAssist XMM-Newton source list, <A HREF="http://xassist.pha.jhu.edu/">http://xassist.pha.jhu.edu/</A>
+   2SXPS: Swift X-ray Point Source catalog, <A HREF="http://www.swift.ac.uk/2SXPS">http://www.swift.ac.uk/2SXPS</A>
+
+   Optical field solutions are calculated from the raw source positions of all
+   these catalogs (except 2CXO) as described in my MORX paper,
+   Flesch, <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2016PASA...33...52F">2016PASA...33...52F</A>.
+<HR>
+
+<A NAME="sRM2.2"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.57"> refs.dat</A>
+<HR>
+   Bytes Format Units   Label     Explanations
+<HR>
+   1-  4  I04   ---     Ref       Reference number
+   6- 11  I6    ----    N1        ? Number of this reference for Name
+  13- 18  I6    ---     N2        ? Number of this reference for redshift
+  21- 39  A19   ---     Bibcode   BibCode
+  41- 71  A31   ---     Aut       Author's name
+  73-162  A90   ---     Com       Comments
+<HR>
+
+<A NAME="sRM99.1"><B>Acknowledgements</B>:
+    If using this catalogue in published research, please cite as
+    Milliquas v7.2, Flesch, E.W. 2021, arXiv:2105.12985 , or as
+    Milliquas v7.2 (2021) update, Flesch, E.W. <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2015PASA...32...10F">2015PASA...32...10F</A>.
+
+
+    The confirmed quasars of this catalog (to Jan 2015) were published as
+    the Half Million Quasars (HMQ) catalog: Flesch E., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2015PASA...32...10F">2015PASA...32...10F</A>.
+    Note however that Milliquas uses optical sky data from ASP
+    (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2017PASA...34...25F">2017PASA...34...25F</A>) whereas the HMQ used optical sky data from QORG
+    (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2004A%26A...427..387F">2004A&A...427..387F</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/A%2BA/427/387">J/A+A/427/387</A>) Appendix A.
+
+    This research has made use of the NASA/IPAC Extragalactic Database
+    (NED) which is operated by the Jet Propulsion Laboratory,California
+    Institute of Technology, under contract with the National Aeronautics
+    and Space Administration.
+
+    This research has made use of the SIMBAD database and CDS cross-match
+    service (to obtain Gaia DR2 data) provided by CDS, Strasbourg, France.
+
+<A NAME="sRM99.2"><B>History</B>:
+    From Eric Flesch, eric(at)flesch.org
+================================================================================
+<B>(End)</B>                                      Patricia Vannier [CDS]    03-May-2021
+
+</PRE><!-- ....wait for 1 children: %0=3182888 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

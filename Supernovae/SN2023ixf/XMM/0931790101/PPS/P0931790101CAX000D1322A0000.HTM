@@ -1,0 +1,357 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of I/322A</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Wed Jun 28 17:16:21 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0931790101OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of I/322A :<BR>UCAC4 Catalogue (Zacharias+, 2012)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0931790101OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>I/322A</B>              UCAC4 Catalogue                 (Zacharias+, 2012)
+================================================================================
+The fourth U.S. Naval Observatory CCD Astrograph Catalog (UCAC4)
+     Zacharias N., Finch C.T., Girard T.M., Henden A., Bartlett J.L.,
+     Monet D.G., Zacharias M.I.
+    &lt;Astron. J. 145, 44 (2013)&gt;
+    =<A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=2012yCat.1322....0Z">2012yCat.1322....0Z</A>
+    =<A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=2013AJ....145...44Z">2013AJ....145...44Z</A>
+================================================================================
+<B>ADC_Keywords</B>: Surveys ; Positional data ; Proper motions
+
+
+<A NAME="sRM11.1"><B>Description</B>:
+    UCAC4 is a compiled, all-sky star catalog covering mainly the 8 to 16
+    magnitude range in a single bandpass between V and R. Positional
+    errors are about 15 to 20 mas for stars in the 10 to 14 mag range.
+    Proper motions have been derived for most of the about 113 million
+    stars utilizing about 140 other star catalogs with significant epoch
+    difference to the UCAC CCD observations. These data are supplemented
+    by 2MASS photometric data for about 110 million stars and 5-band
+    (B,V,g,r,i) photometry from the APASS (AAVSO Photometric All-Sky
+    Survey) for over 50 million stars. UCAC4 also contains error estimates
+    and various flags. All bright stars not observed with the astrograph
+    have been added to UCAC4 from a set of Hipparcos and Tycho-2 stars.
+    Thus UCAC4 should be complete from the brightest stars to about R=16,
+    with the source of data indicated in flags. UCAC4 also provides a link
+    to the original Hipparcos star number with additional data such as
+    parallax found on a separate data file included in this release.
+
+    The proper motions of bright stars are based on about 140 catalogs,
+    including Hipparcos and Tycho, as well as all catalogs used for the
+    Tycho-2 proper motion construction. Proper motions of faint stars are
+    based on re-reductions of early epoch SPM data (-90 to about -20 deg
+    Dec) and NPM (PMM scans of early epoch blue plates) for the remainder
+    of the sky. These early epoch SPM data have also been combined with
+    late epoch SPM data to arrive at proper motions partly independent
+    from UCAC4 (Girard et al. <A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=2011AJ....142...15G">2011AJ....142...15G</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/320">I/320</A>). The NPM
+    data used in UCAC4 are not published. No Schmidt plate data are used
+    in UCAC4.
+
+    The unpublished plate measure data obtained by StarScan from the AGK2,
+    the Hamburg Zone Astrograph, the USNO Black Birch Astrograph, and the
+    Lick Astrograph have contributed to considerable improvement in proper
+    motions for stars mainly in the 10 to 14 mag range (down to the UCAC
+    limit for Lick data); however, these data do not cover all sky.
+
+    Recources permitting, USNO plans to release the individual CCD
+    observations (RA,Dec at epoch of each CCD observations) in the future.
+    Please contact <A HREF="mailto:nz@usno.navy.mil">nz@usno.navy.mil</A> if you are interested in obtaining
+    this set of about 50 GB data. We will likely request that interested
+    users provide an external disk drive for the data release.
+
+<A NAME="sRM99.1"><B>Acknowledging UCAC4</B>:
+    The paper (Zacharias et al., 2013, AJ, 145, 44) should be cited
+    whenever UCAC4 data is utilized.
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.60">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.61">&#215; <A HREF="#sRM2.1">out.sam</A>          294     1000   Sample UCAC4 output (out of 113780093 stars)
+<A NAME="sRM-F.62">&#215; ucac4doc.txt      79     2008   Description of UCAC4 (readme_u4)
+<HR>
+
+<A NAME="sRM13.1"><B>See also</B>:
+  <A HREF="http://www.usno.navy.mil/USNO/astrometry/optical-IR-prod/ucac">http://www.usno.navy.mil/USNO/astrometry/optical-IR-prod/ucac</A> : UCAC home page
+   <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/289">I/289</A> : UCAC2 Catalogue (Zacharias+ 2004)
+   <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/315">I/315</A> : UCAC3 Catalogue (Zacharias+ 2009)
+   <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/247">I/247</A> : The AC2000 Catalogue (Urban+ 1997)
+   <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/259">I/259</A> : The Tycho-2 Catalogue (Hog+ 2000)
+   <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/264">I/264</A> : Sixth Catalogue of Fundamental Stars (FK6) (Wielen+ 2000)
+   <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/277">I/277</A> : SPM Catalog 2.0 (Platais+ 1998)
+   <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/317">I/317</A> : The PPMXL Catalog (Roeser+ 2010)
+  <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=II/246">II/246</A> : 2MASS All-Sky Catalog of Point Sources (Cutri+ 2003)
+ <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/233">VII/233</A> : The 2MASS Extended sources (IPAC/UMass, 2003-2006)
+ <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/242">VII/242</A> : LEDA galaxies with DENIS measurements catalog (Paturel+, 2005)
+ <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/248">VII/248</A> : Quasars and Active Galactic Nuclei (12th Ed.) (Veron+ 2006)
+
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.61"> out.sam</A>
+<HR>
+   Bytes Format Units   Label    Explanations
+<HR>
+   1- 10  A10   ---     UCAC4    <A HREF="#sRM3.1">UCAC4 recommended identifier (ZZZ-NNNNNN) (1)</A>
+  12- 22  F11.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     RAdeg    <A HREF="#sRM3.2">Mean right ascension (ICRS), Ep=J2000 (2)</A>
+  23- 33  F11.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEdeg    <A HREF="#sRM3.2">Mean declination (ICRS), Ep=J2000 (2)</A>
+  35- 37  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas" TARGET="explain">mas</A>     e_RAdeg  Mean error of RAdeg at mean epoch
+  39- 41  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas" TARGET="explain">mas</A>     e_DEdeg  Mean error of DEdeg at mean epoch
+  43- 46  I4    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas" TARGET="explain">mas</A>     ePos     <A HREF="#sRM3.3">Total mean error on position at Ep=J2000 (3)</A>
+  48- 54  F7.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?yr" TARGET="explain">yr</A>      EpRA     Central epoch for mean RA
+  56- 62  F7.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?yr" TARGET="explain">yr</A>      EpDE     Central epoch for mean Declination
+  64- 69  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     f.mag    ? <A HREF="#sRM3.4">UCAC fit model magnitude (579-642nm) (4)</A>
+  71- 76  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     a.mag    ? <A HREF="#sRM3.4">UCAC aperture magnitude (579-642nm) (4)</A>
+  78- 81  F4.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_a.mag  ? <A HREF="#sRM3.5">Mean error on f.mag and a.mag (5)</A>
+      85  I1    ---     of       [0/9] <A HREF="#sRM3.6">UCAC4 object classification flag (6)</A>
+  87- 88  I2    ---     db       [0/36] <A HREF="#sRM3.7">UCAC4 double star flag (7)</A>
+  90- 92  I3    ---     Na       [0/71] Number of UCAC observations for the star
+  94- 96  I3    ---     Nu       [0/70] <A HREF="#sRM3.8">Number of used UCAC observations (8)</A>
+  98-100  I3    ---     Nc       [1/38] Number of catalog positions used for pm
+ 102-109  F8.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas/yr" TARGET="explain">mas/yr</A>  pmRA     ? <A HREF="#sRM3.9">Proper motion in RA(*cos(Dec)) (9)</A>
+ 111-118  F8.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas/yr" TARGET="explain">mas/yr</A>  pmDE     ? <A HREF="#sRM3.9">Proper motion in Dec (9)</A>
+ 120-123  F4.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas/yr" TARGET="explain">mas/yr</A>  e_pmRA   ? <A HREF="#sRM3.9">Mean error on pmRA (9)</A>
+ 125-128  F4.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas/yr" TARGET="explain">mas/yr</A>  e_pmDE   ? <A HREF="#sRM3.9">Mean error on pmDE (9)</A>
+--------------------------------------------------------------------------------
+ 130-138  I9    ---     MPOS1    [1/182895114] <A HREF="#sRM3.10">Unique star ID number (10)</A>
+ 140-149  A10   ---     UCAC2    UCAC2 (Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/289">I/289</A>) designation (ZZZ-NNNNNN)
+ 151-162  A12   ---     Tycho-2  Tycho-2 (Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/259">I/259</A>) designation (FFFF-NNNNN-N)
+--------------------------------------------------------------------------------
+ 164-173  I10   ---     2Mkey    ? 2MASS (Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=II/246">II/246</A>) Unique source identifier
+ 175-180  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Jmag     ? 2MASS J magnitude (1.2um)
+ 182-185  F4.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_Jmag   ? Mean error (rounded to 0.01mag)
+     186  A1    ---     ---      [:]
+ 187-188  I02   ---     q_Jmag   [0,58]? <A HREF="#sRM3.11">J-band quality-confusion flag (11)</A>
+ 190-195  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Hmag     ? 2MASS H magnitude (1.6um)
+ 197-200  F4.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_Hmag   ? Mean error (rounded to 0.01mag)
+     201  A1    ---     ---      [:]
+ 202-203  I02   ---     q_Hmag   [0,58]? <A HREF="#sRM3.11">H-band quality-confusion flag (11)</A>
+ 205-210  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Kmag     ? 2MASS Ks magnitude (2.2um)
+ 212-215  F4.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_Kmag   ? Mean error (rounded to 0.01mag)
+     216  A1    ---     ---      [:]
+ 217-218  I02   ---     q_Kmag   [0,58]? <A HREF="#sRM3.11">K-band quality-confusion flag (11)</A>
+--------------------------------------------------------------------------------
+ 220-225  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Bmag     ? <A HREF="#sRM3.12">B magnitude from APASS (12)</A>
+     226  A1    ---     ---      [:]
+     227  A1    ---     f_Bmag   [.-] <A HREF="#sRM3.12">Actual or S/N estimated error (12)</A>
+ 228-229  I02   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cmag" TARGET="explain">cmag</A>    e_Bmag   ? <A HREF="#sRM3.12">Estimated error on Bmag (12)</A>
+ 231-236  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Vmag     ? <A HREF="#sRM3.12">V magnitude from APASS (12)</A>
+     237  A1    ---     ---      [:]
+     238  A1    ---     f_Vmag   [.-] <A HREF="#sRM3.12">Actual or S/N estimated error (12)</A>
+ 239-240  I02   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cmag" TARGET="explain">cmag</A>    e_Vmag   ? <A HREF="#sRM3.12">Estimated error on Vmag (12)</A>
+ 242-247  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     gmag     ? <A HREF="#sRM3.12">g magnitude from APASS (12)</A>
+     248  A1    ---     ---      [:]
+     249  A1    ---     f_gmag   [.-] <A HREF="#sRM3.12">Actual or S/N estimated error (12)</A>
+ 250-251  I02   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cmag" TARGET="explain">cmag</A>    e_gmag   ? <A HREF="#sRM3.12">Estimated error on gmag (12)</A>
+ 253-258  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     rmag     ? <A HREF="#sRM3.12">r magnitude from APASS (12)</A>
+     259  A1    ---     ---      [:]
+     260  A1    ---     f_rmag   [.-] <A HREF="#sRM3.12">Actual or S/N estimated error (12)</A>
+ 261-262  I02   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cmag" TARGET="explain">cmag</A>    e_rmag   ? <A HREF="#sRM3.12">Estimated error on rmag (12)</A>
+ 264-269  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     imag     ? <A HREF="#sRM3.12">i magnitude from APASS (12)</A>
+     270  A1    ---     ---      [:]
+     271  A1    ---     f_imag   [.-] <A HREF="#sRM3.12">Actual or S/N estimated error (12)</A>
+ 272-273  I02   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cmag" TARGET="explain">cmag</A>    e_imag   ? <A HREF="#sRM3.12">Estimated error on imag (12)</A>
+--------------------------------------------------------------------------------
+     275  I1    ---     g        [0,3] <A HREF="#sRM3.13">g-flag from SPM (13)</A>
+     276  I1    ---     c        [0,7] <A HREF="#sRM3.14">c-flag from SPM (14)</A>
+     277  A1    ---     ---      [.]
+     278  I1    ---     H        [0/9] <A HREF="#sRM3.15">Hipparcos/Tycho flag (15)</A>
+     279  I1    ---     A        [0/8] <A HREF="#sRM3.16">AC2000 flag (16)</A>
+     280  I1    ---     b        [0/8] <A HREF="#sRM3.16">AGK2 Bonn match flag (16)</A>
+     281  I1    ---     h        [0/8] <A HREF="#sRM3.16">AGK2 Hamburg match flag (16)</A>
+     282  I1    ---     Z        [0/8] <A HREF="#sRM3.16">Zone astrographic match flag (16)</A>
+     283  I1    ---     B        [0/8] <A HREF="#sRM3.16">Black Birch match flag (16)</A>
+     284  I1    ---     L        [0/8] <A HREF="#sRM3.16">Lick Astrographic match flag (16)</A>
+     285  I1    ---     N        [0/8] <A HREF="#sRM3.16">NPM Lick match flag (16)</A>
+     286  I1    ---     S        [0/8] <A HREF="#sRM3.16">SPM Lick match flag (16)</A>
+ 289-290  I2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%5b6arcsec%5d" TARGET="explain">[6arcsec]</A> LEDA     <A HREF="#sRM3.17">LEDA I-band galaxy match (17)</A>
+ 293-294  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  2MX      <A HREF="#sRM3.18">2MASX K-band match (18)</A>
+<HR>
+<A NAME="sRM3.1"><B>Note (1)</B>: the UCAC4 number is the recommended identification of UCAC4 stars.
+     It made as "ZZZ-NNNNNNN", where zzz is the zone number (between 1 and
+     900 from South pole to North pole, each zone being 0.2&#176; wide), and
+     nnnnnn the 6-digit running number in the zone.
+<A NAME="sRM3.2"><B>Note (2)</B>: Positions are on the International Celestial Reference System
+     (ICRS) as represented by the Hipparcos / Tycho-2  catalogs. The epoch
+     for the positions of all stars is J2000.0: the weighted mean catalog
+     position was updated using the proper motions. The observational UCAC
+     position is but one of several going into these values and is not
+     given in the UCAC4; thus the original UCAC observation cannot be
+     recovered from these data.
+<A NAME="sRM3.3"><B>Note (3)</B>: taking into account the propagation of the proper motion error
+     between the mean epoch and J2000.
+<A NAME="sRM3.4"><B>Note (4)</B>: systematic errors are expected to be below 0.1mag. The aperture
+     photometry (a.mag) is considered more robust, particularly for "odd"
+     cases, while the model fit magnitude is expected to be more accurate
+     for "well behaved" stars.
+<A NAME="sRM3.5"><B>Note (5)</B>: For many stars a photometric error based on the scatter from
+     individual observations of that star on different CCD frames could be
+     obtained.  A model error was also attempted to be assigned, based on
+     the S/N ratio.  The error quoted here is the larger of the 2.  If that
+     error exceeds 0.9mag the error was set to 0.9mag
+<A NAME="sRM3.6"><B>Note (6)</B>: the object type flag is used to identify possible problems
+    with a star and has the following meaning:
+    0 = good, clean star, no known problem
+    1 = near overexposed star
+    2 = possible streak object
+    3 = high proper motion (HPM) star
+    4 = actually use external HPM data instead of UCAC4 observed data
+        (accuracy of positions varies between catalogs)
+    5 = poor proper motion solution, report only CCD epoch position
+    6 = substitute poor astrometric results by FK6/Hip/Tycho-2 data
+    7 = added supplement star (no CCD data) from FK6/Hip/Tycho-2 data,
+        and 2 stars added from high proper motion surveys
+    8 = high proper motion solution in UCAC4, star not matched with PPMXL
+    9 = high proper motion solution in UCAC4, discrepant motion to PPMXL
+<A NAME="sRM3.7"><B>Note (7)</B>: The double star flag is used to indicate the type/quality
+     of double star fit. It is a combination of 2 flags, dsf+dst:
+  * dsf = double star flag, represents the overall classification:
+      0 = single star
+     10 = component #1 of "good" double star
+     20 = component #2 of "good" double star
+     30 = blended image
+  * dst = double star type, derived from pixel data image profile fits
+          (largest value of all images used for this star):
+      0 = no double star, not sufficient #pixels or elongation
+          to even call double star fit subroutine
+      1 = elongated image but no more than 1 peak detected
+      2 = 2 separate peaks detected -&gt; try double star fit
+      3 = secondary peak found on each side of primary
+      4 = case 1 after successful double fit (small separation, blended image)
+      5 = case 2 after successful double fit (most likely real double)
+      6 = case 3 after successful double fit (brighter secondary picked)
+<A NAME="sRM3.8"><B>Note (8)</B>: A zero for the number of used images indicates that all images
+     have some "problem" (such as overexposure). In that case an unweighted
+     mean over all available images (Na) is taken to derive the mean
+     position, while normally a weighted mean was calculated based on the
+     "good" images, excluding possible problem images (Nu&lt;=Na).
+<A NAME="sRM3.9"><B>Note (9)</B>:  For astrometric data copied from the FK6, Hipparcos and Tycho-2
+     catalogs a mean error in positions was adopted depending on input
+     catalog and the brightness of the star rather than giving the
+     individual star's error quoted in those catalogs.
+<A NAME="sRM3.10"><B>Note (10)</B>:  This unique star identification number is between 200001 and
+     321640 for Hipparcos stars, and between 1 and 9430 for non-Hipparcos
+     stars supplemented to the UCAC4 catalog (no CCD observation). For all
+     other stars this unique star identification number is the internal
+     mean-position-file (MPOS) number + 1million. Note, there are several
+     thousand cases where different UCAC4 stars link to the same Hipparcos
+     star number due to resolved binary stars with each component being a
+     separate star entry in UCAC4.
+<A NAME="sRM3.11"><B>Note (11)</B>: For each 2MASS bandpass a combined flag was created
+     (cc_flg + ph_qual) consisting of the contamination flag (0 to 50)
+     and the photometric quality flag (0 to 8).
+       0 =  cc_flg 2MASS '0', no artifacts or contamination
+      10 =  cc_flg 2MASS 'p', source may be contaminated by a latent image
+      20 =  cc_flg 2MASS 'c', photometric confusion
+      30 =  cc_flg 2MASS 'd', diffraction spike confusion
+      40 =  cc_flg 2MASS 's', electronic stripe
+      50 =  cc_flg 2MASS 'b', bandmerge confusion
+       0 = no ph_qual flag
+       1 = ph_qual 2MASS 'X', no valid brightness estimate
+       2 = ph_qual 2MASS 'U', upper limit on magnitude
+       3 = ph_qual 2MASS 'F', no reliable estimate of the photometric error
+       4 = ph_qual 2MASS 'E', goodness-of-fit quality of profile-fit poor
+       5 = ph_qual 2MASS 'A', valid measurement, snr&gt;10 AND cmsig&lt;0.10857
+       6 = ph_qual 2MASS 'B', valid measurement, snr&gt; 7 AND cmsig&lt;0.15510
+       7 = ph_qual 2MASS 'C', valid measurement, snr&gt; 5 AND cmsig&lt;0.21714
+       8 = ph_qual 2MASS 'D', valid measurement, no snr OR cmsig req.
+
+     For example the value 05 is decoded to be cc_flg=0, and ph_qual=5,
+     meaning no artifacts or contamination and 2MASS qual flag = "A".
+<A NAME="sRM3.12"><B>Note (12)</B>: Data are from the AAVSO Photometric all-sky survey (APASS) DR6
+     plus single observation stars kindly provided by A.Henden. For bright
+     stars the Bmag and Vmag columns contain the Hipparcos/Tycho Bt and Vt
+     mags respectively, whenever there is no APASS B or V available and
+     valid Bt or Vt mags were found. The errors flagged with "-" are formal
+     errors estimated from the S/N, while the "normal" errors (flagged with
+     ".") are from the official release data error estimates (at least 2
+     observations per star).
+<A NAME="sRM3.13"><B>Note (13)</B>: The g-flag from the Yale San Juan first epoch Southern
+     Proper Motion data (YSJ1, SPM) has the following meaning:
+     0 = no info
+     1 = matched with 2MASS extended source list (2MASX
+     2 = LEDA  galaxy
+     3 = known QSO
+<A NAME="sRM3.14"><B>Note (14)</B>: The c-flag from the Yale San Juan first epoch Southern Proper
+     Motion data (YSJ1, SPM) indicates which input catalog has been used
+     to identify stars for pipeline processing:
+     1 = Hipparcos (Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/311">I/311</A>)
+     2 = Tycho2 (Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/259">I/259</A>)
+     3 = UCAC2 (Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/289">I/289</A>)
+     4 = 2MASS psc (Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=II/246">II/246</A>)
+     5 = 2MASS xsc (extended sources, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/233">VII/233</A>; largely galaxies)
+     6 = LEDA  (confirmed galaxies, Paturel et al. 2005)
+     7 = QSO   (Veron-Cetty &amp; Veron 2006, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/248">VII/248</A>)
+<A NAME="sRM3.15"><B>Note (15)</B>: The FK6-Hipparcos-Tycho-source-flag has the following meaning:
+     0 = not a Hipparcos or Tycho star
+     1 = Hipparcos 1997 version main catalog (Cat <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/239">I/239</A>)
+     2 = Hipparcos double star annex
+     3 = Tycho-2 (Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/259">I/259</A>)
+     4 = Tycho annex 1
+     5 = Tycho annex 2
+     6 = FK6 position and proper motion (instead of Hipparcos data)
+     7 = Hippparcos 2007 solution position and proper motion (Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/311">I/311</A>)
+     8 = FK6, only PM substitution (not in UCAC4 data)
+     9 = Hipparcos 2007, only proper motion substituted (Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/311">I/311</A>)
+<A NAME="sRM3.16"><B>Note (16)</B>: The catflg match flag is provided for major catalogs used
+     in the computation of the proper motions.  Each match is analyzed
+     for multiple matches of entries of the 1st catalog to 2nd catalog
+     entries, and the other way around.  Matches are also classified
+     by separation and difference in magnitude to arrive at a confidence
+     level group.  The flag has the following meaning:
+     0 = star not matched with this catalog
+     1 = unique-unique match, not involving a double star
+     2 = unique-unique match, but involving a flagged double star
+     3 = multiple match but unique in high confidence level group, no double
+     4 = as 3, but involving a flagged double star
+     5 = closest match, not involving a double, likely o.k.
+     6 = closest match, but involving a flagged double star
+     7 = maybe o.k. smallest separation match in both directions, no double
+     8 = as 7, but involving a flagged double star
+<A NAME="sRM3.17"><B>Note (17)</B>: value is either 0 (no match) or contains the log of the apparent
+     total diameter (in 0.1arcmin) for I-band (object size) information
+     copied from the LEDA catalog (galaxies). A size value of less than 1
+     has been rounded up to 1.
+<A NAME="sRM3.18"><B>Note (18)</B>: This flag is either 0 (no match) or contains the length of the
+     semi-major axis of the fiducial ellipse at the K-band (object size)
+     information copied from the 2MASS extended source catalog.
+<HR>
+
+<A NAME="sRM99.2"><B>Acknowledgements</B>:
+    It is a pleasure to thank Norbert Zacharias, who wrote most of
+    this introduction and answered to many questions.
+
+<A NAME="sRM99.3"><B>History</B>:
+
+  * 01-Aug-2012: Original version
+
+  * 30-Jan-2013 (version 'A'): Fix 3416 high proper motion stars
+    The fix concerns 3416 stars in 416 binary zone files between
+    6 and 449. All affected stars have object type flag = 4, i.e.
+    stars observed with the astrograph and mean position and proper
+    motion taken from external catalogs. Only the proper motion
+    columns are affected by this bug, all other data items of those
+    stars remain as they are in the UCAC4. The Python script file
+    "modifs.py" patches the original zone files.
+================================================================================
+<B>(End)</B>         Norbert Zacharias [USNO], Francois Ochsenbein [CDS]    24-Jul-2012
+
+</PRE><!-- ....wait for 1 children: %0=14328 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

@@ -1,0 +1,239 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of I/305</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Wed Jun 28 19:44:26 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0921180101OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of I/305 :<BR>The Guide Star Catalog, Version 2.3.2 (GSC2.3) (STScI, 2006)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0921180101OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>I/305</B>         The Guide Star Catalog, Version 2.3.2   (GSC2.3)  (STScI, 2006)
+================================================================================
+The Guide Star Catalogue, Version 2.3.2
+    Lasker B., Lattanzi M.G., McLean B.J., et al.
+   &lt;Astron. J. 136, 735 (2008)&gt;
+   =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2008AJ....136..735L">2008AJ....136..735L</A>
+================================================================================
+<B>ADC_Keywords</B>: Surveys ; Positional data ; Magnitudes, photographic ; Morphology
+
+
+<A NAME="sRM11.1"><B>Description</B>:
+    The GSC II is an all-sky catalog based on 1" resolution scans of the
+    photographic Sky Survey plates, at two epochs and three bandpasses,
+    from the Palomar and UK Schmidt telescopes (DSS). Positions,
+    magnitudes, and classifications are produced for all objects on each
+    plate. The objects are then loaded into the COMPASS database, where
+    multiple observations of the same object are matched and assigned a
+    unique name.
+
+    The GSC2.3 has no magnitude limit. The parameters of the bright
+    objects, overexposed on the Schmidt plates, are taken from the Tycho-2
+    (<A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=I/259">I/259</A>) catalog. The computed proper motions are not yet publically
+    available because of 10mas/year systematic errors discovered for the
+    southern hemisphere that are still under investigation.
+
+<A NAME="sRM99.1"><B>Copyright</B>:
+    The GSC-II is copyrighted (c) 2001-2005 by the Association of
+    Universities for Research in Astronomy, Inc.; see the copyright
+    notices from:
+      <A HREF="http://gsss.stsci.edu/Acknowledgements/DataCopyrights.htm">http://gsss.stsci.edu/Acknowledgements/DataCopyrights.htm</A>
+
+    Scientists and educators who are using these data for research,
+    teaching purposes and other non-profit activities may freely use these
+    data and we only request that you acknowledge the source in any
+    publication (see the "<A HREF="#sRM99.3">Acknowledgements</A>" section below).
+
+    Commercial use of these data is prohibited without permission.
+    Please contact STScI for further information regarding the different
+    copyright holders from
+      <A HREF="http://gsss.stsci.edu/Acknowledgements/DataCopyrights.htm">http://gsss.stsci.edu/Acknowledgements/DataCopyrights.htm</A>
+
+<A NAME="sRM99.2"><B>Release Notes and Limitation Notice</B>: see
+    <A HREF="http://gsss.stsci.edu/catalogs/gsc/gsc2/gsc23/gsc23_release_notes.htm">http://gsss.stsci.edu/catalogs/gsc/gsc2/gsc23/gsc23_release_notes.htm</A>
+
+<A NAME="sRM13.1"><B>See also</B>:
+    <A HREF="http://gsss.stsci.edu/catalogs/gsc/gsc2/gsc2.htm">http://gsss.stsci.edu/catalogs/gsc/gsc2/gsc2.htm</A> : the GSC-II Home Page
+    <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=I/254">I/254</A> : The HST Guide Star Catalog, Version 1.2 (Lasker+ 1996)
+    <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=I/259">I/259</A> : The Tycho-2 Catalogue (Hog+ 2000)
+    <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=I/271">I/271</A> : The Guide Star Catalog, Version 2.2 (GSC2.2) (STScI, 2001)
+
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.54">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.55">&#215; <A HREF="#sRM2.1">out.sam</A>          205      100   Sample records of GSC2.3.2 (near 0+0)
+<HR>
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.55"> out.sam</A>
+<HR>
+   Bytes Format Units    Label   Explanations
+<HR>
+   1- 10  A10   ---      GSC2.3  [NS0-9A-Z] <A HREF="#sRM3.1">Identification of the object (1)</A>
+  13- 22  A10   ---      GSC1    Identification in GSC Version 1 (Cat. <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=I/254">I/254</A>)
+  25- 32  A8    ---      HTM6    [NS0-3] <A HREF="#sRM3.1">HTM-6 designation as in GSC2.2 (1)</A>
+  34- 43  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      RAdeg   Right Ascension (J2000), at "Epoch"
+  44- 53  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      DEdeg   Declination in (J2000), at "Epoch"
+  55- 59  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  e_RAdeg  <A HREF="#sRM3.2">Mean error on RAdeg (2)</A>
+  61- 65  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  e_DEdeg  <A HREF="#sRM3.2">Mean error on DEdeg (2)</A>
+  67- 74  F8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?yr" TARGET="explain">yr</A>       Epoch   Epoch of the position
+  77- 81  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      Fmag    ? Magnitude in F photographic band (red)
+  84- 87  F4.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_Fmag  ? Mean error on Fmag
+  89- 90  I2    ---      n_Fmag  ? <A HREF="#sRM3.2">Coded emulsion / bandpass / filter (2)</A>
+  93- 97  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      jmag    ? Magnitude in Bj photographic band (blue)
+ 100-103  F4.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_jmag  ? Mean error on jmag
+ 105-106  I2    ---      n_jmag  ? <A HREF="#sRM3.2">Coded emulsion / bandpass / filter (2)</A>
+ 109-113  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      Vmag    ? Magnitude in V photographic band (green)
+ 116-119  F4.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_Vmag  ? Mean error on Vmag
+ 121-122  I2    ---      n_Vmag  ? <A HREF="#sRM3.2">Coded emulsion / bandpass / filter (2)</A>
+ 125-129  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      Nmag    ? Magnitude in N photographic band (0.8&#181;m)
+ 132-135  F4.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_Nmag  ? Mean error on Nmag
+ 137-138  I2    ---      n_Nmag  ? <A HREF="#sRM3.2">Coded emulsion / bandpass / filter (2)</A>
+ 141-145  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      Umag    ? Magnitude in U band (Johnson)
+ 148-151  F4.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_Umag  ? Mean error on Umag
+ 153-154  I2    ---      n_Umag  ? <A HREF="#sRM3.2">Coded emulsion / bandpass / filter (2)</A>
+ 157-161  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      Bmag    ? Magnitude in B band (Johnson blue)
+ 164-167  F4.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_Bmag  ? Mean error on Bmag
+ 169-170  I2    ---      n_Bmag  ? <A HREF="#sRM3.2">Coded emulsion / bandpass / filter (2)</A>
+     174  I1    ---      Class   [0,5] <A HREF="#sRM3.3">Object class (3)</A>
+ 176-185  I10   ---      Status  <A HREF="#sRM3.4">Source status flag (4)</A>
+     186  A1    ---      M       [M] <A HREF="#sRM3.5">'M' for multiple object (5)</A>
+ 189-194  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>      a       ? Semi-major axis of fitting ellipse
+ 196-199  F4.2  ---      e       ? Eccentricity of fitting ellipse
+ 201-205  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      aPA     ? Position angle (N-&gt;E) of fitting ellipse
+<HR>
+<A NAME="sRM3.1"><B>Note (1)</B>: The GSC2.3 identification differs from GSC2.2.
+    Is is made of 10 characters, the first four representing the level-6
+    HTM (Hierarchical Triangular Mesh) coded in base 36 (0..9 and A..Z),
+    and the last 6 represent a zero-filled sequence number assigned to
+    each source upon initial detection.
+
+    The Hierarchical Triangular Mesh (HTM) is a recursive spatial indexing
+    scheme dividing the unit sphere into spherical triangles, the number
+    of triangles at level n being 8x4<SUP>n</SUP> (see details about HTM at
+    <A HREF="http://www.sdss.jhu.edu/htm/">http://www.sdss.jhu.edu/htm/</A>). The level-6 HTM varies from N000 to
+    NCN3 and S000 to SCN3, i.e. 16384*2 different regions.
+
+    The designation of the corresponding GSC2.2 object, if existing,
+    is made by replacing the 4 first digits of the GSC2.3 identifier
+    by the 8 HTM6 digits, and removing the leading zeroes of the number
+    made by digits 5-10 of the GSC2.3 identifier.
+<A NAME="sRM3.2"><B>Note (2)</B>: coded emulsion / bandpass / filter:
+   ----------------------------------------------------------------------
+   bcode  Name   Emulsion/Filter
+   ----------------------------------------------------------------------
+     0     Jpg   IIIaJ+GG395 (SERC-J/EJ)
+     1      V    IIaD+W12    (Pal Quick-V)
+     2      -    HST FGS
+     3      B    (Johnson)
+     4      V    (Johnson)
+     5     Fpg   IIIaF+RG630  (ESO-R)
+     6    V495   IIaD+GG495   (Pal QV/AAO XV)
+     7      O    103aO+no filter (POSS-I Blue)
+     8      E    103aE+red plexi (POSS-I Red)
+     9     Fpg   IIIaF+RG630
+    10      -    IIaD+GG495+yellow objective (GPO Astrograph)
+    11      -    103aO+blue objective (Black Birch Astrograph)
+    12      -    103aO+blue objective Black Birch Astrograph, GSC cal.)
+    13      -    103aG+GG495+yellow objective (Black Birch Astrograph)
+    14      -    103aG+GG495+yellow objective (Black Birch Astrograph, GSC)
+    16     Vpg   IIIaJ+GG49
+    18     Jpg   IIIaJ+GG385   (POSS-II Blue)
+    19      U    (Johnson)
+    20      R    (Johnson)
+    21      I    (Johnson)
+    22      U    (Cape)
+    23      R    (Kron)
+    24      I    (Kron)
+    35     Fpg   IIIaF+RG610   (POSS-II Red)
+    36     Fpg   IIIaF+OG590   (SERC-ER/SR, AAO-R/GR)
+    37     Npg   IVN+RG9       (POSS-II IR)
+    38     Npg   IVN+RG715     (SERC-IR)
+    39     Jpg   IIaO+GG385    (ESO-B)
+    41      BT   TYCHO-B
+    42      VT   TYCHO-V
+    43      -    IRAS 12micron
+    44      -    IRAS 25 micron
+    45      -    IRAS 60 micron
+    46      -    IRAS 100 micron
+    47      J    (2MASS)
+    48      H    (2MASS)
+    49      K    (2MASS)
+    50      u'   (SDSS)
+    51      g'   (SDSS)
+    52      r'   (SDSS)
+    53      i'   (SDSS)
+    54      z'   (SDSS)
+   ----------------------------------------------------------------------
+<A NAME="sRM3.3"><B>Note (3)</B>: the object class is defined as:
+      0=star          1=Galaxy,          2=Blend
+      3=Non-star      4=unclassified     5=Defect
+    In the version 2.3.2, only values 0 and 3 are present.
+<A NAME="sRM3.4"><B>Note (4)</B>: the status code is a 10-digit field encoding the properties
+     of the catalog object. This flag is 99999900 for a Tycho object.
+  ----------------------------------------------------------------------
+  ........xx Number of plates on which the object appeared.
+  .......x.. Centroid type associated with the exported position, as:
+                  0 = barycenter                  4 = multicircular
+                  1 = circular gaussian           5 = multielliptical
+                  2 = elliptical gaussian         6 = FPA + circular
+                  3 = FPA-applied barycenter      7 = FPA + elliptical
+                  (FPA = Fractional Pixel Allocation)
+  ......x... Quality of exported J magnitude, as:
+                  0 = not present     1 = fit     2 = extrapolated
+  .....x.... Quality of exported F magnitude, as:
+                  0 = not present     1 = fit     2 = extrapolated
+  ....x..... Quality of exported V magnitude, as:
+                  0 = not present     1 = fit     2 = extrapolated
+  ...x...... Classification unanimity
+                  0 = mixed vote                  2 = unanimous defect
+                  1 = unanimous vote
+  ..x....... Classification voters
+                  0 = several 15um scan           2 = several 25um scan
+                  1 = one 15um scan               3 = one 25um scan
+  .x........ Processing status
+                  0 = complete processing on all plates
+                  1 = object too big (&gt;256<SUP>2</SUP> pix) on at least one plate
+  x......... Deblending
+                  0 = single object on all plates
+                  1 = child (deblended) object on at least one plate.
+  ----------------------------------------------------------------------
+<A NAME="sRM3.5"><B>Note (5)</B>: this flag concerns only the Tycho stars (Status=99999900)
+
+<HR>
+
+<A NAME="sRM99.3"><B>Acknowledgements</B>:
+    The Guide Star Catalogue-II is a joint project of the Space Telescope
+    Science Institute and the Osservatorio Astronomico di Torino. Space
+    Telescope Science Institute is operated by the Association of
+    Universities for Research in Astronomy, for the National Aeronautics
+    and Space Administration under contract NAS5-26555. The participation
+    of the Osservatorio Astronomico di Torino is supported by the Italian
+    Council for Research in Astronomy. Additional support is provided by
+    European Southern Observatory, Space Telescope European Coordinating
+    Facility, the International GEMINI project and the European Space
+    Agency Astrophysics Division.
+================================================================================
+<B>(End)</B>                                   Francois Ochsenbein [CDS]    19-Apr-2007
+
+</PRE><!-- ....wait for 1 children: %0=26480 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

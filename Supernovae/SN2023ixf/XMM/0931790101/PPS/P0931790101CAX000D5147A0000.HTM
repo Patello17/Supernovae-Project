@@ -1,0 +1,503 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of V/147</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Wed Jun 28 17:16:21 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0931790101OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of V/147 :<BR>The SDSS Photometric Catalogue, Release 12 (Alam+, 2015)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0931790101OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>V/147</B>          The SDSS Photometric Catalogue, Release 12          (Alam+, 2015)
+================================================================================
+The SDSS Photometric Catalogue, Data Release 12 (DR12)
+     Alam S. et al.
+    &lt;Astrophys. J. Suppl. Ser. 219, 12 (2015)&gt;
+    =<A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=2015ApJS..219...12A">2015ApJS..219...12A</A>
+    =<A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=2016yCat.5147....0A">2016yCat.5147....0A</A>
+================================================================================
+<B>ADC_Keywords</B>: Surveys; Photometry, SDSS ; Redshifts
+
+<B>Keywords</B>: atlases - catalogs - surveys
+
+
+<A NAME="sRM99.1"><B>Abstract</B>:
+    The third generation of the Sloan Digital Sky Survey (SDSS-III) took
+    data from 2008 to 2014 using the original SDSS wide-field imager, the
+    original and an upgraded multi-object fiber-fed optical spectrograph,
+    a new near-infrared high-resolution spectrograph, and a novel optical
+    interferometer. All of the data from SDSS-III are now made public. In
+    particular, Alam+, <A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=2015ApJS..219...12A">2015ApJS..219...12A</A> paper describes Data Release 11
+    (DR11) including all data acquired through 2013 July, and DR12 adding
+    data acquired through 2014 July (including all data included in
+    previous data releases), marking the end of SDSS-III observing.
+    Relative to our previous public release (DR10), DR12 adds one million
+    new spectra of galaxies and quasars from the Baryon Oscillation
+    Spectroscopic Survey (BOSS) over an additional 3000deg<SUP>2</SUP> of sky, more
+    than triples the number of H-band spectra of stars as part of the
+    Apache Point Observatory (APO) Galactic Evolution Experiment (APOGEE),
+    and includes repeated accurate radial velocity measurements of 5500
+    stars from the Multi-object APO Radial Velocity Exoplanet Large-area
+    Survey (MARVELS). The APOGEE outputs now include the measured
+    abundances of 15 different elements for each star. In total, SDSS-III
+    added 5200deg<SUP>2</SUP> of ugriz imaging. Since its first light in 1998, SDSS
+    has imaged over 1/3 of the Celestial sphere in five bands and obtained
+    over five million astronomical spectra.
+
+<A NAME="sRM11.1"><B>Description</B>:
+    Data Release 12 (DR12) is the final data release of the SDSS-III,
+    containing all SDSS observations through July 2014. It includes the
+    complete dataset of the BOSS and APOGEE surveys, and also newly
+    includes stellar radial velocity measurements from MARVELS.
+
+    The principal changes from previous versions are summarized at
+    <A HREF="http://www.sdss.org/dr12/whatsnew/">http://www.sdss.org/dr12/whatsnew/</A>
+
+<A NAME="sRM99.2"><B>Official SDSS-III Acknowledgement</B>:
+    We request that the following be added to the acknowledgement section
+    of any paper using data from the SDSS-III.
+
+    Funding for SDSS-III has been provided by the Alfred P. Sloan
+    Foundation, the Participating Institutions, the National Science
+    Foundation, and the U.S. Department of Energy Office of Science. The
+    SDSS-III web site is <A HREF="http://www.sdss3.org/.">http://www.sdss3.org/.</A>
+
+    SDSS-III is managed by the Astrophysical Research Consortium for the
+    Participating Institutions of the SDSS-III Collaboration including the
+    University of Arizona, the Brazilian Participation Group, Brookhaven
+    National Laboratory, University of Cambridge, University of Florida,
+    the French Participation Group, the German Participation Group, the
+    Instituto de Astrofisica de Canarias, the Michigan State/Notre
+    Dame/JINA Participation Group, Johns Hopkins University, Lawrence
+    Berkeley National Laboratory, Max Planck Institute for Astrophysics,
+    New Mexico State University, New York University, Ohio State
+    University, Pennsylvania State University, University of Portsmouth,
+    Princeton University, the Spanish Participation Group, University of
+    Tokyo, University of Utah, Vanderbilt University, University of
+    Virginia, University of Washington, and Yale University.
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.70">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.71">&#215; <A HREF="#sRM2.1">sdss12.sam</A>      1168     1000  <A HREF="#sRM3.1">*</A>Sample output of the SDSS photometric catalog
+<HR>
+<A NAME="sRM3.1"><B>Note on sdss12.sam</B>: a sample close to the point (0,0) is given in "sdss12.sam".
+     The catalog described here is a subset of the full SDSS catalog
+     available from <A HREF="http://www.sdss3.org/dr12/">http://www.sdss3.org/dr12/</A> restricted to primary and
+     secondary photo objects, and with a selection of the columns of the
+     full catalog. Column names (labels) frequently differ from their
+     original names, in which case the original name is added to the
+     description of the original column.
+<HR>
+
+<A NAME="sRM13.1"><B>See also</B>:
+    <A HREF="http://www.sdss.org/dr12/">http://www.sdss.org/dr12/</A> : SDSS DR12 home page
+    <A HREF="http://www.sdss.org/dr12/help/glossary/">http://www.sdss.org/dr12/help/glossary/</A> : Glossary of SDSS Terminology
+    <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=V/139">V/139</A> : The SDSS Photometric Catalog, Release 9 (Adelman-McCarthy+, 2012)
+
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.71"> sdss12.sam</A>
+<HR>
+   Bytes Format Units   Label   Explanations
+<HR>
+   1- 10  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     RAdeg   Right Ascension of the object (ICRS)
+                                   at Epoch="ObsDate" (ra)
+  12- 21  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEdeg   Declination of the object (ICRS)
+                                   at Epoch="ObsDate" (dec)
+      23  I1    ---     mode    [1/2] 1: primary  (469,053,874 sources),
+                                   2: secondary (324,960,094 sources)
+      25  A1    ---     q_mode  [+] '+' indicates clean photometry
+                                   (310,190,812 sources with mode 1+) (clean)
+      27  I1    ---     class   <A HREF="#sRM3.2">Type of object (3=galaxy, 6=star) (1)</A>
+  29- 47  A19   ---     SDSS12  SDSS-DR12 name, based on J2000 position
+      49  A1    ---   m_SDSS12  [*] The asterisk indicates that 2 different
+                                   SDSS objects share the same SDSS12 name
+  51- 70  A20   ---    SDSS-ID  [0-9 -] <A HREF="#sRM3.3">SDSS object identifier (2)</A>
+  72- 90  I19   ---     objID   <A HREF="#sRM3.3">SDSS unique object identifier (2)</A>
+  92-106  A15   ---     Sp-ID   ? <A HREF="#sRM3.8">Spectroscopic Plate-MJD-Fiber identifier (7)</A>
+ 108-126  I19   ---    SpObjID  <A HREF="#sRM3.8">Pointer to the spectrum of object, or 0 (7)</A>
+ 128-146  I19   ---   parentID  Pointer to parent (if object deblended)
+ 148-166  I19   ---     flags   <A HREF="#sRM3.4">Photo Object Attribute flags (3)</A>
+ 168-171  I4    ---     Status  <A HREF="#sRM3.5">Hexadecimal status (4)</A>
+ 173-177  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A> e_RAdeg  [0/51703] Mean error on RAdeg (raErr)
+ 179-183  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A> e_DEdeg  [0/20301] Mean error on DEdeg (decErr)
+ 185-193  F9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?yr" TARGET="explain">yr</A>     ObsDate  <A HREF="#sRM3.7">Mean Observation date (6)</A>
+     195  I1    ---     Q       [1/3] Quality of the observation:
+                                  1=bad 2=acceptable 3=good
+ 197-202  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     umag    [4/38]? <A HREF="#sRM3.6">Model magnitude in u filter, AB scale</A>
+                                   (u) (5)
+ 204-208  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_umag  ? Mean error on umag (err_u)
+ 210-215  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     gmag    [5/40]? <A HREF="#sRM3.6">Model magnitude in g filter, AB scale</A>
+                                   (g) (5)
+ 217-221  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_gmag  ? Mean error on gmag (err_g)
+ 223-228  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     rmag    [4/39]? <A HREF="#sRM3.6">Model magnitude in r filter, AB scale</A>
+                                   (r) (5)
+ 230-234  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_rmag  ? Mean error on rmag (err_r)
+ 236-241  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     imag    [3/40]? <A HREF="#sRM3.6">Model magnitude in i filter, AB scale</A>
+                                   (i) (5)
+ 243-247  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_imag  ? Mean error on imag (err_i)
+ 249-254  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     zmag    [3/38]? <A HREF="#sRM3.6">Model magnitude in z filter, AB scale</A>
+                                   (z) (5)
+ 256-260  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_zmag  ? Mean error on zmag (err_z)
+--------------------------------------------------------------------------------
+ 262-269  F8.5  ---     zsp     [-0.02/7.1]? <A HREF="#sRM3.8">Spectroscopic redshift</A>
+                                   (when SpObjID&gt;0) (7)
+ 271-277  F7.5  ---     e_zsp   ? <A HREF="#sRM3.8">Mean error on zsp (negative for bad fit) (7)</A>
+ 279-281  I3    ---     f_zsp   [0/196]? <A HREF="#sRM3.10">"zwarning" flag (9)</A>
+ 283-292  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    Vdisp   [0/850]? Velocity dispersion (velDisp)
+ 294-299  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>   e_Vdisp  ? Mean error on Vdisp (velDispErr)
+ 301-304  A4    ---     spInst  ? Spectral instrument used (SDSS or BOSS)
+                                    (instrument)
+ 306-324  A19   ---     spType  ? <A HREF="#sRM3.11">Source type (sourceType) (10)</A>
+ 326-331  A6    ---     spCl    ? Spectroscopic class: GALAXY, QSO,
+                                    STAR
+ 333-353  A21   ---     subCl   ? <A HREF="#sRM3.12">Spectroscopic subclass (subClass) (11)</A>
+ 355-360  F6.2  ---     spS/N   [0/132]? Median signal-to-noise over all good
+                                    pixels (snMedian)
+--------------------------------------------------------------------------------
+ 362-380  I19   ---     uFlags  <A HREF="#sRM3.4">Detection flags, u band (flags_u) (3)</A>
+     382  I1    ---     us      0=notStar, 1=Star in u band (probPSF_u)
+     384  I1    ---     uc      [0/6] <A HREF="#sRM3.2">Phototype in u band, 6=Star (type_u) (1)</A>
+ 386-394  F9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?yr" TARGET="explain">yr</A>      uDate   <A HREF="#sRM3.7">Date of observation in u band (6)</A>
+ 396-401  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     u'mag   [4/38]? <A HREF="#sRM3.6">Model magnitude in u' filter (= umag)</A>
+                                    (5)
+ 403-408  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>    e_u'mag  ? Mean error on u'mag (= e_umag)
+ 410-415  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     upmag   [5/34]? PSF magnitude in u band (psfMag_u)
+ 417-422  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>    e_upmag  ? Mean error on upmag (psfMagErr_u)
+ 424-429  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     uPmag   [3/43]? Petrosian magnitude in u band
+                                    (petroMag_u)
+ 431-436  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>    e_uPmag  ? Mean error on  uPmag (petroMagErr_u)
+ 438-444  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  uPrad   [0/260]? Petrosian radius in u band
+                                    (petroRad_u)
+ 446-454  F9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A> e_uPrad  ?=-1000 Mean error in uPrad (petroRadErr_u)
+ 456-461  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  uoRA    ? Offset of u position along RA (offsetRa_u)
+ 463-468  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  uoDE    ? Offset of u position along Dec
+                                     (offsetDec_u)
+ 470-476  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  udVrad  ? de Vaucouleurs fit radius, u band
+                                     (deVRad_u)
+ 478-484  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  udVell  ? de Vaucouleurs fit ellipt, u band
+                                     (1-deVAB_u)
+ 486-490  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     uPA     ? Position angle of dVrad in u band
+                                     (deVPhi_u)
+--------------------------------------------------------------------------------
+ 492-510  I19   ---     gFlags  <A HREF="#sRM3.4">Detection flags, g band (flags_g) (3)</A>
+     512  I1    ---     gs      0=notStar, 1=Star in g band (probPSF_g)
+     514  I1    ---     gc      <A HREF="#sRM3.2">Phototype in g band, 6=Star (type_g) (1)</A>
+ 516-524  F9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?yr" TARGET="explain">yr</A>      gDate   <A HREF="#sRM3.7">Date of observation in g band (6)</A>
+ 526-531  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     g'mag   [5/39]? <A HREF="#sRM3.6">Model magnitude in g' filter (= gmag)</A>
+                                     (5)
+ 533-538  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>    e_g'mag  ? Mean error on g'mag (= e_gmag)
+ 540-545  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     gpmag   [5/37]? PSF magnitude in g band (psfMag_g)
+ 547-552  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>    e_gpmag  ? Mean error on gpmag (psfMagErr_g)
+ 554-559  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     gPmag   [4/46]? Petrosian magnitude in g band
+                                     (petroMag_g)
+ 561-566  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>    e_gPmag  ? Mean error on  gPmag (petroMagErr_g)
+ 568-574  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  gPrad   ? Petrosian radius in g band (petroRad_g)
+ 576-584  F9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A> e_gPrad  ?=-1000 Mean error in gPrad (petroRadErr_g)
+ 586-591  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  goRA    ? Offset of g position along RA (offsetRa_g)
+ 593-598  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  goDE    ? Offset of g position along Dec
+                                      (offsetDec_g)
+ 600-606  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  gdVrad  ? de Vaucouleurs fit radius, g band
+                                      (deVRad_g)
+ 608-614  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  gdVell  ? de Vaucouleurs fit ellipt, g band
+                                      (1-deVAB_g)
+ 616-620  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     gPA     ? Position angle of dVrad in g band
+                                      (deVPhi_g)
+--------------------------------------------------------------------------------
+ 622-640  I19   ---     rFlags  <A HREF="#sRM3.4">Detection flags, r band (flags_r) (3)</A>
+     642  I1    ---     rs      0=notStar, 1=Star in r band (probPSF_r)
+     644  I1    ---     rc      <A HREF="#sRM3.2">Phototype in r band, 6=Star (type_r) (1)</A>
+ 646-654  F9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?yr" TARGET="explain">yr</A>      rDate   <A HREF="#sRM3.7">Date of observation in r band (6)</A>
+ 656-661  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     r'mag   [4/39]? <A HREF="#sRM3.6">Model magnitude in r' filter (= rmag)</A>
+                                      (5)
+ 663-668  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>    e_r'mag  ? Mean error on r'mag (= e_rmag)
+ 670-675  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     rpmag   [4/33]? PSF magnitude in r band (psfMag_r)
+ 677-682  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>    e_rpmag  ? Mean error on rpmag (psfMagErr_r)
+ 684-689  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     rPmag   [4/43]? Petrosian magnitude in r band
+                                      (petroMag_r)
+ 691-696  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>    e_rPmag  ? Mean error on  rPmag (petroMagErr_r)
+ 698-704  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  rPrad   ? Petrosian radius in r band (petroRad_r)
+ 706-714  F9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A> e_rPrad  ?=-1000 Mean error in rPrad (petroRadErr_r)
+ 716-721  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  roRA    ? Offset of r position along RA (offsetRa_r)
+ 723-728  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  roDE    ? Offset of r position along Dec
+                                       (offsetDec_r)
+ 730-736  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  rdVrad  ? de Vaucouleurs fit radius, r band
+                                       (deVRad_r)
+ 738-744  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  rdVell  ? de Vaucouleurs fit ellipt, r band
+                                       (1-deVAB_r)
+ 746-750  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     rPA     ? Position angle of dVrad in r band
+                                       (deVPhi_r)
+--------------------------------------------------------------------------------
+ 752-770  I19   ---     iFlags  <A HREF="#sRM3.4">Detection flags, i band (flags_i) (3)</A>
+     772  I1    ---     is      0=notStar, 1=Star in i band (probPSF_i)
+     774  I1    ---     ic      <A HREF="#sRM3.2">Phototype in i band, 6=Star (type_i) (1)</A>
+ 776-784  F9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?yr" TARGET="explain">yr</A>      iDate   <A HREF="#sRM3.7">Date of observation in i band (6)</A>
+ 786-791  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     i'mag   [3/40]? <A HREF="#sRM3.6">Model magnitude in i' filter (= imag)</A>
+                                       (5)
+ 793-798  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>    e_i'mag  ? Mean error on i'mag (= e_imag)
+ 800-805  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     ipmag   [3/34]? PSF magnitude in i band (psfMag_i)
+ 807-812  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>    e_ipmag  ? Mean error on ipmag (psfMagErr_i)
+ 814-819  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     iPmag   [3/45]? Petrosian magnitude in i band
+                                       (petroMag_i)
+ 821-826  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>    e_iPmag  ? Mean error on  iPmag (petroMagErr_i)
+ 828-834  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  iPrad   ? Petrosian radius in i band (petroRad_i)
+ 836-844  F9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A> e_iPrad  ?=-1000 Mean error in iPrad (petroRadErr_i)
+ 846-851  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  ioRA    ? Offset of i position along RA (offsetRa_i)
+ 853-858  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  ioDE    ? Offset of i position along Dec
+                                       (offsetDec_i)
+ 860-866  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  idVrad  ? de Vaucouleurs fit radius, i band
+                                       (deVRad_i)
+ 868-874  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  idVell  ? de Vaucouleurs fit ellipt, i band
+                                       (1-deVAB_i)
+ 876-880  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     iPA     ? Position angle of dVrad in i band
+                                       (deVPhi_i)
+--------------------------------------------------------------------------------
+ 882-900  I19   ---     zFlags  <A HREF="#sRM3.4">Detection flags, z band (flags_z) (3)</A>
+     902  I1    ---     zs      0=notStar, 1=Star in z band (probPSF_z)
+     904  I1    ---     zc      <A HREF="#sRM3.2">Phototype in z band, 6=Star (type_z) (1)</A>
+ 906-914  F9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?yr" TARGET="explain">yr</A>      zDate   <A HREF="#sRM3.7">Date of observation in z band (6)</A>
+ 916-921  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     z'mag   [3/38]? <A HREF="#sRM3.6">Model magnitude in z filter (= zmag)</A>
+                                       (5)
+ 923-928  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>    e_z'mag  ? Mean error on z'mag (= e_zmag)
+ 930-935  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     zpmag   [3/32]? PSF magnitude in z band (psfMag_z)
+ 937-942  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>    e_zpmag  ? Mean error on zpmag (psfMagErr_z)
+ 944-949  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     zPmag   [3/42]? Petrosian magnitude in z band
+                                       (petroMag_z)
+ 951-956  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>    e_zPmag  ? Mean error on  zPmag (petroMagErr_z)
+ 958-964  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  zPrad   ? Petrosian radius in z band (petroRad_z)
+ 966-974  F9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A> e_zPrad  ?=-1000 Mean error in zPrad (petroRadErr_z)
+ 976-981  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  zoRA    ? Offset of z position along RA (offsetRa_z)
+ 983-988  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  zoDE    ? Offset of z position along Dec
+                                       (offsetDec_z)
+ 990-996  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  zdVrad  ? de Vaucouleurs fit radius, z band
+                                      (deVRad_z)
+ 998-1004  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  zdVell  ? de Vaucouleurs fit ellipt, z band
+                                     (1-deVAB_z)
+ 1006-1010  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     zPA     ? Position angle of dVrad in z band
+                                   (deVPhi_z)
+--------------------------------------------------------------------------------
+ 1012-1018  F7.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas/yr" TARGET="explain">mas/yr</A>  pmRA    [-6121/4129]? <A HREF="#sRM3.9">Proper motion along Right</A>
+                                   Ascension (pmRa) (8)
+ 1020-1025  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas/yr" TARGET="explain">mas/yr</A>  e_pmRA  ? <A HREF="#sRM3.9">Mean error on pmRA (pmRaErr) (8)</A>
+ 1027-1033  F7.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas/yr" TARGET="explain">mas/yr</A>  pmDE    [-4846/4437]? <A HREF="#sRM3.9">Proper motion along Declination</A>
+                                   (pmDec) (8)
+ 1035-1040  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas/yr" TARGET="explain">mas/yr</A>  e_pmDE  ? <A HREF="#sRM3.9">Mean error on pmDE (pmDecErr) (8)</A>
+ 1042-1048  F7.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas" TARGET="explain">mas</A>     sigRA   [0/8662]? <A HREF="#sRM3.9">RMS residual of proper motion fit</A>
+                                   in RA (8)
+ 1050-1055  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas" TARGET="explain">mas</A>     sigDE   [0/10625]? <A HREF="#sRM3.9">RMS residual of proper motion fit</A>
+                                   in Dec (8)
+ 1057-1058  I2    ---     M       [1/4]?=-<A HREF="#sRM3.9">1 Number of USNO-B objects matched</A>
+                                   within 1arcsec (match) (8)
+ 1060-1061  I2    ---     N       [4/6]?=-<A HREF="#sRM3.9">1 Number of detections used in the pm</A>
+                                   fit, including SDSS (nFit) (8)
+ 1063-1066  F4.1  ---     g(O)    ? <A HREF="#sRM3.9">Magnitude from O plate recalibrated to g (8)</A>
+ 1068-1071  F4.1  ---     r(E)    ? <A HREF="#sRM3.9">Magnitude from E plate recalibrated to r (8)</A>
+ 1073-1076  F4.1  ---     g(J)    ? <A HREF="#sRM3.9">Magnitude from J plate recalibrated to g (8)</A>
+ 1078-1081  F4.1  ---     r(F)    ? <A HREF="#sRM3.9">Magnitude from F plate recalibrated to r (8)</A>
+ 1083-1086  F4.1  ---     i(N)    ? <A HREF="#sRM3.9">Magnitude from N plate recalibrated to i (8)</A>
+ 1088-1097  F10.4 ---     zph     [-9999/]? <A HREF="#sRM3.13">Photometric redshift; estimated</A>
+                                   by robust fit to nearest neighbors in
+                                   a reference set (12)
+ 1099-1108  F10.4 ---     e_zph   [-9999/]? <A HREF="#sRM3.13">Estimated error of the</A>
+                                   photometric redshift (zErr) (12)
+ 1110-1115  F6.4  ---     &lt;zph&gt;   [0.009/0.9]? average redshift of the nearest
+                                   neighbors; if significantly different from
+                                   zph this might be a better estimate than zph
+                                   (nnAvgZ)
+ 1117-1123  F7.3  ---     chi2    ? Chi-square value for the minimum
+                                   chi-square template fit (chisq_zph)
+ 1125-1132  F8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     u'Mag   [-644/4]? rest frame u' absolute magnitude
+                                   (absMagU)
+ 1134-1141  F8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     g'Mag   [-472/3]? rest frame g' absolute magnitude
+                                   (absMagG)
+ 1143-1150  F8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     r'Mag   [-351/3]? rest frame r' absolute magnitude
+                                   (absMagR)
+ 1152-1159  F8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     i'Mag   [-271/7]? rest frame i' absolute magnitude
+                                   (absMagI)
+ 1161-1168  F8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     z'Mag   [-199/3]? rest frame z' absolute magnitude
+                                   (absMagZ)
+<HR>
+<A NAME="sRM3.2"><B>Note (1)</B>: The type (class) is numbered as follows:
+      0 = Unknown: Object type is not known.
+      1 = Cosmic-ray track (not used).
+      2 = Defect (not used)
+      3 = Galaxy: An extended object composed of many stars and other matter
+          (208,478,448 with mode=1 occurrences)
+      4 = Ghost: Object created by reflected or refracted light. (not used)
+      5 = KnownObject: Object came from some other catalog (not yet used)
+      6 = Star: A a self-luminous gaseous celestial body
+          (260,562,744 with mode=1 occurrences)
+      7 = Trail: A satellite or asteroid or meteor trail. (not yet used)
+      8 = Sky: Blank sky spectrogram (no objects in this arcsecond area).
+      9 = NotAType (not used)
+<A NAME="sRM3.3"><B>Note (2)</B>: The SDSS identifier is composed of the 5 numbers run, rerun
+     (301), camcol (1-6), field (11-1001) and object (1-16000). The SDSS-ID
+     is written run-rerun-cam-field-obj (5 numbers and 4 dashes). The objID
+     is also combined from these numbers (the &lt;&lt;n operator represents the
+     left shift of n bits, i.e. a multiplication by 2^n):
+     objID = skyVersion&lt;&lt;59 + rerun&lt;&lt;48 + run&lt;&lt;32 + camcol&lt;&lt;29
+           + field&lt;&lt;16 + obj
+     (in the case of DR8-9, skyVersion=2 and rerun=301, i.e. objID is in the
+     range 1237645472596754432-1237926947573465087
+     (hexa 112d000000000000-112dffffffffffff).
+<A NAME="sRM3.4"><B>Note (3)</B>: flags written in hexadecimal, full description available at
+   <A HREF="http://skyserver.sdss.org/dr12/en/help/browser/browser.aspx#">http://skyserver.sdss.org/dr12/en/help/browser/browser.aspx#</A> 
+   &amp;&amp;history=search+PhotoFlags
+ ------------------------------------------------------------------------------
+ 0000000000000001 = CANONICAL_CENTER   Measurements used the center in r*
+ 0000000000000002 = BRIGHT             Object detected in bright object-finding
+ 0000000000000004 = EDGE               Object is too close to edge of frame
+ 0000000000000008 = BLENDED            Multiple peaks detected
+ 0000000000000010 = CHILD              Product of deblending a BLENDED object.
+ 0000000000000020 = PEAKCENTER         Position of peak pixel rather than ML
+ 0000000000000040 = NODEBLEND          No deblending attempted on BLENDED object
+ 0000000000000080 = NOPROFILE          Radial profile could not be estimated
+ 0000000000000100 = NOPETRO            No valid Petrosian radius found
+ 0000000000000200 = MANYPETRO          More than one Petrosian radius found.
+ 0000000000000400 = NOPETRO_BIG        Petrosian radius beyond radial profile.
+ 0000000000000800 = DEBLENDTOOMANY_PEAKS More than 25 peaks in this object
+ 0000000000001000 = COSMIC_RAY         Contains a pixel part of a cosmic ray.
+ 0000000000002000 = MANYR50            More than one 50% light radius.
+ 0000000000004000 = MANYR90            More than one 90% light radius.
+ 0000000000008000 = BAD_RADIAL         Some points in radial profile S/N&lt;0
+ 0000000000010000 = INCOMPLETE_PROFILE Petrosian radius intersects frame edge
+ 0000000000020000 = INTERP             Pixel(s) determined by interpolation.
+ 0000000000040000 = SATURATED          Saturated pixel(s)
+ 0000000000080000 = NOTCHECKED         Not checked for local peaks
+ 0000000000100000 = SUBTRACTED         BRIGHT object, wings subtracted
+ 0000000000200000 = NOSTOKES           No measured Stokes params
+ 0000000000400000 = BADSKY             Sky level so bad that highest pixel &lt;0.
+ 0000000000800000 = PETROFAINT         Petrosian radius(es) rejected for low SB
+ 0000000001000000 = TOO_LARGE          Object too large to measure its profile
+ 0000000002000000 = DEBLENDEDASPSF   Deblender treated obj as PSF
+ 0000000004000000 = DEBLEND_PRUNED     At least one child was removed
+ 0000000008000000 = ELLIPFAINT         Object center fainter than the isophote
+ 0000000010000000 = BINNED1            Object detected in 1x1 binned image
+ 0000000020000000 = BINNED2            Object detected in 2x2 binned image
+ 0000000040000000 = BINNED4            Object detected in 4x4 binned image
+ 0000000080000000 = MOVED              Possibly moving object
+ 0000000100000000 = DEBLENDEDASMOVING A MOVED object treated as moving.
+ 0000000200000000 = NODEBLEND_MOVING    A MOVED object not treated as moving.
+ 0000000400000000 = TOOFEWDETECTIONS Too few detections to deblend as moving.
+ 0000000800000000 = BADMOVINGFIT     Moving fit too poor to be believable.
+ 0000001000000000 = STATIONARY         Object consistent with being stationary.
+ 0000002000000000 = PEAKSTOOCLOSE    Some peaks merged into a single peak.
+ 0000004000000000 = MEDIAN_CENTER      Center given is of median-smoothed image.
+ 0000008000000000 = LOCAL_EDGE         Center too close to an edge.
+ 0000010000000000 = BADCOUNTSERROR   Too few good pixels, error underestimated
+ 0000020000000000 = BADMOVINGFIT_CHILD Moving child's velocity fit too poor
+ 0000040000000000 = DEBLENDUNASSIGNEDFLUX  After deblending flux not assigned
+ 0000080000000000 = SATUR_CENTER        Center is close to saturated pixel(s)
+ 0000100000000000 = INTERP_CENTER       Center is close to interpolated pixel(s)
+ 0000200000000000 = DEBLENDEDATEDGE   Object close to edge was deblended
+ 0000400000000000 = DEBLEND_NOPEAK      No detected peak within this child
+ 0000800000000000 = PSFFLUXINTERP     PSF flux from interpolated pixels &gt; 20%
+ 0001000000000000 = TOOFEWGOOD_DETECTIONS Too few good detections
+ 0002000000000000 = CENTEROFFAIMAGE   At least one peak's center lay off image
+ 0004000000000000 = DEBLEND_DEGENERATE  Identical candidate children, 1 retained
+ 0008000000000000 = BRIGHTESTGALAXYCHILD Brightest member classified as galaxy
+ 0010000000000000 = CANONICAL_BAND       Band chosen as 'Canonical', generally r
+ 0020000000000000 = AMOMENT_FAINT        Object too faint to measure moments
+ 0040000000000000 = AMOMENT_SHIFT        Centroid shift too large
+ 0080000000000000 = AMOMENT_MAXITER      Maximum number of iterations exceeded
+ 0100000000000000 = MAYBE_CR             Object could actually be a cosmic ray
+ 0200000000000000 = MAYBE_EGHOST         Object could actually be a ghost
+ 0400000000000000 = NOTCHECKED_CENTER    Object center in a region not searched
+ 0800000000000000 = OBJECT2HASSATUR_DN Trails included in estimated flux.
+ 1000000000000020 = OBJECT2DEBLENDPEEPHOLE Deblend modified by peephole
+ 2000000000000020 = GROWN_MERGED         Growing led to a merger
+ 4000000000000020 = HAS_CENTER           Object has a canonical center
+ 8000000000000020 = RESERVED             Not used
+ ------------------------------------------------------------------------------
+<A NAME="sRM3.5"><B>Note (4)</B>: status flags written in hexadecimal, full description available at
+ <A HREF="http://skyserver.sdss3.org/dr9/en/help/browser/enum.asp?n=ResolveStatus">http://skyserver.sdss3.org/dr9/en/help/browser/enum.asp?n=ResolveStatus</A>
+ Identical in <A HREF="http://skyserver.sdss.org/dr12/en/help/browser/browser.aspx#">http://skyserver.sdss.org/dr12/en/help/browser/browser.aspx#</A> 
+              &amp;&amp;history=search+ResolveStatus
+ ------------------------------------------------------------------------------
+ 00000001 = RUN_PRIMARY      Object status set in reference to its own run
+ 00000002 = RUN_RAMP         Object in what would be the overlap area of a field
+ 00000004 = RUN_OVERLAPONLY  Object only appears in the overlap between 2 fields
+ 00000008 = RUN_IGNORE       Bright or parent object that should be ignored
+ 00000010 = RUN_EDGE         Object near lowest or highest column
+ 00000020 = RUN_DUPLICATE    Duplicate measurements of same pixels in 2 fields
+ 00000100 = SURVEY_PRIMARY   Primary observation within survey (mode=1)
+ 00000200 = SURVEY_BEST      Best observation in full survey, but not primary.
+ 00000400 = SURVEY_SECONDARY Repeat (independent) observation (mode=2)
+ 00000800 = SURVEY_BADFIELD  In field with score=0
+ 00001000 = SURVEY_EDGE      Not kept as secondary
+ ------------------------------------------------------------------------------
+<A NAME="sRM3.6"><B>Note (5)</B>:
+     The response curves of the SDSS filters (u g r i z) can be found on
+     the SDSS pages: <A HREF="http://www.sdss.org/dr5/instruments/imager/index.html">http://www.sdss.org/dr5/instruments/imager/index.html</A>
+     The central wavelength and FWHM are:
+     -----------------------------------------------
+      (nm)      u'      g'      r'      i'      z'
+     -----------------------------------------------
+     lambda   354.3    477.0   623.1   762.5   913.4
+     FWHM      56.7    138.7   137.3   152.6    95.0
+     -----------------------------------------------
+     Note that the ugriz magnitudes are not exactly on the AB scale
+     for the u-band (uAB=umag-0.04) and z-band (zAB=zmag+0.02)
+     (<A HREF="http://www.sdss.org/DR7/algorithms/fluxcal.html">http://www.sdss.org/DR7/algorithms/fluxcal.html</A>)
+<A NAME="sRM3.7"><B>Note (6)</B>: column from the "Fields" table.
+     Dates of the observations for each colour, and their average.
+<A NAME="sRM3.8"><B>Note (7)</B>: column from the "SpecObjAll" table. The "SpObjID" is composed
+     of plate + mjd + fiber + run2d with formula (the &lt;&lt;n operator
+     represents the left shift of n bits, i.e. a multiplication by 2^n):
+     SpObjID = (plate&lt;&lt;50)+((mjd-50000)&lt;&lt;24)+(fiber&lt;&lt;38)+(run2d&lt;&lt;10)
+<A NAME="sRM3.9"><B>Note (8)</B>: column from the "ProperMotions" table.
+
+<A NAME="sRM3.10"><B>Note (9)</B>: the "zwarning" flag is a number made of the following bits:
+   1 (20) = sky fiber
+   2 (21) = too little wavelength coverage
+   4 (22) = chi-squared of best fit is too close to that of second best
+   8 (23) = synthetic spectrum is negative
+  16 (24) = fraction of points more than 5 sigma away from best model
+              is too large (&gt;5%)
+  32 (25) = chi-squared minimum at edge of the redshift fitting range
+  64 (26) = a QSO line exhibits negative emission (triggered only in QSO
+              spectra if CIV, CIII, MgII, Hbeta, or Halpha has
+              lineArea+3*(lineArea)&lt;0)
+ 128 (27) = the fiber was unplugged, so no spectrum obtained
+  See <A HREF="http://skyserver.sdss.org/dr12/en/help/browser/browser.aspx#">http://skyserver.sdss.org/dr12/en/help/browser/browser.aspx#</A> 
+      &amp;&amp;history=search+SpeczWarning
+<A NAME="sRM3.11"><B>Note (10)</B>: the spectroscopic Source types are summarized in the
+      "type9.htx" file; see also the SDSS DR12 help:
+      <A HREF="http://skyserver.sdss.org/dr12/en/help/browser/browser.aspx#">http://skyserver.sdss.org/dr12/en/help/browser/browser.aspx#</A> 
+      &amp;history=enum+AncillaryTarget1+E
+<A NAME="sRM3.12"><B>Note (11)</B>: the spectroscopic subclass includes:
+   * for GALAXY classes: BROADLINE, STARFORMING, STARBURST, AGN
+   * for STAR classes: MK spectral sub-classes, CV=Catataclysmic Variable,
+     Carbon stars (Carbon, Carbon_lines), white dwarfs (WD, WDcooler,
+     WDhotter, WDmagnetic, CarbonWD, CalciumWD)
+<A NAME="sRM3.13"><B>Note (12)</B>: If zErr=-9999, the fit failed, but the neighbors' average redshift
+           might still be available.
+<HR>
+
+<A NAME="sRM99.3"><B>Acknowledgements</B>:
+    It is a pleasure to thank Aniruddha R. Thakar, who provided us with the
+    files to build this catalogue.
+================================================================================
+<B>(End)</B>                        Thomas Boch, Emmanuelle Perret [CDS]    14-Mar-2016
+
+</PRE><!-- ....wait for 1 children: %0=14340 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

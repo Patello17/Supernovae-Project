@@ -1,0 +1,122 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of I/252</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Wed Jun 28 19:44:26 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0921180101OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of I/252 :<BR>The USNO-A2.0 Catalogue (Monet+ 1998)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0921180101OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>I/252</B>            The USNO-A2.0 Catalogue                     (Monet+ 1998)
+================================================================================
+USNO-A V2.0, A Catalog of Astrometric Standards
+     Monet D.
+     Bird A., Canzian B., Dahn C., Guetter H., Harris H., Henden A.,
+     Levine S., Luginbuhl C., Monet A.K.B., Rhodes A., Riepe B.,
+     Sell S., Stone R., Vrba F., Walker R.
+    &lt;U.S. Naval Observatory Flagstaff Station (USNOFS) and
+     Universities Space Research Association (USRA) stationed at USNOFS.
+     (1998)&gt;
+================================================================================
+<B>ADC_Keywords</B>: Surveys ; Positional data
+
+
+<A NAME="sRM11.1"><B>Description</B>:
+
+    USNO-A2.0 is a catalog  of  526,280,881  stars,  and  is  based  on  a
+    re-reduction  of the Precision Measuring Machine (PMM) scans that were
+    the basis for the USNO-A1.0 catalog. The major difference between A2.0
+    and A1.0 is that A1.0 used the Guide Star Catalog (Lasker et al. 1986,
+    see Cat. <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=I/220">I/220</A>) as its reference frame whereas A2.0 uses the ICRF as
+    realized by the  USNO  ACT  catalog  (Urban  et  al.  1997,  see  Cat.
+    <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=II/246">II/246</A>&gt;).
+
+    A2.0 presents  right ascension  and declination  (J2000, epoch  of the
+    mean of  the blue and  red plate) and  the blue and  red magnitude for
+    each star.  Usage  of  the  ACT  catalog  as  well  as  usage  of  new
+    astrometric   and  photometric  reduction  algorithms  should  provide
+    improved astrometry (mostly in the reduction of systematic errors) and
+    improved  photometry (because the brightest stars  on each plate had B
+    and V magnitudes  measured by  the Tycho  experiment on  the Hipparcos
+    satellite). The basic format of the catalog and its compilation is the
+    same as  for A1.0, and  most users should  be able to  migrate to this
+    newer version with minimal effort.
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.39">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.40">&#215; <A HREF="#sRM2.1">out.sam</A>           55      100  <A HREF="#sRM3.1">*</A>Sample output (out of 526,280,881 stars)
+<A NAME="sRM-F.41">&#215; read.me           79      353   Author's Original Catalogue Description
+<A NAME="sRM-F.42">&#215; usnoa/*            0        .   Compact version of Catalogue (3.6Gbytes)
+<HR>
+<A NAME="sRM3.1"><B>Note on out.sam</B>: this file is actually the result of the execution
+     of the query on the compacted version of USNO-A2.0 at CDS
+     (in subdirectory usnoa, not yet accessible)
+<HR>
+
+<A NAME="sRM13.1"><B>See also</B>:
+    <A HREF="ftp://ftp.nofs.navy.mil/usnoa">ftp://ftp.nofs.navy.mil/usnoa</A> : The Flagstaff FTP site with
+         the original catalogue
+    <A HREF="http://www.usno.navy.mil/pmm/">http://www.usno.navy.mil/pmm/</A> : The Precision Measuring Machine
+         home page at Flagstaff Station, U.S. Naval Observatory
+
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.40"> out.sam</A>
+<HR>
+   Bytes Format Units   Label     Explanations
+<HR>
+   1- 13  A13   ---    USNO-A2.0 *<A HREF="#sRM3.2">Original designation in USNO-A2.0 catalogue</A>
+  15- 24  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     RAdeg     Right ascension (ICRS) mean of blue/red plates
+  25- 34  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEdeg     Declination (ICRS) mean of blue/red plates
+      35  A1    ---     ACTflag   [A] 'A' when star belongs to ACT (Cat. <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=I/246">I/246</A>)
+      36  A1    ---     Mflag     [*] '*' magnitudes are probably wrong
+  38- 41  F4.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Bmag      Magnitude from blue plate
+  43- 46  F4.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Rmag      Magnitude from red plate
+  48- 55  F8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?yr" TARGET="explain">yr</A>      Epoch    *?=<A HREF="#sRM3.3">0.0 Mean epoch of position</A>
+<HR>
+<A NAME="sRM3.2"><B>Note on USNO-A2.0</B>:
+    This number allows to retrieve the exact original record: it is made
+    of a zone number (4 digits from 0000 to 1725 representing the distance
+    in 0.1deg to the South Pole, stepped by 75 = 7.5degrees), a dash (-)
+    and a number in the area (8 digits, order by IRCS (J2000) RA);
+    ****Note that this number differs from the USNO-A1.0 one.
+<A NAME="sRM3.3"><B>Note on Epoch</B>:
+    Epoch is the averaged date of observation between the blue and
+    the red plates.
+<HR>
+
+<A NAME="sRM99.1"><B>Author's Address</B>:
+   Dave Monet
+   US Naval Observatory Flagstaff Station
+   PO Box 1149  (US Mail Only)
+   West Highway 66  (FedEx, UPS, etc.)
+   Flagstaff AZ 86001 USA
+
+   Voice: 520-779-5132
+   FAX:   520-774-3626
+   e-mail:  <A HREF="mailto:dgm@nofs.navy.mil">dgm@nofs.navy.mil</A>
+================================================================================
+<B>(End)</B>                                     Francois Ochsenbein [CDS]  27-Oct-1998
+
+</PRE><!-- ....wait for 1 children: %0=26504 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

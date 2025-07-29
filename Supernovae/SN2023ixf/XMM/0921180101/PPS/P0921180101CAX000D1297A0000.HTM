@@ -1,0 +1,160 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of I/297</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Wed Jun 28 19:44:26 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0921180101OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of I/297 :<BR>NOMAD Catalog (Zacharias+ 2005)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0921180101OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>I/297</B>                     NOMAD Catalog                        (Zacharias+ 2005)
+================================================================================
+Naval Observatory Merged Astrometric Dataset (NOMAD)
+     Zacharias N., Monet D.G., Levine S.E., Urban S.E., Gaume R., Wycoff G.L.
+    &lt;San Diego AAS Meeting, January (2005)&gt;
+    =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2004AAS...205.4815Z">2004AAS...205.4815Z</A>
+================================================================================
+<B>ADC_Keywords</B>: Positional data ; Proper motions ; Surveys ;
+              Photometry, photographic ; Photometry, infrared
+
+<A NAME="sRM11.1"><B>Description</B>:
+    The  Naval Observatory Merged  Astrometric  Dataset  (NOMAD)  contains
+    astrometric and photometric data for over 1 billion stars derived from
+    the Hipparcos (<A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=I/239">I/239</A>), Tycho-2 (<A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=I/259">I/259</A>),  UCAC2 (<A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=I/289">I/289</A>),  and USNO-B1.0
+    (<A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=I/284">I/284</A>)  catalogs for astrometry and optical photometry,  supplemented
+    by 2MASS (<A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=II/246">II/246</A>)  near-infrared photometry.  For each unique star the
+    "best"   astrometric and photometric  data are chosen  from the source
+    catalogs and merged into a single dataset. A sequence of priorities is
+    followed  and NOMAD contains flags to identify the source catalogs and
+    gives cross-reference identifications.  This first release of NOMAD is
+    not a compiled catalog; that is,  if a star is identified in more than
+    1 of the  above mentioned catalogs,   only 1 catalog  entry is chosen.
+    Thus  the local  and global  systematic errors  of the  various source
+    catalogs will be present in this version of NOMAD. All source catalogs
+    astrometric  data are on the  International Celestial Reference System
+    within the  limitations of the source  catalogs.
+
+    For more information, see 
+      https://www.usno.navy.mil/USNO/astrometry/optical-IR-prod/nomad
+
+    A dedicated remote query program can be downloaded from
+    <A HREF="http://cdsweb.u-strasbg.fr/doc/cdsclient.html">http://cdsweb.u-strasbg.fr/doc/cdsclient.html</A>
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.37">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.38">&#215; <A HREF="#sRM2.1">out.sam</A>          167     1523   Example of the an output of NOMAD-1
+<HR>
+
+<A NAME="sRM13.1"><B>See also</B>:
+    https://www.usno.navy.mil/USNO/astrometry/optical-IR-prod/nomad : NOMAD 
+                                                              Home Page
+    <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=I/239">I/239</A> : The Hipparcos and Tycho Catalogues (ESA 1997)
+    <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=I/259">I/259</A> : The Tycho-2 Catalogue (Hog+ 2000)
+    <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=I/284">I/284</A> : The USNO-B1.0 Catalog (Monet+ 2003)
+    <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=I/289">I/289</A> : UCAC2 Catalogue (Zacharias+ 2004)
+   <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=II/246">II/246</A> : 2MASS All-Sky Catalog of Point Sources (Cutri+ 2003)
+
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.38"> out.sam</A>
+<HR>
+   Bytes Format Units    Label    Explanations
+<HR>
+   1- 12  A12   ---      NOMAD1   <A HREF="#sRM3.1">NOMAD-identifier (1)</A>
+  14- 25  A12   ---      USNO-B1  <A HREF="#sRM3.1">Identifier in USNO-B1 (Cat. I/284) (1)</A>
+  27- 34  I8    ---      UCAC2    ? Number in UCAC2 (Cat. <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=I/289">I/289</A>)
+  36- 47  A12   ---      Tycho-2  ? <A HREF="#sRM3.2">Identification in Tycho-2 or Hipparcos (2)</A>
+      48  A1    ---    f_Tycho-2  [*] when distance NOMAD1/Tycho-2 &gt; 1arcsec
+  49- 50  A2    ---      YM       [YM.] Existence in YB6 or 2MASS (Cat. <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=II/246">II/246</A>)
+  52- 62  F11.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      RAdeg    Right ascension in ICRS, Ep=J2000
+  63- 73  F11.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      DEdeg    Declination in ICRS, Ep=J2000
+      75  A1    ---      r        [BCMYTH] <A HREF="#sRM3.3">Source of position (3)</A>
+  77- 80  I4    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas" TARGET="explain">mas</A>      e_RAdeg  Mean error on RAdeg (at epRA)
+  82- 85  I4    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas" TARGET="explain">mas</A>      e_DEdeg  Mean error on DEdeg (at epDE)
+  87- 94  F8.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas/yr" TARGET="explain">mas/yr</A>   pmRA     Proper motion in RA (*cos(Dec))
+  96-103  F8.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas/yr" TARGET="explain">mas/yr</A>   pmDE     Proper motion in Declination
+ 105-109  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas/yr" TARGET="explain">mas/yr</A>   e_pmRA   Mean error on pmRA
+ 111-115  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas/yr" TARGET="explain">mas/yr</A>   e_pmDE   Mean error on pmDE
+ 117-122  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      Bmag     ?Blue magnitude
+     123  A1    ---      r_Bmag   [BCMYTHo] <A HREF="#sRM3.3">Origin of Bmag (3)</A>
+ 125-130  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      Vmag     ?Visual magnitude
+     131  A1    ---      r_Vmag   [BCMYTH] <A HREF="#sRM3.3">Origin of Vmag (3)</A>
+ 133-138  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      Rmag     ?Red magnitude
+     139  A1    ---      r_Rmag   [BCMYTHe] <A HREF="#sRM3.3">Origin of Rmag (3)</A>
+ 141-146  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      Jmag     ?Infrared J magnitude (from 2MASS)
+ 148-153  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      Hmag     ?Infrared H magnitude (from 2MASS)
+ 155-160  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      Kmag     ?Infrared K magnitude (from 2MASS)
+ 162-166  A5    ---      Xflags   [0-9a-f] <A HREF="#sRM3.4">Hexadecimal flags (4)</A>
+     167  A1    ---      R        [R*] <A HREF="#sRM3.4">Recommended (R) or Problematic (*) (4)</A>
+<HR>
+<A NAME="sRM3.1"><B>Note (1)</B>: NOMAD and USNO designations consist in 2 numbers
+     separated by a dash of the form:  zone-number
+     where zone (0000-1799) indicates a declination strip from the South
+     Pole (0.1deg wide), and number is a sequential number increasing
+     with right ascension.
+<A NAME="sRM3.2"><B>Note (2)</B>: The Tycho-2 number (Cat. <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=I/259">I/259</A>) is made of 3 numbers separated
+     by 2dashes, while Hipparcos (Cat. <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=I/239">I/239</A>) is a sequential number.
+<A NAME="sRM3.3"><B>Note (3)</B>: Sources of the values are defined as follows:
+      B = USNO-B1.0 (Monet et al., Cat. <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=I/284">I/284</A>)
+      C = UCAC2 (Zacharias et al., Cat. <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=I/289">I/289</A>)
+      M = 2MASS catalog of point sources (Cutri et al., Cat. <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=II/246">II/246</A>)
+      Y = YB6 Catalog (USNO, unpublished)
+      T = Tycho-2 Catalog (Hog et al., 2000, Cat. <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=I/259">I/259</A>)
+      H = Hipparcos catalog (Table <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=I/239/hip%5Fmain">I/239/hip_main</A>)
+      o = Palomar-I blue (O) plate (for Bmag)
+      e = Palomar-I red  (E) plate (for Rmag)
+<A NAME="sRM3.4"><B>Note (4)</B>: Flags are written in hexadecimal (symbols 0-f) with the
+          following meaning:
+  00001 = UBBIT   : Fails Blaise's test for USNO-B1.0 star
+  00002 = TMBIT   : Fails Roc's test for clean 2MASS star
+  00004 = YB6     : Included in YB6 catalog (Y)
+  00008 = 2MASS   : Included in 2MASS catalog (M)
+  00010 = TYBIT   : Astrometry comes from Tycho2 catalog (T)
+  00020 = XRBIT   : Alternative correlations for same (RA,Dec)
+  00040 = ITMBIT  : Alternative correlations for same 2MASS ID
+  00080 = IUCBIT  : Alternative correlations for same UCAC-2 ID
+  00100 = ITYBIT  : Alternative correlations for same Tycho2 ID
+  00200 = OMAGBIT : Blue magnitude from O (not J) plate (o)
+  00400 = EMAGBIT : Red magnitude from E (not F) plate (e)
+  00800 = TMONLY  : Object found only in 2MASS catalog (M)
+  01000 = HIPAST  : Ast from Hipparcos catalog (H)
+  02000 = SPIKE   : USNO-B1.0 diffraction spike bit set
+  04000 = TYCONF  : Tycho2 confusion flag set
+  08000 = BSCONF  : Bright star has nearby faint source
+  10000 = BSART   : Faint source is bright star artifact
+  20000 = USEME   : Recommended astrometric standard
+      * = one of SPIKE|YCONF|BSCONF|BSART|XRBIT|ITMBIT|IUCBIT|ITYBIT set
+      R = USEME (recommended astrometric standard)
+<HR>
+
+<A NAME="sRM99.1"><B>History</B>:
+    Prepared by Dave Monet.
+
+<A NAME="sRM99.2"><B>Acknowledgements</B>:
+    It is a pleasure to thank Dave Monet who forwarded a copy of the
+    NOMAD catalog to CDS.
+================================================================================
+<B>(End)</B>                                   Francois Ochsenbein [CDS]    09-Nov-2005
+
+</PRE><!-- ....wait for 1 children: %0=26486 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

@@ -1,0 +1,145 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of VII/237</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Wed Jun 28 19:44:27 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0921180101OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of VII/237 :<BR>HYPERLEDA. I. Catalog of galaxies (Paturel+, 2003)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0921180101OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>VII/237</B>             HYPERLEDA. I. Catalog of galaxies        (Paturel+, 2003)
+================================================================================
+HYPERLEDA. I. Identification and designation of galaxies.
+    Paturel G., Petit C., Prugniel P., Theureau G., Rousseau J., Brouty M.,
+    Dubois P., Cambresy L.
+   &lt;Astron. Astrophys. 412, 45 (2003)&gt;
+   =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2003A%26A...412...45P">2003A&A...412...45P</A>
+================================================================================
+<B>ADC_Keywords</B>: Galaxy catalogs
+
+<B>Keywords</B>: galaxies: general - catalogs
+
+
+<A NAME="sRM99.1"><B>Abstract</B>:
+    We present the new catalog of principal galaxies (PGC2003). It
+    constitutes the framework of the HYPERLEDA database that supersedes
+    the LEDA one, with more data and more capabilities. The catalog is
+    still restricted to confirmed galaxies, i.e. about one million
+    galaxies, brighter than ~18B-mag.
+
+    In order to provide the best possible identification for each galaxy
+    we give: accurate coordinates (typical accuracy better than 2 arcsec),
+    diameter, axis ratio and position angle. Diameters and axis ratios
+    have been homogenized to the RC2 system at the limiting surface
+    brightness of 25B-mag/arcsec<SUP>2</SUP>, using a new method, the EPIDEMIC
+    method.
+
+    In order to provide the best designation for each galaxy, we collected
+    the names from 50 catalogues. The compatibility of the spelling is
+    tested against NED and SIMBAD, and, as far as possible we used a
+    spelling compatible with both. For some cases, where no consensus
+    exists between NED, SIMBAD and LEDA, we propose some changes that
+    could make the spelling of names fully compatible.
+
+    The full catalog is distributed through the CDS and can be extracted
+    from HYPERLEDA, <A HREF="http://leda.univ-lyon1.fr/">http://leda.univ-lyon1.fr/</A> .
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.39">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.40">&#215; <A HREF="#sRM2.1">pgc.dat</A>          342   983261   Catalog of galaxies (table 5 in the paper)
+<A NAME="sRM-F.41">&#215; <A HREF="#sRM2.2">accro.dat</A>         82       50   Table of adopted acronyms (table 2 in the paper)
+<HR>
+
+<A NAME="sRM13.1"><B>See also</B>:
+    <A HREF="http://leda.univ-lyon1.fr/">http://leda.univ-lyon1.fr/</A> : the Hyperleda Home Page
+    <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=VII/238">VII/238</A> : HYPERLEDA. II. Catalog of homogenized HI data (Paturel+, 2003)
+
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.40"> pgc.dat</A>
+<HR>
+   Bytes Format Units        Label   Explanations
+<HR>
+   1-  3  A3    ---          ---     [PCG]
+   4- 10  I7    ---          PGC     [1/3099300] PGC number
+      12  A1    ---          ---     [J]
+  13- 14  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?h" TARGET="explain">h</A>            RAh     Right ascension (J2000)
+  15- 16  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?min" TARGET="explain">min</A>          RAm     Right ascension (J2000)
+  17- 20  F4.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>            RAs     Right ascension (J2000)
+      21  A1    ---          DE-     Declination sign (J2000)
+  22- 23  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>          DEd     Declination (J2000)
+  24- 25  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>       DEm     Declination (J2000)
+  26- 27  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>       DEs     Declination (J2000)
+  29- 30  A2    ---          OType   [GM ] <A HREF="#sRM3.1">Object type (1)</A>
+  32- 36  A5    ---          MType   Provisional morphological type from LEDA
+                                      according to the RC2 code.
+  37- 41  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%5b0.1arcmin%5d" TARGET="explain">[0.1arcmin]</A>  logD25  ?=<A HREF="#sRM3.2">9.99 Apparent diameter (2)</A>
+  42- 44  A3    ---          ---     [&#177;]
+  45- 48  F4.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%5b0.1arcmin%5d" TARGET="explain">[0.1arcmin]</A> e_logD25  ?=9.99 Actual error of logD25
+  51- 54  F4.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%5b---%5d" TARGET="explain">[---]</A>        logR25  ?=9.99 Axis ratio in log scale
+                                       (log of major axis to minor axis)
+  55- 57  A3    ---          ---     [&#177;]
+  58- 61  F4.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%5b---%5d" TARGET="explain">[---]</A>      e_logR25  ?=9.99 Actual error on logR25
+  64- 67  F4.0  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>          PA      ?=<A HREF="#sRM3.3">999. Adopted 1950-position angle (3)</A>
+  68- 70  A3    ---          ---     [&#177;]
+  71- 74  F4.0  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>          e_PA    ?=999. rms uncertainty on PA
+  76- 77  I2    ---        o_ANames  Number of alternate names.
+  79-341  A263  ---          ANames  <A HREF="#sRM3.4">Alternate names (4)</A>
+<HR>
+<A NAME="sRM3.1"><B>Note (1)</B>: 'G', galaxies; 'M', multiple system; GM, galaxy in multiple system.
+
+<A NAME="sRM3.2"><B>Note (2)</B>: Apparent diameter in log scale (D in 0.1arcmin) converted to the
+    RC3 system at the isophote 25B-mag/arcsec<SUP>2</SUP> (section 3);
+<A NAME="sRM3.3"><B>Note (3)</B>: Adopted 1950-position angle, measured from the North to the East.
+    Its value covers the range 0-180. A few values exactly equal to zero
+    are taken as 180.
+<A NAME="sRM3.4"><B>Note (4)</B>: Alternate names following the hierarchy given in accro.dat file.
+    Up to 12 names, each 22 bytes long, is given here.
+    Names that correspond to a multiple system are written in parenthesis.
+    151 Names that do not agree with NED identification have been written
+    with a question mark (?). 677 names that have been moved from one
+    galaxy to another since the first catalog have been written with an
+    exclamation point (!).
+<HR>
+
+<A NAME="sRM2.2"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.41"> accro.dat</A>
+<HR>
+   Bytes Format Units   Label     Explanations
+<HR>
+   1- 23  A23   ---     Name      <A HREF="#sRM3.5">Example of the name (1)</A>
+  25- 51  A27   ---     Aut       Authors' name
+  53- 82  A30   ----    Ref       BibCode or catalog number
+<HR>
+<A NAME="sRM3.5"><B>Note (1)</B>: For each adopted acronym we give an example of a name and the
+    reference where the acronym was created. When an acronym comes from
+    several references (e.g., KUG), we give the latest reference that
+    lists the former ones.
+<HR>
+
+<A NAME="sRM99.2"><B>Acknowledgements</B>: Georges Paturel <A HREF="mailto:patu@obs.univ-lyon1.fr">patu@obs.univ-lyon1.fr</A>
+
+================================================================================
+<B>(End)</B>                                        Patricia Bauer [CDS]    28-Nov-2003
+
+</PRE><!-- ....wait for 1 children: %0=26564 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

@@ -1,0 +1,298 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of IX/65</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Sun Jul 23 17:43:43 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0921180301OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of IX/65 :<BR>XMM-Newton Serendipitous Source Catalogue 4XMM-DR11 (Webb+, 2022)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0921180301OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>IX/65</B>          XMM-Newton Serendipitous Source Catalogue 4XMM-DR11 (Webb+, 2022)
+================================================================================
+The XMM-Newton serendipitous survey.
+IX. The fourth XMM-Newton serendipitous source catalogue.
+    Webb N.A., Coriat M., Traulsen I., Ballet J., Motch C., Carrera F.J.,
+    Koliopanos F., Authier J., de la Calle I., Ceballos M.T., Colomo E.,
+    Chuard D., Freyberg M., Garcia T., Kolehmainen M., Lamer G., Lin D.,
+    Maggi P., Michel L., Page C.G., Page M.J., Perea-Calderon J.V.,
+    Pineau F.-X., Rodriguez P., Rosen S.R., Santos Lleo M., Saxton R.D.,
+    Schwope A., Tomas L., Watson M.G., Zakardjian A.
+    &lt;XMM-SSC, Leicester, UK; Astron. Astrophys. 641, A136 (2020)&gt;
+   =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2020A%26A...641A.136W">2020A&A...641A.136W</A>
+   =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2022yCat.9065....0W">2022yCat.9065....0W</A>
+================================================================================
+<B>ADC_Keywords</B>: X-ray sources ; Surveys
+
+<B>Mission_Name</B>: XMM
+
+<B>Keywords</B>: catalogs - astronomical data bases - surveys - X-rays: general
+
+
+<A NAME="sRM99.1"><B>Abstract</B>:
+    Sky surveys produce enormous quantities of data on extensive regions
+    of the sky. The easiest way to access this information is through
+    catalogues of standardised data products. XMM-Newton has been
+    surveying the sky in the X-ray, ultra-violet and optical bands for 20
+    years.
+
+    The XMM-Newton Survey Science Centre has been producing standardised
+    data products and catalogues to facilitate access to the serendipitous
+    X-ray sky.
+
+    4XMM-DR11 contains 895415 X-ray detections above the processing
+    likelihood threshold of 6. These X-ray detections relate to 602543
+    unique X-ray sources. A significant fraction of sources (117124, 19%)
+    have more than one detection in the catalogue (up to 74 repeat
+    observations in the most extreme case).
+
+<A NAME="sRM11.1"><B>Description</B>:
+    The 4XMM-DR11 catalogue contains source detections drawn from 12210
+    XMM-Newton EPIC observations, covering an energy interval from 0.2keV
+    to 12keV. These observations were made between 2000 February 3 and
+    2020 December 17 and all datasets were publicly available by 2020
+    December 17, but not all public observations are included in this
+    catalogue
+
+    The following table gives an overview of the statistics of the
+    catalogue in comparison with the 4XMM-DR10 catalogue.
+
+    ---------------------------------------------------------------------------
+                                            4XMM-DR11   4XMM-DR10     Increment
+    ---------------------------------------------------------------------------
+    Number of observations                  12210        11647          563
+    Number of 'clean' observations          10247         9784          463
+     (i.e., observation class &lt; 3)
+    Observing interval                      03-Feb-00   03-Feb-00
+                                            17-Dec-20   14-Dec-19       1 yr
+    Sky coverage, taking overlaps into account
+    ( &gt;= 1ksec exposure)                    1239 sq.deg  1192 sq.deg   47 sq.deg
+    Number of detections                     895415     849991         45424
+    Number of 'clean' detections
+    (i.e., summary flag &lt; 3)                 787963     748670         39293
+    Number of unique sources                 602543     575158         27385
+    Number of 'cleanest' (summary flag = 0,   19077      18093           984
+    not in high-background fields) extended
+    detections
+    Number of detections with spectra        319565     303023         16542
+    Number of detections with timeseries     319292     302773         16519
+    Number of detections where probability     7283       6972           311
+     of timeseries being constant is
+     &lt;1x10-5
+    ---------------------------------------------------------------------------
+
+    The production and content of the 4XMM catalogue is described in the
+      the 4XMM-DR11 User Guide at
+     <A HREF="http://xmmssc.irap.omp.eu/Catalogue/">http://xmmssc.irap.omp.eu/Catalogue/</A> 
+     4XMM-DR11/4XMM-DR11<SUB>Catalogue</SUB>User_Guide.html
+
+    The slimline version of the catalogue (file "<B>xmm4d11s.dat</B>") contains
+    one row per unique source (while the the main catalogue has one row
+    per detection) and thus has 602543 rows. There are 45 columns,
+    essentially those containing information about the unique sources. The
+    catalogue also contains a column with links to the IRAP catalogue
+    server summary pages. In the case of sources with multiple detections,
+    the summary page of the best detection is selected (i.e., the
+    detection with the largest exposure time, summed over all cameras),
+    and the summary page gives cross-links to the other detections.
+
+    Should you use the catalogues 4XMM-DR11 or 4XMM-DR11s for your
+    research and publish the results, please use the acknowledgement below
+    and cite the relevant paper, Webb et al. (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2020A%26A...641A.136W">2020A&A...641A.136W</A>).
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.93">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.94">&#215; <A HREF="#sRM2.1">xmm4d11s.dat</A>     563   602543   The 4XMM-DR11 Catalog, "slim" version
+<A NAME="sRM-F.95">&#215; xmm4d11s.fit    2880    53779   Fits version of 4XMM-DR11 Catalog, "slim"
+<A NAME="sRM-F.96">&#215; <A HREF="#sRM2.2">summary.dat</A>      160    12210   List of observations
+<A NAME="sRM-F.97">&#215; xmm4d11.fit     2880   466110   Full 4XMM-DR11 Catalog (895415 detections)
+<HR>
+
+<A NAME="sRM13.1"><B>See also</B>:
+  <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/63">IX/63</A> : XMM-Newton Serendipitous Source Catalogue 4XMM-DR10 (Webb+, 2022)
+  <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/64">IX/64</A> : 4XMM-DR10s serendipitous source catalogue from stacks (Traulsen+ 2022)
+
+  <A HREF="http://xmmssc-www.star.le.ac.uk/Catalogue">http://xmmssc-www.star.le.ac.uk/Catalogue</A> : XMM-Newton Home Page
+  <A HREF="http://xmmssc.irap.omp.eu/Catalogue/4XMM-DR9/4XMM_DR9.html">http://xmmssc.irap.omp.eu/Catalogue/4XMM-DR9/4XMM_DR9.html</A> :
+                                                          4XMM Home Page
+  <A HREF="http://xmmssc-www.star.le.ac.uk/">http://xmmssc-www.star.le.ac.uk/</A> : XMM-Newton Survey Science Centre,
+                                                         University of Leicester
+  <A HREF="http://xmm.vilspa.esa.es/">http://xmm.vilspa.esa.es/</A> : XMM-Newton Science Operations Centre
+  <A HREF="http://xcatdb.u-strasbg.fr/xcat-db/">http://xcatdb.u-strasbg.fr/xcat-db/</A> : XCAT-DB at SSC institute, Strasbourg
+  <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=B/xmm">B/xmm</A> : XMM-Newton Observation Log   (XMM-Newton Science Operation Center)
+
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.94"> xmm4d11s.dat</A>
+<HR>
+   Bytes Format Units   Label     Explanations
+<HR>
+   1- 15  I15   ---     Source    [200001101010001/208711912010092]
+                                 Unique source index (SRCID)
+  17- 20  A4    ---     ---       [4XMM]
+  22- 37  A16   ---     4XMM      Unique source name (JHHMMSS.s+DDMMSS) (IAUNAME)
+  39- 48  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     RAdeg     Mean source right ascension (ICRS) (SC_RA)
+  50- 59  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEdeg     Mean source declination (ICRS) (SC_DEC)
+  61- 69  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  ePos      [0.03/20] Mean error on position (SC_POSERR)
+  71- 82  E12.6 ---     srcML     <A HREF="#sRM3.2">Source detection likelihood (SC<SUB>DET</SUB>ML) (2)</A>
+  84- 95  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   Flux1     Mean flux in 0.2-0.5keV band (SC<SUB>EP</SUB>1_FLUX)
+  97-108  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   e_Flux1   Mean error on Flux1 (SC<SUB>EP</SUB>1<SUB>FLUX</SUB>ERR)
+ 110-121  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   Flux2     Mean flux in 0.5-1.0keV band (SC<SUB>EP</SUB>2_FLUX)
+ 123-134  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   e_Flux2   Mean error on Flux2 (SC<SUB>EP</SUB>2<SUB>FLUX</SUB>ERR)
+ 136-147  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   Flux3     Mean flux in 1.0-2.0keV band (SC<SUB>EP</SUB>3_FLUX)
+ 149-160  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   e_Flux3   Mean error on Flux3 (SC<SUB>EP</SUB>3<SUB>FLUX</SUB>ERR)
+ 162-173  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   Flux4     Mean flux in 2.0-4.5keV band (SC<SUB>EP</SUB>4_FLUX)
+ 175-186  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   e_Flux4   Mean error on Flux4 (SC<SUB>EP</SUB>4<SUB>FLUX</SUB>ERR)
+ 188-199  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   Flux5     Mean flux in 4.5-12keV band (SC<SUB>EP</SUB>5_FLUX)
+ 201-212  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   e_Flux5   Mean error on Flux5 (SC<SUB>EP</SUB>5<SUB>FLUX</SUB>ERR)
+ 214-225  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   Flux8     Mean flux in 0.2-12keV band (SC<SUB>EP</SUB>8_FLUX)
+ 227-238  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   e_Flux8   Mean error on Flux8 (SC<SUB>EP</SUB>8<SUB>FLUX</SUB>ERR)
+ 240-251  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   Flux9     ?=- Mean flux in 0.5-4.5keV band (SC<SUB>EP</SUB>9_FLUX)
+ 253-264  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   e_Flux9   ?=- Mean error on Flux9 (SC<SUB>EP</SUB>9<SUB>FLUX</SUB>ERR)
+ 266-274  F9.6  ---     HR1       [-1/1]?=- <A HREF="#sRM3.1">Hardness ratio, bands 1,2 (SC_HR1) (1)</A>
+ 276-287  E12.6 ---     e_HR1     ?=- Mean error on HR1 (SC<SUB>HR1</SUB>ERR)
+ 289-297  F9.6  ---     HR2       [-1/1]?=- <A HREF="#sRM3.1">Hardness ratio, bands 2,3 (SC_HR2) (1)</A>
+ 299-310  E12.6 ---     e_HR2     ?=- Mean error on HR2 (SC<SUB>HR2</SUB>ERR)
+ 312-320  F9.6  ---     HR3       [-1/1]?=- <A HREF="#sRM3.1">Hardness ratio, bands 3,4 (SC_HR3) (1)</A>
+ 322-333  E12.6 ---     e_HR3     ?=- Mean error on HR3 (SC<SUB>HR3</SUB>ERR)
+ 335-343  F9.6  ---     HR4       [-1/1]?=- <A HREF="#sRM3.1">Hardness ratio, bands 4,5 (SC_HR4) (1)</A>
+ 345-356  E12.6 ---     e_HR4     ?=- Mean error on HR4 (SC<SUB>HR4</SUB>ERR)
+ 358-366  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  ext       Total band extent (SC_EXTENT)
+ 368-377  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  e_ext     ?=- Mean error on ext (SC<SUB>EXT</SUB>ERR)
+ 379-390  E12.6 ---     extML     <A HREF="#sRM3.3">Detection likelihood of the</A>
+                                 extended source (SC<SUB>EXT</SUB>ML) (3)
+ 392-399  F8.6  ---     Cst       [0/1]?=- <A HREF="#sRM3.4">Constant probability (SC_CHI2PROB) (4)</A>
+ 401-412  F12.6 ---     Fvar      ?=- <A HREF="#sRM3.6">fractional excess variance of</A>
+                                 the unique source (SC_FVAR) (6)
+ 414-425  F12.6 ---     e_Fvar    ?=- Mean error on Fvar (SC_FVARERR)
+     427  I1    ---     V         [0/1] Variability flag (V=1) (SC<SUB>VAR</SUB>FLAG)
+     429  I1    ---     S         [0/4] <A HREF="#sRM3.5">summary flag, 0=best (SC<SUB>SUM</SUB>FLAG) (5)</A>
+ 431-442  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   F8min     Minimum flux in 0.5-4.5keV band (SC<SUB>EP</SUB>8_FMIN)
+ 444-455  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   e_F8min   Mean error on F8min (SC<SUB>EP</SUB>8<SUB>FMIN</SUB>ERR)
+ 457-468  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   F8max     Maximum flux in 0.5-4.5keV band (SC<SUB>EP</SUB>8_FMAX)
+ 470-481  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   e_F8max   Mean error on F8max (SC<SUB>EP</SUB>8<SUB>FMAX</SUB>ERR)
+ 483-492  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       MJD0      [51575/59200] Date of first observation (MJD)
+                                 (MJD_FIRST)
+ 494-503  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       MJD1      [51575/59201] Date of last observation (MJD)
+                                 (MJD_LAST)
+ 505-506  I2    ---     Nd        [1/80]? Number of detections (N_DETECTIONS)
+     508  I1    ---     c         [0/1] <A HREF="#sRM3.7">(CONFUSED) Confusion flag (CONFUSED) (7)</A>
+ 510-563  A54   ---     uIRAP     URL for details at IRAP (WEBPAGE_URL)
+<HR>
+<A NAME="sRM3.1"><B>Note (1)</B>: The hardness ratio is defined as (F2-F1)/(F2+F1)
+     if F2 is the flux in the harder band (the hardness ratio is
+     therefore -1 for softest sources and +1 for hardest sources).
+     The energy bands are:
+   1 = 0.2 -  0.5 keV (narrow band)
+   2 = 0.5 -  1.0 keV (narrow band)
+   3 = 1.0 -  2.0 keV (narrow band)
+   4 = 2.0 -  4.5 keV (narrow band)
+   5 = 4.5 - 12.0 keV (narrow band)
+   6 = 0.2 -  2.0 keV = soft broad band, no images made
+   7 = 2.0 - 12.0 keV = hard broad band, no images made
+   8 = 0.2 - 12.0 keV = total band
+   9 = 0.5 -  4.5 keV = XID band
+<A NAME="sRM3.2"><B>Note (2)</B>: defined as the maximum of the likelihoods of all detections
+     of this source.
+<A NAME="sRM3.3"><B>Note (3)</B>: defined as the average of the extent likelihoods of all
+     detections of this source.
+<A NAME="sRM3.4"><B>Note (4)</B>: {chi}<SUP>2</SUP> probability that the unique source as detected by
+     any of the observations is constant, that is, the minimum value
+     of the EPIC probabilities in each detection.
+<A NAME="sRM3.5"><B>Note (5)</B>: the summary flag of the source is derived from the EPIC flag,
+    and is assigned the following values:
+   0 = good: none of the EPIC flags was set.
+   1 = source parameters may be affected: at least one of the EPIC warning
+        flags was set, but no possible-spurious detection flag is set.
+   2 = possibly spurious source: at least one of the possible-spurious
+        detection flags was set but not the manual flag
+   3 = source located in a area where spurious detection may occur.
+   4 = source located in a area where spurious detection may occur and is
+        possibly spurious.
+<A NAME="sRM3.6"><B>Note (6)</B>: The fractional excess variance of the unique source. It is the
+    value corresponding to the exposure and instrument that shows the
+    lowest probability of being constant.
+<A NAME="sRM3.7"><B>Note (7)</B>: This flag (1=true, 0=false) signifies that the 3-{sigma} error
+     circle of a detection within this unique source overlaps the 3-{sigma}
+     error circle of a nearby unique source. As such, it is an indicator of
+     possible confusion (uncertainty) about the assignment of detections
+     between sources.
+<HR>
+
+<A NAME="sRM2.2"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.96"> summary.dat</A>
+<HR>
+   Bytes Format Units   Label    Explanations
+<HR>
+   1-  4  I04   ---     Rev      [27/3850] Satellite revolution number (REVOLUT)
+   6- 15  I010  ---     ObsID    XMM Observation number (Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=B/xmm">B/xmm</A>) (OBS_ID)
+  17- 19  I03   ---     iODF     [1/10] Data File (ODF) number (ODF_VERS)
+  21- 30  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     RAdeg    field Right Ascension (J2000) (RA)
+  32- 41  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEdeg    field Declination (J2000) (DEC)
+  43- 52  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     PApnt    Actual pointed position of the optical axis
+                                  (PA_PNT)
+  54- 72  A19   ---     Target   Target name (TARGET)
+  74- 83  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       MJD0     Start observation date (MJD_START)
+  85- 94  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       MJD1     End observation date (MJD_STOP)
+      96  I1    ---     Q        [0/5] <A HREF="#sRM3.8">Observations quality (OBS_CLASS) (1)</A>
+  98-100  I3    ---     Nd       [1/738] Number of detections in field (NDET)
+ 102-104  I3    ---     Ng       [0/419] Number of good detections in field
+                                  (NDETGOOD)
+     106  I1    ---     Np       [1/5]? Number of PN exposures merged (PN_NEXP)
+ 108-110  A3    ---     f.PN     <A HREF="#sRM3.9">Filter of the PN exposure(s) (PN_FILT) (2)</A>
+ 112-115  A4    ---     m.PN     <A HREF="#sRM3.10">Mode of the PN exposure(s) (PN_MODE) (3)</A>
+ 117-122  I6    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>       t.PN     ?=- Total PN exposure time (PN_TEXP)
+     124  I1    ---     N1       [1/5]? Number of M1 exposures merged (M1_NEXP)
+ 126-128  A3    ---     f.M1     <A HREF="#sRM3.9">Filter of the M1 exposure(s) (M1_FILT) (2)</A>
+ 130-134  A5    ---     m.M1     <A HREF="#sRM3.10">Mode of the M1 exposures (M1_MODE) (3)</A>
+ 136-141  I6    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>       t.M1     ?=- Total M1 exposure time (M1_TEXP)
+     143  I1    ---     N2       [1/5]? Number of M2 exposures merged (M2_NEXP)
+ 145-147  A3    ---     f.M2     <A HREF="#sRM3.9">Filter of the M2 exposure(s) (M2_FILT) (2)</A>
+ 149-153  A5    ---     m.M2     <A HREF="#sRM3.10">Mode of the M2 exposures (M2_MODE) (3)</A>
+ 155-160  I6    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>       t.M2     ?=- Total M2 exposure time (M2_TEXP)
+<HR>
+<A NAME="sRM3.8"><B>Note (1)</B>: Quality classification of the whole observation based on the area
+     flagged as bad in the manual flagging process
+<A NAME="sRM3.9"><B>Note (2)</B>: EPIC camera filters of catalogue observations:
+  Med=MEDIUM, Tn1=THIN1, Tn2=THIN2, Tck=THICK, Opn=OPEN,
+<A NAME="sRM3.10"><B>Note (3)</B>: EPIC camera observing modes of catalogue observations:
+  MOS modes:
+   PFW  = Prime Full Window
+   PPW2 = Prime Partial W2
+   PPW3 = Prime Partial W3
+   PPW4 = Prime Partial W4
+   PPW5 = Prime Partial W5
+     FU = Fast Uncompressed
+     FC = Fast Compressed
+  PPRFS = Prime Partial Refreshed Frame Store
+  PN modes:
+   PFWE = Prime Full Window Extended
+    PFW = Prime Full Window
+    PLW = Prime Large Window
+<HR>
+
+<A NAME="sRM99.2"><B>History</B>:
+    Copied at <A HREF="http://xmmssc.irap.omp.eu/Catalogue/4XMM-DR11/4XMM_DR11.html">http://xmmssc.irap.omp.eu/Catalogue/4XMM-DR11/4XMM_DR11.html</A>
+================================================================================
+<B>(End)</B>                                      Patricia Vannier [CDS]    20-Apr-2022
+
+</PRE><!-- ....wait for 1 children: %0=3182870 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

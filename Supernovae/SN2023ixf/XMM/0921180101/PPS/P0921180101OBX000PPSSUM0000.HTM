@@ -1,0 +1,154 @@
+<html>
+<head>
+<title>
+PPS Processing Summary</title>
+<style>
+<!-- 
+h1, h2 ,h3 { color: #000000; text-align: left; }
+body { bgcolor: #FFFFFF; color: #000000; font-family: monospace; }
+img { border: 0; }
+#subtitle table { width: 90%;  border: 1em;}
+#subtitle th { text-align: left; font-family: monospace; font-weight: bold; }
+#subtitle td { text-align: left; font-family: monospace; font-weight: medium; }
+#normaltable th.string { padding-left: 1em; text-align: left; font-weight: bold; font-family: monospace }
+#normaltable th.date { padding-left: 1em; text-align: left; font-family: monospace; font-weight: bold; }
+#normaltable th.unit { padding-left: 1em; text-align: left; font-family: monospace; font-size: small; font-weight: bold; }
+#normaltable th.angle { padding-left: 1em; text-align: left; font-family: monospace; font-weight: bold; }
+#normaltable th.number { padding-left: 1em; text-align: left; font-family: monospace; font-weight: bold; }
+#normaltable td.string { padding-left: 1em; text-align: left; font-family: monospace; font-weight: medium; }
+#normaltable td.date { padding-left: 1em; text-align: left; font-family: monospace; font-weight: medium; }
+#normaltable td.number { padding-left: 1em; text-align: right; font-family: monospace; font-weight: medium;}
+#normaltable td.angle { padding-left: 1em; text-align: right; font-family: monospace; font-weight: medium; }
+#widetable th.string { padding-left: 1em; text-align: left; font-family: monospace; font-weight: bold; }
+#widetable th.flags { padding-left: 1em; text-align: left; font-family: monospace; font-weight: bold; }
+#widetable th.date { padding-left: 1em; text-align: left; font-family: monospace; font-weight: bold; }
+#widetable th.flag { padding-left: 1em; text-align: center; font-family: monospace; font-weight: bold; }
+#widetable th.angle { padding-left: 1em; text-align: left; font-family: monospace; font-weight: bold; }
+#widetable th.number { padding-left: 1em; text-align: left; font-family: monospace; font-weight: bold; }
+#widetable th.unit { padding-left: 1em; text-align: left; font-family: monospace; font-size: small; font-weight: bold; }
+#widetable td.string { padding-left: 1em; padding-left: 1em; text-align: left; font-family: monospace; font-size: small; font-weight: medium; }
+#widetable td.flags { padding-left: 1em; text-align: left; font-family: monospace; font-size: small; font-weight: medium; font-stretch: narrower; }
+#widetable td.flag { padding-left: 1em; text-align: center; font-family: monospace; font-size: small; font-weight: medium; font-stretch: narrower; }
+#widetable td.date { padding-left: 1em; text-align: left; font-family: monospace; font-size: small; font-weight: medium; }
+#widetable td.number { padding-left: 1em; text-align: right; font-family: monospace; font-size: small; font-weight: medium; }
+#widetable td.angle { padding-left: 1em; text-align: right; font-family: monospace; font-size: small; font-weight: medium; }
+a { text-decoration:none; color:#000000; }
+a:link { text-decoration:none; color:#0000FF; }
+a:active { text-decoration:none; color:#00FF00; }
+a:visited { text-decoration:none; color:#000077; }
+a:hover { text-decoration:underline; color:#777777; }
+#linkbar ul { float:left; width:100%; padding:0; margin:0; list-style-type:none; font-size: large; } 
+#linkbar a { float:left; width:8em; font-weight: bold; text-decoration:none; color:#000000; padding:0.2em 0.6em; font-size: large; } 
+#linkbar a:link { float:left; width:8em; font-weight: bold; text-decoration:none; color:#0000FF; padding:0.2em 0.6em; font-size: large; } 
+#linkbar a:active { float:left; width:8em; font-weight: bold; text-decoration:none; color:#00FF00; padding:0.2em 0.6em; font-size: large; } 
+#linkbar a:visited { float:left; width:8em; font-weight: bold; text-decoration:none; color:#000077; padding:0.2em 0.6em; font-size: large; } 
+#linkbar a:hover { font-weight: bold; text-decoration:underline; color:#777777; padding:0.2em 0.6em; font-size: large; } 
+#linkbar .nolink { float:left; width:8em; font-weight: bold; text-decoration:underline; text-decoration:underline; color:#000000; padding:0.2em 0.6em; font-size: large; } 
+#linkbar li {display:inlinefont-size: large; } 
+#pagemenu ul { float:left; width:90%; padding:0; margin:0; list-style-type:none; font-size: large; } 
+#pagemenu a { float:left; width:16em; font-weight: bold; text-decoration:none; color:#000000; padding:0.2em 0.6em; font-size: large; } 
+#pagemenu a:link { float:left; width:16em; font-weight: bold; text-decoration:none; color:#0000FF; padding:0.2em 0.6em; font-size: large; } 
+#pagemenu a:active { float:left; width:16em; font-weight: bold; text-decoration:none; color:#00FF00; padding:0.2em 0.6em; font-size: large; } 
+#pagemenu a:visited { float:left; width:16em; font-weight: bold; text-decoration:none; color:#000077; padding:0.2em 0.6em; font-size: large; } 
+#pagemenu a:hover { font-weight: bold; text-decoration:underline; color:#777777; padding:0.2em 0.6em; font-size: large; } 
+#pagemenu .nolink { float:left; width:16em; font-weight: bold; text-decoration:underline; text-decoration:underline; color:#000000; padding:0.2em 0.6em; font-size: large; } 
+#pagemenu li {display:inlinefont-size: large; } 
+#footer ul { float:left; width:100%; padding:0; margin:0; list-style-type:none; } 
+#footer a { float:left; width:8em; font-weight: bold; text-decoration:none; color:#000000; padding:0.2em 0.6em; } 
+#footer a:link { float:left; width:8em; font-weight: bold; text-decoration:none; color:#0000FF; padding:0.2em 0.6em; } 
+#footer a:active { float:left; width:8em; font-weight: bold; text-decoration:none; color:#00FF00; padding:0.2em 0.6em; } 
+#footer a:visited { float:left; width:8em; font-weight: bold; text-decoration:none; color:#000077; padding:0.2em 0.6em; } 
+#footer a:hover { font-weight: bold; width:8em; text-decoration:underline; color:#777777; padding:0.2em 0.6em; } 
+#footer .nolink1 { float:left; width:12em; font-weight: bold; text-decoration: none; color:#000000; padding:0.2em 0.6em;  text-align: right; } 
+#footer .nolink2 { float:left; width:18em; font-weight: bold; text-decoration: none; color:#000000; padding:0.2em 0.6em;  text-align: center; } 
+#footer .nolink3 { float:left; width:18em; font-weight: bold; text-decoration: none; color:#000000; padding:0.2em 0.6em;  text-align: right; } 
+#footer li {display:inline} 
+ -->
+</style>
+</head>
+<body>
+<div id="intsituteheader">
+<a name="top">&nbsp</a>
+<img src="P0921180101OBX000SSCLG20000.PNG" alt="XMM Survey Science Centre Logo" />
+<hr /></div>
+<div id="linkbar">
+<ul>
+<li><a href="P0921180101OBX000SUMMAR0000.HTM">OBS Summary</a></li>
+<li class="nolink">PPS Summary</li>
+<li><a href="P0921180101EPX000SUMMAR0000.HTM">EPIC Summary</a></li>
+<li><a href="P0921180101OMX000SUMMAR0000.HTM">OM Summary</a></li>
+<li><a href="P0921180101RGX000SUMMAR0000.HTM">RGS Summary</a></li>
+<li><a href="P0921180101CAX000XCORRE0000.HTM">Catalogue Summary</a></li>
+</ul>
+<br clear="left"/>
+<hr />
+</div>
+<div id="subtitle">
+<h1>0921180101&nbsp;PPS Processing Summary</h1>
+<table>
+<tr align="left"><th>Revolution</th><th>Target</th><th>Scheduled Length</th><th>Observer</th></tr>
+<tr align="left">
+<td>4308</td><td>SN2023ixf</td><td>12111</td><td>Prof  Raffaella           Margutti</td>
+</tr>
+</table>
+<hr />
+</div>
+<div id="pagemenu">
+<ul>
+<li><a href="#epicexposuresprocessed">EPIC Exposures Processed</a></li>
+<li><a href="#omexposuresprocessed">OM Exposures Processed</a></li>
+<li><a href="#rgsexposuresprocessed">RGS Exposures Processed</a></li>
+<li><a href="#genericproduct">Generic Products</a></li>
+</ul>
+<br clear="left" /><hr />
+</div><div id="widetable">
+<a name="epicexposuresprocessed">&nbsp;</a>
+<h3>EPIC Exposures processed by PPS</h3>
+<table class="epicexposureprocessed_table">
+<tr><th class="string">Inst.</th><th class="string">Exp.&nbsp;Id</th><th class="string">Sched</th><th class="string">Mode</th><th class="string">Datamode</th><th class="string">Filter</th><th class="string">Position</th><th class="number">Duration</th><th class="number">Exposure</th><th class="number">SrcDet</th><th class="number">SSP</th><th class="number">Flare Scrn</th><th class="date">Actual Start</th><th class="date">Actual End</th></tr>
+<tr><td class="string">EMOS1</td><td class="string"><a href="P0921180101EPX000SUMMAR0000.HTM#iEMOS1eS001">S001</a></td><td class="string">Y</td><td class="string">PrimeFullWindow</td><td class="string">Imaging</td><td class="string">MEDIUM</td><td class="string">FILTER_C</td><td class="number">11820</td><td class="number">11813</td><td class="flag">Y</td><td class="flag"><a href="P0921180101EPX000SUMMAR0000.HTM#sourcesprocessed">Y</a></td><td class="flag">Y</td><td class="date">2023-06-18T13:27:04</td><td class="date">2023-06-18T16:44:04</td></tr>
+<tr><td class="string">EMOS2</td><td class="string"><a href="P0921180101EPX000SUMMAR0000.HTM#iEMOS2eS002">S002</a></td><td class="string">Y</td><td class="string">PrimeFullWindow</td><td class="string">Imaging</td><td class="string">MEDIUM</td><td class="string">FILTER_C</td><td class="number">11797</td><td class="number">11791</td><td class="flag">Y</td><td class="flag"><a href="P0921180101EPX000SUMMAR0000.HTM#sourcesprocessed">Y</a></td><td class="flag">Y</td><td class="date">2023-06-18T13:27:27</td><td class="date">2023-06-18T16:44:04</td></tr>
+<tr><td class="string">EPN</td><td class="string"><a href="P0921180101EPX000SUMMAR0000.HTM#iEPNeS003">S003</a></td><td class="string">Y</td><td class="string">PrimeFullWindow</td><td class="string">Imaging</td><td class="string">MEDIUM</td><td class="string">&nbsp</td><td class="number">9956</td><td class="number">9955</td><td class="flag">Y</td><td class="flag"><a href="P0921180101EPX000SUMMAR0000.HTM#sourcesprocessed">Y</a></td><td class="flag">Y</td><td class="date">2023-06-18T13:52:45</td><td class="date">2023-06-18T16:38:41</td></tr>
+</table>
+<hr />
+</div>
+<div id="widetable">
+<a name="omexposuresprocessed">&nbsp;</a>
+<h3>OM Exposures processed by PPS</h3>
+<table class="omexposureprocessed_table">
+<tr><th class="string">Inst</th><th class="string">ExpID</th><th class="string">Sched</th><th class="string">Detector</th><th class="string">Mode</th><th class="string">Data Mode</th><th class="string">Filter</th><th class="number">Duration</th><th class="date">Actual Start</th><th class="date">Actual End</th></tr>
+<tr><td class="string">OM</td><td class="string"><a href="P0921180101OMX000SUMMAR0000.HTM#iOMeS006">S006</a></td><td class="string">Y</td><td class="string">REDUNDANT</td><td class="string">Image</td><td class="string">Fast, imaging</td><td class="string">U</td><td class="number">1998</td><td class="date">2023-06-18T13:35:26</td><td class="date">2023-06-18T14:08:44</td></tr>
+<tr><td class="string">OM</td><td class="string"><a href="P0921180101OMX000SUMMAR0000.HTM#iOMeS007">S007</a></td><td class="string">Y</td><td class="string">REDUNDANT</td><td class="string">Image</td><td class="string">Fast, imaging</td><td class="string">B</td><td class="number">2000</td><td class="date">2023-06-18T14:13:53</td><td class="date">2023-06-18T14:47:13</td></tr>
+<tr><td class="string">OM</td><td class="string"><a href="P0921180101OMX000SUMMAR0000.HTM#iOMeS008">S008</a></td><td class="string">Y</td><td class="string">REDUNDANT</td><td class="string">Image</td><td class="string">Fast, imaging</td><td class="string">UVW1</td><td class="number">2039</td><td class="date">2023-06-18T14:52:19</td><td class="date">2023-06-18T15:26:18</td></tr>
+<tr><td class="string">OM</td><td class="string"><a href="P0921180101OMX000SUMMAR0000.HTM#iOMeS009">S009</a></td><td class="string">Y</td><td class="string">REDUNDANT</td><td class="string">Image</td><td class="string">Fast, imaging</td><td class="string">UVM2</td><td class="number">2100</td><td class="date">2023-06-18T15:31:36</td><td class="date">2023-06-18T16:06:36</td></tr>
+<tr><td class="string">OM</td><td class="string"><a href="P0921180101OMX000SUMMAR0000.HTM#iOMeS010">S010</a></td><td class="string">Y</td><td class="string">REDUNDANT</td><td class="string">Image</td><td class="string">Fast, imaging</td><td class="string">UVW2</td><td class="number">2099</td><td class="date">2023-06-18T16:11:43</td><td class="date">2023-06-18T16:46:42</td></tr>
+</table>
+<hr />
+</div>
+<div id="widetable">
+<a name="rgsexposuresprocessed">&nbsp;</a>
+<h3>RGS Exposures processed by PPS</h3>
+<table class="rgsexposureprocessed_table">
+<tr><th class="string">Inst.</th><th class="string">Exp.&nbsp;Id</th><th class="string">Sched</th><th class="string">Mode</th><th class="string">Datamode</th><th class="string">Event Filtering</th><th class="number">Duration</th><th class="date">Actual Start</th><th class="date">Actual End</th></tr>
+<tr><td class="string">RGS1</td><td class="string"><a href="P0921180101RGX000SUMMAR0000.HTM#iRGS1eS004">S004</a></td><td class="string">Y</td><td class="string">HighEventRateWithSES</td><td class="string">Spectroscopy</td><td class="string">rejflags,attGTI,hkGTI</td><td class="number">12110</td><td class="date">2023-06-18T13:26:19</td><td class="date">2023-06-18T16:48:09</td></tr>
+<tr><td class="string">RGS2</td><td class="string"><a href="P0921180101RGX000SUMMAR0000.HTM#iRGS2eS005">S005</a></td><td class="string">Y</td><td class="string">HighEventRateWithSES</td><td class="string">Spectroscopy</td><td class="string">rejflags,attGTI,hkGTI</td><td class="number">12103</td><td class="date">2023-06-18T13:26:27</td><td class="date">2023-06-18T16:48:10</td></tr>
+</table>
+<hr />
+</div>
+<div id="normaltable">
+<a name="genericproduct">&nbsp;</a><h3>Generic Products</h3><table class="genericproduct_table"><tr><th class="string">Filename</th><th class="string">Content</th></tr>
+<tr><td class="string"><a href="P0921180101OBX000ATTTSR0000.FTZ">P0921180101OBX000ATTTSR0000.FTZ</a></td><td class="string">ATTITUDE TIME SERIES</td></tr>
+<tr><td class="string"><a href="P0921180101OBX000CALIND0000.FTZ">P0921180101OBX000CALIND0000.FTZ</a></td><td class="string">CALIBRATION INDEX FILE</td></tr>
+<tr><td class="string"><a href="P0921180101OBX000CDSLG20000.PNG">P0921180101OBX000CDSLG20000.PNG</a></td><td class="string">CDS LOGO 2</td></tr>
+<tr><td class="string"><a href="P0921180101OBX000CDSLG30000.PNG">P0921180101OBX000CDSLG30000.PNG</a></td><td class="string">CDS LOGO 3</td></tr>
+<tr><td class="string"><a href="P0921180101OBX000CDSLG40000.PNG">P0921180101OBX000CDSLG40000.PNG</a></td><td class="string">CDS LOGO 1</td></tr>
+<tr><td class="string"><a href="P0921180101OBX000ORBTSR0000.FTZ">P0921180101OBX000ORBTSR0000.FTZ</a></td><td class="string">SPACECRAFT ORBIT</td></tr>
+<tr><td class="string"><a href="P0921180101OBX000PINDEX0000.FIT">P0921180101OBX000PINDEX0000.FIT</a></td><td class="string">PPS PRODUCT INDEX</td></tr>
+<tr><td class="string"><a href="P0921180101OBX000RADMON0000.FTZ">P0921180101OBX000RADMON0000.FTZ</a></td><td class="string">RADMON RATE</td></tr>
+<tr><td class="string"><a href="P0921180101OBX000REFCAT0000.FTZ">P0921180101OBX000REFCAT0000.FTZ</a></td><td class="string">REFERENCE CATALOGUE</td></tr>
+<tr><td class="string"><a href="P0921180101OBX000SSCLG10000.PNG">P0921180101OBX000SSCLG10000.PNG</a></td><td class="string">SSC LOGO 1</td></tr>
+</table><hr /></div><div id="footer">
+<ul>
+<li style="width: 8; text-align: left;"><a href="#top">Return to top.</a></li><li class="nolink1">ppssumm-3.7</li><li class="nolink2">Processing Date:&nbsp;2023-06-28T13:08:55</li><li class="nolink3">Odf Id:&nbsp;4308_0921180101_001</li></ul>
+</div>
+</body>

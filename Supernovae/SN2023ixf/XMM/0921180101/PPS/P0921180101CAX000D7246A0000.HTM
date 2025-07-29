@@ -1,0 +1,156 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of VII/264</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Wed Jun 28 19:44:27 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0921180101OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of VII/264 :<BR>Second Byurakan Survey galaxies. Optical database (Gyulzadian+, 2011)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0921180101OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>VII/264</B>    Second Byurakan Survey galaxies. Optical database (Gyulzadian+, 2011)
+================================================================================
+Second Byurakan Survey galaxies. I. The optical database.
+     Gyulzadian M., McLean B., Adibekyan V.Zh., Allen R.J., Kunth D.,
+     Petrosian A., Stepanian J.A.
+    &lt;Astrofizika, 54, 21 (2011)&gt;
+    =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2011Ap.....54...15G">2011Ap.....54...15G</A>
+    =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2010yCat.7264....0G">2010yCat.7264....0G</A>
+================================================================================
+<B>ADC_Keywords</B>: Surveys ; Galaxies, photometry ; Redshifts ; Morphology ;
+              Photometry, photographic ; Photometry, infrared
+<B>Keywords</B>: Second Byurakan Survey Galaxies - astronomical data bases -
+          galaxies: active - forming galaxies
+
+<A NAME="sRM99.1"><B>Abstract</B>:
+    A database for the entire catalog of the Second Byurakan Survey (SBS)
+    galaxies is presented. It contains new measurements of their optical
+    parameters and additional information taken from the literature and
+    other databases. The measurements were made using Ipg(near-infrared),
+    Fpg(red) and Jpg(blue) band images from photographic sky survey plates
+    obtained by the Palomar Schmidt telescope and extracted from the
+    STScI Digital Sky Survey (DSS). The database provides accurate
+    coordinates, morphological type, spectral and activity classes,
+    apparent magnitudes and diameters, axial ratios, and position angles,
+    as well as number counts of neighboring objects in a circle of radius
+    50kpc. The total number of individual SBS objects in the database is
+    now 1676. The 188 Markarian galaxies which were re-discovered by SBS
+    are not included in this database. We also include redshifts that are
+    now available for 1576 SBS objects, as well as 2MASS infrared
+    magnitudes for 1117 SBS galaxies.
+
+<A NAME="sRM11.1"><B>Description</B>:
+    Images extracted from the STScI Digitized Sky Survey (DSS) of Fpg(red)
+    Jpg(blue), and Ipg(NIR) band photographic sky survey plates obtained
+    by the Palomar telescope.
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.40">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.41">&#215; <A HREF="#sRM2.1">sbs.dat</A>          108     1676   Optical properties of SBS galaxies
+<A NAME="sRM-F.42">&#215; <A HREF="#sRM2.2">codes.dat</A>         22       21   Morphological codes
+<A NAME="sRM-F.43">&#215; atlas.pdf        512     2886   Atlas as pdf file
+<HR>
+
+<A NAME="sRM13.1"><B>See also</B>:
+       <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=II/223">II/223</A>   : First Byurakan Survey (FBS) 2nd Program (Abrahamian+, 1990-96)
+      <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=VII/251">VII/251</A>   : SBS/Zwicky cluster relation (Gyulzadian+, 2008)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/A%2BAS/147/169">J/A+AS/147/169</A> : Accurate positions of 2978 SBS objects (Bicay+, 2000)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/AJ/124/1283">J/AJ/124/1283</A>  : Faint Markarian galaxies of SBS. III. (Stepanian+, 2002)
+
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.41"> sbs.dat</A>
+<HR>
+   Bytes Format Units   Label    Explanations
+<HR>
+   1- 10  A10   ---     SBS      <A HREF="#sRM3.1">The SBS designation (1)</A>
+  12- 13  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?h" TARGET="explain">h</A>       RAh      Hour of Right Ascension (J2000)
+  15- 16  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?min" TARGET="explain">min</A>     RAm      Minute of Right Ascension (J2000)
+  18- 22  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>       RAs      Second of Right Ascension (J2000)
+      24  A1    ---     DE-      Sign of the Declination (J2000)
+  25- 26  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEd      Degree of Declination (J2000)
+  28- 29  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>  DEm      Arcminute of Declination (J2000)
+  31- 34  F4.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  DEs      Arcsecond of Declination (J2000)
+  36- 37  I2    ---     TT       <A HREF="#sRM3.2">Morphology type, in codes.dat file (2)</A>
+      38  A1    ---     n_TT     [B] B: presence of a bar
+  40- 44  A5    ---     SC       <A HREF="#sRM3.3">Spectral classification (3)</A>
+  45- 51  A7    ---     AC       <A HREF="#sRM3.4">Activity class (4)</A>
+  52- 57  F6.4  ---     z        ? Heliocentric redshift
+  59- 62  F4.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Bjmag    Apparent isophotal J<SUB>pg</SUB> (blue) band magnitude
+  64- 67  F4.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Rfmag    Apparent isophotal F<SUB>pg</SUB> (red) band magnitude
+  69- 72  F4.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Imag     Apparent isophotal I<SUB>pg</SUB> (NIR) band magnitude
+  74- 78  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  D(J)     Major J<SUB>pg</SUB> (blue) band diameter
+  80- 84  F5.3  ---     R(J)     [0/1] Axial ratio in J<SUB>pg</SUB> (blue) band
+  85- 87  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     PA(J)    ? <A HREF="#sRM3.5">Position angle in J<SUB>pg</SUB> (blue) (5)</A>
+  89- 90  A2    ---     Nn       <A HREF="#sRM3.6">Number of galaxies detected within a 50kpc</A>
+                                  projected radius (6)
+  92- 96  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Jmag     ? <A HREF="#sRM3.7">The J band magnitude (7)</A>
+  98-102  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Hmag     ? <A HREF="#sRM3.7">The H band magnitude (7)</A>
+ 104-108  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Kmag     ? <A HREF="#sRM3.7">The K band magnitude (7)</A>
+<HR>
+<A NAME="sRM3.1"><B>Note (1)</B>: As it appears in the original lists (Stepanian, <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2005RMxAA..41..155S">2005RMxAA..41..155S</A>)
+
+<A NAME="sRM3.2"><B>Note (2)</B>: The numerical coding used here for the morphological description
+     of the galaxies is a slightly modified and simplified version of the
+     morphological types T given in the RC3 catalog. The codes used are as
+     in the codes.date file
+<A NAME="sRM3.3"><B>Note (3)</B>: According to Stepanian, <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2005RMxAA..41..155S">2005RMxAA..41..155S</A>.
+
+<A NAME="sRM3.4"><B>Note (4)</B>: Activity class, when available, or description of the spectra
+     according to (Stepanian, <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2005RMxAA..41..155S">2005RMxAA..41..155S</A>) and DR7 of SDSS. The
+     various Seyfert classes are denoted by 'Sy1', 'Sy1.5', 'Sy1.8',
+     'Sy1.9' and 'Sy2'. The symbol 'Sy3' refers to LINERs. Starburst and
+     HII nuclei respectively are indicated by 'SB' and 'HII'. QSOs and BL
+     Lacertae objects are also identified.
+<A NAME="sRM3.5"><B>Note (5)</B>: Measured from North (PA=0 degrees) toward East between 0 and
+     180deg. For round galaxies with axial ratio R(J)~1.00 position angles
+     were not measured.
+<A NAME="sRM3.6"><B>Note (6)</B>: 'nd' indicates a Markarian galaxy with redshift smaller than
+     0.005 and no neighbor counts were performed.
+<A NAME="sRM3.7"><B>Note (7)</B>: For 1117 galaxies 2MASX (e.g. Jarrett et al. <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2000AJ....119.2498J">2000AJ....119.2498J</A>)
+     total J, H and K magnitudes are listed.
+<HR>
+
+<A NAME="sRM2.2"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.42"> codes.dat</A>
+<HR>
+   Bytes Format Units   Label     Explanations
+<HR>
+   1-  2  I2    ---     TT        Morphocogical code
+   4- 22  A19   ---     MType     Morphological type
+<HR>
+
+<A NAME="sRM99.2"><B>Acknowledgements</B>:
+    Vardan Adibekyan, <A HREF="mailto:adbvardan@rambler.ru">adbvardan@rambler.ru</A>
+
+<A NAME="sRM90.1"><B>References</B>:
+   Markarian &amp; Stepanian                  Paper I     <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1983Afz....19..639M">1983Afz....19..639M</A>
+   Markarian &amp; Stepanian                  Paper II    <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1984Afz....20...21M">1984Afz....20...21M</A>
+   Markarian &amp; Stepanian                  Paper III   <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1984Afz....20..513M">1984Afz....20..513M</A>
+   Markarian, Stepanian &amp; Erastova        Paper IV    <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1985Afz....23..439M">1985Afz....23..439M</A>
+   Markarian, Stepanian &amp; Erastova        Paper V     <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1986Afz....25..345M">1986Afz....25..345M</A>
+   Stepanian, Lipovetsky &amp; Erastova       Paper VI    <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1988Afz....29..247S">1988Afz....29..247S</A>
+   Stepanian, Lipovetsky &amp; Erastova       Paper VII   <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1990Afz....32..441S">1990Afz....32..441S</A>
+================================================================================
+<B>(End)</B>     Vardan Adibekyan [YSU, BAO], Patricia Vannier [CDS]        07-Dec-2010
+
+</PRE><!-- ....wait for 1 children: %0=26558 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

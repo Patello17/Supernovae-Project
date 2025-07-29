@@ -1,0 +1,143 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of IX/13</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Wed Jun 28 17:16:24 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0931790101OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of IX/13 :<BR>The 2E Catalogue (Harris+ 1994)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0931790101OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>IX/13</B>               The 2E Catalogue      (Harris+ 1994)
+================================================================================
+EINSTEIN Observatory catalog of IPC X-ray sources
+    Harris D.E., Forman W, Gioa I.M., Hale J.A., Harnden Jr. F.R., Jones C.,
+    Karakashian T., Maccacaro T., McSweeney J.D., Primnini F.A., Schwarz J.,
+    Tananbaum H.D., Thurman J.
+   &lt;SAO HEAD CD-ROM Series I (Einstein), Nos 18-36 (1994)&gt;
+================================================================================
+<B>ADC_Keywords</B>: X-ray sources
+
+<B>Mission_Name</B>: Einstein
+
+
+<A NAME="sRM11.1"><B>Description</B>:
+    This catalog contains sources from EINSTEIN IPC (Imaging Proportional
+    counter aboard the EINSTEIN (HEAO 2) satellite, in orbit between
+    November 1978 and April 1981) detected during pointed observations.
+
+    Note that a single source may have more than one entry in the catalog.
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.22">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.23">&#215; <A HREF="#sRM2.1">2e.dat</A>           114     5948   The catalogue
+<HR>
+
+<A NAME="sRM13.1"><B>See also</B>:
+    The IPC Slew Survey (1ES) catalog
+    <A HREF="ftp://einline.harvard.edu">ftp://einline.harvard.edu</A> : the Einstein On-Line System FTP service
+    <A HREF="http://hea-www.harvard.edu/einstein/Ein_home/ein_welcome.html">http://hea-www.harvard.edu/einstein/Ein_home/ein_welcome.html</A> :
+            the Einstein Home Page at Harvard.
+
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.23"> 2e.dat</A>
+<HR>
+   Bytes Format  Units   Label    Explanations
+<HR>
+   1-  4  I4     ---     CATNUM   [1/4809]+= <A HREF="#sRM3.1">Catalogue number of the source (1)</A>
+   5- 10  I6     ---     SEQNUM   Sequence number for the observation
+  11- 13  I3     ---     FLDNUM   Field number of the source
+  14- 16  I3     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?h" TARGET="explain">h</A>       RAh      Right ascension 1950 (hours)
+  17- 19  I3     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?min" TARGET="explain">min</A>     RAm      Right ascension 1950 (minutes)
+  20- 24  F5.1   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>       RAs      Right ascension 1950 (seconds)
+      26  A1     ---     DE-      Declination 1950 (sign)
+  27- 28  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEd      Declination 1950 (degrees)
+  29- 31  I3     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>  DEm      Declination 1950 (minutes)
+  32- 34  I3     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  DEs      Declination 1950 (seconds)
+  35- 38  I4     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  PosErr   Positional error (arcsec)
+  39- 48  F10.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>    Crate    Corrected count rate
+  49- 56  F8.5   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>    e_Crate  Error on the count rate
+  57- 64  F8.1   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>       LivTime  Live time (in seconds, at the field center)
+  65- 73  F9.1   ---    NetCount  Net counts in the detect cell
+  74- 81  F8.1   ---    BkgCount  Background counts in the detect cell
+  82- 87  F6.1   ---     S/N      Signal to noise ratio for the detection
+  88- 94  F7.1   ---     SizCor   <A HREF="#sRM3.2">Size correction factor (2)</A>
+  95- 99  I5     ---     RECode   <A HREF="#sRM3.3">Ribs and edges code (3)</A>
+ 100-104  F5.1   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>  OffAxis  Dist. between source &amp; field center (arcmin)
+ 105-110  A6     ---     SrcFlag  [AaHLEI ] <A HREF="#sRM3.4">Source flags (4)</A>
+ 111-114  A4     ---     RefFlag  <A HREF="#sRM3.5">Reference and identification flag (5)</A>
+<HR>
+<A NAME="sRM3.1"><B>Note (1)</B>: The name can either be of the form 2E CATNUM, or be based on 1950
+     positions (format 2E HHMM.M+DDMM)
+<A NAME="sRM3.2"><B>Note (2)</B>: The size correction is a factor which serves to correct all
+     intensity measurements (optimized for point sources) of resolved
+     sources for the x-ray flux ignored by the detection box measurements.
+     SizCor is defined as the ratio of the intensity contained within the 3
+     sigma contour to the intensity within the detection box (2.4'x2.4'),
+     the latter value corrected for the point response function and mirror
+     scattering.
+<A NAME="sRM3.3"><B>Note (3)</B>: RECode is a numeric flag with non-zero values indicating that the
+     detection cell falls near or on a rib shadow or detector edge. The
+     code contains two embedded numbers expressed in 4 digits: the first
+     two (thousands and hundreds) give the total number (max # = 16) of
+     frame subcells shadowed by the ribs or masked field edge; the last
+     two (tens and units digits) give the total number of subcells
+     (maximum = 09) within the detect box which are shadowed.
+<A NAME="sRM3.4"><B>Note (4)</B>: The flags are:
+     A - additional detections of this source were achieved in other
+         observations
+     a - Probably should be paired with another detection; but separation
+         exceeded cutoff and thus not assigned an "A" flag.
+     H - a hardness ratio is available
+     L - the source was detected only with the local detect method
+     E - intensity corrected for source near the exposure cutoff at
+         the field edge.
+     I - source detected by local detect near a field edge.  Intensity
+         adjusted to remove redundant exposure corrections.
+<A NAME="sRM3.5"><B>Note (5)</B>: The reference indicator serves to alert the user to
+     the following bibliographic information:
+     AGN     Active Galactic Nucleus
+     BL      BL Lac object
+     CLG     Cluster (or group) of galaxies
+     CV      Cataclysmic Variable
+     G       Galaxy
+     GLB     Globular Cluster
+     P       Pulsar
+     Q       Quasar
+     RS      Radio source
+     S       Star
+     SNR     Supernova Remnant
+     SY      Seyfert Galaxy
+     *       Reference available, but no optical class
+     +       Generic indicator which means possible ID lies from
+             100-150 arcseconds from source location.
+<HR>
+
+<A NAME="sRM99.1"><B>History</B>:
+    The catalogue was prepared from the Einline version by
+    Jean-Marie Hameury (Strasbourg Observatory) in October 1996.
+================================================================================
+<B>(End)</B>                              Jean-Marie Hameury  [Strasbourg]  1996-Oct-25
+
+</PRE><!-- ....wait for 1 children: %0=14580 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

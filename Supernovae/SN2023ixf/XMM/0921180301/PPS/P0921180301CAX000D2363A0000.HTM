@@ -1,0 +1,279 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of II/363</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Sun Jul 23 17:43:43 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0921180301OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of II/363 :<BR>The band-merged unWISE Catalog (Schlafly+, 2019)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0921180301OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>II/363</B>             The band-merged unWISE Catalog             (Schlafly+, 2019)
+================================================================================
+The unWISE Catalog: two billion infrared sources from five years of WISE
+imaging.
+    Schlafly E.F., Meisner A.M., Green G.M.
+   &lt;Astrophys. J. Suppl. Ser., 240, 30 (2019)&gt;
+   =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2019ApJS..240...30S">2019ApJS..240...30S</A>
+   =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2020yCat.2363....0S">2020yCat.2363....0S</A>
+================================================================================
+<B>ADC_Keywords</B>: Infrared sources ; Photometry, infrared ; Surveys
+
+<B>Mission_Name</B>: WISE
+
+<B>Keywords</B>: catalogs ; infrared: general ; surveys ; techniques: photometric
+
+
+<A NAME="sRM99.1"><B>Abstract</B>:
+    We present the unWISE Catalog, containing the positions and fluxes of
+    roughly 2 billion objects observed by the Wide-field Infrared Survey
+    Explorer (WISE) over the full sky. The unWISE Catalog has two
+    advantages over the existing WISE catalog (AllWISE): first, it is
+    based on significantly deeper imaging, and second, it features
+    improved modeling of crowded regions. The deeper imaging used in the
+    unWISE Catalog comes from the coaddition of all publicly available
+    3-5um WISE imaging, including that from the ongoing
+    NEOWISE-reactivation mission, thereby increasing the total exposure
+    time by a factor of 5 relative to AllWISE. At these depths, even at
+    high Galactic latitudes, many sources are blended with their
+    neighbors; accordingly, the unWISE analysis simultaneously fits
+    thousands of sources to obtain accurate photometry. Our new catalog
+    detects sources roughly 0.7mag fainter than the AllWISE catalog at
+    5{sigma}, and more accurately models millions of faint sources in the
+    Galactic plane, enabling a wealth of Galactic and extragalactic
+    science. In particular, relative to AllWISE, unWISE doubles the number
+    of galaxies detected between redshifts 0 and 1 and triples the number
+    between redshifts 1 and 2, cataloging more than half a billion
+    galaxies over the whole sky.
+
+<A NAME="sRM11.1"><B>Description</B>:
+    The unWISE Catalog analyzes the unWISE coadds of the WISE images to
+    detect two billion sources over the entire sky at 3.4 and 4.6microns.
+    The WISE point spread function has a full-width at half-maximum of
+    about 6", which coupled with the large number of sources means that
+    many sources significantly overlap with others. To accurately model
+    the photometry of these blended sources, the crowdsource (available on
+    GitHub) analysis pipeline was used to simultaneously determine the
+    positions and fluxes of all sources in the unWISE coadds. The greater
+    depth of the unWISE coadds relative to those from the first year of
+    the survey, combined with the crowdsource crowded-field modeling,
+    allow the unWISE catalog to detect roughly three times as many sources
+    as were detected in the AllWISE catalog.
+
+<A NAME="sRM99.2"><B>Acknowledging WISE in publications</B>:
+    Please include the following in any published material that makes use
+    of the WISE data products:
+   "This publication makes use of data products from the Wide-field
+    Infrared Survey Explorer, which is a joint project of the University of
+    California, Los Angeles, and the Jet Propulsion Laboratory/California
+    Institute of Technology, funded by the National Aeronautics and Space
+    Administration."
+
+    Please cite one or more of:
+    Lang, D., 2014, "unWISE: unblurred coadds of the WISE imaging"
+    Astronomical Journal, 147, 108.
+
+    Meisner, A.M., Lang, D., and Schlegel, D.J., 2017, "Full-depth Coadds
+    of the WISE and First-year NEOWISE-Reactivation Images"
+    Astronomical Journal, 153, 38.
+
+    Meisner, A.M., Lang, D., and Schlegel, D.J., 2017, "Deep Full-sky
+    Coadds from Three Years of WISE and NEOWISE Observations"
+    Astronomical Journal, 154, 161.
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.74">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.75">&#215; <A HREF="#sRM2.1">unwise.sam</A>       563     1000   Sample of the band-merged unWISE catalog
+                                  (among 2,214,734,224 sources)
+<HR>
+
+<A NAME="sRM13.1"><B>See also</B>:
+ <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/237">VII/237</A> : HYPERLEDA. I. Catalog of galaxies (Paturel+, 2003)
+ <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=II/311">II/311</A>  : The WISE All-Sky data Release (Cutri+ 2012)
+ <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=II/328">II/328</A>  : The AllWISE data Release (Cutri+ 2013)
+ <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/337">I/337</A>   : Gaia DR1 (Gaia Collaboration, 2016)
+ <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/ApJS/197/19">J/ApJS/197/19</A> : First brown dwarfs discovered by WISE (Kirkpatrick+, 2011)
+ <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/ApJ/757/83">J/ApJ/757/83</A>  : The Blanco Cosmology Survey (BCS) (Desai+, 2012)
+ <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/ApJ/792/30">J/ApJ/792/30</A>  : NEOWISE magnitudes for near-Earth objects (Mainzer+, 2014)
+ <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/AJ/152/63">J/AJ/152/63</A>   : NEOWISE reactivation mission: 2nd yr data (Nugent+, 2016)
+ <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/ApJS/224/24">J/ApJS/224/24</A> : The COSMOS2015 catalog (Laigle+, 2016)
+ <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/ApJ/819/24">J/ApJ/819/24</A>  : z&gt;4.5 QSOs with SDSS and WISE. I. Opt. spectra (Wang+, 2016)
+ <A HREF="http://catalog.unwise.me/">http://catalog.unwise.me/</A> : The unWISE Catalog home page
+ <A HREF="http://www.jpl.nasa.gov/missions/wide-field-infrared-survey-explorer-wise/">http://www.jpl.nasa.gov/missions/wide-field-infrared-survey-explorer-wise/</A> :
+                                                              The WISE home page
+
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.75"> unwise.sam</A>
+<HR>
+   Bytes Format Units      Label   Explanations
+<HR>
+   1- 16  A16   ---        objID   Unique object identifier (unwise_objid)
+  18- 28  F11.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>        RAdeg   W1 right ascension, if available;
+                                    otherwise W2 right ascension (J2000) (ra)
+  30- 40  F11.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>        DEdeg   W1 declination, if available;
+                                    otherwise W2 declination (J2000) (dec)
+  42- 49  F8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>        XposW1  [-0.5/2048] x coordinate in the W1 band (xW1)
+  51- 58  F8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>        XposW2  [-0.5/2048] x coordinate in the W2 band (xW2)
+  60- 67  F8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>        YposW1  [-0.5/2048] y coordinate in the W1 band (yW1)
+  69- 76  F8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>        YposW2  [-0.5/2048] y coordinate in the W2 band (yW2)
+  78- 89  E12.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?309.05nJy" TARGET="explain">309.05nJy</A>  FW1     [-1337840/5.3E10] <A HREF="#sRM3.1">Flux in the W1 (3.4um) band</A>
+                                    in "Vega nMgy" (fluxW1) (1)
+  91-102  E12.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?167.66nJy" TARGET="explain">167.66nJy</A>  FW2     [-4367380/7E10] <A HREF="#sRM3.1">Flux in the W2 (4.6um) band</A>
+                                    in "Vega nMgy" (fluxW2) (1)
+ 104-128  F25.3 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>      e_XposW1  [0/1E20] Uncertainty in XposW1 (dxW1)
+ 130-154  F25.3 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>      e_XposW2  [0/1E20] Uncertainty in XposW2 (dxW2)
+ 156-180  F25.3 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>      e_YposW1  [0/1E20] Uncertainty in YposW1 (dyW1)
+ 182-206  F25.3 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>      e_YposW2  [0/1E20] Uncertainty in YposW2 (dyW2)
+ 208-218  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?309.05nJy" TARGET="explain">309.05nJy</A>  e_FW1   [0/1E10] <A HREF="#sRM3.1">Uncertainty in FW1</A>
+                                    (statistical only) (dfluxW1) (1)
+ 220-230  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?167.66nJy" TARGET="explain">167.66nJy</A>  e_FW2   [0/1E10] <A HREF="#sRM3.1">Uncertainty in FW2</A>
+                                    (statistical only) (dflxW2) (1)
+ 232-238  F7.5  ---        q_W1    [0/1] <A HREF="#sRM3.2">Quality factor on W1 (1=good detection)</A>
+                                    (qfW1) (2)
+ 240-246  F7.5  ---        q_W2    [0/1] <A HREF="#sRM3.2">Quality factor on W2 (1=good detection)</A>
+                                    (qfW2) (2)
+ 248-257  E10.4 ---       rchi2W1  [0/3271100] Average chi square per pixel
+                                    on W1, weighted by PSF
+ 259-268  E10.4 ---       rchi2W2  [0/172620] Average {xi}<SUP>2</SUP> per pixel on W2,
+                                    weighted by PSF
+ 270-277  F8.4  ---        fFW1    [-64/564] Fraction of W1 flux in this
+                                    object's PSF that comes from this object
+                                    (fracfluxW1)
+ 279-286  F8.4  ---        fFW2    [-29.1/156.5] Fraction of W2 flux in this
+                                    object's PSF that comes from this object
+                                    (fracfluxW2)
+ 288-299  E12.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?309.05nJy" TARGET="explain">309.05nJy</A>  FW1lbs  [-2.6E9/1.9E9] <A HREF="#sRM3.1">Local-background-subtracted W1</A>
+                                    flux in "Vega nMgy" (fluxlbsW1) (1)
+ 301-312  E12.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?167.66nJy" TARGET="explain">167.66nJy</A>  FW2lbs  [-1.2E10/2E10] <A HREF="#sRM3.1">Local-background-subtracted W2</A>
+                                    flux in "Vega nMgy" (fluxlbsW2) (1)
+ 314-324  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?309.05nJy" TARGET="explain">309.05nJy</A> e_FW1lbs  [0/2.5E9] <A HREF="#sRM3.1">Uncertainty in FW1lbs</A>
+                                    (dfluxlbsW1) (1)
+ 326-336  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?167.66nJy" TARGET="explain">167.66nJy</A> e_FW2lbs  [0/8E9] <A HREF="#sRM3.1">Uncertainty in FW2lbs</A>
+                                    (dfluxlbsW2) (1)
+ 338-343  F6.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>        fwhmW1  [0/3] Full-width at half-maximum of PSF in W1
+ 345-350  F6.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>        fwhmW2  [0/3] Full-width at half-maximum of PSF in W2
+ 352-364  E13.6 ---       SpModW1  [-2844/2819] SExtractor spread_model
+                                    parameter on W1 (~0=point source)
+                                    (spread_modelW1)
+ 366-378  E13.6 ---       SpModW2  [-20259/7281] SExtractor spread_model
+                                    parameter on W2 (~0=point source)
+                                    (spread_modelW2)
+ 380-391  E12.6 ---     e_SpModW1  [0/3.1E8] Uncertainty in SpModW1
+                                    (dspread_modelW1)
+ 393-408  F16.6 ---     e_SpModW2  [0/5.3E8] Uncertainty in SpModW2
+                                    (dspread_modelW2)
+ 410-421  E12.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?309.05nJy" TARGET="explain">309.05nJy</A>  skyW1   [-7572/52355] <A HREF="#sRM3.1">Sky in W1 in "Vega nMgy" (1)</A>
+ 423-434  E12.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?167.66nJy" TARGET="explain">167.66nJy</A>  skyW2   [-8322/54067] <A HREF="#sRM3.1">Sky in W2 in "Vega nMgy" (1)</A>
+ 436-446  F11.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>       RAW1deg  Right Ascension from individual-image
+                                    catalogs in W1 (ra12W1)
+ 448-458  F11.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>       RAW2deg  Right Ascension from individual-image
+                                    catalogs in W2 (ra12W2)
+ 460-470  F11.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>       DEW1deg  Declination from individual-image catalogs
+                                    in W1 (dec12W1)
+ 472-482  F11.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>       DEW2deg  Declination from individual-image catalogs
+                                    in W2 (dec12W2)
+ 484-491  A8    ---       coaddID  Coadd unique ID (coadd_id)
+ 493-510  A18   ---       detIDW1  ? Unique detection ID in W1 (unwise_detidW1)
+ 512-529  A18   ---       detIDW2  ? Unique detection ID in W2 (unwise_detidW2)
+ 531-535  I5    ---        nmW1    [0/23582] Number of single-exposure images of
+                                    this part of sky in coadd in W1
+ 537-541  I5    ---        nmW2    [0/23187] Number of single-exposure images of
+                                    this part of sky in coadd in W2
+     543  I1    ---        PrimW1  [0/1] The center of this source is in the
+                                    primary region of its coadd in W1
+                                    (primary12W1)
+     545  I1    ---        PrimW2  [0/1] The center of this source is in the
+                                    primary region of its coadd in W2
+                                    (primary12W2)
+ 547-549  I3    ---       FlagsW1  [0/249] <A HREF="#sRM3.3">unWISE Coadd Flags flags at central</A>
+                                    pixel in W1 (flags_unwiseW1) (3)
+ 551-553  I3    ---       FlagsW2  [0/243] <A HREF="#sRM3.3">unWISE Coadd Flags flags at central</A>
+                                    pixel W2 (flags_unwiseW2) (3)
+ 555-557  I3    ---     f_FlagsW1  [0/250] <A HREF="#sRM3.4">Additional informational flags at</A>
+                                    central pixel in W1 (flags_infoW1) (4)
+ 559-561  I3    ---     f_FlagsW2  [0/250] <A HREF="#sRM3.4">Additional informational flags at</A>
+                                    central pixel in W2 (flags_infoW2) (4)
+     563  I1    ---        Prim    [0/1] W1 primary status, if available;
+                                    otherwise W2 primary status (primary1)
+<HR>
+<A NAME="sRM3.1"><B>Note (1)</B>: All fluxes are in Vega nanomaggies (nMgy; Finkbeiner+
+    <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2004AJ....128.2577F">2004AJ....128.2577F</A>), so that the Vega magnitude of a source is given
+    by 22.5-2.5log(flux). The absolute calibration is ultimately inherited
+    from AllWISE through the calibration of Meisner+ (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2017AJ....154..161M">2017AJ....154..161M</A>).
+    This inheritance depends on details of the PSF normalization at large
+    radii, which is uncertain. To improve the agreement between unWISE and
+    AllWISE fluxes, we recommend subtracting 4mmag from unWISE W1 and
+    32mmag from unWISE W2 fluxes.
+
+    Corresponding AB magnitudes are given by the following equations:
+    m<SUB>W1,AB</SUB>=m<SUB>W1,Vega</SUB>+2.699
+    m<SUB>W2,AB</SUB>=m<SUB>W2,Vega</SUB>+3.339
+
+    Following these conversion laws, columns in nanomaggies were
+    determined by CDS staff to be in units of 309.05nJy and 167.66nJy
+    for W1 and W2, respectively.
+<A NAME="sRM3.2"><B>Note (2)</B>: The "quality factor" is a concept inherited from PS1. It tabulates
+    the PSF-weighted fraction of pixels contributing to this detection.
+    Good detections will have quality factors close to one. Heavily
+    saturated detections will have quality factors close to zero.
+<A NAME="sRM3.3"><B>Note (3)</B>:  The unWISE flags simply give the value of the unWISE mask image for
+    the central pixel of the unWISE catalog source, after "collapsing" the
+    time-resolved masks into a smaller number of bits appropriate for
+    static sources. All bits mark features of very bright stars. These
+    flags are described in more detail here: <A HREF="http://catalog.unwise.me/">http://catalog.unwise.me/</A>
+    files/unwise<SUB>bitmask</SUB>writeup-03Dec2018.pdf
+    ---------------------------------------
+     Bit   Description
+    ---------------------------------------
+     0     In core or wings
+     1     In diffraction spike
+     2     In ghost
+     3     In first latent
+     4     In second latent
+     5     In circular halo
+     6     Saturated
+     7     In geometric diffraction spike
+    ---------------------------------------
+<A NAME="sRM3.4"><B>Note (4)</B>: The unWISE info flags contain additional fields related to the
+    crowdsource processing or unWISE coadd bright star mask.
+    ---------------------------------------------------------------------------
+     Bit   Description
+    ---------------------------------------------------------------------------
+     0     In PSF of bright star falling off coadd
+     1     In HyperLeda large galaxy
+     2     In "big object" (e.g., a Magellanic cloud)
+     3     Pixel may contain the centroid of a very bright star
+     4     crowdsource considers this pixel potentially affected by saturation
+     5     Pixel may contain nebulosity
+     6     Sources in this pixel will not be aggressively deblended
+     7     Candidate sources in this pixel must be "sharp" to be optimized
+    ---------------------------------------------------------------------------
+<HR>
+
+<A NAME="sRM99.3"><B>History</B>:
+    Downloaded from <A HREF="http://catalog.unwise.me/catalogs.html">http://catalog.unwise.me/catalogs.html</A>
+================================================================================
+<B>(End)</B>                               F.-X. Pineau, E. Perret [CDS]    17-Feb-2020
+
+</PRE><!-- ....wait for 1 children: %0=3182852 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

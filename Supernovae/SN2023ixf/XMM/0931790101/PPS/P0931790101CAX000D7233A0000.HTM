@@ -1,0 +1,693 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of VII/233</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Wed Jun 28 17:16:23 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0931790101OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of VII/233 :<BR>The 2MASS Extended sources (IPAC/UMass, 2003-2006)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0931790101OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>VII/233</B>             The 2MASS Extended sources           (IPAC/UMass, 2003-2006)
+================================================================================
+The Two Micron All Sky Survey: Extended sources
+    Skrutskie M.F., Cutri R.M., Stiening R., Weinberg M.D., Schneider S.,
+    Carpenter J.M., Beichman C., Capps R., Chester T., Elias J., Huchra
+    J., Liebert J., Lonsdale C., Monet D.G., Price S., Seitzer P., Jarrett
+    T., Kirkpatrick J.D., Gizis J.E., Howard E., Evans T., Fowler J.,
+    Fullmer L., Hurt R., Light R., Kopan E.L., Marsh K.A., McCallon H. L.,
+    Tam R., Van Dyk S., Wheelock S.
+   &lt;Astron. J. 131, 1163 (2006)&gt;
+   =<A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=2006AJ....131.1163S">2006AJ....131.1163S</A>
+================================================================================
+<B>ADC_Keywords</B>: Galaxies, IR; Infrared sources ; Photometry, infrared ; Surveys
+
+<B>Keywords</B>: Catalogs - Infrared: General - Surveys
+
+
+<A NAME="sRM11.1"><B>Description</B>:
+    Between 1997 June and 2001 February the Two Micron All Sky Survey
+    (2MASS) collected 25.4 Tbytes of raw imaging data covering 99.998% of
+    the celestial sphere in the near-infrared J(1.25&#181;m), H(1.65&#181;m),
+    and Ks(2.16&#181;m) bandpasses. Observations were conducted from two
+    dedicated 1.3 m diameter telescopes located at Mount Hopkins, Arizona,
+    and Cerro Tololo, Chile. The 2MASS All-Sky Data Release includes the
+    FITS images covering the entire sky, a Point Source Catalog (PSC) of
+    471 million sources (Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=II/242">II/242</A>), and the present Extended Source
+    Catalog.
+
+    The 2MASS Extended Source Catalog contains sources that are extended
+    with respect to the instantaneous PSF, such as galaxies and Galactic
+    nebulae. The algorithms used to create the 2MASX catalog are described
+    by Jarett et al. (<A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=2000AJ....119.2498J">2000AJ....119.2498J</A>), and in the 2MASS Explanatory
+    Supplement (accessible from the 2MASS Home Page). Briefly, point/
+    extended-source discrimination was conducted for each band-merged
+    point-source detection by comparing a variety of radial shape, surface
+    brightness, image moments, and symmetry parameters with characteristic
+    stellar parameters using an oblique decision tree classifier. The
+    classification tests included filters to exclude double and triple
+    stars, which were one of the main contaminants in high source density
+    regions. Stellar parameters were measured empirically as a function
+    of time in each scan to compensate for variations in the atmospheric
+    seeing using the aggregate properties of band-merged point-source
+    extractions.
+
+    The catalog contains 389 columns described briefly in the
+    "<A HREF="#sRM2.1">Byte-by-byte Description</A>" section below; their description
+    includes also the 2MASS database original column names used
+    in the original descriptions.
+
+<A NAME="sRM99.1"><B>Acknowledging 2MASS in Publications</B>:
+    Please include the following standard acknowledgement in any
+    published material that makes use of the 2MASS data products:
+
+   "This publication makes use of data products from the Two Micron
+    All Sky Survey, which is a joint project of the University
+    of Massachusetts and the Infrared Processing and Analysis
+    Center/California Institute of Technology, funded by the
+    National Aeronautics and Space Administration and the
+    National Science Foundation."
+File Summary:
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.62">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.63">&#215; <A HREF="#sRM2.1">xsc.dat</A>         2194  1647599  <A HREF="#sRM3.1">*</A>The 2MASS Extended Catalog (2MASX)
+<HR>
+<A NAME="sRM3.1"><B>Note on xsc.dat</B>: the file is split into smaller pieces of 50,000 objects
+      each, named xsc.dat.00 to xsc.dat.32
+<HR>
+
+<A NAME="sRM13.1"><B>See also</B>:
+    <A HREF="http://spider.ipac.caltech.edu/staff/jarrett/2mass/XSC/">http://spider.ipac.caltech.edu/staff/jarrett/2mass/XSC/</A> : XSC  Home Page
+    <A HREF="http://www.ipac.caltech.edu/2mass/">http://www.ipac.caltech.edu/2mass/</A> : 2MASS Home Page
+    <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=II/246">II/246</A> : 2MASS All-Sky Catalog of Point Sources (Cutri+ 2003)
+
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.63"> xsc.dat</A>
+<HR>
+   Bytes Format Units    Label     Explanations
+<HR>
+   1- 13  F13.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>        JDobs     ? <A HREF="#sRM3.2">Julian date of the observation (1)</A>
+  15- 31  A17   ---      2MASX     Source name (HHMMSSss+DDMMSSs, J2000)
+  33- 42  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      RAdeg     Right ascension (J2000), based on peak pixel
+  44- 53  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      DEdeg     Declination (J2000), based on peak pixel
+  55- 64  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      supRAdeg  ? Super-coadd centroid RA (J2000) (sup_ra)
+  66- 75  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      supDEdeg  ? Super-coadd centroid Dec (J2000) (sup_dec)
+  77- 83  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      GLon      Galactic longitude
+  85- 91  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      GLat      Galactic latitude
+  93- 97  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%5b---%5d" TARGET="explain">[---]</A>    dens      ? Coadd log(density) of stars with k&lt;14mag
+--------------------------------------------------------------------------------
+  99-104  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   r.K20e    ? Semi-major axis of fiducial ellipse at
+                                     isophote K=20mag/arcsec<SUP>2</SUP> (r_k20fe)
+ 106-111  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      J.K20e    ? J magnitude in K20e ellipse (j<SUB>m</SUB>k20fe)
+ 113-117  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_J.K20e  ? {sigma}(J.K20e) (j<SUB>msig</SUB>k20fe)
+     119  I1    ---      f_J.K20e  ? <A HREF="#sRM3.3">Confusion flags of J.K20e (j<SUB>flg</SUB>k20fe) (2)</A>
+ 121-126  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      H.K20e    ? H magnitude in K20e ellipse (h<SUB>m</SUB>k20fe)
+ 128-132  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_H.K20e  ? {sigma}(H.K20e) (h<SUB>msig</SUB>k20fe)
+     134  I1    ---      f_H.K20e  ? <A HREF="#sRM3.3">Confusion flags of H.K20e (h<SUB>flg</SUB>k20fe) (2)</A>
+ 136-141  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      K.K20e    ? K magnitude in K20e ellipse (k<SUB>m</SUB>k20fe)
+ 143-147  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_K.K20e  ? {sigma}(K.K20e) (k<SUB>msig</SUB>k20fe)
+     149  I1    ---      f_K.K20e  ? <A HREF="#sRM3.3">Confusion flags of K.K20e (k<SUB>flg</SUB>k20fe) (2)</A>
+--------------------------------------------------------------------------------
+ 151-155  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   r3sig     ? Semi-major axis of 3{sigma} K isophotal
+                                     ellipse (r_3sig)
+ 157-161  F5.3  ---      Jb/a      ? J minor/major axis ratio to 3{sigma} (j_ba)
+ 163-165  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      Jpa       ? J pos.angle of 3{sigma} ellipse (j_phi)
+ 167-171  F5.3  ---      Hb/a      ? H minor/major axis ratio to 3{sigma} (h_ba)
+ 173-175  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      Hpa       ? H pos.angle to 3{sigma} ellipse (h_phi)
+ 177-181  F5.3  ---      Kb/a      ? K minor/major axis ratio to 3{sigma} (k_ba)
+ 183-185  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      Kpa       ? K pos.angle to 3{sigma} ellipse (k_phi)
+ 187-191  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   rS3sig    ? Semi-major axis of super-coadd 3{sigma}
+                                     isophotal ellipse (sup<SUB>r</SUB>3sig)
+ 193-197  F5.3  ---      Sb/a      ? Minor/major axis ratio to rS3sig (sup_ba)
+ 199-201  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      Spa       ? Pos.angle of rS3sig (sup_phi)
+--------------------------------------------------------------------------------
+ 203-208  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   r.fe      ? K fiducial Kron elliptical aperture
+                                     semi-major axis (r_fe)
+ 210-215  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      J.fe      ? J magnitude in r.fe (j<SUB>m</SUB>fe)
+ 217-221  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_J.fe    ? {sigma}(J.fe) (j<SUB>msig</SUB>fe)
+     223  I1    ---      f_J.fe    ? <A HREF="#sRM3.3">Confusion flags of J.fe (j<SUB>flg</SUB>fe) (2)</A>
+ 225-230  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      H.fe      ? H magnitude in r.fe (h<SUB>m</SUB>fe)
+ 232-236  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_H.fe    ? {sigma}(H.fe) (h<SUB>msig</SUB>fe)
+     238  I1    ---      f_H.fe    ? <A HREF="#sRM3.3">Confusion flags of H.fe (h<SUB>flg</SUB>fe) (2)</A>
+ 240-245  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      K.fe      ? K magnitude in r.fe (k<SUB>m</SUB>fe)
+ 247-251  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_K.fe    ? {sigma}(K.fe) (k<SUB>msig</SUB>fe)
+     253  I1    ---      f_K.fe    ? <A HREF="#sRM3.3">Confusion flags of K.fe (k<SUB>flg</SUB>fe) (2)</A>
+--------------------------------------------------------------------------------
+ 255-261  F7.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   r.ext     ? Extrapolation/total radius of fit to
+                                     radial profile (r_ext)
+ 263-268  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      J.ext     ? J magnitude in r.ext (j<SUB>m</SUB>ext)
+ 270-274  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_J.ext   ? {sigma}(J.ext) (j<SUB>msig</SUB>ext)
+ 276-281  F6.3  ---      n_J.ext   ? <A HREF="#sRM3.4">{chi}<SUP>2</SUP>(J.ext) (j_pchi) (3)</A>
+ 283-288  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      H.ext     ? J magnitude in r.ext (h<SUB>m</SUB>ext)
+ 290-294  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_H.ext   ? {sigma}(H.ext) (h<SUB>msig</SUB>ext)
+ 296-301  F6.3  ---      n_H.ext   ? <A HREF="#sRM3.4">{chi}<SUP>2</SUP>(H.ext) (h_pchi) (3)</A>
+ 303-308  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      K.ext     ? J magnitude in r.ext (k<SUB>m</SUB>ext)
+ 310-314  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_K.ext   ? {sigma}(K.ext) (k<SUB>msig</SUB>ext)
+ 316-321  F6.3  ---      n_K.ext   ? <A HREF="#sRM3.4">{chi}<SUP>2</SUP>(K.ext) (k_pchi) (3)</A>
+--------------------------------------------------------------------------------
+ 323-328  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   Jr.eff    ? J half-light radius (j<SUB>r</SUB>eff)
+ 330-334  F5.2 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag/arcsec2" TARGET="explain">mag/arcsec2</A> Jmu     ? J mean surface brightness (j<SUB>mnsurfb</SUB>eff)
+ 336-341  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   Hr.eff    ? H half-light radius (h<SUB>r</SUB>eff)
+ 343-347  F5.2 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag/arcsec2" TARGET="explain">mag/arcsec2</A> Hmu     ? H mean surface brightness (h<SUB>mnsurfb</SUB>eff)
+ 349-354  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   Kr.eff    ? K half-light radius (k<SUB>r</SUB>eff)
+ 356-360  F5.2 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag/arcsec2" TARGET="explain">mag/arcsec2</A> Kmu     ? K mean surface brightness (k<SUB>mnsurfb</SUB>eff)
+ 362-366  F5.2  ---      Jconc     ? <A HREF="#sRM3.4">J concentration index (j<SUB>con</SUB>indx) (3)</A>
+ 368-372  F5.2  ---      Hconc     ? <A HREF="#sRM3.4">H concentration index (h<SUB>con</SUB>indx) (3)</A>
+ 374-378  F5.2  ---      Kconc     ? <A HREF="#sRM3.4">K concentration index (k<SUB>con</SUB>indx) (3)</A>
+ 380-385  F6.2 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag/arcsec2" TARGET="explain">mag/arcsec2</A> J.peak  ? J peak pixel brightness (j_peak)
+ 387-392  F6.2 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag/arcsec2" TARGET="explain">mag/arcsec2</A> H.peak  ? H peak pixel brightness (h_peak)
+ 394-399  F6.2 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag/arcsec2" TARGET="explain">mag/arcsec2</A> K.peak  ? K peak pixel brightness (k_peak)
+ 401-406  F6.2 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag/arcsec2" TARGET="explain">mag/arcsec2</A> J.c5    ? J central surface brightness (r&lt;=5")
+                                     (j_5surf)
+ 408-413  F6.2 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag/arcsec2" TARGET="explain">mag/arcsec2</A> H.c5    ? H central surface brightness (r&lt;=5")
+                                     (h_5surf)
+ 415-420  F6.2 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag/arcsec2" TARGET="explain">mag/arcsec2</A> K.c5    ? K central surface brightness (r&lt;=5")
+                                     (k_5surf)
+--------------------------------------------------------------------------------
+ 422-426  F5.2  ---      xScore    [1,2]? <A HREF="#sRM3.5">extended score (e_score) (4)</A>
+ 428-432  F5.2  ---      gScore    [1,2]? <A HREF="#sRM3.5">galaxy score (g_score) (4)</A>
+ 434-435  I2    ---      vc        <A HREF="#sRM3.6">Visual verification of source (5)</A>
+     437  A1    ---      cc        <A HREF="#sRM3.7">Contamination or confusion flag (cc_flg) (6)</A>
+ 439-442  I4    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>      imNx      ? Size of postage stamp image (im_nx)
+--------------------------------------------------------------------------------
+ 444-448  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   r.K20c    ? Radius of fiducial circle at
+                                     isophote K=20mag/arcsec<SUP>2</SUP> (r_k20fc)
+ 450-455  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      J.K20c    ? J magnitude in r.K20c (j<SUB>m</SUB>k20fc)
+ 457-461  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_J.K20c  ? {sigma}(J.K20c) (j<SUB>msig</SUB>k20fc)
+     463  I1    ---      f_J.K20c  ? <A HREF="#sRM3.3">Confusion flags of J.K20c (j<SUB>flg</SUB>k20fc) (2)</A>
+ 465-470  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      H.K20c    ? H magnitude in r.K20c (h<SUB>m</SUB>k20fc)
+ 472-476  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_H.K20c  ? {sigma}(H.K20c) (h<SUB>msig</SUB>k20fc)
+     478  I1    ---      f_H.K20c  ? <A HREF="#sRM3.3">Confusion flags of H.K20c (h<SUB>flg</SUB>k20fc) (2)</A>
+ 480-485  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      K.K20c    ? K magnitude in r.K20c (k<SUB>m</SUB>k20fc)
+ 487-491  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_K.K20c  ? {sigma}(K.K20c) (k<SUB>msig</SUB>k20fc)
+     493  I1    ---      f_K.K20c  ? <A HREF="#sRM3.3">Confusion flags of K.K20c (k<SUB>flg</SUB>k20fc) (2)</A>
+--------------------------------------------------------------------------------
+ 495-499  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   Jr.e      ? J Kron ellipse semi-major axis (j<SUB>r</SUB>e)
+ 501-506  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      J.e       ? J magnitude in Jr.e (j<SUB>m</SUB>e)
+ 508-512  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_J.e     ? {sigma}(J.e) (j<SUB>msig</SUB>e)
+     514  I1    ---      f_J.e     ? <A HREF="#sRM3.3">Confusion flags of J.e (j<SUB>flg</SUB>e) (2)</A>
+ 516-520  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   Hr.e      ? H Kron ellipse semi-major axis (h<SUB>r</SUB>e)
+ 522-527  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      H.e       ? H magnitude in Hr.e (h<SUB>m</SUB>e)
+ 529-533  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_H.e     ? {sigma}(H.e) (h<SUB>msig</SUB>e)
+     535  I1    ---      f_H.e     ? <A HREF="#sRM3.3">Confusion flags of J.e (h<SUB>flg</SUB>e) (2)</A>
+ 537-541  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   Kr.e      ? K Kron ellipse semi-major axis (k<SUB>r</SUB>e)
+ 543-548  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      K.e       ? K magnitude in Kr.e (k<SUB>m</SUB>e)
+ 550-554  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_K.e     ? {sigma}(K.e) (k<SUB>msig</SUB>e)
+     556  I1    ---      f_K.e     ? <A HREF="#sRM3.3">Confusion flags of K.e (k<SUB>flg</SUB>e) (2)</A>
+--------------------------------------------------------------------------------
+ 558-562  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   Jr.c      ? J Kron circular aperture radius (j<SUB>r</SUB>c)
+ 564-569  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      J.c       ? J Kron circular aperture magnitude (j<SUB>m</SUB>c)
+ 571-575  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_J.c     ? {sigma}(J.c) (j<SUB>msig</SUB>c)
+     577  I1    ---      f_J.c     ? <A HREF="#sRM3.3">Confusion flags of J.c (j<SUB>flg</SUB>c) (2)</A>
+ 579-583  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   Hr.c      ? H Kron circular aperture radius (h<SUB>r</SUB>c)
+ 585-590  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      H.c       ? H Kron circular aperture magnitude (h<SUB>m</SUB>c)
+ 592-596  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_H.c     ? {sigma}(H.c) (h<SUB>msig</SUB>c)
+     598  I1    ---      f_H.c     ? <A HREF="#sRM3.3">Confusion flags of H.c (h<SUB>flg</SUB>c) (2)</A>
+ 600-604  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   Kr.c      ? K Kron circular aperture radius (k<SUB>r</SUB>c)
+ 606-611  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      K.c       ? K Kron circular aperture magnitude (k<SUB>m</SUB>c)
+ 613-617  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_K.c     ? {sigma}(K.c) (k<SUB>msig</SUB>c)
+     619  I1    ---      f_K.c     ? <A HREF="#sRM3.3">Confusion flags of K.c (k<SUB>flg</SUB>c) (2)</A>
+--------------------------------------------------------------------------------
+ 621-625  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   r.fc      ? K fiducial Kron circular radius (r_fc)
+ 627-632  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      J.fc      ? J magnitude in r.fc (j<SUB>m</SUB>fc)
+ 634-638  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_J.fc    ? {sigma}(J.fc) (j<SUB>msig</SUB>fc)
+     640  I1    ---      f_J.fc    ? <A HREF="#sRM3.3">Confusion flags of J.fc (j<SUB>flg</SUB>fc) (2)</A>
+ 642-647  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      H.fc      ? H fiducial Kron circular magnitude (h<SUB>m</SUB>fc)
+ 649-653  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_H.fc    ? {sigma}(H.fc) (h<SUB>msig</SUB>fc)
+     655  I1    ---      f_H.fc    ? <A HREF="#sRM3.3">Confusion flags of H.fc (h<SUB>flg</SUB>fc) (2)</A>
+ 657-662  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      K.fc      ? K fiducial Kron circular magnitude (k<SUB>m</SUB>fc)
+ 664-668  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_K.fc    ? {sigma}(K.fc) (k<SUB>msig</SUB>fc)
+     670  I1    ---      f_K.fc    ? <A HREF="#sRM3.3">Confusion flags of K.fc (k<SUB>flg</SUB>fc) (2)</A>
+--------------------------------------------------------------------------------
+ 672-676  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   Jr.i20e   ? Semi-major axis of elliptical aperture at
+                                     isophote J=20mag/arcsec<SUP>2</SUP> (j<SUB>r</SUB>i20e)
+ 678-683  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      J.i20e    ? J magnitude in Jr.i20e (j<SUB>m</SUB>i20e)
+ 685-689  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_J.i20e  ? {sigma}(J.i20e) (j<SUB>msig</SUB>i20e)
+     691  I1    ---      f_J.i20e  ? <A HREF="#sRM3.3">Confusion flags of J.i20e (j<SUB>flg</SUB>i20e) (2)</A>
+ 693-697  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   Hr.i20e   ? Semi-major axis of elliptical aperture at
+                                     isophote H=20mag/arcsec<SUP>2</SUP> (h<SUB>r</SUB>i20e)
+ 699-704  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      H.i20e    ? H magnitude in Hr.i20e (h<SUB>m</SUB>i20e)
+ 706-710  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_H.i20e  ? {sigma}(H.i20e) (h<SUB>msig</SUB>i20e)
+     712  I1    ---      f_H.i20e  ? <A HREF="#sRM3.3">Confusion flags of H.i20e (h<SUB>flg</SUB>i20e) (2)</A>
+ 714-718  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   Kr.i20e   ? Semi-major axis of elliptical aperture at
+                                     isophote K=20mag/arcsec<SUP>2</SUP> (k<SUB>r</SUB>i20e)
+ 720-725  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      K.i20e    ? K magnitude in Kr.i20e (k<SUB>m</SUB>i20e)
+ 727-731  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_K.i20e  ? {sigma}(K.i20e) (k<SUB>msig</SUB>i20e)
+     733  I1    ---      f_K.i20e  ? <A HREF="#sRM3.3">Confusion flags of K.i20e (k<SUB>flg</SUB>i20e) (2)</A>
+--------------------------------------------------------------------------------
+ 735-739  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   Jr.i20c   ? Radius of circular aperture at isophote
+                                     J=20mag/arcsec<SUP>2</SUP> (j<SUB>r</SUB>i20c)
+ 741-746  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      J.i20c    ? J magnitude in Jr.i20c (j<SUB>m</SUB>i20c)
+ 748-752  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_J.i20c  ? {sigma}(J.i20c) (j<SUB>msig</SUB>i20c)
+     754  I1    ---      f_J.i20c  ? <A HREF="#sRM3.3">Confusion flags of J.i20c (j<SUB>flg</SUB>i20c) (2)</A>
+ 756-760  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   Hr.i20c   ? Radius of circular aperture at isophote
+                                     H=20mag/arcsec<SUP>2</SUP> Hr.i20c (h<SUB>r</SUB>i20c)
+ 762-767  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      H.i20c    ? H magnitude in (h<SUB>m</SUB>i20c)
+ 769-773  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_H.i20c  ? {sigma}(H.i20c) (h<SUB>msig</SUB>i20c)
+     775  I1    ---      f_H.i20c  ? <A HREF="#sRM3.3">Confusion flags of H.i20c (h<SUB>flg</SUB>i20c) (2)</A>
+ 777-781  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   Kr.i20c   ? Radius of circular aperture at isophote
+                                     H=20mag/arcsec<SUP>2</SUP> Kr.i20c (k<SUB>r</SUB>i20c)
+ 783-788  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      K.i20c    ? K magnitude in (k<SUB>m</SUB>i20c)
+ 790-794  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_K.i20c  ? {sigma}(K.i20c) (k<SUB>msig</SUB>i20c)
+     796  I1    ---      f_K.i20c  ? <A HREF="#sRM3.3">Confusion flags of K.i20c (k<SUB>flg</SUB>i20c) (2)</A>
+--------------------------------------------------------------------------------
+ 798-802  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   Jr.i21e   ? Semi-major axis of elliptical aperture
+                                     at isophote J=21mag/arcsec<SUP>2</SUP>  (j<SUB>r</SUB>i21e)
+ 804-809  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      J.i21e    ? J magnitude in Jr.i21e (j<SUB>m</SUB>i21e)
+ 811-815  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_J.i21e  ? {sigma}(J.i21e) (j<SUB>msig</SUB>i21e)
+     817  I1    ---      f_J.i21e  ? <A HREF="#sRM3.3">Confusion flags of J.i21e (j<SUB>flg</SUB>i21e) (2)</A>
+ 819-823  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   Hr.i21e   ? Semi-major axis of elliptical aperture
+                                     at isophote h=21mag/arcsec<SUP>2</SUP> (h<SUB>r</SUB>i21e)
+ 825-830  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      H.i21e    ? H magnitude in Hr.i21e (h<SUB>m</SUB>i21e)
+ 832-836  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_H.i21e  ? {sigma}(H.i21e) (h<SUB>msig</SUB>i21e)
+     838  I1    ---      f_H.i21e  ? <A HREF="#sRM3.3">Confusion flags of H.i21e (h<SUB>flg</SUB>i21e) (2)</A>
+ 840-844  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   Kr.i21e   ? Semi-major axis of elliptical aperture
+                                     at isophote at K=21mag/arcsec<SUP>2</SUP> (k<SUB>r</SUB>i21e)
+ 846-851  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      K.i21e    ? K magnitude in Kr.i21e (k<SUB>m</SUB>i21e)
+ 853-857  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_K.i21e  ? {sigma}(K.i21e) (k<SUB>msig</SUB>i21e)
+     859  I1    ---      f_K.i21e  ? <A HREF="#sRM3.3">Confusion flags of K.i21e (k<SUB>flg</SUB>i21e) (2)</A>
+--------------------------------------------------------------------------------
+ 861-865  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   r.21fe    ? Semi-major axis of fiducial elliptical
+                                     aperture at J=21mag/arcsec<SUP>2</SUP> (r_j21fe)
+ 867-872  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      J.21fe    ? J magnitude in r.21fe (j<SUB>m</SUB>j21fe)
+ 874-878  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_J.21fe  ? {sigma}(J.21fe) (j<SUB>msig</SUB>j21fe)
+     880  I1    ---      f_J.21fe  ? <A HREF="#sRM3.3">Confusion flags of J.21fe (j<SUB>flg</SUB>j21fe) (2)</A>
+ 882-887  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      H.21fe    ? H magnitude in r.21fe (h<SUB>m</SUB>j21fe)
+ 889-893  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_H.21fe  ? {sigma}(H.21fe) (h<SUB>msig</SUB>j21fe)
+     895  I1    ---      f_H.21fe  ? <A HREF="#sRM3.3">Confusion flags of H.21fe (h<SUB>flg</SUB>j21fe) (2)</A>
+ 897-902  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      K.21fe    ? K magnitude in r.21fe (k<SUB>m</SUB>j21fe)
+ 904-908  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_K.21fe  ? {sigma}(K.21fe) (k<SUB>msig</SUB>j21fe)
+     910  I1    ---      f_K.21fe  ? <A HREF="#sRM3.3">Confusion flags of K.21fe (k<SUB>flg</SUB>j21fe) (2)</A>
+--------------------------------------------------------------------------------
+ 912-916  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   Jr.i21c   ? Radius of circular aperture at isophote
+                                     J=21mag/arcsec<SUP>2</SUP> (j<SUB>r</SUB>i21c)
+ 918-923  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      J.i21c    ? J magnitude in J.i21c (j<SUB>m</SUB>i21c)
+ 925-929  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_J.i21c  ? {sigma}(J.i21c) (j<SUB>msig</SUB>i21c)
+     931  I1    ---      f_J.i21c  ? <A HREF="#sRM3.3">Confusion flags of J.i21c (j<SUB>flg</SUB>i21c) (2)</A>
+ 933-937  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   Hr.i21c   ? Radius of circular aperture at isophote
+                                     H=21mag/arcsec<SUP>2</SUP> (h<SUB>r</SUB>i21c)
+ 939-944  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      H.i21c    ? H magnitude in H.i21c (h<SUB>m</SUB>i21c)
+ 946-950  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_H.i21c  ? {sigma}(H.i21c) (h<SUB>msig</SUB>i21c)
+     952  I1    ---      f_H.i21c  ? <A HREF="#sRM3.3">Confusion flags of H.i21c (h<SUB>flg</SUB>i21c) (2)</A>
+ 954-958  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   Kr.i21c   ? Radius of circular aperture at isophote
+                                     K=21mag/arcsec<SUP>2</SUP> (k<SUB>r</SUB>i21c)
+ 960-965  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      K.i21c    ? K magnitude in K.i21c (k<SUB>m</SUB>i21c)
+ 967-971  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_K.i21c  ? {sigma}(K.i21c) (k<SUB>msig</SUB>i21c)
+     973  I1    ---      f_K.i21c  ? <A HREF="#sRM3.3">Confusion flags of K.i21c (k<SUB>flg</SUB>i21c) (2)</A>
+--------------------------------------------------------------------------------
+ 975-979  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   r.21fc    ? J fiducial Kron circular radius at
+                                     isophote J=21mag/arcsec<SUP>2</SUP> mag (r_j21fc)
+ 981-986  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      J.21fc    ? J magnitude in r.21fc (j<SUB>m</SUB>j21fc)
+ 988-992  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_J.21fc  ? {sigma}(J.21fc) (j<SUB>msig</SUB>j21fc)
+     994  I1    ---      f_J.21fc  ? <A HREF="#sRM3.3">Confusion flags of J.21fc (j<SUB>flg</SUB>j21fc) (2)</A>
+ 996-1001  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      H.21fc    ? magnitude in r.21fc (h<SUB>m</SUB>j21fc)
+ 1003-1007  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_H.21fc  ? {sigma}(H.21fc) (h<SUB>msig</SUB>j21fc)
+    1009  I1    ---      f_H.21fc  ? <A HREF="#sRM3.3">Confusion flags of H.21fc (h<SUB>flg</SUB>j21fc) (2)</A>
+ 1011-1016  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      K.21fc    ? K magnitude in r.21fc (k<SUB>m</SUB>j21fc)
+ 1018-1022  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_K.21fc  ? {sigma}(K.21fc) (k<SUB>msig</SUB>j21fc)
+    1024  I1    ---      f_K.21fc  ? <A HREF="#sRM3.3">Confusion flags of K.21fc (k<SUB>flg</SUB>j21fc) (2)</A>
+--------------------------------------------------------------------------------
+ 1026-1031  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      J.a5      ? J magnitude in 5arcsec aperture (j<SUB>m</SUB>5)
+ 1033-1037  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_J.a5    ? {sigma}(J.a5) (j<SUB>msig</SUB>5)
+    1039  I1    ---      f_J.a5    ? <A HREF="#sRM3.3">Confusion flags of J.a5 (j<SUB>flg</SUB>5) (2)</A>
+ 1041-1046  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      H.a5      ? H magnitude in 5arcsec aperture (h<SUB>m</SUB>5)
+ 1048-1052  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_H.a5    ? {sigma}(H.a5) (h<SUB>msig</SUB>5)
+    1054  I1    ---      f_H.a5    ? <A HREF="#sRM3.3">Confusion flags of H.a5 (h<SUB>flg</SUB>5) (2)</A>
+ 1056-1061  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      K.a5      ? K magnitude in 5arcsec aperture (k<SUB>m</SUB>5)
+ 1063-1067  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_K.a5    ? {sigma}(K.a5) (k<SUB>msig</SUB>5)
+    1069  I1    ---      f_K.a5    ? <A HREF="#sRM3.3">Confusion flags of K.a5 (k<SUB>flg</SUB>5) (2)</A>
+--------------------------------------------------------------------------------
+ 1071-1076  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      J.a7      ? J magnitude in 7arcsec aperture (j<SUB>m</SUB>7)
+ 1078-1082  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_J.a7    ? {sigma}(J.a7) (j<SUB>msig</SUB>7)
+    1084  I1    ---      f_J.a7    ? <A HREF="#sRM3.3">Confusion flags of J.a7 (j<SUB>flg</SUB>7) (2)</A>
+ 1086-1091  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      H.a7      ? H magnitude in 7arcsec aperture (h<SUB>m</SUB>7)
+ 1093-1097  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_H.a7    ? {sigma}(H.a7) (h<SUB>msig</SUB>7)
+    1099  I1    ---      f_H.a7    ? <A HREF="#sRM3.3">Confusion flags of H.a7 (h<SUB>flg</SUB>7) (2)</A>
+ 1101-1106  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      K.a7      ? K magnitude in 7arcsec aperture (k<SUB>m</SUB>7)
+ 1108-1112  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_K.a7    ? {sigma}(K.a7) (k<SUB>msig</SUB>7)
+    1114  I1    ---      f_K.a7    ? <A HREF="#sRM3.3">Confusion flags of K.a7 (k<SUB>flg</SUB>7) (2)</A>
+--------------------------------------------------------------------------------
+ 1116-1121  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      J.10      ? J magnitude in 10arcsec aperture (j<SUB>m</SUB>10)
+ 1123-1127  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_J.10    ? {sigma}(J.10) (j<SUB>msig</SUB>10)
+    1129  I1    ---      f_J.10    ? <A HREF="#sRM3.3">Confusion flags of J.10 (j<SUB>flg</SUB>10) (2)</A>
+ 1131-1136  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      H.10      ? H magnitude in 10arcsec aperture (h<SUB>m</SUB>10)
+ 1138-1142  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_H.10    ? {sigma}(H.10) (h<SUB>msig</SUB>10)
+    1144  I1    ---      f_H.10    ? <A HREF="#sRM3.3">Confusion flags of H.10 (h<SUB>flg</SUB>10) (2)</A>
+ 1146-1151  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      K.10      ? K magnitude in 10arcsec aperture (k<SUB>m</SUB>10)
+ 1153-1157  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_K.10    ? {sigma}(K.10) (k<SUB>msig</SUB>10)
+    1159  I1    ---      f_K.10    ? <A HREF="#sRM3.3">Confusion flags of K.10 (k<SUB>flg</SUB>10) (2)</A>
+--------------------------------------------------------------------------------
+ 1161-1166  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      J.15      ? J magnitude in 15arcsec aperture (j<SUB>m</SUB>15)
+ 1168-1172  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_J.15    ? {sigma}(J.15) (j<SUB>msig</SUB>15)
+    1174  I1    ---      f_J.15    ? <A HREF="#sRM3.3">Confusion flags of J.15 (j<SUB>flg</SUB>15) (2)</A>
+ 1176-1181  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      H.15      ? H magnitude in 15arcsec aperture (h<SUB>m</SUB>15)
+ 1183-1187  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_H.15    ? {sigma}(H.15) (h<SUB>msig</SUB>15)
+    1189  I1    ---      f_H.15    ? <A HREF="#sRM3.3">Confusion flags of H.15 (h<SUB>flg</SUB>15) (2)</A>
+ 1191-1196  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      K.15      ? K magnitude in 15arcsec aperture (k<SUB>m</SUB>15)
+ 1198-1202  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_K.15    ? {sigma}(K.15) (k<SUB>msig</SUB>15)
+    1204  I1    ---      f_K.15    ? <A HREF="#sRM3.3">Confusion flags of K.15 (k<SUB>flg</SUB>15) (2)</A>
+--------------------------------------------------------------------------------
+ 1206-1211  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      J.20      ? J magnitude in 20arcsec aperture (j<SUB>m</SUB>20)
+ 1213-1217  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_J.20    ? {sigma}(J.20) (j<SUB>msig</SUB>20)
+    1219  I1    ---      f_J.20    ? <A HREF="#sRM3.3">Confusion flags of J.20 (j<SUB>flg</SUB>20) (2)</A>
+ 1221-1226  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      H.20      ? H magnitude in 20arcsec aperture (h<SUB>m</SUB>20)
+ 1228-1232  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_H.20    ? {sigma}(H.20) (h<SUB>msig</SUB>20)
+    1234  I1    ---      f_H.20    ? <A HREF="#sRM3.3">Confusion flags of H.20 (h<SUB>flg</SUB>20) (2)</A>
+ 1236-1241  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      K.20      ? K magnitude in 20arcsec aperture (k<SUB>m</SUB>20)
+ 1243-1247  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_K.20    ? {sigma}(K.20) (k<SUB>msig</SUB>20)
+    1249  I1    ---      f_K.20    ? <A HREF="#sRM3.3">Confusion flags of K.20 (k<SUB>flg</SUB>20) (2)</A>
+--------------------------------------------------------------------------------
+ 1251-1256  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      J.25      ? J magnitude in 25arcsec aperture (j<SUB>m</SUB>25)
+ 1258-1262  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_J.25    ? {sigma}(J.25) (j<SUB>msig</SUB>25)
+    1264  I1    ---      f_J.25    ? <A HREF="#sRM3.3">Confusion flags of J.25 (j<SUB>flg</SUB>25) (2)</A>
+ 1266-1271  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      H.25      ? H magnitude in 25arcsec aperture (h<SUB>m</SUB>25)
+ 1273-1277  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_H.25    ? {sigma}(H.25) (h<SUB>msig</SUB>25)
+    1279  I1    ---      f_H.25    ? <A HREF="#sRM3.3">Confusion flags of H.25 (h<SUB>flg</SUB>25) (2)</A>
+ 1281-1286  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      K.25      ? K magnitude in 25arcsec aperture (k<SUB>m</SUB>25)
+ 1288-1292  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_K.25    ? {sigma}(K.25) (k<SUB>msig</SUB>25)
+    1294  I1    ---      f_K.25    ? <A HREF="#sRM3.3">Confusion flags of K.25 (k<SUB>flg</SUB>25) (2)</A>
+--------------------------------------------------------------------------------
+ 1296-1301  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      J.30      ? J magnitude in 30arcsec aperture (j<SUB>m</SUB>30)
+ 1303-1307  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_J.30    ? {sigma}(J.30) (j<SUB>msig</SUB>30)
+    1309  I1    ---      f_J.30    ? <A HREF="#sRM3.3">Confusion flags of J.30 (j<SUB>flg</SUB>30) (2)</A>
+ 1311-1316  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      H.30      ? H magnitude in 30arcsec aperture (h<SUB>m</SUB>30)
+ 1318-1322  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_H.30    ? {sigma}(H.30) (h<SUB>msig</SUB>30)
+    1324  I1    ---      f_H.30    ? <A HREF="#sRM3.3">Confusion flags of H.30 (h<SUB>flg</SUB>30) (2)</A>
+ 1326-1331  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      K.30      ? K magnitude in 30arcsec aperture (k<SUB>m</SUB>30)
+ 1333-1337  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_K.30    ? {sigma}(K.30) (k<SUB>msig</SUB>30)
+    1339  I1    ---      f_K.30    ? <A HREF="#sRM3.3">Confusion flags of K.30 (k<SUB>flg</SUB>30) (2)</A>
+--------------------------------------------------------------------------------
+ 1341-1346  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      J.40      ? J magnitude in 40arcsec aperture (j<SUB>m</SUB>40)
+ 1348-1352  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_J.40    ? {sigma}(J.40) (j<SUB>msig</SUB>40)
+    1354  I1    ---      f_J.40    ? <A HREF="#sRM3.3">Confusion flags of J.40 (j<SUB>flg</SUB>40) (2)</A>
+ 1356-1361  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      H.40      ? H magnitude in 40arcsec aperture (h<SUB>m</SUB>40)
+ 1363-1367  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_H.40    ? {sigma}(H.40) (h<SUB>msig</SUB>40)
+    1369  I1    ---      f_H.40    ? <A HREF="#sRM3.3">Confusion flags of H.40 (h<SUB>flg</SUB>40) (2)</A>
+ 1371-1376  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      K.40      ? K magnitude in 40arcsec aperture (k<SUB>m</SUB>40)
+ 1378-1382  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_K.40    ? {sigma}(K.40) (k<SUB>msig</SUB>40)
+    1384  I1    ---      f_K.40    ? <A HREF="#sRM3.3">Confusion flags of K.40 (k<SUB>flg</SUB>40) (2)</A>
+--------------------------------------------------------------------------------
+ 1386-1391  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      J.50      ? J magnitude in 50arcsec aperture (j<SUB>m</SUB>50)
+ 1393-1397  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_J.50    ? {sigma}(J.50) (j<SUB>msig</SUB>50)
+    1399  I1    ---      f_J.50    ? Confusion flags of J.50 (j<SUB>flg</SUB>50)
+ 1401-1406  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      H.50      ? H magnitude in 50arcsec aperture (h<SUB>m</SUB>50)
+ 1408-1412  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_H.50    ? {sigma}(H.50) (h<SUB>msig</SUB>50)
+    1414  I1    ---      f_H.50    ? <A HREF="#sRM3.3">Confusion flags of H.50 (h<SUB>flg</SUB>50) (2)</A>
+ 1416-1421  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      K.50      ? K magnitude in 50arcsec aperture (k<SUB>m</SUB>50)
+ 1423-1427  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_K.50    ? {sigma}(K.50) (k<SUB>msig</SUB>50)
+    1429  I1    ---      f_K.50    ? <A HREF="#sRM3.3">Confusion flags of K.50 (k<SUB>flg</SUB>50) (2)</A>
+--------------------------------------------------------------------------------
+ 1431-1436  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      J.60      ? J magnitude in 60arcsec aperture (j<SUB>m</SUB>60)
+ 1438-1442  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_J.60    ? {sigma}(J.60) (j<SUB>msig</SUB>60)
+    1444  I1    ---      f_J.60    ? <A HREF="#sRM3.3">Confusion flags of J.60 (j<SUB>flg</SUB>60) (2)</A>
+ 1446-1451  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      H.60      ? H magnitude in 60arcsec aperture (h<SUB>m</SUB>60)
+ 1453-1457  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_H.60    ? {sigma}(H.60) (h<SUB>msig</SUB>60)
+    1459  I1    ---      f_H.60    ? <A HREF="#sRM3.3">Confusion flags of H.60 (h<SUB>flg</SUB>60) (2)</A>
+ 1461-1466  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      K.60      ? K magnitude in 60arcsec aperture (k<SUB>m</SUB>60)
+ 1468-1472  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_K.60    ? {sigma}(K.60) (k<SUB>msig</SUB>60)
+    1474  I1    ---      f_K.60    ? <A HREF="#sRM3.3">Confusion flags of K.60 (k<SUB>flg</SUB>60) (2)</A>
+--------------------------------------------------------------------------------
+ 1476-1481  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      J.70      ? J magnitude in 70arcsec aperture (j<SUB>m</SUB>70)
+ 1483-1487  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_J.70    ? {sigma}(J.70) (j<SUB>msig</SUB>70)
+    1489  I1    ---      f_J.70    ? <A HREF="#sRM3.3">Confusion flags of J.70 (j<SUB>flg</SUB>70) (2)</A>
+ 1491-1496  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      H.70      ? H magnitude in 70arcsec aperture (h<SUB>m</SUB>70)
+ 1498-1502  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_H.70    ? {sigma}(H.70) (h<SUB>msig</SUB>70)
+    1504  I1    ---      f_H.70    ? <A HREF="#sRM3.3">Confusion flags of H.70 (h<SUB>flg</SUB>70) (2)</A>
+ 1506-1511  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      K.70      ? K magnitude in 70arcsec aperture (k<SUB>m</SUB>70)
+ 1513-1517  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_K.70    ? {sigma}(K.70) (k<SUB>msig</SUB>70)
+    1519  I1    ---      f_K.70    ? <A HREF="#sRM3.3">Confusion flags of K.70 (k<SUB>flg</SUB>70) (2)</A>
+--------------------------------------------------------------------------------
+ 1521-1526  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      J.sys     ? <A HREF="#sRM3.12">J system magnitude (j<SUB>m</SUB>sys) (11)</A>
+ 1528-1532  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_J.sys   ? {sigma}(J.sys) (j<SUB>msig</SUB>sys)
+ 1534-1539  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      H.sys     ? <A HREF="#sRM3.12">H system magnitude (h<SUB>m</SUB>sys) (11)</A>
+ 1541-1545  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_H.sys   ? {sigma}(H.sys) (h<SUB>msig</SUB>sys)
+ 1547-1552  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      K.sys     ? <A HREF="#sRM3.12">K system magnitude (k<SUB>m</SUB>sys) (11)</A>
+ 1554-1558  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_K.sys   ? {sigma}(K.sys) (k<SUB>msig</SUB>sys)
+    1560  I1    ---      sysFlg    [0,1]? system flag: 0=no system,
+                                     1=nearby galaxy flux (sys_flg)
+    1562  I1    ---      ctmFlg    [0,1]? contamination flag: 0=no stars,
+                                     1=stellar flux (contam_flg)
+--------------------------------------------------------------------------------
+ 1564-1568  F5.3  ---      Jba5s     ? J minor/major axis ratio to 5{sigma} fit
+                                     (j<SUB>5sig</SUB>ba)
+ 1570-1572  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      Jpa5s     ? J pos.angle to 5{sigma} fit (j<SUB>5sig</SUB>phi)
+ 1574-1578  F5.3  ---      Hba5s     ? H minor/major axis ratio to 5{sigma} fit
+                                     (h<SUB>5sig</SUB>ba)
+ 1580-1582  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      Hpa5s     ? H pos.angle to 5{sigma} fit (h<SUB>5sig</SUB>phi)
+ 1584-1588  F5.3  ---      Kba5s     ? K minor/major axis ratio to 5{sigma} fit
+                                    (k<SUB>5sig</SUB>ba)
+ 1590-1592  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      Kpa5s     ? K pos.angle to 5{sigma} fit (k<SUB>5sig</SUB>phi)
+--------------------------------------------------------------------------------
+ 1594-1596  I3    ---      JdA       ? J 5{sigma}/3{sigma} differential area
+                                     (j<SUB>d</SUB>area)
+ 1598-1600  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%25" TARGET="explain">%</A>        JpcdA     ? J 5{sigma}/3{sigma} relative area change
+                                     (j<SUB>perc</SUB>darea)
+ 1602-1604  I3    ---      HdA       ? H 5{sigma}/3{sigma} differential area
+                                     (h<SUB>d</SUB>area)
+ 1606-1608  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%25" TARGET="explain">%</A>        HpcdA     ? H 5{sigma}/3{sigma} relative area change
+                                     (h<SUB>perc</SUB>darea)
+ 1610-1612  I3    ---      KdA       ? K 5{sigma}/3{sigma} differential area
+                                     (k<SUB>d</SUB>area)
+ 1614-1616  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%25" TARGET="explain">%</A>        KpcdA     ? K 5{sigma}/3{sigma} relative area change
+                                     (k<SUB>perc</SUB>darea)
+--------------------------------------------------------------------------------
+ 1618-1622  F5.3  ---      Jrat.bs   ? J bi-symmetric flux ratio (j<SUB>bisym</SUB>rat)
+ 1624-1629  F6.3  ---      Jchi.bs   ? J bi-symmetric x-correlation (j<SUB>bisym</SUB>chi)
+ 1631-1635  F5.3  ---      Hrat.bs   ? H bi-symmetric flux ratio (h<SUB>bisym</SUB>rat)
+ 1637-1642  F6.3  ---      Hchi.bs   ? H bi-symmetric x-correlation (h<SUB>bisym</SUB>chi)
+ 1644-1648  F5.3  ---      Krat.bs   ? K bi-symmetric flux ratio (k<SUB>bisym</SUB>rat)
+ 1650-1655  F6.3  ---      Kchi.bs   ? K bi-symmetric x-correlation (k<SUB>bisym</SUB>chi)
+--------------------------------------------------------------------------------
+ 1657-1661  F5.2  ---      Jsh0      ? J ridge shape (LCSB: BSNR limit) (j_sh0)
+ 1663-1667  F5.2  ---      e_Jsh0    ? {sigma}(Jsh0) (j<SUB>sig</SUB>sh0)
+ 1669-1673  F5.2  ---      Hsh0      ? H ridge shape (LCSB: BSNR limit) (h_sh0)
+ 1675-1679  F5.2  ---      e_Hsh0    ? {sigma}(Jsh0) (h<SUB>sig</SUB>sh0)
+ 1681-1685  F5.2  ---      Ksh0      ? K ridge shape (LCSB: BSNR limit) (k_sh0)
+ 1687-1691  F5.2  ---      e_Ksh0    ? {sigma}(Jsh0) (k<SUB>sig</SUB>sh0)
+ 1693-1698  F6.1  ---      Jsc.mx    ? J mxdn score (LCSB: BSNR -
+                                     block/smoothed SNR) (j<SUB>sc</SUB>mxdn)
+ 1700-1705  F6.1  ---      Jsc.sh    ? J shape score (j<SUB>sc</SUB>sh)
+ 1707-1712  F6.1  ---      Jsc.wsh   ? J wsh score (LCSB: PSNR - peak raw SNR)
+                                     (j<SUB>sc</SUB>wsh)
+ 1714-1719  F6.1  ---      Jsc.r23   ? J r23 score (LCSB: TSNR - integrated SNR
+                                     for r=15) (j<SUB>sc</SUB>r23)
+ 1721-1726  F6.1  ---      Jsc.1mm   ? J 1st moment score (LCSB:
+                                     super blk 2,4,8 SNR) (j<SUB>sc</SUB>1mm)
+ 1728-1733  F6.1  ---      Jsc.2mm   ? J 2nd moment score (LCSB: SNRMAX -
+                                     super SNR max.) (j<SUB>sc</SUB>2mm)
+ 1735-1740  F6.1  ---      Jsc.vint  ? J vint score (j<SUB>sc</SUB>vint)
+ 1742-1747  F6.1  ---      Jsc.r1    ? J r1 score (j<SUB>sc</SUB>r1)
+ 1749-1754  F6.1  ---      Jsc.msh   [0]? J median shape score (j<SUB>sc</SUB>msh)
+ 1756-1761  F6.1  ---      Hsc.mx    ? H mxdn score (LCSB: BSNR -
+                                     block/smoothed SNR) (h<SUB>sc</SUB>mxdn)
+ 1763-1768  F6.1  ---      Hsc.sh    ? H shape score (h<SUB>sc</SUB>sh)
+ 1770-1775  F6.1  ---      Hsc.wsh   ? H wsh score (LCSB: PSNR - peak raw SNR)
+                                     (h<SUB>sc</SUB>wsh)
+ 1777-1782  F6.1  ---      Hsc.r23   ? H r23 score (LCSB: TSNR - integrated SNR
+                                     for r=15) (h<SUB>sc</SUB>r23)
+ 1784-1789  F6.1  ---      Hsc.1mm   ? H 1st moment score (LCSB:
+                                     super blk 2,4,8 SNR) (h<SUB>sc</SUB>1mm)
+ 1791-1796  F6.1  ---      Hsc.2mm   ? H 2nd moment score (LCSB: SNRMAX -
+                                     super SNR max.) (h<SUB>sc</SUB>2mm)
+ 1798-1803  F6.1  ---      Hsc.vint  ? H vint score (h<SUB>sc</SUB>vint)
+ 1805-1810  F6.1  ---      Hsc.r1    ? H r1 score (h<SUB>sc</SUB>r1)
+ 1812-1817  F6.1  ---      Hsc.msh   [0]? H median shape score (h<SUB>sc</SUB>msh)
+ 1819-1824  F6.1  ---      Ksc.mx    ? K mxdn score (LCSB: BSNR -
+                                     block/smoothed SNR) (k<SUB>sc</SUB>mxdn)
+ 1826-1831  F6.1  ---      Ksc.sh    ? K shape score (k<SUB>sc</SUB>sh)
+ 1833-1838  F6.1  ---      Ksc.wsh   ? K wsh score (LCSB: PSNR - peak raw SNR)
+                                     (k<SUB>sc</SUB>wsh)
+ 1840-1845  F6.1  ---      Ksc.r23   ? K r23 score (LCSB: TSNR - integrated SNR
+                                     for r=15) (k<SUB>sc</SUB>r23)
+ 1847-1852  F6.1  ---      Ksc.1mm   ? K 1st moment score (LCSB:
+                                     super blk 2,4,8 SNR) (k<SUB>sc</SUB>1mm)
+ 1854-1859  F6.1  ---      Ksc.2mm   ? K 2nd moment score (LCSB: SNRMAX -
+                                     super SNR max.) (k<SUB>sc</SUB>2mm)
+ 1861-1866  F6.1  ---      Ksc.vint  ? K vint score (k<SUB>sc</SUB>vint)
+ 1868-1873  F6.1  ---      Ksc.r1    ? K r1 score (k<SUB>sc</SUB>r1)
+ 1875-1880  F6.1  ---      Ksc.msh   [0]? K median shape score (k<SUB>sc</SUB>msh)
+ 1882-1887  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%25" TARGET="explain">%</A>       Jchi.ellf  ? J chi-fraction for elliptical fit
+                                     to 3{sigma} isophote (j<SUB>chif</SUB>ellf)
+ 1889-1894  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%25" TARGET="explain">%</A>       Kchi.ellf  ? K chi-fraction for elliptical fit
+                                     to 3{sigma} isophote (k<SUB>chif</SUB>ellf)
+    1896  I1    ---      ellfFlg   [0,1]? ellipse fitting contamination flag
+                                     (0=no contamination) (ellfit_flg)
+ 1898-1903  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%25" TARGET="explain">%</A>       Schi.ellf  ? super-coadd chi-fraction for elliptical
+                                     fit to 3{sigma} isophote (sup<SUB>chif</SUB>ellf)
+--------------------------------------------------------------------------------
+ 1905-1908  I4    ---      Nbln      [0]? Number of blanked sources (n_blank)
+ 1910-1913  I4    ---      Nsub      [0]? Number of subtracted sources (n_sub)
+    1915  I1    ---      f_Nsub    [0]? blanked/subtracted description flag
+                                      (bl<SUB>sub</SUB>flg)
+--------------------------------------------------------------------------------
+    1917  I1    ---      xid       [0,1] <A HREF="#sRM3.8">Type/galaxy source (id_flg) (7)</A>
+ 1919-1938  A20   ---      idGal     Matched galaxy's catalog name (id_cat)
+ 1940-1945  A6    ---      fgFlg     [_] flux-growth convergence flag (fg_flg)
+    1947  I1    ---      LCSBbf    [1]? LCSB blocking factor (1,2,4,8) (blk_fac)
+    1949  I1    ---      dupSrc    [0,5] <A HREF="#sRM3.9">Duplicate source flag (dup_src) (8)</A>
+    1951  I1    ---      useSrc    [0,1] <A HREF="#sRM3.10">Use source flag (use_src) (9)</A>
+ 1953-1957  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   prox      Distance to nearest neighbor in PSC (prox)
+ 1959-1961  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      pxpa      ? pos.angle of vector to prox (pxpa)
+ 1963-1972  I10   ---      pxKey     ext_key value of nearest XSC source (pxcntr)
+ 1974-1978  I5    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   edge.ns   ? Distance to nearest N/S edge (dist<SUB>edge</SUB>ns)
+ 1980-1982  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   edge.ew   ? Distance to nearest E/W edge (dist<SUB>edge</SUB>ew)
+ 1984-1985  A2    ---      edgeFlg   [nswe ] nearest edge (dist<SUB>edge</SUB>flg)
+ 1987-1996  I10   ---      ptsKey    ? Key to source data DB record (pts_key)
+ 1998-2002  I5    ---      mpKey     ? Key to minor planet prediction (mp_key)
+ 2004-2007  I4    ---      nightKey  ? key to night data record (night_key)
+ 2009-2014  I6    ---      scanKey   ? key to scan data record (scan_key)
+ 2016-2022  I7    ---      coaddKey  ? key to coadd data record (coadd_key)
+    2024  A1    ---      hemis     [ns] hemisphere of observation:
+                                     n = North/Mt.Hopkins; s= South/CTIO (hemis)
+ 2026-2035  A10 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%22YYYY-MM-DD%22" TARGET="explain">"YYYY-MM-DD"</A> date    <A HREF="#sRM3.11">UT day of observation (date) (10)</A>
+ 2037-2039  I3    ---      scan      ? scan number (unique within date) (scan)
+ 2041-2043  I03   ---      coadd     ? 3-digit coadd number (unique within scan)
+                                     (coadd)
+ 2045-2050  I6    ---      ID        ? source ID number (unique within
+                                     scan+coadd) (id)
+ 2052-2057  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   Xcoadd    ? x (cross-scan) position  (x_coadd)
+ 2059-2064  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   Ycoadd    ? y (in-scan) position  (y_coadd)
+ 2066-2071  F6.1  ---      Jsubst2   [0]? J residual background#2 score (j_subst2)
+ 2073-2078  F6.1  ---      Hsubst2   [0]? H residual background#2 score (h_subst2)
+ 2080-2085  F6.1  ---      Ksubst2   [0]? K residual background#2 score (k_subst2)
+ 2087-2092  F6.1  ---      Jbg       ? J coadd median background (j_back)
+ 2094-2099  F6.1  ---      Hbg       ? H coadd median background (h_back)
+ 2101-2106  F6.1  ---      Kbg       ? K coadd median background (k_back)
+ 2108-2114  F7.3  ---      Jres.ann  ? J residual annulus background median
+                                     (j<SUB>resid</SUB>ann)
+ 2116-2122  F7.3  ---      Hres.ann  ? H residual annulus background median
+                                     (h<SUB>resid</SUB>ann)
+ 2124-2130  F7.3  ---      Kres.ann  ? K residual annulus background median
+                                     (k<SUB>resid</SUB>ann)
+ 2132-2136  I5    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   JbgPer    ? J banding FT period (j<SUB>bndg</SUB>per)
+ 2138-2143  F6.3  ---      JbgAmp    ? J banding maximum FT amplitude (j<SUB>bndg</SUB>amp)
+ 2145-2149  I5    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   HbgPer    ? H banding FT period (h<SUB>bndg</SUB>per)
+ 2151-2156  F6.3  ---      HbgAmp    ? H banding maximum FT amplitude (h<SUB>bndg</SUB>amp)
+ 2158-2162  I5    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   KbgPer    ? K banding FT period (k<SUB>bndg</SUB>per)
+ 2164-2169  F6.3  ---      KbgAmp    ? K banding maximum FT amplitude (k<SUB>bndg</SUB>amp)
+ 2171-2174  F4.1  ---      Jtrack    ? J band seetracking score (j_seetrack)
+ 2176-2179  F4.1  ---      Htrack    ? H band seetracking score (h_seetrack)
+ 2181-2184  F4.1  ---      Ktrack    ? K band seetracking score (k_seetrack)
+ 2186-2194  I9    ---      extKey    entry counter (key) number (ext_key)
+<HR>
+<A NAME="sRM3.2"><B>Note (1)</B>: Julian date of the source measurement is accurate to &#177;3
+     minutes. This value is the mean Julian date of the scan observation
+     in which this source falls.
+<A NAME="sRM3.3"><B>Note (2)</B>: The confusion flags are defined as follows:
+      0 = no other sources within aperture used
+      1 = aperture contained pixels masked off in coadd
+      2 = aperture contained pixels masked off due to neighboring sources
+      3 = aperture contained pixels that had a point source flux subtracted off
+      4 = aperture contained pixels within bright star mask
+      5 = aperture contained pixels masked off due to persistence
+      6 = aperture ran into coadd boundary
+      7 = aperture contained pixels within bright galaxy mask
+      9 = integrated flux is negative
+    If the integrated flux is negative, a mag value is calculated using
+       BFMag = 99.0 - [ZERO_CAL - 2.5 log<SUB>10</SUB>(|flux|)];
+    the resulting mag range is between ~ 75 and 99.
+<A NAME="sRM3.4"><B>Note (3)</B>: the concentration index is the ratio of effective radius at 75%
+     and 25% of the light, r(75%)/r(25%)
+<A NAME="sRM3.5"><B>Note (4)</B>: score in the range 1(extended) &lt; score &lt; 2(point-like).
+
+<A NAME="sRM3.6"><B>Note (5)</B>: the visual verification score gives the source type of sources
+          examined "by eye", as follows:
+     -2 = unknown
+     -1 = no verification (i.e., not examined)
+      1 = galaxy
+      2 = non-extended (e.g., star, double, triple, artifact)
+<A NAME="sRM3.7"><B>Note (6)</B>: The contamination/confusion flag indicates whether the source's
+     photometry and position may be affected by artifacts of, or confusion
+     with, nearby bright stars.  Sources are tested for contamination
+     and/or confusion in the order given below, and once a flag is applied
+     to the source, testing is stopped in that band. The flag values
+     indicate the source may be:
+     U =  unreliable source; probable image artifact detection (none)
+     C =  affected by confusion with or artifact of a nearby bright star (none)
+     A or a =  known artifacts
+     z =  in close proximity to a large galaxy; these sources are usually junk
+     Z =  Derived from the Large Galaxy Atlas
+     0 =  default value -- not contaminated
+<A NAME="sRM3.8"><B>Note (7)</B>: flag indicating the extended source catalog type as follows:
+      0 = extended source not found in another catalog
+      1 = extended source is found in galaxy catalog
+          (ID found in idGal field)
+      2 = LCSB (Low Central Surface Brightness) source
+<A NAME="sRM3.9"><B>Note (8)</B>: Duplicate source flag, used in conjunction with the useSrc flag.
+     This numerical flag indicates whether the source falls in a Tile
+     overlap region, and if so, if it was detected multiple times.
+     0 = the source does not fall within a Tile overlap region
+         (useSrc=1), or it falls in an overlap region and there were
+          no sources detected within 2" of its position in the
+          overlapping Tile (useSrc=0).
+     1 = the source falls within a Tile overlap region, and there is one
+         source detected within 2" of its position in the overlapping Tile.
+    &gt;1 = the source falls within a Tile overlap region, and there are
+         multiple sources detected within 2" of its position in the
+         overlapping Tile, and/or within its own Tile. This implies
+         confusion in the multiple source resolution procedure.
+<A NAME="sRM3.10"><B>Note (9)</B>: Use source flag, used in conjunction with the dupSrc flag.
+     This numerical flag indicates if a source falls within a Tile overlap
+     region, and whether or not it satisfies the unbiased selection rules
+     for multiple source resolution.
+     0 = the source falls in a Tile overlap region, but does not have a
+         detection within 2" of its position in any overlapping Tiles.
+         PSC sources with useSrc=0 will always have dupSrc=0. Such objects
+         are usually faint, and thus toggling above and below the detection
+         limits, or may have moved between the scans of the different Tiles.
+     1 = The source does not fall in a Tile overlap region (dupSrc=0), or
+         it falls in an overlap region, but lies farther from its scan edge
+         than any apparition of the source in another Tile. A source must
+         have useSrc=1 to be considered part of the sub-Catalog that
+         satisfies the 2MASS Level 1 Science Requirements
+    &gt;1 = The source falls within a Tile overlap region, and there are
+         multiple sources detected within 2" of its position in the
+         overlapping Tile, and/or within its own Tile. This implies
+         confusion in the multiple source resolution procedure.
+<A NAME="sRM3.11"><B>Note (10)</B>:
+     The observation reference date for this source expressed in ISO
+     standard format. This is the UT day value at sunrise for the night on
+     which the source was observed. Because it is possible for the UT day
+     to change during a night of observations, the actual UT date for a
+     source measurement can differ from date by one day. Use the Julian Day
+     value (jdate) for a more accurate determination of the observation
+     time of the source.
+<A NAME="sRM3.12"><B>Note (11)</B>:
+     The system flux includes the flux from this extended source and
+     anything else in the immediate area, including stars and neighboring
+     galaxies that "touch" this source.
+<HR>
+
+<A NAME="sRM12.1"><B>Nomenclature Notes</B>:
+     The recommended naming of the 2MASS Extended Sources Catalog
+     is 2MASX JHHMMSSss+DDMMSSs, i.e. adding a 'J' to formalize the
+     expression of the position in the J2000 system.
+
+<A NAME="sRM99.2"><B>History</B>:
+    From DVD-ROMs of 2MASS catalogues
+================================================================================
+<B>(End)</B>                                   Francois Ochsenbein [CDS]    29-Apr-2003
+
+</PRE><!-- ....wait for 1 children: %0=14490 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

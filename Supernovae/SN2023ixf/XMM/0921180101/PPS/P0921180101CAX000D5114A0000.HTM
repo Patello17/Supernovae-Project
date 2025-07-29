@@ -1,0 +1,269 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of V/114</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Wed Jun 28 19:44:27 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0921180101OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of V/114 :<BR>MSX6C Infrared Point Source Catalog (Egan+ 2003)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0921180101OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>V/114</B>               MSX6C Infrared Point Source Catalog     (Egan+ 2003)
+================================================================================
+The Midcourse Space Experiment Point Source Catalog Version 2.3 (October 2003)
+     Egan M.P., Price S.D., Kraemer K.E., Mizuno D.R., Carey S.J., Wright C.O.,
+     Engelke C.W., Cohen M., Gugliotti G. M.
+    &lt;Air Force Research Laboratory Technical Report AFRL-VS-TR-2003-1589 (2003)&gt;
+    =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2003yCat.5114....0E">2003yCat.5114....0E</A>
+================================================================================
+<B>ADC_Keywords</B>: Infrared sources; Photometry, infrared; Surveys
+
+<B>Mission_Name</B>: MSX
+
+
+<A NAME="sRM11.1"><B>Description</B>:
+    Version 2.3 of the Midcourse Space Experiment (MSX) Point Source
+    Catalog (PSC), which supersedes the version (1.2) that was released
+    in 1999 (Cat. <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=V/107">V/107</A>), contains over 100,000 more sources than the
+    previous version. The photometry is based on co-added image plates, as
+    opposed to single-scan data, which results in improved sensitivity and
+    hence reliability in the fluxes. Comparison with Tycho-2 positions
+    indicates that the astrometric accuracy of the new catalog is more
+    than 1'' better than that in Version 1.2. In addition to the Galactic
+    plane, Areas Missed by the Infrared Astronomical Satellite (IRAS), and
+    the Large Magellanic Cloud, which were included in the previous
+    catalog, Version 2.3 includes data from the Small Magellanic Cloud,
+    eight nearby galaxies, and several molecular clouds and star forming
+    regions.
+
+    The infrared instrument on MSX was named SPIRIT III; it was a 35cm
+    clear aperture off-axis telescope with five line scanned infrared
+    focal plane arrays of 18.3arcsec square pixels, with a high
+    sensitivity (0.1Jy at 8.3micron). The 6 bands are B1 (4.29micron, FWHM
+    4.22-4.36micron), B2 (4.25micron, 4.24-4.45micron), A (8.28micron,
+    6.8-10.8micron), C (12.13micron, 11.1-13.2micron), D (14.65micron,
+    13.5-15.9micron), and E (21.34micron, 18.2-25.1micron).
+
+    The MSX catalog names of the sources have been defined according to
+    International Astronomical Union (IAU) conventions with a unique
+    identifier combined with the position of the source. In this case,
+    the MSX PSC V2.3 sources are named using the convention
+       MSX6C GLLL.llll&#177;BB.bbbb,
+    where MSX6C denotes that this is MSX data run using Version 6.0 of
+    the CONVERT software, and GLLL.llll&#177;BB.bbbb gives the Galactic
+    coordinates of the source. (Names in the minicatalogs may differ
+    slightly from those given in Kraemer et al. <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2002AJ....124.2990K">2002AJ....124.2990K</A>,
+    <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2003AJ....126.1423K">2003AJ....126.1423K</A>)
+
+    For ease of handling, the main catalog is broken into six files: five
+    for the Galactic plane survey, plus the primary high latitude regions
+    (the IRAS gaps and the LMC). The supplementary catalogs are the
+    singleton catalog, the low-reliability catalog, and minicatalogs for
+    19 selected regions. All catalogs have the same format. However, the
+    minicatalogs for the galaxies (except the SMC) and Orion do not have
+    all the fields filled in because they were solely created from the
+    images, not from the Point Source Extractor; there are no singleton
+    files for these regions. Also, the minicatalogs may not have singleton
+    or low-reliability counterparts if no sources met the inclusion
+    criteria. All told, there are a total of 45 data files.
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.61">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.62">&#215; guide.ps         120    96061   Explanatory Guide
+<A NAME="sRM-F.63">&#215; <A HREF="#sRM2.1">gp_m2m6.dat</A>      354    76926   Galactic plane, -6. &lt;= b &lt; -2
+<A NAME="sRM-F.64">&#215; <A HREF="#sRM2.1">gp_m05m2.dat</A>     354    92116   Galactic plane, -2. &lt;= b &lt; -0.5
+<A NAME="sRM-F.65">&#215; <A HREF="#sRM2.1">gp_pm05.dat</A>      354   107309   Galactic plane,       |b|&lt;= 0.5
+<A NAME="sRM-F.66">&#215; <A HREF="#sRM2.1">gp_p05p2.dat</A>     354    86579   Galactic plane,  0.5&lt;  b &lt;= 2
+<A NAME="sRM-F.67">&#215; <A HREF="#sRM2.1">gp_p2p6.dat</A>      354    68781   Galactic plane,  2. &lt;  b &lt;= 6
+<A NAME="sRM-F.68">&#215; <A HREF="#sRM2.1">gb_gt6.dat</A>       354     8776   High latitude, |b|&gt; 6
+<A NAME="sRM-F.69">&#215; <A HREF="#sRM2.1">mainl.dat</A>        354    75644   <A HREF="#sRM3.1">M</A>ain low reliability sources (1)
+<A NAME="sRM-F.70">&#215; <A HREF="#sRM2.1">mains.dat</A>        354    12179   <A HREF="#sRM3.2">S</A>ources with only 1 sighting (2)
+<A NAME="sRM-F.71">&#215; <A HREF="#sRM2.1">g159-18.dat</A>      354      133   G159.6-18.5
+<A NAME="sRM-F.72">&#215; <A HREF="#sRM2.1">g159-18l.dat</A>     354       20   <A HREF="#sRM3.1">G</A>159.6-18.5 low reliability sources (1)
+<A NAME="sRM-F.73">&#215; <A HREF="#sRM2.1">g159-18s.dat</A>     354       19   <A HREF="#sRM3.2">G</A>159.6-18.5 singletons (2)
+<A NAME="sRM-F.74">&#215; <A HREF="#sRM2.1">g300-16.dat</A>      354       99   G300.2-16.80
+<A NAME="sRM-F.75">&#215; <A HREF="#sRM2.1">g300-16l.dat</A>     354       89   <A HREF="#sRM3.1">G</A>300.2-16.80 low reliability sources (1)
+<A NAME="sRM-F.76">&#215; <A HREF="#sRM2.1">m101.dat</A>         354        9   M101
+<A NAME="sRM-F.77">&#215; <A HREF="#sRM2.1">m101l.dat</A>        354        6   <A HREF="#sRM3.1">M</A>101 low reliability sources (1)
+<A NAME="sRM-F.78">&#215; <A HREF="#sRM2.1">m31.dat</A>          354       84   M31
+<A NAME="sRM-F.79">&#215; <A HREF="#sRM2.1">m31l.dat</A>         354       15   <A HREF="#sRM3.1">M</A>31 low reliability sources (1)
+<A NAME="sRM-F.80">&#215; <A HREF="#sRM2.1">m33.dat</A>          354       51   M33
+<A NAME="sRM-F.81">&#215; <A HREF="#sRM2.1">m33l.dat</A>         354        1   <A HREF="#sRM3.1">M</A>33 low reliability sources (1)
+<A NAME="sRM-F.82">&#215; <A HREF="#sRM2.1">m83.dat</A>          354       40   M83
+<A NAME="sRM-F.83">&#215; <A HREF="#sRM2.1">m83l.dat</A>         354       12   <A HREF="#sRM3.1">M</A>83 low reliability sources (1)
+<A NAME="sRM-F.84">&#215; <A HREF="#sRM2.1">bg160.dat</A>        354       44   MSXBG160 and MSXBG161
+<A NAME="sRM-F.85">&#215; <A HREF="#sRM2.1">bg160l.dat</A>       354        7   <A HREF="#sRM3.1">M</A>SXBG160 and MSXBG161 low reliability sources (1)
+<A NAME="sRM-F.86">&#215; <A HREF="#sRM2.1">bg160s.dat</A>       354        5   <A HREF="#sRM3.2">M</A>SXBG160 and MSXBG161 singletons (2)
+<A NAME="sRM-F.87">&#215; <A HREF="#sRM2.1">bg239.dat</A>        354       35   MSXBG239
+<A NAME="sRM-F.88">&#215; <A HREF="#sRM2.1">bg239s.dat</A>       354        4   <A HREF="#sRM3.2">M</A>SXBG239 singletons (2)
+<A NAME="sRM-F.89">&#215; <A HREF="#sRM2.1">ngc253.dat</A>       354       36   NGC253
+<A NAME="sRM-F.90">&#215; <A HREF="#sRM2.1">ngc4631.dat</A>      354        3   NGC4631
+<A NAME="sRM-F.91">&#215; <A HREF="#sRM2.1">ngc4631l.dat</A>     354        2   <A HREF="#sRM3.1">N</A>GC4631 low reliability sources (1)
+<A NAME="sRM-F.92">&#215; <A HREF="#sRM2.1">ngc4945.dat</A>      354       43   NGC4945
+<A NAME="sRM-F.93">&#215; <A HREF="#sRM2.1">ngc4945l.dat</A>     354       13   <A HREF="#sRM3.1">N</A>GC4945 low reliability sources (1)
+<A NAME="sRM-F.94">&#215; <A HREF="#sRM2.1">ngc5055.dat</A>      354        2   NGC5055
+<A NAME="sRM-F.95">&#215; <A HREF="#sRM2.1">ngc5055l.dat</A>     354        2   <A HREF="#sRM3.1">N</A>GC5055 low reliability sources (1)
+<A NAME="sRM-F.96">&#215; <A HREF="#sRM2.1">orion.dat</A>        354      426   Orion
+<A NAME="sRM-F.97">&#215; <A HREF="#sRM2.1">orionl.dat</A>       354       31   <A HREF="#sRM3.1">O</A>rion low reliability sources (1)
+<A NAME="sRM-F.98">&#215; <A HREF="#sRM2.1">pleiade.dat</A>      354       71   the Pleiades
+<A NAME="sRM-F.99">&#215; <A HREF="#sRM2.1">pleiadel.dat</A>     354       34   <A HREF="#sRM3.1">t</A>he Pleiades low reliability sources (1)
+<A NAME="sRM-F.100">&#215; <A HREF="#sRM2.1">pleiades.dat</A>     354        2   <A HREF="#sRM3.2">t</A>he Pleiades singletons (2)
+<A NAME="sRM-F.101">&#215; <A HREF="#sRM2.1">s263.dat</A>         354       65   S263
+<A NAME="sRM-F.102">&#215; <A HREF="#sRM2.1">s263l.dat</A>        354       33   <A HREF="#sRM3.1">S</A>263 low reliability sources (1)
+<A NAME="sRM-F.103">&#215; <A HREF="#sRM2.1">s263s.dat</A>        354        3   <A HREF="#sRM3.2">S</A>263 singletons (2)
+<A NAME="sRM-F.104">&#215; <A HREF="#sRM2.1">smc.dat</A>          354      243   the SMC
+<A NAME="sRM-F.105">&#215; <A HREF="#sRM2.1">smcl.dat</A>         354       64   <A HREF="#sRM3.1">t</A>he SMC low reliability sources (1)
+<A NAME="sRM-F.106">&#215; <A HREF="#sRM2.1">tau.dat</A>          354        8   <A HREF="#sRM3.2">T</A>aurus (2)
+<A NAME="sRM-F.107">&#215; <A HREF="#sRM2.1">taul.dat</A>         354       20   <A HREF="#sRM3.1">T</A>aurus low reliability sources (1)
+<HR>
+<A NAME="sRM3.1"><B>Note (1)</B>: Low reliability sources have an image-based signal to noise
+           ratio between 3 and 5.
+<A NAME="sRM3.2"><B>Note (2)</B>: Singleton sources were extracted from a single scan, but satisfied the
+           flux quality criteria required for catalog acceptance.
+<HR>
+
+<A NAME="sRM99.1"><B>Remarks about the data files</B>:
+    The catalog files are in ASCII format with entries as given in Table
+    11 of the Explanatory Guide. The columns are space delimited (except
+    for the variability, confusion, and measurement reliability flags,
+    which are each given as a block), and were written out using the
+    following FORTRAN format statement:
+
+ 2002 format(a23,1x,f9.4,1x,f9.4,2(1x,f4.1),1x,f5.1,1x,i3,
+      6(1x,1pe12.4,i2,1x,0pf5.1,1x,f6.1,1x,f6.1,1x,i3,1x,f5.1),
+      1x,6i1,1x,6i1,1x,6i1)
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM2.1"> *.dat</A>
+<HR>
+   Bytes Format  Units   Label   Explanations
+<HR>
+   1-  5  A5     ---     ---     [MSX6C]
+   7- 23  A17    ---     MSX6C   Name (based on galactic position)
+  26- 33  F8.4   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     RAdeg   Right Ascension J2000
+  36- 43  F8.4   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEdeg   Declination J2000
+  45- 48  F4.1   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  ePos    1-sigma in-scan position uncertainty
+  50- 53  F4.1   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  xPos    1-sigma cross-scan position uncertainty
+  55- 59  F5.1   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     posPA   in-scan position angle East of North
+  61- 63  I3     ---     Nscan   Number of total scan sightings
+  65- 76  E12.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Jy" TARGET="explain">Jy</A>      B1      <A HREF="#sRM3.3">Flux density in B1 (4.29um) band (1)</A>
+      78  I1     ---     q_B1    [0,4] <A HREF="#sRM3.4">Band B1 quality (2)</A>
+  80- 84  F5.1   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%25" TARGET="explain">%</A>       e_B1    ?=-99.0 flux uncertainty 1-sigma
+  86- 91  F6.1   ---     B1SNim  <A HREF="#sRM3.5">Band B1 image extraction SNR (3)</A>
+  93- 98  F6.1   ---    B1SNpsx  Band B1 point source extractor SNR
+ 100-102  I3     ---     o_B1    ?=-1 Number of sightings in Band B1
+ 104-108  F5.1   ---     B1var   Variation in Band B1 measurements
+ 110-121  E12.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Jy" TARGET="explain">Jy</A>      B2      <A HREF="#sRM3.3">Flux density in B2 (4.35um) band (1)</A>
+     123  I1     ---     q_B2    [0,4] <A HREF="#sRM3.4">Band B2 quality (2)</A>
+ 125-129  F5.1   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%25" TARGET="explain">%</A>       e_B2    ?=-99.0 flux uncertainty 1-sigma
+ 131-136  F6.1   ---     B2SNim  <A HREF="#sRM3.5">Band B2 image extraction SNR (3)</A>
+ 138-143  F6.1   ---    B2SNpsx  Band B2 point source extractor SNR
+ 145-147  I3     ---     o_B2    ?=-1 Number of sightings in Band B2
+ 149-153  F5.1   ---     B2var   Variation in Band B2 measurements
+ 155-166  E12.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Jy" TARGET="explain">Jy</A>      A       <A HREF="#sRM3.3">Flux density in A (8.28um) band (1)</A>
+     168  I1     ---     q_A     [0,4] <A HREF="#sRM3.4">Band A quality (2)</A>
+ 170-174  F5.1   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%25" TARGET="explain">%</A>       e_A     ?=-99.0 flux uncertainty 1-sigma
+ 176-181  F6.1   ---     ASNim   <A HREF="#sRM3.5">Band A image extraction SNR (3)</A>
+ 183-188  F6.1   ---     ASNpsx  Band A point source extractor SNR
+ 190-192  I3     ---     o_A     ?=-1 Number of sightings in Band A
+ 194-198  F5.1   ---     Avar    Variation in Band A measurements
+ 200-211  E12.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Jy" TARGET="explain">Jy</A>      C       <A HREF="#sRM3.3">Flux density in C (12.13um) band (1)</A>
+     213  I1     ---     q_C     [0,4] <A HREF="#sRM3.4">Band C quality (2)</A>
+ 215-219  F5.1   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%25" TARGET="explain">%</A>       e_C     ?=-99.0 flux uncertainty 1-sigma
+ 221-226  F6.1   ---     CSNim   <A HREF="#sRM3.5">Band C image extraction SNR (3)</A>
+ 228-233  F6.1   ---     CSNpsx  Band C point source extractor SNR
+ 235-237  I3     ---     o_C     ?=-1 Number of sightings in Band C
+ 239-243  F5.1   ---     Cvar    Variation in Band C measurements
+ 245-256  E12.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Jy" TARGET="explain">Jy</A>      D       <A HREF="#sRM3.3">Flux density in D (14.65um) band (1)</A>
+     258  I1     ---     q_D     [0,4] <A HREF="#sRM3.4">Band D quality (2)</A>
+ 260-264  F5.1   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%25" TARGET="explain">%</A>       e_D     ?=-99.0 flux uncertainty 1-sigma
+ 266-271  F6.1   ---     DSNim   <A HREF="#sRM3.5">Band D image extraction SNR (3)</A>
+ 273-278  F6.1   ---     DSNpsx  Band D point source extractor SNR
+ 280-282  I3     ---     o_D     ?=-1 Number of sightings in Band D
+ 284-288  F5.1   ---     Dvar    Variation in Band D measurements
+ 290-301  E12.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Jy" TARGET="explain">Jy</A>      E       <A HREF="#sRM3.3">Flux density in E (21.34um) band (1)</A>
+     303  I1     ---     q_E     [0,4] <A HREF="#sRM3.4">Band E quality (2)</A>
+ 305-309  F5.1   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%25" TARGET="explain">%</A>       e_E     ?=-99.0 flux uncertainty 1-sigma
+ 311-316  F6.1   ---     ESNim   <A HREF="#sRM3.5">Band E image extraction SNR (3)</A>
+ 318-323  F6.1   ---     ESNpsx  Band E point source extractor SNR
+ 325-327  I3     ---     o_E     ?=-1 Number of sightings in Band E
+ 329-333  F5.1   ---     Evar    Variation in Band E measurements
+     335  I1     ---     varB1   [0,1] <A HREF="#sRM3.6">Band B1 variability flag (4)</A>
+     336  I1     ---     varB2   [0,1] <A HREF="#sRM3.6">Band B2 variability flag (4)</A>
+     337  I1     ---     varA    [0,1] <A HREF="#sRM3.6">Band A variability flag (4)</A>
+     338  I1     ---     varC    [0,1] <A HREF="#sRM3.6">Band C variability flag (4)</A>
+     339  I1     ---     varD    [0,1] <A HREF="#sRM3.6">Band D variability flag (4)</A>
+     340  I1     ---     varE    [0,1] <A HREF="#sRM3.6">Band E variability flag (4)</A>
+     342  I1     ---     confB1  [0,1] Band B1 confusion flag
+     343  I1     ---     confB2  [0,1] Band B2 confusion flag
+     344  I1     ---     confA   [0,1] Band A confusion flag
+     345  I1     ---     confC   [0,1] Band C confusion flag
+     346  I1     ---     confD   [0,1] Band D confusion flag
+     347  I1     ---     confE   [0,1] Band E confusion flag
+     349  I1     ---     relB1   <A HREF="#sRM3.7">Band B1 measurement reliability flag (5)</A>
+     350  I1     ---     relB2   <A HREF="#sRM3.7">Band B2 measurement reliability flag (5)</A>
+     351  I1     ---     relA    <A HREF="#sRM3.7">Band A measurement reliability flag (5)</A>
+     352  I1     ---     relC    <A HREF="#sRM3.7">Band C measurement reliability flag (5)</A>
+     353  I1     ---     relD    <A HREF="#sRM3.7">Band D measurement reliability flag (5)</A>
+     354  I1     ---     relE    <A HREF="#sRM3.7">Band E measurement reliability flag (5)</A>
+<HR>
+<A NAME="sRM3.3"><B>Note (1)</B>: fluxes in the infrared bands:
+     The filter characteristics are (wavelengths in &#181;m):
+         ----------------------------
+         Band  Center   FWHM Points
+         ----------------------------
+         B1    4.29     4.22 - 4.36
+         B2    4.35     4.24 - 4.45
+         A     8.28     6.8  - 10.8
+         C    12.13     11.1 - 13.2
+         D    14.65     13.5 - 15.9
+         E    21.34     18.2 - 25.1
+         ----------------------------
+     When the number of sightings is zero, the fluxes are set to the
+     negative value of the sensitivity limit.
+<A NAME="sRM3.4"><B>Note (2)</B>: The Quality flags in each band are:
+     4 = excellent, SNim &gt;= 10.0
+     3 = good,      7.0  &lt;= SNim &lt; 10.0
+                 or SNim  = -800 and SNpsx &gt;= 10.0
+     2 = fair,      5.0  &lt;= SNim &lt; 7.0
+                 or SNim  = -800 and 5.0 &lt;= SNpsx &lt; 10.0
+     1 = limit,     SNim &lt; 5.0
+     0 = not detected
+<A NAME="sRM3.5"><B>Note (3)</B>: SNim can take on a value of -800 if no image plate exists at the
+     source location and -999 if the image-based PRF fitting was unable to
+     extract a positive irradiance value. In these cases, we default to the
+     SNpsx to set the flux quality flag.
+<A NAME="sRM3.6"><B>Note (4)</B>: the variability flag is set to 1 when the variation of the
+    measurements over the mission exceeds the 3{sigma} limit. The confusion
+    flag is set to 1 if there is a potential confusion issue.
+<A NAME="sRM3.7"><B>Note (5)</B>: a value of 0 means that the measurements fit the point source
+   function and that all measurements were of adequate signal-to-noise.
+   A value of R=9 is assigned when the source is not detected in the band.
+<HR>
+
+<A NAME="sRM99.2"><B>History</B>:
+   The files, were kindy supplied by Dr Kathleen Kraemer in November 2003
+================================================================================
+<B>(End)</B>                                   Francois Ochsenbein [CDS]    11-Dec-2003
+
+</PRE><!-- ....wait for 1 children: %0=26546 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

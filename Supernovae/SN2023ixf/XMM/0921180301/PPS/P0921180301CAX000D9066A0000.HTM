@@ -1,0 +1,903 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of IX/66</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Sun Jul 23 17:43:43 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0921180301OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of IX/66 :<BR>4XMM-DR11s serendipitous source catalogue from stacks (Traulsen+, 2022)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0921180301OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>IX/66</B>    4XMM-DR11s serendipitous source catalogue from stacks (Traulsen+, 2022)
+================================================================================
+The XMM-Newton serendipitous survey.
+X. The second source catalog from overlapping XMM-Newton observations and its
+long-term variable content.
+   Traulsen I., Schwope A.D., Lamer G., Ballet J., Carrera F., Ceballos M.T.,
+   Coriat M., Freyberg M.J., Koliopanos F., Kurpas J., Michel L., Motch C.,
+   Page M., Watson M.G., Webb N.
+   &lt;Astron. Astrophys. 641, A137 (2020) &gt;
+   =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2020A%26A...641A.137T">2020A&A...641A.137T</A>
+   =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2022yCat.9066....0T">2022yCat.9066....0T</A>
+================================================================================
+<B>ADC_Keywords</B>: Surveys ; X-ray sources
+
+<B>Mission_Name</B>: XMM
+
+<B>Keywords</B>: catalogs - astronomical databases: miscellaneous - surveys -
+          X-rays: general
+
+<A NAME="sRM99.1"><B>Abstract</B>:
+    The XMM-Newton Survey Science Centre Consortium (SSC) develops
+    software in close collaboration with the Science Operations Centre to
+    perform a pipeline analysis of all XMM-Newton observations. In
+    celebration of the twentieth anniversary of the XMM-Newton launch, the
+    SSC has compiled the fourth generation of serendipitous source
+    catalogues, 4XMM.
+
+    The catalogue described here, 4XMM-DR11s, explores sky areas that were
+    observed more than once by XMM-Newton. These observations are bundled
+    in groups referred to as stacks. Stacking leads to a higher
+    sensitivity, resulting in newly discovered sources and better
+    constrained source parameters, and unveils long-term brightness
+    variations.
+
+<A NAME="sRM11.1"><B>Description</B>:
+    The 4XMM-DR11s catalogue of serendipitous sources from overlapping
+    XMM-Newton observations has been compiled from 1475 groups of
+    8292 selected overlapping XMM-Newton observations. They were taken
+    between 2000 February 3 and 2020 December 17 and overlap by at least
+    one arcminute in radius. The catalogue contains 358809 unique
+    sources, 275440 of them multiply observed, with positions and
+    source parameters like fluxes in the XMM-Newton standard energy bands,
+    hardness ratios, quality estimate, and information on
+    inter-observation variability. The parameters are directly derived
+    from the simultaneous fit, and, wherever applicable, additionally
+    calculated for each contributing observation. The catalogue aims at
+    exploring the multiply observed sky regions and exploit their survey
+    potential, in particular to study the long-term behaviour of X-ray
+    emitting sources. It thus makes use of the long(er) effective exposure
+    time per sky area and offers the opportunity to investigate flux
+    variability directly through the source detection process. The main
+    catalogue properties are summarised in the table below, the data
+    processing and the stacked source detection are described in the
+    processing summary. Updates compared to the previous version include a
+    significantly larger sample of observations, event-based astrometric
+    corrections before running source detection, revised background
+    parameters, and manually set flags marking obviously spurious
+    detections. More information is provided in the latest version of the
+    Documentation.
+
+    Users of the catalogue are kindly asked to reference the catalogue
+    paper (Traulsen et al, <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2020A%26A...641A.137T">2020A&A...641A.137T</A>) and to include the
+    following policy statement: "This research has made use of data
+    obtained from the 4XMM XMM-Newton serendipitous stacked source
+    catalogue 4XMM-DR11s compiled by the institutes of the XMM-Newton
+    Survey Science Centre selected by ESA."
+File Summary:
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.69">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.70">&#215; <A HREF="#sRM2.1">xmm411st.dat</A>    3973  1780775   Stacked source catalogue 4XMM-DR11s
+<A NAME="sRM-F.71">&#215; xmm411st.fits   2880  1038822   fits version of source catalog
+<HR>
+
+<A NAME="sRM13.1"><B>See also</B>:
+   <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/63">IX/63</A> : XMM-Newton Serendipitous Source Catalogue 4XMM-DR11 (Webb+, 2022)
+
+   https://xmmssc.aip.de/cms/catalogues/4xmm-dr11s : 4XMM-DR11s Home Page
+
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.70"> xmm411st.dat</A>
+<HR>
+   Bytes Format Units        Label        Explanations
+<HR>
+   1- 22  A22   ---          4XMMs        IAU name of the source,
+                                             4XMMs JHHMMSS.s+DDMMSSs,
+                                             "s" for stacked detection (IAUNAME)
+  24- 39  I16   ---          Source       Identifier of the source (SRCID)
+  41- 50  A10   ---          ObsID        XMM-Newton observation
+                                             identification (OBS_ID)
+  52- 54  I3    ---          Nobs         ?=- Number of observations involved
+                                             in the stack (N_OBS)
+  56- 57  I2    ---          Ncont        ?=- Number of observations in which
+                                             the source was fitted (N_CONTRIB)
+  59- 61  I3    ---          Nexp         Number of instruments for which the
+                                             source was fitted (N_EXP)
+  63- 72  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>          RAdeg        Right ascension (J2000) (RA)
+  74- 83  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>          DEdeg        Declination (J2000) (DEC)
+  85- 93  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>       srcML        Square root of squared sum of
+                                             1-sigma errors in RA and DEC
+                                             (RADEC_ERR)
+  95-104  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>          GLON         Galactic longitude (LII)
+ 106-115  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>          GLAT         Galactic latitude (BII)
+ 117-127  F11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>          Ximg         X image coordinate (X_IMA)
+ 129-136  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>          e_Ximg       1-sigma error on X_IMA (X<SUB>IMA</SUB>ERR)
+ 138-148  F11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>          Yimg         Y image coordinate (Y_IMA)
+ 150-158  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>          e_Yimg       1-sigma error on Y_IMA (Y<SUB>IMA</SUB>ERR)
+ 160-168  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>       DistNN       Distance to the nearest neighbouring
+                                             detection (DIST_NN)
+     170  I1    ---          Nblend       Number of simultaneously fit sources
+                                             (N_BLEND)
+ 172-192  A21   ---          4XMMDR11     IAU name assigned to the nearest
+                                             unique 4XMM-DR11 source
+                                             (IAUNAME_4XMMDR11)
+ 194-208  I15   ---          SrcidDR11    ?=- Source identifier of the nearest
+                                             unique source in 4XMM-DR11
+                                             (SRCID_4XMMDR11)
+ 210-224  I15   ---          DetidDR11    ?=- Detection identifier of the
+                                             nearest unique 4XMM-DR11 source in
+                                             OBS_ID (DETID_4XMMDR11)
+ 226-235  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>          RA11deg      ?=- Mean right ascension (SC_)RA of
+                                             the nearest unique 4XMM-DR11 source
+                                             (RA_4XMMDR11)
+ 237-246  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>          DE11deg      ?=- Mean declination (SC_)DEC of the
+                                             nearest unique 4XMM-DR11 source
+                                             (DEC_4XMMDR11)
+ 248-256  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>       ePos11       ?=- Statistical &amp; systematic
+                                             position error of the 4XMM-DR11
+                                             source (POSERR_4XMMDR11)
+ 258-268  F11.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>       DistDR11     ?=- Distance to the nearest
+                                             4XMM-DR11 source / its detection
+                                             in OBS_ID (DIST_4XMMDR11)
+ 270-271  I2    ---          NdetDR11     ?=- Number of DR11 detections of the
+                                             nearest unique 4XMM-DR11 source
+                                             (NDETECT_4XMMDR11)
+ 273-284  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        FEP          ?=- All-EPIC flux (EP_FLUX)
+ 286-297  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        e_FEP        ?=- 1-sigma error on EP_FLUX
+                                             (EP<SUB>FLUX</SUB>ERR)
+ 299-310  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        FEP1         ?=- Total flux in energy band 1
+                                             (EP<SUB>1</SUB>FLUX)
+ 312-323  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        e_FEP1       1-sigma error on EP<SUB>1</SUB>FLUX
+                                             (EP<SUB>1</SUB>FLUX_ERR)
+ 325-336  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        FEP2         ?=- Total flux in energy band 2
+                                             (EP<SUB>2</SUB>FLUX)
+ 338-349  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        e_FEP2       1-sigma error on EP<SUB>2</SUB>FLUX
+                                             (EP<SUB>2</SUB>FLUX_ERR)
+ 351-362  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        FEP3         ?=- Total flux in energy band 3
+                                             (EP<SUB>3</SUB>FLUX)
+ 364-375  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        e_FEP3       1-sigma error on EP<SUB>3</SUB>FLUX
+                                             (EP<SUB>3</SUB>FLUX_ERR)
+ 377-388  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        FEP4         ?=- Total flux in energy band 4
+                                             (EP<SUB>4</SUB>FLUX)
+ 390-401  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        e_FEP4       1-sigma error on EP<SUB>4</SUB>FLUX
+                                             (EP<SUB>4</SUB>FLUX_ERR)
+ 403-414  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        FEP5         ?=- Total flux in energy band 5
+                                             (EP<SUB>5</SUB>FLUX)
+ 416-427  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        e_FEP5       1-sigma error on EP<SUB>5</SUB>FLUX
+                                             (EP<SUB>5</SUB>FLUX_ERR)
+ 429-440  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        FPN          ?=- Total EPIC/pn flux
+                                             (PN_FLUX)
+ 442-453  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        e_FPN        ?=- 1-sigma error on PN_FLUX
+                                             (PN<SUB>FLUX</SUB>ERR)
+ 455-466  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        FPN1         ?=- EPIC/pn flux in energy band 1
+                                             (PN<SUB>1</SUB>FLUX)
+ 468-479  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        e_FPN1       ?=- 1-sigma error on PN<SUB>1</SUB>FLUX
+                                             (PN<SUB>1</SUB>FLUX_ERR)
+ 481-492  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        FPN2         ?=- EPIC/pn flux in energy band 2
+                                             (PN<SUB>2</SUB>FLUX)
+ 494-505  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        e_FPN2       ?=- 1-sigma error on PN<SUB>2</SUB>FLUX
+                                             (PN<SUB>2</SUB>FLUX_ERR)
+ 507-518  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        FPN3         ?=- EPIC/pn flux in energy band 3
+                                             (PN<SUB>3</SUB>FLUX)
+ 520-531  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        e_FPN3       ?=- 1-sigma error on PN<SUB>3</SUB>FLUX
+                                             (PN<SUB>3</SUB>FLUX_ERR)
+ 533-544  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        FPN4         ?=- EPIC/pn flux in energy band 4
+                                             (PN<SUB>4</SUB>FLUX)
+ 546-557  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        e_FPN4       ?=- 1-sigma error on PN<SUB>4</SUB>FLUX
+                                             (PN<SUB>4</SUB>FLUX_ERR)
+ 559-570  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        FPN5         ?=- EPIC/pn flux in energy band 5
+                                             (PN<SUB>5</SUB>FLUX)
+ 572-583  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        e_FPN5       ?=- 1-sigma error on PN<SUB>5</SUB>FLUX
+                                             (PN<SUB>5</SUB>FLUX_ERR)
+ 585-596  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        FM1          ?=- Total EPIC/MOS1 flux
+                                             (M1_FLUX)
+ 598-609  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        e_FM1        ?=- 1-sigma error on M1_FLUX
+                                             (M1<SUB>FLUX</SUB>ERR)
+ 611-622  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        FM1-1        ?=- EPIC/MOS1 flux in energy band 1
+                                             (M1<SUB>1</SUB>FLUX)
+ 624-635  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        e_FM1-1      ?=- 1-sigma error on M1<SUB>1</SUB>FLUX
+                                             (M1<SUB>1</SUB>FLUX_ERR)
+ 637-648  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        FM1-2        ?=- EPIC/MOS1 flux in energy band 2
+                                             (M1<SUB>2</SUB>FLUX)
+ 650-661  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        e_FM1-2      ?=- 1-sigma error on M1<SUB>2</SUB>FLUX
+                                             (M1<SUB>2</SUB>FLUX_ERR)
+ 663-674  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        FM1-3        ?=- EPIC/MOS1 flux in energy band 3
+                                             (M1<SUB>3</SUB>FLUX)
+ 676-687  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        e_FM1-3      ?=- 1-sigma error on M1<SUB>3</SUB>FLUX
+                                             (M1<SUB>3</SUB>FLUX_ERR)
+ 689-700  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        FM1-4        ?=- EPIC/MOS1 flux in energy band 4
+                                             (M1<SUB>4</SUB>FLUX)
+ 702-713  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        e_FM1-4      ?=- 1-sigma error on M1<SUB>4</SUB>FLUX
+                                             (M1<SUB>4</SUB>FLUX_ERR)
+ 715-726  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        FM1-5        ?=- EPIC/MOS1 flux in energy band 5
+                                             (M1<SUB>5</SUB>FLUX)
+ 728-739  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        e_FM1-5      ?=- 1-sigma error on M1<SUB>5</SUB>FLUX
+                                             (M1<SUB>5</SUB>FLUX_ERR)
+ 741-752  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        FM2          ?=- Total EPIC/MOS2 flux
+                                             (M2_FLUX)
+ 754-765  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        e_FM2        ?=- 1-sigma error on M2_FLUX
+                                             (M2<SUB>FLUX</SUB>ERR)
+ 767-778  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        FM2-1        ?=- EPIC/MOS2 flux in energy band 1
+                                             (M2<SUB>1</SUB>FLUX)
+ 780-791  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        e_FM2-1      ?=- 1-sigma error on M2<SUB>1</SUB>FLUX
+                                             (M2<SUB>1</SUB>FLUX_ERR)
+ 793-804  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        FM2-2        ?=- EPIC/MOS2 flux in energy band 2
+                                             (M2<SUB>2</SUB>FLUX)
+ 806-817  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        e_FM2-2      ?=- 1-sigma error on M2<SUB>2</SUB>FLUX
+                                             (M2<SUB>2</SUB>FLUX_ERR)
+ 819-830  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        FM2-3        ?=- EPIC/MOS2 flux in energy band 3
+                                             (M2<SUB>3</SUB>FLUX)
+ 832-843  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        e_FM2-3      ?=- 1-sigma error on M2<SUB>3</SUB>FLUX
+                                             (M2<SUB>3</SUB>FLUX_ERR)
+ 845-856  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        FM2-4        ?=- EPIC/MOS2 flux in energy band 4
+                                             (M2<SUB>4</SUB>FLUX)
+ 858-869  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        e_FM2-4      ?=- 1-sigma error on M2<SUB>4</SUB>FLUX
+                                             (M2<SUB>4</SUB>FLUX_ERR)
+ 871-882  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        FM2-5        ?=- EPIC/MOS2 flux in energy band 5
+                                             (M2<SUB>5</SUB>FLUX)
+ 884-895  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>        e_FM2-5      ?=- 1-sigma error on M2<SUB>5</SUB>FLUX
+                                             (M2<SUB>5</SUB>FLUX_ERR)
+ 897-906  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         EPRate       All-EPIC count rate
+                                             (EP_RATE)
+ 908-915  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         e_EPRate     1-sigma error on EP_RATE
+                                             (EP<SUB>RATE</SUB>ERR)
+ 917-926  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         PNRate       ?=- Total EPIC/pn count rate
+                                             (PN_RATE)
+ 928-935  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         e_PNRate     ?=- 1-sigma error on PN_RATE
+                                             (PN<SUB>RATE</SUB>ERR)
+ 937-945  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         PN1Rate      ?=- EPIC/pn count rate in energy
+                                             band 1 (PN<SUB>1</SUB>RATE)
+ 947-954  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         e_PN1Rate    ?=- 1-sigma error on PN<SUB>1</SUB>RATE
+                                             (PN<SUB>1</SUB>RATE_ERR)
+ 956-965  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         PN2Rate      ?=- EPIC/pn count rate in energy
+                                             band 2 (PN<SUB>2</SUB>RATE)
+ 967-974  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         e_PN2Rate    ?=- 1-sigma error on PN<SUB>2</SUB>RATE
+                                             (PN<SUB>2</SUB>RATE_ERR)
+ 976-985  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         PN3Rate      ?=- EPIC/pn count rate in energy
+                                             band 3 (PN<SUB>3</SUB>RATE)
+ 987-994  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         e_PN3Rate    ?=- 1-sigma error on PN<SUB>3</SUB>RATE
+                                             (PN<SUB>3</SUB>RATE_ERR)
+ 996-1005  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         PN4Rate      ?=- EPIC/pn count rate in energy
+                                             band 4 (PN<SUB>4</SUB>RATE)
+ 1007-1014  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         e_PN4Rate    ?=- 1-sigma error on PN<SUB>4</SUB>RATE
+                                             (PN<SUB>4</SUB>RATE_ERR)
+ 1016-1025  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         PN5Rate      ?=- EPIC/pn count rate in energy
+                                             band 5 (PN<SUB>5</SUB>RATE)
+ 1027-1034  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         e_PN5Rate    ?=- 1-sigma error on PN<SUB>5</SUB>RATE
+                                             (PN<SUB>5</SUB>RATE_ERR)
+ 1036-1045  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         M1Rate       ?=- Total EPIC/MOS1 count rate
+                                             (M1_RATE)
+ 1047-1054  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         e_M1Rate     ?=- 1-sigma error on M1_RATE
+                                             (M1<SUB>RATE</SUB>ERR)
+ 1056-1064  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         M1-1Rate     ?=- EPIC/MOS1 count rate in energy
+                                             band 1 (M1<SUB>1</SUB>RATE)
+ 1066-1073  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         e_M1-1Rate   ?=- 1-sigma error on M1<SUB>1</SUB>RATE
+                                             (M1<SUB>1</SUB>RATE_ERR)
+ 1075-1083  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         M1-2Rate     ?=- EPIC/MOS1 count rate in energy
+                                             band 2 (M1<SUB>2</SUB>RATE)
+ 1085-1092  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         e_M1-2Rate   ?=- 1-sigma error on M1<SUB>2</SUB>RATE
+                                             (M1<SUB>2</SUB>RATE_ERR)
+ 1094-1102  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         M1-3Rate     ?=- EPIC/MOS1 count rate in energy
+                                             band 3 (M1<SUB>3</SUB>RATE)
+ 1104-1111  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         e_M1-3Rate   ?=- 1-sigma error on M1<SUB>3</SUB>RATE
+                                             (M1<SUB>3</SUB>RATE_ERR)
+ 1113-1122  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         M1-4Rate     ?=- EPIC/MOS1 count rate in energy
+                                             band 4 (M1<SUB>4</SUB>RATE)
+ 1124-1131  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         e_M1-4Rate   ?=- 1-sigma error on M1<SUB>4</SUB>RATE
+                                             (M1<SUB>4</SUB>RATE_ERR)
+ 1133-1141  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         M1-5Rate     ?=- EPIC/MOS1 count rate in energy
+                                             band 5 (M1<SUB>5</SUB>RATE)
+ 1143-1150  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         e_M1-5Rate   ?=- 1-sigma error on M1<SUB>5</SUB>RATE
+                                             (M1<SUB>5</SUB>RATE_ERR)
+ 1152-1161  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         M2Rate       ?=- Total EPIC/MOS2 count rate
+                                             (M2_RATE)
+ 1163-1170  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         e_M2Rate     ?=- 1-sigma error on M2_RATE
+                                             (M2<SUB>RATE</SUB>ERR)
+ 1172-1180  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         M2-1Rate     ?=- EPIC/MOS2 count rate in energy
+                                             band 1 (M2<SUB>1</SUB>RATE)
+ 1182-1189  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         e_M2-1Rate   ?=- 1-sigma error on M2<SUB>1</SUB>RATE
+                                             (M2<SUB>1</SUB>RATE_ERR)
+ 1191-1199  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         M2-2Rate     ?=- EPIC/MOS2 count rate in energy
+                                             band 2 (M2<SUB>2</SUB>RATE)
+ 1201-1208  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         e_M2-2Rate   ?=- 1-sigma error on M2<SUB>2</SUB>RATE
+                                             (M2<SUB>2</SUB>RATE_ERR)
+ 1210-1219  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         M2-3Rate     ?=- EPIC/MOS2 count rate in energy
+                                             band 3 (M2<SUB>3</SUB>RATE)
+ 1221-1228  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         e_M2-3Rate   ?=- 1-sigma error on M2<SUB>3</SUB>RATE
+                                             (M2<SUB>3</SUB>RATE_ERR)
+ 1230-1238  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         M2-4Rate     ?=- EPIC/MOS2 count rate in energy
+                                             band 4 (M2<SUB>4</SUB>RATE)
+ 1240-1247  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         e_M2-4Rate   ?=- 1-sigma error on M2<SUB>4</SUB>RATE
+                                             (M2<SUB>4</SUB>RATE_ERR)
+ 1249-1257  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         M2-5Rate     ?=- EPIC/MOS2 count rate in energy
+                                             band 5 (M2<SUB>5</SUB>RATE)
+ 1259-1266  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>         e_M2-5Rate   ?=- 1-sigma error on M2<SUB>5</SUB>RATE
+                                             (M2<SUB>5</SUB>RATE_ERR)
+ 1268-1279  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>           EPcts        All-EPIC number of ct (EP_CTS)
+ 1281-1292  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>           e_EPcts      1-sigma error on EP_CTS (EP<SUB>CTS</SUB>ERR)
+ 1294-1305  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>           PNcts        ?=- EPIC/pn number of ct (PN_CTS)
+ 1307-1318  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>           e_PNcts      ?=- 1-sigma error on PN_CTS
+                                             (PN<SUB>CTS</SUB>ERR)
+ 1320-1331  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>           M1cts        ?=- EPIC/MOS1 number of ct (M1_CTS)
+ 1333-1344  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>           e_M1cts      ?=- 1-sigma error on M1_CTS
+                                             (M1<SUB>CTS</SUB>ERR)
+ 1346-1357  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>           M2cts        ?=- EPIC/MOS2 number of ct (M2_CTS)
+ 1359-1370  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>           e_M2cts      ?=- 1-sigma error on M2_CTS
+                                             (M2<SUB>CTS</SUB>ERR)
+ 1372-1383  E12.6 ---          EPdETml      All-EPIC equivalent maximum
+                                             detection likelihood (EP<SUB>DET</SUB>ML)
+ 1385-1396  E12.6 ---          PNdETml      ?=- EPIC/pn equivalent maximum
+                                             detection likelihood (PN<SUB>DET</SUB>ML)
+ 1398-1409  E12.6 ---          PN-1dETml    ?=- EPIC/pn equ. maximum detection
+                                             likelihood in energy band 1
+                                             (PN<SUB>1</SUB>DET_ML)
+ 1411-1422  E12.6 ---          PN-2dETml    ?=- EPIC/pn equ. maximum detection
+                                             likelihood in energy band 2
+                                             (PN<SUB>2</SUB>DET_ML)
+ 1424-1435  E12.6 ---          PN-3dETml    ?=- EPIC/pn equ. maximum detection
+                                             likelihood in energy band 3
+                                             (PN<SUB>3</SUB>DET_ML)
+ 1437-1448  E12.6 ---          PN-4dETml    ?=- EPIC/pn equ. maximum detection
+                                             likelihood in energy band 4
+                                             (PN<SUB>4</SUB>DET_ML)
+ 1450-1461  E12.6 ---          PN-5dETml    ?=- EPIC/pn equ. maximum detection
+                                              likelihood in energy band 5
+                                             (PN<SUB>5</SUB>DET_ML)
+ 1463-1474  E12.6 ---          M1dETml      ?=- EPIC/MOS1 equivalent maximum
+                                             detection likelihood (M1<SUB>DET</SUB>ML)
+ 1476-1487  E12.6 ---          M1-1dETml    ?=- EPIC/MOS1 equ. maximum detection
+                                             likelihood in energy band 1
+                                             (M1<SUB>1</SUB>DET_ML)
+ 1489-1500  E12.6 ---          M1-2dETml    ?=- EPIC/MOS1 equ. maximum detection
+                                             likelihood in energy band 2
+                                             (M1<SUB>2</SUB>DET_ML)
+ 1502-1513  E12.6 ---          M1-3dETml    ?=- EPIC/MOS1 equ. maximum detection
+                                             likelihood in energy band 3
+                                             (M1<SUB>3</SUB>DET_ML)
+ 1515-1526  E12.6 ---          M1-4dETml    ?=- EPIC/MOS1 equ. maximum detection
+                                             likelihood in energy band 4
+                                             (M1<SUB>4</SUB>DET_ML)
+ 1528-1539  E12.6 ---          M1-5dETml    ?=- EPIC/MOS1 equ. maximum detection
+                                             likelihood in energy band 5
+                                             (M1<SUB>5</SUB>DET_ML)
+ 1541-1552  E12.6 ---          M2dETml      ?=- EPIC/MOS2 equivalent maximum
+                                             detection likelihood (M2<SUB>DET</SUB>ML)
+ 1554-1565  E12.6 ---          M2-1dETml    ?=- EPIC/MOS2 equ. maximum detection
+                                             likelihood in energy band 1
+                                             (M2<SUB>1</SUB>DET_ML)
+ 1567-1578  E12.6 ---          M2-2dETml    ?=- EPIC/MOS2 equ. maximum detection
+                                             likelihood in energy band 2
+                                             (M2<SUB>2</SUB>DET_ML)
+ 1580-1591  E12.6 ---          M2-3dETml    ?=- EPIC/MOS2 equ. maximum detection
+                                             likelihood in energy band 3
+                                             (M2<SUB>3</SUB>DET_ML)
+ 1593-1604  E12.6 ---          M2-4dETml    ?=- EPIC/MOS2 equ. maximum detection
+                                             likelihood in energy band 4
+                                             (M2<SUB>4</SUB>DET_ML)
+ 1606-1617  E12.6 ---          M2-5dETml    ?=- EPIC/MOS2 equ. maximum detection
+                                             likelihood in energy band 5
+                                             (M2<SUB>5</SUB>DET_ML)
+ 1619-1627  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>       Ext          Extent radius (EXTENT)
+ 1629-1637  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>       e_Ext        1-sigma error on EXTENT (EXTENT_ERR)
+ 1639-1650  E12.6 ---          EtxML        Likelihood of the detection being
+                                             extended (EXTENT_ML)
+ 1652-1660  F9.6  ---          EPHR1        ?=- All-EPIC hardness ratio of
+                                             energy bands 1 and 2 (EP_HR1)
+ 1662-1673  E12.6 ---          e_EPHR1      ?=- 1-sigma error on EP_HR1
+                                             (EP<SUB>HR1</SUB>ERR)
+ 1675-1683  F9.6  ---          EPHR2        ?=- All-EPIC hardness ratio of
+                                             energy bands 2 and 3 (EP_HR2)
+ 1685-1696  E12.6 ---          e_EPHR2      ?=- 1-sigma error on EP_HR2
+                                             (EP<SUB>HR2</SUB>ERR)
+ 1698-1706  F9.6  ---          EPHR3        ?=- All-EPIC hardness ratio of
+                                             energy bands 3 and 4 (EP_HR3)
+ 1708-1719  E12.6 ---          e_EPHR3      ?=- 1-sigma error on EP_HR3
+                                             (EP<SUB>HR3</SUB>ERR)
+ 1721-1729  F9.6  ---          EPHR4        ?=- All-EPIC hardness ratio of
+                                             energy bands 4 and 5 (EP_HR4)
+ 1731-1742  E12.6 ---          e_EPHR4      ?=- 1-sigma error on EP_HR4
+                                             (EP<SUB>HR4</SUB>ERR)
+ 1744-1752  F9.6  ---          PNHR1        ?=- EPIC/pn hardness ratio of energy
+                                             bands 1 and 2 (PN_HR1)
+ 1754-1765  E12.6 ---          e_PNHR1      ?=- 1-sigma error on PN_HR1
+                                             (PN<SUB>HR1</SUB>ERR)
+ 1767-1775  F9.6  ---          PNHR2        ?=- EPIC/pn hardness ratio of energy
+                                             bands 2 and 3 (PN_HR2)
+ 1777-1788  E12.6 ---          e_PNHR2      ?=- 1-sigma error on PN_HR2
+                                             (PN<SUB>HR2</SUB>ERR)
+ 1790-1798  F9.6  ---          PNHR3        ?=- EPIC/pn hardness ratio of energy
+                                             bands 3 and 4 (PN_HR3)
+ 1800-1811  E12.6 ---          e_PNHR3      ?=- 1-sigma error on PN_HR3
+                                             (PN<SUB>HR3</SUB>ERR)
+ 1813-1821  F9.6  ---          PNHR4        ?=- EPIC/pn hardness ratio of energy
+                                             bands 4 and 5 (PN_HR4)
+ 1823-1834  E12.6 ---          e_PNHR4      ?=- 1-sigma error on PN_HR4
+                                             (PN<SUB>HR4</SUB>ERR)
+ 1836-1844  F9.6  ---          M1HR1        ?=- EPIC/MOS1 hardness ratio of
+                                             energy bands 1 and 2 (M1_HR1)
+ 1846-1857  E12.6 ---          e_M1HR1      ?=- 1-sigma error on M1_HR1
+                                             (M1<SUB>HR1</SUB>ERR)
+ 1859-1867  F9.6  ---          M1HR2        ?=- EPIC/MOS1 hardness ratio of
+                                             energy bands 2 and 3 (M1_HR2)
+ 1869-1880  E12.6 ---          e_M1HR2      ?=- 1-sigma error on M1_HR2
+                                             (M1<SUB>HR2</SUB>ERR)
+ 1882-1890  F9.6  ---          M1HR3        ?=- EPIC/MOS1 hardness ratio of
+                                             energy bands 3 and 4 (M1_HR3)
+ 1892-1903  E12.6 ---          e_M1HR3      ?=- 1-sigma error on M1_HR3
+                                             (M1<SUB>HR3</SUB>ERR)
+ 1905-1913  F9.6  ---          M1HR4        ?=- EPIC/MOS1 hardness ratio of
+                                             energy bands 4 and 5 (M1_HR4)
+ 1915-1926  E12.6 ---          e_M1HR4      ?=- 1-sigma error on M1_HR4
+                                             (M1<SUB>HR4</SUB>ERR)
+ 1928-1936  F9.6  ---          M2HR1        ?=- EPIC/MOS2 hardness ratio of
+                                             energy bands 1 and 2 (M2_HR1)
+ 1938-1949  E12.6 ---          e_M2HR1      ?=- 1-sigma error on M2_HR1
+                                             (M2<SUB>HR1</SUB>ERR)
+ 1951-1959  F9.6  ---          M2HR2        ?=- EPIC/MOS2 hardness ratio of
+                                             energy bands 2 and 3 (M2_HR2)
+ 1961-1972  E12.6 ---          e_M2HR2      ?=- 1-sigma error on M2_HR2
+                                             (M2<SUB>HR2</SUB>ERR)
+ 1974-1982  F9.6  ---          M2HR3        ?=- EPIC/MOS2 hardness ratio of
+                                             energy bands 3 and 4 (M2_HR3)
+ 1984-1995  E12.6 ---          e_M2HR3      ?=- 1-sigma error on M2_HR3
+                                             (M2<SUB>HR3</SUB>ERR)
+ 1997-2005  F9.6  ---          M2HR4        ?=- EPIC/MOS2 hardness ratio of
+                                             energy bands 4 and 5 (M2_HR4)
+ 2007-2018  E12.6 ---          e_M2HR4      ?=- 1-sigma error on M2_HR4
+                                             (M2<SUB>HR4</SUB>ERR)
+ 2020-2031  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>            PNexp        ?=- PSF-weighted exposure of the
+                                             detection in EPIC/pn (PN_EXP)
+ 2033-2044  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>            PN1exp       ?=- PSF-weighted exposure of the
+                                             detection in energy band 1 of
+                                             EPIC/pn (PN<SUB>1</SUB>EXP)
+ 2046-2057  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>            PN2exp       ?=- PSF-weighted exposure of the
+                                             detection in energy band 2 of
+                                             EPIC/pn (PN<SUB>2</SUB>EXP)
+ 2059-2070  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>            PN3exp       ?=- PSF-weighted exposure of the
+                                             detection in energy band 3 of
+                                             EPIC/pn (PN<SUB>3</SUB>EXP)
+ 2072-2083  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>            PN4exp       ?=- PSF-weighted exposure of the
+                                             detection in energy band 4 of
+                                             EPIC/pn (PN<SUB>4</SUB>EXP)
+ 2085-2096  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>            PN5exp       ?=- PSF-weighted exposure of the
+                                             detection in energy band 5 of
+                                             EPIC/pn (PN<SUB>5</SUB>EXP)
+ 2098-2109  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>            M1exp        ?=- PSF-weighted exposure of the
+                                             detection in EPIC/MOS1 (M1_EXP)
+ 2111-2122  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>            M1-1exp      ?=- PSF-weighted exposure of the
+                                             detection in energy band 1 of
+                                             EPIC/MOS1 (M1<SUB>1</SUB>EXP)
+ 2124-2135  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>            M1-2exp      ?=- PSF-weighted exposure of the
+                                             detection in energy band 2 of
+                                             EPIC/MOS1 (M1<SUB>2</SUB>EXP)
+ 2137-2148  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>            M1-3exp      ?=- PSF-weighted exposure of the
+                                             detection in energy band 3 of
+                                             EPIC/MOS1 (M1<SUB>3</SUB>EXP)
+ 2150-2161  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>            M1-4exp      ?=- PSF-weighted exposure of the
+                                             detection in energy band 4 of
+                                             EPIC/MOS1 (M1<SUB>4</SUB>EXP)
+ 2163-2174  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>            M1-5exp      ?=- PSF-weighted exposure of the
+                                             detection in energy band 5 of
+                                             EPIC/MOS1 (M1<SUB>5</SUB>EXP)
+ 2176-2187  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>            M2exp        ?=- PSF-weighted exposure of the
+                                             detection in EPIC/MOS2 (M2_EXP)
+ 2189-2200  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>            M2-1exp      ?=- PSF-weighted exposure of the
+                                             detection in energy band 1 of
+                                             EPIC/MOS2 (M2<SUB>1</SUB>EXP)
+ 2202-2213  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>            M2-2exp      ?=- PSF-weighted exposure of the
+                                             detection in energy band 2 of
+                                             EPIC/MOS2 (M2<SUB>2</SUB>EXP)
+ 2215-2226  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>            M2-3exp      ?=- PSF-weighted exposure of the
+                                             detection in energy band 3 of
+                                             EPIC/MOS2 (M2<SUB>3</SUB>EXP)
+ 2228-2239  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>            M2-4exp      ?=- PSF-weighted exposure of the
+                                             detection in energy band 4 of
+                                             EPIC/MOS2 (M2<SUB>4</SUB>EXP)
+ 2241-2252  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>            M2-5exp      ?=- PSF-weighted exposure of the
+                                             detection in energy band 5 of
+                                             EPIC/MOS2 (M2<SUB>5</SUB>EXP)
+ 2254-2265  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/pix" TARGET="explain">ct/pix</A>       PNbg         ?=- EPIC/pn background map at
+                                             detection position (PN_BG)
+ 2267-2276  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/pix" TARGET="explain">ct/pix</A>       PN1bg        ?=- EPIC/pn background map in energy
+                                             band 1 at detection position
+                                             (PN<SUB>1</SUB>BG)
+ 2278-2287  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/pix" TARGET="explain">ct/pix</A>       PN2bg        ?=- EPIC/pn background map in energy
+                                             band 2 at detection position
+                                             (PN<SUB>2</SUB>BG)
+ 2289-2298  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/pix" TARGET="explain">ct/pix</A>       PN3bg        ?=- EPIC/pn background map in energy
+                                             band 3 at detection position
+                                             (PN<SUB>3</SUB>BG)
+ 2300-2309  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/pix" TARGET="explain">ct/pix</A>       PN4bg        ?=- EPIC/pn background map in energy
+                                             band 4 at detection position
+                                             (PN<SUB>4</SUB>BG)
+ 2311-2319  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/pix" TARGET="explain">ct/pix</A>       PN5bg        ?=- EPIC/pn background map in energy
+                                             band 5 at detection position
+                                             (PN<SUB>5</SUB>BG)
+ 2321-2330  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/pix" TARGET="explain">ct/pix</A>       M1bg         ?=- EPIC/MOS1 background map at
+                                             detection position (M1_BG)
+ 2332-2340  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/pix" TARGET="explain">ct/pix</A>       M1-1bg       ?=- EPIC/MOS1 background map in
+                                             energy band 1 at detection position
+                                             (M1<SUB>1</SUB>BG)
+ 2342-2351  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/pix" TARGET="explain">ct/pix</A>       M1-2bg       ?=- EPIC/MOS1 background map in
+                                             energy band 2 at detection position
+                                             (M1<SUB>2</SUB>BG)
+ 2353-2362  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/pix" TARGET="explain">ct/pix</A>       M1-3bg       ?=- EPIC/MOS1 background map in
+                                             energy band 3 at detection position
+                                             (M1<SUB>3</SUB>BG)
+ 2364-2372  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/pix" TARGET="explain">ct/pix</A>       M1-4bg       ?=- EPIC/MOS1 background map in
+                                             energy band 4 at detection position
+                                             (M1<SUB>4</SUB>BG)
+ 2374-2382  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/pix" TARGET="explain">ct/pix</A>       M1-5bg       ?=- EPIC/MOS1 background map in
+                                             energy band 5 at detection position
+                                             (M1<SUB>5</SUB>BG)
+ 2384-2393  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/pix" TARGET="explain">ct/pix</A>       M2bg         ?=- EPIC/MOS2 background map at
+                                             detection position (M2_BG)
+ 2395-2403  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/pix" TARGET="explain">ct/pix</A>       M2-1bg       ?=- EPIC/MOS2 background map in
+                                             energy band 1 at detection position
+                                             (M2<SUB>1</SUB>BG)
+ 2405-2414  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/pix" TARGET="explain">ct/pix</A>       M2-2bg       ?=- EPIC/MOS2 background map in
+                                             energy band 2 at detection position
+                                             (M2<SUB>2</SUB>BG)
+ 2416-2425  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/pix" TARGET="explain">ct/pix</A>       M2-3bg       ?=- EPIC/MOS2 background map in
+                                             energy band 3 at detection position
+                                             (M2<SUB>3</SUB>BG)
+ 2427-2435  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/pix" TARGET="explain">ct/pix</A>       M2-4bg       ?=- EPIC/MOS2 background map in
+                                             energy band 4 at detection position
+                                             (M2<SUB>4</SUB>BG)
+ 2437-2445  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/pix" TARGET="explain">ct/pix</A>       M2-5bg       ?=- EPIC/MOS2 background map in
+                                             energy band 5 at detection position
+                                             (M2<SUB>5</SUB>BG)
+ 2447-2458  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>            EPontime     Total good exposure time all-EPIC
+                                             (EP_ONTIME)
+ 2460-2471  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>            PNontime     ?=- Total good exposure time in
+                                             EPIC/pn (PN_ONTIME)
+ 2473-2484  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>            M1ontime     ?=- Total good exposure time in
+                                             EPIC/MOS1 (M1_ONTIME)
+ 2486-2497  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>            M2ontime     ?=- Total good exposure time in
+                                             EPIC/MOS2 (M2_ONTIME)
+ 2499-2510  E12.6 ---          PNpileup     ?=- Estimate of the pile-up level in
+                                             EPIC/pn (PN_PILEUP)
+ 2512-2523  E12.6 ---          M1pileup     ?=- Estimate of the pile-up level in
+                                             EPIC/MOS1 (M1_PILEUP)
+ 2525-2536  E12.6 ---          M2pileup     ?=- Estimate of the pile-up level in
+                                             EPIC/MOS2 (M2_PILEUP)
+ 2538-2545  F8.6  ---          PNmaskfrac   ?=- PSF-weighted detector coverage
+                                             in EPIC/pn (PN_MASKFRAC)
+ 2547-2554  F8.6  ---          M1maskfrac   ?=- PSF-weighted detector coverage
+                                             in EPIC/MOS1 (M1_MASKFRAC)
+ 2556-2563  F8.6  ---          M2maskfrac   ?=- PSF-weighted detector coverage
+                                             in EPIC/MOS2 (M2_MASKFRAC)
+ 2565-2574  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>       DistRef      Distance to the reference
+                                             coordinates of the field (DIST_REF)
+ 2576-2584  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>       EPoffax      ?=- Offaxis angle between source
+                                             position and aim point all-EPIC
+                                             (EP_OFFAX)
+ 2586-2594  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>       PNoffax      ?=- Offaxis angle between source
+                                             position and aim point in EPIC/pn
+                                             (PN_OFFAX)
+ 2596-2604  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>       M1offax      ?=- Offaxis angle between source
+                                             position and aim point in EPIC/MOS1
+                                             (M1_OFFAX)
+ 2606-2614  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>       M2offax      ?=- Offaxis angle between source
+                                             position and aim point in EPIC/MOS2
+                                             (M2_OFFAX)
+ 2616-2623  F8.6  ---          PN1vig       ?=- EPIC/pn vignetting factor in
+                                             energy band 1 for the observation
+                                             (PN<SUB>1</SUB>VIG)
+ 2625-2632  F8.6  ---          PN2vig       ?=- EPIC/pn vignetting factor in
+                                             energy band 2 for the observation
+                                             (PN<SUB>2</SUB>VIG)
+ 2634-2641  F8.6  ---          PN3vig       ?=- EPIC/pn vignetting factor in
+                                             energy band 3 for the observation
+                                             (PN<SUB>3</SUB>VIG)
+ 2643-2650  F8.6  ---          PN4vig       ?=- EPIC/pn vignetting factor in
+                                             energy band 4 for the observation
+                                             (PN<SUB>4</SUB>VIG)
+ 2652-2659  F8.6  ---          PN5vig       ?=- EPIC/pn vignetting factor in
+                                             energy band 5 for the observation
+                                             (PN<SUB>5</SUB>VIG)
+ 2661-2668  F8.6  ---          M1-1vig      ?=- EPIC/MOS1 vignetting factor in
+                                             energy band 1 for the observation
+                                             (M1<SUB>1</SUB>VIG)
+ 2670-2677  F8.6  ---          M1-2vig      ?=- EPIC/MOS1 vignetting factor in
+                                             energy band 2 for the observation
+                                             (M1<SUB>2</SUB>VIG)
+ 2679-2686  F8.6  ---          M1-3vig      ?=- EPIC/MOS1 vignetting factor in
+                                             energy band 3 for the observation
+                                             (M1<SUB>3</SUB>VIG)
+ 2688-2695  F8.6  ---          M1-4vig      ?=- EPIC/MOS1 vignetting factor in
+                                             energy band 4 for the observation
+                                             (M1<SUB>4</SUB>VIG)
+ 2697-2704  F8.6  ---          M1-5vig      ?=- EPIC/MOS1 vignetting factor in
+                                             energy band 5 for the observation
+                                             (M1<SUB>5</SUB>VIG)
+ 2706-2713  F8.6  ---          M2-1vig      ?=- EPIC/MOS2 vignetting factor in
+                                             energy band 1 for the observation
+                                             (M2<SUB>1</SUB>VIG)
+ 2715-2722  F8.6  ---          M2-2vig      ?=- EPIC/MOS2 vignetting factor in
+                                             energy band 2 for the observation
+                                             (M2<SUB>2</SUB>VIG)
+ 2724-2731  F8.6  ---          M2-3vig      ?=- EPIC/MOS2 vignetting factor in
+                                             energy band 3 for the observation
+                                             (M2<SUB>3</SUB>VIG)
+ 2733-2740  F8.6  ---          M2-4vig      ?=- EPIC/MOS2 vignetting factor in
+                                             energy band 4 for the observation
+                                             (M2<SUB>4</SUB>VIG)
+ 2742-2749  F8.6  ---          M2-5vig      ?=- EPIC/MOS2 vignetting factor in
+                                             energy band 5 for the observation
+                                             (M2<SUB>5</SUB>VIG)
+    2751  I1    ---          Overlap      Flag: observation was
+                                             astrometrically corrected (OVERLAP)
+ 2753-2754  I2    ---          fStack       ?=- Integer representation of the
+                                             stack detection flags (STACK_FLAG)
+ 2756-2765  A10   ---          flagEP       All-EPIC detection flags (EP_FLAG)
+ 2767-2775  A9    ---          flagPN       EPIC/pn detection flags (PN_FLAG)
+ 2777-2785  A9    ---          flagM1       EPIC/MOS1 detection flags (M1_FLAG)
+ 2787-2795  A9    ---          flagM2       EPIC/MOS2 detection flags (M2_FLAG)
+ 2797-2808  E12.6 ---          Varchi2      ?=- Reduced chi square of EPIC
+                                             inter-observation variability
+                                             (VAR_CHI2)
+ 2810-2821  E12.6 ---          Varchi2-1    ?=- Reduced chi square of EPIC
+                                             band 1 inter-observation
+                                             variability (VAR<SUB>CHI2</SUB>1)
+ 2823-2834  E12.6 ---          Varchi2-2    ?=- Reduced chi square of EPIC
+                                             band 2 inter-observation
+                                             variability (VAR<SUB>CHI2</SUB>2)
+ 2836-2847  E12.6 ---          Varchi2-3    ?=- Reduced chi square of EPIC
+                                             band 3 inter-observation
+                                             variability (VAR<SUB>CHI2</SUB>3)
+ 2849-2860  E12.6 ---          Varchi2-4    ?=- Reduced chi square of EPIC
+                                             band 4 inter-observation
+                                             variability (VAR<SUB>CHI2</SUB>4)
+ 2862-2873  E12.6 ---          Varchi2-5    ?=- Reduced chi square of EPIC
+                                             band 5 inter-observation
+                                             variability (VAR<SUB>CHI2</SUB>5)
+ 2875-2886  E12.6 ---          VarProb      ?=- Probability that Varchi2 is
+                                             consistent with constant EPIC flux
+                                             (VAR_PROB)
+ 2888-2899  E12.6 ---          VarProb-1    ?=- Probability that Varchi2_1 is
+                                             consistent with constant band 1
+                                             flux (VAR<SUB>PROB</SUB>1)
+ 2901-2912  E12.6 ---          VarProb-2    ?=- Probability that Varchi2_2 is
+                                             consistent with constant band 2
+                                             flux (VAR<SUB>PROB</SUB>2)
+ 2914-2925  E12.6 ---          VarProb-3    ?=- Probability that Varchi2_3 is
+                                             consistent with constant band 3
+                                             flux (VAR<SUB>PROB</SUB>3)
+ 2927-2938  E12.6 ---          VarProb-4    ?=- Probability that Varchi2_4 is
+                                             consistent with constant band 4
+                                             flux (VAR<SUB>PROB</SUB>4)
+ 2940-2951  E12.6 ---          VarProb-5    ?=- Probability that Varchi2_5 is
+                                             consistent with constant band 5
+                                             flux (VAR<SUB>PROB</SUB>5)
+ 2953-2964  E12.6 ---          Fratio       ?=- EPIC flux ratio (FRATIO)
+ 2966-2977  E12.6 ---          e_Fratio     ?=- 1-sigma error on FRATIO
+                                             (FRATIO_ERR)
+ 2979-2990  E12.6 ---          Fratio-1     ?=- EPIC band 1 flux ratio
+                                             (FRATIO_1)
+ 2992-3003  E12.6 ---          e_Fratio-1   ?=- 1-sigma error on FRATIO_1
+                                             (FRATIO<SUB>1</SUB>ERR)
+ 3005-3016  E12.6 ---          Fratio-2     ?=- EPIC band 2 flux ratio
+                                             (FRATIO_2)
+ 3018-3029  E12.6 ---          e_Fratio-2   ?=- 1-sigma error on FRATIO_2
+                                             (FRATIO<SUB>2</SUB>ERR)
+ 3031-3042  E12.6 ---          Fratio-3     ?=- EPIC band 3 flux ratio
+                                             (FRATIO_3)
+ 3044-3055  E12.6 ---          e_Fratio-3   ?=- 1-sigma error on FRATIO_3
+                                             (FRATIO<SUB>3</SUB>ERR)
+ 3057-3068  E12.6 ---          Fratio-4     ?=- EPIC band 4 flux ratio
+                                             (FRATIO_4)
+ 3070-3081  E12.6 ---          e_Fratio-4   ?=- 1-sigma error on FRATIO_4
+                                             (FRATIO<SUB>4</SUB>ERR)
+ 3083-3094  E12.6 ---          Fratio-5     ?=- EPIC band 5 flux ratio
+                                             (FRATIO_5)
+ 3096-3107  E12.6 ---          e_Fratio-5   ?=- 1-sigma error on FRATIO_5
+                                             (FRATIO<SUB>5</SUB>ERR)
+ 3109-3120  E12.6 ---          Fluxvar      ?=- Largest EPIC flux difference in
+                                             terms of sigma (FLUXVAR)
+ 3122-3133  E12.6 ---          Fluxvar-1    ?=- Largest EPIC band 1 flux
+                                             difference in terms of sigma
+                                             (FLUXVAR_1)
+ 3135-3146  E12.6 ---          Fluxvar-2    ?=- Largest EPIC band 2 flux
+                                             difference in terms of sigma
+                                             (FLUXVAR_2)
+ 3148-3159  E12.6 ---          Fluxvar-3    ?=- Largest EPIC band 3 flux
+                                             difference in terms of sigma
+                                             (FLUXVAR_3)
+ 3161-3172  E12.6 ---          Fluxvar-4    ?=- Largest EPIC band 4 flux
+                                             difference in terms of sigma
+                                             (FLUXVAR_4)
+ 3174-3185  E12.6 ---          Fluxvar-5    ?=- Largest EPIC band 5 flux
+                                             difference in terms of sigma
+                                             (FLUXVAR_5)
+ 3187-3198  E12.6 ---          FBRVchi2-21  ?=- Reduced chi square of EPIC
+                                             band 2 to 1 (FBR<SUB>VAR</SUB>CHI2<SUB></SUB>21)
+ 3200-3211  E12.6 ---          FBRVchi2-32  ?=- Reduced chi square of EPIC
+                                             band 3 to 2 (FBR<SUB>VAR</SUB>CHI2<SUB></SUB>32)
+ 3213-3224  E12.6 ---          FBRVchi2-31  ?=- Reduced chi square of EPIC
+                                             band 3 to 1 (FBR<SUB>VAR</SUB>CHI2<SUB></SUB>31)
+ 3226-3237  E12.6 ---          FBRVchi2-34  ?=- Reduced chi square of EPIC
+                                             band 3 to 4 (FBR<SUB>VAR</SUB>CHI2<SUB></SUB>43)
+ 3239-3250  E12.6 ---          FBRVchi2-42  ?=- Reduced chi square of EPIC
+                                             band 4 to 2 (FBR<SUB>VAR</SUB>CHI2<SUB></SUB>42)
+ 3252-3263  E12.6 ---          FBRVchi2-41  ?=- Reduced chi square of EPIC
+                                             band 4 to 1 (FBR<SUB>VAR</SUB>CHI2<SUB></SUB>41)
+ 3265-3276  E12.6 ---          FBRVchi2-54  ?=- Reduced chi square of EPIC
+                                             band 5 to 4 (FBR<SUB>VAR</SUB>CHI2<SUB></SUB>54)
+ 3278-3289  E12.6 ---          FBRVchi2-53  ?=- Reduced chi square of EPIC
+                                             band 5 to 3 (FBR<SUB>VAR</SUB>CHI2<SUB></SUB>53)
+ 3291-3302  E12.6 ---          FBRVchi2-52  ?=- Reduced chi square of EPIC
+                                             band 5 to 2 (FBR<SUB>VAR</SUB>CHI2<SUB></SUB>52)
+ 3304-3315  E12.6 ---          FBRVchi2-51  ?=- Reduced chi square of EPIC
+                                             band 5 to 1 (FBR<SUB>VAR</SUB>CHI2<SUB></SUB>51)
+ 3317-3328  E12.6 ---          FBRVprob-21  ?=- Probability that the flux EPIC
+                                             band 2 to 1 variability is
+                                             consistent (FBR<SUB>VAR</SUB>PROB_21)
+ 3330-3341  E12.6 ---          FBRVprob-32  ?=- Probability that the flux EPIC
+                                             band 3 to 2 variability is
+                                             consistent (FBR<SUB>VAR</SUB>PROB_32)
+ 3343-3354  E12.6 ---          FBRVprob-31  ?=- Probability that the flux EPIC
+                                             band 3 to 1 variability is
+                                             consistent (FBR<SUB>VAR</SUB>PROB_31)
+ 3356-3367  E12.6 ---          FBRVprob-43  ?=- Probability that the flux EPIC
+                                             band 4 to 3 variability is
+                                             consistent (FBR<SUB>VAR</SUB>PROB_43)
+ 3369-3380  E12.6 ---          FBRVprob-42  ?=- Probability that the flux EPIC
+                                             band 4 to 2 variability is
+                                             consistent (FBR<SUB>VAR</SUB>PROB_42)
+ 3382-3393  E12.6 ---          FBRVprob-41  ?=- Probability that the flux EPIC
+                                             band 4 to 1 variability is
+                                             consistent (FBR<SUB>VAR</SUB>PROB_41)
+ 3395-3406  E12.6 ---          FBRVprob-54  ?=- Probability that the flux EPIC
+                                             band 5 to 4 variability is
+                                             consistent (FBR<SUB>VAR</SUB>PROB_54)
+ 3408-3419  E12.6 ---          FBRVprob-53  ?=- Probability that the flux EPIC
+                                             band 5 to 3 variability is
+                                             consistent (FBR<SUB>VAR</SUB>PROB_53)
+ 3421-3432  E12.6 ---          FBRVprob-52  ?=- Probability that the flux EPIC
+                                             band 5 to 2 variability is
+                                             consistent (FBR<SUB>VAR</SUB>PROB_52)
+ 3434-3445  E12.6 ---          FBRVprob-51  ?=- Probability that the flux EPIC
+                                             band 5 to 1 variability is
+                                             consistent (FBR<SUB>VAR</SUB>PROB_51)
+ 3447-3458  E12.6 ---          FBRVdsig-21  ?=- Largest difference of EPIC
+                                             band 2 to 1 flux ratios in terms of
+                                             sigma (FBR<SUB>VAR</SUB>DSIG_21)
+ 3460-3471  E12.6 ---          FBRVdsig-32  ?=- Largest difference of EPIC
+                                             band 3 to 2 flux ratios in terms of
+                                             sigma (FBR<SUB>VAR</SUB>DSIG_32)
+ 3473-3484  E12.6 ---          FBRVdsig-31  ?=- Largest difference of EPIC
+                                             band 3 to 1 flux ratios in terms of
+                                             sigma (FBR<SUB>VAR</SUB>DSIG_31)
+ 3486-3497  E12.6 ---          FBRVdsig-43  ?=- Largest difference of EPIC
+                                             band 4 to 3 flux ratios in terms of
+                                             sigma (FBR<SUB>VAR</SUB>DSIG_43)
+ 3499-3510  E12.6 ---          FBRVdsig-42  ?=- Largest difference of EPIC
+                                             band 4 to 2 flux ratios in terms of
+                                             sigma (FBR<SUB>VAR</SUB>DSIG_42)
+ 3512-3523  E12.6 ---          FBRVdsig-41  ?=- Largest difference of EPIC
+                                             band 4 to 1 flux ratios in terms of
+                                             sigma (FBR<SUB>VAR</SUB>DSIG_41)
+ 3525-3536  E12.6 ---          FBRVdsig-54  ?=- Largest difference of EPIC
+                                             band 5 to 4 flux ratios in terms of
+                                             sigma (FBR<SUB>VAR</SUB>DSIG_54)
+ 3538-3549  E12.6 ---          FBRVdsig-53  ?=- Largest difference of EPIC
+                                             band 5 to 3 flux ratios in terms of
+                                             sigma (FBR<SUB>VAR</SUB>DSIG_53)
+ 3551-3562  E12.6 ---          FBRVdsig-52  ?=- Largest difference of EPIC
+                                             band 5 to 2 flux ratios in terms of
+                                             sigma (FBR<SUB>VAR</SUB>DSIG_52)
+ 3564-3575  E12.6 ---          FBRVdsig-51  ?=- Largest difference of EPIC
+                                             band 5 to 1 flux ratios in terms of
+                                             sigma (FBR<SUB>VAR</SUB>DSIG_51)
+ 3577-3588  E12.6 ---         chi2probDR11  ?=- Probability of the DR11 source
+                                             to be consistent with constant flux
+                                             (CHI2PROB_4XMMDR11)
+ 3590-3600  F11.6 ---          FvarDR11     ?=- Fractional intra-obs. excess
+                                             variance of the nearest 4XMM-DR11
+                                             source (FVAR_4XMMDR11)
+ 3602-3612  F11.6 ---          e_FvarDR11   ?=- 1-sigma error on FVAR_4XMMDR11
+                                             (FVARERR_4XMMDR11)
+    3614  I1    ---          VDR11        Intra-observation variability flag
+                                             of the nearest 4XMM-DR11 source
+                                             (VAR<SUB>FLAG</SUB>4XMMDR11)
+    3616  I1    ---          SDR11        ?=- Summary quality flag of the
+                                             nearest unique 4XMM-DR11 source
+                                             (SUM<SUB>FLAG</SUB>4XMMDR11)
+    3618  I1    ---          SDR11min     ?=- Best quality flag of the
+                                             detections of the nearest
+                                             4XMM-DR11 source
+                                             (SUM<SUB>FLAG</SUB>MIN_4XMMDR11)
+ 3620-3629  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>            MJD0         Modified Julian Date JD-2400000.5 of
+                                             the observation start (MJD_FIRST)
+ 3631-3640  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>            MJD1         Modified Julian Date JD-2400000.5 of
+                                             the observation end (MJD_LAST)
+ 3642-3645  I4    ---          Rev          ?=- XMM-Newton revolution number of
+                                             the observation (REVOLUT)
+ 3647-3656  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>          PApnt        ?=- Mean position angle of the
+                                             spacecraft (PA_PNT)
+    3658  I1    ---          ObsClass     ?=- Observation quality from
+                                              4XMM-DR11 screening (OBS_CLASS)
+ 3660-3682  A23   ---          PNsubmode    EPIC/pn submode used for the
+                                              observation (PN_SUBMODE)
+ 3684-3699  A16   ---          M1submode    EPIC/MOS1 submode used for the
+                                              observation (M1_SUBMODE)
+ 3701-3716  A16   ---          M2submode    EPIC/MOS2 submode used for the
+                                              observation (M2_SUBMODE)
+ 3718-3723  A6    ---          PNfilter     EPIC/pn filter used for the
+                                              observation (PN_FILTER)
+ 3725-3730  A6    ---          M1filter     EPIC/MOS1 filter used for the
+                                              observation (M1_FILTER)
+ 3732-3737  A6    ---          M2filter     EPIC/MOS2 filter used for the
+                                              observation (M2_FILTER)
+    3739  I1    ---          AstCorr      Flag: observation was
+                                             astrometrically corrected (ASTCORR)
+ 3741-3750  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>       CCRAoff      ?=- catcorr shift of the right
+                                              ascension in the field
+                                              (CC_RAOFFSET)
+ 3752-3761  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>       e_CCRAoff    ?=- 1-sigma error on CC_RAOFFSET
+                                             (CC_RAOFFERR)
+ 3763-3772  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>       CCDEoff      ?=- catcorr shift of the declination
+                                              in the field (CC_DEOFFSET)
+ 3774-3783  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>       e_CCDEoff    ?=- 1-sigma error on CC_DEOFFSET
+                                             (CC_DEOFFERR)
+ 3785-3794  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>          CCrotCorr    ?=- catcorr shift of the position
+                                              angle in the field (CC<SUB>ROT</SUB>CORR)
+ 3796-3805  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>          e_CCrotCorr  ?=- 1-sigma error on CC<SUB>ROT</SUB>CORR
+                                             (CC<SUB>ROT</SUB>ERR)
+ 3807-3816  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>       CCPoff       ?=- catcorr total position shift of
+                                              the field (CC_POFFSET)
+ 3818-3827  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>       e_CCPoff     ?=- 1-sigma error on CC_POFFSET
+                                              (CC_POFFERR)
+ 3829-3836  A8    ---          CCRefCet     catcorr reference catalogue
+                                              (CC_REFCAT)
+ 3838-3840  I3    ---          CCNmatches   ?=- catcorr number of usable matches
+                                              with the reference catalogue
+                                              (CC_NMATCHES)
+ 3842-3853  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s/arcsec2" TARGET="explain">ct/s/arcsec2</A> PNbkgCRarea  ?=- EPIC/pn background rate per
+                                              area (PN<SUB>BKG</SUB>CRAREA)
+ 3855-3866  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s/arcsec2" TARGET="explain">ct/s/arcsec2</A> M1bkgCRarea  ?=- EPIC/MOS1 background rate per
+                                              area (M1<SUB>BKG</SUB>CRAREA)
+ 3868-3879  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s/arcsec2" TARGET="explain">ct/s/arcsec2</A> M2bkgCRarea  ?=- EPIC/MOS2 background rate per
+                                              area (M2<SUB>BKG</SUB>CRAREA)
+ 3881-3892  E12.6 ---          PNbkgCprob   ?=- EPIC/pn Cauchy probability
+                                              derived from PN<SUB>BKG</SUB>CRAREA
+                                              (PN<SUB>BKG</SUB>CPROB)
+ 3894-3905  E12.6 ---          M1bkgCprob   ?=- EPIC/MOS1 Cauchy probability
+                                              derived from M1<SUB>BKG</SUB>CRAREA
+                                              (M1<SUB>BKG</SUB>CPROB)
+ 3907-3918  E12.6 ---          M2bkgCprob   ?=- EPIC/MOS2 Cauchy probability
+                                              derived from M2<SUB>BKG</SUB>CRAREA
+                                              (M2<SUB>BKG</SUB>CPROB)
+ 3920-3973  A54   ---          URLDR11      Webpage URL of the nearest 4XMM-DR9
+                                              source (URL_4XMMDR9)
+<HR>
+
+<A NAME="sRM99.2"><B>History</B>:
+    Copied at https://xmmssc.aip.de/cms/catalogues/4xmm-dr11s/
+================================================================================
+<B>(End)</B>                                      Patricia Vannier [CDS]    20-Apr-2022
+
+</PRE><!-- ....wait for 1 children: %0=3182876 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

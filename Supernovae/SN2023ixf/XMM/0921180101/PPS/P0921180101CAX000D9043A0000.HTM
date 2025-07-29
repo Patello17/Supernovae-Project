@@ -1,0 +1,498 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of IX/43</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Wed Jun 28 19:44:25 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0921180101OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of IX/43 :<BR>1SXPS Swift X-ray telescope point source catalogue (Evans+ 2014)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0921180101OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>IX/43</B>         1SXPS Swift X-ray telescope point source catalogue  (Evans+ 2014)
+================================================================================
+1SXPS: A deep Swift X-ray telescope point source catalogue with light curves
+and spectra
+    Evans P.A., Osborne J.P., Beardmore A.P., Page K.L., Willingale R.,
+    Mountford C.J., Pagani C., Burrows D.N., Kennea J.A., Perri M.,
+    Tagliaferri G., Gehrels N.
+   &lt;Astrophys. J., Suppl. Ser. 210, 8 (2014)&gt;
+   =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2013yCat.9043....0E">2013yCat.9043....0E</A>
+   =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2014ApJS..210....8E">2014ApJS..210....8E</A>
+================================================================================
+<B>ADC_Keywords</B>: X-ray sources ; Surveys
+
+<B>Mission_Name</B>: Swift
+
+<B>Keywords</B>: Catalogs ; Surveys ; X-rays: observations ; Methods: data analysis
+
+
+<A NAME="sRM99.1"><B>Abstract</B>:
+    We present the 1SXPS (Swift-XRT Point Source) catalogue of 151,524
+    X-ray point-sources detected by the Swift-XRT in 8 years of operation.
+    The catalogue covers 1905 square degrees distributed approximately
+    uniformly on the sky. We analyze the data in two ways. First we
+    consider all observations individually, for which we have a typical
+    sensitivity of ~3e-13 erg.cm<SUP>-2</SUP>s^-1` (0.3-10 keV). Then we co-add
+    all data covering the same location on the sky: these images have a
+    typical sensitivity of ~9e-14 erg cm<SUP>-2</SUP>s<SUP>-1</SUP> (0.3-10 keV). Our sky
+    coverage is nearly 2.5 times that of 3XMM-DR4, although the catalog
+    is a factor of ~1.5 less sensitive. The median position error is 5.5"
+    (90% confidence), including systematics. Our source detection method
+    improves on that used in previous XRT catalogues and we report &gt;68,000
+    new X-ray sources. The goals and observing strategy of the Swift
+    satellite allow us to probe source variability on multiple timescales,
+    and we find ~30,000 variable objects in our catalog. For every source
+    we give positions, fluxes, time series (in four energy bands and two
+    hardness ratios), estimates of the spectral properties, spectra and
+    spectral fits for the brightest sources, and variability probabilities
+    in multiple energy bands and timescales.
+
+<A NAME="sRM11.1"><B>Description</B>:
+    The 1SXPS catalogue is a point-source catalogue built from all
+    Swift-XRT Photon Counting mode data of at least 100-s in duration
+    gathered prior to 2012 October 12 (Swift was launched in 2004
+    November). It contains positions, fluxes, spectral details,
+    variability information and a flag indicating the reliability of the
+    detection for 151,524 objects. Various values (e.g. the count rates)
+    are given in 4 bands:
+      Total   = 0.3-10 keV
+      Soft    = 0.3-1 keV
+      Medium  = 1-2 keV
+      Hard    = 2-10 keV
+    The source detection was performed in each of these bands independently,
+    and the results combined to give this final catalogue.
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.55">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.56">&#215; <A HREF="#sRM2.1">sources.dat</A>     1522   151524   The 1SXPS Catalogue of Swift X-ray telescope
+                            Point Sources.
+<A NAME="sRM-F.58">&#215; <A HREF="#sRM2.2">xcor.dat</A>         110   502530   Cross-correlation of the 1SXPS sources
+<HR>
+
+<A NAME="sRM13.1"><B>See also</B>:
+  <A HREF="http://www.swift.ac.uk/1SXPS/">http://www.swift.ac.uk/1SXPS/</A> : 1SXPS home page
+  <A HREF="http://www.swift.ac.uk/1SXPS/docs.php">http://www.swift.ac.uk/1SXPS/docs.php</A> : On-line Documentation
+  <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/A%2BA/551/A142">J/A+A/551/A142</A> : 7 year Swift-XRT point source catalog (1SWXRT) (D'Elia+ 2013)
+  <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/A%2BA/528/A122">J/A+A/528/A122</A> : SwiftFT catalog in deep XRT GRB fields (Puccetti+, 2011)
+   <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/A%2BA/547/A57">J/A+A/547/A57</A> : Swift X-ray Telescope Cluster Survey (Tundo+, 2012)
+
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.56"> sources.dat</A>
+<HR>
+   Bytes Format Units   Label   Explanations
+<HR>
+   1-  5  A5    ---     ---     [1SXPS]
+   7- 22  A16   ---     1SXPS   Unique 1SXPS ID (JHHMMSS.S+DDMMSS)
+  24- 32  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     RAdeg   Right Ascension (J2000)
+  34- 42  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEdeg   Declination Ascension (J2000)
+  44- 47  F4.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  Err90   [0.2/33] 90% radial position error, including
+                                systematic, in arc seconds
+      49  I1    ---     A       [0/1] Provenance of source astrometry:
+                                0=Swift star tracker, 1=XRT/2MASS astrometry
+                                (AstromType)
+  51- 59  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     Glon    Galactic longitude (l)
+  61- 69  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     Glat    Galactic latitude (b)
+  71- 74  F4.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A> OffAxis  ?=-<A HREF="#sRM3.5">1 The mean off-axis angle of this source (5)</A>
+  76- 82  E7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>       t.exp   Total on-source exposure time (Exposure)
+  84-102  A19  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%22datime%22" TARGET="explain">"datime"</A> t.start  UT Date where this source was first observed
+                                (StartDate)
+ 104-122  A19  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%22datime%22" TARGET="explain">"datime"</A> t.stop  UT Date where this source was last observed
+                                (StopDate)
+ 124-126  I3    ---     Nobs    Number of observations of the location of
+                                this source (NumObs)
+ 128-130  I3    ---     Ndet    Number of observations in which the source
+                                was detected (NumDetObs)
+ 132-133  I2    ---     Det     [0/18] <A HREF="#sRM3.1">Detection flag, 0=OK (DetFlag) (1)</A>
+     135  I1    ---     ff      [0/2] <A HREF="#sRM3.2">Field flag, 0=OK (Fieldflag) (2)</A>
+ 137-138  I2    ---     Det0    [0/18]?=-<A HREF="#sRM3.1">1 Total(0.3-10keV)-band detection</A>
+                                      flag (DetFlag_band0) (1)
+ 140-141  I2    ---     Det1    [0/18]?=-<A HREF="#sRM3.1">1 Soft(0.3-1keV)-band detection flag</A>
+                                      (DetFlag_band1) (1)
+ 143-144  I2    ---     Det2    [0/18]?=-<A HREF="#sRM3.1">1 Medium(1-2keV)-band detection flag</A>
+                                      (DetFlag_band2) (1)
+ 146-147  I2    ---     Det3    [0/18]?=-<A HREF="#sRM3.1">1 Hard-(2-10keV)band detection flag</A>
+                                      (DetFlag_band3) (1)
+--------------------------------------------------------------------------------
+ 149-156  E8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>    CR0     ? Total(0.3-10keV)-band count-rate
+                                  (Rate_band0)
+ 158-165  E8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>    E_CR0   ? positive error on CR0  (Rate<SUB>band0</SUB>pos)
+ 167-175  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>    e_CR0   [/0]? negative error on DR0 (Rate<SUB>band0</SUB>neg)
+ 177-184  E8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>    CR1     ? Soft(0.3-1keV)-band count-rate  (Rate_band1)
+ 186-193  E8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>    E_CR1   ? positive error on CR1 (Rate<SUB>band1</SUB>pos)
+ 195-203  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>    e_CR1   [/0]? negative error on CR1  (Rate<SUB>band1</SUB>neg)
+ 205-212  E8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>    CR2     ? Medium(1-2keV)-band count-rate  (Rate_band2)
+ 214-221  E8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>    E_CR2   ? positive error on CR2  (Rate<SUB>band2</SUB>pos)
+ 223-231  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>    e_CR2   [/0]? negative error on CR2  (Rate<SUB>band2</SUB>neg)
+ 233-240  E8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>    CR3     ? Hared(2-10keV)-band count-rate  (Rate_band3)
+ 242-249  E8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>    E_CR3   ? positive error on CR3  (Rate<SUB>band3</SUB>pos)
+ 251-259  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>    e_CR3   [/0]? negative error on CR3  (Rate<SUB>band3</SUB>neg)
+ 261-266  I6    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>      Ct0     ? Total(0.3-10keV)-band measured counts in the
+                                  source region (Counts_band0)
+ 268-273  I6    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>      Ct1     ? Soft(0.3-1keV)-band measured counts in the
+                                  source region (Counts_band1)
+ 275-280  I6    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>      Ct2     ? Medium(1-2keV)-band measured counts in the
+                                  source region (Counts_band2)
+ 282-287  I6    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>      Ct3     ? Hard(2-10keV)-band measured counts in the
+                                  source region (Counts_band3)
+ 289-297  F9.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>      bgCt0   ? Total(0.3-10keV)-band expected background
+                                  counts in the source region (BGCounts_band0)
+ 299-307  F9.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>      bgCt1   ? Soft(0.3-1keV)-band expected background
+                                  counts in the source region (BGCounts_band1)
+ 309-317  F9.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>      bgCt2   ? Medium(1-2keV)-band expected background
+                                  counts in the source region (BGCounts_band2)
+ 319-327  F9.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>      bgCt3   ? Hard(2-10keV)-band expected background
+                                  counts in the source region (BGCounts_band3)
+ 329-333  F5.1  ---     CF0     ? Total(0.3-10keV)-band count-rate correction
+                                  factor (CF_band0)
+ 335-339  F5.1  ---     CF1     ? Soft(0.3-1keV)-band count-rate correction
+                                  factor (CF_band1)
+ 341-345  F5.1  ---     CF2     ? Medium(1-2keV)-band count-rate correction
+                                  factor (CF_band2)
+ 347-351  F5.1  ---     CF3     ? Hard(2-10keV)-band count-rate correction
+                                  factor (CF_band3)
+ 353-360  E8.3  ---     PcstS0  [0/1]? <A HREF="#sRM3.3">Probability that the source is constant</A>
+                                  between snapshots in the total band
+                                  (PvarPchiSnapshot_band0) (3)
+ 362-369  E8.3  ---     PcstS1  [0/1]? <A HREF="#sRM3.3">Probability that the source is constant</A>
+                                  between snapshots in the soft band
+                                  (PvarPchiSnapshot_band1) (3)
+ 371-378  E8.3  ---     PcstS2  [0/1]? <A HREF="#sRM3.3">Probability that the source is constant</A>
+                                  between snapshots in the medium band
+                                  (PvarPchiSnapshot_band2) (3)
+ 380-387  E8.3  ---     PcstS3  [0/1]? <A HREF="#sRM3.3">Probability that the source is constant</A>
+                                  between snapshots in the hard band
+                                  (PvarPchiSnapshot_band3) (3)
+ 389-396  E8.3  ---     Pcst0   [0/1]? <A HREF="#sRM3.3">Probability that the source is constant</A>
+                                  between observations in the total band
+                                  (PvarPchiObsID_band0) (3)
+ 398-405  E8.3  ---     Pcst1   [0/1]? <A HREF="#sRM3.3">Probability that the source is constant</A>
+                                  between observations in the soft band
+                                  (PvarPchiObsID_band1) (3)
+ 407-414  E8.3  ---     Pcst2   [0/1]? <A HREF="#sRM3.3">Probability that the source is constant</A>
+                                  between observations in the medium band
+                                  (PvarPchiObsID_band2) (3)
+ 416-423  E8.3  ---     Pcst3   [0/1]? <A HREF="#sRM3.3">Probability that the source is constant</A>
+                                  between observations in the hard band
+                                  (PvarPchiObsID_band3) (3)
+ 425-430  F6.3  ---     HR1     [-1/1]? Hardness Ratio 1 [(M-S)/(M+S)]
+ 432-437  F6.3  ---     E_HR1   [/]? <A HREF="#sRM3.6">positive error on HR1 (HR1_pos) (6)</A>
+ 439-444  F6.3  ---     e_HR1   [/]? <A HREF="#sRM3.6">negative error on HR1 (HR1_neg) (6)</A>
+ 446-451  F6.3  ---     HR2     [-1/1]? Hardness Ratio 2 [(H-M)/(H+M)]
+ 453-458  F6.3  ---     E_HR2   [/]? <A HREF="#sRM3.6">positive error on HR2 (HR2_pos) (6)</A>
+ 460-465  F6.3  ---     e_HR2   [/]? <A HREF="#sRM3.6">negative error on HR2 (HR2_neg) (6)</A>
+ 467-474  E8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cm-2" TARGET="explain">cm-2</A>    NHg     Galactic absorption column in the direction
+                                of the source  (GalNH)
+     476  I1    ---     M1      [0/2] <A HREF="#sRM3.4">Method of estimating the power-law</A>
+                                spectral properties (whichPow) (4)
+     478  I1    ---     M2      [0/2] <A HREF="#sRM3.4">Method of estimating the APEC spectral</A>
+                                properties (whichAPEC) (4)
+--------------------------------------------------------------------------------
+ 480-488  E9.3 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJ/m2/ct" TARGET="explain">mJ/m2/ct</A> CFO1    Summary count-to-observed-flux conversion factor
+                                assuming a power-law spectrum  (PowECFO)
+ 490-498  E9.3 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJ/m2/ct" TARGET="explain">mJ/m2/ct</A> CFU1    Summary count-to-unabsorbed-flux factor assuming
+                                a power-law spectrum  (PowECFU)
+ 500-507  E8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJ/m2/s" TARGET="explain">mJ/m2/s</A> Gam     Summary observed 0.3-10 keV flux assuming a
+                                power-law spectrum (PowFlux)
+ 509-516  E8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJ/m2/s" TARGET="explain">mJ/m2/s</A> E_Gam   Positive error on Gam (PowFlux_pos)
+ 518-526  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJ/m2/s" TARGET="explain">mJ/m2/s</A> e_Gam   [/0] Negative error on Gam (PowFlux_neg)
+ 528-536  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   FpO1    Peak observed 0.3-10 keV flux assuming a
+                                power-law spectrum  (PowPeakFlux)
+ 538-546  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   E_FpO1  Positive error FpO1 (PowPeakFlux_pos)
+ 548-556  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   e_FpO1  [/0]  Negative error on FpO1 (PowPeakFlux_neg)
+ 558-566  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   FPU1    Summary unabsorbed 0.3-10 keV flux assuming a
+                                power-law spectrum (PowUnabsFlux)
+ 568-576  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   E_FPU1  [/] <A HREF="#sRM3.7">Positive error on FPU1 (PowUnabsFlux_pos)(7)</A>
+ 578-586  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   e_FPU1  [/] <A HREF="#sRM3.7">Negative error on FPU1 (PowUnabsFlux_neg)(7)</A>
+ 588-596  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   FpU1    Peak unabsorbed 0.3-10 keV flux assuming a
+                                power-law spectrum  (PowPeakUnabsFlux)
+ 598-606  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   E_FpU1  [/] <A HREF="#sRM3.7">Positive error on FpU1</A>
+                                    (PowPeakUnabsFlux_pos) (7)
+ 608-616  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   e_FpU1  [/] <A HREF="#sRM3.7">Negative error on FpU1</A>
+                                    (PowPeakUnabsFlux_neg) (7)
+ 618-626  E9.3 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJ/m2/ct" TARGET="explain">mJ/m2/ct</A> CFO2    Summary count-to-observed-flux conversion
+                                factor assuming a APEC spectrum  (APECECFO)
+ 628-636  E9.3 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJ/m2/ct" TARGET="explain">mJ/m2/ct</A> CFU2    Summary count-to-unabsorbed-flux
+                                factor assuming a APEC spectrum (APECECFU)
+ 638-646  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   FlO2    Summary observed 0.3-10 keV flux assuming a
+                                APEC spectrum (APECFlux)
+ 648-656  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   E_FlO2  Positive error on FlO2 (APECFlux_pos)
+ 658-666  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   e_FlO2  [/0]?=<A HREF="#sRM3.7">1  Negative error on FlO2</A>
+                                        (APECFlux_neg) (7)
+ 668-676  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   FpU2    Peak observed 0.3-10 keV flux assuming a APEC
+                                spectrum (APECPeakFlux)
+ 678-686  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   E_FpU2  Positive error on FpU2 (APECPeakFlux_pos)
+ 688-696  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   e_FpU2  [/0] Negative error on FpU2 (APECPeakFlux_neg)
+ 698-706  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   FUO2    Summary unabsorbed 0.3-10 keV flux assuming a
+                                APEC spectrum    (APECUnabsFlux)
+ 708-716  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   E_FUO2  [/] <A HREF="#sRM3.7">Positive error on FUO2</A>
+                                    (APECUnabsFlux_pos) (7)
+ 718-726  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   e_FUO2  [/] <A HREF="#sRM3.7">Negative error on FUO2</A>
+                                    (APECUnabsFlux_neg) (7)
+ 728-736  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   FA2     Unabsorbed 0.3-10 keV flux assuming a APEC
+                                spectrum  (APECPeakUnabsFlux)
+ 738-746  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   E_FA2   [/] <A HREF="#sRM3.7">Positive error on FA2</A>
+                                    (APECPeakUnabsFlux_pos) (7)
+ 748-756  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   e_FA2   [/] <A HREF="#sRM3.7">Negative error on FA2</A>
+                                    (APECPeakUnabsFlux_neg) (7)
+--------------------------------------------------------------------------------
+ 758-766  E9.3 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJ/m2/ct" TARGET="explain">mJ/m2/ct</A> CCFO1   Count-rate-to-observed-flux conversion factor
+                                assuming a fixed power-law spectrum
+                                (FixedPowECFO)
+ 768-776  E9.3 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJ/m2/ct" TARGET="explain">mJ/m2/ct</A> CCFU1   Count-rate-to-unabsorbed-flux factor assuming a
+                                fixed power-law spectrum  (FixedPowECFU)
+ 778-786  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   FO1     Observed 0.3-10 keV flux assuming a fixed
+                                power-law spectrum    (FixedPowFlux)
+ 788-796  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   E_FO1   Positive error on FO1 (FixedPowFlux_pos)
+ 798-806  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   e_FO1   [/0] Negative error on FO1 (FixedPowFlux_neg)
+ 808-816  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   FU1     Unabsorbed 0.3-10 keV flux assuming a fixed
+                                power-law spectrum (FixedPowUnabsFlux)
+ 818-826  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   E_FU1   Positive error on FU1
+                                    (FixedPowUnabsFlux_pos)
+ 828-836  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   e_FU1   [/0] Negative error on FU1
+                                    (FixedPowUnabsFlux_neg)
+ 838-846  E9.3 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJ/m2/ct" TARGET="explain">mJ/m2/ct</A> CCFO2   Count-rate-to-observed-flux conversion factor
+                                assuming a fixed APEC spectrum (FixedAPECECFO)
+ 848-856  E9.3 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJ/m2/ct" TARGET="explain">mJ/m2/ct</A> CCFU2   Count-rate-to-unabsorbed-flux factor assuming a
+                                fixed APEC spectrum (FixedAPECECFU)
+ 858-866  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   FO2     Observed 0.3-10 keV flux assuming a fixed APEC
+                                spectrum (FixedAPECFlux)
+ 868-876  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   E_FO2   Positive error on FO2 (FixedAPECFlux_pos)
+ 878-886  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   e_FO2   [/0] Negative error on FO2 (FixedAPECFlux_neg)
+ 888-896  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   FU2     Unabsorbed 0.3-10 keV flux assuming a fixed APEC
+                                spectrum (FixedAPECUnabsFlux)
+ 898-906  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   E_FU2   Positive error on FU2 (FixedAPECUnabsFlux_pos)
+ 908-916  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   e_FU2   [/0] Negative error on FU2
+                                    (FixedAPECUnabsFlux_neg)
+ 918-926  E9.3 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJ/m2/ct" TARGET="explain">mJ/m2/ct</A> CFO1H   ? Count-rate-to-observed-flux conversion factor
+                                  derived from the hardness ratios assuming a
+                                  power-law spectrum (InterpPowECFO)
+ 928-936  E9.3 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJ/m2/ct" TARGET="explain">mJ/m2/ct</A> CFU1H   ? Count-rate-to-unabsorbed-flux factor derived
+                                  from the hardness ratios assuming a power-law
+                                  spectrum (InterpPowECFU)
+ 938-946  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   FO1H    ? Observed 0.3-10 keV flux derived from
+                                  the hardness ratios assuming a power-law
+                                  spectrum (InterpPowFlux)
+ 948-956  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   E_FO1H  ? Positive error on FO1H (InterpPowFlux_pos)
+ 958-966  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   e_FO1H  [/0]? Negative error on FO1H (InterpPowFlux_neg)
+ 968-976  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   FU1H    ? Unabsorbed 0.3-10 keV flux derived from the
+                                  hardness ratios assuming a power-law spectrum
+                                  (InterpPowUnabsFlux)
+ 978-986  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   E_FU1H  [/]? <A HREF="#sRM3.7">Positive error on FU1H</A>
+                                    (InterpPowUnabsFlux_pos) (7)
+ 988-996  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   e_FU1H  [/]? <A HREF="#sRM3.7">Negative error on FU1H</A>
+                                    (InterpPowUnabsFlux_neg) (7)
+ 998-1006  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cm-2" TARGET="explain">cm-2</A>    NH1H    ? Absorption column derived from the hardness
+                                  ratios assuming a power-law spectrum
+                                  (InterpPowNH)
+ 1008-1016  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cm-2" TARGET="explain">cm-2</A>    E_NH1H  [-1/]? <A HREF="#sRM3.7">Positive error on NH1H</A>
+                                       (InterpPowNH_pos) (7)
+ 1018-1026  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cm-2" TARGET="explain">cm-2</A>    e_NH1H  [/1]? <A HREF="#sRM3.7">Negative error on NH1H</A>
+                                      (InterpPowNH_neg) (7)
+ 1028-1032  F5.2  ---     Gam1    ? Photon index derived from the hardness ratios
+                                  assuming a power-law spectrum (InterpPowGamma)
+ 1034-1038  F5.2  ---     E_Gam1  [-1/]? <A HREF="#sRM3.7">Positive error on Gam1</A>
+                                       (InterpPowGamma_pos) (7)
+ 1040-1044  F5.2  ---     e_Gam1  [/1]? <A HREF="#sRM3.7">Negative error on Gam1</A>
+                                      (InterpPowGamma_neg) (7)
+ 1046-1054  E9.3 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJ/m2/ct" TARGET="explain">mJ/m2/ct</A> CFO2H   ? Count-rate-to-observed-flux conversion factor
+                                  derived from the hardness ratios assuming a
+                                  APEC spectrum (InterpAPECECFO)
+ 1056-1064  E9.3 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJ/m2/ct" TARGET="explain">mJ/m2/ct</A> CFU2H   ? Count-rate-to-unabsorbed-flux factor
+                                  derived from the hardness ratios assuming a
+                                  APEC spectrum (InterpAPECECFU)
+ 1066-1074  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   FU2HO   ? Observed 0.3-10 keV flux derived from the
+                                  hardness ratios assuming a APEC spectrum
+                                  (InterpAPECFlux)
+ 1076-1084  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>  E_FU2HO  ? Positive error on FU2HO (InterpAPECFlux_pos)
+ 1086-1094  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>  e_FU2HO  [/0]? Negative error on FU2HO
+                                     (InterpAPECFlux_neg)
+ 1096-1104  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   FU2HU   ? Unabsorbed 0.3-10 keV flux derived from the
+                                  hardness ratios assuming a APEC spectrum
+                                  (InterpAPECUnabsFlux)
+ 1106-1114  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>  E_FU2HU  [/]? <A HREF="#sRM3.7">Positive error on FU2HU</A>
+                                     (InterpAPECUnabsFlux_pos) (7)
+ 1116-1124  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>  e_FU2HU  [/]? <A HREF="#sRM3.7">Negative error on FU2HU</A>
+                                     (InterpAPECUnabsFlux_neg) (7)
+ 1126-1134  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cm-2" TARGET="explain">cm-2</A>    NH2H    [/]? Absorption column derived from the hardness
+                                  ratios assuming a APEC spectrum (InterpAPECNH)
+ 1136-1144  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cm-2" TARGET="explain">cm-2</A>    E_NH2H  [/]? <A HREF="#sRM3.7">Positive error on NH2H</A>
+                                     (InterpAPECNH_pos) (7)
+ 1146-1154  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cm-2" TARGET="explain">cm-2</A>    e_NH2H  [/]? <A HREF="#sRM3.7">Negative error on NH2H</A>
+                                     (InterpAPECNH_neg) (7)
+ 1156-1160  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?keV" TARGET="explain">keV</A>     kT2H    ? Photon index derived from the hardness ratios
+                                  assuming a APEC spectrum (InterpAPECkT)
+ 1162-1166  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?keV" TARGET="explain">keV</A>     E_kT2H  [/]? <A HREF="#sRM3.7">Positive error on kT2H</A>
+                                     (InterpAPECkT_pos) (7)
+ 1168-1173  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?keV" TARGET="explain">keV</A>     e_kT2H  [/]? <A HREF="#sRM3.7">Negative error on kT2H</A>
+                                     (InterpAPECkT_neg) (7)
+ 1175-1179  F5.2  ---     P1      [0/1] The probability that the HR values of this
+                                source could be obtained if the true spectrum
+                                is an absorbed power-law (P_pow)
+ 1181-1185  F5.2  ---     P2      [0/1] The probability that the HR values of this
+                                source could be obtained if the true spectrum
+                                is an absorbed APEC (P_APEC)
+ 1187-1195  E9.3 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJ/m2/ct" TARGET="explain">mJ/m2/ct</A> CF1OS   ? Count-rate-to-observed-flux conversion
+                                  factor from a power-law spectral fit
+                                  (FittedPowECFO)
+ 1197-1205  E9.3 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJ/m2/ct" TARGET="explain">mJ/m2/ct</A> CF1US   ? Count-rate-to-unabsorbed-flux factor from a
+                                  power-law spectral fit (FittedPowECFU)
+ 1207-1215  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   FO1S    ? Observed 0.3-10 keV flux from a power-law
+                                  spectral fit (FittedPowFlux)
+ 1217-1225  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   E_FO1S  ? Positive error on FO1S (FittedPowFlux_pos)
+ 1227-1235  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   e_FO1S  [/0]? Negative error on FO1S (FittedPowFlux_neg)
+ 1237-1245  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   FU1S    ? Unabsorbed 0.3-10 keV flux from a power-law
+                                  spectral fit (FittedPowUnabsFlux)
+ 1247-1255  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   E_FU1S  [/]? <A HREF="#sRM3.7">Positive error on FU1S</A>
+                                     (FittedPowUnabsFlux_pos) (7)
+ 1257-1265  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   e_FU1S  [/]? <A HREF="#sRM3.7">Negative error on FU1S</A>
+                                     (FittedPowUnabsFlux_neg) (7)
+ 1267-1275  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cm-2" TARGET="explain">cm-2</A>    NH1S    ? Absorption column from a power-law spectral
+                                  fit (FittedPowNH)
+ 1277-1285  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cm-2" TARGET="explain">cm-2</A>    E_NH1S  ? Positive error on NH1S (FittedPowNH_pos)
+ 1287-1295  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cm-2" TARGET="explain">cm-2</A>    e_NH1S  [/]? <A HREF="#sRM3.7">Negative error on NH1S (FittedPowNH_neg)(7)</A>
+ 1297-1302  F6.3  ---     Gamma   ? Photon index from a power-law spectral fit
+                                  (FittedPowGamma)
+ 1304-1310  F7.3  ---    E_Gamma  [/]? <A HREF="#sRM3.7">Positive error on Gamma</A>
+                                     (FittedPowGamma_pos) (7)
+ 1312-1319  F8.3  ---    e_Gamma  [/]? <A HREF="#sRM3.7">Negative error on Gamma</A>
+                                     (FittedPowGamma_neg) (7)
+ 1321-1326  F6.1  ---     chi1    ? Churazov-weighted chi-squared for the
+                                  power-law spectral fit (FittedPowChi)
+ 1328-1330  I3    ---     df1     ? Degrees of freedom in the power-law spectral
+                                  fit (FittedPowDOF)
+ 1332-1337  F6.1  ---     chi1r   ? Churazov-weighted reduced chi-squared for the
+                                  power-law spectral fit (FittedPowRedChi)
+ 1339-1347  E9.3 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJ/m2/ct" TARGET="explain">mJ/m2/ct</A> CF2OS   ? Count-rate-to-observed-flux conversion factor
+                                  from a APEC spectral fit (FittedAPECECFO)
+ 1349-1357  E9.3 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJ/m2/ct" TARGET="explain">mJ/m2/ct</A> CF2US   ? Count-rate-to-unabsorbed-flux factor from
+                                  a APEC spectral fit (FittedAPECECFU)
+ 1359-1367  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   FO2S    ? Observed 0.3-10 keV flux from a APEC spectral
+                                  fit (FittedAPECFlux)
+ 1369-1377  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   E_FO2S  ? Positive error on FO2S (FittedAPECFlux_pos)
+ 1379-1387  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   e_FO2S  [/]? Negative error on FO2S (FittedAPECFlux_neg)
+ 1389-1397  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   FU2S    ? Unabsorbed 0.3-10 keV flux from a APEC
+                                  spectral fit (FittedAPECUnabsFlux)
+ 1399-1407  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   E_FU2S  [/]? <A HREF="#sRM3.7">Positive error on FU2S</A>
+                                     (FittedAPECUnabsFlux_pos) (7)
+ 1409-1417  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   e_FU2S  [/]? <A HREF="#sRM3.7">Negative error on FU2S</A>
+                                     (FittedAPECUnabsFlux_neg) (7)
+ 1419-1427  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cm-2" TARGET="explain">cm-2</A>    NH2S    ? Absorption column from a APEC spectral fit
+                                  (FittedAPECNH)
+ 1429-1437  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cm-2" TARGET="explain">cm-2</A>    E_NH2S  [/]? <A HREF="#sRM3.7">Positive error on NH2S</A>
+                                     (FittedAPECNH_pos) (7)
+ 1439-1447  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cm-2" TARGET="explain">cm-2</A>    e_NH2S  [/]? <A HREF="#sRM3.7">Negative error on NH2S</A>
+                                     (FittedAPECNH_neg) (7)
+ 1449-1455  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?keV" TARGET="explain">keV</A>     Gam2S   ? Photon index from a APEC spectral fit
+                                  (FittedAPECkT)
+ 1457-1463  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?keV" TARGET="explain">keV</A>    E_Gam2S  [/]? <A HREF="#sRM3.7">Positive error on Gam2S</A>
+                                     (FittedAPECkT_pos) (7)
+ 1465-1471  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?keV" TARGET="explain">keV</A>    e_Gam2S  [/0]? <A HREF="#sRM3.7">Negative error on Gam2S</A>
+                                     (FittedAPECkT_neg) (7)
+ 1473-1481  F9.1  ---     chi2    ? Churazov-weighted chi-squared for the APEC
+                                  spectral fit (FittedAPECChi)
+ 1483-1485  I3    ---     df2     ? Degrees of freedom in the APEC spectral fit
+                                  (FittedAPECDOF)
+ 1487-1492  F6.1  ---     chi2r   ? Churazov-weighted reduced chi-squared for the
+                                  APEC spectral fit (FittedAPECRedChi)
+--------------------------------------------------------------------------------
+ 1494-1496  I3    ---     Nxm     [0/669] Number of matches in the external
+                                catalogue cross-correlation (Numxcorr)
+ 1498-1500  I3    ---     Nxm1    [0/655] Number of matches in the external
+                                catalogue cross-correlation, excluding the
+                                2MASS and USNO-B1 catalogues (Numxcorr_slim)
+    1502  I1    ---     HRI     [0/1] Whether this object matches (1) a
+                                ROSAT HRI position (<A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=IX/28">IX/28</A>) (isROSHRI)
+    1504  I1    ---     PSPC    [0/1] Whether this object matches (1) a
+                                ROSAT PSPC position (<A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=IX/30">IX/30</A>) (isROSPSPC)
+    1506  I1    ---     3X      [0/1] Whether this object matches (1) a
+                                3XMM-DR4 position (<A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=IX/44">IX/44</A>) (is3XMM)
+    1508  I1    ---     XMMSL1  [0/1] Whether this object matches (1) a
+                                XMM Slew survey (XMMSL1, <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/A%2BA/480/611">J/A+A/480/611</A>)
+                                position (isXMMSL1)
+    1510  I1    ---     Sw      [0/1] Whether this object matches (1) a SwiftFT
+                                position (<A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/A%2BA/528/A122">J/A+A/528/A122</A>) (isSwiftFT)
+    1512  I1    ---     1SW     [0/1] Whether this object matches (1) a 1SWXRT
+                                position (<A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/A%2BA/551/A142">J/A+A/551/A142</A>) (is1SWXRT)
+    1514  I1    ---     GRB     [0/1] Whether this object matches (1) a XRT GRB
+                                position (<A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/MNRAS/397/1177">J/MNRAS/397/1177</A>) (isXRTGRB)
+    1516  I1    ---     Q       [0/1] Whether this object matches (1) a SDSS-QSO
+                                position (<A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=VII/269">VII/269</A>) (isSDSSQSO)
+    1518  I1    ---     2M      [0/1] Whether this object matches (1) a 2MASS
+                                position (<A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=II/246">II/246</A>) (is2MASS)
+    1520  I1    ---     B1      [0/1] Whether this object matches (1) a USNO-B1
+                                position (<A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=I/284">I/284</A>) (isUSNOB1)
+    1522  I1    ---     Sim     [0/1] Whether this object matches (1) a SIMBAD
+                                position (isSIMBAD)
+<HR>
+<A NAME="sRM3.1"><B>Note (1)</B>: Detections flags are:
+      0 = good
+      1 = reasonable
+      2 = poor
+     +8 = good(8), reasonable(9), poor(10) in a region marked as
+          containing artifacts
+    +16 = good(8), reasonable(9), poor(10) in a region marked as
+          containing diffuse emission
+<A NAME="sRM3.2"><B>Note (2)</B>: Field flag takes the values:
+      0 = OK
+      1 = has artifacts
+      2 = has diffuse emission
+<A NAME="sRM3.3"><B>Note (3)</B>: according to the Pearson's {chi}-square test
+
+<A NAME="sRM3.4"><B>Note (4)</B>: provenance of the summary spectral fit:
+      0 = fixed spectrum
+      1 = HR-derived
+      2 = fitted spectrum
+<A NAME="sRM3.5"><B>Note (5)</B>: a value of -1 indicates indicates that the source was never in the
+    field of view, i.e. was detected and localized via the PSF wings.
+<A NAME="sRM3.6"><B>Note (6)</B>: In a small number of cases where the Bayesian approach was used
+    to derive the parameter, the mean value lay outside the 1-{sigma}
+    confidence interval. In these cases the positive error may be
+    negative, and the negative error may be positive.
+<A NAME="sRM3.7"><B>Note (7)</B>: a value of -1 for positive error or +1 for negative error means
+     that the error was unconstrained.
+<HR>
+
+<A NAME="sRM2.2"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.58"> xcor.dat</A>
+<HR>
+   Bytes Format Units   Label     Explanations
+<HR>
+   1-  5  A5    ---     ---       [1SXPS]
+   7- 22  A16   ---     1SXPS     Unique 1SXPS ID (JHHMMSS.S+DDMMSS)
+  24- 68  A45   ---     Name      Designation of the source in the external
+                                catalog (ExtCat_ID)
+  70- 77  A8    ---     Cat       Catalog containing the matched source (Catalog)
+  79- 84  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  r         [0/1081] distance between the 1SXPS source
+                                and external catalog source (Distance)
+  86- 94  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     RAdeg     J2000 right ascension of the source
+                                in the external catalog (RA)
+  96-104  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEdeg     J2000 declination of the source in the external
+                                catalog (Decl)
+ 106-110  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  Err90     [0/680]? 90% confidence radial uncertainty in
+                                the external catalog position, including any
+                                systematic error.
+<HR>
+================================================================================
+<B>(End)</B>       Phil A. Evans [Leicester],  Francois Ochsenbein [CDS]    21-Nov-2013
+
+</PRE><!-- ....wait for 1 children: %0=26438 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

@@ -1,0 +1,459 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of IX/15</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Sun Jul 23 17:43:46 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0921180301OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of IX/15 :<BR>Einstein EMSS Survey (Gioia+ 1990, Stocke+ 1991)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0921180301OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>IX/15</B>       Einstein EMSS Survey       (Gioia+ 1990, Stocke+ 1991)
+================================================================================
+The EINSTEIN Observatory Extended Medium-Sensitivity Survey (EMSS)
+     Gioia I.M., Maccacaro T., Schild R.E., Wolter A.
+    &lt;Astrophys. J. Suppl. Ser. 72, 567 (1990)&gt;
+    =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1990ApJS...72..567G">1990ApJS...72..567G</A>
+     Stocke J.T., Morris S.L., Gioia I.M., Maccacaro T., Schild R.E.,
+     Wolter A., Fleming T.A., Henry J.P.
+    &lt;Astrophys. J. Suppl. Ser. 76, 813 (1991)&gt;
+    =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1991ApJS...76..813S">1991ApJS...76..813S</A>
+================================================================================
+<B>ADC_Keywords</B>: X-ray sources ; Active gal. nuclei ; BL Lac objects ;
+              Clusters, galaxy ; Galactic plane ;
+<B>Mission_Name</B>: Einstein
+
+
+<A NAME="sRM11.1"><B>Description</B>:
+     The Einstein Extended Medium Sensitivity Survey (EMSS) consists
+  of 835 serendipitous X-ray sources detected at or above 4 times the
+  rms level in 1435 IPC fields with their centers located away from the
+  galactic plane. Their limiting sensitivities range from ~5*10-14 to
+  to ~ 3*10-12 erg.cm-2.s-1 in the 0.3-3.5keV band. A total area of 778
+  square degrees of the high galactic latitude sky  (|b|&gt;20) has been
+  covered.  The analysis has been performed using data from the Rev 1
+  processing system at the CfA.
+     The resulting EMSS catalog is a flux-limited and homogeneous
+  sample of astronomical objects that can be used for statistical
+  studies.  Here we present the table listing all the sources taken from
+  the publication referenced below and the optical identifications. At
+  present over 96% of the 835 X-ray sources have been successfully
+  identified in the following proportions: active galactic nuclei (QSO's,
+  quasars and Seyfert), 51.1%; BL Lacertae objects, 4.3%; clusters of
+  galaxies, 12.2%; normal galaxies, 2.1%; cooling flow galaxies, 0.6%;
+  Galactic stars 25.8%; and unidentified, 3.9%. Most of the individual
+  optical counterparts are previously unknown objects and so constitute
+  large statistical samples independent of previously selection methods.
+     The contents of the table is described below.  The sky coverage
+  computed for a specific assumed source spectrum is also given under
+  "Additional Information" below.  For further details please see the
+  published articles: Gioia et al. 1990, Stocke et al. 1991.
+
+<A NAME="sRM99.1"><B>Additional Information</B>:
+
+                 The EMSS sky coverage.
+                 ----------------------
+
+  This sky coverage has been produced using the counts in the
+  standard detection algorithm and assuming a power law spectrum with
+  energy index = 1 and the measured Galactic hydrogen column density in
+  the direction of each IPC pointing.  We caution the user that this sky
+  coverage is not appropriate for computation of functions like
+  logN(&gt;S)-logS, or Luminosity Functions of resolved sources, like
+  clusters of galaxies or "normal" galaxies, nor of stars.  The fluxes
+  for these objects have been calculated either using extended counts,
+  when appropriate, and/or different assumptions for the incident
+  spectrum (see below).
+
+           Limiting Sensitivity            Area Covered
+              (erg/cm**2/s)                 (sq. deg)
+
+                 5.08E-14                     0.09
+                 6.09E-14                     0.72
+                 7.31E-14                     2.54
+                 8.78E-14                     6.37
+                 1.05E-13                    15.1
+                 1.26E-13                    29.4
+                 1.52E-13                    55.2
+                 1.82E-13                    94.2
+                 2.18E-13                   139.4
+                 2.62E-13                   191.6
+                 3.14E-13                   249.5
+                 3.77E-13                   319.1
+                 4.53E-13                   402.0
+                 5.43E-13                   497.0
+                 6.52E-13                   582.9
+                 7.83E-13                   657.7
+                 9.39E-13                   711.8
+                 1.13E-12                   743.7
+                 1.35E-12                   762.7
+                 1.62E-12                   771.9
+                 1.95E-12                   775.7
+                 2.34E-12                   777.4
+                 2.80E-12                   777.9
+                 3.36E-12                   778.1
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.89">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.90">&#215; <A HREF="#sRM2.1">catalog.dat</A>      194      835   EMSS Catalogue
+<A NAME="sRM-F.91">&#215; notes.dat         80      412   Notes to EMSS sources
+<HR>
+
+<A NAME="sRM13.1"><B>See also</B>:
+    <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/18">IX/18</A> : EINSTEIN extended source survey (EXSS) (Oppenheimer+ 1997)
+    <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/ApJ/461/127">J/ApJ/461/127</A> : The Einstein Two-Sigma Catalog (Moran+ 1996)
+
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.90"> catalog.dat</A>
+<HR>
+   Bytes Format  Units     Label    Explanations
+<HR>
+   2- 14  A13    ---       name    *<A HREF="#sRM3.1">Name of EMSS source</A>
+  17- 18  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?h" TARGET="explain">h</A>         RAh     *<A HREF="#sRM3.2">Right Ascension (B1950.0) hours</A>
+  19- 20  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?min" TARGET="explain">min</A>       RAm     *<A HREF="#sRM3.2">RA minutes</A>
+  21- 24  F4.1   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>         RAs     *<A HREF="#sRM3.2">RA seconds</A>
+      25  A1     ---       DE-     *<A HREF="#sRM3.2">Declination sign (B1950.0)</A>
+  26- 27  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>       DEd     *<A HREF="#sRM3.2">Dec degrees</A>
+  28- 29  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>    DEm     *<A HREF="#sRM3.2">Dec arcmin</A>
+  30- 33  F4.1   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>    DEs     *<A HREF="#sRM3.2">Dec arcsec</A>
+  35- 36  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>    e_pos   *<A HREF="#sRM3.3">Positional Uncertainty</A>
+  37- 40  I4     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>    x       *? <A HREF="#sRM3.4">Position offset between optical and X-ray</A>
+  41- 44  I4     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>    y       *? <A HREF="#sRM3.4">Position offset between optical and X-ray</A>
+  46- 51  F6.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?10-16W/m2" TARGET="explain">10-16W/m2</A> fX      *<A HREF="#sRM3.5">X-ray flux (*1.E-13 ergs/cm**2/s or</A>
+                                     *1.E-16 W/m**2) in the 0.3-3.5 keV band
+      52  A1     ---      ext_flag *<A HREF="#sRM3.5">Flagged '*' if source is extended</A>
+  53- 57  F5.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?10-16W/m2" TARGET="explain">10-16W/m2</A> e_fX    *<A HREF="#sRM3.5">1 sigma error on X-ray flux</A>
+  59- 64  F6.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/ks" TARGET="explain">ct/ks</A>     ctrate  *<A HREF="#sRM3.6">Corrected IPC count rate</A>
+  66- 69  F4.1   ---       sn      *<A HREF="#sRM3.7">Signal to Noise Ratio</A>
+  71- 76  F6.1   ---       cts     *<A HREF="#sRM3.8">Uncorrected net counts in 0.2-3.5 keV</A>
+  78- 81  F4.1   ---       e_cts   *<A HREF="#sRM3.8">Error on net counts</A>
+  83- 87  I5     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>         live    *<A HREF="#sRM3.9">Corrected exposure time</A>
+  89- 93  F5.1   ---       bkgcts  *<A HREF="#sRM3.9">Total background counts</A>
+  95- 99  I5     ---       seqno   *<A HREF="#sRM3.10">IPC sequence number of the image used</A>
+ 101-104  I4     ---       cts_ext *? <A HREF="#sRM3.10">Net extended counts</A>
+ 106-111  F6.4   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?10%2b25m-2" TARGET="explain">10+25m-2</A>  nH      *<A HREF="#sRM3.11">Hydrogen column density</A>
+                                     (*E+25 m^-2 or *E+21 cm^-2)
+ 113-117  F5.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>       Vmag    *? <A HREF="#sRM3.12">Visual magnitude</A>
+     119  A1     ---       n_fR     '&lt;' for upper limit in fR
+ 120-125  F6.1   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJy" TARGET="explain">mJy</A>       fR      *? <A HREF="#sRM3.13">Radio flux at 5 GHZ</A>
+ 127-131  F5.2   ---       fX/fv   *? <A HREF="#sRM3.14">Logarithm of X-ray to visual flux ratio</A>
+ 133-136  A4     ---       class   *<A HREF="#sRM3.15">Proposed identification class of the</A>
+                                     X-ray source (see below)
+ 138-141  A4     ---       r_class *<A HREF="#sRM3.16">Reference for class</A>
+ 143-147  F5.3   ---       z       *? <A HREF="#sRM3.17">Redshift</A>
+     149  A1     ---       n        'n' if a note on the source is in file notes
+ 151-194  A44    ---       comment *<A HREF="#sRM3.18">Miscellaneous information on the source</A>
+<HR>
+<A NAME="sRM3.1"><B>Note on name</B>:
+  This column gives the source name; denoted by MS, followed by
+  right ascension in hours, minutes, and truncated fraction of minutes,
+  then declination in degrees and arcminutes (i.e. MS0013.4+1558).
+<A NAME="sRM3.2"><B>Note on RAh, RAm, RAs, DE-, DEd, DEm, DEs</B>:
+  The right ascension and declination (B1950) correspond to the
+  centroid of the X-ray source.
+<A NAME="sRM3.3"><B>Note on e_pos</B>:
+  The e_pos column gives the positional uncertainty, in arcseconds,
+  the error associated with the position (90% confidence error circle
+  radius).  A positional uncertainty of 4" indicates sources detected
+  also by the HRI.  In these cases the coordinates of the source come
+  from the HRI.
+<A NAME="sRM3.4"><B>Note on  x, y</B>:
+  The offset in position between the X-ray centroid and the
+  proposed optical counterpart in arcseconds of R.A. (x)
+  and dec (y). Negative offsets indicate directions west
+  and south of the X-ray centroids. Most of the offsets were measured
+  automatically on the POSS or SRC J plates. They are accurate to
+  &#177; 5". For the SAO stars we have used the equinox 1950, epoch
+  1980 positions from the SAO catalog. When the optical counterpart
+  is a radio source (Column &lt;fR&gt;), the VLA radio position is used
+  (&#177;1"). If more than one optical object is visible on the POSS within 10"
+  of the offset position listed in this column, the identity of the
+  optical counterpart is clarified with a note in the note column.
+  When the optical counterpart is a cluster of galaxies, the optical
+  offset refers to the brightest cluster member.
+<A NAME="sRM3.5"><B>Note on fX, ext_flag, e_fX,</B>:
+  These columns give the X-ray flux (in units of 10E-13
+  erg/cm**2/s) and the one sigma error on the X-ray flux in the 0.3-3.5
+  keV band. The ext_flag column is flagged with an asterisk ('*') if
+  extended counts from the column cts_ext were used to calculate the
+  X-ray flux. The error on the X-ray flux is from photon counting
+  statistics only, and is computed as the square root of the total
+  observed counts in the detection cell.  The flux has been computed
+  in the 0.3-3.5 keV band for consistency with previous work (note that
+  the Rev.1 processing computes it in the 0.2-3.5 keV band).  The following
+  assumptions have been adopted:
+
+        (a) For the AGN, BL Lac objects and unidentified sources; we have
+         multiplied the corrected count rate given in the ctrate column by
+         a conversion factor appropriate for a power law spectrum with
+         an energy index alpha = 1.0 and with the measured Galactic
+         hydrogen column density in the direction of each IPC pointing.
+        (b) For unresolved galaxies and clusters of galaxies; the flux
+         has been computed using an identical procedure but with a
+         different conversion factor appropriate for a Raymond-Smith
+         thermal spectrum (Raymond and Smith, 1977) with temperature of
+         about 6 keV.
+
+  The above assumptions are justified by the results of the
+  analysis of the X-ray energy distribution of the EMSS sources
+  performed by Maccacaro et al.  (1988).  A number of sources are
+  resolved even with the moderate angular resolution of the IPC. They
+  are mainly clusters of galaxies but also 3 galaxies, 8 AGN, and 3 BL
+  Lacs.
+
+  For the extragalactic population, the X-ray flux listed has been
+  corrected ("de-reddened") for Galactic absorption.  For stars
+  we have adopted a constant conversion factor of 1 IPC
+  count/s = 2E-11 erg/cm**2/s corresponding to a Raymond-Smith thermal
+  spectrum with temperatures in the range 8E05 - 3E06 K and no
+  correction for the hydrogen column density.  Note that RS CVn and K
+  and M flare stars usually have a second temperature component in the
+  range 1 - 2E07 K which results in nearly identical conversion factors
+  to those derived from the Raymond-Smith models over these temperature
+  ranges (see also Fleming, 1988, for a discussion of flux estimate of
+  X-ray selected stars).
+
+  In the case of clusters of galaxies the flux estimate should be
+  evaluated in a region of constant physical size (e.g. 1 Mpc).  Such a
+  procedure cannot be applied to the serendipitous EMSS clusters,
+  especially to the nearby ones, given their proximity to the ribs (or
+  edges) of the detector or, in some cases, to the target of the
+  observation.  For all the resolved sources identified with clusters of
+  galaxies or galaxies, and flagged as extended in the ext_flag column,
+  we have used the extended counts measured according to the procedure
+  described below the cts_ext column to compute the flux.
+<A NAME="sRM3.6"><B>Note on ctrate</B>:
+  This column gives the corrected IPC count rate in units of
+  cts/kilosecond.  The count rate is derived from the net counts given
+  in the cts column (which are then corrected for vignetting, mirror
+  scattering, and point response function scattering) and the livetime
+  given in the live column, which has already been corrected for instrumental
+  dead time.
+<A NAME="sRM3.7"><B>Note on sn</B>:
+  This column gives the signal-to-noise ratio (s/n) computed as the
+  source counts divided by the square root of the sum of the source
+  counts and the background counts:
+
+             Source Counts / (Source Counts + Background Counts)**(1/2)]
+<A NAME="sRM3.8"><B>Note on cts, e_cts</B>:
+  The uncorrected net counts in the 0.2-3.5 keV band are given in
+  the cts column.  No correction has been applied to the counts.  The
+  e_cts column gives the error on the net counts, computed as the
+  square root of the total observed counts in the detection cell.  The
+  cts/e_cts ratio is the signal-to-noise given in the previous column.
+  The total background counts are given in the bkgcts column.
+<A NAME="sRM3.9"><B>Note on live, bkgcts</B>:
+  This column gives the livetime, the exposure time of the IPC
+  observation, corrected for instrumental dead time.  It is given in
+  seconds. The second line gives the background counts.
+<A NAME="sRM3.10"><B>Note on seqno, cts_ext</B>:
+  This column gives the sequence number of the observation, a
+  unique numeric identifier for each observation which was allocated
+  sequentially at the time of proposal submission.  It is an internal
+  index used to key on all references to an observation.
+
+  If the ext_flag column is flagged with an asterisk ('*') then
+  extended counts from the column cts_ext were used to calculate the
+  X-ray flux.  The cts_ext column gives the net extended counts.  For
+  IPC sources, this means that counts were computed manually to include
+  all counts belonging to the source.  For sources resolved by the IPC,
+  the observed counts have been computed manually within a region
+  centered on the source and with a size evaluated case by case so as to
+  contain all the counts belonging to the source itself.  Background
+  counts for these sources have been computed within this same area from
+  the background map produced by the REV.1 processing.  In these cases
+  only the vignetting and mirror scattering corrections have been
+  applied.
+
+  At the edge of the IPC detector the point spread function becomes
+  significantly degraded so that some sources appear to be extended even
+  though they might not be.  Observations with a higher resolution
+  instrument (e.g. the HRI or ROSAT) are needed to decide whether the
+  extension is true or an artifact of the degradation of the IPC point
+  spread function.  This distortion of the point spread function cannot
+  be modeled easily, so indications that sources are extended when they
+  are near the IPC edge cannot be always trusted. Since these sources
+  include ones which are identified as AGN and BL Lac objects as well
+  as clusters, the indication of extension should be regarded as tentative.
+<A NAME="sRM3.11"><B>Note on nH</B>:
+  The hydrogen column density along the line of sight to the IPC field
+  target determined using the HI survey of Stark et al. (1989). For regions
+  of sky not surveyed by Stark et al. (south of declination -42 deg) the
+  surveys of Heiles and Cleary (1979) and Cleary Heiles and Haslam (1979)
+  have been used.
+<A NAME="sRM3.12"><B>Note on Vmag</B>:
+  The V band magnitude of the counterpart. Some entries are from
+  photoelectric aperture photometry (for the stellar sources, see
+  Fleming, 1988 and the Bright Star Catalog) or from CCD photometry with
+  the Whipple Observatory 24 inch (for the extragalactic sources). These
+  are typically accurate to 0.01 mag. Other  entries are
+  from the literature or are estimated magnitudes (&#177; 0.5 mag) from
+  the STScI digitized sky survey plates. A value of 0.0 indicates that
+  the source is still unidentified, so there is no magnitude listed.
+<A NAME="sRM3.13"><B>Note on fR</B>:
+  The radio flux or 5 sigma upper limit in mJy at 5 GHz for the
+  optical counterpart mostly comes from VLA observations. When a cluster
+  of galaxies is the X-ray counterpart, radio emission from any cluster
+  galaxy within the cluster is listed here.
+<A NAME="sRM3.14"><B>Note on fX/fv</B>:
+  The logarithmic X-ray to optical flux ratio calculated from
+  the observed X-ray and visible fluxes by log (fX/fv) = log fX +
+  <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=V/2.5">V/2.5</A> +5.37 (Maccacaro et al. 1988). These values are used to
+  determine whether the optical counterpart is plausible. For
+  this reason the X-ray flux used for this computation is not the
+  value in the fX column but is rather the X-ray flux computed prior
+  to assigning an optical identification class to each source. These
+  "raw" X-ray fluxes use an assumed spectral index of -0.5 for all
+  sources and a correction for galactic extinction equal to 3 X 10**20
+  cm-2 for all sources. The V band magnitudes quoted in the mv column
+  were used for this calculation. For sources identified with clusters
+  of galaxies the fX/fv is not given (fX/fv = 0.0) since the fX does not
+  take into account the extended flux where present, and the V magnitude
+  refers to the brightest cluster galaxy.
+<A NAME="sRM3.15"><B>Note on class</B>:
+  The class column gives the proposed identification or classification
+  of the X-ray source.  The following abbreviations are used:
+
+             AGN     = Active Galactic Nucleus (quasar or Seyfert galaxy)
+             CL      = Cluster of galaxies
+             *CL*    = Cooling flow galaxy
+             BL      = BL Lac object
+             GAL     = "normal" galaxy
+             STAR    = star
+             UNID    = source still unidentified
+<A NAME="sRM3.16"><B>Note on r_class</B>:
+  The r_class column gives the reference for identification or
+  classification. Identifications come from either our own spectroscopic
+  work (EMSS in the 2nd line) or from other authors' work as indicated
+  in the r_class column. References to other authors are given when the
+  proposed identification has been published even if additional
+  spectroscopic observations may have been obtained by us.
+
+  References in column r_class of emss table:
+  (MSS1) Stocke, J.T., Liebert, J., Gioia, I.M., Griffiths, R.E.,
+       Maccacaro, T., Danziger, I.J., Kunth, D., &amp; Lub, J., 1983,
+       ApJ, 273, 458 (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1983ApJ...273..458S">1983ApJ...273..458S</A>)
+
+  (MSS2) Gioia, I.M., Maccacaro, T., Schild, R.E., Stocke, J.T.,
+       Liebert, J.W., Danziger, I.J., Kunth, D., &amp; Lub, J., 1984,
+       ApJ, 283, 495 (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1984ApJ...283..495G">1984ApJ...283..495G</A>)
+   (1) White, S., Silk, J., &amp; Henry, J.P., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1981ApJ...251L..65W">1981ApJ...251L..65W</A>
+   (2) Margon, B., Downes, R., &amp; Chanan, G., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1985ApJS...59...23M">1985ApJS...59...23M</A>
+   (3) Pravdo, S., &amp; Marshall, F., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1984ApJ...281..570P">1984ApJ...281..570P</A>
+   (4) Huchra, J., Davis, M., Latham, D., &amp; Tonry, J., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1983ApJS...52...89H">1983ApJS...52...89H</A>
+   (5) Hewitt, A., &amp; Burbridge, G., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1987ApJS...63....1H">1987ApJS...63....1H</A>
+   (6) Kriss, G., &amp; Canizares, C., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1982ApJ...261...51K">1982ApJ...261...51K</A>
+   (7) Wolstencraft, R., Hu, W., Arp, H., &amp; Scarrott, S., 1983,, MNRAS,
+       <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1983MNRAS.205...67W">1983MNRAS.205...67W</A>
+   (8) Chanan, G., Margon, B., &amp; Downes, R., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1981ApJ...243L...5C">1981ApJ...243L...5C</A>
+   (9) Mundt, R., Walter, F., Feigelson, E., Finkenzeller, V., Herbig,
+       G., &amp; Odell, A., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1983ApJ...269..229M">1983ApJ...269..229M</A>
+  (10) Henry, J.P., Soltan, A., Briel, U., &amp; Gunn, J., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1982ApJ...262....1H">1982ApJ...262....1H</A>
+  (11) Margon, B., Boronson, T., Chanan, G., Thompson, I., &amp; Schneider,
+       D., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1986PASP...98.1129M">1986PASP...98.1129M</A>
+  (12) Caillault, J., Helfand, D., Nousek, J., &amp; Takalo, L., 1986,
+       <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1986ApJ...304..318C">1986ApJ...304..318C</A>
+  (13) Morris, S., Schmidt, G., Liebert, J., Stocke, J., Gioia, I.,
+       &amp; Maccacaro, T., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1987ApJ...314..641M">1987ApJ...314..641M</A>
+  (14) Biermann, P., Schmidt, G., Liebert, J., Stockman, H., Tapia, S.,
+       Strittmatter, P., West, S., &amp; Lamb, D., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1985ApJ...293..303B">1985ApJ...293..303B</A>
+  (15) Reichert, G., Mason, K., Thorstensen, J., &amp; Bowyer, S., 1982,
+       <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1982ApJ...260..437R">1982ApJ...260..437R</A>
+  (16) J. Huchra &amp; M. Postman (private communication)
+  (17) de Vaucouleurs, G., de Vaucouleurs, A., &amp; Corwin, H., 1976,
+       Second Reference Catalogue of Bright Galaxies (Austin:
+       University of Texas Press) (Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/112">VII/112</A>)
+  (18) I.J. Danziger (private communication)
+  (19) Maccagni, D., Garilli, B., Gioia, I.M., Maccacaro, T.
+       Vettolani, G., &amp; Wolter, A., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1988ApJ...334L...1M">1988ApJ...334L...1M</A>
+  (20) Katgert, P., Thuan, T., &amp; Windhorst, R., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1983ApJ...271....1K">1983ApJ...271....1K</A>
+  (21) Mason, K., Spinrad, H., Bowyer, S., Reichert, G., &amp; Stauffer,
+       J., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1981AJ.....86..803M">1981AJ.....86..803M</A>
+  (22) Hoessel, J., Gunn, J., &amp; Thuan, T., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1980ApJ...241..486H">1980ApJ...241..486H</A>
+  (23) F. Walter (private communication)
+  (24) Morris, S.L., Liebert, J., Stocke, J.T, Gioia, I.M., Maccacaro,
+       T., Schild, R.E., &amp; Wolter, A., 1990, ApJ, 383, 686
+       (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1990ApJ...365..686M">1990ApJ...365..686M</A>)
+  (25) Chanan, G., Margon, B., Helfand, D., Downes, R., &amp; Chance, D.,
+       <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1982ApJ...261L..31C">1982ApJ...261L..31C</A>
+  (26) Kowalski, M., Ulmer, M., &amp; Cruddace, R., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1983ApJ...268..540K">1983ApJ...268..540K</A>
+  (27) Nesci, R., Gioia, I., Maccacaro, T., Morris, S., Perola, G.,
+       Schild, R., &amp; Wolter, A., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1989ApJ...344..104N">1989ApJ...344..104N</A>
+  (28) Maia, M., DeCosta, L., Willmer, C., Pellegrini, P., &amp; Rite, C.,
+       <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1987AJ.....93..546M">1987AJ.....93..546M</A>
+  (29) Marschall, L., Stefanik, R., Nations, R., &amp; Karshner, G., 1989,
+       BAAS, 21, 1083 (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1989BAAS...21.1083M">1989BAAS...21.1083M</A>)
+  (30) Fleming, T.A., Gioia, I.M., &amp; Maccacaro, T., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1989AJ.....98..692F">1989AJ.....98..692F</A>
+  (31) Robb, R., 1989, IBUS, Nos. 3346 and 3370
+  (32) R. Robb, private communication;
+  (33) Carter, B., Inglis, I., Ellis, R., Efstathiou, G., &amp; Godwin, J.,
+       <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1985MNRAS.212..471C">1985MNRAS.212..471C</A>
+  (34) Kurtz, M., Huchra, J., Beers, T., Geller, M., Gioia, I.M.,
+       Maccacaro, T., Schild, R., &amp; Stauffer, J., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1985AJ.....90.1665K">1985AJ.....90.1665K</A>
+  (35) Silva, D., Liebert, J., Stocke, J.T. &amp; Aaronson M., 1985,
+       <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1985PASP...97.1096S">1985PASP...97.1096S</A>
+<A NAME="sRM3.17"><B>Note on z</B>:
+  If the counterpart is extragalactic the redshift is listed (&#177; 0.003).
+<A NAME="sRM3.18"><B>Note on comment</B>:
+  This column gives miscellaneous information on the source (i.e.
+  radio catalogued source, SAO name, X-ray variable source, IRAS source,
+  EXOSAT source, etc.).  The EXOSAT CMA position is reported with the
+  positional accuracy in parentheses.  EMSS sources already published as
+  part of the MSS samples are labelled as MSS1 (Maccacaro et al. 1982
+  and Stocke et al. 1983) and MSS2 (Gioia et al. 1984).
+<HR>
+
+<A NAME="sRM99.2"><B>History and Modifications</B>:
+  * 19-Jan-1993: Original version received from Isabella Gioia, table
+    adapted by F.Ochsenbein[CDS]
+  * 19-Jan-1993. Documentation reformatted to v1.4 of standard by
+    Paul Kuin [ADC] 31-Jul-1995.
+  * 29-Aug-1997: catalogue number changed from <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/152">VII/152</A> to <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/15">IX/15</A>
+    (high energy data)
+
+<A NAME="sRM90.1"><B>References</B>:
+  Cleary, M.N., Heiles, C., and Haslam, C.G.T., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1979A%26AS...36...95C">1979A&AS...36...95C</A>
+  Fleming, T.A. 1988, Ph. D. Thesis, University of Arizona
+  Gioia, I.M., Maccacaro, T., Schild, R.E., Stocke, J.T., Liebert, J.W.,
+      Danziger, I.J., Kunth, D., &amp; Lub, J., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1984ApJ...283..495G">1984ApJ...283..495G</A>
+  Gioia, I.M., Maccacaro, T., Morris, S.L., Schild, R.E., Stocke, J.T., Wolter,
+     A., &amp; Henry, P.H., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1990ApJS...72..567G">1990ApJS...72..567G</A>
+  Heiles, C. and Cleary, M.N., 1979, Australian J.Pys. Ap. Suppl, 47, 1.
+  Maccacaro, T., &amp; al. <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1982ApJ...253..504M">1982ApJ...253..504M</A>
+  Maccacaro, T., Gioia, I.M., Wolter, A., Morris, S.L., &amp; Stocke, J.T., 1988,
+     <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1988ApJ...326..680M">1988ApJ...326..680M</A>
+  Raymond, J.C. &amp; Smith, B.W., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1977ApJS...35..419R">1977ApJS...35..419R</A>
+  Stark, A.A., Heiles, C., Bally, J., and Linker, R., 1989, Bells Lab,
+     privately distributed magnetic tape
+  Stocke, J.T., Liebert, J., Gioia, I.M., Griffiths, R.E., Maccacaro, T.,
+     Danziger, I.J., Kunth, D., &amp; Lub, J., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1983ApJ...273..458S">1983ApJ...273..458S</A>
+  Stocke, J.T., Morris, S.L., Gioia, I.M., Maccacaro, T., Schild, R.E.,
+     Wolter, A., Fleming, T.A., &amp; Henry, J.P., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1991ApJS...76..813S">1991ApJS...76..813S</A>
+
+<A NAME="sRM99.3"><B>Contact</B>: Isabella Gioia, Institute for Astronomy;
+         <A HREF="mailto:gioia@galileo.ifa.hawaii.edu">gioia@galileo.ifa.hawaii.edu</A>
+================================================================================
+<B>(End)</B>      I.Gioia, F.Ochsenbein, P. Kuin                            31-Jul-1995
+
+</PRE><!-- ....wait for 1 children: %0=3183134 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

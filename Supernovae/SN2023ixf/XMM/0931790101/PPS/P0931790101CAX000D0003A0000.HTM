@@ -1,0 +1,90 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of CXC/V2</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Wed Jun 28 17:16:21 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><a href=http://cxc.harvard.edu/csc/index.html><IMG border=0 SRC="P0931790101OBX000CDSLG40000.PNG" ALIGN="middle" ALT="Chandra logo"></a></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of CXC/V2 :<BR>Chandra Catalog Release View</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0931790101OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>O/3</B>         Extract from CSC 2.0 current database view
+================================================================================
+Extract from Chandra Source Catalog Release 2.0 (CSC 2.0) Current Database
+================================================================================
+<B>ADC_Keywords</B>: X-ray sources, Cross identifications
+
+<B>Mission_Name</B>: CHANDRA
+
+
+<A NAME="sRM11.1"><B>Description</B>:
+
+The Chandra Source Catalog (CSC) is ultimately intended to be the definitive catalog of X-ray sources 
+detected by the Chandra X-ray Observatory. To achieve that goal, the catalog will be released to the 
+user community in a series of increments with increasing capability. The second major release of the 
+CSC (release 2.0) includes data for roughly 315,000 X-ray sources on the sky extracted from 10,382 
+Chandra ACIS and HRC-I imaging observations released publicly through the end of 2014. 
+
+Users are kindly requested to acknowledge their use of the Chandra Source Catalog in any resulting 
+publications. <A HREF="http://cxc.harvard.edu/csc2/cite.html">http://cxc.harvard.edu/csc2/cite.html</A>
+
+The version operating at Strasbourg Observatory/CDS uses the results of an ADQL query
+<A HREF="http://cxc.harvard.edu/csc2/cli/index.html">http://cxc.harvard.edu/csc2/cli/index.html</A> and only lists a subset of all columns available in the 
+database view.
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.29">&#215; ReadMe           156        .   This file
+<A NAME="sRM-F.30">&#215; <A HREF="#sRM2.1">Catalog</A>          156        .   Result
+<HR>
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.30"> Catalog</A>
+<HR>
+   Bytes Format Units   Label     Explanations
+<HR>
+   1- 20  A20   ---     Name      source name in the form "2CXO Jhhmmss.s{+|-}ddmmss"
+  21- 28  D8.7  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     ra        source position, ICRS right ascension
+  29- 36  D8.7  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     dec       source position, ICRS declination
+  37- 44  D8.7  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A> err<SUB>ellipse</SUB>r0  major radius of the 95% confidence level position error ellipse
+  45- 52  D8.7  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A> err<SUB>ellipse</SUB>r1  minor radius of the 95% confidence level position error ellipse
+  53- 60  D8.7  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A> err<SUB>ellipse</SUB>ang  position angle (referenced from local true north) of the major axis
+  61- 68  F8.7  --- significance  highest flux significance across all stacked observations and science energy bands
+      69  I1    ---    conf_flag  source confused ?
+      70  I1    ---     ext_flag  source extended ?
+      71  I1    --- sat<SUB>src</SUB>flag  source saturated in all observations ?
+  72- 79  E8.2 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?erg/s%2acm2" TARGET="explain">erg/s*cm2</A> flux<SUB>aper</SUB>avg_b  aperture-corrected net fluxaveraged over all observations
+  80- 87  E8.2 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?erg/s%2acm2" TARGET="explain">erg/s*cm2</A> flux<SUB>aper</SUB>avg<SUB>lolim</SUB>b  68% lower confidence limit of flux<SUB>aper</SUB>avg
+  88- 95  E8.2 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?erg/s%2acm2" TARGET="explain">erg/s*cm2</A> flux<SUB>aper</SUB>avg<SUB>hilim</SUB>b  68% upper confidence limit of flux<SUB>aper</SUB>avg
+  96-103  D8.7  ---     hard_hm   (2.0-7.0 keV) to (1.2-2.0 keV) hardness ratio
+ 104-111  D8.7  --- hard<SUB>hm</SUB>lolim  68% lower confidence limit of hard_hm
+ 112-119  D8.7  --- hard<SUB>hm</SUB>hilim  68% upper confidence limit of hard_hm
+ 120-127  D8.7  ---     hard_ms   (1.2-2.0 keV) to (0.5-1.2 keV) hardness ratio
+ 128-135  D8.7  --- hard<SUB>ms</SUB>lolim  68% lower confidence limit of hard_ms
+ 136-143  D8.7  --- hard<SUB>ms</SUB>hilim  68% upper confidence limit of hard_ms
+ 144-147  I4    ---     acis_num  total number of ACIS imaging observations contributing
+ 148-156  F9.1  ---    acis_time  total exposure time (seconds of good time)
+<HR>
+================================================================================
+<B>(End)</B>
+
+</PRE><!-- ....wait for 1 children: %0=14308 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

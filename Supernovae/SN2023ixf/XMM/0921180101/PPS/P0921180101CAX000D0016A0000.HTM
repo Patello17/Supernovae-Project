@@ -1,0 +1,305 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of B/wd</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Wed Jun 28 19:44:26 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0921180101OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of B/wd :<BR>Spectroscopically identified white dwarfs (McCook+, 2014)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0921180101OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>B/wd</B>          Spectroscopically identified white dwarfs          (McCook+, 2014)
+================================================================================
+A Catalogue of Spectroscopically Identified White Dwarfs (Version Apr. 2014)
+     McCook G.P., Sion E.M.
+   &lt;Astrophys. J. Suppl. Ser. 121, 1 (1999)&gt;
+   =2016yCat....102035M
+   =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1999ApJS..121....1M">1999ApJS..121....1M</A>
+================================================================================
+<B>ADC_Keywords</B>: Stars, white dwarf ; Spectral types ; References
+
+<B>Keywords</B>: catalogs; white dwarfs
+
+
+<A NAME="sRM11.1"><B>Description</B>:
+    This is an update of the Villanova catalog published in the ApJS
+    paper, corresponding to the Web version of the catalog in Apr 2014
+    (see <A HREF="http://www.astronomy.villanova.edu/WDCatalog/index.html">http://www.astronomy.villanova.edu/WDCatalog/index.html</A>). The
+    introduction to the 1999 catalog is in the file "<A HREF="https://vizier.cds.unistra.fr/viz-bin/getCatFile?B/wd/preface.tex">preface.tex</A>".
+
+    This updated version lists 14294 unique white dwarfs for a total of
+    27975 rows (multiple observations).
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.24">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.25">&#215; preface.tex       97      840   Introduction by G.P. McCook and E.M. Sion
+                                  to the 1999 catalog
+<A NAME="sRM-F.27">&#215; <A HREF="#sRM2.1">catalog.dat</A>      250    27975   Data for the White Dwarfs
+<A NAME="sRM-F.28">&#215; <A HREF="#sRM2.2">names.dat</A>         26    33697   Cross-identifications of White Dwarfs
+                                  (from file CrossRef.txt)
+<A NAME="sRM-F.30">&#215; <A HREF="#sRM2.3">notes.dat</A>        255     2353   Notes for stars flagged in "catalog.dat"
+<A NAME="sRM-F.31">&#215; <A HREF="#sRM2.4">refs.dat</A>         228      815   References mentioned in file "catalog.dat"
+                                  (from file RefByRefNumber.txt)
+<HR>
+
+<A NAME="sRM13.1"><B>See also</B>:
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/MNRAS/455/3413">J/MNRAS/455/3413</A> : New WD and subdwarf stars in SDSS DR12 (Kepler+, 2016)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/MNRAS/433/3398">J/MNRAS/433/3398</A> : WD main-sequence binaries (Rebassa-Mansergas+, 2013)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/MNRAS/425/1394">J/MNRAS/425/1394</A> : High proper-motion white dwarfs (Kawka+, 2012)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/MNRAS/424/1841">J/MNRAS/424/1841</A> : SDSS-UKIDSS white dwarf-main sequence binaries (Liu+, 2012)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/MNRAS/417/1210">J/MNRAS/417/1210</A> : DA-white dwarfs from SDSS and UKIDSS (Girven+, 2011)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/A%2BA/536/A43">J/A+A/536/A43</A>  : SDSS WD main-sequence binaries XII. (Nebot Gomez-Moran+, 2011)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/ApJ/723/1072">J/ApJ/723/1072</A> : The ELM survey. I. Low-mass white dwarfs (Brown+, 2010)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/ApJ/714/1037">J/ApJ/714/1037</A> : White dwarfs from the Kiso survey (Limoges+, 2010)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/ApJ/712/585">J/ApJ/712/585</A>  : Apparent velocity measurements of DA WDs (Falcon+, 2010)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/ApJS/190/77">J/ApJS/190/77</A>  : Detailed analysis of cool WDs in the SDSS (Kilic+, 2010)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/MNRAS/402/620">J/MNRAS/402/620</A>  : SDSS WD main-sequence binaries (Rebassa-Mansergas+, 2010)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/MNRAS/399/699">J/MNRAS/399/699</A>  : Parameters of atmospheres of white dwarfs (Mortlock+, 2009)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/A%2BA/506/1341">J/A+A/506/1341</A> : Magnetic fields in white dwarfs (Kuelebi+, 2009)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/A%2BA/505/441">J/A+A/505/441</A>  : UVES/VLT spectra of white dwarfs (Koester+, 2009)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/A%2BA/496/191">J/A+A/496/191</A>  : Spectral analysis of 636 SDSS WD-M binaries (Heller+, 2009)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/A%2BA/486/843">J/A+A/486/843</A>  : White dwarf-red dwarf binaries in the SDSS (Augusteijn+, 2008)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/AJ/135/1239">J/AJ/135/1239</A>  : Spectral distances to DA white dwarfs (Holberg+, 2008)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/AJ/135/1225">J/AJ/135/1225</A>  : Parameters of the local white dwarfs (Holberg+, 2008)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/AJ/134/252">J/AJ/134/252</A>   : New nearby white dwarf systems (Subasavage+, 2007)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/ApJ/663/1291">J/ApJ/663/1291</A> : DZ stars in SDSS DR4 (Dufour+, 2007)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/ApJ/657/1013">J/ApJ/657/1013</A> : IR photometry of 2MASS/Spitzer white dwarfs (Tremblay+, 2007)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/ApJ/654/499">J/ApJ/654/499</A>  : H-rich white dwarfs spectropolarimetric survey (Kawka+, 2007)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/MNRAS/382/515">J/MNRAS/382/515</A>  : SDSS ultracool and halo WD candidates (Vidrih+, 2007)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/ApJS/167/40">J/ApJS/167/40</A>  : SDSS4 confirmed white dwarfs catalog (Eisenstein+, 2006)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/A%2BA/448/579">J/A+A/448/579</A>  : Sample of confirmed WDs in GSC-II survey (Carollo+, 2006)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/A%2BA/447/173">J/A+A/447/173</A>  : 3D-kinematics of WDs from SPY project. II. (Pauli+, 2006)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/ApJ/652/1554">J/ApJ/652/1554</A> : Iron in hot DA white dwarfs (Vennes+, 2006)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/ApJ/643/402">J/ApJ/643/402</A>  : Cool white dwarfs in the solar neighborhood (Kawka+, 2006)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/AJ/132/676">J/AJ/132/676</A>   : SDSS hot DB white dwarfs (Eisenstein+, 2006)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/AJ/131/582">J/AJ/131/582</A>   : Cool white dwarfs in the SDSS (Kilic+, 2006)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/AJ/130/734">J/AJ/130/734</A>   : Magnetic WDs from SDSS DR2 and DR3 (Vanlandingham+, 2005)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/ApJS/161/394">J/ApJS/161/394</A> : Low-luminosity companions to white dwarfs (Farihi+, 2005)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/ApJS/156/47">J/ApJS/156/47</A>  : DA white dwarfs from the Palomar Green Survey (Liebert+, 2005)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/ApJ/631/1100">J/ApJ/631/1100</A> : Atmospheric parameters of DA white dwarfs (Gianninas+, 2005)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/AJ/125/2239">J/AJ/125/2239</A>  : Hard X-ray emission from white dwarfs (O'dwyer+, 2003)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/A%2BA/378/556">J/A+A/378/556</A>  : UVES/VLT spectra of white dwarfs (Koester+, 2001)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/ApJS/147/145">J/ApJS/147/145</A> : IUE low-dispersion spectra of white dwarfs (Holberg+, 2003)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/AJ/124/1118">J/AJ/124/1118</A>  : Radial velocities of high-velocity WDs (Silvestri+, 2002)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/ApJ/571/512">J/ApJ/571/512</A>  : Distances of white dwarf stars (Holberg+, 2002)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/MNRAS/335/673">J/MNRAS/335/673</A>  : DA white dwarfs in 2dF QSO Redshift Survey (Vennes+, 2002)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/ApJS/133/413">J/ApJS/133/413</A> : BVRIJHK photometry of cool white dwarfs (Bergeron+, 2001)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/A%2BA/363/1040">J/A+A/363/1040</A> : DB white dwarfs from the Hamburg/ESO survey (Friedrich+, 2000)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/ApJS/119/207">J/ApJS/119/207</A> : IUE echelle spectra of hot white dwarfs (Holberg+, 1998)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/A%2BA/316/147">J/A+A/316/147</A>  : Catalogue of ROSAT White Dwarfs (Fleming+ 1996)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/AJ/103/267">J/AJ/103/267</A>   : Spectrocopy of hot stars in galactic halo (Beers+ 1992)
+ <A HREF="http://www.astronomy.villanova.edu/WDCatalog">http://www.astronomy.villanova.edu/WDCatalog</A> : The Web WD Catalog home page
+
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.27"> catalog.dat</A>
+<HR>
+   Bytes Format  Units   Label   Explanations
+<HR>
+       1  A1     ---     New     [N] for a New star
+   2- 11  A10    ---     WD      <A HREF="#sRM3.1">White Dwarf (WD) number (1)</A>
+      12  A1     ---     n_WD    [*F] <A HREF="#sRM3.7">Name originally J-based (7)</A>
+  13- 14  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?h" TARGET="explain">h</A>       RAh     ?<A HREF="#sRM3.2">Hours RA, Equinox=B1950, Epoch=1950.0 (2)</A>
+  16- 17  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?min" TARGET="explain">min</A>     RAm     ?<A HREF="#sRM3.2">Minutes RA, Equinox=B1950, Epoch=1950.0 (2)</A>
+  19- 20  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>       RAs     [0/60]? <A HREF="#sRM3.2">Seconds RA (2)</A>
+      22  A1     ---     DE-     ?<A HREF="#sRM3.2">Declination sign (2)</A>
+  23- 24  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEd     ?<A HREF="#sRM3.2">Degrees Dec, Equinox=B1950, Epoch=1950.0 (2)</A>
+  26- 29  F4.1   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>  DEm     ?<A HREF="#sRM3.2">Minutes Dec, Equinox=B1950, Epoch=1950.0 (2)</A>
+      30  A1     ---     ---     [C] indicates a corrected position
+  31- 40  A10    ---     SpT     Spectral type (definitions in the paper,
+                                   or in file "preface.tex").
+      41  A1     ---     bNote   [*b?] 'b' if white dwarf is member of binary,
+                                      '*' indicates a note in file "notes.dat"
+      42  A1     ---     ---     [(] Left bracket enclosing the reference
+  43- 44  A2     ---     r_SpT   Reference code for spectral type
+      45  A1     ---     ---     [)] Right bracket enclosing the reference
+      46  A1     ---     M1      [NACU] <A HREF="#sRM3.6">Modifications of spectral type (6)</A>
+  47- 72  A26    ---     Names   Other names for this star, see table Names
+  73- 78  F6.3   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Vmag    [6.4/24.3]? V or other magnitude (see n_Vmag)
+      79  A1     ---     u_Vmag  [:?] Uncertainty flag on Vmag
+  80- 81  A2     ---     n_Vmag  [pgBv ] v = multichannel V, pg = photographic,
+                                         B = Johnson B
+  82- 87  F6.3   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     B-V     [-0.7/2]? B-V color index in the UBV system
+      88  A1     ---     u_B-V   Uncertainty flag (:) on B-V color index
+  89- 91  A3     ---     col     Color class from Lowell or Luyten PM surveys
+  92- 97  F6.3   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     U-B     [-9.9/1.4]? U-B color index in the UBV system
+      98  A1     ---     u_U-B   Uncertainty flag (:) on U-B color index
+      99  A1     ---     ---     [(] Left bracket enclosing the reference
+ 100-101  A2     ---     r_Vmag  Wide band photometry reference code
+     102  A1     ---     ---     [)] Right bracket enclosing the reference
+     103  A1     ---     M2      [NACU] <A HREF="#sRM3.6">Modifications of UBV magnitudes (6)</A>
+ 104-108  F5.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Vsphot  [9.5/20.1]? V mag from multichannel
+                                   spectrophotometry
+ 110-114  F5.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     (g-r)   [-1.3/2.8]? g-r color index from
+                                   spectrophotometry
+     115  A1     ---    u_(g-r)  Uncertainty flag (:) on g-r
+     116  A1     ---     ---     [(] Left bracket enclosing the reference
+ 117-118  A2     ---   r_Vsphot  Multichannel spectrophotometry reference code
+     119  A1     ---     ---     [)] Right bracket enclosing the reference
+     120  A1     ---     M3      [N] <A HREF="#sRM3.6">Modifications of Vsphot (6)</A>
+ 121-126  F6.3   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     ymag    [9.5/17.3]? y mag from ubvy photoelectric
+                                  observations
+ 127-132  F6.3   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     b-y     [-0.4/0.8]? b-y color index from uvby
+     133  A1     ---     u_b-y   Uncertainty flag (:) on b-y
+ 134-139  F6.3   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     u-b     [-0.6/2]? u-b color index from uvby
+     140  A1     ---     ---     [(] Left bracket enclosing the reference
+ 141-142  A2     ---     r_ymag  uvby photoelectric photometry reference code
+     143  A1     ---     ---     [)] Right bracket enclosing the reference
+     144  A1     ---     M4      [NCU] <A HREF="#sRM3.6">Modifications of uvby photometry (6)</A>
+ 146-150  F5.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     AbsMag  [-0.2/18.1]? <A HREF="#sRM3.3">Absolute visual (or B)</A>
+                                   magnitude (3)
+     151  A1     ---   f_AbsMag  [:B] <A HREF="#sRM3.3">uncertainty flag or B AbsMag (3)</A>
+ 153-155  I3     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?kK" TARGET="explain">kK</A>      Teff    [10/170]? Effective temperature
+     156  A1     ---     ---     [(] Left bracket enclosing the method
+ 157-158  A2     ---   n_AbsMag  <A HREF="#sRM3.5">Method of calculation of AbsMag (5)</A>
+     159  A1     ---     ---     [)] Right bracket enclosing the method
+     160  A1     ---     M5      [NACabc] <A HREF="#sRM3.6">Modification of AbsMag (6)</A>
+     161  A1     ---     l_pm    [~&lt;] Limit flag on pm
+ 162-167  F6.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec/yr" TARGET="explain">arcsec/yr</A> pm      [0/7]? Total proper motion
+     168  A1     ---     u_pm    [:!0123] <A HREF="#sRM3.4">Uncertainty flag (:) on pm,</A>
+                                   problem on proper motion (!),
+                                   or Estimated proper motion (4)
+ 170-174  F5.1   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     pmPA    ? Position angle of proper motion vector
+     175  A1     ---     ---     [(] Left bracket enclosing the reference
+ 176-177  A2     ---     r_pm    Proper motion reference code
+     178  A1     ---     ---     [)] Right bracket enclosing the reference
+     179  A1     ---     M6      [NAC] New line, Additional or Corrected pm
+ 180-186  F7.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    RadVel  [-262/422]? Radial velocity
+ 188-194  F7.3   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    Adp-V   [-97.2/134]? <A HREF="#sRM3.8">Adopted apparent velocity (8)</A>
+     195  A1     ---     ---     [(] Left bracket enclosing the reference
+ 196-197  A2     ---   r_RadVel  Velocity reference
+     198  A1     ---     ---     [)] Right bracket enclosing the reference
+     199  A1     ---     M7      [NA] <A HREF="#sRM3.6">Modification of RadVel (6)</A>
+ 200-206  F7.4   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  Plx     [-0.003/0.6]? Trigonometric parallax
+ 207-210  F4.1   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas" TARGET="explain">mas</A>     e_Plx   [0/97]? Reported mean error of parallax
+     211  A1     ---     ---     [(] Left bracket enclosing the reference
+ 212-213  A2     ---     r_Plx   Parallax reference code
+     214  A1     ---     ---     [)] Right bracket enclosing the reference
+     215  A1     ---     M8      [NACU] <A HREF="#sRM3.6">Modification of parallax (6)</A>
+ 217-221  F5.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     gmag    [11.4/29]? SDSS green magnitude
+     222  A1     ---     u_gmag  [*:] questionable (*) or uncertain (:) SDSS
+                                      photometry
+ 223-227  F5.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     u-g     [-3.4/8]? SDSS u-g Color Index
+ 229-233  F5.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     g-r     [-5.3/7]? SDSS g-r Color Index
+ 235-239  F5.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     r-i     [-7.4/2.4]? SDSS r-i Color Index
+ 241-245  F5.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     i-z     [-6.3/7.1]? SDSS i-z Color Index
+     246  A1     ---     ---     [(] Left bracket enclosing the reference
+ 247-248  A2     ---     r_gmag  SDSS colors reference
+     249  A1     ---     ---     [)] Right bracket enclosing the reference
+     250  A1     ---     M9      [N] <A HREF="#sRM3.6">Modification of SDSS photometry (6)</A>
+<HR>
+<A NAME="sRM3.1"><B>Note (1)</B>: Stars having identical catalog numbers, whether binary or not,
+    are distinguished by using the designations .1 and .2 in
+    bytes 10-11.
+<A NAME="sRM3.2"><B>Note (2)</B>: The positions have quite various precisions; generally speaking
+    most of the older stars have 1950 coordinates accurate to the arcmin
+    from the references, while newer WDs have 2000 coordinates in the
+    reference which were precessed back to 1950 and rounded to a 0.1arcmin
+    accuracy. No correction has been made for proper motion.
+<A NAME="sRM3.3"><B>Note (3)</B>: For DO and DOZ white dwarfs, AbsMag is a directly derivable
+    effective temperature value. These are given in units of 10<SUP>3</SUP>K
+    A ':' for uncertain AbsMag may appear also (WD 0736+053);
+    the 'B' indicates an absolute B magnitude.
+<A NAME="sRM3.4"><B>Note (4)</B>: In cases where only an estimated proper motion is reported in
+    the Lowell proper-motion surveys, the "pm" field is blank and a
+    corresponding code is given there in "Epm" field. These codes are
+    defined in Giclas et al. (1967, 1970) and are the following:
+    0: Stars of blue color whose motions are too small to definitely
+       verify on all plates.
+    1:        pm &lt;= 0.1  arcsec/yr
+    2: 0.1 &lt;= pm &lt;  0.2  arcsec/yr
+    3: 0.2 &lt;= pm &lt;  0.26 arcsec/yr
+<A NAME="sRM3.5"><B>Note (5)</B>: The codes to indicate the method of calculation of
+    the absolute magnitude are:
+    1 = trigonometric parallax (&gt;0.1arcsec)
+    2 = multichannel spectrophotometric colors
+    3 = uvby (Stroemgren) colors
+    4 = UBV photometry
+    5 = Teff value from Wesemael, Green and Liebert (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1993PASP..105..761W">1993PASP..105..761W</A>),
+        Werner and Heber (1992, in "The Atmospheres of Early-Type stars",
+        ed. U. Heber &amp; S. Jeffrey, Springer, p. 273) or
+        Napiwotzki and Schonberner (1991, in "White Dwarfs", ed.
+        G. Vauclair and E.M. Sion, NATO ASI Series, Series C, 336:
+        Dordrecht, Kluwer, p. 39)
+    6 = Liebert, Dahn and Monet (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1988ApJ...332..891L">1988ApJ...332..891L</A>)
+    7 = Bergeron, Ruiz and Leggett (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1997ApJS..108..339B">1997ApJS..108..339B</A>)
+    8 = Liebert et al., (1997, in "White Dwarfs", ed. J.Isern, M. Hernanz &amp;
+        Garcia-Berro, Dordrecht: Kluwer, p. 85)
+    9 = Smith (1998, Ph.D Thesis, Florida Institute of Technology,
+        Melbourne, Fl.)
+<A NAME="sRM3.6"><B>Note (6)</B>: modifications since the publication:
+      N=New, A=Additional, C=Corrected, U=Updated
+      Lowercase letters indicate components in the case of degenerate
+      systems (1824+040).
+<A NAME="sRM3.7"><B>Note (7)</B>:
+   * = Some recently published new white dwarfs were assigned a name
+       based on J2000 position. Such names were transformed into B1950-based
+       WD names by applying the appropriate precession.
+   F = Finding Chart (T.R.Marsh) available on the online catalog:
+       <A HREF="http://www.astronomy.villanova.edu/WDCatalog">http://www.astronomy.villanova.edu/WDCatalog</A>
+<A NAME="sRM3.8"><B>Note (8)</B>: The apparent velocity is the sum of the radial velocity
+    (Doppler redshift) and the gravitational redshift, which have comparable
+    values (see Falcon+, 2010, <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/ApJ/712/585">J/ApJ/712/585</A>).
+<HR>
+
+<A NAME="sRM2.2"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.28"> names.dat</A>
+<HR>
+   Bytes Format  Units   Label    Explanations
+<HR>
+   1- 14  A14    ---     Name     Common name of the object
+  15- 16  A2     ---     ---      [WD] Prefix of catalog
+  17- 26  A10    ---     WD       White Dwarf (WD) number
+<HR>
+
+<A NAME="sRM2.3"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.30"> notes.dat</A>
+<HR>
+   Bytes Format  Units   Label    Explanations
+<HR>
+   2-  3  A2     ---     ---      [WD] Prefix of catalog
+   4- 13  A10    ---     WD       White Dwarf (WD) number
+  16-255  A240   ---     Notes    Text of note for this star
+<HR>
+
+<A NAME="sRM2.4"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.31"> refs.dat</A>
+<HR>
+   Bytes Format Units   Label     Explanations
+<HR>
+   1-  2  A2    ---     RefCode   Reference code
+   4- 22  A19   ---     BibCode   CDS/ADS/NED BibCode
+  24-228  A205  ---     Text      Text of reference
+<HR>
+
+<A NAME="sRM99.1"><B>History</B>:
+  * 13-Oct-2016: Current version (Apr 2014) downloaded from:
+    <A HREF="ftp://astro5.ast.villanova.edu/mccook/Current">ftp://astro5.ast.villanova.edu/mccook/Current</A> Web Version of WD Catalog/
+    (Supersedes Cat. <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=III/235">III/235</A>).
+
+<A NAME="sRM90.1"><B>References</B>:
+  McCook and Sion  1st Edition  <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1977VilCo...2....0C">1977VilCo...2....0C</A>
+  McCook and Sion               <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1984VilCo...3....1M">1984VilCo...3....1M</A>
+  McCook and Sion               <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1987ApJS...65..603M">1987ApJS...65..603M</A>   Cat. <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=III/129">III/129</A>
+  McCook and Sion               <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1999ApJS..121....1M">1999ApJS..121....1M</A>   Cat. <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=III/210">III/210</A>, <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=III/235">III/235</A>
+================================================================================
+<B>(End)</B>             Francois Ochsenbein, Emmanuelle Perret [CDS]       13-Oct-2016
+
+</PRE><!-- ....wait for 1 children: %0=26474 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

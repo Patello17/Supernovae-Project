@@ -1,0 +1,303 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of VIII/92</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Sun Jul 23 17:43:46 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0921180301OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of VIII/92 :<BR>The FIRST Survey Catalog, Version 2014Dec17 (Helfand+ 2015)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0921180301OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>VIII/92</B>             The FIRST Survey Catalog, Version 2014Dec17  (Helfand+ 2015)
+================================================================================
+The last of FIRST: the final catalog and source identifications.
+    Helfand D.J., White R.L., Becker R.H.
+   &lt;Astrophys. J. 801, 26 (2015)&gt;
+   =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2015ApJ...801...26H">2015ApJ...801...26H</A>
+   =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2015yCat.8092....0H">2015yCat.8092....0H</A>
+================================================================================
+<B>ADC_Keywords</B>: Radio sources ; Surveys
+
+
+<A NAME="sRM11.1"><B>Description</B>:
+
+    The Faint Images of the Radio Sky at Twenty centimeters (FIRST)  began
+    in 1993. It uses the VLA (Very Large Array, a facility of the National
+    Radio Observatory (NRAO))  at a frequency of 1.4GHz,  and it is slated
+    to  10,000  deg<SUP>2</SUP>  of  the  North  and  South  Galactic  Caps,  to  a
+    sensitivity of about 1mJy with an angular resolution of about 5''. The
+    images produced by  an  automated  mapping  pipeline  have  pixels  of
+    1.8'', a typical rms of 0.15mJy,  and a resolution of 5'';  the images
+    are  available   on  the  Internet   (see  the  FIRST   home  page  at
+    <A HREF="http://sundog.stsci.edu/">http://sundog.stsci.edu/</A> for details). The source catalogue is derived
+    from the images.
+
+    This  catalog from the 1993 through 2011 observations contains 946,432
+    sources  from the north and south Galactic caps.  It covers a total of
+    10,575 square degrees of the sky (8444 square degrees in the north and
+    2131 square degrees in the south).
+
+    In this version  of the  catalog,  images  taken in  the the  new EVLA
+    configuration have been re-reduced using shallower CLEAN thresholds in
+    order to reduce  the "CLEAN bias"   in those images.   Also,  the EVLA
+    images are not co-added  with  older  VLA  images  to  avoid  problems
+    resulting from  the different frequencies and  noise properties of the
+    configurations.  That leads to small  gaps  in  the  sky  coverage  at
+    boundaries between  the EVLA and VLA regions.   As a result,  the area
+    covered by  this release  of the  catalog is  about 60  square degrees
+    smaller than the  earlier  release  of  the  catalog  (13Jun05,   also
+    available  here as the "<B>first13.dat</B>"  file),   and the total number of
+    sources  is reduced  by nearly  25,000.  The  previous version  of the
+    catalog  does have  sources in  the overlap  regions,  but  their flux
+    densities are considered  unreliable due  to calibration  errors.  The
+    flux densities  should be more  accurate in this  catalog,  biases are
+    smaller, and the incidence of spurious sources is also reduced.
+
+    Over most of the survey area,  the detection limit is 1 mJy.  A region
+    along  the equatorial strip (RA=21.3 to 3.3hr,  Dec=-1 to 1deg)  has a
+    deeper detection threshold because  two  epochs  of  observation  were
+    combined.   The typical detection threshold in this region is 0.75mJy.
+    There  are approximately 4,500  sources below the  1mJy threshold used
+    for most previous versions of the catalog.
+
+    The previous versions
+    <A HREF="http://sundog.stsci.edu/first/catalogs/">http://sundog.stsci.edu/first/catalogs/</A>
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.58">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.59">&#215; <A HREF="#sRM2.1">first14.dat</A>      189   946432   The FIRST survey catalog, 14Dec17 Version
+<A NAME="sRM-F.60">&#215; <A HREF="#sRM2.1">first13.dat</A>      189   971268   The FIRST survey catalog, 13jun05 Version
+                               (25,000 more sources, but with unreliable flux)
+<HR>
+
+<A NAME="sRM13.1"><B>See also</B>:
+    <A HREF="http://sundog.stsci.edu/">http://sundog.stsci.edu/</A> : home page of the VLA FIRST Survey
+    <A HREF="http://sundog.stsci.edu/first/catalogs/readme_14mar04.html">http://sundog.stsci.edu/first/catalogs/readme_14mar04.html</A> : this version
+    <A HREF="http://sundog.stsci.edu/first/catalogs/history.html">http://sundog.stsci.edu/first/catalogs/history.html</A> : Version History
+    <A HREF="http://sundog.stsci.edu/cgi-bin/searchfirst">http://sundog.stsci.edu/cgi-bin/searchfirst</A> : the FIRST search engine
+    <A HREF="http://third.ucllnl.org/cgi-bin/firstcutout">http://third.ucllnl.org/cgi-bin/firstcutout</A> : the FIRST Cutout Server.
+
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM2.1"> first14.dat,</A> <A HREF="#sRM-F.60"> first13.dat</A>
+<HR>
+   Bytes Format Units   Label     Explanations
+<HR>
+   1- 16  A16   ---     FIRST     <A HREF="#sRM3.1">FIRST Source designation (1)</A>
+  18- 19  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?h" TARGET="explain">h</A>       RAh       <A HREF="#sRM3.2">Right Ascension J2000 (hours) (2)</A>
+  21- 22  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?min" TARGET="explain">min</A>     RAm       <A HREF="#sRM3.2">Right Ascension J2000 (minutes) (2)</A>
+  24- 29  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>       RAs       <A HREF="#sRM3.2">Right Ascension J2000 (seconds) (2)</A>
+      31  A1    ---     DE-       <A HREF="#sRM3.2">Declination J2000 (sign) (2)</A>
+  32- 33  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEd       <A HREF="#sRM3.2">Declination J2000 (degrees) (2)</A>
+  35- 36  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>  DEm       <A HREF="#sRM3.2">Declination J2000 (minutes) (2)</A>
+  38- 42  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  DEs       <A HREF="#sRM3.2">Declination J2000 (seconds) (2)</A>
+  44- 48  F5.3  ---     p(S)      [0,1] <A HREF="#sRM3.3">Probability of being a side lobe (3)</A>
+  50- 57  F8.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJy" TARGET="explain">mJy</A>     Fpeak     <A HREF="#sRM3.4">Peak flux density at 1.4GHz (4)</A>
+  59- 67  F9.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJy" TARGET="explain">mJy</A>     Fint      <A HREF="#sRM3.4">Integrated flux density at 1.4GHz (4)</A>
+  70- 75  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJy" TARGET="explain">mJy</A>     Rms       <A HREF="#sRM3.5">Local noise estimate (5)</A>
+  77- 82  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  Maj       <A HREF="#sRM3.6">Major axis (FWHM) (6)</A>
+  84- 89  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  Min       <A HREF="#sRM3.6">Minor axis (FWHM) (6)</A>
+  91- 95  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     PA        [0/180] <A HREF="#sRM3.6">Position angle (6)</A>
+  97-102  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  fMaj      <A HREF="#sRM3.7">Fitted major axis before deconvolution (7)</A>
+ 104-109  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  fMin      <A HREF="#sRM3.7">Fitted minor axis before deconvolution (7)</A>
+ 111-115  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     fPA       [0/180] <A HREF="#sRM3.7">Fitted PA before deconvolution (7)</A>
+ 117-128  A12   ---     Field     <A HREF="#sRM3.8">Name of the coadded image containing</A>
+                                 the source (8)
+ 130-131  I2    ---     N1        [0/10]?=-<A HREF="#sRM3.9">1 Number of SDSS-DR10 counterparts (9)</A>
+ 133-137  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  r1        [0/8]?=<A HREF="#sRM3.9">99 Closest SDSS match (9)</A>
+ 139-143  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     m1        ?=<A HREF="#sRM3.9">99 SDSS i magnitude of closest SDSS match (9)</A>
+     145  A1    ---     c1        [sg-] SDSS class: s=star, g=galaxy
+ 147-148  I2    ---     N2        <A HREF="#sRM3.10">Number of 2MASS counterparts (10)</A>
+ 150-154  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  r2        [0/8]?=<A HREF="#sRM3.10">99 Closest 2MASS match (10)</A>
+ 156-160  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     m2        ?=<A HREF="#sRM3.10">99 2MASS Ks mag. of closest 2MASS match (10)</A>
+ 162-169  F8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?yr" TARGET="explain">yr</A>      Ep        <A HREF="#sRM3.11">Mean epoch of the FIRST flux density (11)</A>
+ 171-179  F9.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       Ep(JD)    <A HREF="#sRM3.11">Mean epoch in Julian Day (11)</A>
+ 182-189  F8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       s_Ep(JD)  <A HREF="#sRM3.11">Epoch rms (11)</A>
+<HR>
+<A NAME="sRM3.1"><B>Note (1)</B>:
+    This column (not  part of  the original  catalog) contains  the source
+    name  built from the rule registered at IAU ('J' followed by truncated
+    J2000-position)
+<A NAME="sRM3.2"><B>Note (2)</B>:
+    Position (J2000)  of the source.  The accuracy of the position depends
+    on the  brightness and size  of the source  and the noise  in the map.
+    Point sources at  the detection  limit of  the catalog  have positions
+    accurate to  better than  1 arcsec  at 90%   confidence;  2  mJy point
+    sources  in typically noisy regions have positions good to 0.5 arcsec.
+    An empirical expression for the positional accuracy is
+
+        unc(90% confidence) = Size  (1/SNR + 1/20)  arcsec
+
+    where Size is  either the  major or  minor axis  fitted FWHM  (fMaj or
+    fMin) as given in the  catalog  and  SNR  is  the  peak  flux  density
+    signal-to-noise ratio:
+
+        SNR = (Fpeak-0.25) / Rms
+
+    (The  positional uncertainty  is of course  elliptical for  elliptical
+    sources). The best possible positional uncertainty is limited to about
+    0.1  arcsec by our  ability to fit  source positions in  maps with 1.8
+    arcsec   pixels  and  by  various  random  calibration  uncertainties.
+    Systematic errors in the positions are smaller than 0.05 arcsec.
+<A NAME="sRM3.3"><B>Note (3)</B>:
+    p(S)  indicates the probability that  the  source  is  spurious  (most
+    commonly  because it is a sidelobe of of a nearby bright source).  Low
+    values mean the source is  unlikely  to  be  spurious.
+
+    Sidelobe probabilities for this  version  of  the  catalog  have  been
+    computed  using an improved algorithm based on multiple voting oblique
+    decision tree classifiers. The classifiers were trained using deep VLA
+    fields that give reliable assessments of the reality of FIRST sources.
+    The  algorithm will be  described in detail  in a future  paper on the
+    final  FIRST catalog;  nevertheless,  we  still recommend checking the
+    images.
+<A NAME="sRM3.4"><B>Note (4)</B>:
+    Fpeak  and Fint are the peak and integrated flux densities measured in
+    mJy. They  are derived by fitting an  elliptical Gaussian model to the
+    source. To correct  for the ``CLEAN  bias'' effect, 0.25  mJy has been
+    added to the peak  flux density  and the  integrated flux  density has
+    been multiplied by (1+0.25/Fpeak) (see our paper for more details).
+
+    The  uncertainty in  Fpeak is  given by  the rms  noise at  the source
+    position,  while the uncertainty  in Fint can  be considerably greater
+    depending on  the source size  and morphology. For  bright sources the
+    accuracies of Fpeak and  Fint are  limited to  about 5%  by systematic
+    effects. Note that for sources  that  are  not  well-described  by  an
+    elliptical  Gaussian model,  Fint is  not an  accurate measure  of the
+    integrated flux density.
+<A NAME="sRM3.5"><B>Note on (5)</B>:
+    Rms  is a local noise estimate at the source position measured in mJy.
+    Rms is computed by combining the measured noise from all grid pointing
+    images contributing to  this  coadded  map  position.  Note  that  the
+    significance of  detection  for  a  source  is  (Fpeak-0.25)/Rms,  not
+    Fpeak/Rms, because of the CLEAN  bias  correction  to  the  peak  flux
+    density. The catalog includes only sources brighter than 5 Rms.
+
+    FITS  images giving the rms noise as a function of position on the sky
+    are available  for the northern  and the southern  areas. These images
+    give the  rms in  mJy/beam tabulated  on a  ~3arcmin  grid in  RA  and
+    Declination. If there is no source in the catalog at a given position,
+    the source  peak flux density  (before CLEAN bias correction)  is less
+    than 5 times the coverage map rms value at that position.
+    The sky area covered is displayed in the images at
+    <A HREF="http://sundog.stsci.edu/first/catalogs/">http://sundog.stsci.edu/first/catalogs/</A>
+<A NAME="sRM3.6"><B>Note (6)</B>:
+    Maj,  Min,  and PA give the major and minor axes (FWHM in arcsec)  and
+    position  angle (degrees east  of north)  derived  from the elliptical
+    Gaussian model  for the source.  Maj and  Min have been deconvolved to
+    remove blurring by the elliptical Gaussian point-spread function. (The
+    fitted parameters  before deconvolution are given  in the fMaj,  fMin,
+    and fPA  columns).  In the north the  beam is circular 5.4arcsec FWHM;
+    south  of +04d33'21"  it is elliptical,  6.4x5.4arcsec FWHM,  with the
+    major axis running north-south. In the southern Galactic cap (RA = 21h
+    to 3h),   the elliptical beam size  increases further to 6.8x5.4arcsec
+    south of declination -02d30'25"
+
+    Noise  can cause the fitted values of the major and minor axes (before
+    deconvolution)   to  be  smaller  than  the  beam.  The  corresponding
+    deconvolved size is given as zero in this case.
+
+    The  uncertainties  in  the  deconvolved  sizes  depend  on  both  the
+    brightness and  the sizes. Objects  at the catalog  flux density limit
+    have  uncertainties of about 2arcsec in  their sizes (so faint objects
+    with  Maj&lt;2arcsec  are  consistent  with  point  sources).   A  simple
+    empirical estimate of the uncertainty is
+
+        {sigma}(Size) = 10arcsec (1/SNR + 1/75)
+
+    where SNR is the signal-to-noise ratio defined above.
+<A NAME="sRM3.7"><B>Note (7)</B>:
+    fMaj, fMin, and fPA give the major and minor axes (FWHM in arcsec) and
+    position angle  (degrees east  of north)  derived from  the elliptical
+    Gaussian model for  the source.  These are  the fitted  sizes measured
+    directly  from the image; the elliptical point-spread function has not
+    been deconvolved.
+<A NAME="sRM3.8"><B>Note (8)</B>:
+    The Field Name is the name of the coadded image containing the source.
+    Note that the field  name encodes  the position  of the  field center:
+    field  hhmmm+ddmmm is centered at RA=hh mm.m, Dec=+dd mm.m. The images
+    are available from several  archives  and  through  the  FIRST  Cutout
+    Server.
+
+    All  field names in the current catalog end with a letter E through X,
+    depending  on the date of the last  catalog release in which the image
+    was modified.  The  W and  X fields  are new  in this  catalog,  while
+    sources extracted  from the  E-T fields  are essentially  identical to
+    those in the  previous version of  the catalog.  The  W fields include
+    contributions from  EVLA data  taken in  Spring 2011  and have  both a
+    slightly different  central frequency  (1.335GHz instead  of 1.400GHz)
+    and typically higher noise levels than the older images.  The X fields
+    are  images that neighbor the EVLA fields but differ from the previous
+    release  in that they omit nearby EVLA observations from the co-adding
+    of overlapping grid images.
+<A NAME="sRM3.9"><B>Note (9)</B>:
+    These columns  give  information  on  optical  counterparts  from  the
+    SDSS-DR10 catalog (Cat.  <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=V/139">V/139</A>).  The matches were performed using the
+    SDSS-III CasJobs web interface.
+
+    There is a column giving the  number  of  matches  within  a  fiducial
+    radius of 8arcsec and, for the nearest match,  the separation from the
+    FIRST  position  in  arcsec  and  the  magnitude.   The  morphological
+    classification is also given (s=stellar, g=nonstellar/galaxy). A count
+    of zero indicates  there are no  sources within this  radius (which is
+    also  indicated by a separation of 99.00 and a classification of '-');
+    a  count of -1 indicates that the  FIRST source falls outside the SDSS
+    DR10 survey area so that  no  SDSS  data  are  available.   The  given
+    magnitudes corresponds to i-band; a magnitude of -1 indicates that the
+    magnitude in the DR10 catalog was given as -9999.
+<A NAME="sRM3.10"><B>Note (10)</B>:
+    These  columns give information on near-infrared counterparts from the
+    2MASS catalog  (Cat.  <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=II/246">II/246</A>):   number of  matches within  a fiducial
+    radius of  8arcsec,  the separation  between the FIRST  source and the
+    nearest match, and the Ks magnitude.
+<A NAME="sRM3.11"><B>Note (11)</B>:
+    The  Epoch Mean columns give the weighted mean of all the contributing
+    pointing  epochs at the position  of the source.  It  is given both in
+    decimal years and in JD for convenience. The s_Ep(JD) column gives the
+    weighted  rms of the pointing epochs at  the source position.  It is a
+    measure of  the spread in  epochs that contribute  to the measurement.
+    Many sources have small rms values of only a few minutes (dominated by
+    a single 3-minute pointings or by 2 adjacent pointings), but values of
+    days to weeks are  also common  (for sources  observed in  the overlap
+    between declination strips), and some objects have rms values of years
+    (for  sources observed at the edges  of regions in different observing
+    seasons or  that were observed  multiple times due  to data problems).
+    The largest epoch rms in the survey is 6.8years.
+<HR>
+
+<A NAME="sRM99.1"><B>History</B>:
+    The catalog file (originally  catalog_12feb16.bin.gz) was copied from
+    <A HREF="http://sundog.stsci.edu/first/catalogs/">http://sundog.stsci.edu/first/catalogs/</A> on 25-Sep-2012.
+
+    The preceding versions were numbered in CDS Archives:
+      <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VIII/71">VIII/71</A> (2003 April 11, 811117 sources)
+      <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VIII/59">VIII/59</A> (1999 July 21, 549707 sources)
+      <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VIII/51">VIII/51</A> (1998 Feb 04, 437429 sources)
+      <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VIII/48">VIII/48</A> (1997 April 24, 236040 sources)
+
+    See <A HREF="http://sundog.stsci.edu/first/catalogs/history.html">http://sundog.stsci.edu/first/catalogs/history.html</A>
+    for the complete version history.
+================================================================================
+<B>(End)</B>          Robert H. Becker [LLNL], Richard L. White [STScI]     17-May-2015
+
+</PRE><!-- ....wait for 1 children: %0=3183098 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

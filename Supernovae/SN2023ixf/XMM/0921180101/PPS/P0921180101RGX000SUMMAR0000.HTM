@@ -1,0 +1,298 @@
+<html>
+<head>
+<title>
+RGS Processing Summary</title>
+<style>
+<!-- 
+h1, h2 ,h3 { color: #000000; text-align: left; }
+body { bgcolor: #FFFFFF; color: #000000; font-family: monospace; }
+img { border: 0; }
+#subtitle table { width: 90%;  border: 1em;}
+#subtitle th { text-align: left; font-family: monospace; font-weight: bold; }
+#subtitle td { text-align: left; font-family: monospace; font-weight: medium; }
+#normaltable th.string { padding-left: 1em; text-align: left; font-weight: bold; font-family: monospace }
+#normaltable th.date { padding-left: 1em; text-align: left; font-family: monospace; font-weight: bold; }
+#normaltable th.unit { padding-left: 1em; text-align: left; font-family: monospace; font-size: small; font-weight: bold; }
+#normaltable th.angle { padding-left: 1em; text-align: left; font-family: monospace; font-weight: bold; }
+#normaltable th.number { padding-left: 1em; text-align: left; font-family: monospace; font-weight: bold; }
+#normaltable td.string { padding-left: 1em; text-align: left; font-family: monospace; font-weight: medium; }
+#normaltable td.date { padding-left: 1em; text-align: left; font-family: monospace; font-weight: medium; }
+#normaltable td.number { padding-left: 1em; text-align: right; font-family: monospace; font-weight: medium;}
+#normaltable td.angle { padding-left: 1em; text-align: right; font-family: monospace; font-weight: medium; }
+#widetable th.string { padding-left: 1em; text-align: left; font-family: monospace; font-weight: bold; }
+#widetable th.flags { padding-left: 1em; text-align: left; font-family: monospace; font-weight: bold; }
+#widetable th.date { padding-left: 1em; text-align: left; font-family: monospace; font-weight: bold; }
+#widetable th.flag { padding-left: 1em; text-align: center; font-family: monospace; font-weight: bold; }
+#widetable th.angle { padding-left: 1em; text-align: left; font-family: monospace; font-weight: bold; }
+#widetable th.number { padding-left: 1em; text-align: left; font-family: monospace; font-weight: bold; }
+#widetable th.unit { padding-left: 1em; text-align: left; font-family: monospace; font-size: small; font-weight: bold; }
+#widetable td.string { padding-left: 1em; padding-left: 1em; text-align: left; font-family: monospace; font-size: small; font-weight: medium; }
+#widetable td.flags { padding-left: 1em; text-align: left; font-family: monospace; font-size: small; font-weight: medium; font-stretch: narrower; }
+#widetable td.flag { padding-left: 1em; text-align: center; font-family: monospace; font-size: small; font-weight: medium; font-stretch: narrower; }
+#widetable td.date { padding-left: 1em; text-align: left; font-family: monospace; font-size: small; font-weight: medium; }
+#widetable td.number { padding-left: 1em; text-align: right; font-family: monospace; font-size: small; font-weight: medium; }
+#widetable td.angle { padding-left: 1em; text-align: right; font-family: monospace; font-size: small; font-weight: medium; }
+a { text-decoration:none; color:#000000; }
+a:link { text-decoration:none; color:#0000FF; }
+a:active { text-decoration:none; color:#00FF00; }
+a:visited { text-decoration:none; color:#000077; }
+a:hover { text-decoration:underline; color:#777777; }
+#linkbar ul { float:left; width:100%; padding:0; margin:0; list-style-type:none; font-size: large; } 
+#linkbar a { float:left; width:8em; font-weight: bold; text-decoration:none; color:#000000; padding:0.2em 0.6em; font-size: large; } 
+#linkbar a:link { float:left; width:8em; font-weight: bold; text-decoration:none; color:#0000FF; padding:0.2em 0.6em; font-size: large; } 
+#linkbar a:active { float:left; width:8em; font-weight: bold; text-decoration:none; color:#00FF00; padding:0.2em 0.6em; font-size: large; } 
+#linkbar a:visited { float:left; width:8em; font-weight: bold; text-decoration:none; color:#000077; padding:0.2em 0.6em; font-size: large; } 
+#linkbar a:hover { font-weight: bold; text-decoration:underline; color:#777777; padding:0.2em 0.6em; font-size: large; } 
+#linkbar .nolink { float:left; width:8em; font-weight: bold; text-decoration:underline; text-decoration:underline; color:#000000; padding:0.2em 0.6em; font-size: large; } 
+#linkbar li {display:inlinefont-size: large; } 
+#pagemenu ul { float:left; width:90%; padding:0; margin:0; list-style-type:none; font-size: large; } 
+#pagemenu a { float:left; width:16em; font-weight: bold; text-decoration:none; color:#000000; padding:0.2em 0.6em; font-size: large; } 
+#pagemenu a:link { float:left; width:16em; font-weight: bold; text-decoration:none; color:#0000FF; padding:0.2em 0.6em; font-size: large; } 
+#pagemenu a:active { float:left; width:16em; font-weight: bold; text-decoration:none; color:#00FF00; padding:0.2em 0.6em; font-size: large; } 
+#pagemenu a:visited { float:left; width:16em; font-weight: bold; text-decoration:none; color:#000077; padding:0.2em 0.6em; font-size: large; } 
+#pagemenu a:hover { font-weight: bold; text-decoration:underline; color:#777777; padding:0.2em 0.6em; font-size: large; } 
+#pagemenu .nolink { float:left; width:16em; font-weight: bold; text-decoration:underline; text-decoration:underline; color:#000000; padding:0.2em 0.6em; font-size: large; } 
+#pagemenu li {display:inlinefont-size: large; } 
+#footer ul { float:left; width:100%; padding:0; margin:0; list-style-type:none; } 
+#footer a { float:left; width:8em; font-weight: bold; text-decoration:none; color:#000000; padding:0.2em 0.6em; } 
+#footer a:link { float:left; width:8em; font-weight: bold; text-decoration:none; color:#0000FF; padding:0.2em 0.6em; } 
+#footer a:active { float:left; width:8em; font-weight: bold; text-decoration:none; color:#00FF00; padding:0.2em 0.6em; } 
+#footer a:visited { float:left; width:8em; font-weight: bold; text-decoration:none; color:#000077; padding:0.2em 0.6em; } 
+#footer a:hover { font-weight: bold; width:8em; text-decoration:underline; color:#777777; padding:0.2em 0.6em; } 
+#footer .nolink1 { float:left; width:12em; font-weight: bold; text-decoration: none; color:#000000; padding:0.2em 0.6em;  text-align: right; } 
+#footer .nolink2 { float:left; width:18em; font-weight: bold; text-decoration: none; color:#000000; padding:0.2em 0.6em;  text-align: center; } 
+#footer .nolink3 { float:left; width:18em; font-weight: bold; text-decoration: none; color:#000000; padding:0.2em 0.6em;  text-align: right; } 
+#footer li {display:inline} 
+ -->
+</style>
+</head>
+<body>
+<div id="intsituteheader">
+<a name="top">&nbsp</a>
+<img src="P0921180101OBX000SSCLG20000.PNG" alt="XMM Survey Science Centre Logo" />
+<hr /></div>
+<div id="linkbar">
+<ul>
+<li><a href="P0921180101OBX000SUMMAR0000.HTM">OBS Summary</a></li>
+<li><a href="P0921180101OBX000PPSSUM0000.HTM">PPS Summary</a></li>
+<li><a href="P0921180101EPX000SUMMAR0000.HTM">EPIC Summary</a></li>
+<li><a href="P0921180101OMX000SUMMAR0000.HTM">OM Summary</a></li>
+<li class="nolink">RGS Summary</li>
+<li><a href="P0921180101CAX000XCORRE0000.HTM">Catalogue Summary</a></li>
+</ul>
+<br clear="left"/>
+<hr />
+</div>
+<div id="subtitle">
+<h1>0921180101&nbsp;RGS Processing Summary</h1>
+<table>
+<tr align="left"><th>Revolution</th><th>Target</th><th>Scheduled Length</th><th>Observer</th></tr>
+<tr align="left">
+<td>4308</td><td>SN2023ixf</td><td>12111</td><td>Prof  Raffaella           Margutti</td>
+</tr>
+</table>
+<hr />
+</div>
+<div id="pagemenu">
+<ul>
+<li><a href="#mulitexposureproduct">Multi-Exposure Products</a></li>
+<li><a href="#exposuresprocessed">Exposures processed by PPS</a></li>
+<li><a href="#sourcesprocessed">Sources processed by PPS</a></li>
+</ul>
+<br clear="left" /><hr />
+</div><div id="normaltable">
+<a name="mulitexposureproduct">&nbsp;</a><h3>Multi-Exposure Products</h3><table class="rgsmultiexposureproduct_table"><tr><th class="string">Filename</th><th class="string">Content</th></tr>
+<tr><td class="string"><a href="P0921180101RGX000FLUXED1004.FTZ">P0921180101RGX000FLUXED1004.FTZ</a></td><td class="string">RGS FLUXED SPECTRUM</td></tr>
+<tr><td class="string"><a href="P0921180101RGX000FLUXED1004.PDF">P0921180101RGX000FLUXED1004.PDF</a></td><td class="string">RGS FLUXED SPECTRUM</td></tr>
+</table><hr /></div><div id="exposuresprocessed">
+<a name="exposuresprocessed">&nbsp;</a>
+<h3>Exposures processed by PPS</h3>
+<div id="widetable">
+<table class="rgsexposureprocessed_table">
+<tr><th class="string">Inst.</th><th class="string">Exp.&nbsp;Id</th><th class="string">Sched</th><th class="string">Mode</th><th class="string">Datamode</th><th class="string">Event Filtering</th><th class="number">Duration</th><th class="date">Actual Start</th><th class="date">Actual End</th></tr>
+<tr><td class="string">RGS1</td><td class="string"><a href="P0921180101RGX000SUMMAR0000.HTM#iRGS1eS004">S004</a></td><td class="string">Y</td><td class="string">HighEventRateWithSES</td><td class="string">Spectroscopy</td><td class="string">rejflags,attGTI,hkGTI</td><td class="number">12110</td><td class="date">2023-06-18T13:26:19</td><td class="date">2023-06-18T16:48:09</td></tr>
+<tr><td class="string">RGS2</td><td class="string"><a href="P0921180101RGX000SUMMAR0000.HTM#iRGS2eS005">S005</a></td><td class="string">Y</td><td class="string">HighEventRateWithSES</td><td class="string">Spectroscopy</td><td class="string">rejflags,attGTI,hkGTI</td><td class="number">12103</td><td class="date">2023-06-18T13:26:27</td><td class="date">2023-06-18T16:48:10</td></tr>
+</table>
+<hr />
+</div>
+<div id="exposurespecificproducts">
+<h3>Exposure Specific Products</h3>
+<div id="widetable">
+<a name="iRGS1eS004">&nbsp;</a>
+<table class="rgsexposurespecific_toptable">
+<tr><th class="string">Inst.</th><th class="string">Exp.&nbsp;Id</th><th class="string">Sched</th><th class="string">Mode</th><th class="string">Datamode</th><th class="string">Event Filtering</th><th class="number">Duration</th><th class="date">Actual Start</th><th class="date">Actual End</th></tr>
+<tr><td class="string">RGS1</td><td class="string"><a href="P0921180101RGX000SUMMAR0000.HTM#iRGS1eS004">S004</a></td><td class="string">Y</td><td class="string">HighEventRateWithSES</td><td class="string">Spectroscopy</td><td class="string">rejflags,attGTI,hkGTI</td><td class="number">12110</td><td class="date">2023-06-18T13:26:19</td><td class="date">2023-06-18T16:48:09</td></tr>
+</table>
+</div>
+<div id="normaltable">
+<table class="rgsexposurespecific_toptable">
+<tr><th class="string">Filename</th><th class="string">Content</th><th class="string">Order</th></tr>
+<tr><td class="string"><a href="P0921180101R1S004EVENLI0000.FTZ">P0921180101R1S004EVENLI0000.FTZ</a></td><td class="string">RGS EVENT LIST</td><td class="number">&nbsp;</td>
+</tr>
+<tr><td class="string"><a href="P0921180101R1S004EXPMAP0000.FTZ">P0921180101R1S004EXPMAP0000.FTZ</a></td><td class="string">RGS EXPOSURE MAP</td><td class="number">&nbsp;</td>
+</tr>
+<tr><td class="string"><a href="P0921180101R1S004FBKTSR0000.FTZ">P0921180101R1S004FBKTSR0000.FTZ</a></td><td class="string">RGS FLARE BACKGROUND TIMESERIES</td><td class="number">&nbsp;</td>
+</tr>
+<tr><td class="string"><a href="P0921180101R1S004IMAGE_0000.FTZ">P0921180101R1S004IMAGE_0000.FTZ</a></td><td class="string">RGS IMAGE</td><td class="number">&nbsp;</td>
+</tr>
+<tr><td class="string"><a href="P0921180101R1S004IMAGE_0000.PNG">P0921180101R1S004IMAGE_0000.PNG</a></td><td class="string">RGS IMAGE</td><td class="number">&nbsp;</td>
+</tr>
+<tr><td class="string"><a href="P0921180101R1S004ORDIMG0000.FTZ">P0921180101R1S004ORDIMG0000.FTZ</a></td><td class="string">RGS ENERGY-DISPERSION IMAGE</td><td class="number">&nbsp;</td>
+</tr>
+<tr><td class="string"><a href="P0921180101R1S004ORDIMG0000.PNG">P0921180101R1S004ORDIMG0000.PNG</a></td><td class="string">RGS ENERGY-DISPERSION IMAGE</td><td class="number">&nbsp;</td>
+</tr>
+<tr><td class="string"><a href="P0921180101R1S004SRCLI_0000.FTZ">P0921180101R1S004SRCLI_0000.FTZ</a></td><td class="string">RGS SOURCE LIST</td><td class="number">&nbsp;</td>
+</tr>
+<tr><td class="string"><a href="P0921180101R1S004WFSPEC0000.PDF">P0921180101R1S004WFSPEC0000.PDF</a></td><td class="string">RGS WHOLE FIELD SRC+BKG SPECTRUM</td><td class="number">&nbsp;</td>
+</tr>
+<tr><td class="string"><a href="P0921180101R1S004BGMODL1000.FTZ">P0921180101R1S004BGMODL1000.FTZ</a></td><td class="string">RGS BACKGROUND MODEL</td><td class="number">1</td>
+</tr>
+<tr><td class="string"><a href="P0921180101R1S004WFSPEC1000.FTZ">P0921180101R1S004WFSPEC1000.FTZ</a></td><td class="string">RGS WHOLE FIELD SRC+BKG SPECTRUM</td><td class="number">1</td>
+</tr>
+<tr><td class="string"><a href="P0921180101R1S004WREMAT1000.FTZ">P0921180101R1S004WREMAT1000.FTZ</a></td><td class="string">RGS WHOLE FIELD RESPONSE MATRIX</td><td class="number">1</td>
+</tr>
+<tr><td class="string"><a href="P0921180101R1S004BGMODL2000.FTZ">P0921180101R1S004BGMODL2000.FTZ</a></td><td class="string">RGS BACKGROUND MODEL</td><td class="number">2</td>
+</tr>
+<tr><td class="string"><a href="P0921180101R1S004WFSPEC2000.FTZ">P0921180101R1S004WFSPEC2000.FTZ</a></td><td class="string">RGS WHOLE FIELD SRC+BKG SPECTRUM</td><td class="number">2</td>
+</tr>
+<tr><td class="string"><a href="P0921180101R1S004WREMAT2000.FTZ">P0921180101R1S004WREMAT2000.FTZ</a></td><td class="string">RGS WHOLE FIELD RESPONSE MATRIX</td><td class="number">2</td>
+</tr>
+</table>
+</div>
+<div id="widetable">
+<a name="iRGS2eS005">&nbsp;</a>
+<table class="rgsexposurespecific_toptable">
+<tr><th class="string">Inst.</th><th class="string">Exp.&nbsp;Id</th><th class="string">Sched</th><th class="string">Mode</th><th class="string">Datamode</th><th class="string">Event Filtering</th><th class="number">Duration</th><th class="date">Actual Start</th><th class="date">Actual End</th></tr>
+<tr><td class="string">RGS2</td><td class="string"><a href="P0921180101RGX000SUMMAR0000.HTM#iRGS2eS005">S005</a></td><td class="string">Y</td><td class="string">HighEventRateWithSES</td><td class="string">Spectroscopy</td><td class="string">rejflags,attGTI,hkGTI</td><td class="number">12103</td><td class="date">2023-06-18T13:26:27</td><td class="date">2023-06-18T16:48:10</td></tr>
+</table>
+</div>
+<div id="normaltable">
+<table class="rgsexposurespecific_toptable">
+<tr><th class="string">Filename</th><th class="string">Content</th><th class="string">Order</th></tr>
+<tr><td class="string"><a href="P0921180101R2S005EVENLI0000.FTZ">P0921180101R2S005EVENLI0000.FTZ</a></td><td class="string">RGS EVENT LIST</td><td class="number">&nbsp;</td>
+</tr>
+<tr><td class="string"><a href="P0921180101R2S005EXPMAP0000.FTZ">P0921180101R2S005EXPMAP0000.FTZ</a></td><td class="string">RGS EXPOSURE MAP</td><td class="number">&nbsp;</td>
+</tr>
+<tr><td class="string"><a href="P0921180101R2S005FBKTSR0000.FTZ">P0921180101R2S005FBKTSR0000.FTZ</a></td><td class="string">RGS FLARE BACKGROUND TIMESERIES</td><td class="number">&nbsp;</td>
+</tr>
+<tr><td class="string"><a href="P0921180101R2S005IMAGE_0000.FTZ">P0921180101R2S005IMAGE_0000.FTZ</a></td><td class="string">RGS IMAGE</td><td class="number">&nbsp;</td>
+</tr>
+<tr><td class="string"><a href="P0921180101R2S005IMAGE_0000.PNG">P0921180101R2S005IMAGE_0000.PNG</a></td><td class="string">RGS IMAGE</td><td class="number">&nbsp;</td>
+</tr>
+<tr><td class="string"><a href="P0921180101R2S005ORDIMG0000.FTZ">P0921180101R2S005ORDIMG0000.FTZ</a></td><td class="string">RGS ENERGY-DISPERSION IMAGE</td><td class="number">&nbsp;</td>
+</tr>
+<tr><td class="string"><a href="P0921180101R2S005ORDIMG0000.PNG">P0921180101R2S005ORDIMG0000.PNG</a></td><td class="string">RGS ENERGY-DISPERSION IMAGE</td><td class="number">&nbsp;</td>
+</tr>
+<tr><td class="string"><a href="P0921180101R2S005SRCLI_0000.FTZ">P0921180101R2S005SRCLI_0000.FTZ</a></td><td class="string">RGS SOURCE LIST</td><td class="number">&nbsp;</td>
+</tr>
+<tr><td class="string"><a href="P0921180101R2S005WFSPEC0000.PDF">P0921180101R2S005WFSPEC0000.PDF</a></td><td class="string">RGS WHOLE FIELD SRC+BKG SPECTRUM</td><td class="number">&nbsp;</td>
+</tr>
+<tr><td class="string"><a href="P0921180101R2S005BGMODL1000.FTZ">P0921180101R2S005BGMODL1000.FTZ</a></td><td class="string">RGS BACKGROUND MODEL</td><td class="number">1</td>
+</tr>
+<tr><td class="string"><a href="P0921180101R2S005WFSPEC1000.FTZ">P0921180101R2S005WFSPEC1000.FTZ</a></td><td class="string">RGS WHOLE FIELD SRC+BKG SPECTRUM</td><td class="number">1</td>
+</tr>
+<tr><td class="string"><a href="P0921180101R2S005WREMAT1000.FTZ">P0921180101R2S005WREMAT1000.FTZ</a></td><td class="string">RGS WHOLE FIELD RESPONSE MATRIX</td><td class="number">1</td>
+</tr>
+<tr><td class="string"><a href="P0921180101R2S005BGMODL2000.FTZ">P0921180101R2S005BGMODL2000.FTZ</a></td><td class="string">RGS BACKGROUND MODEL</td><td class="number">2</td>
+</tr>
+<tr><td class="string"><a href="P0921180101R2S005WFSPEC2000.FTZ">P0921180101R2S005WFSPEC2000.FTZ</a></td><td class="string">RGS WHOLE FIELD SRC+BKG SPECTRUM</td><td class="number">2</td>
+</tr>
+<tr><td class="string"><a href="P0921180101R2S005WREMAT2000.FTZ">P0921180101R2S005WREMAT2000.FTZ</a></td><td class="string">RGS WHOLE FIELD RESPONSE MATRIX</td><td class="number">2</td>
+</tr>
+</table>
+</div>
+<hr />
+</div>
+</div>
+<div class="rgssourcesprocessed">
+<a name="sourcesprocessed">&nbsp;</a>
+<h3>Sources processed by PPS</h3>
+<div id="widetable">
+<table class="rgssourceprocessed_table">
+<tr><th class="string">Source</th><th class="string">Inst.</th><th class="string">Exp.&nbsp;Id</th><th class="angle">RA</th><th class="angle">Dec</th></tr>
+<tr><th class="unit">Dec (Hex)</th><th class="unit">&nbsp</th><th class="unit">&nbsp</th><th class="unit">[hms]</th><th class="unit">[&deg; &prime; &Prime;]</th></tr>
+<tr><td class="string"><a href="P0921180101RGX000SUMMAR0000.HTM#iRGS1eS004s4">4&nbsp;(004)</a></td>
+<td class="string">RGS1</td>
+<td class="string"><a href="P0921180101RGX000SUMMAR0000.HTM#iRGS1eS004">S004</a></td>
+<td class="angle">14&nbsp;03&nbsp;38.4</td>
+<td class="angle">54&nbsp;18&nbsp;42.75</td>
+</tr>
+<tr><td class="string"><a href="P0921180101RGX000SUMMAR0000.HTM#iRGS2eS005s4">4&nbsp;(004)</a></td>
+<td class="string">RGS2</td>
+<td class="string"><a href="P0921180101RGX000SUMMAR0000.HTM#iRGS2eS005">S005</a></td>
+<td class="angle">14&nbsp;03&nbsp;38.4</td>
+<td class="angle">54&nbsp;18&nbsp;42.75</td>
+</tr>
+</table>
+<hr />
+</div>
+<div class="rgssourcespecificproduct">
+<h3>Source Specific Products</h3>
+<div id="widetable">
+<a name="iRGS1eS004s4">&nbsp;</a>
+<table class="rgssourcespecific_toptable">
+<tr><th class="string">Source</th><th class="string">Inst.</th><th class="string">Exp.&nbsp;Id</th><th class="angle">RA</th><th class="angle">Dec</th></tr>
+<tr><th class="unit">Dec (Hex)</th><th class="unit">&nbsp</th><th class="unit">&nbsp</th><th class="unit">[hms]</th><th class="unit">[&deg; &prime; &Prime;]</th></tr>
+<tr><td class="string"><a href="P0921180101RGX000SUMMAR0000.HTM#iRGS1eS004s4">4&nbsp;(004)</a></td>
+<td class="string">RGS1</td>
+<td class="string"><a href="P0921180101RGX000SUMMAR0000.HTM#iRGS1eS004">S004</a></td>
+<td class="angle">14&nbsp;03&nbsp;38.4</td>
+<td class="angle">54&nbsp;18&nbsp;42.75</td>
+</tr>
+</table>
+</div>
+<div id="normaltable">
+<table class="rgssourcespecific_toptable">
+<tr><th class="string">Filename</th><th class="string">Content</th><th class="string">Order</th></tr>
+<tr><td class="string"><a href="P0921180101R1S004SRBTSR0004.FTZ">P0921180101R1S004SRBTSR0004.FTZ</a></td><td class="string">RGS SOURCE BACKGROUND TIMESERIES</td><td class="string">&nbsp;</td></tr>
+<tr><td class="string"><a href="P0921180101R1S004SRCTSR0004.FTZ">P0921180101R1S004SRCTSR0004.FTZ</a></td><td class="string">RGS SOURCE TIMESERIES</td><td class="string">&nbsp;</td></tr>
+<tr><td class="string"><a href="P0921180101R1S004SRSPEC0004.PDF">P0921180101R1S004SRSPEC0004.PDF</a></td><td class="string">RGS SOURCE SPECTRUM</td><td class="string">&nbsp;</td></tr>
+<tr><td class="string"><a href="P0921180101R1S004STSPLT0004.PDF">P0921180101R1S004STSPLT0004.PDF</a></td><td class="string">RGS SOURCE TIMESERIES PLOT</td><td class="string">&nbsp;</td></tr>
+<tr><td class="string"><a href="P0921180101R1S004BGSPEC1004.FTZ">P0921180101R1S004BGSPEC1004.FTZ</a></td><td class="string">RGS SOURCE BACKGROUND SPECTRUM</td><td class="string">1</td></tr>
+<tr><td class="string"><a href="P0921180101R1S004DSPHIS1004.FTZ">P0921180101R1S004DSPHIS1004.FTZ</a></td><td class="string">RGS CROSS-DISPERSION HISTOGRAM</td><td class="string">1</td></tr>
+<tr><td class="string"><a href="P0921180101R1S004RSPMAT1004.FTZ">P0921180101R1S004RSPMAT1004.FTZ</a></td><td class="string">RGS RESPONSE MATRIX</td><td class="string">1</td></tr>
+<tr><td class="string"><a href="P0921180101R1S004SBSPEC1004.FTZ">P0921180101R1S004SBSPEC1004.FTZ</a></td><td class="string">RGS FITS SOURCE+BACKGROUND SPECTRUM</td><td class="string">1</td></tr>
+<tr><td class="string"><a href="P0921180101R1S004SRSPEC1004.FTZ">P0921180101R1S004SRSPEC1004.FTZ</a></td><td class="string">RGS SOURCE SPECTRUM</td><td class="string">1</td></tr>
+<tr><td class="string"><a href="P0921180101R1S004BGSPEC2004.FTZ">P0921180101R1S004BGSPEC2004.FTZ</a></td><td class="string">RGS SOURCE BACKGROUND SPECTRUM</td><td class="string">2</td></tr>
+<tr><td class="string"><a href="P0921180101R1S004RSPMAT2004.FTZ">P0921180101R1S004RSPMAT2004.FTZ</a></td><td class="string">RGS RESPONSE MATRIX</td><td class="string">2</td></tr>
+<tr><td class="string"><a href="P0921180101R1S004SBSPEC2004.FTZ">P0921180101R1S004SBSPEC2004.FTZ</a></td><td class="string">RGS FITS SOURCE+BACKGROUND SPECTRUM</td><td class="string">2</td></tr>
+<tr><td class="string"><a href="P0921180101R1S004SRSPEC2004.FTZ">P0921180101R1S004SRSPEC2004.FTZ</a></td><td class="string">RGS SOURCE SPECTRUM</td><td class="string">2</td></tr>
+</table>
+</div><div id="widetable">
+<a name="iRGS2eS005s4">&nbsp;</a>
+<table class="rgssourcespecific_toptable">
+<tr><th class="string">Source</th><th class="string">Inst.</th><th class="string">Exp.&nbsp;Id</th><th class="angle">RA</th><th class="angle">Dec</th></tr>
+<tr><th class="unit">Dec (Hex)</th><th class="unit">&nbsp</th><th class="unit">&nbsp</th><th class="unit">[hms]</th><th class="unit">[&deg; &prime; &Prime;]</th></tr>
+<tr><td class="string"><a href="P0921180101RGX000SUMMAR0000.HTM#iRGS2eS005s4">4&nbsp;(004)</a></td>
+<td class="string">RGS2</td>
+<td class="string"><a href="P0921180101RGX000SUMMAR0000.HTM#iRGS2eS005">S005</a></td>
+<td class="angle">14&nbsp;03&nbsp;38.4</td>
+<td class="angle">54&nbsp;18&nbsp;42.75</td>
+</tr>
+</table>
+</div>
+<div id="normaltable">
+<table class="rgssourcespecific_toptable">
+<tr><th class="string">Filename</th><th class="string">Content</th><th class="string">Order</th></tr>
+<tr><td class="string"><a href="P0921180101R2S005SRBTSR0004.FTZ">P0921180101R2S005SRBTSR0004.FTZ</a></td><td class="string">RGS SOURCE BACKGROUND TIMESERIES</td><td class="string">&nbsp;</td></tr>
+<tr><td class="string"><a href="P0921180101R2S005SRCTSR0004.FTZ">P0921180101R2S005SRCTSR0004.FTZ</a></td><td class="string">RGS SOURCE TIMESERIES</td><td class="string">&nbsp;</td></tr>
+<tr><td class="string"><a href="P0921180101R2S005SRSPEC0004.PDF">P0921180101R2S005SRSPEC0004.PDF</a></td><td class="string">RGS SOURCE SPECTRUM</td><td class="string">&nbsp;</td></tr>
+<tr><td class="string"><a href="P0921180101R2S005STSPLT0004.PDF">P0921180101R2S005STSPLT0004.PDF</a></td><td class="string">RGS SOURCE TIMESERIES PLOT</td><td class="string">&nbsp;</td></tr>
+<tr><td class="string"><a href="P0921180101R2S005BGSPEC1004.FTZ">P0921180101R2S005BGSPEC1004.FTZ</a></td><td class="string">RGS SOURCE BACKGROUND SPECTRUM</td><td class="string">1</td></tr>
+<tr><td class="string"><a href="P0921180101R2S005DSPHIS1004.FTZ">P0921180101R2S005DSPHIS1004.FTZ</a></td><td class="string">RGS CROSS-DISPERSION HISTOGRAM</td><td class="string">1</td></tr>
+<tr><td class="string"><a href="P0921180101R2S005RSPMAT1004.FTZ">P0921180101R2S005RSPMAT1004.FTZ</a></td><td class="string">RGS RESPONSE MATRIX</td><td class="string">1</td></tr>
+<tr><td class="string"><a href="P0921180101R2S005SBSPEC1004.FTZ">P0921180101R2S005SBSPEC1004.FTZ</a></td><td class="string">RGS FITS SOURCE+BACKGROUND SPECTRUM</td><td class="string">1</td></tr>
+<tr><td class="string"><a href="P0921180101R2S005SRSPEC1004.FTZ">P0921180101R2S005SRSPEC1004.FTZ</a></td><td class="string">RGS SOURCE SPECTRUM</td><td class="string">1</td></tr>
+<tr><td class="string"><a href="P0921180101R2S005BGSPEC2004.FTZ">P0921180101R2S005BGSPEC2004.FTZ</a></td><td class="string">RGS SOURCE BACKGROUND SPECTRUM</td><td class="string">2</td></tr>
+<tr><td class="string"><a href="P0921180101R2S005RSPMAT2004.FTZ">P0921180101R2S005RSPMAT2004.FTZ</a></td><td class="string">RGS RESPONSE MATRIX</td><td class="string">2</td></tr>
+<tr><td class="string"><a href="P0921180101R2S005SBSPEC2004.FTZ">P0921180101R2S005SBSPEC2004.FTZ</a></td><td class="string">RGS FITS SOURCE+BACKGROUND SPECTRUM</td><td class="string">2</td></tr>
+<tr><td class="string"><a href="P0921180101R2S005SRSPEC2004.FTZ">P0921180101R2S005SRSPEC2004.FTZ</a></td><td class="string">RGS SOURCE SPECTRUM</td><td class="string">2</td></tr>
+</table>
+</div><hr />
+</div>
+</div>
+<div id="footer">
+<ul>
+<li style="width: 8; text-align: left;"><a href="#top">Return to top.</a></li><li class="nolink1">ppssumm-3.7</li><li class="nolink2">Processing Date:&nbsp;2023-06-28T13:08:55</li><li class="nolink3">Odf Id:&nbsp;4308_0921180101_001</li></ul>
+</div>
+</body>

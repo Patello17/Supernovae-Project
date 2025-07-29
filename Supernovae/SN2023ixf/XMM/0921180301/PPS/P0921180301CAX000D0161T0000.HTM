@@ -1,0 +1,520 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of J/A+A/527/A126</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Sun Jul 23 17:43:46 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0921180301OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of J/A+A/527/A126 :<BR>2XMMi/SDSS DR7 cross-correlation (Pineau+, 2011)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0921180301OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>J/A+A/527/A126</B>      2XMMi/SDSS DR7 cross-correlation         (Pineau+, 2011)
+================================================================================
+Cross-correlation of the 2XMMi catalogue with Data Release 7 of the
+Sloan Digital Sky Survey.
+    Pineau F.-X., Motch C., Carrera F., Della Ceca R., Derriere S., Michel L.,
+    Schwope A., Watson M.G.
+    &lt;Astron. Astrophys. 527, A126 (2011)&gt;
+    =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2011A%26A...527A.126P">2011A&A...527A.126P</A>        (SIMBAD/NED BibCode)
+================================================================================
+<B>ADC_Keywords</B>: Surveys ; X-ray sources ; Photometry, SDSS ; Cross identifications
+
+<B>Keywords</B>: methods: statistical - catalogs - X-rays: general - stars: activity -
+          quasars: general
+
+<A NAME="sRM99.1"><B>Abstract</B>:
+    The Survey Science Centre of the XMM-Newton satellite released the
+    first incremental version of the 2XMM catalogue in August 2008.
+    Containing more than 220000 X-ray sources, the 2XMMi was at that time
+    the largest catalogue of X-ray sources ever published and thus
+    constitutes an unprecedented resource for studying the high-energy
+    properties of various classes of X-ray emitters such as AGN and stars.
+    Thanks to the high throughput of the EPIC cameras on board XMM-Newton
+    accurate positions, fluxes, and hardness ratios are available for a
+    substantial fraction of the X-ray detections. The advent of the 7th
+    release of the Sloan Digital Sky Survey offers the opportunity to
+    cross-match two major surveys and extend the spectral energy
+    distribution of many 2XMMi sources towards the optical bands. This
+    implies building extensive homogeneous samples with a statistically
+    controlled rate of spurious matches and completeness. We here present
+    a cross-matching algorithm based on the classical likelihood ratio
+    estimator. The method developed has the advantage of providing true
+    probabilities of identifications without resorting to heavy
+    Monte-Carlo simulations.
+
+<A NAME="sRM11.1"><B>Description</B>:
+    Results of the statistical cross-match based on likelihood ratios
+    between the incremental Second XMM-Newton Serendipitous Source
+    Catalogue (2XMMi) and the Seventh Data Release of the Sloan Digital
+    Sky Survey (SDSS DR7). The cross-match is limited to 2XMMi point-like
+    sources (ep<SUB>ext</SUB>ml&lt;4) with a positional error smaller or equal to 5
+    arcsec, and to SDSS DR7 primary sources. We considered the individual
+    XMM source detection positions and errors on positions available in
+    the XCATDB (<A HREF="http://xcatdb.u-strasbg.fr/2xmmi/home">http://xcatdb.u-strasbg.fr/2xmmi/home</A>).
+
+    The table contains 72169 distinct associations for 72171 rows. For
+    each association, the table provides: parameters extracted from the
+    2XMMi catalogue ; cross-match parameters ; and parameters extracted
+    from both the SDSS DR7 catalogue and CasJobs
+    (<A HREF="http://cas.sdss.org/CasJobs/">http://cas.sdss.org/CasJobs/</A>).
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.53">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.54">&#215; <A HREF="#sRM2.1">catalog.dat</A>     3524    72171   2XMMi versus SDSSDR7 cross-match catalog
+<A NAME="sRM-F.55">&#215; 2XMMivsSDSSDR7.fits  2880    42929   FITS version of the catalog
+<HR>
+
+<A NAME="sRM13.1"><B>See also</B>:
+     <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=B/xmm">B/xmm</A> : XMM-Newton Observation Log (XMM-Newton SOC, 2009)
+     <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/37">IX/37</A> : XMM-Newton Serendipitous Source Catalogue (1XMM) (XMM-SSC, 2003)
+     <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/40">IX/40</A> : XMM-Newton 2nd Inc. Source Cat. (2XMMi) (XMM-SSC, 2008)
+     <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/41">IX/41</A> : XMM-Newton Serendipitous Source Catalogue 2XMMi-DR3 (XMM-SSC, 2010)
+   <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/A%2BA/493/339">J/A+A/493/339</A> : XMM-Newton serendipitous Survey. V. (Watson+, 2009)
+   <A HREF="http://cas.sdss.org/CasJobs">http://cas.sdss.org/CasJobs</A> : SDSS Query / CasJobs Home Page
+   <A HREF="http://xmmssc-www.star.le.ac.uk">http://xmmssc-www.star.le.ac.uk</A> :  XMM Home Page
+   <A HREF="http://www.sdss.org">http://www.sdss.org</A> : SDSS Home Page
+
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.54"> catalog.dat</A>
+<HR>
+   Bytes Format Units    Label       Explanations
+<HR>
+   1- 10  A10   ---      Obsno       XMM-Newton observation identifier
+  12- 14  I3    ---      srcNum      XMM observation source identifier in Obsno
+  16- 21  I6    ---      srcId       [1/221135] XMM unique source identifier
+  23- 44  A22   ---      Name        XMM unique source IAU name,
+                                        2XMM or 2XMMi JHHMMSS.s+DDMMSS
+  46- 51  I6    ---      detid       [1/289033] XMM detection identifier
+  53- 66  E14.9 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      RAdeg       XMM corrected Right Ascension of
+                                        detection (J2000)
+  68- 83 E16.11 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      DEdeg       XMM corrected Declination of
+                                        detection (J2000)
+  85- 99 E15.10 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      GLON        XMM corrected galactic longitude of
+                                        detection
+ 101-115 E15.10 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      GLAT        XMM corrected galactic latitude of
+                                        1detection
+ 117-128  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   ePos        Statistical 1{sigma} Error on detection
+                                        position
+ 130-137  E8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   sPos        XMM estimated systematic 1{sigma} Error
+                                        on the detection position
+     139  I1    ---      extML       [0] XMM likelihood of the detection being
+                                        extended
+ 141-152  A12   ---      PNflag      [FT] XMM PN flag (False/True)
+     154  I1    ---      S           [0/4] <A HREF="#sRM3.1">XMM Summary flag of the source (1)</A>
+ 156-166  E11.6 ---      Cst         ?=- XMM Chi2 probability that the source
+                                           is constant
+     168  A1    ---      V           [FT] XMM flag set to True if this source
+                                             was detected as variable
+ 170-175  A6    ---      PN_Filter   XMM PN Filter (Thick, Medium, Thin1 or
+                                           UNDEF)
+ 177-187  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    PN_1Flux    ?=- XMM Flux in 0.2-0.5keV for PN
+ 189-199  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    e<SUB>PN</SUB>1Flux  ?=- Error on PN_1Flux
+ 201-211  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    PN_2Flux    ?=- XMM Flux in 0.5-1.0keV for PN
+ 213-223  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    e<SUB>PN</SUB>2Flux  ?=- Error on PN_2Flux
+ 225-235  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    PN_3Flux    ?=- XMM Flux in 1.0-2.0keV for PN
+ 237-247  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    e<SUB>PN</SUB>3Flux  ?=- Error on PN_3Flux
+ 249-259  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    PN_4Flux    ?=- XMM Flux in 2.0-4.5keV for PN
+ 261-271  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    e<SUB>PN</SUB>4Flux  ?=- Error on PN_4Flux
+ 273-283  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    PN_5Flux    ?=- XMM Flux in 4.5-12.0keV for PN
+ 285-295  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    e<SUB>PN</SUB>5Flux  ?=- Error on PN_5Flux
+ 297-307  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    PN_8Flux    ?=- XMM Flux in 0.2-12.0keV for PN
+ 309-319  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    e<SUB>PN</SUB>8Flux  ?=- Error on PN_8Flux
+ 321-332  E12.7 ---      PN_HR1      ?=- <A HREF="#sRM3.2">XMM Hardness ratio 1 for PN (2)</A>
+ 334-347  E14.9 ---      e<SUB>PN</SUB>HR1    ?=- Error on PN_HR1
+ 349-360  E12.7 ---      PN_HR2      ?=- <A HREF="#sRM3.2">XMM Hardness ratio 2 for PN (2)</A>
+ 362-372  E11.6 ---      e<SUB>PN</SUB>HR2    ?=- Error on PN_HR2
+ 374-385  E12.7 ---      PN_HR3      ?=- <A HREF="#sRM3.2">XMM Hardness ratio 3 for PN (2)</A>
+ 387-397  E11.6 ---      e<SUB>PN</SUB>HR3    ?=- Error on PN_HR3
+ 399-410  E12.7 ---      PN_HR4      ?=- <A HREF="#sRM3.2">XMM Hardness ratio 4 for PN (2)</A>
+ 412-424  E13.8 ---      e<SUB>PN</SUB>HR4    ?=- Error on PN_HR4
+ 426-431  A6    ---      M1_Filter   XMM M1 Filter
+ 433-443  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    M1_1Flux    ?=- XMM Flux in 0.2-0.5keV for M1
+ 445-455  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    e<SUB>M1</SUB>1Flux  ?=- Error on M1_1Flux
+ 457-467  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    M1_2Flux    ?=- XMM Flux in 0.5-1.0keV for M1
+ 469-479  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    e<SUB>M1</SUB>2Flux  ?=- Error on M1_2Flux
+ 481-491  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    M1_3Flux    ?=- XMM Flux in 1.0-2.0keV for M1
+ 493-503  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    e<SUB>M1</SUB>3Flux  ?=- Error on M1_3Flux
+ 505-515  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    M1_4Flux    ?=- XMM Flux in 2.0-4.5keV for M1
+ 517-527  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    e<SUB>M1</SUB>4Flux  ?=- Error on M1_4Flux
+ 529-539  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    M1_5Flux    ?=- XMM Flux in 4.5-12.0keV for M1
+ 541-551  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    e<SUB>M1</SUB>5Flux  ?=- Error on M1_5Flux
+ 553-563  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    M1_8Flux    ?=- XMM Flux in 0.2-12.0keV for M1
+ 565-575  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    e<SUB>M1</SUB>8Flux  ?=- Error on M1_8Flux
+ 577-588  E12.7 ---      M1_HR1      ?=- <A HREF="#sRM3.2">XMM Hardness ratio 1 for M1 (2)</A>
+ 590-600  E11.6 ---      e<SUB>M1</SUB>HR1    ?=- Error on M1_HR1
+ 602-613  E12.7 ---      M1_HR2      ?=- <A HREF="#sRM3.2">XMM Hardness ratio 2 for M1 (2)</A>
+ 615-625  E11.6 ---      e<SUB>M1</SUB>HR2    ?=- Error on M1_HR2
+ 627-638  E12.7 ---      M1_HR3      ?=- <A HREF="#sRM3.2">XMM Hardness ratio 3 for M1 (2)</A>
+ 640-650  E11.6 ---      e<SUB>M1</SUB>HR3    ?=- Error on M1_HR3
+ 652-663  E12.7 ---      M1_HR4      ?=- <A HREF="#sRM3.2">XMM Hardness ratio 4 for M1 (2)</A>
+ 665-678 E14.10 ---      e<SUB>M1</SUB>HR4    ?=- Error on M1_HR4
+ 680-685  A6    ---      M2_Filter   XMM M2 Filter
+ 687-697  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    M2_1Flux    ?=- XMM Flux in 0.2-0.5keV for M2
+ 699-709  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    e<SUB>M2</SUB>1Flux  ?=- Error on M2_1Flux
+ 711-721  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    M2_2Flux    ?=- XMM Flux in 0.5-1.0keV for M2
+ 723-733  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    e<SUB>M2</SUB>2Flux  ?=- Error on M2_2Flux
+ 735-745  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    M2_3Flux    ?=- XMM Flux in 1.0-2.0keV for M2
+ 747-757  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    e<SUB>M2</SUB>3Flux  ?=- Error on M2_3Flux
+ 759-769  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    M2_4Flux    ?=- XMM Flux in 2.0-4.5keV for M2
+ 771-781  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    e<SUB>M2</SUB>4Flux  ?=- Error on M2_4Flux
+ 783-793  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    M2_5Flux    ?=- XMM Flux in 4.5-12.0keV for M2
+ 795-805  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    e<SUB>M2</SUB>5Flux  ?=- Error on M2_5Flux
+ 807-817  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    M2_8Flux    ?=- XMM Flux in 0.2-12.0keV for M2
+ 819-829  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    e<SUB>M2</SUB>8Flux  ?=- Error on M2_8Flux
+ 831-842  E12.7 ---      M2_HR1      ?=- <A HREF="#sRM3.2">XMM Hardness ratio 1 for M2 (2)</A>
+ 844-854  E11.6 ---      e<SUB>M2</SUB>HR1    ?=- Error on M2_HR1
+ 856-867  E12.7 ---      M2_HR2      ?=- <A HREF="#sRM3.2">XMM Hardness ratio 2 for M2 (2)</A>
+ 869-879  E11.6 ---      e<SUB>M2</SUB>HR2    ?=- Error on M2_HR2
+ 881-892  E12.7 ---      M2_HR3      ?=- <A HREF="#sRM3.2">XMM Hardness ratio 3 for M2 (2)</A>
+ 894-904  E11.6 ---      e<SUB>M2</SUB>HR3    ?=- Error on M2_HR3
+ 906-917  E12.7 ---      M2_HR4      ?=- <A HREF="#sRM3.2">XMM Hardness ratio 4 for M2 (2)</A>
+ 919-932  E14.9 ---      e<SUB>M2</SUB>HR4    ?=- Error on M2_HR4
+ 934-951 E18.14 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      scRAdeg     XMM weighted mean Right Ascension
+ 953-971 E19.15 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      scDEdeg     XMM weighted mean Declination
+ 973-983  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   e_scPos     XMM Error of the weighted mean position
+ 985-996  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    scep_1Flux  XMM band 1 weighted mean flux
+ 998-1008  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>  e<SUB>scep</SUB>1Flux  Error on scep_1Flux
+ 1010-1020  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    scep_2Flux  XMM band 2 weighted mean flux
+ 1022-1032  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>  e<SUB>scep</SUB>2Flux  Error on scep_2Flux
+ 1034-1044  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    scep_3Flux  XMM band 3 weighted mean flux
+ 1046-1056  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>  e<SUB>scep</SUB>3Flux  Error on scep_3Flux
+ 1058-1068  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    scep_4Flux  XMM band 4 weighted mean flux
+ 1070-1080  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>  e<SUB>scep</SUB>4Flux  Error on scep_4Flux
+ 1082-1092  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    scep_5Flux  XMM band 5 weighted mean flux
+ 1094-1104  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>  e<SUB>scep</SUB>5Flux  Error on scep_5Flux
+ 1106-1116  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    scep_8Flux  XMM band 8 weighted mean flux
+ 1118-1128  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>  e<SUB>scep</SUB>8Flux  Error on scep_8Flux
+ 1130-1140  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    scep_9Flux  XMM band 9 weighted mean flux
+ 1142-1152  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>  e<SUB>scep</SUB>9Flux  Error on scep_9Flux
+ 1154-1165  E12.7 ---      scHR1       ?=- <A HREF="#sRM3.2">XMM weighted mean hardness ratio 1 (2)</A>
+ 1167-1180  E14.9 ---      e_scHR1     ?=- Error on scHR1
+ 1182-1193  E12.7 ---      scHR2       ?=- <A HREF="#sRM3.2">XMM weighted mean hardness ratio 2 (2)</A>
+ 1195-1205  E11.6 ---      e_scHR2     ?=- Error on scHR2
+ 1207-1218  E12.7 ---      scHR3       ?=- <A HREF="#sRM3.2">XMM weighted mean hardness ratio 3 (2)</A>
+ 1220-1230  E11.6 ---      e_scHR3     ?=- Error on scHR3
+ 1232-1243  E12.7 ---      scHR4       ?=- <A HREF="#sRM3.2">XMM weighted mean hardness ratio 4 (2)</A>
+ 1245-1255  E11.6 ---      e_scHR4     ?=- Error on scHR4
+ 1257-1269  E13.9 ---      scdetML     XMM maximum of the likelihoods of all
+                                       detections of this source
+ 1271-1282  E12.7 ---      scextML     XMM average of the extent likelihoods of
+                                       all detections of this source
+ 1284-1294  E11.6 ---      scCst       ?=- XMM minimum value of the EPIC
+                                           probabilities in each detection
+    1296  A1    ---      scV         [FT] XMM VAR_FLAG of the most variable
+                                            detection of this source
+    1298  I1    ---      scS         [0/4] XMM flag taken to be the worst flag
+                                             of all detections of this source
+ 1300-1301  I2    ---      Nd          XMM number of detections of the unique
+                                       source
+    1303  I1    ---      f1          [1/3] <A HREF="#sRM3.4">Release source added (4)</A>
+    1305  I1    ---      fm          [0/1] <A HREF="#sRM3.5">Multiplicity flag (5)</A>
+ 1307-1324 E18.13 ---      jproba_id   XMatch probability
+ 1326-1343 E18.13 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   jd_arcsec   Angular distance between XMM and SDSS
+                                       source
+ 1345-1362 E18.13 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   jd_sigma    Sigma distance between XMM and SDSS source
+ 1364-1381 E18.13 ---      jrho_umag   Estimated cumulative local density of
+                                       SDSS sources in u
+ 1383-1400 E18.13 ---      jrho_gmag   Estimated cumulative local density of
+                                       SDSS sources in g
+ 1402-1419 E18.13 ---      jrho_rmag   Estimated cumulative local density of
+                                       SDSS sources in r
+ 1421-1438 E18.13 ---      jrho_imag   Estimated cumulative local density of
+                                       SDSS sources in i
+ 1440-1457 E18.13 ---      jrho_zmag   Estimated cumulative local density of
+                                       SDSS sources in z
+ 1459-1476 E18.13 ---      jlr_umag    Likelihood ratio in u band
+ 1478-1495 E18.13 ---      jlr_gmag    Likelihood ratio in g band
+ 1497-1514 E18.13 ---      jlr_rmag    Likelihood ratio in r band
+ 1516-1533 E18.13 ---      jlr_imag    Likelihood ratio in i band
+ 1535-1552 E18.13 ---      jlr_zmag    Likelihood ratio in z band
+ 1554-1571 E18.13 ---      jrel_umag   Reliability in u band
+ 1573-1590 E18.13 ---      jrel_gmag   Reliability in g band
+ 1592-1609 E18.13 ---      jrel_rmag   Reliability in r band
+ 1611-1628 E18.13 ---      jrel_imag   Reliability in i band
+ 1630-1647 E18.13 ---      jrel_zmag   Reliability in z band
+--------------------------SDSS data---------------------------------------------
+ 1649-1666  A18   ---      SDSS        SDSS unique object identifier
+ 1668-1685 E18.13 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      RASdeg      SDSS Right Ascension
+ 1687-1705 E19.14 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      DESdeg      SDSS Declination
+ 1707-1717  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   e_RASdeg    SDSS mean Error on the Right Ascension
+ 1719-1729  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   e_DESdeg    SDSS mean Error on the Declination
+ 1731-1742  E12.7 ---      ccPos       SDSS correlation between position Errors
+ 1744-1755  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      umag        SDSS Model magnitude in u filter
+ 1757-1768  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_umag      ?=-9.99900E+03 Mean Error on umag
+ 1770-1781  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      gmag        SDSS Model magnitude in g filter
+ 1783-1794  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_gmag      ?=-9.99900E+03 Mean Error on gmag
+ 1796-1807  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      rmag        SDSS Model magnitude in r filter
+ 1809-1820  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_rmag      ?=-9.99900E+03 Mean Error on rmag
+ 1822-1833  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      imag        SDSS Model magnitude in i filter
+ 1835-1846  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_imag      ?=-9.99900E+03 Mean Error on imag
+ 1848-1859  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      zmag        SDSS Model magnitude in z filter
+ 1861-1872  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_zmag      ?=-9.99900E+03 Mean Error on zmag
+    1874  I1    ---      Class       <A HREF="#sRM3.3">SDSS class parameter (3)</A>
+    1876  I1    ---      spClass     [0/6]? <A HREF="#sRM3.6">SDSS spectral class parameter (6)</A>
+ 1878-1889  E12.7 ---      zsp         ?=- SDSS spectral redshift
+ 1891-1901  E11.6 ---      e_zsp       ?=- Error on zsp
+ 1903-1905  A3    ---      spType      SDSS Stellar Type Classification (UW)
+ 1907-1909  A3    ---      spTypea     SDSS Stellar Type Classification (SSPP)
+ 1911-1913  A3    ---      SType       SEGUE or SDSS target type abbrev
+    1915  A1    ---      good_qual   [FT] No SDSS flag set, all mags &lt; 22.2
+    1917  A1    ---      Sat         [FT] <A HREF="#sRM3.7">Object contains one or more saturated</A>
+                                       pixels (SATURATED) (7)
+    1919  A1    ---      Blend       [FT] <A HREF="#sRM3.7">Object had multiple peaks detected</A>
+                                       within it (BLEND) (7)
+    1921  A1    ---      PSFFlux     [FT] <A HREF="#sRM3.7">Greater than 20% of the PSF flux is</A>
+                                       from interpolated pixels
+                                       (PSF<SUB>FLUX</SUB>INTERP)  (7)
+    1923  A1    ---      Deblend     [FT] <A HREF="#sRM3.7">A MOVED object that the deblender</A>
+                                      treated as moving (DEBLENDED<SUB>AS</SUB>MOVING)(7)
+    1925  A1    ---      Interp      [FT] <A HREF="#sRM3.7">Object center is close to at least</A>
+                                       one interpolated pixel (INTERP_CENTER)(7)
+    1927  A1    ---      Edge        [FT] <A HREF="#sRM3.7">Object is too close to edge of</A>
+                                       frame (EDGE) (7)
+    1929  A1    ---      Satur       [FT] <A HREF="#sRM3.7">Object center is close to at least</A>
+                                       one saturated pixel (SATUR_CENTER) (7)
+ 1931-1942  E12.7 ---      ha_ct       ?=- SDSS H{alpha} (6565) line continuum
+ 1944-1955  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    ha_wv       ?=- SDSS H{alpha} (6565) line center inlab
+                                           frame
+ 1957-1968  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    e<SUB>ha</SUB>wv     ?=- Error on ha_wv
+ 1970-1981  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    ha_sg       ?=- SDSS {sigma} of fitted gaussian on
+                                           H{alpha} (6565) line
+ 1983-1994  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    e<SUB>ha</SUB>sg     ?=- Error on ha_sg
+ 1996-2008  E13.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    ha_ew       ?=- SDSS H{alpha} (6565) line equivalent
+                                           width
+ 2010-2021  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    e<SUB>ha</SUB>ew     ?=- Error on ha_ew
+ 2023-2035  E13.7 ---      ha_z        ?=- SDSS redshift of line H{alpha} (6565)
+ 2037-2049  E13.7 ---      ha_h        ?=- SDSS height of H{alpha} (6565) line
+                                           gaussian
+ 2051-2062  E12.7 ---      e<SUB>ha</SUB>h      ?=- Error on ha_h
+ 2064-2075  E12.7 ---      hb_ct       ?=- SDSS H{beta} (4863) line continuum
+ 2077-2088  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    hb_wv       ?=- SDSS H{beta} (4863) line center inlab
+                                           frame
+ 2090-2101  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    e<SUB>hb</SUB>wv     ?=- Error on hb_wv
+ 2103-2114  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    hb_sg       ?=- SDSS {sigma} of fitted gaussian on
+                                           H{beta} (4863) line
+ 2116-2127  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    e<SUB>hb</SUB>sg     ?=- Error on hb_sg
+ 2129-2141  E13.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    hb_ew       ?=- SDSS H{beta} (4863) line equivalent
+                                           width
+ 2143-2154  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    e<SUB>hb</SUB>ew     ?=- Error on hb_ew
+ 2156-2168  E13.8 ---      hb_z        ?=- SDSS redshift of line H{beta} (4863)
+ 2170-2182  E13.8 ---      hb_h        ?=- SDSS height of H{beta} (4863) line
+                                           gaussian
+ 2184-2195  E12.7 ---      e<SUB>hb</SUB>h      ?=- Error on hb_h
+ 2197-2208  E12.7 ---      n2_ct       ?=- SDSS NII (6585) line continuum
+ 2210-2221  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    n2_wv       ?=- SDSS NII (6585) line center
+                                           inlab frame
+ 2223-2234  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    e<SUB>n2</SUB>wv     ?=- Error on n2_wv
+ 2236-2247  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    n2_sg       ?=- SDSS {sigma} of fitted gaussian on
+                                           NII (6585) line
+ 2249-2260  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    e<SUB>n2</SUB>sg     ?=- Error on n2_sg
+ 2262-2274  E13.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    n2_ew       ?=- SDSS NII (6585) line equivalent width
+ 2276-2287  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    e<SUB>n2</SUB>ew     ?=- Error on n2_ew
+ 2289-2301  E13.8 ---      n2_z        ?=- SDSS redshift of line NII (6585)
+ 2303-2315  E13.8 ---      n2_h        ?=- SDSS height of NII (6585) line
+                                           gaussian
+ 2317-2328  E12.7 ---      e<SUB>n2</SUB>h      ?=- Error on n2_h
+ 2330-2342  E13.8 ---      o3l_ct      ?=- SDSS OIII (4960) line continuum
+ 2344-2355  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    o3l_wv      ?=- SDSS OIII (4960) line center inlab
+                                           frame
+ 2357-2368  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    e<SUB>o3l</SUB>wv    ?=- Error on o3l_wv
+ 2370-2381  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    o3l_sg      ?=- SDSS {sigma} of fitted gaussian on
+                                           OIII (4960) line
+ 2383-2394  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    e<SUB>o3l</SUB>sg    ?=- Error on o3l_sg
+ 2396-2408  E13.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    o3l_ew      ?=- SDSS OIII (4960) line equivalent
+                                           width
+ 2410-2421  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    e<SUB>o3l</SUB>ew    ?=- Error on o3l_ew
+ 2423-2435  E13.8 ---      o3l_z       ?=- SDSS redshift of line o3l
+ 2437-2449  E13.8 ---      o3l_h       ?=- SDSS height of OIII (4960)
+ 2451-2462  E12.7 ---      e<SUB>o3l</SUB>h     ?=- Error on o3l_h
+ 2464-2475  E12.7 ---      o3h_ct      ?=- SDSS OIII (5008) line continuum
+ 2477-2488  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    o3h_wv      ?=- SDSS OIII (5008) line center inlab
+                                           frame
+ 2490-2501  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    e<SUB>o3h</SUB>wv    ?=- Error on o3h line center
+ 2503-2514  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    o3h_sg      ?=- SDSS {sigma} of fitted gaussian on
+                                           OIII (5008) line
+ 2516-2527  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    e<SUB>o3h</SUB>sg    ?=- Error on o3h_sg
+ 2529-2541  E13.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    o3h_ew      ?=- SDSS OIII (5008) line equivalent
+                                           width
+ 2543-2554  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    e<SUB>o3h</SUB>ew    ?=- Error on o3h_ew
+ 2556-2568  E13.8 ---      o3h_z       ?=- SDSS redshift of line o3h
+ 2570-2582  E13.8 ---      o3h_h       ?=- SDSS height of OIII (5008) line
+                                           gaussian
+ 2584-2595  E12.7 ---      e<SUB>o3h</SUB>h     ?=- Error on o3h_h
+ 2597-2608  E12.7 ---      o2l_ct      ?=- SDSS OII (3727) line continuum
+ 2610-2621  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    o2l_wv      ?=- SDSS OII (3727) line center inlab
+                                           frame
+ 2623-2634  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    e<SUB>o2l</SUB>wv    ?=- Error on o2l_wv
+ 2636-2647  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    o2l_sg      ?=- SDSS {sigma} of fitted gaussian on
+                                           OII (3727) line
+ 2649-2660  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    e<SUB>o2l</SUB>sg    ?=- Error on o2l_sg
+ 2662-2674  E13.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    o2l_ew      ?=- SDSS OII (3727) line equivalent
+                                           width
+ 2676-2687  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    e<SUB>o2l</SUB>ew    ?=- Error on o2l_ew
+ 2689-2701  E13.8 ---      o2l_z       ?=- SDSS redshift of line o2l
+ 2703-2715  E13.8 ---      o2l_h       ?=- SDSS height of OII (3727) line
+                                           gaussian
+ 2717-2728  E12.7 ---      e<SUB>o2l</SUB>h     ?=- Error on o2l_h
+ 2730-2741  E12.7 ---      o2h_ct      ?=- SDSS o2h line continuum
+ 2743-2754  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    o2h_wv      ?=- SDSS OII (3730) line center inlab
+                                           frame
+ 2756-2767  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    e<SUB>o2h</SUB>wv    ?=- Error on o2h_wv
+ 2769-2780  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    o2h_sg      ?=- SDSS {sigma} of fitted gaussian on
+                                           OII (3730) line
+ 2782-2793  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    e<SUB>o2h</SUB>sg    ?=- Error on o2h_sg
+ 2795-2807  E13.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    o2h_ew      ?=- SDSS OII (3730) line equivalent
+                                           width
+ 2809-2820  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    e<SUB>o2h</SUB>ew    ?=- Error on o2h_ew
+ 2822-2833  E12.7 ---      o2h_z       ?=- SDSS redshift of line o2h
+ 2835-2847  E13.8 ---      o2h_h       ?=- SDSS height of OII (3730) line
+                                           gaussian
+ 2849-2860  E12.7 ---      e<SUB>o2h</SUB>h     ?=- Error on o2h_h
+ 2862-2874  E13.8 ---      o1_ct       ?=- SDSS OI (6302) line continuum
+ 2876-2887  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    o1_wv       ?=- SDSS OI (6302) line center inlab frame
+ 2889-2900  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    e<SUB>o1</SUB>wv     ?=- Error on o1_wv
+ 2902-2913  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    o1_sg       ?=- SDSS {sigma} of fitted gaussian on
+                                           OI (6302) line
+ 2915-2926  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    e<SUB>o1</SUB>sg     ?=- Error on o1_sg
+ 2928-2940  E13.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    o1_ew       ?=- SDSS OI (6302) line equivalent width
+ 2942-2953  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    e<SUB>o1</SUB>ew     ?=- Error on o1_ew
+ 2955-2967  E13.8 ---      o1_z        ?=- SDSS redshift of line o1
+ 2969-2981  E13.8 ---      o1_h        ?=- SDSS height of OI (6302) line gaussian
+ 2983-2994  E12.7 ---      e<SUB>o1</SUB>h      ?=- Error on o1_h
+ 2996-3008  E13.8 ---      m2_ct       ?=- SDSS MgII (2799) line continuum
+ 3010-3021  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    m2_wv       ?=- SDSS MgII (2799) line center
+                                           inlab frame
+ 3023-3034  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    e<SUB>m2</SUB>wv     ?=- Error on m2_wv
+ 3036-3047  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    m2_sg       ?=- SDSS {sigma} of fitted gaussian on
+                                           MgII (2799) line
+ 3049-3060  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    e<SUB>m2</SUB>sg     ?=- Error on m2_sg
+ 3062-3074  E13.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    m2_ew       ?=- SDSS MgII (2799) line equivalent width
+ 3076-3087  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    e<SUB>m2</SUB>ew     ?=- Error on m2_ew
+ 3089-3100  E12.7 ---      m2_z        ?=- SDSS redshift of line MgII (2799)
+ 3102-3114  E13.8 ---      m2_h        ?=- SDSS height of MgII (2799) line
+                                           gaussian
+ 3116-3127  E12.7 ---      e<SUB>m2</SUB>h      ?=- Error on m2_h
+ 3129-3140  E12.7 ---      c3_ct       ?=- SDSS CIII (1909) line continuum
+ 3142-3153  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    c3_wv       ?=- SDSS CIII (1909) line center
+                                           inlab frame
+ 3155-3166  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    e<SUB>c3</SUB>wv     ?=- Error on c3_wv
+ 3168-3179  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    c3_sg       ?=- SDSS {sigma} of fitted gaussian on
+                                           CIII (1909) line
+ 3181-3192  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    e<SUB>c3</SUB>sg     ?=- Error on c3_sg
+ 3194-3206  E13.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    c3_ew       ?=- SDSS CIII (1909) line equivalent width
+ 3208-3219  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    e<SUB>c3</SUB>ew     ?=- Error on c3_ew
+ 3221-3232  E12.7 ---      c3_z        ?=- SDSS redshift of line c3
+ 3234-3246  E13.8 ---      c3_h        ?=- SDSS height of CIII (1909) line
+                                           gaussian
+ 3248-3259  E12.7 ---      e<SUB>c3</SUB>h      ?=- Error on c3_h
+ 3261-3272  E12.7 ---      c4_ct       ?=- SDSS CIV (1549) line continuum
+ 3274-3285  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    c4_wv       ?=- SDSS CIV (1549) line center
+                                           inlab frame
+ 3287-3298  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    e<SUB>c4</SUB>wv     ?=- Error on c4_wv
+ 3300-3311  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    c4_sg       ?=- SDSS {sigma} of fitted gaussian on
+                                           CIV (1549) line
+ 3313-3324  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    e<SUB>c4</SUB>sg     ?=- Error on c4_sg
+ 3326-3338  E13.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    c4_ew       ?=- SDSS CIV (1549) line equivalent width
+ 3340-3351  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    e<SUB>c4</SUB>ew     ?=- Error on c4_ew
+ 3353-3364  E12.7 ---      c4_z        ?=- SDSS redshift of line c4
+ 3366-3378  E13.8 ---      c4_h        ?=- SDSS height of CIV (1549)
+                                           line gaussian
+ 3380-3391  E12.7 ---      e<SUB>c4</SUB>h      ?=- Error on c4_h
+ 3393-3404  E12.7 ---      la_ct       ?=- SDSS Ly{alpha} (1216) line continuum
+ 3406-3418  E13.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    la_wv       ?=- SDSS Ly{alpha} (1216) line center
+                                           inlab frame
+ 3420-3431  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    e<SUB>la</SUB>wv     ?=- Error on la_wv
+ 3433-3444  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    la_sg       ?=- SDSS {sigma} of fitted gaussian on
+                                           Ly{alpha} (1216) line
+ 3446-3457  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    e<SUB>la</SUB>sg     ?=- Error on la_sg
+ 3459-3471  E13.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    la_ew       ?=- SDSS Ly{alpha} (1216) line equivalent
+                                           width
+ 3473-3484  E12.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    e<SUB>la</SUB>ew     ?=- Error on la_ew
+ 3486-3497  E12.7 ---      la_z        ?=- SDSS redshift of line la
+ 3499-3511  E13.8 ---      la_h        ?=- SDSS height of Ly{alpha} (1216) line
+                                           gaussian
+ 3513-3524  E12.7 ---      e<SUB>la</SUB>h      ?=- Error on la_h
+<HR>
+<A NAME="sRM3.1"><B>Note (1)</B>: 2XMMi sumflag as follows:
+   0 = good
+   1 = source parameters may be affected
+   2 = possibly spurious
+   3 = located in a area where spurious detection may occur
+   4 = located in a area where spurious detection may occur
+       and possibly spurious
+<A NAME="sRM3.2"><B>Note (2)</B>: 2XMMi hardness ratios defined as:
+   1 = bands 1 &amp; 2
+   2 = bands 2 &amp; 3
+   3 = bands 3 &amp; 4
+   4 = bands 4 &amp; 5
+          2XMMi Bands defined as:
+   1 = 0.2-0.5keV
+   2 = 0.5-1.0keV
+   3 = 1.0-2.0keV
+   4 = 2.0-4.5keV
+   5 = 4.5-12.0keV
+   8 = 0.2-12.0keV
+   9 = 0.5-4.5keV
+<A NAME="sRM3.3"><B>Note (3)</B>: Type (class) from SDSS is numbered as follows:
+   0 = Unknown: Object type is not known
+   3 = Galaxy: An extended object composed of many stars and other matter
+   6 = Star: A a self-luminous gaseous celestial body
+   8 = Sky: Blank sky spectrogram (no objects in this arcsecond area)
+<A NAME="sRM3.4"><B>Note (4)</B>: Flag (sc_chflag1) as follows:
+   1 = a 2XMM source with unchanged SC parameters
+   2 = a 2XMM source with changed SC parameters
+   3 = a new source
+<A NAME="sRM3.5"><B>Note (5)</B>: Flag (sc_chflag2) as follows:
+   0 = depends on f1 (sc_chflag1):
+       * if f1=1, a unique source present in 2XMM remains unchanged
+         in 2XMMi when comprised only of the same detections as in 2XMM.
+       * if f1=2, one or more new detections in 2XMMi can, by virtue of
+         their spatial separation, simply associate with the group of
+         detections from a unique source in 2XMM.
+       * if f1=3, new detections in 2XMMi that do not associate with a
+         unique source in 2XMM form new unique sources in 2XMMi with
+         SRCID values &gt;=191871.
+   1 = with f1=2, Detections that formed a source in 2XMM have
+       been regrouped, that is, while a source in 2XMMi might map to
+       one in 2XMM (having the same source ID and IAU name) it may have
+       lost detections it had in 2XMM and it may have gained old
+       detections from a different 2XMM source or new detections.
+<A NAME="sRM3.6"><B>Note (6)</B>: Spectral class as follows:
+   0 = Spectrum not classifiable (zConf&lt;0.25)
+   1 = Spectrum of a star
+   2 = Spectrum of a galaxy
+   3 = Spectrum of a quasi-stellar object
+   4 = Spectrum of a high-redshift quasar (z&gt;2.3), whose redshift is
+       confirmed by a Ly-alpha estimator
+   5 = Spectrum of blank sky
+   6 = Star dominated by molecular bands M or later
+   7 = Emission line galaxy (placeholder)
+<A NAME="sRM3.7"><B>Note (7)</B>: SDSS flags
+
+<HR>
+
+<A NAME="sRM99.2"><B>Acknowledgements</B>:
+    Francois-Xavier Pineau, francois-xavier.pineau(at)astro.unistra.fr
+================================================================================
+<B>(End)</B>                                        Patricia Vannier [CDS]  17-Jan-2011
+
+</PRE><!-- ....wait for 1 children: %0=3183146 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

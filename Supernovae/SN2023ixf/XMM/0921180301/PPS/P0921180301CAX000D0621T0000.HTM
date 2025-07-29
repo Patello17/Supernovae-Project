@@ -1,0 +1,152 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of J/PASP/111/438</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Sun Jul 23 17:43:46 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0921180301OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of J/PASP/111/438 :<BR>Updated Zwicky catalog (UZC) (Falco+, 1999)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0921180301OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>J/PASP/111/438</B>      Updated Zwicky catalog (UZC)             (Falco+, 1999)
+================================================================================
+The updated Zwicky catalog (UZC).
+    Falco E.E., Kurtz M.J., Geller M.J., Huchra J.P., Peters J., Berlind P.,
+    Mink D.J., Tokarz S.P., Elwell B.
+   &lt;Publ. Astron. Soc. Pac. 111, 438 (1999)&gt;
+   =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1999PASP..111..438F">1999PASP..111..438F</A>
+================================================================================
+<B>ADC_Keywords</B>: Galaxy catalogs ; Redshifts ; Surveys
+
+
+<A NAME="sRM99.1"><B>Abstract</B>:
+    The Zwicky Catalog of galaxies (ZC), with m<SUB>Zw</SUB>&lt;=15.5, has been the
+    basis for the Center for Astrophysics (CfA) redshift surveys. To date,
+    analyses of the ZC and redshift surveys based on it have relied on
+    heterogeneous sets of galaxy coordinates and redshifts. Here we
+    correct some of the inadequacies of previous catalogs by providing (1)
+    coordinates with ~&lt;2" errors for all of the 19,369 catalog galaxies,
+    (2) homogeneously estimated redshifts for the majority (98%) of the
+    data taken at the CfA (14,632 spectra), and (3) an estimate of the
+    remaining "blunder" rate for both the CfA redshifts and for those
+    compiled from the literature. For the reanalyzed CfA data we include a
+    calibrated, uniformly determined error and an indication of the
+    presence of emission lines in each spectrum. We provide redshifts for
+    7257 galaxies in the CfA2 redshift survey not previously published;
+    for another 5625 CfA redshifts we list the remeasured or uniformly
+    rereduced value. Among our new measurements, 1807 are members of UZC
+    "multiplets" associated with the original Zwicky catalog position in
+    the coordinate range where the catalog is 98% complete.
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.33">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.34">&#215; <A HREF="#sRM2.1">catalog.dat</A>       72    19367   UZC catalog (table 1)
+<A NAME="sRM-F.35">&#215; <A HREF="#sRM2.2">refs.dat</A>         123      325   Velocity sources for the UZC (table 2)
+<HR>
+
+<A NAME="sRM13.1"><B>See also</B>:
+    <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/190">VII/190</A> : Zwicky Galaxy Catalog (Zwicky+ 1968)
+    <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/193">VII/193</A> : The CfA Redshift Catalogue, Version June 1995 (Huchra+ 1995)
+
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.34"> catalog.dat</A>
+<HR>
+   Bytes Format Units   Label    Explanations
+<HR>
+   1-  2  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?h" TARGET="explain">h</A>       RAh      Right ascension (J2000)
+   3-  4  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?min" TARGET="explain">min</A>     RAm      Right ascension (J2000)
+   5-  8  F4.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>       RAs      Right ascension (J2000)
+       9  A1    ---     DE-      Declination sign (J2000)
+  10- 11  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEd      Declination (J2000)
+  12- 13  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>  DEm      Declination (J2000)
+  14- 15  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  DEs      Declination (J2000)
+  17- 20  F4.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Bmag     B magnitude (Zwicky magnitude)
+  22- 26  I5    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    cz       ? Heliocentric redshift
+  28- 30  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    e_cz     ? rms uncertainty on cz
+      32  A1    ---     T        [ABE] <A HREF="#sRM3.1">Spectral characteristics (1)</A>
+      34  I1    ---     U        [0/4] <A HREF="#sRM3.2">UZC class 0-4 (2)</A>
+      36  I1    ---     N        Number of UZC neighboring galaxies, within 3'
+  38- 49  A12   ---     Zname    Zwicky label based on 1950 positions
+      51  A1    ---     f_cz     [FMTXZ] <A HREF="#sRM3.3">Origin of the redshift measurement (3)</A>
+  53- 56  I4    ---     r_cz     ? Reference code detailed in file refs.dat
+                                   (blank for CfA unpublished data)
+  58- 68  A11   ---     Name     Other name
+      70  A1    ---     UZC      [*] UZC multiplicity, * if multiple
+      72  A1    ---     mul      [PTG] NED multiplicity: Pair, Triple, Group
+<HR>
+<A NAME="sRM3.1"><B>Note (1)</B>: the symbol means:
+    A: absorption
+    E: emission
+    B: both emission and absorption
+<A NAME="sRM3.2"><B>Note (2)</B>: the UZC class is defined as:
+
+   0: a "hit", where the GSC and Zwicky objects are separated in position
+      by less than 180", are comparable in brightness as determined
+      visually, and there is no other object within the field that could
+      be a Zwicky galaxy.
+
+   1: a "hit" with positional difference less than 180", again with a GSC
+      brightness in the vicinity of the Zwicky value. However, the field is
+      centered on a GSC "star" rather than on a "nonstar", but there is only
+      one possible Zwicky galaxy nearby, within the field. Thus, index 1
+      merely indicated that the nearest GSC object to the Zwicky coordinates
+      is a star rather than the appropriate galaxy.
+
+   2: a near "hit" with positional difference less than 180". However,
+      there is confusion because there are at least two galaxies with an
+      estimated spread in magnitudes |{Delta}m| within the expected range,
+      either of which could be a Zwicky galaxy.
+
+   3: A near "hit" with positional difference less than 180", but with
+      |{Delta}m| outside the expected range, raising suspicions about the
+      match of the GSC object to the Zwicky galaxy.
+
+   4: No "hit" at all for a positional difference less than 180", i.e.,
+      there is no match for a Zwicky galaxy.
+<A NAME="sRM3.3"><B>Note (3)</B>: Code for the origin of the redshift measurement taken at the CfA:
+   Z for Z-machine,
+   M for the MMT (4.5m Multiple Mirror Telescope)
+   F for FAST spectra taken from our own and from other projects
+   X flags a low-S/N spectrum for Z-machine (FAST) measurements and
+     indicates a low S/N match with a spectrum at cz&lt;100km/s.
+<HR>
+
+<A NAME="sRM2.2"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.35"> refs.dat</A>
+<HR>
+   Bytes Format Units   Label     Explanations
+<HR>
+   1-  4  I4    ---     Ref       Reference number
+   6- 24  A19   ---     BibCode   BibCode
+  27- 54  A28   ---     Aut       Author names
+  56-123  A68   ---     Rem       Remarks
+<HR>
+
+<A NAME="sRM99.2"><B>History</B>: Copied at <A HREF="http://cfa-www.harvard.edu/~falco/UZC">http://cfa-www.harvard.edu/~falco/UZC</A>
+  * 30-Jul-2002: slightly modified version copied from
+    <A HREF="http://cfa-www.harvard.edu/~falco/UZC">http://cfa-www.harvard.edu/~falco/UZC</A> (5 duplicates removed)
+    and added the references from Huchra's Zcat (<A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/193">VII/193</A>)
+================================================================================
+<B>(End)</B>      Francois Ochsenbein, James Marcout, Patricia Bauer [CDS]  27-May-1999
+
+</PRE><!-- ....wait for 1 children: %0=3183158 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

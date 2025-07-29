@@ -1,0 +1,183 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of I/284</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Wed Jun 28 19:44:26 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0921180101OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of I/284 :<BR>The USNO-B1.0 Catalog (Monet+ 2003)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0921180101OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>I/284</B>               The USNO-B1.0 Catalog     (Monet+ 2003)
+================================================================================
+The USNO-B Catalog
+     Monet D.G., Levine S.E., Casian B., et al.
+    &lt;Astron. J., 125, 984 (2003)&gt;
+    =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2003AJ....125..984M">2003AJ....125..984M</A>
+================================================================================
+<B>ADC_Keywords</B>: Positional data; Proper motions; Surveys; Magnitudes
+
+
+<A NAME="sRM11.1"><B>Description</B>:
+    The USNO-B1.0 is a catalog that presents positions, proper motions,
+    magnitudes in various optical passbands, and star/galaxy estimators
+    for 1,045,913,669 objects derived from 3,648,832,040 separate
+    observations. The data were taken from scans of 7,435 Schmidt plates
+    taken from various sky surveys during the last 50 years.
+
+    The catalog is expected to be complete down to V=21; the estimated
+    accuracies are 0.2arcsec for the positions at J2000, 0.3mag in up to 5
+    colors, and 85% accuracy for distinguishing stars from non-stellar
+    objects.
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.25">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.26">&#215; <A HREF="#sRM2.1">out.sam</A>          250      100   Sample of data (around 0+0)
+<HR>
+
+<A NAME="sRM13.1"><B>See also</B>:
+ https://www.usno.navy.mil/USNO/astrometry/optical-IR-prod/icas/ : USNO 
+   Flagstaff Station Integrated Image and Catalogue Archive Service
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=I/252">I/252</A> : The USNO-A2.0 Catalogue (Monet+ 1998)
+ <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=I/259">I/259</A> : The Tycho-2 Catalogue (Hog+ 2000)
+
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.26"> out.sam</A>
+<HR>
+   Bytes Format Units   Label     Explanations
+<HR>
+   1- 12  A12   ---    USNO-B1.0  <A HREF="#sRM3.1">Designation of the object (1)</A>
+  14- 25  A12   ---     Tycho-2   Designation in the Tycho-2 Catalog <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=I/259">I/259</A>
+  27- 36  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     RAdeg     <A HREF="#sRM3.2">Right Ascension at Eq=J2000, Ep=J2000 (2)</A>
+  37- 46  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEdeg     <A HREF="#sRM3.2">Declination at Eq=J2000, Ep=J2000 (2)</A>
+  48- 50  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas" TARGET="explain">mas</A>     e_RAdeg   Mean error on RAdeg*cos(DEdeg) at Epoch
+  52- 54  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas" TARGET="explain">mas</A>     e_DEdeg   Mean error on DEdeg at Epoch
+  56- 61  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?yr" TARGET="explain">yr</A>      Epoch     <A HREF="#sRM3.2">Mean epoch of observation (2)</A>
+  63- 68  I6    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas/yr" TARGET="explain">mas/yr</A>  pmRA      Proper motion in RA (relative to YS4.0)
+  70- 75  I6    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas/yr" TARGET="explain">mas/yr</A>  pmDE      Proper motion in DE (relative to YS4.0)
+      77  I1    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1" TARGET="explain">0.1</A>     muPr      ? <A HREF="#sRM3.7">Total Proper Motion probability (7)</A>
+  79- 81  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas/yr" TARGET="explain">mas/yr</A>  e_pmRA    Mean error on pmRA
+  83- 85  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas/yr" TARGET="explain">mas/yr</A>  e_pmDE    Mean error on pmDE
+      87  I1    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?100mas" TARGET="explain">100mas</A>  fit_RA    Mean error on RA fit
+      89  I1    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?100mas" TARGET="explain">100mas</A>  fit_DE    Mean error on DE fit
+      91  I1    ---     Ndet      [0,5] <A HREF="#sRM3.7">Number of detections (7)</A>
+  93- 95  A3    ---     Flags     [MsY.] <A HREF="#sRM3.3">Flags on object (3)</A>
+  98-102  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     B1mag     ? First blue magnitude
+     104  I1    ---     B1C       ? <A HREF="#sRM3.4">source of photometric calibration (4)</A>
+     106  I1    ---     B1S       ? Survey number (see "Surveys" section below)
+     107  A1    ---     ---       [-]
+ 108-110  I3    ---     B1f       ? Field number in survey
+ 112-113  I2    ---     B1s/g     ? <A HREF="#sRM3.6">Star-galaxy separation (6)</A>
+ 115-120  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  B1xi      ? <A HREF="#sRM3.5">Residual in X direction (5)</A>
+ 121-126  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  B1eta     ? <A HREF="#sRM3.5">Residual in Y direction (5)</A>
+ 129-133  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     R1mag     ? First red magnitude
+     135  I1    ---     R1C       ? <A HREF="#sRM3.4">source of photometric calibration (4)</A>
+     137  I1    ---     R1S       ? Survey number (see "Surveys" section below)
+     138  A1    ---     ---       [-]
+ 139-141  I3    ---     R1f       ? Field number in survey
+ 143-144  I2    ---     R1s/g     ? <A HREF="#sRM3.6">Star-galaxy separation (6)</A>
+ 146-151  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  R1xi      ? <A HREF="#sRM3.5">Residual in X direction (5)</A>
+ 152-157  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  R1eta     ? <A HREF="#sRM3.5">Residual in Y direction (5)</A>
+ 160-164  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     B2mag     ? Second blue magnitude
+     166  I1    ---     B2C       ? <A HREF="#sRM3.4">source of photometric calibration (4)</A>
+     168  I1    ---     B2S       ? Survey number (see "Surveys" section below)
+     169  A1    ---     ---       [-]
+ 170-172  I3    ---     B2f       ? Field number in survey
+ 174-175  I2    ---     B2s/g     ? <A HREF="#sRM3.6">Star-galaxy separation (6)</A>
+ 177-182  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  B2xi      ? <A HREF="#sRM3.5">Residual in X direction (5)</A>
+ 183-188  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  B2eta     ? <A HREF="#sRM3.5">Residual in Y direction (5)</A>
+ 191-195  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     R2mag     ? Second red magnitude
+     197  I1    ---     R2C       ? <A HREF="#sRM3.4">source of photometric calibration (4)</A>
+     199  I1    ---     R2S       ? Survey number (see "Surveys" section below)
+     200  A1    ---     ---       [-]
+ 201-203  I3    ---     R2f       ? Field number in survey
+ 205-206  I2    ---     R2s/g     ? <A HREF="#sRM3.6">Star-galaxy separation (6)</A>
+ 208-213  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  R2xi      ? <A HREF="#sRM3.5">Residual in X direction (5)</A>
+ 214-219  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  R2eta     ? <A HREF="#sRM3.5">Residual in Y direction (5)</A>
+ 222-226  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Imag      ? Infrared (N) magnitude
+     228  I1    ---     IC        ? <A HREF="#sRM3.4">source of photometric calibration (4)</A>
+     230  I1    ---     IS        ? Survey number (see "Surveys" section below)
+     231  A1    ---     ---       [-]
+ 232-234  I3    ---     If        ? Field number in survey
+ 236-237  I2    ---     Is/g      ? <A HREF="#sRM3.6">Star-galaxy separation (6)</A>
+ 239-244  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  Ixi       ? <A HREF="#sRM3.5">Residual in X direction (5)</A>
+ 245-250  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  Ieta      ? <A HREF="#sRM3.5">Residual in Y direction (5)</A>
+<HR>
+<A NAME="sRM3.1"><B>Note (1)</B>: The USNO-B1.0 is arranged in zones of 0.1deg in Declination,
+     with objects ordered by Right Ascension in each zone.
+     The USNO-B1.0 is made of the zone number (from 0000 in South Pole
+     to 1799 in North Pole), followed by a sequential number.
+<A NAME="sRM3.2"><B>Note (2)</B>: The proper motion was applied to compute the RAdeg and DEdeg
+    values. Please note that the large uncertainties in the proper motions
+    mean that the RAdeg and DEdeg are less accurate than the mean errors
+    e_RAdeg and e_DEdeg which apply to the position at the mean Epoch.
+<A NAME="sRM3.3"><B>Note (3)</B>: . denotes the absence of any flag
+     M = Existence in a proper motion catalog,
+     s = object on a diffraction spike
+     Y = Correlation with YS4.0 catalog (Monet, in prep.)
+<A NAME="sRM3.4"><B>Note (4)</B>: the photometric calibration is represented by a number:
+    0 = bright photometric standards on the plate
+    1 = faint photometric standard on the plate
+    2 = faint photometric standard one plate away (on overlap plate)
+    3 = faint photometric standard two plate away (on overlap of overlap)
+    etc
+<A NAME="sRM3.5"><B>Note (5)</B>: Distance, along the x- and y- direction, of the object position
+    compared to the mean epoch.
+<A NAME="sRM3.6"><B>Note (6)</B>: The star/galaxy separation is a measure of the similarity
+    of the point-spread function to a stellar profile:
+     0 means quite dissimilar -- i.e. a non-stellar object
+    11 means quite similar -- i.e. a stellar object
+<A NAME="sRM3.7"><B>Note (7)</B>: For Tycho-2 stars, the Total Proper Motion probability is
+    not given, and the number of detections Ndet is set to zero.
+    For other stars, Ndet is 2 or more.
+<HR>
+
+<A NAME="sRM99.1"><B>Surveys used for USNO-B1.0</B>:
+    --------------------------------------------------
+    #   Name    Emuls  Wavelen.   Zones  Fld  Dates
+                         (nm)                  Obs.
+    --------------------------------------------------
+    0 = POSS-I  103a-O  350-500 -30..+90 936 1949-1965
+    1 = POSS-I  103a-E  620-670 -30..+90 936 1949-1965
+    2 = POSS-II IIIa-J  385-540 +00..+87 897 1985-2000
+    3 = POSS-II IIIa-F  610-690 +00..+87 897 1985-1999
+    4 = SERC-J  IIIa-J  385-540 -90..-05 606 1978-1990
+    5 = ESO-R   IIIa-F  630-690 -90..-05 624 1974-1994
+    6 = AAO-R   IIIa-F  590-690 -90..-20 606 1985-1998
+    7 = POSS-II IV-N    730-900 +05..+87 800 1989-2000
+    8 = SERC-I  IV-N    715-900 -90..+00 892 1978-2002
+    9 = SERC-I* IV-N    715-900 +05..+20  25 1981-2002
+    --------------------------------------------------
+
+<A NAME="sRM99.2"><B>Acknowledgements</B>:
+   Stephen Levine and Dave Monet, USNO Flagstaff.
+
+<A NAME="sRM99.3"><B>History</B>:
+  * 14-Nov-2002: Set of files compressed at CDS
+  * 17-Nov-2005: Change in the format of (xi, eta) values, which was
+       originally given in units of 10mas; it is now given in arcsec.
+================================================================================
+<B>(End)</B>                                   Francois Ochsenbein [CDS]    14-Nov-2002
+
+</PRE><!-- ....wait for 1 children: %0=26492 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

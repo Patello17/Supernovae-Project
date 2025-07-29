@@ -1,0 +1,1971 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of I/345</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Wed Jun 28 19:44:26 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0921180101OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of I/345 :<BR>Gaia DR2 (Gaia Collaboration, 2018)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0921180101OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>I/345</B>                      Gaia DR2                   (Gaia Collaboration, 2018)
+================================================================================
+Gaia data release 2 (Gaia DR2).
+   Gaia collaboration
+   &lt;Astron. Astrophys., 616, A1 (2018)&gt;
+   =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018A%26A...616A...1G">2018A&A...616A...1G</A>
+   =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018yCat.1345....0G">2018yCat.1345....0G</A>
+   =doi:10.5270/esa-ycsawu7
+================================================================================
+<B>ADC_Keywords</B>: Surveys ; Stars, standard ; Positional data ; Proper motions ;
+              Photometry, photographic ; Cross identifications ;
+              Radial velocities ; Stars, variable ; Minor planets;
+              Parallaxes, trigonometric
+<B>Mission_Name</B>: Gaia
+
+<B>Keywords</B>: catalogs - astrometry - techniques: radial velocities -
+          stars: fundamental parameters - stars: variables: general -
+          minor planets, asteroids: general
+
+<A NAME="sRM99.1"><B>Abstract</B>:
+    Gaia Data Release 2. Summary of the contents and survey properties:
+
+    We present the second Gaia data release, Gaia DR2, consisting of
+    astrometry, photometry, radial velocities, and information on as-
+    trophysical parameters and variability, for sources brighter than
+    magnitude 21. In addition epoch astrometry and photometry are provided
+    for a modest sample of minor planets in the solar system.
+
+    A summary of the contents of Gaia DR2 is presented, accompanied by a
+    discussion on the differences with respect to Gaia DR1 and an overview
+    of the main limitations which are still present in the survey.
+    Recommendations are made on the responsible use of Gaia DR2 results.
+    Methods. The raw data collected with the Gaia instruments during the
+    first 22 months of the mission have been processed by the Gaia Data
+    Processing and Analysis Consortium (DPAC) and turned into this second
+    data release, which represents a major advance with respect to Gaia
+    DR1 in terms of completeness, performance, and richness of the data
+    products.
+
+    Gaia DR2 contains celestial positions and the apparent brightness in G
+    for approximately 1.7 billion sources. For 1.3 billion of those
+    sources, parallaxes and proper motions are in addition available. The
+    sample of sources for which variability information is provided is
+    expanded to 0.5 million stars. This data release contains four new
+    elements: broad-band colour information in the form of the apparent
+    brightness in the G<SUB>BP</SUB> (330-680nm) and G<SUB>RP</SUB> (630-1050nm) bands is
+    available for 1.4 billion sources; median radial velocities for some
+    7 million sources are presented; for between 77 and 161 million
+    sources estimates are provided of the stellar effective temperature,
+    extinction, reddening, and radius and luminosity; and for a
+    pre-selected list of 14000 minor planets in the solar system epoch
+    astrometry and photometry are presented. Finally, Gaia DR2 also
+    represents a new materialisation of the celestial reference frame in
+    the optical, the Gaia-CRF2, which is the first optical reference frame
+    based solely on extragalactic sources. There are notable changes in
+    the photometric system and the catalogue source list with respect to
+    Gaia DR1, and we stress the need to consider the two data releases as
+    independent.
+
+    Gaia DR2 represents a major achievement for the Gaia mission,
+    delivering on the long standing promise to provide parallaxes and
+    proper motions for over 1 billion stars, and representing a first step
+    in the availability of complementary radial velocity and source
+    astrophysical information for a sample of stars in the Gaia survey
+    which covers a very substantial fraction of the volume of our galaxy.
+
+
+  The catalogue of radial velocity standard stars
+    (Soubiran et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018A%26A...616A...7S">2018A&A...616A...7S</A>)
+
+    The Radial Velocity Spectrometer (RVS) on board of Gaia having no
+    calibration device, the zero point of radial velocities needs to be
+    calibrated with stars proved to be stable at the level of 300m/s
+    during the Gaia observations. A dataset of about 71000 ground-based
+    radial velocity measurements from five high resolution spectrographs
+    has been compiled. A catalogue of 4813 stars was built by combining
+    these individual measurements. The zero point has been established
+    using asteroids. The resulting catalogue has 7 observations per star
+    on average on a typical time baseline of 6 years, with a median
+    standard deviation of 15m/s. A subset of the most stable stars
+    fulfilling the RVS requirements has been used to establish the zero
+    point of the radial velocities provided in Gaia DR2. The stars not
+    used for calibration are used for the RVS data validation.
+
+<A NAME="sRM11.1"><B>Description</B>:
+    Contents of Gaia DR2:
+
+     The five-parameter astrometric solution - positions on the sky
+     (alpha,delta), parallaxes, and proper motions - for more than 1.3
+     billion (10<SUP>9</SUP>) sources, with a limiting magnitude of G=21 and a
+     bright limit of G~=3. Parallax uncertainties are in the range of up
+     to 0.04 milliarcsecond for sources at G&lt;15, around 0.1mas for
+     sources with G=17 and at the faint end, the uncertainty is of the
+     order of 0.7mas at G=20. The corresponding uncertainties in the
+     respective proper motion components are up to 0.06mas/yr (for
+     G&lt;15mag), 0.2mas/yr (for G=17mag) and 1.2mas/yr (for G=20mag). The
+     Gaia DR2 parallaxes and proper motions are based only on Gaia data;
+     they do no longer depend on the Tycho-2 Catalogue.
+
+     Median radial velocities (i.e. the median value over the epochs) for
+     more than 6 million stars with a mean G magnitude between about 4 and
+     13 and an effective temperature (Teff) in the range of about 3550 to
+     6900K. This leads to a full six-parameter solution: positions and
+     motions on the sky with parallaxes and radial velocities, all combined
+     with mean G magnitudes. The overall precision of the radial velocities
+     at the bright end is in the order of 200-300m/s while at the faint
+     end the overall precision is approximately 1.2km/s for a Teff of
+     4750K and about 2.5km/s for a Teff of 6500K.
+
+     An additional set of more than 200 million sources for which a
+     two-parameter solution is available: the positions on the sky
+     (alpha,delta) combined with the mean G magnitude. These sources will
+     have a positional uncertainty at G=20 of about 2mas, at J2015.5.
+
+     G magnitudes for more than 1.5 billion sources, with precisions
+     varying from around 1 milli-mag at the bright (G&lt;13) end to around 20
+     milli-mag at G=20. Please be aware that the photometric system for the
+     G band in Gaia DR2 will be different from the photometric system as
+     used in Gaia DR1.
+
+     G<SUB>BP</SUB> and G<SUB>RP</SUB> magnitudes for more than 1.1 billion sources, with
+     precisions varying from a few milli-mag at the bright (G&lt;13) end to
+     around 200 milli-mag at G=20. Full passband definitions for G, BP and
+     RP. These passbands are now available for download. A detailed
+     description is given here. Epoch astrometry for more than 13,000 known
+     asteroids based on more than 1.5 million CCD observations. 96% of the
+     along-scan (AL) residuals are in the range -5 to 5mas, and 52% of the
+     AL residuals are in the range of -1 to 1mas. The observations will be
+     published in Gaia DR2 and also delivered to the Minor Planet Center
+     (MPC).
+
+     Subject to limitations the effective temperatures Teff for more than
+     150 million sources brighter than 17th magnitude with effective
+     temperatures in the range 3000 to 10,000 K. For a subset of these
+     sources also the line-of-sight extinction AG and reddening E(BP-RP)
+     will be given, as well as the luminosity and radius.
+
+     Lightcurves for more than 500,000 variable sources consisting of
+     Cepheids, RR Lyrae, Mira and Semi-Regular Candidates as well as
+     High-Amplitude Delta Scuti, BY Draconis candidates, SX Phoenicis
+     Candidates and short time scale phenomena.
+
+     Planned cross-matches between Gaia DR2 sources on the one hand and
+     Hipparcos-2, Tycho-2, 2MASS PSC, SDSS DR9, Pan-STARRS1, GSC2.3,
+     PPM-XL, AllWISE, and URAT-1 data on the other hand.
+
+    Catalogue of radial velocity standard stars
+     (Soubiran et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018A%26A...616A...7S">2018A&A...616A...7S</A>):
+
+     Individual and combined radial velocity measurements are presented for
+     4813 stars in rvstdcat.dat and rvstdmes.dat files.
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.155">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.156">&#215; <A HREF="#sRM2.1">gaia2.sam</A>        896     1000   GaiaSource DR2 data
+<A NAME="sRM-F.157">&#215; <A HREF="#sRM2.2">rvstdcat.dat</A>     270     4813   Mean radial velocities on absolute scale
+<A NAME="sRM-F.158">&#215; <A HREF="#sRM2.3">rvstdmes.dat</A>      76    71225   Original ground-based radial velocity
+                                 measurements
+<A NAME="sRM-F.160">&#215; <A HREF="#sRM2.4">allwise.dat</A>       39   555934   Allwise AGN Gaia DR2 cross-identification
+                                 (aux<SUB>allwise</SUB>agn<SUB>gdr2</SUB>cross_id)
+<A NAME="sRM-F.162">&#215; <A HREF="#sRM2.5">iers.dat</A>          28     2820   IERS GaiaDR2 cross-identification
+                                 (aux<SUB>iers</SUB>gdr2<SUB>cross</SUB>id)
+<A NAME="sRM-F.164">&#215; <A HREF="#sRM2.6">cepheid.dat</A>      467     9575   Cepheid stars (vari_cepheid)
+<A NAME="sRM-F.165">&#215; <A HREF="#sRM2.7">rrlyrae.dat</A>      410   140784   RR Lyrae stars (vari_rrlyrae)
+<A NAME="sRM-F.166">&#215; <A HREF="#sRM2.8">lpv.dat</A>          126    89617   Long Period Variable stars
+                                 (vari<SUB>long</SUB>period_variable)
+<A NAME="sRM-F.168">&#215; <A HREF="#sRM2.9">varres.dat</A>       102   363969   Variability classification results of all
+                                 classifiers, identified by the
+                                 classifierName column (vari<SUB>classifier</SUB>result)
+<A NAME="sRM-F.171">&#215; <A HREF="#sRM2.10">shortts.dat</A>       91     3018   Short-timescale sources (vari<SUB>short</SUB>timescale)
+<A NAME="sRM-F.172">&#215; <A HREF="#sRM2.11">tsstat.dat</A>       432   550737   Statistical parameters of time series, using
+                                 only transits not rejected
+                                 (vari<SUB>time</SUB>series_statistics)
+<A NAME="sRM-F.175">&#215; <A HREF="#sRM2.12">numtrans.dat</A>      43   550737   Calibrated FoV transit photometry from CU5,
+                                 consolidated and provided by CU7 for variable
+                                 stars in Gaia DR2 (epoch_photometry, part 1)
+<A NAME="sRM-F.178">&#215; <A HREF="#sRM2.13">transits.dat</A>     365 17712391   Calibrated FoV transit photometry for CU5,
+                                 consolidated and provided by CU7 for variable
+                                 stars in Gaia DR2 (epoch_photometry, part 2)
+<A NAME="sRM-F.181">&#215; <A HREF="#sRM2.14">rm.dat</A>           137   147535   Rotation period in segment, part 1
+                                 (vari<SUB>rotation</SUB>modulation)
+<A NAME="sRM-F.183">&#215; <A HREF="#sRM2.15">rmseg.dat</A>        276   583988   Rotation period in segment, part 2
+                                 (vari<SUB>rotation</SUB>modulation)
+<A NAME="sRM-F.185">&#215; <A HREF="#sRM2.16">rmout.dat</A>         33   990561   Rotation period in segment, part 3
+                                 (vari<SUB>rotation</SUB>modulation)
+<A NAME="sRM-F.187">&#215; <A HREF="#sRM2.17">ssoobj.dat</A>        59    14099  <A HREF="#sRM3.1">*</A>Data related to Solar System objects observed
+                                 by Gaia (sso_source)
+<A NAME="sRM-F.189">&#215; <A HREF="#sRM2.18">ssoorb.dat</A>       181    14099  <A HREF="#sRM3.2">*</A>Auxiliary information on asteroid orbits and
+                                 basic photometric parameters (aux<SUB>sso</SUB>orbits)
+<A NAME="sRM-F.191">&#215; <A HREF="#sRM2.19">ssores.dat</A>       155  1977702  <A HREF="#sRM3.3">*</A>Residuals with respect to an orbital fit
+                                 considering only the Gaia observations
+                                 (aux<SUB>sso</SUB>orbit_residuals)
+<A NAME="sRM-F.194">&#215; <A HREF="#sRM2.20">ssoobs.dat</A>       404  1977702  <A HREF="#sRM3.4">*</A>Solar System object observations
+                                 (sso_observation)
+<HR>
+<A NAME="sRM3.1"><B>Note on ssoobj.dat</B>: The quantities in the table are derived from data
+ reduction and are associated to single objects.
+<A NAME="sRM3.2"><B>Note on ssoorb.dat</B>: from the astorb database (Cat. <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=B/astorb">B/astorb</A>).
+
+<A NAME="sRM3.3"><B>Note on ssores.dat</B>: Each entry has a corresponding record in the table
+  ssoobs.dat. A flag is given, indicating if the observation has been rejected
+  by the fit procedure.
+<A NAME="sRM3.4"><B>Note on ssoobs.dat</B>: Each table line contained data obtained during the transit
+  of the source on a single CCD, during a single transit. The corresponding
+  epoch is provided. Data not varying within the transit are repeated
+  identically for all single observations of that transit.
+<HR>
+
+<A NAME="sRM13.1"><B>See also</B>:
+   <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=B/astorb">B/astorb</A> : Orbits of Minor Planets (Bowell+ 2014)
+   <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=II/246">II/246</A>   : 2MASS All-Sky Catalog of Point Sources (Cutri+ 2003)
+   <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=II/328">II/328</A>   : AllWISE Data Release (Cutri+ 2013)
+
+   <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=I/337">I/337</A>    : Gaia DR1 (Gaia Collaboration, 2016)
+   <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=I/347">I/347</A>    : Distances to 1.33 billion stars in Gaia DR2 (Bailer-Jones+, 2018)
+   <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/A%2BA/616/A12">J/A+A/616/A12</A>  : Gaia DR2 sources in GC and dSph (Gaia Collaboration+, 2018)
+   <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/A%2BA/620/A127">J/A+A/620/A127</A> : Cassification of RR Lyrae and Cepheid (Molnar+, 2018)
+   <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/A%2BA/620/A128">J/A+A/620/A128</A> : Gaia DR2 study of Herbig Ae/Be stars (Vioque+, 2018)
+
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.156"> gaia2.sam</A>
+<HR>
+   Bytes Format Units     Label       Explanations
+<HR>
+   1- 28  A28   ---       DR2Name     <A HREF="#sRM3.5">Unique source designation (unique across</A>
+                                       all Data Releases)
+                                       (Gaia DR2 NNNNNNNNNNNNNNNNNNN)
+                                       (designation) (1)
+  30- 44 F15.11 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>       RAdeg       Barycentric right ascension (ICRS)
+                                       at Ep=2015.5 (ra)
+  46- 60 F15.11 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>       DEdeg       Barycentric declination (ICRS)
+                                       at Ep=2015.5 (dec)
+  62- 80  I19   ---       SolID       <A HREF="#sRM3.88">Solution Identifier (solution_id) (G1)</A>
+  82-100  I19   ---       Source      <A HREF="#sRM3.89">Unique source identifier (unique within</A>
+                                       a particular Data Release)
+                                       (source_id) (G2)
+ 102-111  I10   ---       RandomI     <A HREF="#sRM3.6">Random index used to select subsets</A>
+                                       (random_index) (2)
+ 113-118  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?yr" TARGET="explain">yr</A>        Epoch       [2015.5] Reference epoch (ref_epoch)
+ 120-126  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas" TARGET="explain">mas</A>       e_RAdeg     Standard error of right ascension
+                                       (e_RA*cosDE) (ra_error)
+ 128-134  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas" TARGET="explain">mas</A>       e_DEdeg     Standard error of declination (dec_error)
+ 136-145  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas" TARGET="explain">mas</A>       Plx         ? Absolute stellar parallax (parallax)
+ 147-152  F6.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas" TARGET="explain">mas</A>       e_Plx       ? Standard error of parallax
+                                       (parallax_error)
+ 154-163  F10.4 ---       RPlx        ? Parallax divided by its error
+                                       (parallax<SUB>over</SUB>error)
+ 165-173  F9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas/yr" TARGET="explain">mas/yr</A>    pmRA        ? <A HREF="#sRM3.7">Proper motion in right ascension</A>
+                                       direction (pmRA*cosDE) (pmra) (3)
+ 175-179  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas/yr" TARGET="explain">mas/yr</A>    e_pmRA      ? Standard error of proper motion in right
+                                       ascension direction (pmra_error)
+ 181-189  F9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas/yr" TARGET="explain">mas/yr</A>    pmDE        ? <A HREF="#sRM3.8">Proper motion in declination direction</A>
+                                       (pmdec) (4)
+ 191-195  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas/yr" TARGET="explain">mas/yr</A>    e_pmDE      ? Standard error of proper motion in
+                                       declination direction (pmdec_error)
+ 197-203  F7.4  ---       RADEcor     Correlation between right ascension and
+                                       declination (ra<SUB>dec</SUB>corr)
+ 205-211  F7.4  ---       RAPlxcor    ? Correlation between right ascension and
+                                       parallax (ra<SUB>parallax</SUB>corr)
+ 213-219  F7.4  ---       RApmRAcor   ? Correlation between right ascension and
+                                       proper motion in right ascension
+                                       (ra<SUB>pmra</SUB>corr)
+ 221-227  F7.4  ---       RApmDEcor   ? Correlation between right ascension and
+                                       proper motion in declination
+                                       (ra<SUB>pmdec</SUB>corr)
+ 229-235  F7.4  ---       DEPlxcor    ? Correlation between declination and
+                                       parallax (dec<SUB>parallax</SUB>corr)
+ 237-243  F7.4  ---       DEpmRAcor   ? Correlation between declination and
+                                       proper motion in right ascension
+                                       (dec<SUB>pmra</SUB>corr)
+ 245-251  F7.4  ---       DEpmDEcor   ? Correlation between declination and
+                                       proper motion in declination
+                                       (dec<SUB>pmdec</SUB>corr)
+ 253-259  F7.4  ---       PlxpmRAcor  ? Correlation between parallax and proper
+                                       motion in right ascension
+                                       (parallax<SUB>pmra</SUB>corr)
+ 261-267  F7.4  ---       PlxpmDEcor  ? Correlation between parallax and proper
+                                       motion in declination
+                                       (parallax<SUB>pmdec</SUB>corr)
+ 269-275  F7.4  ---      pmRApmDEcor  ? Correlation between proper motion in
+                                       right ascension and proper motion in
+                                       declination (pmra<SUB>pmdec</SUB>corr)
+ 277-280  I4    ---       NAL         <A HREF="#sRM3.9">Total number of observations AL</A>
+                                       (astrometric<SUB>n</SUB>obs_al) (6)
+ 282-285  I4    ---       NAC         <A HREF="#sRM3.10">Total number of observations AC</A>
+                                       (astrometric<SUB>n</SUB>obs_ac) (7)
+ 287-290  I4    ---       NgAL        <A HREF="#sRM3.11">Number of good observations AL</A>
+                                       (astrometric<SUB>n</SUB>good<SUB>obs</SUB>al) (8)
+ 292-294  I3    ---       NbAL        <A HREF="#sRM3.12">Number of bad observations AL</A>
+                                       (astrometric<SUB>n</SUB>bad<SUB>obs</SUB>al) (9)
+ 296-304  F9.4  ---       gofAL       <A HREF="#sRM3.13">Goodness of fit statistic of model wrt</A>
+                                       along-scan observations
+                                       (astrometric<SUB>gof</SUB>al) (10)
+ 306-316  F11.2 ---       chi2AL      <A HREF="#sRM3.14">AL chi-square value</A>
+                                       (astrometric<SUB>chi2</SUB>al) (11)
+ 318-323  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas" TARGET="explain">mas</A>       epsi        <A HREF="#sRM3.15">Excess noise of the source</A>
+                                       (astrometric<SUB>excess</SUB>noise) (12)
+ 325-334  E10.3 ---       sepsi       <A HREF="#sRM3.16">Significance of excess noise</A>
+                                       (astrometric<SUB>excess</SUB>noise_sig) (13)
+ 336-337  I2    ---       Solved      <A HREF="#sRM3.17">Which parameters have been solved for?</A>
+                                       (astrometric<SUB>params</SUB>solved) (14)
+     339  I1    ---       APF         <A HREF="#sRM3.18">Primary or secondary</A>
+                                       (astrometric<SUB>primary</SUB>flag) (15)
+ 341-348  F8.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas-2" TARGET="explain">mas-2</A>     WAL         <A HREF="#sRM3.19">Mean astrometric weight of the source</A>
+                                       (astrometric<SUB>weight</SUB>al) (16)
+ 350-356  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?um-1" TARGET="explain">um-1</A>      pscol       ? <A HREF="#sRM3.20">Astrometrically determined pseudocolour</A>
+                                       of the source
+                                       (astrometric<SUB>pseudo</SUB>colour) (17)
+ 358-363  F6.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?um-1" TARGET="explain">um-1</A>      e_pscol     ? Standard error of the pseudocolour of
+                                       the source
+                                       (astrometric<SUB>pseudo</SUB>colour_error)
+ 365-370  F6.3  ---       fvarpi      Mean Parallax factor AL
+                                       (mean<SUB>varpi</SUB>factor_al)
+ 372-374  I3    ---       MatchObsA   <A HREF="#sRM3.21">Matched FOV transits used in the AGIS</A>
+                                       solution
+                                       (astrometric<SUB>matched</SUB>observations) (18)
+ 376-377  I2    ---       Nper        Number of visibility periods used in
+                                       Astrometric solution
+                                       (visibility<SUB>periods</SUB>used)
+ 379-389  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas" TARGET="explain">mas</A>       amax        <A HREF="#sRM3.22">The longest semi-major axis of the 5-d</A>
+                                       error ellipsoid
+                                       (astrometric<SUB>sigma5d</SUB>max) (19)
+     391  I1    ---       type        [0/3] <A HREF="#sRM3.23">The type of the source mainly used</A>
+                                       for frame rotation
+                                       (frame<SUB>rotator</SUB>object_type) (20)
+ 393-395  I3    ---       MatchObs    The total number of FOV transits matched
+                                       to this source (matched_observations)
+     397  I1    ---       Dup         [0/1] <A HREF="#sRM3.24">Source with duplicate sources</A>
+                                       (duplicated_source) (21)
+ 399-402  I4    ---       o_Gmag      <A HREF="#sRM3.25">Number of observations contributing to G</A>
+                                       photometry (phot<SUB>g</SUB>n_obs) (22)
+ 404-414  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?e-/s" TARGET="explain">e-/s</A>      FG          G-band mean flux (phot<SUB>g</SUB>mean_flux)
+ 416-426  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?e-/s" TARGET="explain">e-/s</A>      e_FG        Error on G-band mean flux
+                                       (phot<SUB>g</SUB>mean<SUB>flux</SUB>error)
+ 428-436  F9.3  ---       RFG         G-band mean flux divided by its error
+                                       (phot<SUB>g</SUB>mean<SUB>flux</SUB>over_error)
+ 438-446  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>       Gmag        <A HREF="#sRM3.26">G-band mean magnitude (Vega)</A>
+                                       (phot<SUB>g</SUB>mean_mag) (23)
+ 448-450  I3    ---       o_BPmag     <A HREF="#sRM3.27">Number of observations contributing to</A>
+                                      BP photometry (phot<SUB>bp</SUB>n_obs) (24)
+ 452-462  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?e-/s" TARGET="explain">e-/s</A>      FBP         ? Mean flux in the integrated BP band
+                                      (phot<SUB>bp</SUB>mean_flux)
+ 464-474  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?e-/s" TARGET="explain">e-/s</A>      e_FBP       ? <A HREF="#sRM3.28">Error on the integrated BP mean flux</A>
+                                       (phot<SUB>bp</SUB>mean<SUB>flux</SUB>error) (25)
+ 476-484  F9.3  ---       RFBP        ? Integrated BP mean flux divided by its
+                                       error (phot<SUB>bp</SUB>mean<SUB>flux</SUB>over_error)
+ 486-494  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>       BPmag       ? <A HREF="#sRM3.29">Integrated BP mean magnitude (Vega)</A>
+                                       (phot<SUB>bp</SUB>mean_mag) (26)
+ 496-498  I3    ---       o_RPmag     ? <A HREF="#sRM3.30">Number of observations contributing to</A>
+                                       RP photometry (phot<SUB>rp</SUB>n_obs) (27)
+ 500-510  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?e-/s" TARGET="explain">e-/s</A>      FRP         ? Mean flux in the integrated RP band
+                                       (phot<SUB>rp</SUB>mean_flux)
+ 512-522  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?e-/s" TARGET="explain">e-/s</A>      e_FRP       ? <A HREF="#sRM3.31">Error on the integrated RP mean flux</A>
+                                       (phot<SUB>rp</SUB>mean<SUB>flux</SUB>error) (28)
+ 524-532  F9.3  ---       RFRP        ? Integrated RP mean flux divided by its
+                                       error (phot<SUB>rp</SUB>mean<SUB>flux</SUB>over_error)
+ 534-542  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>       RPmag       ? <A HREF="#sRM3.32">Integrated RP mean magnitude (Vega)</A>
+                                       (phot<SUB>rp</SUB>mean_mag) (29)
+ 544-548  F5.3  ---       E(BR/RP)    ? BP/RP excess factor
+                                       (phot<SUB>bp</SUB>rp<SUB>excess</SUB>factor)
+     550  I1    ---       Mode        Photometry processing mode
+                                           (phot<SUB>proc</SUB>mode)
+ 552-560  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>       BP-RP       ? BP-RP colour
+                                       (photBpMeanMag-photRMeanMag) (bp_rp)
+ 562-570  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>       BP-G        ? BP-G colour (photBpMeanMag-photGMeanMag)
+                                       (bp_g)
+ 572-580  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>       G-RP        ? G-RP colour (photGMeanMag-photRpMeanMag)
+                                       (g_rp)
+ 582-588  F7.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>      RV          ? Spectroscopic radial velocity in the
+                                       solar barycentric reference frame
+                                       (radial_velocity)
+ 590-594  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>      e_RV        ? <A HREF="#sRM3.33">Radial velocity error</A>
+                                       (radial<SUB>velocity</SUB>error) (30)
+ 596-598  I3    ---       o_RV        Number of transits used to compute radial
+                                       velocity (rv<SUB>nb</SUB>transits)
+ 600-605  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?K" TARGET="explain">K</A>         Tefftemp    ? <A HREF="#sRM3.39">Teff of the template used to compute</A>
+                                       radial velocity (rv<SUB>template</SUB>teff) (36)
+ 607-610  F4.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%5bcm/s2%5d" TARGET="explain">[cm/s2]</A>   loggtemp    ? <A HREF="#sRM3.39">logg of the template used to compute</A>
+                                       radial velocity (rv<SUB>template</SUB>logg) (36)
+ 612-615  F4.1  ---       [Fe/H]temp  ? <A HREF="#sRM3.39">Fe/H of the template used to compute</A>
+                                       radial velocity (rv<SUB>template</SUB>fe_h) (36)
+ 617-629  A13   ---       Var         <A HREF="#sRM3.34">Photometric variability flag</A>
+                                       (phot<SUB>variable</SUB>flag) (31)
+ 631-644 F14.10 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>       GLON        <A HREF="#sRM3.35">Galactic longitude (l) (32)</A>
+ 646-659 F14.10 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>       GLAT        <A HREF="#sRM3.35">Galactic latitude (b) (32)</A>
+ 661-674 F14.10 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>       ELON        <A HREF="#sRM3.36">Ecliptic longitude (ecl_lon) (33)</A>
+ 676-689 F14.10 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>       ELAT        <A HREF="#sRM3.36">Ecliptic latitude (ecl_lat) (33)</A>
+ 691-696  I6    ---       fPriam      ? <A HREF="#sRM3.37">Flags for the Apsis-Priam results</A>
+                                       (priam_flags) (34)
+ 698-704  F7.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?K" TARGET="explain">K</A>         Teff        ? Stellar effective temperature
+                                       (estimate from Apsis-Priam) (teff_val)
+ 706-712  F7.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?K" TARGET="explain">K</A>         b_Teff      ? Uncertainty (lower) on Teff estimate
+                                       from Apsis-Priam (16th percentile)
+                                       (teff<SUB>percentile</SUB>lower)
+ 714-720  F7.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?K" TARGET="explain">K</A>         B_Teff      ? Uncertainty (upper) on Teff estimate
+                                       from Apsis-Priam (84th percentile)
+                                       (teff<SUB>percentile</SUB>upper)
+ 722-727  F6.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>       AG          ? Estimate of extinction in the G band
+                                       from Apsis-Priam (a<SUB>g</SUB>val)
+ 729-734  F6.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>       b_AG        ? Uncertainty (lower) on AG estimate from
+                                       Apsis-Priam (16th percentile)
+                                       (a<SUB>g</SUB>percentile_lower)
+ 736-741  F6.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>       B_AG        ? Uncertainty (upper) on AG estimate from
+                                       Apsis-Priam (84th percentile)
+                                       (a<SUB>g</SUB>percentile_upper)
+ 743-748  F6.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>       E(BP-RP)    ? Estimate of redenning E(BP-RP) from
+                                       Apsis-Priam (e<SUB>bp</SUB>min<SUB>rp</SUB>val)
+ 750-755  F6.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>       b_E(BP-RP)  ? Uncertainty (lower) on E(BP-RP) estimate
+                                       from Apsis-Priam (16th percentile)
+                                       (e<SUB>bp</SUB>min<SUB>rp</SUB>percentile_lower)
+ 757-762  F6.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>       B_E(BP-RP)  ? Uncertainty (upper) on E(BP-RP) estimate
+                                       from Apsis-Priam (84th percentile)
+                                       (e<SUB>bp</SUB>min<SUB>rp</SUB>percentile_upper)
+ 764-769  I6    ---       fFLAME      ? <A HREF="#sRM3.38">Flags for the Apsis-FLAME results</A>
+                                       (flame_flags) (35)
+ 771-776  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?solRad" TARGET="explain">solRad</A>    Rad         ? Estimate of radius from Apsis-FLAME
+                                       (radius_val)
+ 778-783  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?solRad" TARGET="explain">solRad</A>    b_Rad       ? Uncertainty (lower) on radius estimate
+                                       from Apsis-FLAME (16th percentile)
+                                       (radius<SUB>percentile</SUB>lower)
+ 785-791  F7.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?solRad" TARGET="explain">solRad</A>    B_Rad       ? Uncertainty (upper) on radius estimate
+                                       from Apsis-FLAME (84th percentile)
+                                       (radius<SUB>percentile</SUB>upper)
+ 793-801  F9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?solLum" TARGET="explain">solLum</A>    Lum         ? Esimate of luminosity from Apsis-FLAME
+                                       (lum_val)
+ 803-811  F9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?solLum" TARGET="explain">solLum</A>    b_Lum       ? Uncertainty (lower) on luminosity
+                                       estimate from Apsis-FLAME
+                                       (16th percentile) (lum<SUB>percentile</SUB>lower)
+ 813-821  F9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?solLum" TARGET="explain">solLum</A>    B_Lum       ? Uncertainty (upper) on luminosity
+                                       estimate from Apsis-FLAME
+                                       (84th percentile) (lum<SUB>percentile</SUB>upper)
+ 823-837 F15.11 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>       RAJ2000     Barycentric right ascension (ICRS) at
+                                       Ep=2000.0 (added by CDS) (ra_epoch2000)
+ 839-845  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas" TARGET="explain">mas</A>       e_RAJ2000   Standard error of right ascension
+                                       (e_RA*cosDE) (added by CDS)
+                                       (ra<SUB>epoch2000</SUB>error)
+ 847-861 F15.11 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>       DEJ2000     Barycentric declination (ICRS) at
+                                       Ep=2000.0 (added by CDS) (dec_epoch2000)
+ 863-869  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas" TARGET="explain">mas</A>       e_DEJ2000   Standard error of declination
+                                       (added by CDS) (dec<SUB>epoch2000</SUB>error)
+ 871-878  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>       e_Gmag      <A HREF="#sRM3.40">Standard error of G-band mean magnitude</A>
+                                       (Vega) (added by CDS)
+                                       (phot<SUB>g</SUB>mean<SUB>mag</SUB>error) (37)
+ 880-887  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>       e_BPmag     ? <A HREF="#sRM3.40">Standard error of BP mean magnitude</A>
+                                       (Vega) (added by CDS)
+                                       (phot<SUB>bp</SUB>mean<SUB>mag</SUB>error) (37)
+ 889-896  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>       e_RPmag     ? <A HREF="#sRM3.40">Standard error of RP mean magnitude</A>
+                                       (Vega) (added by CDS)
+                                       (phot<SUB>rp</SUB>mean<SUB>mag</SUB>error) (37)
+<HR>
+<A NAME="sRM3.5"><B>Note (1)</B>: A source designation, unique across all Gaia Data Releases, that is
+ constructed from the prefix "Gaia DRx" followed by a string of digits
+ corresponding to source_id (3 space-separated words in total). Note that the
+ integer source identifier source_id is NOT guaranteed to be unique across Data
+ Releases; moreover it is not guaranteed that the same astronomical source will
+ always have the same source_id in different Data Releases. Hence the only safe
+ way to compare source records between different Data Releases in general is to
+ check the records of proximal source(s) in the same small part of the sky.
+<A NAME="sRM3.6"><B>Note (2)</B>: Random index which can be used to select smaller subsets of the data
+ that are still representative. The column contains a random permutation of the
+ numbers from 0 to N-1, where N is the number of rows. The random index can be
+ useful for validation (testing on 10 different random subsets), visualization
+ (displaying 1% of the data), and statistical exploration of the data, without
+ the need to download all the data.
+<A NAME="sRM3.7"><B>Note (3)</B>: Proper motion in right ascension &#181;<SUB>{alpha}*~&#181;</SUB>{alpha}cos{delta}
+  of the source in ICRS at the reference epoch ref_epoch
+<!**Can't pop tex '' from depth 0 ->
+. This is the tangent
+  plane projection of the proper motion vector in the direction of increasing
+  right ascension.
+<A NAME="sRM3.8"><B>Note (4)</B>: Proper motion in declination &#181;_{delta} of the source at the
+  reference epoch ref_epoch
+<!**Can't pop tex '' from depth 0 ->
+. This is the tangent plane projection of the proper
+  motion vector in the direction of increasing declination.
+<A NAME="sRM3.9"><B>Note (6)</B>: Total number of AL observations (= CCD transits) used in the
+ astrometric solution of the source, independent of their weight. Note that some
+  observations may be strongly downweighted (see astrometricNBadObsAl).
+<A NAME="sRM3.10"><B>Note (7)</B>: Total number of AC observations (= CCD transits) used in the
+ astrometric solution of the source, independent of their weight. Note that some
+ observations may be strongly downweighted (see astrometricNBadObsAc).  Nearly
+ all sources having G&lt;13 will have AC observations from 2d windows, while
+ fainter than that limit only ~1% of transit observations (the so-called
+ "calibration faint stars") are assigned 2d windows resulting in AC
+ observations.
+<A NAME="sRM3.11"><B>Note (8)</B>: Number of AL observations (= CCD transits) that were not strongly
+ downweighted in the astrometric solution of the source. Strongly downweighted
+ observations (with downweighting factor w&lt;0.2) are instead counted in
+ astrometricNBadObsAl. The sum of astrometricNGoodObsAl and
+ astrometricNBadObsAl equals astrometricNObsAl, the total number of AL
+ observations used in the astrometric solution of the source.
+<A NAME="sRM3.12"><B>Note (9)</B>: Number of AL observations (= CCD transits) that were strongly
+ downweighted in the astrometric solution of the source, and therefore
+ contributed little to the determination of the astrometric parameters.
+ An observation is considered to be strongly downweighted if its downweighting
+ factor w&lt;0.2, which means that the absolute value of the astrometric residual
+ exceeds 4.83 times the total uncertainty of the observation, calculated as the
+ quadratic sum of the centroiding uncertainty, excess source noise, and excess
+ attitude noise.
+<A NAME="sRM3.13"><B>Note (10)</B>: Goodness-of-fit statistic of the astrometric solution for the source
+ in the along-scan direction. This is the 'gaussianized chi-square', which for
+ good fits should approximately follow a normal distribution with zero mean
+ value and unit standard deviation. Values exceeding, say, +3 thus indicate a
+ bad fit to the data.
+ This statistic is computed according to the formula
+ astrometricGofAl
+<!**Can't pop tex '' from depth 0 ->
+=(9{nu}/2)<SUP>1/2</SUP>  [({chi}<SUP>2/{nu})</SUP>1/3^ + 2/(9{nu})-1]
+ where {chi}<SUP>2</SUP>=astrometricChi2Al is theAL chi-square statistic and
+ {nu}=astrometricNGoodObsAl-N is the number of degrees of freedom for a source
+ update. Here N=5 is the number of astrometric parameters. Note that only "good"
+ (i.e. not strongly downweighted) observations are included in {chi}<SUP>2</SUP> and
+ {nu}.
+ The above formula is the well-known cube-root transformation of the chi-square
+ variable (E.B. Wilson &amp; M.M. Hilferty 1931, Proc. National Academy of Science,
+ 17, 684). It is usually quoted to be valid for {nu}&gt;30, but is in fact useful
+ for much smaller {nu}. This transformation of ({chi}<SUP>2</SUP>, {nu}) eliminates the
+ inconvenience of having the distribution (and hence the significance levels)
+ depend on the additional variable {nu}, which is generally not the same for
+ different sources.
+ An alternative indicator of bad fits is the astrometricExcessNoise. In AGIS the
+ source update deals with bad fits by adding astrometricExcessNoise to the
+ formal observation noise. This reduces the weight of the observations and
+ inflates the covariance of the estimated astrometric parameters
+ correspondingly.  However, the chi-square values used to calculate
+ astrometricGofAl do not take into account the astrometricExcessNoise, and
+ astrometricGofAl can therefore always be used as a goodness-of-fit indicator of
+ the source solution in AGIS.
+<A NAME="sRM3.14"><B>Note (11)</B>: Description:Astrometric goodness-of-fit ({chi}<SUP>2</SUP>) in the AL
+ direction.  {chi}<SUP>2</SUP> values were computed for the 'good' AL observations of the
+ source, without taking into account the astrometricExcessNoise (if any) of the
+ source. They do however take into account the attitude excess noise (if any)
+ of each observation.
+<A NAME="sRM3.15"><B>Note (12)</B>:This is the excess noise {epsilon}i of the source. It measures the
+ disagreement, expressed as an angle, between the observations of a source and
+ the best-fitting standard astrometric model (using five astrometric
+ parameters). The assumed observational noise in each observation is
+ quadratically increased by {epsilon}i in order to statistically match the
+ residuals in the astrometric solution. A value of 0 signifies that the source
+ is astrometrically well-behaved, i.e.  that the residuals of the fit
+ statistically agree with the assumed observational noise. A positive value
+ signifies that the residuals are statistically larger than expected.
+ The significance of {epsilon}i is given by astrometricExcessNoiseSig (D).
+ If D&lt;=2 then {epsilon}i is probably not significant, and the source may be
+ astrometrically well-behaved even if {epsilon}i is large.  The excess noise
+ {epsilon}i may absorb all kinds of modelling errors that are not accounted for
+ by the observational noise (image centroiding error) or the excess attitude
+ noise. Such modelling errors include LSF and PSF calibration errors, geometric
+ instrument calibration errors, and part of the high-frequency attitude noise.
+ These modelling errors are particularly important in the early data releases,
+ but should decrease as the astrometric modelling of the instrument and attitude
+ improves over the years.
+ Additionally, sources that deviate from the standard five-parameter astrometric
+ model (e.g. unresolved binaries, exoplanet systems, etc.) may have positive
+ {epsilon}i. Given the many other possible contributions to the excess noise,
+ the user must study the empirical distributions of {epsilon}i and D to make
+ sensible cutoffs before filtering out sources for their particular application.
+<A NAME="sRM3.16"><B>Note (13)</B>: Adimensionless measure (D) of the significance of the calculated
+ astrometricExcessNoise ({epsilon}i). A value D&gt;2 indicates that the given
+ {epsilon}i is probably significant.  For good fits in the limit of a large
+ number of observations, D should be zero in half of the cases and approximately
+ follow the positive half of a normal distribution with zero mean and unit
+ standard deviation for the other half. Consequently, D is expected to be
+ greater than 2 for only a few percent of the sources with well-behaved
+ astrometric solutions.  In the early data releases {epsilon}i will however
+ include instrument and attitude modelling errors that are statistically
+ significant and could result in large values of {epsilon}i and D. The user
+ must study the empirical distributions of these statistics and make sensible
+ cutoffs before filtering out sources for their particular application.
+<A NAME="sRM3.17"><B>Note (14)</B>: This is a binary code indicating which astrometric parameters were
+ estimated for the source. A set bit means the parameter was estimated.
+ The least-significant bit represents {alpha}, the next bits {delta}, {pi},
+ &#181;{alpha}*, and &#181;{delta}.
+ For Gaia DR2the only relevant values are
+  - astrometricParamsSolved=31 (binary 11111):
+      all five astrometric parameters were estimated
+  - astrometricParamsSolved=3 (binary 11):
+      only position ({alpha}, {delta}) was estimated
+<A NAME="sRM3.18"><B>Note (15)</B>: Flag indicating if this source was used as a primary source (true) or
+ secondary source (false). Only primary sources contribute to the estimation of
+ attitude, calibration, and global parameters. The estimation of source
+ parameters is otherwise done in exactly the same way for primary and
+ secondary sources.
+<A NAME="sRM3.19"><B>Note (16)</B>: Mean astrometric weight of the source in the AL direction.
+ The mean astrometric weight of the source is calculated as per Eq. (119).
+<A NAME="sRM3.20"><B>Note (17)</B>: Colour of the source assumed in the final astrometric processing.
+ The astrometricPseudoColour is defined to be equivalent to the effective
+ wavenumber of the photon flux distribution in the astrometric (G) band, and is
+ measured in um<SUP>-1</SUP>. The value given in this field was astrometrically
+ determined in a preliminary solution, using the chromatic displacement of
+ image centroids calibrated by means of the effective wavenumbers ({nu}eff) of
+ primary sources calculated from BP and RP magnitudes. The field is empty when
+ no such determination was possible, in which case a default value of
+ 1.6um<SUP>-1</SUP> was assumed.
+<A NAME="sRM3.21"><B>Note (18)</B>: The number of FOV transits matched to this source, counting only the
+ transits containing CCD observations actually used to compute the astrometric
+ solution.  This number will always be equal to or smaller than the
+ matchedObservations, the difference being the FOV transits that were not used
+ in the astrometric solution because of bad data or excluded time intervals.
+<A NAME="sRM3.22"><B>Note (19)</B>: The longest principal axis in the 5-dimensional error ellipsoid.
+ This is a 5-dimensional equivalent to the semi-major axis of the position error
+ ellipse and is therefore useful for filtering out cases where one of the five
+ parameters, or some linear combination of several parameters, is particularly
+ ill-determined. It is measured in mas and computed as the square root of the
+ largest singular value of the scaled 5x5 covariance matrix of the astrometric
+ parameters. The matrix is scaled so as to put the five parameters on a
+ comparable scale, taking into account the maximum along-scan parallax factor
+ for the parallax and the time coverage of the observations for the proper
+ motion components.  If C is the unscaled covariance matrix, the scaled matrix
+ is SCS, where S=diag(1,1,sin{xi},T/2,T/2), {xi}=45&#176; is the solar aspect
+ angle in the nominal scanning law, and T the time coverage of the data used in
+ the solution. T=1.75115 yr for Gaia DR2.  astrometricSigma5dMax is given for
+ both 5-parameter and 2-parameter solutions, as its size is one of the criteria
+ for accepting or rejecting the 5-parameter solution. In case of a 2-parameter
+ solution (astrometricParamsSolved=3) it gives the value for the rejected
+ 5-parameter solution, and can then be arbitrarily large.
+<A NAME="sRM3.23"><B>Note (20)</B>: This field is non-zero if the source was used to define the reference
+ frame of the positions and proper motions.
+ The values used are:
+  0 = An ordinary source not used for the reference frame determination
+  2 = The optical counterpart of an extragalactic radio source with accurately
+       known VLBI position in ICRF. This is used to determine the orientation
+       of the reference frame at the reference epoch, but also contributes to
+       the determination of a non-rotating frame.
+  3 = An extragalactic source (AGN or quasar) that was used to determine a
+       kinematically non-rotating celestial frame.
+<A NAME="sRM3.24"><B>Note (21)</B>: During data processing, this source happened to be duplicated and
+ only one source identifier has been kept. Observations assigned to the
+ discarded source identifier(s) were not used. This may indicate observational,
+ cross-matching or processing problems, or stellar multiplicity, and probable
+ astrometric or photometric problems in all cases. In Gaia DR1 and DR2, for
+ close doubles with separations below some 2 arcsec, truncated windows have not
+ been processed, neither in astrometry nor photometry. The transmitted window
+ is centred on the brighter part of the acquired window, so the brighter
+ component has a better chance to be selected, even when processing the fainter
+ transit.  If more than two images are contained in a window, the result of the
+ image parameter determination is unpredictable in the sense that it might
+ refer to either (or neither) image, and no consistency is assured.
+<A NAME="sRM3.25"><B>Note (22)</B>: Number of observations (CCD transits) that contributed to the G mean
+ flux and mean flux error.
+<A NAME="sRM3.26"><B>Note (23)</B>: This is computed from the G-band mean flux applying the magnitude
+ zero-point in the Vega scale.  No error is provided for this quantity as the
+ error distribution is only symmetric in flux space. This converts to an
+ asymmetric error distribution in magnitude space which cannot be represented
+ by a single error value.
+<A NAME="sRM3.27"><B>Note (24)</B>: Number of observations (CCD transits) that contributed to the
+ integrated BP mean flux and mean flux error.
+<A NAME="sRM3.28"><B>Note (25)</B>: Error on the mean flux in the integrated BP band (errors are computed
+ from the dispersion about the weighted mean of input calibrated photometry).
+<A NAME="sRM3.29"><B>Note (26)</B>: Mean magnitude in the integrated BP band. This is computed from the
+ BP-band mean flux applying the magnitude zero-point in the Vega scale.
+ No error is provided for this quantity as the error distribution is only
+ symmetric in flux space. This converts to an asymmetric error distribution in
+ magnitude space which cannot be represented by a single error value.
+<A NAME="sRM3.30"><B>Note (27)</B>: Number of observations (CCD transits) that contributed to the
+ integrated RP mean flux and mean flux error.
+<A NAME="sRM3.31"><B>Note (28)</B>: Error on the mean flux in the integrated RP band (errors are computed
+ from the dispersion about the weighted mean of input calibrated photometry).
+<A NAME="sRM3.32"><B>Note (29)</B>: Mean magnitude in the integrated RP band. This is computed from the
+ RP-band mean flux applying the magnitude zero-point in the Vega scale.
+ No error is provided for this quantity as the error distribution is only
+ symmetric in flux space. This converts to an asymmetric error distribution in
+ magnitude space which cannot be represented by a single error value.
+<A NAME="sRM3.33"><B>Note (30)</B>: The radialVelocityError is the error on the median to which a
+ constant noise floor of 0.11km/s has been added in quadrature to take into
+ account the calibration contribution.
+
+ In detail, radialVelocityError=sqrt({sigma}^2<SUB>{V</SUB>rad}+0.11^2) where
+ {sigma}<SUB>{V</SUB>rad} is the error on the median:
+ {sigma}<SUB>{V</SUB>rad} =
+ sqrt({pi}/2).{sigma}(V_rad^t)/sqrt(<SUB>nb</SUB>transits)
+ where {sigma}(V_rad^t) is the standard deviation of the epoch radial
+ velocities and rvNbTransits the number of transits for which a
+ V_rad^t has been obtained.
+<A NAME="sRM3.34"><B>Note (31)</B>: Flag indicating if variability was identified in the photometric
+ data:
+ - "NOT_AVAILABLE" = source not processed and/or exported to catalogue
+ - "CONSTANT"      = Source not identified as variable
+ - "VARIABLE"      = source identified and processed as variable,
+                      see Vari* tables (cepheid.dat, rrlyrae.dat, lpv.dat,
+                      shortts.dat)
+ Note that for this data release only a subset of (variable) sources was
+ processed and/or exported, so for many (known) variable sources this flag is
+ set to "NOT AVAILABLE". No "CONSTANT" sources were exported either.
+<A NAME="sRM3.35"><B>Note (32)</B>: Galactic longitude and latitude of the object at reference epoch
+ refEpoch, see Section [ssec:cu3ast<SUB>intro</SUB>galactic] of the release documentation
+ for conversion details.
+<A NAME="sRM3.36"><B>Note (33)</B>: Ecliptic longitude and latitude of the object at reference epoch
+ refEpoch, obtained from the equatorial coordinates using the transformation
+ defined in Section 1.5.3 of "The Hipparcos and Tycho Catalogues", ESA SP-1200,
+ Volume 1 (ESA, 1997).
+<A NAME="sRM3.37"><B>Note (34)</B>: Flags describing the status of the astrophysical parameters Teff, AG
+ and E[BP-RP] (i.e. those determined by Apsis-Priam). They are described in
+ Chapter [chap:cu8par] of the release documentation.
+<A NAME="sRM3.38"><B>Note (35)</B>: Flags describing the status of the astrophysical parameters radius
+ and luminosity (i.e. those determined by Apsis-FLAME). They are described in
+ Chapter [chap:cu8par] of the release documentation.
+<A NAME="sRM3.39"><B>Note (36)</B>: The purpose of these parameters is to provide information on the
+ synthetic spectrum used to determine radial_velocity, and not to provide an
+ estimation of the star parameter.
+<A NAME="sRM3.40"><B>Note (37)</B>: The single-valued errors added by CDS do not always reflect
+ accurately the magnitude errors. Indeed, the errors are only symmetric in 
+ flux space and ideally a +1 sigma and -1 sigma would be needed to properly 
+ describe the magnitude uncertainties. For the G-band this effect is probably 
+ not very severe, but for BP and RP this may become significant at the faint 
+ end.
+
+ e_Gmag was computed as a simple error propagation on the fluxes,
+ according to the formula:
+
+ e<SUB>Gmag=abs(-2.5/ln(10)*e</SUB>FG/FG ).
+
+ Notice that this formula differs from Eq. (5.26) in
+ https://gea.esac.esa.int/archive/documentation/GDR2/Data_processing/
+ chap<SUB>cu5pho/sec</SUB>cu5pho<SUB>calibr/ssec</SUB>cu5pho<SUB>calibr</SUB>extern.html 
+ only in that it considers null the error on the zero point
+ calibration, i.e. sigma_G0 = 0.
+<HR>
+
+<A NAME="sRM2.2"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.157"> rvstdcat.dat</A>
+<HR>
+   Bytes Format Units   Label     Explanations
+<HR>
+   2- 23  A22   ---     ID        Star ID (HIP, TYC or 2MASS)
+  25- 32  F8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    RV        [-382.272/339.061] Mean Radial Velocity
+  35- 41  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    eRV       [0.0001/0.2157] Internal error of RV
+  44- 50  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    s_RV      [0/1.6164] Standard deviation of RV
+  53- 59  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    e_RV      [0.0001/0.6374] Uncertainty of RV
+  61- 65  I5    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       Tbase     Time baseline of the N observations
+  67- 71  I5    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       JDm       Mean Julian Day of observations (JD-2400000)
+  73- 75  I3    ---     N         Number of ground-based radial velocities
+  79- 97  I19   ---     Source    ?=0 Source ID in Gaia DR2
+  99-102  A4    ---     Flag      <A HREF="#sRM3.41">Calibration or validation status (1)</A>
+ 104-110  F7.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    RVS       [-382.02/339.66]?=-999.99 Gaia DR2
+                                   Radial Velocity
+ 112-116  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    e_RVS     [0.11/19.07]?=-9.99 Gaia DR2
+                                   Radial Velocity error
+ 118-120  I3    ---     o_RVS     [0/92] Number of RVS transits
+ 122-143  A22   ---     2MASS     ? 2MASS ID (2MASSJHHMMSSss+DDMMSSS)
+ 145-151  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Jmag      ?=-9.999 2MASS J magnitude
+ 153-159  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Hmag      ?=-9.999 2MASS H magnitude
+ 161-167  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Kmag      ?=-9.999 2MASS K magnitude
+ 169-175  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_Jmag    ?=-9.999 2MASS J magnitude error
+ 177-183  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_Hmag    ?=-9.999 2MASS H magnitude error
+ 185-191  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_Kmag    ?=-9.999 2MASS K magnitude error
+ 193-195  A3    ---     Qflag     2MASS Qflag
+ 199-208  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     RAdeg     <A HREF="#sRM3.42">Right ascension (ICRS) (2)</A>
+ 211-219  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEdeg     <A HREF="#sRM3.42">Declination (ICRS) (2)</A>
+     221  A1    ---     ---       [J]
+ 222-227  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?yr" TARGET="explain">yr</A>      Epoch     Epoch for RAdeg and DEdeg
+ 229-233  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Bmag      ? Simbad B magnitude
+ 235-239  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Vmag      ? Simbad V magnitude
+ 241-255  A15   ---     SpType    ? Simbad spectral type
+ 257-270  A14   ---     otype     Simbad object type
+<HR>
+<A NAME="sRM3.41"><B>Note (1)</B>: Flag as follows:
+   CAL1 = calibrator for DR2 and DR3
+   CAL2 = calibrator for DR2 not for DR3
+   CAL3 = calibrator for DR3 not for DR2
+   VAL  = validation star
+<A NAME="sRM3.42"><B>Note (2)</B>: RA and DEC come from Gaia DR2 (ICRS, Epoch=J2015.5) when available
+  (source_id&gt;0) or from Simbad (ICRS, Epoch=J2000.0).
+<HR>
+
+<A NAME="sRM2.3"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.158"> rvstdmes.dat</A>
+<HR>
+   Bytes Format Units   Label     Explanations
+<HR>
+   2- 23  A22   ---     ID        Star ID (HIP, TYC or 2MASS)
+      25  A1    ---     Instr     <A HREF="#sRM3.43">Instrument (1)</A>
+  27- 31  I5    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       JD        Julian Day of observation (JD-2400000)
+  33- 40  F8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    RV        Radial Velocity
+  42- 48  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    e_RV      Radial Velocity error
+  50- 51  A2    ---     Mask      <A HREF="#sRM3.44">Spectral type of the mask used for the CCF (2)</A>
+  53- 76  A24   ---     Idspec    ? <A HREF="#sRM3.45">Identification number in public archive (3)</A>
+<HR>
+<A NAME="sRM3.43"><B>Note (1)</B>: Instrument code as follows:
+   S = SOPHIE
+   E = ELODIE
+   C = CORALIE
+   N = NARVAL
+   H = HARPS
+<A NAME="sRM3.44"><B>Note (2)</B>: Mask is unknown when the measurement comes from the AMBRE-HARPS
+   catalogue (de Pascale et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2014A%26A...570A..68D">2014A&A...570A..68D</A>)
+<A NAME="sRM3.45"><B>Note (3)</B>: Internal sequence number in SOPHIE archive (seq), or running number
+   (immanum) and dataset in ELODIE archive, or original file name
+   (ORIGFILE) in ESO-HARPS archive.
+<HR>
+
+<A NAME="sRM2.4"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.160"> allwise.dat</A>
+<HR>
+   Bytes Format Units   Label     Explanations
+<HR>
+   1- 19  A19   ---     Allwise   WISE All-Sky Release Catalog name, based on
+                                   J2000 position (allwise_name)
+  21- 39  I19   ---     Source    Gaia source identifier (source_id)
+<HR>
+
+<A NAME="sRM2.5"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.162"> iers.dat</A>
+<HR>
+   Bytes Format Units   Label     Explanations
+<HR>
+   1-  8  A8    ---     IERS      International Earth Rotation and Reference
+                                   Systems Service name (HHMM+DDd, B1950
+                                   equinox) (iers_name)
+  10- 28  I19   ---     Source    <A HREF="#sRM3.90">Gaia source identifier (source_id) (G3)</A>
+<HR>
+
+<A NAME="sRM2.6"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.164"> cepheid.dat</A>
+<HR>
+   Bytes Format Units   Label     Explanations
+<HR>
+   1-  5  A5    ---     TBest     <A HREF="#sRM3.46">Best type classification estimate</A>
+                                   (type<SUB>best</SUB>classification) (1)
+   7- 12  A6    ---     TBest2    <A HREF="#sRM3.47">Best subclassification estimate</A>
+                                   (type2<SUB>best</SUB>sub_classification) (2)
+  14- 27  A14   ---     Mbest     <A HREF="#sRM3.48">Best mode classification estimate</A>
+                                  (mode<SUB>best</SUB>classification) (3)
+  29- 33  A5    ---     Mbest2    <A HREF="#sRM3.49">Best multi mode DCEP classification</A>
+                                  (multi<SUB>mode</SUB>best_classification) (4)
+  35- 52  I18   ---     SolID     <A HREF="#sRM3.88">Solution Identifier (solution_id) (G1)</A>
+  54- 72  I19   ---     Source    <A HREF="#sRM3.89">Unique source identifier (source_id) (G2)</A>
+  74- 85  F12.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       Pf        ? <A HREF="#sRM3.92">Period corresponding to the fundamental</A>
+                                   pulsation mode (for multi mode pulsators)
+                                   in  the G band time series (pf) (G5)
+  87- 96  F10.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       e_Pf      ? <A HREF="#sRM3.93">Uncertainty of the Pf period (pf_error) (G6)</A>
+  98-107  F10.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       P1O       ? <A HREF="#sRM3.94">Period corresponding to the first overtone</A>
+                                   pulsation mode (for multi mode pulsators) in
+                                   the G band time series (p1_o) (G7)
+ 109-118  F10.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       e_P1O     ? <A HREF="#sRM3.93">Uncertainty of the P2O period</A>
+                                   (p1<SUB>o</SUB>error) (G6)
+ 120-129  F10.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       P2O       ? <A HREF="#sRM3.95">Period corresponding to the second overtone</A>
+                                   pulsation mode (for multi mode pulsators) in
+                                   the G band time series (p2_o) (G8)
+ 131-140  F10.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       e_P2O     ? <A HREF="#sRM3.93">Uncertainty of the P2O period</A>
+                                   (p2<SUB>o</SUB>error) (G6)
+ 142-151  F10.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       P3O       ? <A HREF="#sRM3.96">Period corresponding to the third overtone</A>
+                                   pulsation mode (for multi mode pulsators) in
+                                   the G band time series (p3_o) (G9)
+ 153-162  F10.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       e_P3O     ? <A HREF="#sRM3.93">Uncertainty of the P3O period</A>
+                                   (p3<SUB>o</SUB>error) (G6)
+ 164-176  F13.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       EpG       <A HREF="#sRM3.97">Epoch of the maximum of the light curve in</A>
+                                   the G band (JD=2455197.5) (epoch_g) (G10)
+ 178-187  F10.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       e_EpG     Uncertainty on the epoch parameter epoch G
+                                   (epoch<SUB>g</SUB>error)
+ 189-201  F13.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       EpBP      <A HREF="#sRM3.97">Epoch of the maximum of the light curve in</A>
+                                   the BP band (JD=2455197.5) (epoch_bp) (G10)
+ 203-212  F10.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       e_EpBP    Uncertainty on the epoch parameter epoch BP
+                                   (epoch<SUB>bp</SUB>error)
+ 214-226  F13.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       EpRP      <A HREF="#sRM3.97">Epoch of the maximum of the light curve in</A>
+                                   the RP band (JD=2455197.5) (epoch_rp) (G10)
+ 228-237  F10.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       e_EpRP    Uncertainty on the epoch parameter epoch RP
+                                   (epoch<SUB>rp</SUB>error)
+ 239-247  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Gmag      Intensity-averaged magnitude in the G band
+                                   (int<SUB>average</SUB>g)
+ 249-256  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_Gmag    <A HREF="#sRM3.98">Uncertainty on Intensity-averaged magnitude in</A>
+                                   the G band (int<SUB>average</SUB>g_error) (G11)
+ 258-266  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     BPmag     ? Intensity-averaged magnitude in the BP band
+                                   (int<SUB>average</SUB>bp)
+ 268-275  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_BPmag   ? <A HREF="#sRM3.98">Uncertainty on Intensity-averaged magnitude</A>
+                                   in the BP band (int<SUB>average</SUB>bp_error) (G11)
+ 277-285  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     RPmag     ? Intensity-averaged magnitude in the RP band
+                                   (int<SUB>average</SUB>rp)
+ 287-294  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_RPmag   ? <A HREF="#sRM3.98">Uncertainty on Intensity-averaged magnitude</A>
+                                   in the RP band (int<SUB>average</SUB>rp_error) (G11)
+ 296-303  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     AmpG      <A HREF="#sRM3.99">Peak-to-peak amplitude of the G band light</A>
+                                   curve (peak<SUB>to</SUB>peak_g) (G12)
+ 305-312  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_AmpG    <A HREF="#sRM3.100">Uncertainty on the AmpG parameter</A>
+                                   (peak<SUB>to</SUB>peak<SUB>g</SUB>error) (G13)
+ 314-321  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     AmpBP     ? <A HREF="#sRM3.99">Peak-to-peak amplitude of the BP band light</A>
+                                   curve (peak<SUB>to</SUB>peak_bp) (G12)
+ 323-330  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_AmpBP   ? <A HREF="#sRM3.100">Uncertainty on the AmpBP parameter</A>
+                                   (peak<SUB>to</SUB>peak<SUB>bp</SUB>error) (G13)
+ 332-339  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     AmpRP     ? <A HREF="#sRM3.99">Peak-to-peak amplitude of the RP band light</A>
+                                   curve (peak<SUB>to</SUB>peak_rp) (G12)
+ 341-348  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_AmpRP   ? <A HREF="#sRM3.100">Uncertainty on the AmpRP parameter</A>
+                                   (peak<SUB>to</SUB>peak<SUB>rp</SUB>error) (G13)
+ 350-354  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%5b-%5d" TARGET="explain">[-]</A>     [Fe/H]    ? <A HREF="#sRM3.101">Metallicity of the star from the Fourier</A>
+                                   parameters of the light curve
+                                   (metallicity) (G14)
+ 356-359  F4.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%5b-%5d" TARGET="explain">[-]</A>     e_[Fe/H]  ? Uncertainty of the metallicity parameter
+                                   (metallicity_error)
+ 361-367  F7.5  ---     R21G      ? <A HREF="#sRM3.102">Fourier decomposition parameter r21G: A2/A1</A>
+                                   (for G band) (r21_g) (G15)
+ 369-375  F7.5  ---     e_R21G    ? <A HREF="#sRM3.103">Uncertainty on the r21G parameter: A2/A1</A>
+                                   (for G band) (r21<SUB>g</SUB>error) (G16)
+ 377-383  F7.5  ---     R31G      ? <A HREF="#sRM3.102">Fourier decomposition parameter A3/A1</A>
+                                   (for G band) (r31_g) (G15)
+ 385-391  F7.5  ---     e_R31G    ? <A HREF="#sRM3.103">Uncertainty on the r31G parameter: A3/A1</A>
+                                   (for G band) (r31<SUB>g</SUB>error) (G16)
+ 393-399  F7.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?rad" TARGET="explain">rad</A>     phi21G    ? <A HREF="#sRM3.104">Fourier decomposition parameter</A>
+                                   phi21G: phi2-2*phi1 (for G band)
+                                   (phi21_g) (G17)
+ 401-407  F7.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?rad" TARGET="explain">rad</A>     e_phi21G  ? <A HREF="#sRM3.105">Uncertainty on the phi21G parameter</A>
+                                   (for G band) (phi21<SUB>g</SUB>error) (G18)
+ 409-415  F7.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?rad" TARGET="explain">rad</A>     phi31G    ? <A HREF="#sRM3.104">Fourier decomposition parameter</A>
+                                   phi31G: phi3-3*phi1 (for G band)
+                                   (phi31_g) (G17)
+ 417-423  F7.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?rad" TARGET="explain">rad</A>     e_phi31G  ? <A HREF="#sRM3.105">Uncertainty on the  phi31G parameter</A>
+                                   (for G band) (phi31<SUB>g</SUB>error) (G18)
+ 425-427  I3    ---     o_EpG     Number of G FoV epochs used in the fitting
+                                   algorithm (num<SUB>clean</SUB>epochs_g)
+ 429-431  I3    ---     o_EpBP    Number of BP epochs used in the fitting
+                                   algorithm (num<SUB>clean</SUB>epochs_bp)
+ 433-435  I3    ---     o_EpRP    Number of RP epochs used in the fitting
+                                   algorithm (num<SUB>clean</SUB>epochs_rp)
+ 437-451 F15.11 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     RAdeg     Barycentric right ascension (ICRS)
+                                   at Ep=2015.5 (Added by CDS) (ra)
+ 453-467 F15.11 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEdeg     Barycentric declination (ICRS)
+                                   at Ep=2015.5 (Added by CDS) (dec)
+<HR>
+<A NAME="sRM3.46"><B>Note (1)</B>: Classification of a Cepheid into "DCEP", "T2CEP" or "ACEP" using
+ the period-luminosity relations, which are different for the three different
+ types of Cepheids.
+<A NAME="sRM3.47"><B>Note (2)</B>: Sub-classification of a T2CEP Cepheids into BL Herculis ("BL_HER"),
+ W Virginis ("W_VIR") or RV Tauris ("RV_TAU") sub-types depending on the source
+ periodicity.
+<A NAME="sRM3.48"><B>Note (3)</B>: Best mode classification estimate:
+ "FUNDAMENTAL": fundamental mode for typeBestClassification="DCEP" or "ACEP"
+ "FIRST_OVERTONE": first overtone for typeBestClassification="DCEP" or "ACEP"
+ "SECOND_OVERTONE": second overtone for typeBestClassification="DCEP"
+ "MULTI": multi-mode pulsators for typeBestClassification="DCEP"
+ "UNDEFINED": if mode could not be clearly determined for
+   typeBestClassification="DCEP" or "ACEP"
+ "NOT_APPLICABLE": when typeBestClassification="T2CEP"
+
+ The Cepheid pulsation mode is assigned using the period-luminosity and
+ period-Wesenheit relations, which are different for the various pulsation modes
+ as well as analysing the Fourier parameters vs period plots.
+ The type "MULTI" is assigned to stars pulsating in two or more modes
+ simultaneously.
+<A NAME="sRM3.49"><B>Note (4)</B>: Sub-classification of multi mode DCEP variables according to their
+ position in the "Petersen diagram" (see e.g. Fig. 1 in Soszynski et al.,
+ <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2015AcA....65..329S">2015AcA....65..329S</A>). F,1O,2O and 3O mean fundamental, first, second and third
+ overtone, respectively.
+<HR>
+
+<A NAME="sRM2.7"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.165"> rrlyrae.dat</A>
+<HR>
+   Bytes Format Units   Label     Explanations
+<HR>
+   1-  4  A4    ---     TBest     <A HREF="#sRM3.50">Best type classification estimate</A>
+                                   (best_classification) (1)
+   6- 23  I18   ---     SolID     <A HREF="#sRM3.88">Solution Identifier (solution_id) (G1)</A>
+  25- 43  I19   ---     Source    <A HREF="#sRM3.89">Unique source identifier (source_id) (G2)</A>
+  45- 56  F12.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       Pf        ? <A HREF="#sRM3.92">Period corresponding to the fundamental</A>
+                                   pulsation mode (for multi mode pulsators) in
+                                   the G band time series (pf) (G5)
+  58- 67  F10.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       e_Pf      ? <A HREF="#sRM3.93">Uncertainty of the Pf period (pf_error) (G6)</A>
+  69- 78  F10.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       P1O       ? <A HREF="#sRM3.94">Period corresponding to the first overtone</A>
+                                   pulsation mode (for multi mode pulsators) in
+                                   the G band time series (p1_o) (G7)
+  80- 89  F10.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       e_P1O     ? <A HREF="#sRM3.93">Uncertainty of the P2O period</A>
+                                   (p1<SUB>o</SUB>error) (G6)
+  91-103  F13.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       EpG       <A HREF="#sRM3.97">Epoch of the maximum of the light curve in the</A>
+                                   G band (JD=2455197.5) (epoch_g) (G10)
+ 105-114  F10.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       e_EpG     Uncertainty on the epoch parameter epoch G
+                                   (epoch<SUB>g</SUB>error)
+ 116-128  F13.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       EpBP      <A HREF="#sRM3.97">Epoch of the maximum of the light curve in the</A>
+                                   BP band (JD=2455197.5) (epoch_bp) (G10)
+ 130-139  F10.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       e_EpBP    Uncertainty on the epoch parameter epoch BP
+                                   (epoch<SUB>bp</SUB>error)
+ 141-153  F13.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       EpRP      <A HREF="#sRM3.97">Epoch of the maximum of the light curve in the</A>
+                                   RP band (JD=2455197.5) (epoch_rp) (G10)
+ 155-164  F10.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       e_EpRP    Uncertainty on the epoch parameter epoch RP
+                                   (epoch<SUB>rp</SUB>error)
+ 166-174  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Gmag      Intensity-averaged magnitude in the G band
+                                   (int<SUB>average</SUB>g)
+ 176-183  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_Gmag    <A HREF="#sRM3.98">Uncertainty on Intensity-averaged magnitude in</A>
+                                   the G band (int<SUB>average</SUB>g_error) (G11)
+ 185-193  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     BPmag     ? Intensity-averaged magnitude in the BP band
+                                   (int<SUB>average</SUB>bp)
+ 195-202  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_BPmag   ? <A HREF="#sRM3.98">Uncertainty on Intensity-averaged magnitude</A>
+                                   in the BP band (int<SUB>average</SUB>bp_error) (G11)
+ 204-212  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     RPmag     ? Intensity-averaged magnitude in the RP band
+                                   (int<SUB>average</SUB>rp)
+ 214-221  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_RPmag   ? <A HREF="#sRM3.98">Uncertainty on Intensity-averaged magnitude</A>
+                                   in the RP band (int<SUB>average</SUB>rp_error) (G11)
+ 223-230  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     AmpG      <A HREF="#sRM3.99">Peak-to-peak amplitude of the G band light</A>
+                                  curve (peak<SUB>to</SUB>peak_g) (G12)
+ 232-239  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_AmpG    <A HREF="#sRM3.100">Uncertainty on the AmpG parameter</A>
+                                   (peak<SUB>to</SUB>peak<SUB>g</SUB>error) (G13)
+ 241-249  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     AmpBP     ? <A HREF="#sRM3.99">Peak-to-peak amplitude of the BP band light</A>
+                                   curve (peak<SUB>to</SUB>peak_bp) (G12)
+ 251-258  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_AmpBP   ? <A HREF="#sRM3.100">Uncertainty on the AmpBP parameter</A>
+                                   (peak<SUB>to</SUB>peak<SUB>bp</SUB>error) (G13)
+ 260-267  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     AmpRP     ? <A HREF="#sRM3.99">Peak-to-peak amplitude of the RP band light</A>
+                                   curve (peak<SUB>to</SUB>peak_rp) (G12)
+ 269-277  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_AmpRP   ? <A HREF="#sRM3.100">Uncertainty on the AmpRP parameter</A>
+                                   (peak<SUB>to</SUB>peak<SUB>rp</SUB>error) (G13)
+ 279-283  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%5b-%5d" TARGET="explain">[-]</A>     [Fe/H]    ? <A HREF="#sRM3.101">Metallicity of the star from the Fourier</A>
+                                   parameters of the light curve
+                                   (metallicity) (G14)
+ 285-289  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%5b-%5d" TARGET="explain">[-]</A>     e_[Fe/H]  ? Uncertainty of the metallicity parameter
+                                   (metallicity_error)
+ 291-297  F7.5  ---     R21G      ? <A HREF="#sRM3.102">Fourier decomposition parameter r21G: A2/A1</A>
+                                   (for G band) (r21_g) (G15)
+ 299-305  F7.5  ---     e_R21G    ? <A HREF="#sRM3.103">Uncertainty on the r21G parameter: A2/A1</A>
+                                   (for G band) (r21<SUB>g</SUB>error) (G16)
+ 307-313  F7.5  ---     R31G      ? <A HREF="#sRM3.102">Fourier decomposition parameter A3/A1</A>
+                                   (for G band) (r31_g) (G15)
+ 315-321  F7.5  ---     e_R31G    ? <A HREF="#sRM3.103">Uncertainty on the r31G parameter: A3/A1</A>
+                                   (for G band) (r31<SUB>g</SUB>error) (G16)
+ 323-329  F7.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?rad" TARGET="explain">rad</A>     phi21G    ? <A HREF="#sRM3.104">Fourier decomposition parameter</A>
+                                   phi21G: phi2-2*phi1 (for G band)
+                                   (phi21_g) (G17)
+ 331-338  F8.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?rad" TARGET="explain">rad</A>     e_phi21G  ? <A HREF="#sRM3.105">Uncertainty on the  phi21G parameter</A>
+                                   (for G band) (phi21<SUB>g</SUB>error) (G18)
+ 340-346  F7.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?rad" TARGET="explain">rad</A>     phi31G    ? <A HREF="#sRM3.104">Fourier decomposition parameter</A>
+                                   phi31G: phi3-3*phi1 (for G band)
+                                   (phi31_g) (G17)
+ 348-354  F7.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?rad" TARGET="explain">rad</A>     e_phi31G  ? <A HREF="#sRM3.105">Uncertainty on the  phi31G parameter</A>
+                                   (for G band) (phi31<SUB>g</SUB>error) (G18)
+ 356-358  I3    ---     o_EpG     Number of G FoV epochs used in the fitting
+                                   algorithm (num<SUB>clean</SUB>epochs_g)
+ 360-362  I3    ---     o_EpBP    Number of BP epochs used in the fitting
+                                   algorithm (num<SUB>clean</SUB>epochs_bp)
+ 364-366  I3    ---     o_EpRP    Number of RP epochs used in the fitting
+                                   algorithm (num<SUB>clean</SUB>epochs_rp)
+ 368-372  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Gabs      ? Interstellar absorption in the G-band
+                                   (g_absorption)
+ 374-378  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_Gabs    ? Error on the interstellar absorption in the
+                                   G-band (g<SUB>absorption</SUB>error)
+ 380-394 F15.11 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     RAdeg     Barycentric right ascension (ICRS)
+                                   at Ep=2015.5 (Added by CDS) (ra)
+ 396-410 F15.11 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEdeg     Barycentric declination (ICRS)
+                                   at Ep=2015.5 (Added by CDS) (dec)
+<HR>
+<A NAME="sRM3.50"><B>Note (1)</B>: Classification of an  RR Lyrae star according to the pulsation mode:
+ RRc ("RRC") for first overtone, RRab ("RRAB") for fundamental mode, and
+ RRd ("RRD") for double modes, obtained using the period-amplitude diagram in
+ the G-band; the plots of the Fourier parameters R21 and Phi2 vs period
+ and the Petersen diagram.
+<HR>
+
+<A NAME="sRM2.8"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.166"> lpv.dat</A>
+<HR>
+   Bytes Format Units   Label     Explanations
+<HR>
+   1- 18  I18   ---     SolID     Solution Identifier (G1) (solution_id)
+  20- 38  I19   ---     Source    Unique source identifier (G2) (source_id)
+  40- 47  F8.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     MBOL      [-23.1415/10.8172]? Absolute bolometric
+                                   magnitude of the star (abs<SUB>mag</SUB>bol)
+  49- 58  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_MBOL    [0.0518/56681.7485]? Error of absolute
+                                   bolometric magnitude (abs<SUB>mag</SUB>bol_error)
+      60  I1    ---     Flag      Red supergiant flag (marks stars that are
+                                   probably red supergiants) (rsg_flag)
+  62- 68  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     BolCorr   [-9.1792/-0.2194] <A HREF="#sRM3.51">Bolometric correction for</A>
+                                   LPVs (bolometric_corr) (1)
+  70- 75  F6.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>    e_BolCorr  [0.005/5.9739] <A HREF="#sRM3.52">Error of the bolometric</A>
+                                   correction (bolometric<SUB>corr</SUB>error) (2)
+  77- 84  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d-1" TARGET="explain">d-1</A>     Freq      [0.000011/0.016666] Frequency of the LPV
+                                   (frequency)
+  86- 94  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d-1" TARGET="explain">d-1</A>     e_Freq    [0.000027/65.899389] Error on the frequency
+                                   (frequency_error)
+  96-110 F15.11 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     RAdeg     Barycentric right ascension (ICRS)
+                                   at Ep=2015.5 (Added by CDS) (ra)
+ 112-126 F15.11 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEdeg     Barycentric declination (ICRS)
+                                   at Ep=2015.5 (Added by CDS) (dec)
+<HR>
+<A NAME="sRM3.51"><B>Note (1)</B>: This parameter gives the bolometric correction for the case of LPVs;
+ details of the calculation can be found in Chapter [chap:cu7var] of the
+ release documentation. For DR2, the bolometric correction was fixed to a
+ specific value in three cases. First for red supergiant LPVs, identified with,
+ the value was set to -0.71mag. Second, the value was set to -2.2mag for LPVs
+ with G amplitude variations &gt;3mag, where the variability amplitude is computed
+ as the 5-95% trimmed range using the LEGACY strategy of commons-math to
+ compute the percentiles. Third, for all cases for which the uncertainty in
+ BP or in RP was larger than 4mag, the BP-RP color was assumed to be 3.25mag,
+ at which value the bolometric correction is -1.729mag.
+<A NAME="sRM3.52"><B>Note (2)</B>: This parameter gives the error of the bolometric correction for the
+ case of LPVs. For DR2, the bolometric correction was fixed to a specific
+ value in three cases. First for red supergiant LPVs, identified with, the
+ value was set to 0.3mag. Second, the value was set to 0.005mag for LPVs
+ with G amplitude variations &gt;3mag, where the variability amplitude is
+ computed as the 5-95% trimmed range using the LEGACY strategy of
+ commons-math to compute the percentiles. Third, for all cases for which
+ the uncertainty in BP or in RP was larger than 4mag, the BP-RP color was
+ assumed to be 3.25mag and the error on BP-RP assumed to be 2mag, at which
+ values the bolometric correction error is 1.892mag.
+<HR>
+
+<A NAME="sRM2.9"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.168"> varres.dat</A>
+<HR>
+   Bytes Format Units   Label        Explanations
+<HR>
+   1- 18  I18   ---     SolID        <A HREF="#sRM3.88">Solution Identifier (meta.version) (G1)</A>
+  20- 38  I19   ---     Source       <A HREF="#sRM3.89">Unique source identifier (source_id) (G2)</A>
+  40- 51  A12   ---     Classifier   <A HREF="#sRM3.53">Name of the classifier used to produce this</A>
+                                      result (classifier_name) (1)
+  53- 62  A10   ---     BClass       <A HREF="#sRM3.54">Name of best class, see table</A>
+                                      VariClassifierDefinition for details of
+                                      the class (best<SUB>class</SUB>name) (2)
+  64- 70  F7.5  ---     BClassScore  [0/1] <A HREF="#sRM3.55">Score of the best class</A>
+                                      (best<SUB>class</SUB>score) (3)
+  72- 86 F15.11 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     RAdeg        Barycentric right ascension (ICRS)
+                                      at Ep=2015.5 (Added by CDS) (ra)
+  88-102 F15.11 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEdeg        Barycentric declination (ICRS)
+                                      at Ep=2015.5 (Added by CDS) (dec)
+<HR>
+<A NAME="sRM3.53"><B>Note (1)</B>: nTransits:2+ : Multi-stage Random Forest semi-supervised classifier
+ applied to time series with 2 or more field-of-view transits in the G band
+ (solID=369295546864633574)
+<A NAME="sRM3.54"><B>Note (2)</B>: Best classes as follows:
+  ACEP       = Anomalous Cepheids
+  ARRD       = Anomalous double-mode RR Lyrae stars
+  CEP        = Classical (delta) Cepheids
+  DSCT_SXPHE = Variable stars of types delta Scuti (DSCT) and
+                SX Phoenicis (SXPHE)
+  MIRA_SR    = Long period variable stars including omicron Ceti (MIRA)
+                and semiregular (SR) variables
+  RRAB       = Fundamental-mode RR Lyrae stars
+  RRC        = First-overtone RR Lyrae stars
+  RRD        = Double-mode RR Lyrae stars
+  T2CEP      = Type-II Cepheids
+<A NAME="sRM3.55"><B>Note (3)</B>: It describes a quantity between 0 and 1 which is related to the
+  confidence of the classifier in the identification of the best class
+  (classBestName) by a monotonically increasing function (depending on class).
+<HR>
+
+<A NAME="sRM2.10"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.171"> shortts.dat</A>
+<HR>
+   Bytes Format Units   Label     Explanations
+<HR>
+   1- 18  I18   ---     SolID     <A HREF="#sRM3.88">Solution Identifier (solution_id) (G1)</A>
+  20- 38  I19   ---     Source    <A HREF="#sRM3.89">Unique source identifier (source_id) (G2)</A>
+  40- 47  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Amp       Amplitude estimate of all per CCD G-band
+                                   photometry (quantile(95%)-quantile(5%))
+                                   (amplitude_estimate)
+  49- 51  I3    ---     Nfov      [14/109] Number of FoV transits with more than
+                                   7 CCD measurements after time series cleaning
+                                   (number<SUB>of</SUB>fov_transits)
+  53- 60  F8.6  ---     abbe      <A HREF="#sRM3.56">Mean of per-FOV Abbe values derived from CCD</A>
+                                   G-band photometry
+                                   (mean<SUB>of</SUB>fov<SUB>abbe</SUB>values) (1)
+      62  I1    ---     Nvario    Number of points in the variogram
+                                   (variogram<SUB>num</SUB>points)
+  64- 71  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       Tvario    Characteristic time scales of variability
+                                   (variogram<SUB>char</SUB>timescales)
+  73- 80  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag%2b2" TARGET="explain">mag+2</A>   Vvario    Variogram values associated with the
+                                   variogramCharTimescales (variogram_values)
+  82- 91  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d-1" TARGET="explain">d-1</A>     Freq      [1.006922/143.926266] <A HREF="#sRM3.57">Frequency search result</A>
+                                   for either G CCD, G FoV, BP or RP photometry
+                                   (frequency) (2)
+<HR>
+<A NAME="sRM3.56"><B>Note (1)</B>: This parameter is filled by the mean of per-FoV Abbe values derived
+ from per-CCD G-band photometry. Considering a given source, for each of its
+ FoV transits containing more than one per-CCD measurement, the associated
+ Abbe value from per-CCD G-band photometry is derived as
+ abbe =
+ {Sum}(mag(t<SUB>{i+1})-mag(t</SUB>i))^{2}/2{Sum}(mag(t<SUB>i)-&lt;mag(t</SUB>i)&gt;)^{2}
+ where &lt;mag(ti)&gt; is the mean of the per-CCD measurements of the transit.
+ The value of meanOfFovAbbeValues is calculated as the mean of these per-FoV
+ Abbe values.
+<A NAME="sRM3.57"><B>Note (2)</B>: The parameter is filled by the frequency value resulting from the
+ period search (method LOMB_SCARGLE for DR2) performed either on the per-CCD
+ G-band photometry, per-FoV G-band photometry, BP photometry or RP photometry,
+ if periodicity has been detected. Otherwise it is set to NULL.
+<HR>
+
+<A NAME="sRM2.11"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.172"> tsstat.dat</A>
+<HR>
+   Bytes Format Units Label       Explanations
+<HR>
+   1- 18  I18   ---   SolID       Solution Identifier (G1) (solution_id)
+  20- 38  I19   ---   Source      Unique source identifier (G2) (source_id)
+  40- 42  I3    ---   NGmag       [5/242] Total number of G FOV transits
+                                   selected for variability analysis
+                                   (num<SUB>selected</SUB>g_fov)
+  44- 56  F13.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>     TimeGmag    Mean observation time for G FoV transits
+                                   (mean<SUB>obs</SUB>time<SUB>g</SUB>fov)
+  58- 69  F12.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>     DurGmag     Time duration of the time series for G FoV
+                                   transits (time<SUB>duration</SUB>g_fov)
+  71- 79  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>   b_Gmag      Minimum G FoV magnitude (min<SUB>mag</SUB>g_fov)
+  81- 89  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>   B_Gmag      Maximum G FoV magnitude (max<SUB>mag</SUB>g_fov)
+  91- 99  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>   Gmag        Mean G FoV magnitude (mean<SUB>mag</SUB>g_fov)
+ 101-109  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>   GmagMed     Median G FoV magnitude (median<SUB>mag</SUB>g_fov)
+ 111-119  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>   RangeGmag   Difference between the highest and lowest G
+                                   FoV magnitudes (range<SUB>mag</SUB>g_fov)
+ 121-129  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>   stddevGmag  Square root of the unweighted G FoV magnitude
+                                  variance (std<SUB>dev</SUB>mag<SUB>g</SUB>fov)
+ 131-136  F6.3  ---   SkeGmag     Standardized unweighted G FoV magnitude
+                                  skewness (skewness<SUB>mag</SUB>g_fov)
+ 138-143  F6.3  ---   KurGmag     Standardized unweighted G FoV magnitude
+                                   kurtosis (kurtosis<SUB>mag</SUB>g_fov)
+ 145-152  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>   MADGmag     Median Absolute Deviation (MAD) for G FoV
+                                  transits (mad<SUB>mag</SUB>g_fov)
+ 154-158  F5.3  ---   AbbeGmag    Abbe value for G FoV transits (abbe<SUB>mag</SUB>g_fov)
+ 160-168  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>   IQRGmag     Interquartile range for G FoV transits
+                                   (iqr<SUB>mag</SUB>g_fov)
+ 170-172  I3    ---   NBPmag      Total number of BP FOV transits selected for
+                                   variability analysis (num<SUB>selected</SUB>bp)
+ 174-186  F13.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>     TimeBPmag   ? Mean observation time for BP FoV transits
+                                   (mean<SUB>obs</SUB>time_bp)
+ 188-199  F12.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>     DurBPmag    ? Time duration of the time series for BP FoV
+                                   transits (time<SUB>duration</SUB>bp)
+ 201-209  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>   b_BPmag     ? Minimum BP FoV magnitude (min<SUB>mag</SUB>bp)
+ 211-219  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>   B_BPmag     ? Maximum BP FoV magnitude (max<SUB>mag</SUB>bp)
+ 221-229  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>   BPmag       ? Mean BP FoV magnitude (mean<SUB>mag</SUB>bp)
+ 231-239  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>   BPmagMed    ? Median BP FoV magnitude (median<SUB>mag</SUB>bp)
+ 241-249  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>   RangeBPmag  ? Difference between the highest and lowest BP
+                                   FoV magnitudes (range<SUB>mag</SUB>bp)
+ 251-259  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>  stddevBPmag  ? Square root of the unweighted BP FoV
+                                   magnitude variance (std<SUB>dev</SUB>mag_bp)
+ 261-267  F7.3  ---   SkeBPmag    ? Standardized unweighted BP FoV magnitude
+                                   skewness (skewness<SUB>mag</SUB>bp)
+ 269-275  F7.3  ---   KurBPmag    ? Standardized unweighted BP FoV magnitude
+                                   kurtosis (kurtosis<SUB>mag</SUB>bp)
+ 277-284  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>   MADBPmag    ? Median Absolute Deviation (MAD) for BP FoV
+                                   transits (mad<SUB>mag</SUB>bp)
+ 286-290  F5.3  ---   AbbeBPmag   ? Abbe value for BP FoV transits (abbe<SUB>mag</SUB>bp)
+ 292-300  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>   IQRBPmag    ? Interquartile range for BP FoV transits
+                                   (iqr<SUB>mag</SUB>bp)
+ 302-304  I3    ---   NRPmag      ? Total number of RP FOV transits selected for
+                                   variability analysis (num<SUB>selected</SUB>rp)
+ 306-318  F13.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>     TimeRPmag   ? Mean observation time for RP FoV transits
+                                   (mean<SUB>obs</SUB>time_rp)
+ 320-331  F12.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>     DurRPmag    ? Time duration of the time series for RP FoV
+                                   transits (time<SUB>duration</SUB>rp)
+ 333-341  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>   b_RPmag     ? Minimum RP FoV magnitude (min<SUB>mag</SUB>rp)
+ 343-351  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>   B_RPmag     ? Maximum RP FoV magnitude (max<SUB>mag</SUB>rp)
+ 353-361  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>   RPmag       ? Mean RP FoV magnitude (mean<SUB>mag</SUB>rp)
+ 363-371  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>   RPmagMed    ? Median RP FoV magnitude (median<SUB>mag</SUB>rp)
+ 373-381  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>   RangeRPmag  ? Difference between the highest and lowest RP
+                                   FoV magnitudes (range<SUB>mag</SUB>rp)
+ 383-391  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>  stddevRPmag  ? Square root of the unweighted RP FoV
+                                   magnitude variance (std<SUB>dev</SUB>mag_rp)
+ 393-399  F7.3  ---   SkeRPmag    ? Standardized unweighted RP FoV magnitude
+                                   skewness (skewness<SUB>mag</SUB>rp)
+ 401-407  F7.3  ---   KurRPmag    ? Standardized unweighted RP FoV magnitude
+                                   kurtosis (kurtosis<SUB>mag</SUB>rp)
+ 409-416  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>   MADRPmag    ? Median Absolute Deviation (MAD) for RP FoV
+                                   transits (mad<SUB>mag</SUB>rp)
+ 418-422  F5.3  ---   AbbeRPmag   ? Abbe value for RP FoV transits (abbe<SUB>mag</SUB>rp)
+ 424-432  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>   IQRRPmag    ? Interquartile range for RP FoV transits
+                                   (iqr<SUB>mag</SUB>rp)
+<HR>
+
+<A NAME="sRM2.12"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.175"> numtrans.dat</A>
+<HR>
+   Bytes Format Units   Label     Explanations
+<HR>
+   1- 19  I19   ---     SolID     <A HREF="#sRM3.88">Solution Identifier (solution_id) (G1)</A>
+  21- 39  I19   ---     Source    <A HREF="#sRM3.89">Source Identifier (source_id) (G2)</A>
+  41- 43  I3    ---     Ntrans    [5/277] Number of Gaia transits, in all bands,
+                                   in transits.dat file (n_transits)
+<HR>
+
+<A NAME="sRM2.13"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.178"> transits.dat</A>
+<HR>
+   Bytes Format Units   Label     Explanations
+<HR>
+   1- 19  I19   ---     Source    <A HREF="#sRM3.89">Source Identifier (source_id) (G2)</A>
+  21- 37  I17   ---    TransitID  Transit Identifier as defined in JP-011 and
+                                   received by DPCI from IDT (transit_id)
+  39- 51  F13.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       TimeG     ? <A HREF="#sRM3.58">Transit averaged G band observation time</A>
+                                    (JD-2455197.5) (g<SUB>transit</SUB>time) (1)
+  53- 69  E17.9 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?e-/s" TARGET="explain">e-/s</A>    FG        ? <A HREF="#sRM3.59">Transit averaged G band flux</A>
+                                   (g<SUB>transit</SUB>flux) (2)
+  71- 88  E18.9 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?e-/s" TARGET="explain">e-/s</A>    e_FG      ? Error on the transit averaged G band flux
+                                   (g<SUB>transit</SUB>flux_error)
+  90-107  E18.9 ---     RFG       ? Transit averaged G band flux divided by its
+                                   error (g<SUB>transit</SUB>flux<SUB>over</SUB>error)
+ 109-117  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Gmag      ? Transit averaged G band magnitude (converted
+                                   from transit averaged G band flux)
+                                   (g<SUB>transit</SUB>mag)
+ 119-127  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_Gmag    ? Error on transit averaged G band magnitude,
+                                   added by CDS (g<SUB>transit</SUB>mag_error)
+ 129-141  F13.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       TimeBP    ? <A HREF="#sRM3.58">BP CCD transit observation time</A>
+                                   (JD-2455197.5) (bp<SUB>obs</SUB>time) (1)
+ 143-159  E17.9 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?e-/s" TARGET="explain">e-/s</A>    FBP       ? BP band flux (bp_flux)
+ 161-177  E17.9 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?e-/s" TARGET="explain">e-/s</A>    e_FBP     ? Error on the BP band flux (bp<SUB>flux</SUB>error)
+ 179-195  E17.9 ---     RFBP      ? BP band flux divided by its error
+                                   (bp<SUB>flux</SUB>over_error)
+ 197-205  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     BPmag     ? BP band magnitude (converted from BP band
+                                   flux) (bp_mag)
+ 207-219  E13.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_BPmag   ? Error on the BP band magnitude, added by CDS
+                                   (bp<SUB>mag</SUB>error)
+ 221-233  F13.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       TimeRP    ? <A HREF="#sRM3.58">RP CCD transit observation time</A>
+                                   (JD-2455197.5) (rp<SUB>obs</SUB>time) (1)
+ 235-251  E17.9 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?e-/s" TARGET="explain">e-/s</A>    FRP       ? RP band flux (rp_flux)
+ 253-269  E17.9 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?e-/s" TARGET="explain">e-/s</A>    e_FRP     ? Error on the RP band flux (rp<SUB>flux</SUB>error)
+ 271-287  E17.9 ---     RFRP      ? RP band flux divided by its error
+                                   (rp<SUB>flux</SUB>over_error)
+ 289-297  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     RPmag     ? RP band magnitude (converted from RP band
+                                   flux) (rp_mag)
+ 299-309  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_RPmag   ? Error on the RP band magnitude, added by CDS
+                                   (rp<SUB>mag</SUB>error)
+     311  I1    ---     noisy     [0/1] G band flux scatter larger than expected
+                                   by photometry processing (all CCDs
+                                   considered) (photometry<SUB>flag</SUB>noisy_data)
+     313  I1    ---     smu       [0/1] SM transit unavailable by photometry
+                                   processing (photometry<SUB>flag</SUB>sm_unavailable)
+     315  I1    ---     af1u      [0/1] AF1 transit unavailable by photometry
+                                   processing (photometry<SUB>flag</SUB>af1_unavailable)
+     317  I1    ---     af2u      [0/1] AF2 transit unavailable by photometry
+                                   processing (photometry<SUB>flag</SUB>af2_unavailable)
+     319  I1    ---     af3u      [0/1] AF3 transit unavailable by photometry
+                                   processing (photometry<SUB>flag</SUB>af3_unavailable)
+     321  I1    ---     af4u      [0/1] AF4 transit unavailable by photometry
+                                   processing (photometry<SUB>flag</SUB>af4_unavailable)
+     323  I1    ---     af5u      [0/1] AF5 transit unavailable by photometry
+                                   processing (photometry<SUB>flag</SUB>af5_unavailable)
+     325  I1    ---     af6u      [0/1] AF6 transit unavailable by photometry
+                                   processing (photometry<SUB>flag</SUB>af6_unavailable)
+     327  I1    ---     af7u      [0/1] AF7 transit unavailable by photometry
+                                   processing (photometry<SUB>flag</SUB>af7_unavailable)
+     329  I1    ---     af8u      [0/1] AF8 transit unavailable by photometry
+                                   processing (photometry<SUB>flag</SUB>af8_unavailable)
+     331  I1    ---     af9u      [0/1] AF9 transit unavailable by photometry
+                                   processing (photometry<SUB>flag</SUB>af9_unavailable)
+     333  I1    ---     bpu       [0/1]? ABP transit unavailable by photometry
+                                   processing (photometry<SUB>flag</SUB>bp_unavailable)
+     335  I1    ---     rpu       [0/1]? ABP transit unavailable by photometry
+                                   processing (photometry<SUB>flag</SUB>rp_unavailable)
+     337  I1    ---     smr       [0/1] SM transit rejected by photometry
+                                   processing(photometry<SUB>flag</SUB>sm_reject)
+     339  I1    ---     af1r      [0/1] AF1 transit rejected by photometry
+                                   processing (photometry<SUB>flag</SUB>af1_reject)
+     341  I1    ---     af2r      [0/1] AF2 transit rejected by photometry
+                                   processing (photometry<SUB>flag</SUB>af2_reject)
+     343  I1    ---     af3r      [0/1] AF3 transit rejected by photometry
+                                   processing (photometry<SUB>flag</SUB>af3_reject)
+     345  I1    ---     af4r      [0/1] AF4 transit rejected by photometry
+                                   processing (photometry<SUB>flag</SUB>af4_reject)
+     347  I1    ---     af5r      [0/1] AF5 transit rejected by photometry
+                                   processing (photometry<SUB>flag</SUB>af5_reject)
+     349  I1    ---     af6r      [0/1] AF6 transit rejected by photometry
+                                   processing (photometry<SUB>flag</SUB>af6_reject)
+     351  I1    ---     af7r      [0/1] AF7 transit rejected by photometry
+                                   processing (photometry<SUB>flag</SUB>af7_reject)
+     353  I1    ---     af8r      [0/1] AF8 transit rejected by photometry
+                                   processing (photometry<SUB>flag</SUB>af8_reject)
+     355  I1    ---     af9r      [0/1] AF9 transit rejected by photometry
+                                   processing (photometry<SUB>flag</SUB>af9_reject)
+     357  I1    ---     bpr       [0/1]? BP transit rejected by photometry
+                                   processing (photometry<SUB>flag</SUB>bp_reject)
+     359  I1    ---     rpr       [0/1]? RP transit rejected by photometry
+                                   processing (photometry<SUB>flag</SUB>rp_reject)
+     361  I1    ---     VarGr     [0/1]? <A HREF="#sRM3.60">Average G transit photometry rejected</A>
+                                   by variability processing
+                                   (variability<SUB>flag</SUB>g_reject) (3)
+     363  I1    ---     VarBPr    [0/1]? <A HREF="#sRM3.60">Average BP transit photometry rejected</A>
+                                   by variability processing
+                                   (variability<SUB>flag</SUB>bp_reject) (3)
+     365  I1    ---     VarRPr    [0/1]? <A HREF="#sRM3.60">Average RP transit photometry rejected</A>
+                                   by variability processing
+                                   (variability<SUB>flag</SUB>rp_reject) (3)
+<HR>
+<A NAME="sRM3.58"><B>Note (1)</B>: Field-of-view transit averaged observation time in units of
+ Barycentric JD (in TCB) in days -2455197.5, computed as follows.
+ First the observation time is converted from On-board Mission Time (OBMT) into
+ Julian date in TCB (Temps Coordonnee Barycentrique). Next a correction is
+ applied for the light-travel time to the Solar system barycentre, resulting in
+ Barycentric Julian Date (BJD). Finally, an offset of 2455197.5 days is applied
+ (corresponding to a reference time T0 at 2010-01-01T00:00:00) to have a
+ conveniently small numerical value.
+ Units: (Barycentric JD in TCB - 2455197.5 (day)).
+ For TimeG: Although the centroiding time accuracy of the individual CCD
+  observations is (much) below 1ms, this per-FoV observation time is averaged
+  over typically 9 CCD observations taken in a time range of about 44 sec.
+<A NAME="sRM3.59"><B>Note (2)</B>: The average G flux value for the FoV transit. The calculation only
+ uses accepted transits. This could include SM and AF fluxes.
+<A NAME="sRM3.60"><B>Note (3)</B>: Flag as follows:
+    1 = rejected
+    0 = processed
+<HR>
+
+<A NAME="sRM2.14"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.181"> rm.dat</A>
+<HR>
+   Bytes Format Units   Label   Explanations
+<HR>
+   1- 12  F12.9 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       ProtB   <A HREF="#sRM3.61">Best rotation period (best<SUB>rotation</SUB>period) (1)</A>
+  14- 24  F11.9 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>      e_ProtB  Error on best rotation period
+                                 (best<SUB>rotation</SUB>period_error)
+  26- 32  F7.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     AImax   <A HREF="#sRM3.62">Activity Index in segment</A>
+                                 (max<SUB>activity</SUB>index) (2)
+  34- 40  F7.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>    e_AImax  <A HREF="#sRM3.63">Error on Activity index in segment</A>
+                                 (max<SUB>activity</SUB>index_error) (3)
+  42- 49  F8.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Gunsp   <A HREF="#sRM3.64">The unspotted G magnitude in segment</A>
+                                 (g_unspotted) (4)
+  51- 57  F7.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>    e_Gunsp  The unspotted G mag uncertainties in segment
+                                 (g<SUB>unspotted</SUB>error)
+  59- 66  F8.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     BPunsp  ? The unspotted BP magnitude in segment
+                                 (bp_unspotted)
+  68- 74  F7.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>   e_BPunsp  ? The unspotted BP magnitude uncertainty in
+                                 segment (bp<SUB>unspotted</SUB>error)
+  76- 83  F8.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     RPunsp  ? The unspotted RP magnitude in segment
+                                 (rp_unspotted)
+  85- 91  F7.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>   e_RPunsp  ? The unspotted RP magnitude uncertainty in
+                                 segment (rp<SUB>unspotted</SUB>error)
+  93-111  I19   ---     SolID   <A HREF="#sRM3.88">Solution Identifier (solution_idR) (G1)</A>
+ 113-131  I19   ---     Source  <A HREF="#sRM3.89">Source Identifier (source_id) (G2)</A>
+ 133-134  I2    ---     Nseg    <A HREF="#sRM3.65">Number of segments (num_segments) (5)</A>
+ 136-137  I2    ---     Nout    <A HREF="#sRM3.66">Number of outliers (num_outliers) (6)</A>
+<HR>
+<A NAME="sRM3.61"><B>Note (1)</B>: this field is an estimate of the stellar rotation period and is
+ obtained by averaging the periods obtained in the different segments
+<A NAME="sRM3.62"><B>Note (2)</B>: this array stores the activity indexes measured in the different
+ segments. In a given segment the amplitude of variability A is taken as an
+ index of the magnetic activity level. The amplitude of variability is
+ measured by means of the equation: A=mag95-mag5 where mag95 and mag5 are the
+ 95-th and the 5-th percentiles of the G-band magnitude values.
+<A NAME="sRM3.63"><B>Note (3)</B>: error associated with the activity indexes in the G band. In a given
+ segment the error on the activity index A is computed by means of the equation:
+ sigma<SUB>A</SUB>=sqrt{sigma<SUB>mag95</SUB><SUP>2</SUP> + sigma<SUB>mag5</SUB><SUP>2</SUP>} where
+ sigma<SUB>mag95</SUB> and sigma<SUB>mag5</SUB> are the uncertainties of the measurements
+ associated with the 95th and 5th percentiles of the G-band magnitude values,
+ respectively
+<A NAME="sRM3.64"><B>Note (4)</B>: in a given segment the G magnitude corresponding to the unspotted
+ state is estimated by taking the minimum G value in the segment.
+<A NAME="sRM3.65"><B>Note (5)</B>: This is the number of time intervals (segments) in which the magnitude
+ and colour time-series are splitted. The segmentation of time-series is needed
+ because the spots due to the stellar magnetic activity have a life-time shorter
+ than the whole Gaia time-series. The rotational modulation induced by spots
+ can therefore be detected only in segments whose duration is comparable with
+ the spots life-time
+<A NAME="sRM3.66"><B>Note (6)</B>: the number of outliers detected by the robust linear regression
+ procedure.
+<HR>
+
+<A NAME="sRM2.15"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.183"> rmseg.dat</A>
+<HR>
+   Bytes Format Units   Label    Explanations
+<HR>
+   1- 19  I19   ---     Source   <A HREF="#sRM3.89">Unique source identifier (source_id) (G2)</A>
+  21- 36 F16.12 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       SProt    ? <A HREF="#sRM3.67">Rotation period in segment</A>
+                                  (segments<SUB>rotation</SUB>period) (1)
+  38- 54 E17.12 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       e_SProt  ? Rotation period uncertainty in segment
+                                  (segments<SUB>rotation</SUB>period_error)
+  56- 72 E17.12 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%25" TARGET="explain">%</A>      FAPsPRot  <A HREF="#sRM3.68">FAP on rotation period in segment</A>
+                                  (segments<SUB>rotation</SUB>period_fap) (2)
+  74- 82  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Scos     ? <A HREF="#sRM3.69">Coefficient of cosine term of linear fit in</A>
+                                  segment (segments<SUB>cos</SUB>term) (3)
+  84- 91  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_Scos   ? Error on cosin term (segments<SUB>cos</SUB>term_error)
+  93-101  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Ssin     ? <A HREF="#sRM3.69">Coefficient of sin term of linear fit in</A>
+                                  segment (segments<SUB>sin</SUB>term) (3)
+ 103-110  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_Ssin   ? Error on sine term (segments<SUB>sin</SUB>term_error)
+ 112-120  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Sa0      ? <A HREF="#sRM3.69">Constant term (A0) of linear fit in segment</A>
+                                  (segments<SUB>a0</SUB>term) (3)
+ 122-129  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_Sa0    ? Error on constant term
+                                  (segments<SUB>a0</SUB>term_error)
+ 131-137  F7.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     SAI      <A HREF="#sRM3.70">Activity Index in segment</A>
+                                  (segments<SUB>activity</SUB>index) (4)
+ 139-145  F7.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_SAI    <A HREF="#sRM3.71">Error on Activity index in segment</A>
+                                  (segments<SUB>activity</SUB>index_error) (5)
+ 147-154  F8.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     SGunsp   The unspotted G magnitude in segment
+                                  (segments<SUB>g</SUB>unspotted)
+ 156-162  F7.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>    e_SGunsp  The unspotted G magnitude uncertainty in
+                                  segment (segments<SUB>g</SUB>unspotted_error)
+ 164-171  F8.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     SBPunsp  ? The unspotted BP magnitude in segment
+                                  (segments<SUB>bp</SUB>unspotted)
+ 173-179  F7.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>   e_SBPunsp  ? The unspotted BP magnitude uncertainty in
+                                  segment (segments<SUB>bp</SUB>unspotted_error)
+ 181-188  F8.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     SRPunsp  ? The unspotted RP magnitude in segment
+                                  (segments<SUB>rp</SUB>unspotted)
+ 190-196  F7.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>   e_SRPunsp  ? The unspotted RP magnitude uncertainty in
+                                  segment (segments<SUB>rp</SUB>unspotted_error)
+ 198-210  F13.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       STimeS   <A HREF="#sRM3.72">Time at which segments start (JD-2455197.5)</A>
+                                  (segments<SUB>start</SUB>time) (6)
+ 212-224  F13.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       STimeE   <A HREF="#sRM3.72">Time at which segments end (JD-2455197.5)</A>
+                                  (segments<SUB>end</SUB>time) (6)
+ 226-234  F9.3  ---     ScolI    <A HREF="#sRM3.73">Colour-Magnitude Intercept in segment</A>
+                                  (segments<SUB>colour</SUB>mag_intercept) (7)
+ 236-242  F7.3  ---     e_ScolI  Colour-Magnitude Intercept uncertainty in
+                                  segment (segments<SUB>colour</SUB>mag<SUB>intercept</SUB>error)
+ 244-251  F8.4  ---     ScolM    <A HREF="#sRM3.73">Colour-Magnitude Slope in segments</A>
+                                  (segments<SUB>colour</SUB>mag_slope) (7)
+ 253-259  F7.4  ---     e_ScolM  Colour-Magnitude Slope uncertainty in segment
+                                  (segments<SUB>colour</SUB>mag<SUB>slope</SUB>error)
+ 261-268  F8.5  ---     Scor     <A HREF="#sRM3.74">Correlation coefficient in segment</A>
+                                  (segments<SUB>correlation</SUB>coefficient) (8)
+ 270-276  F7.5  ---     Ssigni   <A HREF="#sRM3.75">Correlation coefficient significance in</A>
+                                 segment (segments<SUB>correlation</SUB>significance) (9)
+<HR>
+<A NAME="sRM3.67"><B>Note (1)</B>: A period search algorithm is applied to the different time-series
+ segments. If the star is a solar-like variable the detected period is a measure
+ of the stellar rotation period. This array is filled with the periods detected
+ in the different segments (for each segment the period with the highest
+ statistical significance is stored).
+<A NAME="sRM3.68"><B>Note (2)</B>: False Alarm Probability = Probability that that a white noise sequence
+ produces a peak similar or higher than the computed one; i.e.;
+ small FAP = little probability of noise;high FAP = noise is an acceptable
+ explanation for the peak.
+<A NAME="sRM3.69"><B>Note (3)</B>: if a significative period T0 is detected in a time-series segment;
+ then the points of the time-series segment are fitted with the function
+ mag(t)=mag<SUB>0</SUB>+Acos(2{pi}/T0t) + Bsin(2{pi}/T0t).
+ This array stores the A terms obtained by the fitting procedure in the
+ different segments.
+<A NAME="sRM3.70"><B>Note (4)</B>: this array stores the activity indexes measured in the different
+ segments. In a given segment the amplitude of variability A is taken as an
+ index of the magnetic activity level. The amplitude of variability is measured
+ by means of the equation: A=mag95-mag5 where mag95 and mag5 are the 95-th and
+ the 5-th percentiles of the G-band magnitude values.
+<A NAME="sRM3.71"><B>Note (5)</B>: this array stores the errors associated with the activity indexes in
+ the G band. In a given segment the error on the activity index A is computed by
+ means of the equation: sigma<SUB>A</SUB>=sqrt{sigma<SUB>mag95</SUB><SUP>2</SUP>+sigma<SUB>mag5</SUB><SUP>2</SUP>} where
+ sigma<SUB>mag95</SUB>and sigma<SUB>mag5</SUB> are the uncertainties of the measurements
+ associated with the 95th and 5th percentiles of the G-band magnitude values,
+ respectively.
+<A NAME="sRM3.72"><B>Note (6)</B>: an array filled with the starting (ending) times of segments in
+  Barycentric JD in TCB - 2455197.5 unit.
+<A NAME="sRM3.73"><B>Note (7)</B>: a robust linear regression is applied to the points (BP-RP;G) in each
+ segment. This array is filled with the intercepts given by the fitting
+ procedure in the different segments.
+<A NAME="sRM3.74"><B>Note (8)</B>: The Pearson correlation coefficient r between BP-RP and G is computed
+ in each segment. The higher is the Pearson coefficient the higher is the
+ probability that the stellar variability is due to rotational modulation. This
+ array is filled with the Pearson coefficients obtained in the different
+ segments.
+<A NAME="sRM3.75"><B>Note (9)</B>: this array is filled with the statistical significances associated
+ with the Pearson coefficients computed in the different segments. The
+ significance p associated with a given r=r0 gives the probability P(r&gt;=r0)
+ that two sets of uncorrelated measurements have a Pearson coefficient &gt;=r0.
+<HR>
+
+<A NAME="sRM2.16"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.185"> rmout.dat</A>
+<HR>
+   Bytes Format Units   Label         Explanations
+<HR>
+   1- 19  I19   ---     Source        <A HREF="#sRM3.89">Unique source identifier (source_id) (G2)</A>
+  21- 33  F13.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       TimeOutliers  <A HREF="#sRM3.76">Times at which outliers occurs</A>
+                                       (JD-2455197.5 ) (outliers_time) (1)
+<HR>
+<A NAME="sRM3.76"><B>Note (1)</B>: times at which the detected outliers occurred in Barycentric JD in
+ TCB-2455197.5 unit.
+<HR>
+
+<A NAME="sRM2.17"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.187"> ssoobj.dat</A>
+<HR>
+   Bytes Format Units   Label    Explanations
+<HR>
+   1- 19  I19   ---     SolID    <A HREF="#sRM3.88">Solution Identifier (solution_id) (G1)</A>
+  21- 31  I11   ---     Source   <A HREF="#sRM3.90">Unique source identifier (source_id) (G3)</A>
+  33- 35  I3    ---     Nobs     [15/591] Number of CCD-level observations of
+                                  the asteroid that appear in the
+                                  SsoObservation (ssoobs.dat) table (num<SUB>of</SUB>obs)
+  37- 42  I6    ---     MPC      Minor planet number attributed by MPC
+                                  (number_mp)
+  44- 59  A16   ---     Name     MPC name or preliminary designation
+                                  (denomination)
+<HR>
+
+<A NAME="sRM2.18"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.189"> ssoorb.dat</A>
+<HR>
+   Bytes Format Units      Label      Explanations
+<HR>
+   1- 19  I19   ---        SolID      <A HREF="#sRM3.88">Solution Identifier (solution_id) (G1)</A>
+  21- 26  I6    ---        MPC        Asteroid number assigned by MPC
+                                       (number_mp)
+  28- 43  A16   ---        Name       MPC name or preliminary designation
+                                       (designation)
+  45- 49  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>        Hmag       <A HREF="#sRM3.77">Absolute magnitude H for the asteroid</A>
+                                       (mag_h) (2)
+  51- 54  F4.2  ---        Slopeg     Slope parameter of the magnitude-phase law
+                                       (slope_g)
+  56- 62  I7    ---        Code       <A HREF="#sRM3.78">Object specific flags (code) (3)</A>
+  64- 68  I5    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>          Obs.arc    Time interval of the observations used to
+                                       compute the orbit (obs_arc)
+  70- 73  I4    ---        Obs.num    Number of observations used to compute the
+                                       orbit (obs_num)
+  75- 82  A8    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%22YYYYMMDD%22" TARGET="explain">"YYYYMMDD"</A> Obs.epoch  <A HREF="#sRM3.79">Epoch of osculation, yyyymmdd (TDT)</A>
+                                       (osc_epoch) (4)
+  84- 93  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>        Orb.m      Orbital element: Mean anomaly (orb_m)
+  95-104  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>        Omega      <A HREF="#sRM3.80">Argument of perihelion at equinox J2000.0</A>
+                                       (omega) (5)
+ 106-115  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>       Node.omega  <A HREF="#sRM3.80">Longitude of the ascending node at equinox</A>
+                                       J2000.0 (node_omega) (5)
+ 117-125  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>        Incl       Orbit inclination (J2000.0) (inclination)
+ 127-136  F10.8 ---        Eccen      Orbit eccentricity (eccentricity)
+ 138-148  F11.8 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?AU" TARGET="explain">AU</A>         a          Semimajor axis of the orbit (a)
+ 150-157  A8    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%22YYYYMMDD%22" TARGET="explain">"YYYYMMDD"</A> Orb.Date   Date of orbit computation
+                                       (MST, = UTC - 7 hr) (orb_date)
+ 159-164  F6.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>     CEU        Absolute value of the current 1-sigma
+                                       ephemeris uncertainty (ceu)
+ 166-172  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas/s" TARGET="explain">mas/s</A>      CEU.rate   <A HREF="#sRM3.81">Rate of change of the orbit uncertainty</A>
+                                       (ceu_rate) (6)
+ 174-181  A8    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%22YYYYMMDD%22" TARGET="explain">"YYYYMMDD"</A> CEU.epoch  Date of CEU (0 hr UT) (ceu_epoch)
+<HR>
+<A NAME="sRM3.77"><B>Note (2)</B>: Number of decimal places depending on accuracy (zero to 2), except for
+   unnumbered asteroids (2 decimals even if H is poorly known)
+<A NAME="sRM3.78"><B>Note (3)</B>: See <A HREF="ftp://cdsarc.u-strasbg.fr/pub/cats/B/astorb/astorb.html">ftp://cdsarc.u-strasbg.fr/pub/cats/B/astorb/astorb.html</A> for
+   a full description
+<A NAME="sRM3.79"><B>Note (4)</B>: The epoch is the Julian date ending in 00.5 nearest the date the
+   orbit data set was compiled.
+<A NAME="sRM3.80"><B>Note (5)</B>: Note this is not ICRS because these orbits are heliocentric and all
+   angles are referred to the nodal point defined at equinox J2000.0)
+<A NAME="sRM3.81"><B>Note (6)</B>: Note that in astorb it is given in arcsec/day.
+
+<HR>
+
+<A NAME="sRM2.19"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.191"> ssores.dat</A>
+<HR>
+   Bytes Format Units   Label     Explanations
+<HR>
+   1- 11  I11   ---     Source    <A HREF="#sRM3.90">Unique source identifier (source_id) (G3)</A>
+  13- 29  I17   ---     Transit   <A HREF="#sRM3.82">Transit Identifier (transit_id) (2)</A>
+  31- 48  I18   ---     Obs.ID    <A HREF="#sRM3.83">Observation Identifier (observation_id) (3)</A>
+  50- 55  I6    ---     MPC       Minor Planet number attributed by MPC
+                                   (number_mp)
+  57- 74 F18.13 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       Epoch     <A HREF="#sRM3.91">Gaiacentric epoch TCB(Gaia) (epoch) (G4)</A>
+  76- 94 E19.13 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas" TARGET="explain">mas</A>     Res.RA    Post-orbital fit residual in RA*cos(DE)
+                                   direction (residual_ra)
+  96-114 E19.13 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas" TARGET="explain">mas</A>     Res.DE    Post-orbital fit residual in DE direction
+                                   (residual_dec)
+ 116-133 E18.13 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas" TARGET="explain">mas</A>     Res.AL    Post-orbital fit residual in AL (Along Scan)
+                                   direction (residual_al)
+ 135-153 E19.13 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas" TARGET="explain">mas</A>     Res.AC    Post-orbital fit residual in AC (Across Scan)
+                                   (residual_ac)
+     155  I1    ---     Select    [0/1] <A HREF="#sRM3.84">Flag for observation not rejected by</A>
+                                   orbital fit (selected) (5)
+<HR>
+<A NAME="sRM3.82"><B>Note (2)</B>: The Transit Id is a number obtained from the combination of data
+ fields from the telemetry. More specifically, from AF1 ref<SUB>acquisition</SUB>time,
+ AF1 ac, FOV and CCD Row. It uniquely identifies the transit of a source on
+ the focal plane.
+<A NAME="sRM3.83"><B>Note (3)</B>: Identifier at single CCD level of the observation of a Solar System
+ object. It is unique, and obtained from a combination of transitId and an
+ integer number representing the CCD strip.
+<A NAME="sRM3.84"><B>Note (5)</B>: Post-fit residuals are then computed. Rejection of single
+ observations may occur in this process.
+ This flag is 1 when no observation is rejected.
+<HR>
+
+<A NAME="sRM2.20"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.194"> ssoobs.dat</A>
+<HR>
+   Bytes Format Units   Label     Explanations
+<HR>
+   1- 19  I19   ---     SolID     <A HREF="#sRM3.88">Solution Identifier (solution_id) (G1)</A>
+  21- 31  I11   ---     Source    <A HREF="#sRM3.90">Unique source identifier (source_id) (G3)</A>
+  33- 50  I18   ---     Obs.Id    Observation Identifier (observation_id)
+  52- 57  I6    ---     MPC       Minor Planet number attributed by MPC
+                                   (number_mp)
+  59- 76 F18.13 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       Epoch     <A HREF="#sRM3.91">Gaiacentric epoch TCB(Gaia) (JD-2455197.5)</A>
+                                   (epoch) (G4)
+  78- 86  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       e_Epoch   Error in Gaiacentric epoch
+                                   (for both Epoch and EpochUTC) (epoch_err)
+  88-105 F18.13 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>       EpochUTC  <A HREF="#sRM3.85">Gaiacentric epoch UTC (epoch_utc)</A>
+                                   (JD-2455197.5) (1)
+ 107-129 F23.19 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     RAdeg     ICRS Right Ascension of the source as
+                                   observed by Gaia at epoch EpochUTC (ra)
+ 133-155 E23.19 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEdeg     ICRS Declination of the source as observed
+                                   by Gaia at epoch EpochUTC (dec)
+ 157-163  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas" TARGET="explain">mas</A>     e_RAdeg   Standard error of right ascension - systematic
+                                   component (e_RA*cosDE) (ra<SUB>error</SUB>systematic)
+ 165-171  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas" TARGET="explain">mas</A>     e_DEdeg   Standard error of declination - systematic
+                                   component (dec<SUB>error</SUB>systematic)
+ 173-179  F7.4  ---     RADEcors  Correlation of RA and DE errors - systematic
+                                   component (ra<SUB>dec</SUB>correlation_systematic )
+ 181-188  F8.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas" TARGET="explain">mas</A>     eRAdeg    Standard error of right ascension - random
+                                   component (e_RA*cosDE) (ra<SUB>error</SUB>random)
+ 190-197  F8.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mas" TARGET="explain">mas</A>     eDEdeg    Standard error of declination - random
+                                   component (dec<SUB>error</SUB>random)
+ 199-205  F7.4  ---     RADEcorr  Correlation of RA and DE errors - random
+                                   component (ra<SUB>dec</SUB>correlation_random)
+ 207-215  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Gmag      ? Calibrated G magnitude (corrected G
+                                   magnitude based on refined signal
+                                   analysis) (g_mag)
+ 217-234 E18.14 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?e-/s" TARGET="explain">e-/s</A>    FG        ? Average calibrated G flux for the
+                                   transit (g_flux)
+ 236-253 E18.14 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?e-/s" TARGET="explain">e-/s</A>    e_FG      ? Error on the G flux (g<SUB>flux</SUB>error)
+ 255-276 E22.17 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?AU" TARGET="explain">AU</A>      Xpos      Barycentric equatorial J2000 (ICRS)
+                                   x position of Gaia at the epoch of
+                                   observation (x_gaia)
+ 278-299 E22.17 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?AU" TARGET="explain">AU</A>      Ypos      Barycentric equatorial J2000 (ICRS)
+                                   y position of Gaia at the epoch of
+                                   observation (y_gaia)
+ 301-322 E22.17 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?AU" TARGET="explain">AU</A>      Zpos      Barycentric equatorial J2000 (ICRS)
+                                   z position of Gaia at the epoch of
+                                   observation (z_gaia)
+ 324-345 E22.17 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?AU/d" TARGET="explain">AU/d</A>    VX        Barycentric equatorial J2000 (ICRS)
+                                   x velocity of Gaia at the epoch of
+                                   observation (vx_gaia)
+ 347-368 E22.17 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?AU/d" TARGET="explain">AU/d</A>    VY        Barycentric equatorial J2000 (ICRS)
+                                   y velocity of Gaia at the epoch of
+                                   observation (vy_gaia)
+ 370-391 E22.17 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?AU/d" TARGET="explain">AU/d</A>    VZ        Barycentric equatorial J2000 (ICRS)
+                                   z velocity of Gaia at the epoch of
+                                   observation (vz_gaia)
+ 393-402  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     PA        <A HREF="#sRM3.86">Position angle of the scanning direction</A>
+                                   (position<SUB>angle</SUB>scan) (2)
+     404  I1    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%25" TARGET="explain">%</A>      ConfLevel  [0] <A HREF="#sRM3.87">Level of confidence of the</A>
+                                   identification (level<SUB>of</SUB>confidence) (3)
+<HR>
+<A NAME="sRM3.85"><B>Note (1)</B>: Gaiacentric epoch in UTC in JD-2455197.5 corresponding to
+  right ascension and declination.
+<A NAME="sRM3.86"><B>Note (2)</B>: Position angle of the scan direction at the epoch of observation in
+  the equatorial reference frame.
+  0 = North direction, pi/2 = increasing right ascension, pi = South,
+  3pi/2 = decreasing right ascension.
+  It is defined as the angle between the AL direction and the direction to the
+  North Pole, at the SSO position, after applying the correction for aberration.
+  As a consequence of this correction for aberration, the AC direction is no
+  longer strictly perpendicular to the AL direction.
+<A NAME="sRM3.87"><B>Note (3)</B>: Level of confidence in the identification of the given SSO source_id
+  with this observation as follows:
+     0 = completely unambiguous
+   100 = no identification
+<HR>
+
+<A NAME="sRM99.2"><B>Global notes</B>:
+
+<A NAME="sRM3.88"><B>Note (G1)</B>: All Gaia data processed by the Data Processing and Analysis
+ Consortium comes tagged with a solution identifier. This is a numeric field
+ attached to each table row that can be used to unequivocally identify the
+ version of all the subsystems that where used in the generation of the data as
+ well as the input data used. It is mainly for internal DPAC use but is included
+ in the published data releases to enable end users to examine the provenance of
+ processed data products. To decode a given solution ID visit.
+ https://gaia.esac.esa.int/decoder/decoder.jsp
+<A NAME="sRM3.89"><B>Note (G2)</B>: Unique source identifier (unique within a particular Data Release)
+ Long Description: A unique numerical identifier of the source, encoding the
+ approximate position of the source (roughly to the nearest arcmin), the
+ provenance (data processing centre where it was created), a running number,
+ and a component number.
+ The approximate equatorial (ICRS) position is encoded using the nested HEALPix
+ scheme at level 12 (Nside = 4096), which divides the sky into ~200 million
+ pixels of about 0.7 arcmin<SUP>2</SUP>.
+ The source ID consists of a 64-bit integer, least significant bit = 1 and most
+ significant bit = 64, comprising:
+ - a HEALPix index number (sky pixel) in bits 36 - 63; by definition the
+    smallest HEALPix index number is zero.
+ - a 3-bit Data Processing Centre code in bits33 - 35; for example
+    MOD(sourceId / 4294967296, 8) can be used to distinguish between sources
+    initialised via the Initial Gaia Source List by the Torino DPC (code = 0)
+    and sources otherwise detected and assigned by Gaia observations (code&gt;0)
+ - a 25-bitplus 7 bit sequence number within the HEALPix pixel in bits 1-32
+    split into:
+ - a 25 bitrunning number in bits 8-32; the running numbers are defined to be
+    positive, i.e. never zero
+ - a 7-bit component number in bits 1- 7
+ This means that the HEALpix index leel 12 of a given source is contained in
+  the most significant bits. HEALpix index of 12 and lower levels can thus be
+  retrieved as follows:
+ - HEALpix level 12 = source_id / 34359738368
+ - HEALpix level 11 = source_id / 137438953472
+ - HEALpix level 10 = source_id / 549755813888
+ - HEALpix level n = source_id / 2<SUP>35</SUP>*4<SUP>(12-level)</SUP>
+ Additional details can be found in the Gaia DPAC public document _Source
+  Identifiers - Assignment and Usage throughout DPAC_
+  (document code GAIA-C3-TN-ARI-BAS-020).
+<A NAME="sRM3.90"><B>Note (G3)</B>: A unique single numerical identifier of the source obtained from
+  GaiaSource (for a detailed description see GaiaSource.sourceId).
+  Note in particular that these identifiers are by convention negative for SSOs.
+<A NAME="sRM3.91"><B>Note (G4)</B>: Gaiacentric epoch TCB(Gaia) in JD corresponding to the time of
+ crossing of the fiducial line of the CCD. This is the epoch to which the
+ target coordinates and the position/velocity of Gaia are referred to.
+ To avoid loss of precision the reference time J2010.0 is subtracted.
+ Barycentric JD in TCB - 2455197.5.
+<A NAME="sRM3.92"><B>Note (G5)</B>: for single-mode pulsators classified as fundamental mode pulsators,
+ this parameter is filled with the periodicity found in the time-series.
+ For double-mode RR Lyrae this parameter is filled with the period corresponding
+ to the longer periodicity. For double-mode DCEPs this parameter is filled with
+ the period corresponding to the longer periodicity if the DCEP is classified
+ as "F/1O" or "F/2O". For triple-mode DCEPs this parameter is filled with the
+ period corresponding to the longer periodicity if the DCEP is classified as
+ "F/1O/2O" This value is obtained by modelling the G band time series using the
+ Levenberg-Marquardt non linear fitting algorithm (see Clementini et al.,
+ <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2016A%26A...595A.133C">2016A&A...595A.133C</A>, Cat. <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=I/337">I/337</A>).
+<A NAME="sRM3.93"><B>Note (G6)</B>: This parameter is filled with the uncertainty of the period
+ parameter. Its value is derived from Monte Carlo simulations that generate
+ several (100) time series with the same time path as the data points but with
+ magnitudes generated randomly around the corresponding data values. For each of
+ these time series the period is computed. The mean of all the periods and its
+ standard deviation are then derived, and the latter value is used to fill the
+ period<SUB>Error</SUB> parameter. The value refers to the analysis performed on the
+ G band time series.
+<A NAME="sRM3.94"><B>Note (G7)</B>: for single-mode pulsators classified as first-overtone pulsators,
+ this parameter is filled with the periodicity found in the time-series.
+ For double-mode RR Lyrae this parameter is filled with the period corresponding
+ to the shortest periodicity. For double-mode DCEPs this parameter is filled
+ with the period corresponding to the shortest periodicity if the DCEP is
+ classified as "F/1O"; otherwise it is filled with the longest one if the
+ classification is "1O/2O" or "1O/3O". For triple-mode DCEPs this parameter is
+ filled with the period corresponding to the intermediate periodicity if the
+ DCEP is classified as "F/1O/2O"; it is filled with the longest periodicity if
+ the classification is "1O/2O/3O". This value is obtained by modelling the G
+ time series using the Levenberg-Marquardt non linear fitting algorithm
+ (see Clementini et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2016A%26A...595A.133C">2016A&A...595A.133C</A>, Cat. <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=I/337">I/337</A>)
+<A NAME="sRM3.95"><B>Note (G8)</B>: For single-mode DCEPs classified as second-overtone pulsators, this
+ parameter is filled with the periodicity found in the time-series. For
+ double-mode DCEPs this parameter is filled with the period corresponding to
+ the shortest periodicity if the DCEP is classified as "1O/2O" of "F/2O";
+ otherwise it is filled with the longest periodicity if the classification
+ is "2O/3O". For triple-mode DCEPs this parameter is filled with the period
+ corresponding to the shortest periodicity if the DCEP is classified as
+ "F/1O/2O"; it is filled with the intermediate periodicity if the classification
+ is "1O/2O/3O". This value is obtained by modelling the G time series using the
+ Levenberg-Marquardt non linear fitting algorithm
+ (see Clementini et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2016A%26A...595A.133C">2016A&A...595A.133C</A>, Cat. <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=I/337">I/337</A>).
+<A NAME="sRM3.96"><B>Note (G9)</B>: for double-mode DCEPs this parameter is filled with the periodicity
+ found in the time-series corresponding to the shortest periodicity if the DCEP
+ is classified as "1O/3O" of "2O/3O". For triple-mode DCEPs this parameter is
+ filled with the period corresponding to the shortest periodicity if the DCEP is
+ classified as "1O/2O/3O". This value is obtained by modelling the G time series
+ using the Levenberg-Marquardt non linear fitting algorithm
+ (see Clementini et al., <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2016A%26A...595A.133C">2016A&A...595A.133C</A>, Cat. <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=I/337">I/337</A>).
+<A NAME="sRM3.97"><B>Note (G10)</B>: Epoch of maximum light for the Gaia G band light curve. It
+ corresponds to the Baricentric Julian day (BJD) of the maximum value of the
+ light curve model which is closest to the BJD of the first observations
+ -3 times the period of the source (first periodicity depending on the
+ pulsation mode).
+ The mentioned BJD is offset by JD 2455197.5 (= J2010.0)
+ (Barycentric JD in TCB - 2455197.5 (day)).
+<A NAME="sRM3.98"><B>Note (G11)</B>: This parameter is filled with the uncertainty of the
+ Average_magnitude parameter. Its value is derived from Monte Carlo simulations
+ that generate several (100) time series with the same time path as the data
+ points but with magnitudes generated randomly around the corresponding data
+ values. For each of these time series the Average_magnitude is computed.
+ The mean of all the magnitudes found and its standard deviation are then
+ computed, and the latter value is kept to fill the
+ Average<SUB>magnitude</SUB>Error parameter.
+<A NAME="sRM3.99"><B>Note (G12)</B>: This parameter is filled with the peak-to-peak amplitude value of
+ the band light curve. The peak-to-peak amplitude is calculated as the
+ (maximum)-(minimum) of the modelled folded light curve in the band. The light
+ curve of the target star is modelled with a truncated Fourier series
+ (mag(tj)=zp+{SIGMA}[Aisin(ix2{pi}{nu}maxtj+{phi}i)]). Zero-point (zp),
+ period (1/{nu}max), number of harmonics (i), amplitudes (Ai), and
+ phases ({phi}i) of the harmonics, for the band light curve are determined using
+ the Levenberg-Marquardt non linear fitting algorithm.
+<A NAME="sRM3.100"><B>Note (G13)</B>: This parameter is filled with the uncertainty value of the Amplitude
+ parameter. Its value is derived from Monte Carlo simulations that generate
+ several (100) time series with the same time path as the data points but with
+ magnitudes generated randomly around the corresponding data values. For each of
+ these time series the peakToPeakG is computed. The mean of all the amplitudes
+ found and its standard deviation are then computed, and the latter value is
+ kept to fill the Amplitude_Error parameter.
+<A NAME="sRM3.101"><B>Note (G14)</B>: this parameter is filled with the [Fe/H] metallicity derived for the
+ source from the Fourier parameters of the G-band light curve.
+<A NAME="sRM3.102"><B>Note (G15)</B>: this parameter is filled with the Fourier decomposition parameter
+ R<SUB>21</SUB>=A<SUB>2</SUB>/A<SUB>1</SUB> (R<SUB>31</SUB>=A<SUB>3</SUB>/A_1), where A<SUB>2</SUB> is the amplitude of the 2nd
+ harmonic, A<SUB>3</SUB> is the amplitude of the 3rd harmonic and A<SUB>1</SUB> is the amplitude
+ of the fundamental harmonic of the truncated Fourier series defined as
+ (mag(tj)=zp+{SIGMA}[Aisin(ix2{Pi}{nu}maxtj+{phi}i)]) used to model the G-band
+ light curve. Zero-point (zp), period (1/{nu}max), number of harmonics (i),
+ amplitudes (Ai), and phases ({phi}i) of the harmonics, are determined using the
+ Levenberg-Marquardt non linear fitting algorithm.
+<A NAME="sRM3.103"><B>Note (G16)</B>: this parameter is filled with the uncertainty value on the r21G/r31G
+ parameter. Its value is derived from Monte Carlo simulations that generate
+ several (100) time series with the same time path as the data points but with
+ magnitudes generated randomly around the corresponding data values. For each of
+ these time series the r21G/r31G is computed. The mean of all the r21G/r31G
+ values found and its standard deviation are then computed, and the latter
+ value is kept to fill the r21G/r31GError parameter.
+<A NAME="sRM3.104"><B>Note (G17)</B>: this parameter is filled with the Fourier decomposition parameter
+ {phi}<SUB>21</SUB>={phi}2-2{phi}1 ({phi}<SUB>31</SUB>={phi}3-3{phi}1): where {phi}2 is the phase
+ of the 2nd harmonic, {phi}3 is the phase of the 3rd harmonic and {phi}1 is the
+ phase of the fundamental harmonic of the truncated Fourier series defined as
+ (mag(tj)=zp+{SIGMA}[Aisin(ix2{pi}{nu}maxtj+{phi}i)]) used to model the G-band
+ light curve. Zero-point (zp), period (1/{nu}max), number of harmonics (i),
+ amplitudes (Ai), and phases ({phi}i) of the harmonics, are determined using the
+ Levenberg-Marquardt non linear fitting algorithm.
+<A NAME="sRM3.105"><B>Note (G18)</B>: this parameter is filled with the uncertainty of the phi21G (phi31G)
+ parameter. Its value is derived from Monte Carlo simulations that generate
+ several (100) time series with the same time path as the data points but with
+ magnitudes generated randomly around the corresponding data values. For each of
+ these time series the phi21G (phi31G) is computed. The mean of all the
+ phi21G ((phi31G) values is found and its standard deviation are then computed,
+ and the latter value is kept to fill the phi21G((phi31G)Error parameter.
+<HR>
+
+<A NAME="sRM99.3"><B>History</B>:
+    From Gaia team
+
+<A NAME="sRM99.4"><B>Acknowledgements</B>:
+ For radial velocity catalog:
+    Caroline Soubiran, caroline.soubiran(at)u-bordeaux.fr,
+    [Lab. d'Astrophys. Bordeaux]
+ For all other catalogs:
+     Gaia team
+
+<A NAME="sRM90.1"><B>References</B>:
+   Gaia Data Release 2: Summary of the contents and survey properties,
+    Gaia Collaboration, Brown, A.G.A., et al. (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018A%26A...616A...1G">2018A&A...616A...1G</A>)
+
+   Gaia Data Release 2: The astrometric solution,
+    Lindegren, L., et al. (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018A%26A...616A...2L">2018A&A...616A...2L</A>)
+
+   Gaia Data Release 2: Calibration and mitigation of electronic offset effects
+     in Gaia data, Hambly, N., et al. (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018A%26A...616A..15G">2018A&A...616A..15G</A>)
+
+   Gaia Data Release 2: Processing of the photometric data,
+    Riello, M., et al. (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018A%26A...616A...3R">2018A&A...616A...3R</A>)
+
+   Gaia Data Release 2: The photometric content and validation,
+    Evans, D.W., et al. (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018A%26A...616A...4E">2018A&A...616A...4E</A>)
+
+   Gaia Data Release 2: The Gaia Radial Velocity Spectrometer,
+    Cropper, M., et al. (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018A%26A...616A...5C">2018A&A...616A...5C</A>)
+
+   Gaia Data Release 2: The catalogue of radial velocity standard stars
+   Soubiran, C., et al. (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018A%26A...616A...7S">2018A&A...616A...7S</A>)
+
+   Gaia Data Release 2: Processing, validation and performance of the
+    spectroscopic data, Sartoretti, P., et al. (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018A%26A...616A...6S">2018A&A...616A...6S</A>)
+
+   Gaia Data Release 2: Properties and validation of the radial velocities,
+    Katz, D., et al. (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2019A%26A...622A.205K">2019A&A...622A.205K</A>)
+
+   Gaia Data Release 2: Summary of variability processing and analysis results,
+    Holl, B., et al. (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018A%26A...618A..30H">2018A&A...618A..30H</A>)
+
+   Gaia Data Release 2: First stellar parameters from Apsis,
+    Andrae, R., et al. (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018A%26A...616A...8A">2018A&A...616A...8A</A>)
+
+   Gaia Data Release 2: Catalogue validation,
+    Arenou, F., et al. (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018A%26A...616A..17A">2018A&A...616A..17A</A>)
+
+   Gaia Data Release 2: Cross-match with external catalogues: algorithm and
+    statistics, Marrese, P.M., et al. (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2019A%26A...621A.144M">2019A&A...621A.144M</A>)
+
+   Gaia Data Release 2: On the use of Gaia parallaxes,
+    Luri, X., et al. (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018A%26A...616A...9L">2018A&A...616A...9L</A>)
+
+   Gaia Data Release 2: The celestial reference frame (Gaia-CRF2),
+    Gaia Collaboration, Mignard, F., et al. (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018A%26A...616A..14G">2018A&A...616A..14G</A>)
+
+   Gaia Data Release 2: Observational Hertzsprung-Russell diagrams,
+    Gaia Collaboration, Babusiaux, C., et al. (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018A%26A...616A..10G">2018A&A...616A..10G</A>),
+    Cat. <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/A%2BA/616/A10">J/A+A/616/A10</A>
+
+   Gaia Data Release 2: Observations of Solar System objects,
+    Gaia Collaboration, Spoto, F., et al. (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018A%26A...616A..13G">2018A&A...616A..13G</A>)
+
+   Gaia Data Release 2: Mapping the Milky Way disk kinematics,
+    Gaia Collaboration, Katz, D., et al. (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018A%26A...616A..11G">2018A&A...616A..11G</A>)
+
+   Gaia Data Release 2: The kinematics of globular clusters and dwarf galaxies
+    around the Milky Way, Gaia Collaboration, Helmi, A., et al.
+    (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018A%26A...616A..12G">2018A&A...616A..12G</A>), Cat. <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=J/A%2BA/616/A12">J/A+A/616/A12</A>
+
+   Gaia Data Release 2: Variable stars in the colour-absolute magnitude diagram,
+    Gaia Collaboration, Eyer, L., et al. (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2019A%26A...623A.110G">2019A&A...623A.110G</A>)
+
+   Gaia Data Release 2 - Rotational modulation in late-type dwarfs,
+    Lanzafame, A.C, et al. (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2018A%26A...616A..16L">2018A&A...616A..16L</A>)
+================================================================================
+<B>(End)</B>     Arnaud Siebert, Thomas Boch, Patricia Vannier [CDS]        25-Apr-2018
+
+</PRE><!-- ....wait for 1 children: %0=26510 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

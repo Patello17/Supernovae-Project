@@ -1,0 +1,482 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of VII/221</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Wed Jun 28 17:16:23 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0931790101OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of VII/221 :<BR>PSCz catalog (Saunders+, 2000)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0931790101OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>VII/221</B>                     PSCz catalog                       (Saunders+, 2000)
+================================================================================
+The PSCz catalogue
+    Saunders W., Sutherland W.J., Maddox S.J., Keeble O., Oliver S.J.,
+    Rowan-Robinson M., McMahon R.G., Efstathiou G.P., Tadros H., White S.D.M.,
+    Frenk C.S., Carraminana A., Hawkins M.R.S.
+    &lt;Mon. Not. R. Astron. Soc. 317, 55 (2000)&gt;
+    =<A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=2000MNRAS.317...55S">2000MNRAS.317...55S</A>
+================================================================================
+<B>ADC_Keywords</B>: Infrared sources ; Photometry, infrared ; Galaxies, optical;
+              Redshifts ; Surveys
+<B>Keywords</B>: catalogues - surveys - galaxies: distances and redshifts, clustering -
+          large-scale structure of the Universe
+
+<A NAME="sRM11.1"><B>Description</B>:
+    The PSCz survey consists of redshifts, infra-red and optical
+    photometry, and assorted other information for 18351 IRAS sources,
+    mostly selected from the Point Source Catalog. The survey was designed
+    to select almost all galaxies with flux brighter than 0.595Jy at 60
+    microns, over the 84% of the sky with extinction small enough
+    that reliable and complete optical identification and spectroscopy was
+    possible. Some of the sources are not galaxies and some are multiple
+    entries for the same galaxy as described below. There are in total
+    15411 galaxies or possible galaxies, for which redshifts are available
+    for 14677. The galaxies without redshift are mostly distant or at low
+    latitude, as described below. Many of these galaxies have now been
+    observed as part of the BTP project (Saunders et al 1999,
+    astro-ph/9909174 "The Behind the Plane Survey"), and their redshifts
+    will be included in future revisions of the catalogue.
+
+    The main catalogue is "<B>pscz.dat</B>". There is also a short version
+    of the catalogue, "<B>psczvs.dat</B>", containing sufficient information
+    for most studies. They correspond to the version 2.2.
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.38">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.39">&#215; notes.txt         79      468   Explanatory notes
+<A NAME="sRM-F.40">&#215; <A HREF="#sRM2.1">pscz.dat</A>         533    18351   Main catalogue
+<A NAME="sRM-F.41">&#215; <A HREF="#sRM2.2">psczvs.dat</A>       100    18411   Short version of main catalogue
+<A NAME="sRM-F.42">&#215; <A HREF="#sRM2.1">psczcg.dat</A>       533       60   Sources close to coverage gap
+<A NAME="sRM-F.43">&#215; <A HREF="#sRM2.2">psczcgvs.dat</A>     100       60   Short version of psczcg.dat
+<A NAME="sRM-F.44">&#215; psczcat3.tex     836      849   Text for the accompanying paper
+<A NAME="sRM-F.45">&#215; psczcat3.ps      132   203058   Postscript version
+<A NAME="sRM-F.46">&#215; pscz2_2.dat      141    73404   Original version of pscz.dat with 4 lines/source,
+                            explained in "notes.txt"
+<A NAME="sRM-F.48">&#215; psczmask.dat      78      506  <A HREF="#sRM3.1">*</A>Default mask defining the areas with inadequate
+                            or confused IRAS coverage (10.56sr)
+<A NAME="sRM-F.50">&#215; himask.dat        78      883  <A HREF="#sRM3.1">*</A>More conservative mask for higher completeness
+                            (9.06sr)
+<A NAME="sRM-F.52">&#215; qcd.f             80     1112   Routines for using mask, coordinate transforms etc
+<A NAME="sRM-F.53">&#215; g2bin.f           45        9   (l,b) to bin number
+<A NAME="sRM-F.54">&#215; psi.f             76       18   Estimated selection function
+<A NAME="sRM-F.55">&#215; igalrefs.txt      61       48   Redshift references
+<A NAME="sRM-F.56">&#215; ilg.dat          124       11   Local Group galaxies deliberately excluded
+<HR>
+<A NAME="sRM3.1"><B>Note on psczmask.dat, himask.dat</B>: list of excluded 'lune bins' and are read
+    in by the fortran77 routine rdmask in "<B>qcd.f</B>" (see file "<A HREF="https://vizier.cds.unistra.fr/viz-bin/getCatFile?VII/221/notes.txt">notes.txt</A>")
+<HR>
+
+<A NAME="sRM13.1"><B>See also</B>:
+   <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=II/125">II/125</A> : IRAS catalogue of Point Sources, Version 2.0 (IPAC 1986)
+   <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=II/174">II/174</A> : IRAS 2Jy Redshift Survey Data File  (Strauss+ 1992)
+  <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/185">VII/185</A> : IRAS 1.2 Jy IRAS Redshift Survey (Strauss+ 1990,92,95)
+  <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/MNRAS/253/485">J/MNRAS/253/485</A> : QMW IRAS galaxy catalogue (QIGC) (Rowan-Robinson+, 1991)
+  <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/MNRAS/308/897">J/MNRAS/308/897</A> : QDOT all-sky IRAS galaxy redshift survey (Lawrence+, 1999)
+
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.42"> psczcg.dat</A> <A HREF="#sRM-F.40"> pscz.dat</A>
+<HR>
+   Bytes Format Units       Label    Explanations
+<HR>
+   2- 12  A11   ---         CNAME   *<A HREF="#sRM3.4">Name e.g. Q12345+4856</A>
+  14- 15  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?h" TARGET="explain">h</A>           RAh      Right ascension B1950
+  16- 17  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?min" TARGET="explain">min</A>         RAm      Right ascension B1950
+  18- 20  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1s" TARGET="explain">0.1s</A>        RAds     Right ascension B1950
+      22  A1    ---         DE-      Declination sign B1950
+  23- 24  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         DEd      Declination B1950
+  25- 26  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>      DEm      Declination B1950
+  27- 28  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>      DEs      Declination B1950
+  29- 36  F8.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Jy" TARGET="explain">Jy</A>          S12      Flux at 12um
+  37- 44  F8.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Jy" TARGET="explain">Jy</A>          S25      Flux at 25um
+  45- 52  F8.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Jy" TARGET="explain">Jy</A>          S60      Flux at 60um
+  53- 60  F8.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Jy" TARGET="explain">Jy</A>          S100     Flux at 100um
+      62  I1    ---         q_S12   *[1,9] <A HREF="#sRM3.5">Flux origin and quality flag at 12um</A>
+      63  I1    ---         q_S25   *[1,9] <A HREF="#sRM3.5">Flux origin and quality flag at 25um</A>
+      64  I1    ---         q_S60   *[1,9] <A HREF="#sRM3.5">Flux origin and quality flag at 60um</A>
+      65  I1    ---         q_S100  *[1,9] <A HREF="#sRM3.5">Flux origin and quality flag at 100um</A>
+      67  I1    ---         SES12    [0,8] Small Extended Source flag at 12um
+      68  I1    ---         SES25    [0,8] Small Extended Source flag at 25um
+      69  I1    ---         SES60    [0,8] Small Extended Source flag at 60um
+      70  I1    ---         SES100   [0,8] Small Extended Source flag at 100um
+  72- 74  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%25" TARGET="explain">%</A>           e_S12    Flux uncertainty at 12um
+  75- 77  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%25" TARGET="explain">%</A>           e_S25    Flux uncertainty at 25um
+  78- 80  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%25" TARGET="explain">%</A>           e_S60    Flux uncertainty at 60um
+  81- 83  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%25" TARGET="explain">%</A>           e_S100   Flux uncertainty at 100um
+  85- 87  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>      PosMin   Minor axis of 2{sigma} error ellipse
+  88- 90  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>      PosMax   Major axis of 2{sigma} error ellipse
+  91- 93  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         PosPA    Position angle E of N of major axis
+                                      of error ellipse
+      95  I1    ---         Cirr1   *<A HREF="#sRM3.7">Cirrus flag</A>
+      96  I1    ---         Cirr2   *<A HREF="#sRM3.7">Cirrus flag</A>
+  97- 99  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?MJy/sr" TARGET="explain">MJy/sr</A>      Cirr3   *<A HREF="#sRM3.7">Cirrus flag</A>
+     101  A1    ---         CC1      [A-N X] Correlation Coefficient at 12um
+     102  A1    ---         CC2      [A-N X] Correlation Coefficient at 25um
+     103  A1    ---         CC3      [A-M X1] Correlation Coefficient at 60um
+     104  A1    ---         CC4      [A-N X1] Correlation Coefficient at 100um
+     106  A1    ---         CONF     [0-9 ACDEF] Confusion flag, hex encoded
+     107  A1    ---         DISC     [0-9 A-D] Discrepant flux flag, hex encoded
+     108  A1    ---         HSD      [0-8] High Source Density flag, hex encoded
+     110  I1    ---         PNEARH   [0-9] Nearby hours-confirmed sources
+     111  I1    ---         PNEARW   [0-5] Nearby weeks-confirmed sources
+     113  I1    ---         CES12   *<A HREF="#sRM3.6">Nearby seconds confirmed extended sources</A>
+                                      at 12um
+     114  I1    ---         CES25   *<A HREF="#sRM3.6">Nearby seconds confirmed extended sources</A>
+                                      at 25um
+     115  I1    ---         CES60   *<A HREF="#sRM3.6">Nearby seconds confirmed extended sources</A>
+                                      at 60um
+     116  I1    ---         CES100  *<A HREF="#sRM3.6">Nearby seconds confirmed extended sources</A>
+                                      at 100um
+ 117-121  I5    ---         SNR60    10 x signal/noise of weakest detection
+                                      at 60um
+ 122-123  I2    ---         NHCON    Number of hours-confirmed source detections
+ 124-125  I2    ---         MHCON    Potential number of hours-confirmed source
+                                      detections
+ 127-130  I4    ---         FCOR60  *<A HREF="#sRM3.8">1000*flux correction factor applied at 60um</A>
+ 132-136  A5    ---         PLATE    Plate number (POSS or SRC)
+ 138-144  A7    ---         NOM      Nominal plate centre in RA,dec
+ 146-148  I3    ---         NUM      Identifier for source on this plate
+ 150-151  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?h" TARGET="explain">h</A>           RAo.h    ? Optical right ascension B1950
+ 152-153  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?min" TARGET="explain">min</A>         RAo.m    ? Optical right ascension B1950
+ 154-158  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>           RAo.s    ? Optical right ascension B1950
+     160  A1    ---         DEo.-    ? Optical declination sign B1950
+ 161-162  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         DEo.d    ? Optical declination B1950
+ 163-164  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>      DEo.m    ? Optical declination B1950
+ 165-168  F4.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>      DEo.s    ? Optical declination B1950
+ 170-172  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>      ADX      ? North/South Delta Optical/IRAS position
+ 173-175  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>      ADY      ? East/West Delta Optical/IRAS position
+ 176-179  F4.1  ---         ALK      ? log_10 likelihood for optical
+                                      identification
+ 180-182  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%25" TARGET="explain">%</A>           REL      ? Prob. correct optical identification
+     183  A1    ---         CAND     ? Optical candidate A,B etc
+     184  I1    ---         IOPT    *? <A HREF="#sRM3.9">Schmidt plate material used</A>
+ 185-190  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>         Bmag     ? Estimated optical B magnitude
+ 191-193  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>      MajAxiO  ? Optical major axis
+ 194-196  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>      MinAxiO  ? Optical minor axis
+ 197-199  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         PAO      ? Optical major axis position angle E of N
+ 200-206  F7.3 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag/arcsec%2b2" TARGET="explain">mag/arcsec+2</A> SuBr     ? Average optical surface brightness
+ 207-208  I2    ---         IDTYPE   Cross-identification type from PSC
+ 209-220  A12   ---         Oname    Optical name
+ 221-226  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>         mag      Zwicky/RC3 magnitude
+ 227-231  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>      D1X     *<A HREF="#sRM3.10">RC3/UGC/MCG/ESO D25 diameter from CATX</A>
+ 232-234  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%25" TARGET="explain">%</A>           AR      *<A HREF="#sRM3.10">Axial ratio d25/D25 from CATX</A>
+ 235-240  I6    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>        Hvel     Best available heliocentric velocity (cz)
+ 241-244  I4    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>        e_Hvel   Error on heliocentric velocity
+ 245-247  I3    ---         r_Hvel  *<A HREF="#sRM3.11">Reference for heliocentric velocity</A>
+ 248-253  I6    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>        Hvel2    Heliocentric velocity (cz)
+                                      measured as part of PSCz survey
+ 254-257  I4    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>        e_Hvel2  Error on PSCz heliocentric velocity
+ 258-260  I3    ---         r_Hvel2 *<A HREF="#sRM3.11">Reference for PSCz heliocentric velocity</A>
+ 261-262  I2    ---         TType    De Vaucouleurs Type, 99 = unknown
+ 264-271  A8    ---         PGC      Catalogue of Principal Galaxies
+                                      (PGC, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/119">VII/119</A>) name
+ 273-280  F8.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         RAdeg    Right ascension B1950 (IRAS source)
+ 282-289  F8.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         DEdeg    Declination B1950 (IRAS source)
+ 291-298  F8.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         GLON     Galactic longitude
+ 300-307  F8.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         GLAT     Galactic latitude
+ 308-313  I6    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>        cz       Velocity cz in Local Group frame
+ 314-318  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Mpc" TARGET="explain">Mpc</A>         Dist     Distance  from Rowan-Robinson 1988
+ 319-322  I4    ---         IDclus   Cluster identification from
+                                      Rowan-Robinson 1988
+ 324-328  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%5bMJy/sr%5d" TARGET="explain">[MJy/sr]</A>    ALI100  *<A HREF="#sRM3.12">log10(100um background in MJy/sr)</A>
+ 329-333  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%5bMJy/sr%5d" TARGET="explain">[MJy/sr]</A>    ALI100B *<A HREF="#sRM3.12">log10(100um background in MJy/sr</A>
+                                        for lune bin)
+ 334-339  I6    ---         NLBIN    Lune bin number
+ 341-342  A2    ---         CLASS   *<A HREF="#sRM3.17">Optical classification code</A>
+ 344-348  A5    ---         CSEC     PSCz sector, e.g. A/123
+ 349-352  I4    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mm" TARGET="explain">mm</A>          Xpos     X position from nominal bottom left corner
+                                      of Schmidt plate
+ 353-356  I4    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mm" TARGET="explain">mm</A>          Ypos     Y position from nominal bottom left corner
+                                      of Schmidt plate
+     358  A1    ---         CSTAT    [JORXPCELS?0] Optical material used
+     359  A1    ---         CAREA    h=high|b|, p=other PSCz,
+                                     l=BTP, c=in coverage gaps
+     360  A1    ---         CZSTAT  *[#-1234lpxq] <A HREF="#sRM3.3">Redshift status</A>
+     362  A1    ---         C12CLAS  Classification in 1.2Jy survey
+ 363-370  F8.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Jy" TARGET="explain">Jy</A>          F3PSC    PSC flux at 60um
+ 371-378  F8.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Jy" TARGET="explain">Jy</A>          F4PSC    PSC flux at 100um
+ 379-383  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>         ABB     *<A HREF="#sRM3.12">Estimated average B extinction in lune bin</A>
+                                      derived from 100 micron background
+     385  A1    ---         CPSCZ   *[^&amp;=-+] <A HREF="#sRM3.2">Source category</A>
+ 386-387  I2    ---         MHCONB  * <A HREF="#sRM3.13">2 or &gt;=3 hours-confirmed coverages</A>
+                                      for this lune bin
+     389  A1    ---         CQDOT    [q] q = in QDOT 1-in-6 sample
+ 390-393  I4    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>        W20     *<A HREF="#sRM3.14">HI (21cm) 20% velocity width or flag</A>
+ 394-395  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>        e_W20    Error on W20
+ 396-399  I4    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>        W50     *<A HREF="#sRM3.14">HI (21cm) 50% velocity width or flag</A>
+ 400-401  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>        e_W50    Error on W50
+ 402-403  I2    ---         r_W20   *<A HREF="#sRM3.15">HI reference</A>
+ 404-410  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Jy" TARGET="explain">Jy</A>          FP12     Addscan flux at 12um using point
+                                      source template
+ 411-419  F9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Jy" TARGET="explain">Jy</A>          FP25     Addscan flux at 25um using point
+                                      source template
+ 420-428  F9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Jy" TARGET="explain">Jy</A>          FP60     Addscan flux at 60um using point
+                                      source template
+ 429-437  F9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Jy" TARGET="explain">Jy</A>          FP100    Addscan flux at 100um using point
+                                      source template
+ 439-442  I4    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJy" TARGET="explain">mJy</A>         e_FP12   Statistical error in FP12
+ 443-446  I4    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJy" TARGET="explain">mJy</A>         e_FP25   Statistical error in FP25
+ 447-450  I4    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJy" TARGET="explain">mJy</A>         e_FP60   Statistical error in FP60
+ 451-454  I4    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJy" TARGET="explain">mJy</A>         e_FP100  Statistical error in FP100
+     456  I1    ---         BP12     Background fit subtracted or not at 12um
+     457  I1    ---         BP25     Background fit subtracted or not at 25um
+     458  I1    ---         BP60     Background fit subtracted or not at 60um
+     459  I1    ---         BP100    Background fit subtracted or not at 100um
+ 460-468  F9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Jy" TARGET="explain">Jy</A>          FE12     Coadded or extended addscan flux at 12um
+ 469-477  F9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Jy" TARGET="explain">Jy</A>          FE25     Coadded or extended addscan flux at 25um
+ 478-486  F9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Jy" TARGET="explain">Jy</A>          FE60     Coadded or extended addscan flux at 60um
+ 487-495  F9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Jy" TARGET="explain">Jy</A>          FE100    Coadded or extended addscan flux at 100um
+ 497-500  I4    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJy" TARGET="explain">mJy</A>         e_FE12   Statistical error in FE12
+ 501-504  I4    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJy" TARGET="explain">mJy</A>         e_FE25   Statistical error in FE25
+ 505-508  I4    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJy" TARGET="explain">mJy</A>         e_FE60   Statistical error in FE60
+ 509-512  I4    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJy" TARGET="explain">mJy</A>         e_FE100  Statistical error in FE100
+     514  I1    ---         BE12    *[0-2] <A HREF="#sRM3.16">Background fit at 12un</A>
+     515  I1    ---         BE25    *[0-2] <A HREF="#sRM3.16">Background fit at 25um</A>
+     516  I1    ---         BE60    *[0-2] <A HREF="#sRM3.16">Background fit at 60um</A>
+     517  I1    ---         BE100   *[0-2] <A HREF="#sRM3.16">Background fit at 100um</A>
+ 518-525  F8.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin%2b2" TARGET="explain">arcmin+2</A>    WIDTH2   Addscan width squared at 60um
+ 526-533  F8.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin%2b2" TARGET="explain">arcmin+2</A>   e_WIDTH2  Error on WIDTH2
+<HR>
+<A NAME="sRM3.2"><B>Note on CPSCZ</B>: source category:
+   = PSC (or PSC reject file) source, and not a large-diameter optical galaxy.
+   + addscanned large optical galaxy added to PSCz.
+   - PSC source associated with a "+" addscan object (normally excluded).
+   &amp; high latitude PSCz source, but in a bin excluded by psczmask.dat .
+   ^ high latitude optical galaxy, in a bin excluded by psczmask.dat .
+<A NAME="sRM3.3"><B>Note on CZSTAT</B>: redshift status:
+   1 PSCz redshift, excellent quality
+   2 PSCz redshift, good quality
+   3 PSCz redshift, low s/n but secure
+   4 PSCz redshift, marginal detection, unreliable
+   l literature redshift, see r_Hvel for details.
+   p private communication, see r_Hvel for details.
+   q redshift from QDOT (<A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/MNRAS/308/897">J/MNRAS/308/897</A>) or QCCOD
+   # redshift wanted for PSCz, but still unknown
+   x Give up, too optically faint (B or b_J &gt; 19.5 mag)
+   - Don't need it: galactic source, duplicate, part of larger galaxy etc.
+<A NAME="sRM3.4"><B>Note on CNAME</B>: IRAS Names.
+  Digits hhmmm+ddmm as in PSC. The initial letter means:
+    Q: from QIGC (Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/MNRAS/253/485">J/MNRAS/253/485</A>)
+    P: from PSC  (Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=II/215">II/215</A>)
+    R: from PSC reject file
+    O: from optical catalogue
+<A NAME="sRM3.5"><B>Note on q_S12, q_S25, q_S60, q_S100</B>:
+    1 = upper limit, 2 = moderate, 3 = OK, 4 = new HCON merged flux,
+    5 = addscanned flux/1.1, 6 = coadded flux,
+    7 = addscanned flux with point source template, 9 = single HCON.
+<A NAME="sRM3.6"><B>Note on CES12, CES25, CES60, CES100</B>:
+    1 = flagged as confirmed extended source,
+    2 = in SSS (Small Scale Structure) catalog (Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/73">VII/73</A>)
+    3 = in Large Galaxy Catalog,
+    4 = addscan flux,
+    5 = addscan flux, source is double,
+    6 = coadd flux,
+    7 = coadd flux, source is double,
+    8 = addscanned flux, Yahil software used,
+    9 = addscanned point source flux, Yahil software used.
+   2-8 data from QIGC, there should be none in here except class='ds' sources.
+<A NAME="sRM3.7"><B>Note on Cirr1, Cirr2, Cirr3</B>:
+    The cirrus flag measures the number of sources detected only at
+    100&#181;m in a 1-&#176;<SUP>2</SUP> area around the source
+<A NAME="sRM3.8"><B>Note on FCOR60</B>: FCOR60 = NINT(FCOR(3) *1000)
+    FCOR = correction factors applied to correct for overestimated faint
+    fluxes as in Explanatory Supp. For the supplementary single-HCON
+    sources, we have applied a factor of 1.121, as used in the PSC for 2
+    out of possible 4 HCON detections. For merged single-HCON sources,
+    unmerged in PSC due to software errors, we have corrected the
+    correction factors accordingly.
+<A NAME="sRM3.9"><B>Note on IOPT</B>: Source of Schmidt plate material.
+    1 = POSS-O/APM,        2 = SRC-bJ/APM,
+    3,4,5 = SRC-bJ/Cosmos, 6 = SR/Cosmos,
+    7 = POSS-E/APM,        9 = RC3 diameters .
+    The optical information from plate scans is for the candidate with the
+    best likelihood, not necessarily that for which the redshift is taken.
+    The probability that these are the same depends strongly on latitude;
+    at high latitude they are very reliable.
+
+    The optical material is heterogeneous and except for IOPT=2 is
+    uncalibrated. IOPT=6 magnitudes are estimated red mags, otherwise B or
+    b_J. Due to saturation, magnitudes brighter than about 16 mag are very
+    unreliable. Where a correct bright galaxy has been misclassified by
+    the source-finding software as a star, the magnitude will be
+    meaningless.
+<A NAME="sRM3.10"><B>Note on D1X, AR</B>:
+    CATX is the all-sky optical galaxy compilation based on the CGCG, UGC,
+    MGC and the ESO catalogues
+<A NAME="sRM3.11"><B>Note on r_Hvel, r_Hvel2</B>: Velocity references
+  (negative reference numbers are PSCz or private communication)
+   -99 INT/FOS or AAT/FORS
+   -98 NOT
+   -97 CTIO 60"
+   -96 Fairall for PSCz
+   -95 Nancay measurements for PSCz
+   -94 AAT service data
+   -93 INT/IDS500
+   -92 Cananea
+   -91 Parkes
+   -90 WHT/FOSII
+   -32 Juraszek
+   -31 Visnanathan
+   -30 Kraan-Kortweg
+   -29 Lu, Pantoja
+   -28 Nancay
+   -27 Chamaraux, Yamada, Takata, Nakanishi
+   -25 WHT Ultraluminous
+   -24 QCCOD pole extension
+   -23 QCCOD
+   -21 Giovanelli + Haynes
+   -20 DaCosta
+   -10 - 70  as in Huchra 1991, See Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/193">VII/193</A>
+    83  QDOT, Lawrence et al., Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/MNRAS/308/897">J/MNRAS/308/897</A>
+    84  Leech et al., <A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=1988MNRAS.231..977L">1988MNRAS.231..977L</A>
+    85  NED, see <A HREF="http://nedwww.ipac.caltech.edu/">http://nedwww.ipac.caltech.edu/</A>
+    86  PGC (Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/119">VII/119</A>), LEDA
+    87  1.2Jy, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/185">VII/185</A>
+    88  Allen et al., <A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=1990ApJ...355..130A">1990ApJ...355..130A</A>
+    89  Seeberger
+    90  RC3 HI, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/155">VII/155</A>
+    91  RC3 optical, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/155">VII/155</A>
+    92  Fairall
+    97  Tully <A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=1987ApJ...321..280T">1987ApJ...321..280T</A>
+    98  Lonsdale and Hacking <A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=1989ApJ...339..712L">1989ApJ...339..712L</A>,
+        Lonsdale 1986 (see Eales et al., <A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=1988ApJ...328..530E">1988ApJ...328..530E</A>)
+<A NAME="sRM3.12"><B>Note on ALI100, ALI100B, ABB</B>:
+  100um backgrounds from Rowan-Robinson et al., <A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=1991MNRAS.249..729R">1991MNRAS.249..729R</A>
+   ALI4 is the background in a 0.5 degree beam centered on the source,
+        corrected for that point source only.
+  ALI4B is the background averaged over lune bin, and is corrected for
+        all IGAL sources.
+    ABB is based on ALI4B, and has been crudely corrected for
+        temperature variation of dust across the galaxy.
+<A NAME="sRM3.13"><B>Note on MHCONB</B>:
+    MHCONB is the number of HCON coverages, crudely estimated from
+    Explanatory Supp Fig I.C.1, for comparing source counts, fluxes etc.
+<A NAME="sRM3.14"><B>Note on W20, W50</B>:
+    The HI data is extremely heterogeneous in quality, reduction and
+    linewidth definition.
+    -999 = private,
+    -997 = not reduced,
+    -996 = to be observed,
+    -995 = s/n &lt; 5
+    -994 = detected OK but not measured,
+      -1 = non-detection,
+      -2 = confused,
+<A NAME="sRM3.15"><B>Note on r_W20</B>: HI references:
+      -5  Parkes (Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VIII/15">VIII/15</A>)
+      -4  Nancay for PSCz
+      -3  Lu
+      -2  Bottinelli
+      -1  Giovanelli and Haynes
+       1  LEDA
+       2  Pantoja 1997, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/AJ/113/905">J/AJ/113/905</A>
+       3  Seeberger 1994, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/A%2BA/286/17">J/A+A/286/17</A>
+<A NAME="sRM3.16"><B>Note on BE12, BE25, BE60, BE100</B>:
+      0=no   1=yes   2=coadded flux
+<A NAME="sRM3.17"><B>Note on CLASS</B>: object classification from optical data etc.
+     g : galaxy or galaxies
+    gf: faint galaxy, B or b_j &gt; 19.5 mag.
+    go: optical galaxy with 1D addscanned flux
+    gr: Rice et al galaxy with 2D coadded photometry
+    ss: Star, confirmed spectroscopically (by us, 1.2 Jansky or de Grijp)
+    bs: Bright star from plate or telescope TV, no spectrum
+    is: Star from IRAS colours and plate/TV appearance
+    c : Cirrus
+    pn: Planetary Nebula
+    rn: Reflection Nebula
+    h2: HII region
+    zz: Other galactic source
+    lm: in Large Magellanic Cloud
+    sm: in Small Magellanic Cloud
+    vb: Visually blank on sky survey plates, no non-stellar id
+    kb: K' image blank, no non-stellar id
+    rb: Radio blank, no 6 or 20cm id
+    de: delete from catalogue, part of extended galaxy
+    d1: delete from catalogue, broken up 1HCON source already listed elsewhere
+    du: deleted optical galaxy, part of multiple system unresolved by IRAS
+    dr: deleted optical galaxy, already in as Rice etal galaxy
+    ao: PSC source associated with addscanned optical galaxy
+    ar: PSC source associated with Rice etal optical galaxy
+
+    The divisions above between Galactic classifications 'pn','rn' etc are
+    not rigorous.
+
+    The CLASS='go' and 'gr' sources were optically selected (see
+    accompanying paper) and their IRAS fluxes determined by addscanning or
+    coadding. Their fluxes (F12 to F100) are addscan or coadded fluxes,
+    reduced by a factor 1.1 to bring them statistically into line with PSC
+    fluxes. Where the resulting flux F(3) is 0.6 Jy or greater, they are
+    added to the catalogue and flagged with CPSCZ='+'. There are 1467 such
+    sources representing 1402 individual galaxies resolved by IRAS. The
+    associated PSC source is retained in the catalogue, but is flagged as
+    CPSCZ='-' and will normally be excluded (1290 sources).
+<HR>
+
+<A NAME="sRM2.2"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.41"> psczvs.dat</A> <A HREF="#sRM-F.43"> psczcgvs.dat</A>
+<HR>
+   Bytes Format Units   Label     Explanations
+<HR>
+   1-  9  A9    ---     CPNAME    PSCz name eg A/123/456
+      11  A1    ---     CPSCZ     Source category
+      12  A1    ---     CZSTAT    Redshift status
+  13- 14  A2    ---     CLASS     Optical classification code
+  16- 17  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?h" TARGET="explain">h</A>       RAh       Rigth ascension B1950
+  18- 19  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?min" TARGET="explain">min</A>     RAm       Rigth ascension B1950
+  20- 22  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1s" TARGET="explain">0.1s</A>    RAds      Rigth ascension B1950
+      24  A1    ---     DE-       Declination sign B1950
+  25- 26  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEd       Declination B1950
+  27- 28  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>  DEm       Declination B1950
+  29- 30  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  DEs       Declination B1950
+  31- 36  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     GLON      Galactic longitude
+  37- 42  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     GLAT      Galactic latitude
+  43- 50  F8.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Jy" TARGET="explain">Jy</A>      F60       Flux at 60um
+  51- 56  I6    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    Vhel      Best available heliocentric velocity (cz)
+  57- 60  I4    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    e_Vhel    Error on heliocentric velocity
+  61- 63  I3    ---     r_Vhel    Reference for heliocentric velocity
+  64- 75  A12   ---     Oname     Optical name
+  76- 79  I4    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?MJy/sr" TARGET="explain">MJy/sr</A>  I100B     100 micron background for that lune bin
+  80- 84  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     ABB       Estimated average B extinction for that
+                                   lune bin
+      86  A1    ---     CHSD      High Source Density flag, hex encoded
+      88  A1    ---     MHCONB    2 or &gt;=3 hours-confirmed coverages for
+                                   this lune bin
+  89- 94  F6.2  ---     F100/F60  Ratio of 100micron/60micron flux,
+                                   (negative means upper limit at 100um)
+  95-100  I6    ---     NLBIN     Lune bin
+<HR>
+
+<A NAME="sRM99.1"><B>General Notes</B>:
+    Many fields are taken directly from Point Source Catalogue (<A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=II/125">II/125</A>).
+    See IRAS Explanatory Supplement (Beichman et al., <A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=1988NASAR1190....1B">1988NASAR1190....1B</A>)
+    for more information.
+
+    If there are problems that cannot be resolved by careful reading of
+    these notes or the accompanying paper, please contact Will Saunders
+    (<A HREF="mailto:will@roe.ac.uk">will@roe.ac.uk</A>) or Will Sutherland (<A HREF="mailto:W.Sutherland1@physics.ox.ac.uk">W.Sutherland1@physics.ox.ac.uk</A>).
+
+<A NAME="sRM99.2"><B>Acknowledgements</B>: Will Saunders <A HREF="mailto:will@roe.ac.uk">will@roe.ac.uk</A>
+
+================================================================================
+<B>(End)</B>              Will Saunders [ROE], Patricia Bauer [CDS]         19-May-2000
+
+</PRE><!-- ....wait for 1 children: %0=14496 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

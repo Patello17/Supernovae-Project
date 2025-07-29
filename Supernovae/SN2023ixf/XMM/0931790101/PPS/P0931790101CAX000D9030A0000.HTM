@@ -1,0 +1,272 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of IX/30</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Wed Jun 28 17:16:24 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0931790101OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of IX/30 :<BR>Second ROSAT PSPC Catalog (ROSAT, 2000)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0931790101OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>IX/30</B>               Second ROSAT PSPC Catalog        (ROSAT, 2000)
+================================================================================
+The Second ROSAT Source Catalog of Pointed Observations
+     ROSAT Consortium
+    &lt;ROSAT News 72, 25-May-2000 (2000)&gt;
+================================================================================
+<B>ADC_Keywords</B>: X-ray sources ; Surveys
+
+<B>Mission_Name</B>: ROSAT
+
+
+<A NAME="sRM11.1"><B>Description</B>:
+    This catalogue contains sources from PSPC-ROSAT (Position-Sensitive
+    Proportional Counter aboard the Roentgen Satellite), as provided
+    by Max-Planck Institut fuer extraterrestrische Physik (MPE). It
+    supersedes the 1994 version (Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/11">IX/11</A>)
+
+    The current release of the catalog is comprised of results from 4093
+    sequences (sky coverage of 14.5%). The complete version contains
+    entries for 95,331 detections whereas the short version has 43,156
+    detections. 2189 obvious sources were not detected by the automated
+    Standard Analysis Software System (SASS), and are not yet contained in
+    this catalogue.
+
+    These data have been screened by ROSAT data centers in the US,
+    Germany, and the UK as a step in the production of the ROSAT RESULTS
+    ARCHIVE. The RRA contains extracted source and associated products
+    with an indication of reliability for the primary parameters.
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.32">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.33">&#215; <A HREF="#sRM2.1">2rxp.dat</A>         393    95331   The 2RXP Catalog
+<A NAME="sRM-F.34">&#215; <A HREF="#sRM2.1">2rxp_s.dat</A>       393    43156   The "short" 2RXP Catalog
+                               (restricted to high confidence detections)
+<A NAME="sRM-F.36">&#215; <A HREF="#sRM2.2">seqp.dat</A>         174     4093   The sequences of observations
+<HR>
+
+<A NAME="sRM13.1"><B>See also</B>:
+    <A HREF="http://www.xray.mpe.mpg.de/rosat/rra/">http://www.xray.mpe.mpg.de/rosat/rra/</A> : the ROSAT Results Archive Home Page
+    <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/10">IX/10</A> : ROSAT All-Sky Bright Source Catalogue (1RXS) (Voges+ 1996)
+    <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/29">IX/29</A> : ROSAT All-Sky Survey Faint Source Catalog (Voges+ 2000)
+    <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/A%2BAS/114/465">J/A+AS/114/465</A> : ROSAT XUV Pointed Phase Source Catalogue (Kreysing+ 1995)
+    <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/MNRAS/274/1165">J/MNRAS/274/1165</A> : The 2RE Source Catalogue (Pye+ 1995)
+
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.33"> 2rxp.dat</A> <A HREF="#sRM-F.34"> 2rxp_s.dat</A>
+<HR>
+   Bytes Format Units   Label     Explanations
+<HR>
+   1- 16  A16   ---     Seq       ROSAT detection sequence number
+      21  A1    ---     S        *[S] <A HREF="#sRM3.1">for source in "short" catalog</A>
+      22  A1    ---     m_2RXP   *[a-l] <A HREF="#sRM3.2">Multiplicity index</A>
+  23- 26  A4    ---     ---       [2RXP]
+  28- 43  A16   ---     2RXP     *<A HREF="#sRM3.2">2RXP designation (Jhhmmss.s+ddmmss)</A>
+  45- 47  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  ErrPos    ? <A HREF="#sRM3.10">Error in position (G1)</A>
+  50- 58  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>    Crate     Estimate of net count rate
+  60- 67  E8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>    e_Crate   ? <A HREF="#sRM3.10">Error of Crate (G1)</A>
+  69- 73  F5.1  ---     LhMdet    Source likelihood from the L/MDETEC algorithm
+                                    (MD_LIKE, truncated at 999.9)
+  75- 76  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>  oax       Off-axis angle averaged over observation
+  79- 83  I5    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>       ExpTime   Exposure time
+      85  A1    ---     Var       [NTP] Source variability flag:
+                                        Negative / Too_few / Possible
+  88-100  A13   ---     SrcFlags *[cdefislmnpavw.]  <A HREF="#sRM3.3">Source Flags</A>
+ 102-109  A8    ---     SeqFlags *[DABEFMSX.]  <A HREF="#sRM3.4">Sequence flags</A>
+ 111-116  I6   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%22YYMMDD%22" TARGET="explain">"YYMMDD"</A> QCdate    Date of sequence and source checking
+ 118-121  A4    ---     QCsite    Checker Site
+ 123-126  A4    ---     QDname    Checker ID
+ 128-132  A5    ---     Com       Source comment
+ 136-141  I6   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%22YYMMDD%22" TARGET="explain">"YYMMDD"</A> Tbeg      Observation start date
+ 143-148  I6   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%22YYMMDD%22" TARGET="explain">"YYMMDD"</A> Tend      Observation finish date
+ 150-164  A15   ---     ObsID     Observation ID (e.g. US400623H.N1)
+ 167-170  A4    ---     Site      Processing Site (USRS / MPE / PE / SRS)
+ 174-181  F8.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     RAdeg     Source Right ascension (J2000)
+ 183-190  F8.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEdeg     Source Declination (J2000)
+ 192-199  F8.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     GLON      Galactic longitude
+ 201-208  F8.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     GLAT      Galactic latitude
+ 211-216  F6.2 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?15arcsec" TARGET="explain">15arcsec</A> imX       Blocked x source position
+ 218-223  F6.2 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?15arcsec" TARGET="explain">15arcsec</A> imY       Blocked Y source position
+ 226-229  F4.2 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?15arcsec" TARGET="explain">15arcsec</A> e_imX     ? <A HREF="#sRM3.10">Error on imX (G1)</A>
+ 231-235  F5.2 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?15arcsec" TARGET="explain">15arcsec</A> e_imY     ? <A HREF="#sRM3.10">Error on imY (G1)</A>
+ 238-239  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>  Drb       Corrected source-rib distance
+                                   (truncated at 99)
+ 241-243  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>  Dsr       [0,99]?=999 Corrected source-source distance
+                                   (truncated at 99)
+ 245-249  F5.3  ---     Vig      *? <A HREF="#sRM3.5">Vignetting factor (G1)</A>
+ 251-255  F5.2 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s/arcmin2" TARGET="explain">ct/s/arcmin2</A> bgCt  Background countrate
+                                   (truncated to -9.99 ... 99.99)
+ 257-262  A6    ---     DetFlags *[01] <A HREF="#sRM3.6">Source detection string (3)</A>
+     263  A1    ---     DetML    *[ABCDb ] <A HREF="#sRM3.7">band in which ML detection occurred</A>
+ 265-268  I4    ---     LhMdet2   Source likelihood from the L/MDETEC algorithm
+                                   (truncated at 9999)
+ 270-272  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  Dcs       Width of detect square
+ 275-277  I3    ---     MSX       Source number from merged source list (MPLSX)
+     279  A1    ---     Mdet      [M.] set to 'M' if Crate was taken from MDETEC
+                                    (as well as some other parameters)
+ 281-284  I4    ---     LhML      ? <A HREF="#sRM3.10">Source likelihood from the ML algorithm</A>
+                                    (ML_LIKE, truncated to 999) (G1)
+ 286-288  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  rML       Extraction radius used in ML algorithm
+ 291-293  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  Ext       sigma of Gaussion distribution fitted to data
+ 295-298  I4    ---     ExtL      Likelihood of source extent
+                                   (truncated to 9999)
+ 301-304  A4    ---     Vflags   *[ckuf.] <A HREF="#sRM3.8">variability flags</A>
+ 307-311  F5.2  ---     HR1      *<A HREF="#sRM3.9">Hardness ratio 1 (truncated to -9.99...99.99)</A>
+ 313-316  F4.2  ---     e_HR1     Error on HR1
+ 318-322  F5.2  ---     HR2      *<A HREF="#sRM3.9">hardness ratio 2 (truncated to -9.99...99.99)</A>
+ 324-327  F4.2  ---     e_HR2     Error on HR2
+ 329-334  I6    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>      CtA       Source net counts PHAch. 11-41  (~0.1-0.4 keV)
+ 336-341  I6    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>      CtB       Source net counts PHAch. 52-201 (~0.5-2.0 keV)
+ 343-348  I6    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>      CtC       Source net counts PHAch. 52-90  (~0.5-0.9 keV)
+ 350-355  I6    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>      CtD       Source net counts PHAch. 91-201 (~0.9-2.0 keV)
+ 357-362  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>      e_CtA     Mean error on CtA
+ 364-369  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>      e_CtB     Mean error on CtB
+ 371-376  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>      e_CtC     Mean error on CtC
+ 378-383  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>      e_CtD     Mean error on CtD
+ 385-388  F4.1  ---     cSpl      Reduced chi-square of power law fit
+                                   to net spectrum (truncated at 99.9)
+ 390-393  F4.1  ---     cSRS      reduced chi-square of Raymond-Smith fit
+                                   to net spectrum (truncated at 99.9)
+<HR>
+<A NAME="sRM3.1"><B>Note on S</B>: this flag was added at CDS.
+    The "short" version file, 2rxs_s.dat, can exactly be reconstructed
+    from the "full" version file 2rxs.dat by a filter on this column,
+    i.e. the file 2rxs_s.dat can be recreated by the Unix shell command
+    grep '^....................S' 2rxs.dat &gt; 2rxs_s.dat
+<A NAME="sRM3.2"><B>Note on 2RXP, m_2RXP</B>: the name is NOT UNIQUE.
+    Detections with the same position will have the same detection name;
+    such detections may or may not represent the same astrophysical
+    source. A letter (a,b,etc...) was added in the m_2RXP column for
+    such duplicated duplicated names.
+<A NAME="sRM3.3"><B>Note on SrcFlags</B>: flags with a dot (.) are turned off (false).
+  c=CONFUSED    : close sources confused detection algorithm
+  d=DET_STRUCT  : source near detector structure
+  e=EXTENDED    : source is probably resolved
+  f=FALSE_DET   : detection judged to be spurious
+  i=INTEN_SUSP  : source intensity suspect
+  l=LTC_SUSP    : source lightcurve may be suspect
+  s=SPEC_SUSP   : source spectrum suspect
+  m=MULT_DET    : complex emission split into individual sources
+  n=NOT_CHECKED : source not checked visually by operator
+  p=POS_SUSP    : source position suspect
+  a=ASSOCIATED  : another source nearby may influence derived source
+  v=VARFLG_SUSP : SASS variability flag suspect
+  w=WITHIN_EXT  : source within extended emission
+<A NAME="sRM3.4"><B>Note on SeqFlags</B>: flags with a dot (.) are turned off (false).
+   D=DEFERRED   : Field not visually examined by operator [always off]
+   A=ASP_SUSP   : Aspect solution suspect [always off]
+   B=BKG_SUSP   : Background suspect
+   E=EXT_EMIS   : Extended emission in field
+   F=FIELD_FDET : False detections in field
+   M=SRC_MISS   : Sources in field missed
+   S=SLIS_MIS   : Source list missing
+   X=EXPO_MAP   : Exposure map is not correct
+<A NAME="sRM3.5"><B>Note on Vig</B>: the vignetting factor increases from 1 for sources detected
+     on the axis to higher values when the source was detected off-axis.
+<A NAME="sRM3.6"><B>Note on DetFlags</B>: the flags indicate the sliding window detection history
+     using either the background map (M) or the local background (L),
+     in the hard / soft and broad bands, and take the values
+        0 = no detection, 1 = detection
+     The order of the flags is:
+       M-broad, L-broad, M-hard, L-hard, M-soft, L-soft
+<A NAME="sRM3.7"><B>Note on DetML</B>: the value indicates in which band the source was detected:
+      A =  PHA range 11-41  (~0.1-0.4 keV)
+      B =  PHA range 52-201 (~0.5-2.0 keV)
+      C =  PHA range 52-90  (~0.5-0.9 keV)
+      D =  PHA range 91-201 (~0.9-2.0 keV)
+      b or blank means 'broad'
+<A NAME="sRM3.8"><B>Note on Vflags</B>: flags with a dot (.) are turned off (false).
+      c = variability flag from chi-square test (CSQ_FLAG)
+      k = variability flag from KS test         (KS_FLAG )
+      u = variability flag from U test          (U_FLAG  )
+      f = variability flag from FFT test        (FFT_FLAG)
+<A NAME="sRM3.9"><B>Note on HR1, HR2</B>: The hardness ratios are defined by:
+     HR1 = ( B - A ) / ( B + A )  , where
+             A = countrate in PHA range  11 -  41 (~0.1-0.4 keV)
+             B = countrate in PHA range  52 - 201 (~0.5-2.0 keV)
+     HR2 = ( D - C ) / ( D + C )  , where
+             C = countrate in PHA range  52 -  90 (~0.5-0.9 keV)
+             D = countrate in PHA range  91 - 201 (~0.9-2.0 keV)
+     (PHA = Pulse Height Amplitude)
+<HR>
+
+<A NAME="sRM2.2"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.36"> seqp.dat</A>
+<HR>
+   Bytes Format Units   Label     Explanations
+<HR>
+   1- 24  A24   ---     RDF       Result Data directory and File
+  26- 29  A4    ---     QCSite    Checker Site
+  31- 34  A4    ---     QDname    Checker ID
+  36- 41  I6   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%22YYMMDD%22" TARGET="explain">"YYMMDD"</A> Cdate     Checking date
+  52- 59  A8    ---     SeqFlags  [DABEFMSX.]  Sequence flags, as in 2rxp.dat
+  63- 67  I5    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>       ExpTime   Exposure Time
+  70- 75  I6   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%22YYMMDD%22" TARGET="explain">"YYMMDD"</A> Tbeg      Observation begin date
+  77- 82  I6   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%22YYMMDD%22" TARGET="explain">"YYMMDD"</A> Tend      Observation end date
+  85- 87  I3    ---     Nsrc      Number of sources
+  90- 91  I2    ---     Mis       Number of missed sources
+     106  I1    ---     ---       [0] number of RRA table columns which contain
+                                      undefined values for any of the sources
+     108  I1    ---     ---       [0] N1 = number of undefined keywords
+                                      from primary header
+     111  I1    ---     ---       [0] N2 = number of undefined keywords
+                                      from secondary header
+     115  I1    ---     Nc        Statistics of confused sources
+ 117-118  I2    ---     Nd        Statistics of sources near detector
+ 120-121  I2    ---     Ne        Statistics of probably resolved sources
+ 122-124  I3    ---     Nf        Statistics of spurious detections
+ 125-127  I3    ---     Ni        Statistics of suspect source intensity
+ 128-130  I3    ---     Ns        Statistics of suspect lightcurve sources
+ 131-133  I3    ---     Nl        Statistics of suspect spectrum sources
+ 134-136  I3    ---     Nm        Statistics of split complex emission sources
+ 137-139  I3    ---     Nn        Statistics of sources not checked visually
+ 140-142  I3    ---     Np        Statistics of suspect source positions
+ 143-145  I3    ---     Na        Statistics of nearby associated sources
+ 146-148  I3    ---     Nv        Statistics of suspected variability
+ 149-151  I3    ---     Nw        Statistics of sources within extended emission
+ 153-160  F8.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     RAdeg     J2000 Right Ascension of observation
+ 162-169  F8.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEdeg     J2000 Declination of observation
+ 171-174  A4    ---     Site      Processing Site
+<HR>
+
+<A NAME="sRM99.1"><B>Global Notes</B>:
+
+<A NAME="sRM3.10"><B>Note (G1)</B>: Some parameter values are undefined (blank) if the ML
+           algorithm did not run (indicated by Mdet='M').
+       NB: Maximum Liklihood never runs for sources further than
+           20' from field center.
+<HR>
+
+<A NAME="sRM99.2"><B>History</B>:
+  * 29-Jun-2000: First copied from
+    <A HREF="http://wave.xray.mpe.mpg.de/rosat/rra/rospspc">http://wave.xray.mpe.mpg.de/rosat/rra/rospspc</A>
+    The columns S and m_2RXP were added at CDS.
+  * 22-Jul-2000: A new version was distributed (message from Jakob
+    Englhauser, MPE, <A HREF="mailto:jer@xray.mpe.mpg.de">jer@xray.mpe.mpg.de</A>) -- the previous version
+    contained almost no source with Declination between 0 deg and
+    -1 deg.
+  * 22-Jul-2008: New ROSAT URLs : <A HREF="http://www.xray.mpe.mpg.de/rosat/rra">http://www.xray.mpe.mpg.de/rosat/rra</A>
+================================================================================
+<B>(End)</B>                                   Francois Ochsenbein [CDS]    22-Jul-2000
+
+</PRE><!-- ....wait for 1 children: %0=14562 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

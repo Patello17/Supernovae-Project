@@ -1,0 +1,89 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of VII/157</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Wed Jun 28 19:44:27 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0921180101OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of VII/157 :<BR>The Extended 12um galaxy sample (Rush+ 1993)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0921180101OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>VII/157</B>            The Extended 12um galaxy sample (Rush+ 1993)
+================================================================================
+THE EXTENDED 12micron GALAXY SAMPLE
+     RUSH B., MALKAN M., SPINOGLIO L.: 1993
+    &lt;Astrophys. J. Suppl. Ser. 89, 1 (1993)&gt;
+    =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1993ApJS...89....1R">1993ApJS...89....1R</A>
+================================================================================
+<B>ADC_Keywords</B>: Galaxies, IR ; Galaxies, Seyfert ; Infrared sources ;
+              Nonstellar objects ; Surveys
+
+<A NAME="sRM11.1"><B>Description</B>:
+    The authors have used the IRAS data to compile a sample of 893 galaxies,
+    including 118 Seyfert galaxies.
+    Please refer to the "<A HREF="https://vizier.cds.unistra.fr/viz-bin/getCatFile?VII/157/12micron.doc">12micron.doc</A>" (ascii) or "<A HREF="https://vizier.cds.unistra.fr/viz-bin/getCatFile?VII/157/12micron.tex">12micron.tex</A>" (LaTeX)
+    file for complete descriptions.
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.21">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.22">&#215; <A HREF="#sRM2.1">12micron.dat</A>      76      893   The catalogue
+<A NAME="sRM-F.23">&#215; 12micron.doc      74      465   Documentation
+<A NAME="sRM-F.24">&#215; 12micron.tex      81      367   LaTeX documentation
+<A NAME="sRM-F.25">&#215; adc.sty           78       68   Style file for 12micron.tex
+<HR>
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.22"> 12micron.dat</A>
+<HR>
+   Bytes Format  Units   Label    Explanations
+<HR>
+   2-  3  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?h" TARGET="explain">h</A>       RAh      Right Ascension 1950 (hours)
+   4-  5  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?min" TARGET="explain">min</A>     RAm      Right Ascension 1950 (minutes)
+   6-  9  F4.1   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>       RAs      Right Ascension 1950 (seconds)
+      10  A1     ---     DE-      Declination 1950 (sign)
+  11- 12  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEd      Declination 1950 (degrees)
+  13- 14  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>  DEm      Declination 1950 (minutes)
+  15- 16  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  DEs      Declination 1950 (seconds)
+  18- 24  F7.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Jy" TARGET="explain">Jy</A>      F12      <A HREF="#sRM3.1">12 mu flux (1)</A>
+  26- 32  F7.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Jy" TARGET="explain">Jy</A>      F25      <A HREF="#sRM3.1">25 mu flux (1)</A>
+  34- 41  F8.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Jy" TARGET="explain">Jy</A>      F60      <A HREF="#sRM3.1">60 mu flux (1)</A>
+  43- 51  F9.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Jy" TARGET="explain">Jy</A>      F100     <A HREF="#sRM3.1">100 mu flux (1)</A>
+  53- 64  A12    ---     Name     Various name(s) of the source
+      66  I1     ---     Type     [0/4] <A HREF="#sRM3.2">Object type (2)</A>
+      67  A1     ---     n_z      [SVZ] <A HREF="#sRM3.3">Redshift type (3)</A>
+      68  A1     ---     r_z      [DEFGHMNPRSVWYZ] <A HREF="#sRM3.1">Redshift reference (1)</A>
+  70- 76  F7.5   ---     z        Redshift
+<HR>
+<A NAME="sRM3.1"><B>Note (1)</B>: See file 12micron.doc or 12micron.tex
+
+<A NAME="sRM3.2"><B>Note (2)</B>: Object type is
+    0=Normal    1=Seyfert-1    2=Seyfert-2   3=high-far-IR   4=LINER
+<A NAME="sRM3.3"><B>Note (3)</B>: Redshift type is
+    S=corrected for Galactic solar motion and for Galaxy's motion
+      towards Virgo
+    V=NOT corrected for motion towards Virgo
+<HR>
+================================================================================
+<B>(End)</B>                                    Francois Ochsenbein [CDS]   20-Jul-1994
+
+</PRE><!-- ....wait for 1 children: %0=26594 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

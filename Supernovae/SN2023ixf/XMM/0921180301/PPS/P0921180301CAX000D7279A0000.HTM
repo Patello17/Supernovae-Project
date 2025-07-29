@@ -1,0 +1,772 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of VII/279</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Sun Jul 23 17:43:44 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0921180301OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of VII/279 :<BR>SDSS quasar catalog: twelfth data release (Paris+, 2017)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0921180301OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>VII/279</B>          SDSS quasar catalog: twelfth data release   (Paris+, 2017)
+================================================================================
+The Sloan Digital Sky Survey Quasar Catalog: Twelfth data release.
+    Paris I., Petitjean P., Ross N.P., Myers A.D., Aubourg E., Streblyanska A.,
+    Bailey S., Armengaud E., Palanque-Delabrouille N., Yeche C., Hamann F.,
+    Strauss M.A., Albareti F.D., Bovy J., Bizyaev D., Brandt W.N., Brusa M.,
+    Buchner J., Comparat J., Croft R.A.C., Dwelly T., Fan X., Font-Ribera A.,
+    Ge J., Georgakakis A., Hall P.B., Jiang L., Kinemuchi K., Malanushenko E.,
+    Malanushenko V., Mcmahon R.G., Menzel M.-L., Merloni A., Nandra K.,
+    Noterdaeme P., Oravetz D., Pan K., Pieri M.M., Prada F., Salvato M.,
+    Schlegel D.J., Schneider D.P., Simmons A., Viel M., Weinberg D.H., Zhu L.
+   &lt;Astron. Astrophys., 597, A79 (2017)&gt;
+   =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2017A%26A...597A..79P">2017A&A...597A..79P</A>    (SIMBAD/NED BibCode)
+   =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2017yCat.7278....0P">2017yCat.7278....0P</A>
+   =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2017yCat.7279....0P">2017yCat.7279....0P</A>
+================================================================================
+<B>ADC_Keywords</B>: Surveys ; QSOs ; Active gal. nuclei ; Spectroscopy
+
+<B>Keywords</B>: catalogs - surveys - quasars: general
+
+
+<A NAME="sRM99.1"><B>Abstract</B>:
+    We present the Data Release 12 Quasar catalog (DR12Q) from the Baryon
+    Oscillation Spectroscopic Survey (BOSS) of the Sloan Digital Sky
+    SurveyIII. This catalog includes all SDSS-III/BOSS objects that were
+    spectroscopically targeted as quasar candidates during the full survey
+    and that are confirmed as quasars via visual inspection of the
+    spectra, have luminosities M<SUB>i</SUB>[z=2]&lt; -20.5 (in a {Lambda}CDM
+    cosmology with H<SUB>0</SUB>=70km/s/Mpc, {Omega}<SUB>M</SUB>=0.3, and
+    {Omega}<SUB>{Lambda}</SUB>=0.7), and either display at least one emission line
+    with a full width at half maximum (FWHM) larger than 500km/s or, if
+    not, have interesting/complex absorption features. The catalog also
+    includes previously known quasars (mostly from SDSS-I andII) that were
+    reobserved by BOSS. The catalog contains 297 301 quasars (272 026 are
+    new discoveries since the beginning of SDSS-III) detected over
+    9376deg<SUP>2</SUP> with robust identification and redshift measured by a
+    combination of principal component eigenspectra. The number of quasars
+    with z&gt;2.15 (184 101, of which 167 742 are new discoveries) is about
+    an order of magnitude greater than the number of z&gt;2.15 quasars known
+    prior to BOSS. Redshifts and FWHMs are provided for the strongest
+    emission lines (CIV, CIII], MgII). The catalog identifies 29 580 broad
+    absorption line quasars and lists their characteristics. For each
+    object, the catalog presents five-band (u, g, r, i, z) CCD-based
+    photometry with typical accuracy of 0.03mag together with some
+    information on the optical morphology and the selection criteria. When
+    available, the catalog also provides information on the optical
+    variability of quasars using SDSS and Palomar Transient Factory
+    multi-epoch photometry. The catalog also contains X-ray, ultraviolet,
+    near-infrared, and radio emission properties of the quasars, when
+    available, from other large-area surveys. The calibrated digital
+    spectra, covering the wavelength region 3600-10 500&Aring; at a spectral
+    resolution in the range 1300&lt;R&lt;2500, can be retrieved from the SDSS
+    Catalog Archive Server. We also provide a supplemental list of an
+    additional 4841 quasars that have been identified serendipitously
+    outside of the superset defined to derive the main quasar catalog.
+
+<A NAME="sRM11.1"><B>Description</B>:
+    We present the final quasar catalog of the SDSS-III/BOSS survey
+    resulting from five years of observations. The catalog, which we call
+    "<B>DR12Q</B>", contains 297301 quasars, 184101 of which have
+    z&gt;2.15. We provide robust identification from visual inspection and
+    refined redshift measurements based on the result of a principal
+    component analysis of the spectra. The present catalog contains about
+    80% more quasars than our previous release (Paris et al., 2014, Cat.
+    <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/270">VII/270</A>). As part of DR12Q, we also provide a catalog of 29580 BAL
+    quasars and their properties. Spectroscopic line measurements are
+    provided together with multi-wavelength matching with GALEX, 2MASS,
+    UKIDSS, WISE, FIRST, RASS and XMM-Newton observations.
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.71">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.72">&#215; <A HREF="#sRM2.1">dr12q.dat</A>       2742   297301   SDSS-DR12 Quasar Catalog
+<A NAME="sRM-F.73">&#215; DR12Q.fits      2880   186665   SDSS-DR12 Quasar Catalog (FITS)
+<A NAME="sRM-F.74">&#215; <A HREF="#sRM2.2">dr12qbal.dat</A>    1525    29580   Detailed properties of BAL quasars
+<A NAME="sRM-F.75">&#215; DR12Q_BAL.fits  2880    10156   Detailed properties of BAL quasars (FITS)
+<A NAME="sRM-F.76">&#215; <A HREF="#sRM2.3">dr12qsp.dat</A>      476     4841   Supplementary list that contains serendipitous
+                                  quasars
+<A NAME="sRM-F.78">&#215; DR12Q_sup.fits  2880      388   Supplementary list that contains serendipitous
+                                  quasars (FITS)
+<A NAME="sRM-F.80">&#215; <A HREF="#sRM2.3">dr12qspb.dat</A>     476      226   Supplementary list that contains quasars
+                                  identified on bad plates
+<A NAME="sRM-F.82">&#215; DR12Q_supbad.fits  2880       32   Supplementary list that contains quasars
+                                  identified on bad plates (FITS)
+<HR>
+
+<A NAME="sRM13.1"><B>See also</B>:
+   <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/270">VII/270</A> : SDSS quasar catalog: tenth data release  (Paris+, 2014)
+     <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=V/147">V/147</A> : The SDSS Photometric Catalogue, Release 12 (Alam+, 2015)
+
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.72"> dr12q.dat</A>
+<HR>
+   Bytes Format Units    Label     Explanations
+<HR>
+   1- 18  A18   ---      SDSS      <A HREF="#sRM3.3">SDSS-DR12 designation HHMMSS.ss+DDMMSS.s</A>
+                                      (J2000) corrected by CDS
+                                      (SDSS_NAMEc) (G1)
+  20- 37  A18   ---      SDSSo     <A HREF="#sRM3.3">SDSS-DR12 designation HHMMSS.ss+DDMMSS.s</A>
+                                       (J2000) (SDSS_NAME) (G1)
+  39- 48  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      RAdeg     Right Ascension (J2000) (RA)
+  50- 59  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      DEdeg     Declination (J2000) (DEC)
+  61- 70  I10   ---      THINGID   Thing_ID (unique identifier of SDSS
+                                       sources) (THING_ID)
+  72- 75  I4    ---      Plate     Spectroscopic Plate number (PLATE)
+  77- 81  I5    ---      MJD       Spectroscopic MJD (MJD)
+  83- 86  I4    ---      Fiber     Spectroscopic Fiber number (FIBERID)
+  88- 95  F8.6  ---      z.v       Redshift from visual inspection (Z_VI)
+  97-105  F9.6  ---      z.b       ?=-1 Redshift from BOSS pipeline (Z_PIPE)
+ 107-118  F12.6 ---      e_z.b     []?=-1 Error on BOSS pipeline redshift
+                                       (error codes -4, -5, -6) (ERR_ZPIPE)
+ 120-122  I3    ---      f_z.b     <A HREF="#sRM3.5">ZWARNING flag (ZWARNING) (G3)</A>
+ 124-132  F9.6  ---      z.PCA     <A HREF="#sRM3.6">Refined PCA redshift (Z_PCA) (G4)</A>
+ 134-142  F9.6  ---      e_z.PCA   ?=-1 Error on refined PCA redshift
+                                       (ERR_ZPCA)
+ 144-153  E10.4 ---      qCont     Estimator of the PCA continuum quality
+                                       (PCA_QUAL)
+ 155-161  F7.4  ---      zCIV      Redshift of CIV emission line (Z_CIV)
+ 163-169  F7.4  ---      zCIII     Redshift of C iii] emission complex
+                                       (Z_CIII)
+ 171-177  F7.4  ---      zMgII     Redshift of Mg ii emission line (Z_MGII)
+ 179-180  I2    ---      Morph     SDSS morphology flag
+                                       0=point source 1=extended (SDSS_MORPHO)
+ 182-195  I14   ---      Btarg1    <A HREF="#sRM3.7">BOSS target flag for main survey</A>
+                                       (BOSS_TARGET1) (G5)
+ 197-215  I19   ---      Atarg1    <A HREF="#sRM3.7">BOSS target flag for ancillary programs</A>
+                                       (ANCILLARY_TARGET1) (G5)
+ 217-233  I17   ---      Atarg2    <A HREF="#sRM3.7">BOSS target flag for ancillary programs</A>
+                                       (ANCILLARY_TARGET2) (G5)
+ 235-247  I13   ---      eBtarg0   Target selection flag for the
+                                      SDSS-IV/eBOSS pilot survey (EBOSS_TARGET0)
+ 249-250  I2    ---      NspBOSS   Number of additional spectra available in
+                                       SDSS-III/BOSS (NSPEC_BOSS)
+ 251-442 32I6   ---      PlateDup  Spectroscopic plate number for each
+                                       duplicate spectrum (PLATE_DUPLICATE)
+ 443-666 32I7   ---      MJDDup    Spectroscopic MJD for each duplicate
+                                       spectrum (MJD_DUPLICATE)
+ 667-858 32I6   ---      FiberDup  Spectroscopic fiber number for each
+                                       duplicate spectrum (FIBERID_DUPLICATE)
+     860  I1    ---      f7        [0/1] 1 if the quasar is known from DR7
+                                       (SDSS_DR7)
+ 862-866  I5    ---      Plate7    ?=-1 SDSS-DR7 spectroscopic Plate number
+                                       if the quasar is known from DR7
+                                       (PLATE_DR7)
+ 868-873  I6    ---      MJD7      ?=-1 SDSS-DR7 spectroscopic MJD if the
+                                       quasar is known from DR7 (MJD_DR7)
+ 875-878  I4    ---      Fiber7    ?=-1 SDSS-DR7 spectroscopic Fiber number
+                                       if the quasar is known from DR7
+                                       (FIBERID_DR7)
+     880  I1    ---      US        [0/2] <A HREF="#sRM3.8">Uniform sample flag (UNIFORM) (G6)</A>
+ 882-890  F9.4  ---      alphanu   Spectral index measurement (ALPHA_NU)
+ 892-900  F9.4  ---      SNRSpec   Median signal-to-noise ratio over the
+                                       whole spectrum (SNR_SPEC)
+ 901-1220 32F10.4 ---     SNRDup    Median signal-to-noise ratio over the
+                                       whole spectrum of duplicate SDSS-III/BOSS
+                                       spectra when available (SNR_DUPLICATE)
+ 1222-1230  F9.4  ---      SNR1700   Median signal-to-noise ratio in the
+                                       window 1650-1750&Aring; (rest frame)
+                                       (SNR_1700)
+ 1232-1240  F9.4  ---      SNR3000   Median signal-to-noise ratio in the
+                                       window 2950-3050&Aring; (rest frame)
+                                       (SNR_3000)
+ 1242-1250  F9.4  ---      SNR5150   Median signal-to-noise ratio in the
+                                       window 5100-5250&Aring; (rest frame)
+                                       (SNR_5150)
+ 1252-1261  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>     FW(CIV)   ?=-1 FWHM of CIV emission line (FWHM_CIV)
+ 1263-1272  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>     HW(CIV)b  ?=-1 Blue HWHM of CIV emission line
+                                       (BHWHM_CIV)
+ 1274-1283  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>     HW(CIV)r  ?=-1 Red HWHM of CIV emission line
+                                       (RHWHM_CIV)
+ 1285-1293  F9.4  ---      A(CIV)    Amplitude of CIV emission line in units
+                                       of median rms pixel noise (AMP_CIV)
+ 1295-1308  E14.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    W(CIV)    ?=-1 Rest frame equivalent width of CIV
+                                       emission line in &Aring; (REWE_CIV)
+ 1309-1321  E13.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    e_W(CIV)  ?=-1 Uncertainty on the rest frame
+                                       equivalent width of CIV emission line
+                                       (ERR<SUB>REWE</SUB>CIV)
+ 1323-1332  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>     FW(CIII)  ?=-1 FWHM of CIII] emission complex
+                                       (FWHM_CIII)
+ 1334-1343  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    HW(CIII)b  ?=-1 Blue HWHM of CIII] emission line
+                                       (BHWHM_CIII)
+ 1345-1354  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    HW(CIII)r  ?=-1 Red HWHM of CIII] emission line
+                                       (RHWHM_CIII)
+ 1356-1364  F9.4  ---      A(CIII)   Amplitude of CIII] emission complex in
+                                      units of median rms pixel noise (AMP_CIII)
+ 1366-1378  E13.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    W(CIII)   ?=-1 Rest frame equivalent width of CIII]
+                                       emission line in &Aring; (REWE_CIII)
+ 1380-1392  E13.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>   e_W(CIII)  ?=-1 Uncertainty on the rest frame
+                                       equivalent width of CIII] emission
+                                       complex (ERR<SUB>REWE</SUB>CIII)
+ 1394-1403  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>     FW(MgII)  ?=-1 FWHM of MgII emission line
+                                       (FWHM_MGII)
+ 1405-1414  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    HW(MgII)b  ?=-1 Blue HWHM of MgII emission line
+                                       (BHWHM_MGII)
+ 1416-1425  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    HW(MgII)r  ?=-1 Red HWHM of MgII emission line
+                                       (RHWHM_MGII)
+ 1427-1436  F10.4 ---      A(MgII)   Amplitude of MgII emission line in units
+                                       of median rms pixel noise (AMP_MGII)
+ 1438-1450  E13.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    W(MgII)   ?=-1 Rest frame equivalent width of MgII
+                                       emission line (REWE_MGII)
+ 1452-1464  E13.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>   e_W(MgII)  ?=-1 Uncertainty on the rest frame
+                                       equivalent width of MgII emission
+                                       (ERR<SUB>REWE</SUB>MGII)
+    1466  I1    ---      BAL-VI    [0/1] BAL flag from visual inspection
+                                       (BAL<SUB>FLAG</SUB>VI)
+ 1468-1477  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>     BI(CIVt)  ?=-1 Balnicity index of CIV trough
+                                       (BI_CIV)
+ 1479-1488  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>   e_BI(CIVt)  ?=-1 Error on the Balnicity index of CIV
+                                       trough (ERR<SUB>BI</SUB>CIV)
+ 1490-1499  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>     AI(CIVt)  ?=-1 Absorption index of CIV trough
+                                       (AI_CIV)
+ 1501-1510  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>   e_AI(CIVt)  ?=-1 Error on the absorption index of
+                                       CIV trough (ERR<SUB>AI</SUB>CIV)
+ 1512-1521  F10.4 ---      Chi2CIVt  ?=0 {chi}<SUP>2</SUP> of the trough from Eq. (3) in
+                                       Paris et al. (2012, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/269">VII/269</A>)
+                                       (CHI2TROUGH)
+ 1523-1524  I2    ---      N2t       Number of distinct CIV troughs of width
+                                       larger than 2000km/s (NCIV_2000)
+ 1526-1535  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>     Vmin2t    ?=0  Minimum velocity of the CIV troughs
+                                       (VMIN<SUB>CIV</SUB>2000)
+ 1537-1546  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>     Vmax2t    ?=0  Maximum velocity of the CIV troughs
+                                       (VMAX<SUB>CIV</SUB>2000)
+ 1548-1550  I3    ---      N.45t     Number of distinct CIV troughs of width
+                                       larger than 450km/s (NCIV_450)
+ 1552-1561  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>     Vmin.45t  ?=0 Minimum velocity of the CIV troughs
+                                       (VMIN<SUB>CIV</SUB>450)
+ 1563-1572  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>     Vmax.45t  ?=0 Maximum velocity of the CIV troughs
+                                       (VMAX<SUB>CIV</SUB>450)
+ 1574-1583  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    W(SiIVt)  ?=0 Rest frame equivalent width of the
+                                       Si iv trough (REW_SIIV)
+ 1585-1594  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>    W(CIVt)   ?=0 Rest frame equivalent width of the
+                                       CIV trough (REW_CIV)
+ 1596-1605  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?0.1nm" TARGET="explain">0.1nm</A>   W(AlIIIt)  ?=0 Rest frame equivalent width of the
+                                       AlIII] trough (REW_ALIII)
+ 1607-1610  I4    ---      RUN       SDSS Imaging Run Number of photometric
+                                       measurements (RUN_NUMBER)
+ 1612-1616  I5    ---      Ph-MJD    Modified Julian Date of imaging
+                                       observation (PHOTO_MJD)
+ 1618-1620  A3    ---      Rerun     SDSS Photometric Processing Rerun Number
+                                       (RERUN_NUMBER)
+    1622  I1    ---      Colcam    [1/6]?=0 SDSS Camera Column Number
+                                       (COL_NUMBER)
+ 1624-1626  I3    ---      Field     SDSS Field Number (FIELD_NUMBER)
+ 1628-1646  A19   ---      objID     SDSS Object Identification Number (OBJ_ID)
+ 1648-1659  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?3.63uJy" TARGET="explain">3.63uJy</A>  Fu        ?=-<A HREF="#sRM3.4">9999 PSF flux in u band (not corrected</A>
+                                       for Galactic extinction)
+                                       in nnomggies (PSFFLUXu) (G2)
+ 1661-1672  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?3.63uJy" TARGET="explain">3.63uJy</A>  Fg        ?=-<A HREF="#sRM3.4">9999 PSF flux in g band (not corrected</A>
+                                       for Galactic extinction)
+                                       in nnomggies (PSFFLUXg) (G2)
+ 1674-1685  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?3.63uJy" TARGET="explain">3.63uJy</A>  Fr        ?=-<A HREF="#sRM3.4">9999 PSF flux in r band (not corrected</A>
+                                       for Galactic extinction) in nnomggies
+                                       (PSFFLUXr) (G2)
+ 1687-1698  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?3.63uJy" TARGET="explain">3.63uJy</A>  Fi        ?=-<A HREF="#sRM3.4">9999 PSF flux in i band (not corrected</A>
+                                       for Galactic extinction) in nnomggies
+                                       (PSFFLUXi) (G2)
+ 1700-1711  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?3.63uJy" TARGET="explain">3.63uJy</A>  Fz        ?=-<A HREF="#sRM3.4">9999 PSF flux in z band (not corrected</A>
+                                       for Galactic extinction) in nnomggies
+                                       (PSFFLUXz) (G2)
+ 1713-1722  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?3.63uJy" TARGET="explain">3.63uJy</A>  IVFu      <A HREF="#sRM3.4">Inverse variance of PSF flux in u band</A>
+                                       in nnomggies (IVAR_PSFFLUXu) (G2)
+ 1724-1733  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?3.63uJy" TARGET="explain">3.63uJy</A>  IVFg      <A HREF="#sRM3.4">Inverse variance of PSF flux in g band</A>
+                                       in nnomggies (IVAR_PSFFLUXg) (G2)
+ 1735-1744  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?3.63uJy" TARGET="explain">3.63uJy</A>  IVFr      <A HREF="#sRM3.4">Inverse variance of PSF flux in r band</A>
+                                       in nnomggies (IVAR_PSFFLUXr) (G2)
+ 1746-1755  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?3.63uJy" TARGET="explain">3.63uJy</A>  IVFi      <A HREF="#sRM3.4">Inverse variance of PSF flux in i band</A>
+                                       in nnomggies (IVAR_PSFFLUXi) (G2)
+ 1757-1766  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?3.63uJy" TARGET="explain">3.63uJy</A>  IVFz      Inverse variance of PSF flux in z band
+                                       in nnomggies (G2) (IVAR_PSFFLUXz)
+ 1768-1779  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      umag      ?=-9999 PSF magnitude in u band (not
+                                       corrected for Galactic extinction)
+                                        (PSFMAGu)
+ 1781-1792  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      gmag      ?=-9999 PSF magnitude in g band (not
+                                       corrected for Galactic extinction)
+                                        (PSFMAGg)
+ 1794-1805  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      rmag      ?=-9999 PSF magnitude in r band (not
+                                       corrected for Galactic extinction)
+                                        (PSFMAGr)
+ 1807-1818  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      imag      ?=-9999 PSF magnitude in i band (not
+                                       corrected for Galactic extinction)
+                                        (PSFMAGi)
+ 1820-1831  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      zmag      ?=-9999 PSF magnitude in z band (not
+                                       corrected for Galactic extinction)
+ 1833-1844  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_umag    ?=-9999 error in PSF magnitude in u band
+                                        (ERR_PSFMAGu)
+ 1846-1857  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_gmag    ?=-9999 error in PSF magnitude in g band
+                                        (ERR_PSFMAGg)
+ 1859-1870  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_rmag    ?=-9999 error in PSF magnitude in r band
+                                        (ERR_PSFMAGr)
+ 1872-1883  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_imag    ?=-9999 error in PSF magnitude in i band
+                                        (ERR_PSFMAGi)
+ 1885-1896  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_zmag    ?=-9999 error in PSF magnitude in z band
+                                        (ERR_PSFMAGz)
+ 1898-1909  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?3.63uJy" TARGET="explain">3.63uJy</A>  Fut       ?=-9999 Target flux in the u band
+                                       (not corrected for Galactic extinction)
+                                       in nnomggies (G2) (TARGET_FLUXu)
+ 1911-1922  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?3.63uJy" TARGET="explain">3.63uJy</A>  Fgt       ?=-9999 Target flux in the g band
+                                       (not corrected for Galactic extinction)
+                                       in nnomggies (G2) (TARGET_FLUXg)
+ 1924-1935  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?3.63uJy" TARGET="explain">3.63uJy</A>  Frt       ?=-9999 Target flux in the r band
+                                        (not corrected for Galactic extinction)
+                                        in nnomggies (G2) (TARGET_FLUXr)
+ 1937-1948  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?3.63uJy" TARGET="explain">3.63uJy</A>  Fit       ?=-9999 Target flux in the i band
+                                        (not corrected for Galactic extinction)
+                                        in nnomggies (G2) (TARGET_FLUXi)
+ 1950-1961  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?3.63uJy" TARGET="explain">3.63uJy</A>  Fzt       ?=-9999 Target flux in the z band
+                                        (not corrected for Galactic extinction)
+                                        in nnomggies (G2) (TARGET_FLUXz)
+ 1963-1975  F13.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      iMAG      ? <A HREF="#sRM3.1">Absolute i magnitude (1)</A>
+ 1977-1989  F13.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      D(g-i)    ? <A HREF="#sRM3.9">{Delta}(g-i)=(g-i)-&lt;(g-i)&gt;<SUB>redshift</SUB></A>
+                                       (Galactic extinction corrected)
+                                       (DGMI) (G7)
+ 1991-1998  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      Extu      ? <A HREF="#sRM3.10">Galactic extinction in u band</A>
+                                       (EXTINCTIONu) (G8)
+ 2000-2007  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      Extg      ? <A HREF="#sRM3.10">Galactic extinction in g band</A>
+                                       (EXTINCTIONg) (G8)
+ 2009-2016  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      Extr      ? <A HREF="#sRM3.10">Galactic extinction in r band</A>
+                                       (EXTINCTIONr) (G8)
+ 2018-2025  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      Exti      ? <A HREF="#sRM3.10">Galactic extinction in i band</A>
+                                       (EXTINCTIONi) (G8)
+ 2027-2034  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      Extz      ? <A HREF="#sRM3.10">Galactic extinction in z band</A>
+                                       (EXTINCTIONz) (G8)
+ 2036-2043  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      ExtuR     <A HREF="#sRM3.11">Recalculated Galactic extinction in u</A>
+                                       (EXTINCTION_RECALu) (G9)
+ 2045-2052  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      ExtgR     <A HREF="#sRM3.11">Recalculated Galactic extinction in g</A>
+                                       (EXTINCTION_RECALg) (G9)
+ 2054-2061  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      ExtrR     <A HREF="#sRM3.11">Recalculated Galactic extinction in r</A>
+                                       (EXTINCTION_RECALr) (G9)
+ 2063-2070  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      ExtiR     <A HREF="#sRM3.11">Recalculated Galactic extinction in i</A>
+                                       (EXTINCTION_RECALi) (G9)
+ 2072-2079  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      ExtzR     <A HREF="#sRM3.11">Recalculated Galactic extinction in z</A>
+                                       (EXTINCTION_RECALz) (G9)
+ 2081-2087  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%5bcm-2%5d" TARGET="explain">[cm-2]</A>   logNHI    logarithm of Galactic HI column density
+                                        (HI_GAL)
+ 2089-2091  I3    ---      Varmatch  Flag for variability information
+                                       (0 if not available) (VAR_MATCHED)
+ 2093-2099  F7.2  ---      Varchi2   Reduced {chi}<SUP>2</SUP> when the light curve is
+                                       fit with a constant (VAR_CHI2)
+ 2101-2107  F7.5  ---      VarA      Structure function parameter A as defined
+                                       in Palanque-Delabrouille et al.
+                                       (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2011A%26A...530A.122P">2011A&A...530A.122P</A>) (VAR_A)
+ 2109-2116  F8.5  -        Vargamma  Structure function parameter {gamma} as
+                                       defined in Palanque-Delabrouille et al.
+                                       (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2011A%26A...530A.122P">2011A&A...530A.122P</A>) (VAR_GAMMA)
+ 2118-2123  F6.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%5bct/s%5d" TARGET="explain">[ct/s]</A>   logXct    log RASS full band count rate
+                                       (RASS_COUNTS)
+ 2125-2131  F7.4  ---      SNR(X)    S/N of the RASS count rate
+                                        (RASS<SUB>COUNTS</SUB>SNR)
+ 2133-2139  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   sepX      SDSS-RASS separation in arcsec
+                                        (SDSS2ROSAT_SEP)
+ 2141-2146  I6    ---      NDetX     Number of detections in XMM-Newton
+                                        (N<SUB>DETECTION</SUB>XMM)
+ 2148-2158  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    F0.2-12   Total flux (0.2-12keV) from XMM-Newton
+                                       computed from the longest observation
+                                       FLUX02<SUB>12KEV</SUB>SGL)
+ 2160-2170  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   e_F0.2-12  Error in total flux (0.2-12keV) from
+                                       XMM-NewtonR<SUB>FLUX02</SUB>12KEV_SGL)
+ 2172-2182  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    F0.2-2    Soft (0.2-2keV) X-ray flux from
+                                       XMM-Newton (FLUX02_2KEV)
+ 2184-2194  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    e_F0.2-2  Error in soft (0.2-2keV) X-ray flux from
+                                       XMM-Newton (ERR<SUB>FLUX02</SUB>2KEV)
+ 2196-2206  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    F4.5-12   Hard (4.5-12keV) X-ray flux from
+                                       XMM-Newton (FLUX2_12KEV)
+ 2208-2218  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>   e_F4.5-12  Error in hard (4.5-12keV) X-ray flux
+                                       from XMM-Newton (ERR<SUB>FLUX2</SUB>12KEV)
+ 2220-2230  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>    F0.2-12W  Total weighted average flux (0.2-12keV)
+                                       from XMM-Newton (FLUX02_12KEV)
+ 2232-2242  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>  e_F0.2-12W  Error in total flux (0.2-12keV)
+                                       from XMM-Newton (ERR<SUB>FLUX02</SUB>12KEV)
+ 2244-2254  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?10-7W" TARGET="explain">10-7W</A>    L0.2-12   <A HREF="#sRM3.2">Total X-ray luminosity (0.2-12keV) from</A>
+                                       XMM-Newton using the longest observation
+                                        (LUM02<SUB>2KEV</SUB>SGL) (2)
+ 2256-2266  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?10-7W" TARGET="explain">10-7W</A>    L0.5-2    <A HREF="#sRM3.2">Soft (0.2-2keV) X-ray luminosity from</A>
+                                       XMM-Newton (LUM05_2KEV) (2)
+ 2268-2278  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?10-7W" TARGET="explain">10-7W</A>    L4.5-12   <A HREF="#sRM3.2">Hard (4.5-12keV) X-ray luminosity from</A>
+                                       XMM-Newton (LUM2_12KEV) (2)
+ 2280-2290  E11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?10-7W" TARGET="explain">10-7W</A>    L0.2-2W   <A HREF="#sRM3.2">Total X-ray luminosity (0.2-12keV) from</A>
+                                       XMM-Newton using weighted average flux
+                                       (LUM02_2KEV) (2)
+ 2296-2297  I2    ---     f_F4.5-12  [0/1]?=-1 Flag for upper limit of hard
+                                       X-ray flux (LUMX2<SUB>10</SUB>UPPER)
+ 2299-2304  F6.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   sepXM     ?=0 SDSS-XMM-Newton separation in arcsec
+                                       (SDSS2XMM_SEP)
+    2306  I1    ---      GALEX     GALEX match (GALEX_MATCHED)
+ 2308-2316  F9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?3.63uJy" TARGET="explain">3.63uJy</A>  FFUV      ?=0 FUV flux (GALEX) (FUV)
+ 2318-2327  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?3.63uJy-2" TARGET="explain">3.63uJy-2</A> IVFUV    ?=0 Inverse variance of FUV flux
+                                       (in nnomggies<SUP>-2</SUP>) (FUV_IVAR)
+ 2329-2337  F9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?3.63uJy" TARGET="explain">3.63uJy</A>  FNUV      ?=0 NUV flux (GALEX) (NUV)
+ 2339-2348  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?3.63uJy-2" TARGET="explain">3.63uJy-2</A> IVNUV    ?=0 Inverse variance of NUV flux
+                                       (in nnomggies<SUP>-2</SUP>) (NUV_IVAR)
+ 2350-2356  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      Jmag      ?=0 2MASS J magnitude (Vega) (JMAG)
+ 2358-2367  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_Jmag    ?=0 Error in J magnitude (Vega)
+                                       (ERR_JMAG)
+ 2369-2378  F10.4 ---      SNR(J)    ?=0 J-band S/N (JSNR)
+    2380  I1    ---      f_Jmag    ?=0 J-band photometry flag (JRDFLAG)
+ 2382-2388  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      Hmag      ?=0 2MASS H magnitude (Vega) (HMAG)
+ 2390-2399  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_Hmag    ?=0 Error in H magnitude (ERR_HMAG)
+ 2401-2410  F10.4 ---      SNR(H)    ?=0 H-band S/N (HSNR)
+    2412  I1    ---      f_Hmag    ?=0 H-band photometry flag (HRDFLAG)
+ 2414-2420  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      Kmag      ?=0 2MASS K magnitude (Vega) (KMAG)
+ 2422-2431  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_Kmag    ?=0 Error in K magnitude (ERR_KMAG)
+ 2433-2442  F10.4 ---      SNR(K)    ?=0 K-band S/N (KSNR)
+    2444  I1    ---      f_Kmag    ?=0 K-band photometry flag (KRDFLAG)
+ 2446-2452  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   Sep2      ?=0 SDSS-2MASS separation in arcsec
+                                       (SDSS2MASS_SEP)
+ 2454-2460  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      W1mag     ?=0 WISE W1 magnitude (Vega) (W1MAG)
+ 2462-2470  F9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_W1mag   ?=0 Error in W1 magnitude (ERR_W1MAG)
+ 2472-2478  F7.4  ---      W1SNR     ?=0 S/N in W1 band (W1SNR)
+ 2480-2486  F7.4  ---      W1chi2    ?=0 {chi}<SUP>2</SUP> in W1 band (W1CHI2)
+ 2488-2494  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      W2mag     ?=0 WISE W2 magnitude (Vega) (W2MAG)
+ 2496-2504  F9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_W2mag   ?=0 Error in W2 magnitude (ERR_W2MAG)
+ 2506-2513  F8.4  ---      W2SNR     ?=0 S/N in W2 band (W2SNR)
+ 2515-2521  F7.4  ---      W2chi2    ?=0 {chi}<SUP>2</SUP> in W2 band (W2CHI2)
+ 2523-2529  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      W3mag     ?=0 WISE W3 magnitude (Vega) (W3MAG)
+ 2531-2539  F9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_W3mag   ?=0 Error in W3 magnitude
+                                       (ERR_W3MAG)
+ 2541-2548  F8.4  ---      W3SNR     ?=0 S/N in W3 band (W3SNR)
+ 2550-2557  F8.4  ---      W3chi2    ?=0 {chi}<SUP>2</SUP> in W3 band (W3CHI2)
+ 2559-2565  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      W4mag     ?=0 WISE W4 magnitude (Vega) (W4MAG)
+ 2567-2575  F9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_W4mag   ?=0 Error in W4 magnitude
+                                       (ERR_W4MAG)
+ 2577-2583  F7.4  ---      W4SNR     S/N in W4 band (W4SNR)
+ 2585-2587  F3.1  ---      W4chi2    {chi}<SUP>2</SUP> in W4 band (W4CHI2)
+ 2589-2592  A4    ---      CCflags   WISE contamination and confusion flag
+                                       (CC_FLAGS)
+ 2594-2597  A4    ---      PHflag    WISE photometric quality flag (PH_FLAG)
+ 2599-2604  F6.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   sepW      SDSS-WISE separation in arcsec
+                                       (SDSS2WISE_SEP)
+    2606  I1    ---      UKIDSS    UKIDSS Matched (UKIDSS_MATCHED)
+ 2608-2619  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?W/m2/Hz" TARGET="explain">W/m2/Hz</A>  FY        Y-band flux density from UKIDSS (YFLUX)
+ 2621-2632  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?W/m2/Hz" TARGET="explain">W/m2/Hz</A>  e_FY      ?=0 Error in Y-band density flux from
+                                       UKIDSS (YFLUX_ERR)
+ 2634-2645  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?W/m2/Hz" TARGET="explain">W/m2/Hz</A>  FJ        ?=0 J-band flux density from UKIDSS
+                                       (JFLUX)
+ 2647-2658  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?W/m2/Hz" TARGET="explain">W/m2/Hz</A>  e_FJ      ?=0 Error in J-band flux density from
+                                       UKIDSS (JFLUX_ERR)
+ 2660-2671  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?W/m2/Hz" TARGET="explain">W/m2/Hz</A>  FH        ?=0 H-band flux density from UKIDSS
+                                       (HFLUX)
+ 2673-2684  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?W/m2/Hz" TARGET="explain">W/m2/Hz</A>  e_FH      ?=0 Error in H-band flux density from
+                                       UKIDSS (HFLUX_ERR)
+ 2686-2697  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?W/m2/Hz" TARGET="explain">W/m2/Hz</A>  FK        ?=0 K-band flux density from UKIDSS
+                                       (KFLUX)
+ 2699-2710  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?W/m2/Hz" TARGET="explain">W/m2/Hz</A>  e_FK      ?=0 Error in K-band flux density from
+                                       UKIDSS (KFLUX_ERR)
+ 2712-2713  I2    ---      FIRST     FIRST matched (FIRST_MATCHED)
+ 2715-2724  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJy" TARGET="explain">mJy</A>      F1p       ?=0 FIRST peak flux density at 20 cm
+                                       expressed in mJy (FIRST_FLUX)
+ 2726-2735  F10.4 ---      SNR(1)    ?=0 S/N of the FIRST flux density
+                                       (FIRST_SNR)
+ 2737-2742  F6.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   sep1      ?=0 SDSS-FIRST separation in arcsec
+                                       (SDSS2FIRST_SEP)
+<HR>
+<A NAME="sRM3.1"><B>Note (1)</B>: [z=2](H0=67.8km/s/Mpc, {OMEGA}<SUB>M</SUB>=0.308, {OMEGA}_{lambda}=0.692,
+    {alpha}<SUB>v</SUB>=-0.5 (MI)
+<A NAME="sRM3.2"><B>Note (2)</B>: using Z_VI and H0=70km/s/Mpc, {OMEGA}<SUB>M</SUB>=0.3, {OMEGA}_{lambda}=0.7
+
+<HR>
+
+<A NAME="sRM2.2"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.74"> dr12qbal.dat</A>
+<HR>
+   Bytes Format Units   Label       Explanations
+<HR>
+   1- 18  A18   ---     SDSS        <A HREF="#sRM3.3">SDSS-DR12 designation HHMMSS.ss+DDMMSS.s</A>
+                                       (J2000) corrected by CDS
+                                       (SDSS_NAMEc) (G1)
+  20- 37  A18   ---     SDSSo       <A HREF="#sRM3.3">SDSS-DR12 designation HHMMSS.ss+DDMMSS.s</A>
+                                       (J2000) (SDSS_NAME) (G1)
+  39- 48  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     RAdeg       Right Ascension (J2000) (RA)
+  50- 59  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEdeg       Declination (J2000) (DEC)
+  61- 70  I10   ---     THINGID     Thing_ID (unique SDSS source identifier)
+                                       (THING_ID)
+  72- 75  I4    ---     Plate       Spectroscopic Plate number (PLATE)
+  77- 81  I5    ---     MJD         Spectroscopic MJD (MJD)
+  83- 86  I4    ---     Fiber       Spectroscopic Fiber number (FIBERID)
+  88- 95  F8.6  ---     z.v         Redshift from visual inspection (Z_VI)
+  97-105  F9.6  ---     z.b         ?=-1 Redshift from BOSS pipeline (Z_PIPE)
+ 107-116  F10.6 ---     e_z.b       []?=-1 Error on BOSS pipeline redshift
+                                       (error codes -4, -5, -6) (ERR_ZPIPE)
+ 118-120  I3    ---     f_z.b       <A HREF="#sRM3.5">ZWARNING flag (ZWARNING) (G3)</A>
+ 122-130  F9.6  ---     z.PCA       ?=-<A HREF="#sRM3.6">1 PCA redshift (Z_PCA) (G4)</A>
+ 132-140  F9.6  ---     e_z.PCA     ?=-1 Error on PCA redshift (ERR_ZPCA)
+ 142-143  I2    ---     Morph       [0/1]?=-1 SDSS morphology flag
+                                       0=point source 1=extended (SDSS_MORPHO)
+ 145-158  I14   ---     Btarg1      <A HREF="#sRM3.7">BOSS target flag for main survey</A>
+                                       (BOSS_TARGET1) (G5)
+ 160-178  I19   ---     Atarg1      <A HREF="#sRM3.7">BOSS target flag for ancillary programs</A>
+                                       (ANCILLARY_TARGET1) (G5)
+ 180-196  I17   ---     Atarg2      <A HREF="#sRM3.7">BOSS target flag for ancillary programs</A>
+                                       (ANCILLARY_TARGET2) (G5)
+ 198-210  I13   ---     eBtarg0     Target selection flag for eBOSS pilot
+                                       survey  (EBOSS_TARGET0)
+ 212-222  F11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?3.63uJy" TARGET="explain">3.63uJy</A> Fu          <A HREF="#sRM3.4">PSF flux in the u band (not corrected for</A>
+                                       Galactic extinction) in nnomggies unit
+                                       (PSFFLUXu) (G2)
+ 224-234  F11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?3.63uJy" TARGET="explain">3.63uJy</A> Fg          <A HREF="#sRM3.4">PSF flux in the g band (not corrected for</A>
+                                       Galactic extinction) in nnomggies unit
+                                       (PSFFLUXg) (G2)
+ 236-246  F11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?3.63uJy" TARGET="explain">3.63uJy</A> Fr          <A HREF="#sRM3.4">PSF flux in the r band (not corrected for</A>
+                                       Galactic extinction) in nnomggies unit
+                                       (PSFFLUXr) (G2)
+ 248-258  F11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?3.63uJy" TARGET="explain">3.63uJy</A> Fi          <A HREF="#sRM3.4">PSF flux in the i band (not corrected for</A>
+                                       Galactic extinction) in nnomggies unit
+                                       (PSFFLUXi) (G2)
+ 260-270  F11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?3.63uJy" TARGET="explain">3.63uJy</A> Fz          <A HREF="#sRM3.4">PSF flux in the z band (not corrected for</A>
+                                       Galactic extinction) in nnomggies unit
+                                       (PSFFLUXz) (G2)
+ 272-281  F10.6 ---     IVFu        Inverse variance of u flux (IVAR_PSFFLUXu)
+ 283-292  F10.6 ---     IVFg        Inverse variance of g flux (IVAR_PSFFLUXg)
+ 294-303  F10.6 ---     IVFr        Inverse variance of r flux (IVAR_PSFFLUXr)
+ 305-314  F10.6 ---     IVFi        Inverse variance of i flux (IVAR_PSFFLUXi)
+ 316-325  F10.6 ---     IVFz        Inverse variance of z flux (IVAR_PSFFLUXz)
+ 327-335  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     umag        PSF magnitude in u band (not corrected for
+                                       Galactic extinction) (PSFMAGu)
+ 337-345  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     gmag        PSF magnitude in g band (not corrected for
+                                       Galactic extinction) (PSFMAGg)
+ 347-355  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     rmag        PSF magnitude in r band (not corrected for
+                                       Galactic extinction) (PSFMAGr)
+ 357-365  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     imag        PSF magnitude in i band (not corrected for
+                                       Galactic extinction) (PSFMAGi)
+ 367-375  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     zmag        PSF magnitude in z band (not corrected for
+                                       Galactic extinction) (PSFMAGz)
+ 377-386  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_umag      Error in u PSF magnitude (ERR_PSFMAGu)
+ 388-397  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_gmag      Error in g PSF magnitude (ERR_PSFMAGg)
+ 399-408  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_rmag      Error in r PSF magnitude (ERR_PSFMAGr)
+ 410-419  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_imag      Error in i PSF magnitude (ERR_PSFMAGi)
+ 421-430  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_zmag      Error in z PSF magnitude (ERR_PSFMAGz)
+ 432-439  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Extu        <A HREF="#sRM3.10">Galactic extinction in u band</A>
+                                        (EXTINCTIONu) (G8)
+ 441-448  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Extg        <A HREF="#sRM3.10">Galactic extinction in g band</A>
+                                        (EXTINCTIONg) (G8)
+ 450-457  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Extr        <A HREF="#sRM3.10">Galactic extinction in r band</A>
+                                        (EXTINCTIONr) (G8)
+ 459-466  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Exti        <A HREF="#sRM3.10">Galactic extinction in i band</A>
+                                        (EXTINCTIONi) (G8)
+ 468-475  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Extz        <A HREF="#sRM3.10">Galactic extinction in z band</A>
+                                        (EXTINCTIONz) (G8)
+ 477-485  F9.6  ---     SNRspec     Median signal-to-noise ratio per pixel
+                                       over the whole spectrum (SNR_SPEC)
+ 487-496  F10.6 ---     SNR1700     Median signal-to-noise ratio per pixel in
+                                      the window 1650-1750&Aring; (rest frame)
+                                       (SNR_1700)
+ 498-506  F9.6  ---     SNR3000     Median signal-to-noise ratio per pixel in
+                                      the window 2950-3050&Aring; (rest frame)
+                                       (SNR_3000)
+ 508-517  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    BI(CIVt)    ?=-1 Balnicity Index (BI) (BI_CIV)
+ 519-528  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    e_BI(CIVt)  ?=-1 Error on Balnicity index (ERR<SUB>BI</SUB>CIV)
+ 530-531  I2    ---     N2t         Number of troughs wider than 2000km/s
+                                       (NCIV_2000)
+ 533-542  F10.4 ---     Vmin2t1     Minimum velocity of each detected
+                                       absorption trough (VMIN<SUB>CIV</SUB>2000_1)
+ 544-553  F10.4 ---     Vmin2t2     Minimum velocity of each detected
+                                       absorption trough (VMIN<SUB>CIV</SUB>2000_2)
+ 555-564  F10.4 ---     Vmin2t3     Minimum velocity of each detected
+                                       absorption trough (VMIN<SUB>CIV</SUB>2000_3)
+ 566-575  F10.4 ---     Vmin2t4     Minimum velocity of each detected
+                                       absorption trough (VMIN<SUB>CIV</SUB>2000_4)
+ 577-586  F10.4 ---     Vmin2t5     Minimum velocity of each detected
+                                       absorption trough (VMIN<SUB>CIV</SUB>2000_5)
+ 588-597  F10.4 ---     Vmax2t1     Maximum velocity of each detected
+                                       absorption trough (VMAX<SUB>CIV</SUB>2000_1)
+ 599-608  F10.4 ---     Vmax2t2     Maximum velocity of each detected
+                                       absorption trough (VMAX<SUB>CIV</SUB>2000_2)
+ 610-619  F10.4 ---     Vmax2t3     Maximum velocity of each detected
+                                       absorption trough (VMAX<SUB>CIV</SUB>2000_3)
+ 621-630  F10.4 ---     Vmax2t4     Maximum velocity of each detected
+                                       absorption trough (VMAX<SUB>CIV</SUB>2000_4)
+ 632-641  F10.4 ---     Vmax2t5     Maximum velocity of each detected
+                                       absorption trough (VMAX<SUB>CIV</SUB>2000_5)
+ 643-652  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    posmin2t1   Position of the minimum of each absorption
+                                       trough (POSMIN<SUB>CIV</SUB>2000_1)
+ 654-663  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    posmin2t2   Position of the minimum of each absorption
+                                       trough (POSMIN<SUB>CIV</SUB>2000_2)
+ 665-674  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    posmin2t3   Position of the minimum of each absorption
+                                       trough (POSMIN<SUB>CIV</SUB>2000_3)
+ 676-685  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    posmin2t4   Position of the minimum of each absorption
+                                       trough (POSMIN<SUB>CIV</SUB>2000_4)
+ 687-696  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    posmin2t5   Position of the minimum of each absorption
+                                       trough (POSMIN<SUB>CIV</SUB>2000_5)
+ 698-707  F10.4 ---     Fmin2t1     Normalized flux density at the minimum of
+                                       each absorption trough (FMIN<SUB>CIV</SUB>2000_1)
+ 709-718  F10.4 ---     Fmin2t2     Normalized flux density at the minimum of
+                                       each absorption trough (FMIN<SUB>CIV</SUB>2000_2)
+ 720-729  F10.4 ---     Fmin2t3     Normalized flux density at the minimum of
+                                       each absorption trough (FMIN<SUB>CIV</SUB>2000_3)
+ 731-740  F10.4 ---     Fmin2t4     Normalized flux density at the minimum of
+                                       each absorption trough (FMIN<SUB>CIV</SUB>2000_4)
+ 742-751  F10.4 ---     Fmin2t5     Normalized flux density at the minimum of
+                                       each absorption trough (FMIN<SUB>CIV</SUB>2000_5)
+ 753-762  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    AI(CIVt)    ?=-1 Absorption index (AI) (AI_CIV)
+ 764-773  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    e_AI(CIVt)  ?=-1 Error on absorption index
+                                        (ERR<SUB>AI</SUB>CIV)
+ 775-777  I3    ---     N.45t       ?=-1 Number of absorption trough wider
+                                       than 450km/s (NCIV_450)
+ 778-788  F11.4 ---     Vmin.45t1   ?=-1 Minimum velocity of first detected
+                                         absorption trough (VMIN<SUB>CIV</SUB>450)
+ 789-964 16F11.4 ---    Vmin.45to   ?=-1 Minimum velocity of others detected
+                                       absorption troughs (VMIN<SUB>CIV</SUB>450)
+ 965-975  F11.4 ---     Vmax.45t1   ?=-1 Maximum velocity of first detected
+                                       absorption trough (VMAX<SUB>CIV</SUB>450)
+ 976-1151 16F11.4 ---    Vmax.45to   ?=-1 Maximum velocity of other detected
+                                       absorption troughs (VMAX<SUB>CIV</SUB>450)
+ 1152-1162  F11.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>   posmin.45t1  ?=-1 Position of the minimum of first
+                                       absorption trough (POSMIN<SUB>CIV</SUB>450)
+ 1163-1338 16F11.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>  posmin.45to  ?=-1 Position of the minimum of other
+                                       absorption troughs (POSMIN<SUB>CIV</SUB>450)
+ 1339-1349  F11.4 ---     Fmin.45t1   ?=-1 Normalized flux density at the
+                                       minimum of first absorption trough
+                                       (FMIN<SUB>CIV</SUB>450)
+ 1350-1525 16F11.4 ---    Fmin.45to   ?=-1 Normalized flux density at the
+                                       minimum of other absorption troughs
+                                       (FMIN<SUB>CIV</SUB>450)
+<HR>
+
+<A NAME="sRM2.3"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.76"> dr12qsp.dat</A> <A HREF="#sRM-F.80"> dr12qspb.dat</A>
+<HR>
+   Bytes Format Units     Label   Explanations
+<HR>
+   1- 18  A18   ---       SDSS    <A HREF="#sRM3.3">SDSS-DR12 designation HHMMSS.ss+DDMMSS.s</A>
+                                   (J2000) corrected by CDS (SDSS_NAMEc) (G1)
+  20- 37  A18   ---       SDSSo   <A HREF="#sRM3.3">SDSS-DR12 designation HHMMSS.ss+DDMMSS.s</A>
+                                   (J2000) (SDSS_NAME) (G1)
+  39- 48  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>       RAdeg   Right Ascension (J2000) (RA)
+  50- 59  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>       DEdeg   Declination (J2000) (DEC)
+  61- 70  I10   ---      THINGID  Thing_ID (THING_ID)
+  72- 75  I4    ---       Plate   Spectroscopic Plate number (PLATE)
+  77- 81  I5    ---       MJD     Spectroscopic MJD (MJD)
+  83- 86  I4    ---       Fiber   Spectroscopic Fiber number (FIBERID)
+  88- 95  F8.6  ---       z.v     Redshift from visual inspection (Z_VI)
+  97-105  F9.6  ---       z.b     ?=-1 Redshift from BOSS pipeline (Z_PIPE)
+ 107-116  F10.6 ---       e_z.b   []?=-1 Error on BOSS pipeline redshift
+                                   (error codes -4, -5, -6) (ERR_ZPIPE)
+ 118-120  I3    ---       f_z.b   <A HREF="#sRM3.6">ZWARNING flag|(ZWARNING) (G4)</A>
+ 122-123  I2    ---       Morph   SDSS morphology flag
+                                   0=point source 1=extended|(SDSS_MORPHO)
+ 125-138  I14   ---       Btarg1  BOSS target flag for main survey
+                                   (BOSS_TARGET1)
+ 140-158  I19   ---       Atarg1  BOSS target flag for ancillary programs
+                                   (ANCILLARY_TARGET1)
+ 160-178  I19   ---       Atarg2  BOSS target flag for ancillary programs
+                                   (ANCILLARY_TARGET2)
+ 180-189  I10   ---      eBtarg0  Target selection flag for eBOSS pilot survey
+                                   (EBOSS_TARGET0)
+     191  I1    ---       BAL-VI  BAL flag from visual inspection|(BAL<SUB>FLAG</SUB>VI)
+ 193-211  A19   ---       objID   SDSS Object Identification Number|(OBJ_ID)
+ 213-223  F11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?3.63uJy" TARGET="explain">3.63uJy</A>   Fu      ?=<A HREF="#sRM3.4">0 PSF flux in u band (not corrected</A>
+                                   for Galactic extinction)
+                                   in nnomggies (PSFFLUXu)(G2)
+ 225-235  F11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?3.63uJy" TARGET="explain">3.63uJy</A>   Fg      ?=<A HREF="#sRM3.4">0 PSF flux in g band (not corrected</A>
+                                   for Galactic extinction)
+                                   in nnomggies (PSFFLUXg)(G2)
+ 237-247  F11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?3.63uJy" TARGET="explain">3.63uJy</A>   Fr      ?=<A HREF="#sRM3.4">0 PSF flux in r band (not corrected</A>
+                                   for Galactic extinction)
+                                   in nnomggies (PSFFLUXr)(G2)
+ 249-259  F11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?3.63uJy" TARGET="explain">3.63uJy</A>   Fi      ?=<A HREF="#sRM3.4">0 PSF flux in i band (not corrected</A>
+                                   for Galactic extinction)
+                                   in nnomggies (PSFFLUXi)(G2)
+ 261-271  F11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?3.63uJy" TARGET="explain">3.63uJy</A>   Fz      ?=<A HREF="#sRM3.4">0 PSF flux in z band (not corrected</A>
+                                   for Galactic extinction)
+                                   in nnomggies (PSFFLUXz)(G2)
+ 273-282  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?3.63uJy" TARGET="explain">3.63uJy</A>   IVFu    <A HREF="#sRM3.4">Inverse variance of PSF flux in u band</A>
+                                   in nnomggies (IVAR_PSFFLUXu) (G2)
+ 284-293  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?3.63uJy" TARGET="explain">3.63uJy</A>   IVFg    <A HREF="#sRM3.4">Inverse variance of PSF flux in g band</A>
+                                   in nnomggies (IVAR_PSFFLUXg) (G2)
+ 295-304  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?3.63uJy" TARGET="explain">3.63uJy</A>   IVFr    <A HREF="#sRM3.4">Inverse variance of PSF flux in r band</A>
+                                   in nnomggies (IVAR_PSFFLUXr) (G2)
+ 306-315  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?3.63uJy" TARGET="explain">3.63uJy</A>   IVFi    <A HREF="#sRM3.4">Inverse variance of PSF flux in i band</A>
+                                   in nnomggies (IVAR_PSFFLUXi) (G2)
+ 317-326  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?3.63uJy" TARGET="explain">3.63uJy</A>   IVFz    Inverse variance of PSF flux in z band
+                                   in nnomggies (G2) (IVAR_PSFFLUXz)
+ 328-336  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>       umag    PSF magnitude in u band (not corrected for
+                                   Galactic extinction) (PSFMAGu)
+ 338-346  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>       gmag    PSF magnitude in g band (not corrected for
+                                   Galactic extinction) (PSFMAGg)
+ 348-356  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>       rmag    PSF magnitude in r band (not corrected for
+                                   Galactic extinction) (PSFMAGr)
+ 358-366  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>       imag    PSF magnitude in i band (not corrected for
+                                   Galactic extinction) (PSFMAGi)
+ 368-376  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>       zmag    PSF magnitude in z band (not corrected for
+                                   Galactic extinction) (PSFMAGz)
+ 378-386  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>       e_umag  Error in PSF magnitude in u band (ERR_PSFMAGu)
+ 388-396  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>       e_gmag  Error in PSF magnitude in g band (ERR_PSFMAGg)
+ 398-406  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>       e_rmag  Error in PSF magnitude in r band (ERR_PSFMAGr)
+ 408-416  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>       e_imag  Error in PSF magnitude in i band (ERR_PSFMAGi)
+ 418-426  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>       e_zmag  Error in PSF magnitude in z band (ERR_PSFMAGz)
+ 428-436  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>       Extu    <A HREF="#sRM3.10">Galactic extinction in u band</A>
+                                   (EXTINCTIONu) (G8)
+ 438-446  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>       Extg    <A HREF="#sRM3.10">Galactic extinction in g band</A>
+                                   (EXTINCTIONg) (G8)
+ 448-456  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>       Extr    <A HREF="#sRM3.10">Galactic extinction in r band</A>
+                                   (EXTINCTIONr) (G8)
+ 458-466  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>       Exti    <A HREF="#sRM3.10">Galactic extinction in i band</A>
+                                   (EXTINCTIONi) (G8)
+ 468-476  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>       Extz    <A HREF="#sRM3.10">Galactic extinction in z band</A>
+                                   (EXTINCTIONz) (G8)
+<HR>
+
+<A NAME="sRM99.2"><B>Global notes</B>:
+
+<A NAME="sRM3.3"><B>Note (G1)</B>: Some SDSS names were erroneous. The corrected names have been
+  added by CDS.
+<A NAME="sRM3.4"><B>Note (G2)</B>: In SDSS-III, we express all fluxes in terms of "nnomggies",
+  which are a convenient linear unit. These quantities are related to
+  standard AB magnitudes: an object with flux F given  in nMgy has a
+  Pogson magnitude (on AB scale) m=[22.5mag]-2.5log<SUB>10</SUB>F. A flux of 1Mgy
+  is therefore close to 3631Jy, and 1nMgy=~3.631&#181;Jy.
+<A NAME="sRM3.5"><B>Note (G3)</B>: the "zwarning" flag is made of the following bits:
+     1 [0] = sky fiber
+     2 [1] = too little wavelength coverage
+     4 [2] = chi-squared of best fit is too close to that of second best
+     8 [3] = synthetic spectrum is negative
+    16 [4] = fraction of points more than 5{sigma} away from best model
+              is too large (&gt;5%)
+    32 [5] = chi-squared minimum at edge of the redshift fitting range
+    64 [6] = a QSO line exhibits negative emission (triggered only in QSO
+              spectra if CIV, CIII, MgII, H{beta}, or H{alpha} has
+              lineArea+3{sigma}(lineArea)&lt;0)
+    128 [7] = the fiber was unplugged, so no spectrum obtained
+<A NAME="sRM3.6"><B>Note (G4)</B>: Principal Component Analysis of quasar spectra, see
+    Paris et al. 2011, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/A%2BA/530/A50">J/A+A/530/A50</A>; the quality is defined
+    by Eq.(11) in Paris et al. (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2011A%26A...530A..50P">2011A&A...530A..50P</A>)
+<A NAME="sRM3.7"><B>Note (G5)</B>: See Dawson et al. <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2013AJ....145...10D">2013AJ....145...10D</A> for the description
+    of the target selection flags.
+<A NAME="sRM3.8"><B>Note (G6)</B>: quasars selected by XDQSO (eXtreme Deconvolution method):
+    a positive "uniform" flag indicates QSOs in a sufficiently
+    statistical sample for, e.g., clustering measurements.
+    1 indicates a core target, and 2 a quite complete core.
+<A NAME="sRM3.9"><B>Note (G7)</B>: {Delta}(g-i) is the difference in (g-i), Galactic extinction
+     corrected, between the quasar and the mean of the quasars at that
+     redshift. {Delta}(g-i) is not defined for quasars at either z&lt;0.12
+     or z&gt;5.12.
+<A NAME="sRM3.10"><B>Note (G8)</B>: from Schlegel et al.  (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1998ApJ...500..525S">1998ApJ...500..525S</A>)
+
+<A NAME="sRM3.11"><B>Note (G9)</B>: from Schlafly &amp; Finkbeiner (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2011ApJ...737..103S">2011ApJ...737..103S</A>)
+
+<HR>
+
+<A NAME="sRM99.3"><B>History</B>:
+    Copied at <A HREF="http://www.sdss.org/dr12/algorithms/boss-dr12-quasar-catalog/">http://www.sdss.org/dr12/algorithms/boss-dr12-quasar-catalog/</A>
+================================================================================
+<B>(End)</B>                                      Patricia Vannier [CDS]    28-Jun-2017
+
+</PRE><!-- ....wait for 1 children: %0=3182948 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

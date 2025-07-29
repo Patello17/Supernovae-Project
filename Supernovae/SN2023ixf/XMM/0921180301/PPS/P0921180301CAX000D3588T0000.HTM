@@ -1,0 +1,678 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of J/A+A/588/A103</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Sun Jul 23 17:43:44 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0921180301OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of J/A+A/588/A103 :<BR>Second ROSAT all-sky survey (2RXS) source catalog (Boller+, 2016)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0921180301OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>J/A+A/588/A103</B> Second ROSAT all-sky survey (2RXS) source catalog (Boller+, 2016)
+================================================================================
+Second ROSAT all-sky survey (2RXS) source catalogue.
+    Boller T., Freyberg M.J., Truemper J., Haberl F., Voges W., Nandra K.
+    &lt;Astron. Astrophys. 588, A103 (2016)&gt;
+    =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2016A%26A...588A.103B">2016A&A...588A.103B</A>        (SIMBAD/NED BibCode)
+================================================================================
+<B>ADC_Keywords</B>: X-ray sources ; Surveys
+
+<B>Mission_Name</B>: ROSAT
+
+<B>Keywords</B>: X-rays: catalogs
+
+
+<A NAME="sRM99.1"><B>Abstract</B>:
+    We present the second ROSAT all-sky survey source catalogue, hereafter
+    referred to as the 2RXS catalogue. This is the second publicly
+    released ROSAT catalogue of point-like sources obtained from the ROSAT
+    all-sky survey (RASS) observations performed with the
+    position-sensitive proportional counter (PSPC) between June 1990 and
+    August 1991, and is an extended and revised version of the bright and
+    faint source catalogues.
+
+    We used the latest version of the RASS processing to produce
+    overlapping X-ray images of 6.4 by 6.4 degrees sky regions. To create
+    a source catalogue, a likelihood-based detection algorithm was applied
+    to these, which accounts for the variable point-spread function (PSF)
+    across the PSPC field of view. Improvements in the background
+    determination compared to 1RXS were also implemented. X-ray control
+    images showing the source and background extraction regions were
+    generated, which were visually inspected. Simulations were performed
+    to assess the spurious source content of the 2RXS catalogue. X-ray
+    spectra and light curves were extracted for the 2RXS sources, with
+    spectral and variability parameters derived from these products. We
+    obtained about 135,000 X-ray detections in the 0.1-2.4keV energy band
+    down to a likelihood threshold of 6.5, as adopted in the 1RXS faint
+    source catalogue. Our simulations show that the expected spurious
+    content of the catalogue is a strong function of detection likelihood,
+    and the full catalogue is expected to contain about 30 per cent
+    spurious detections. A more conservative likelihood threshold of 9, on
+    the other hand, yields about 71,000 detections with a 5 per cent
+    spurious fraction.
+
+    We recommend thresholds appropriate to the scientific application.
+    X-ray images and overlaid X-ray contour lines provide an additional
+    user product to evaluate the detections visually, and we performed our
+    own visual inspections to flag uncertain detections. Intra-day
+    variability in the X-ray light curves was quantified based on the
+    normalised excess variance and a maximum amplitude variability
+    analysis. X-ray spectral fits were performed using three basic models,
+    a power law, a thermal plasma emission model, and black-body emission.
+    Thirty-two large extended regions with diffuse emission and embedded
+    point sources were identified and excluded from the present analysis.
+
+    The 2RXS catalogue provides the deepest and cleanest X-ray all-sky
+    survey catalogue in advance of eROSITA.
+
+<A NAME="sRM11.1"><B>Description</B>:
+    We have re-analysed the photon event files from the ROSAT all-sky
+    survey. The main goal was to create a catalogue of point-like sources,
+    which is referred to as the 2RXS source catalogue. We improved the
+    reliability of detections by an advanced detection algorithm and a
+    complete screening process. New data products were created to allow
+    timing and spectral analysis. Photon event files with corrected
+    astrometry and Moon rejection (RASS-3.1 processing) were made
+    available in FITS format. The 2RXS catalogue will serve as the basic
+    X-ray all-sky survey catalogue until eROSITA data become available.
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.69">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.70">&#215; <A HREF="#sRM2.1">cat2rxs.dat</A>     2696   135118   Catalogue of 135118 2RXS ROSAT sources
+<A NAME="sRM-F.71">&#215; cat2rxs.fits    2880    77858   Fits version of the catalog
+<A NAME="sRM-F.72">&#215; Ximg/*             0   135118   X images in pdf
+<A NAME="sRM-F.73">&#215; lcx/*              0   333063   X-ray light curves in pdf
+                                 (3 files for 111021 sources)
+<A NAME="sRM-F.75">&#215; spx/*              0    29388   X-ray spectra in pdf (3 files for 9796 sources)
+<HR>
+
+<A NAME="sRM13.1"><B>See also</B>:
+ <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/10">IX/10</A>   : ROSAT All-Sky Bright Source Catalogue (1RXS) (Voges+ 1999)
+ <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/29">IX/29</A>   : ROSAT All-Sky Survey Faint Source Catalog (Voges+ 2000)
+ <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/28">IX/28</A>   : ROSAT HRI Pointed Observations (1RXH) (ROSAT Team, 2000)
+ <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/30">IX/30</A>   : Second ROSAT PSPC Catalog (2RXP) (ROSAT, 2000)
+ <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/46">IX/46</A>   : XMM-Newton Serendipitous Source Catalogue 3XMM-DR5 (XMM-SSC, 2016)
+ <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/43">IX/43</A>   : 1SXPS Swift X-ray telescope point source catalogue (Evans+ 2014)
+ <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=III/235">III/235</A> : Spectroscopically Identified White Dwarfs (McCook+, 2008)
+ <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/258">VII/258</A> : Quasars and Active Galactic Nuclei (13th Ed.) (VV10) (Veron+ 2001)
+ <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/259">I/259</A>   : The Tycho-2 Catalogue (Hog+ 2000)
+ <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=V/50">V/50</A>    : Bright Star Catalogue, 5th Revised Ed. (Hoffleit+, 1991)
+ <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=V/106">V/106</A>   : Catalogue of X-ray binaries (HMXB) (Liu+ 2001)
+
+ <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/A%2BA/455/1165">J/A+A/455/1165</A> : Galactic high-mass X-ray binaries (LMXB) (Liu+ 2006)
+ <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/A%2BA/480/611">J/A+A/480/611</A>  : XMM-Newton Slew Survey catalogue, XMMSL1 (Saxton+, 2008)
+ <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/A%2BA/403/247">J/A+A/403/247</A>  : Variability in ROSAT All-Sky Survey (FUH) (Fuhrmeister+, 2003)
+ <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/A%2BA/316/147">J/A+A/316/147</A>  : Catalogue of ROSAT White Dwarfs (Fleming+ 1996)
+
+  <A HREF="http://www.atnf.csiro.au/people/pulsar/psrcat">http://www.atnf.csiro.au/people/pulsar/psrcat</A> : ATNF Home page
+  <A HREF="http://www.sdss.org">http://www.sdss.org</A> : SDSS Home page
+
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.70"> cat2rxs.dat</A>
+<HR>
+   Bytes Format Units       Label     Explanations
+<HR>
+   1- 21  A21   ---         2RXS      <A HREF="#sRM3.1">IAU name (IAU_NAME) (1)</A>
+  23- 28  I6    ---         Seq       ? Sky field number (SEQ_ID)
+  30- 32  I03   ---         IndDet    ? Source number in a certain sky field
+                                         (IND_DET)
+  34- 42  F9.2  ---         ExiML     Detection likelihood (EXI_ML)
+  44- 52  F9.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>          Cts       Background corrected source counts (CTS)
+  54- 63  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>          e_Cts     Error of the source counts (CERR)
+  65- 72  F8.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>        CRate     Source count rate (RATE)
+  74- 80  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>        e_CRate   Error of the count rate (ERATE)
+  82- 89  F8.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>           ExpTime   Source exposure time (EXPOSURE)
+  91- 99  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         RAdeg     Right ascension (J2000) (RA_DEG)
+ 101-109  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         DEdeg     Declination (J2000) (DEC_DEG)
+ 111-122  A12   ---         RAhms     Sexadecimal right ascension (J2000)
+                                         (RA_HMS)
+ 124-135  A12   ---         DEdms     Sexadecimal declination (J2000)
+                                         (DEC_DMS)
+ 137-145  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         GLON      Latitude in galactic coordinate  (LII)
+ 147-155  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         GLAT      Longitude in galactic coordinate (BII)
+ 157-165  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         Lambda    Latitude in ecliptic coordinate (LAMBDA)
+ 167-175  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         Beta      Longitude in ecliptic coordinate (BETA)
+ 177-185  F9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>         Ext       Source extent in units of image pixels
+                                         (EXT)
+ 187-193  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>         e_Ext     Error of the source extent (EXTERR)
+ 195-201  F7.2  ---         ExtML     Proability of the source extend (EXT_ML)
+ 203-208  F6.3  ---         HR1       ? <A HREF="#sRM3.2">Hardness ratio 1 value (HR_1) (2)</A>
+ 210-217  F8.3  ---         e_HR1     ? Error of HR1 (HR<SUB>1</SUB>err)
+ 219-224  F6.3  ---         HR2       ? <A HREF="#sRM3.2">Hardness ratio 2 value (HR_2) (2)</A>
+ 226-234  F9.3  ---         e_HR2     ? Error of HR2 (HR<SUB>2</SUB>err)
+     236  I1    ---         USKY      ? <A HREF="#sRM3.3">Unique flag (USKY) (3)</A>
+     238  I1    ---         Masked    [1]? Extended emission regions
+                                         (0=yes 1=no) (Masked)
+     240  I1    ---         FAll      [0]? Detection flag of nearby sources
+                                         (FLAG_all) 0=best
+ 242-244  I3    ---         Sflag     ? <A HREF="#sRM3.4">S flag (0=good) (S_flag) (4)</A>
+ 246-248  I3    ---         Index     ? Running number in catalogue (INDEX)
+ 250-258  F9.4  ---         AmpMax    ? Maximum amplitude variability
+                                         (AMPL_MAX)
+ 260-268  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>        CM        ? Mean count rate value (CM)
+ 270-278  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>        CD        ? Standard deviation of CM (CD)
+ 280-288  F9.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>          CTSlc     ? Number of counts calculated from the
+                                         light curve analysis (CTS_lc)
+ 290-298  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>        Cmin      ? Minimum count rate ( CMIN)
+ 300-308  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>        Cmax      ? Maximum count rate ( CMAX)
+ 310-318  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>        e_Cmin    ? Error of CMIN (EMIN)
+ 320-328  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>        e_Cmax    ? Error of CMAX (EMAX)
+ 330-338  F9.3  ---         Chi2lc    ? Chi<SUP>2</SUP> value from the LC analysis
+                                         (CHI2_lc)
+ 340-351  E12.6 ---         ExcVar    ? Normalized excess variance
+                                         (EXCESS_VAR)
+ 353-364  E12.6 ---         e_ExcVar  ? One-sigma uncertainty of Exc_Var
+                                         (UNCERTAINTY)
+ 366-375  F10.6 ---         sigExc    ? Excess variance in units of sigma
+                                         (Sigma_Excess)
+ 377-385  F9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?10%2b21cm-2" TARGET="explain">10+21cm-2</A>   NHgal     ? Galactic neutral hydrogen density
+                                         (NH_gal)
+ 387-395  F9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?10%2b21cm-2" TARGET="explain">10+21cm-2</A>   NHfitp    ? neutral hydrogen density of PL fits
+                                         (NH<SUB>fit</SUB>p)
+ 397-408  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?10%2b21cm-2" TARGET="explain">10+21cm-2</A>   e_NHfitp  ? Error of NHfitp (NH<SUB>err</SUB>p)
+ 410-419  E10.5 ---         Normp     ? Normalization for PL fits (NORM_p)
+ 421-430  E10.5 ---         e_Normp   ? Error of NORM_p  (NORM<SUB>err</SUB>p)
+ 432-438  F7.4  ---         Gammap    ? Photon index (GAMMA_p)
+ 440-451  E12.6 ---         e_Gammap  ? Error of GAMMA_p (GAMMA<SUB>err</SUB>p)
+ 453-461  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>        CTRspep   ? Count rate obtained from the PL fit
+                                         (CTR<SUB>spec</SUB>p)
+ 463-472  E10.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>       Fluxp     ? Absorption corrected flux of PL-fit
+                                         (FLUX_p)
+ 474-482  F9.4  ---         Chi2rspp  ? Reduced chi^2 value for the PL-fits
+                                         (Chi2red<SUB>spec</SUB>p)
+ 484-492  F9.4  ---         Chi2spp   ? Chi^2 value for the  power-law-fits
+                                         (Chi2<SUB>spec</SUB>p)
+ 494-496  I3    ---         NDptp     ? Number of data points for the PL-fits
+                                         (Num<SUB>Data</SUB>pts_p)
+ 498-501  I4    ---         NDFp      ? Number of degrees of freedom (PL)
+                                         (Num<SUB>Deg</SUB>free_p)
+ 503-513  F11.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?10%2b21cm-2" TARGET="explain">10+21cm-2</A>   NHfitm    ? Neutral hydrogen density (mekal fits)
+                                         (NH<SUB>fit</SUB>m)
+ 515-524  E10.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?10%2b21cm-2" TARGET="explain">10+21cm-2</A>   e_NHfitm  ? Error of NH<SUB>fit</SUB>m (NH<SUB>err</SUB>m)
+ 526-535  E10.5 ---         Normm     ? Normalization for the mekal fits
+                                         (NORM_m)
+ 537-546  E10.5 ---         e_Normm   ? Error of NORM_m (NORM<SUB>err</SUB>m)
+ 548-556  F9.6  ---         Tempfitm  ? Temperature of the mekal fits
+                                         (Temp<SUB>fit</SUB>m)
+ 558-567  E10.5 ---       e_Tempfitm  ? Error of Temp<SUB>fit</SUB>m (Temp<SUB>err</SUB>m)
+ 569-577  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>        CTRspm    ? Count rate obtained for the mekal fits
+                                         (CTR<SUB>spec</SUB>m)
+ 579-587  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>       Fluxm     ? Absorption corrected flux (mekal fits)
+                                         (FLUX_m)
+ 589-598  E10.5 ---         Chi2rspm  ? Reduced chi^2 value for mekal fits
+                                         (Chi2red<SUB>spec</SUB>m)
+ 600-609  E10.5 ---         Chi2spm   ? Chi^2 value for the  mekal fits
+                                         (Chi2<SUB>spec</SUB>m)
+ 611-613  I3    ---         NDptm     ? Number of data points (mekal fits)
+                                         (Num<SUB>Data</SUB>pts_m)
+ 615-618  I4    ---         NDFm      ? Number of degrees of freedom (mekal)
+                                         (Num<SUB>Deg</SUB>free_m)
+ 620-629  F10.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?10%2b21cm-2" TARGET="explain">10+21cm-2</A>   NHfitb    ? Neutral hydrogen density (bbdy fits)
+                                         (NH<SUB>fit</SUB>b)
+ 631-640  E10.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?10%2b21cm-2" TARGET="explain">10+21cm-2</A>   e_NHfitb  ? Error of NH<SUB>fit</SUB>b (NH<SUB>err</SUB>b)
+ 642-651  E10.5 ---         Normb     ? Normalization for the black body fits
+                                         (NORM_b)
+ 653-662  E10.5 ---         e_Normb   ? Error of the normalization (bbdy fits)
+                                         (NORM<SUB>err</SUB>b)
+ 664-673  F10.6 ---         Tempfitb  ? Temperature of the black body fits
+                                         (Temp<SUB>fit</SUB>b)
+ 675-684  E10.5 ---       e_Tempfitb  ? Error of Temp<SUB>fit</SUB>bbdy (Temp<SUB>err</SUB>b)
+ 686-694  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>        CTRspb    ? Count rate for the black body fit
+                                         (CTR<SUB>spec</SUB>b)
+ 696-705  E10.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>       Fluxb     ? Absorption corrected flux (black body)
+                                         (FLUX_b)
+ 707-716  E10.5 ---         Chi2rspb  ? Reduced chi<SUP>2</SUP> value (black body)
+                                         (Chi2red<SUB>spec</SUB>b)
+ 718-727  E10.5 ---         Chi2spb   ? Chi<SUP>2</SUP> value for the black body fits
+                                         (Chi2<SUB>spec</SUB>b)
+ 729-731  I3    ---         NDptb     ? Number of data points (black body)
+                                         (Num<SUB>Data</SUB>pts_b)
+ 733-736  I4    ---         NDFb      ? Number of degrees of freedom (bbdy)
+                                         (Num<SUB>Deg</SUB>free_b)
+ 738-745  F8.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>         Xima      X image coordinate (45 arcsec)
+                                         in image pixel (X_IMA)
+ 747-754  F8.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>         Yima      Y image coordinate (45 arcsec)
+                                         in image pixel (Y_IMA)
+ 756-763  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>         e_Xima    One-sigma error of X_IMA
+                                         in image pixel (XERR)
+ 765-772  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>         e_Yima    One-sigma error of Y_IMA
+                                         in image pixel (YERR)
+ 774-782  F9.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>         Xsky      X sky coordinates (0.5 arcsec)
+                                         in sky pixel (X_SKY)
+ 784-792  F9.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>         Ysky      Y sky coordinates (0.5 arcsec)
+                                         in sky pixel (Y_SKY)
+ 794-796  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>         CuRad     [600]? Source extraction radius
+                                         in sky pixels (CUT_RAD)
+ 798-800  F3.1  ---         FA        Analyzed fraction of cut radius (FA)
+ 802-805  I4    ---         TotNum    ? Total number of photons read from the
+                                         PET and analyzed by the maximum
+                                         likelihood  algorithm (TOTNUM)
+ 807-813  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix-1" TARGET="explain">pix-1</A>       BGR       Background in source extraction region
+                                         in 1/pix_image (BGR)
+ 815-821  F7.4  ---         VigCor    Vignetting correction factor (VIG_COR)
+ 823-834  A12   ---         Rem       [source nrby?] on flags originating from
+                                         ML-detection (REMARKS)
+ 836-843  F8.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>          SB1       ? Counts in band A (SB1)
+ 845-852  F8.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>          SB2       ? Counts in band B (SB2)
+ 854-861  F8.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>          SB3       ? Counts in band C (SB3)
+ 863-870  F8.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>          SB4       ? Counts in band D (SB4)
+ 872-879  F8.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>          B1        ? Background band A with other catalogue
+                                         entries excised (B1)
+ 881-888  F8.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>          B2        ? Background band B with other catalogue
+                                         entries excised (B2)
+ 890-897  F8.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>          B3        ? Background band C with other catalogue
+                                         entries excised (B3)
+ 899-906  F8.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>          B4        ? Background band D with other catalogue
+                                         entries excised (B4)
+ 908-914  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin%2b2" TARGET="explain">arcmin+2</A>    Bspa      ? Remaining bkg area in square arcmin
+ 916-923  F8.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>          S1        ? Source counts in band A
+                                         (SB1 - B1*sb<SUB>spa/b</SUB>spa) (S1)
+ 925-932  F8.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>          S2        ? Source counts in band B
+                                         (SB2 - B2*sb<SUB>spa/b</SUB>spa) (S2)
+ 934-941  F8.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>          S3        ? Source counts in band c
+                                         (SB3 - B3*sb<SUB>spa/b</SUB>spa) (S3)
+ 943-950  F8.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>          S4        ? Source counts in band D
+                                         (SB4 - B4*sb<SUB>spa/b</SUB>spa) (S4)
+ 952-953  I2    ---         mXMMSL1   ? Number of counterparts in the XMM Slew
+                                         Survey within the distance of 60"
+                                         (mult_xmmsl1)
+ 955-959  I5    ---         eXMMSL1   ? Source number of nearest counterpart
+                                         in the XMM Slew Survey (entr_xmmsl1)
+ 961-966  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>      dXMMSL1   ?=0 Distance of nearest XMMSL1 
+                                         counterpart (dist_xmmsl1)
+ 968-976  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         RA1deg    XMMSL Right ascension (J2000)
+                                         (RA_xmmsl1)
+ 978-986  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         DE1deg    XMMSL Declination (J2000) (DEC_xmmsl1)
+ 988-993  A6    ---         ---       [XMMSL1]
+ 995-1010  A16   ---         XMMSL1    Source name in the XMM Slew Survey
+                                        (SRCNAME_xmmsl1)
+ 1012-1021  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>        CRB0      ? Broad Band Count rate (RATE<SUB>B0</SUB>xmmsl1)
+ 1023-1031  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>        e_CRB0    ? Broad Band Count rate error
+                                         (RATE<SUB>B0e</SUB>xmmsl1)
+ 1033-1042  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>        CRB5      ? Count rate, energy band 0.5-2keV
+                                         (RATE<SUB>B5</SUB>xmmsl1)
+ 1044-1052  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>        e_CRB5    ? Count rate error, 0.5-2keV
+                                         (RATE<SUB>B5e</SUB>xmmsl1)
+ 1054-1056  I3    ---         m3XMM     ? Number of 3XMM counterparts within
+                                         the distance of 60"(mult_3xmm)
+ 1058-1063  I6    ---         e3XMM     ? Source number of nearest counterpart
+                                         in the 3XMM Catalogue (entr_3xmm)
+ 1065-1070  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>      d3XMM     ?=0 Distance of nearest 3XMM counterpart
+                                         (dist_3xmm)
+ 1072-1080  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         RA2deg    3XMM Right ascension (J2000) (RA_3xmm)
+ 1082-1090  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         DE2deg    3XMM Declination (J2000) (DEC_3xmm)
+ 1092-1095  A4    ---         ---       [3XMM]
+ 1097-1112  A16   ---         3XMM      Source name in the 3XMM Catalogue
+                                         (SRCNAME_3xmm)
+ 1114-1125  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>        CREP8     ? 3XMM Count rate (RATE<SUB>EP8</SUB>3xmm)
+ 1127-1134  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>        e_CREP8   ? 3XMM Count rate error (RATE<SUB>EP8e</SUB>3xmm)
+ 1136-1147  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>       FluxR     ? 3XMM Flux (FLUX<SUB>R</SUB>3xmm)
+ 1149-1160  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>       e_FluxR   ? 3XMM Flux error (FLUX<SUB>R</SUB>err_3xmm)
+ 1162-1164  I3    ---         m2RXP     ? Number of 2RXP counterparts within
+                                         the distance of 300" (mult_2rxp)
+ 1166-1170  I5    ---         e2RXP     ? Source number of nearest counterpart
+                                         in the 2RXP catalogue (entr_2rxp)
+ 1172-1177  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>      d2RXP     ?=0 Distance of 2RXP nearest counterpart
+                                         (dist_2rxp)
+ 1179-1187  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         RA3deg    2RXP Right ascension (J2000) (RA_2rxp)
+ 1189-1197  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         DE3deg    2RXP Declination  (J2000) (DEC_2rxp)
+ 1199-1214  A16   ---         2RXP      Source name in the 2RXP (SRCNAME_2rxp)
+ 1216-1224  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>        CR2RXP    ? 2RXP Count rate (CRATE_2rxp)
+ 1226-1233  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>        e_CR2RXP  ? 2RXP Count rate error (CRATE<SUB>err</SUB>2rxp)
+ 1235-1239  I5    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>           ETim2RXP  ? 2RXP Source exposure time
+                                         (ExpTime_2rxp) (132)
+ 1241-1255  A15   ---         ObsID     Field number of 2RXP counterpart
+                                         (ObsID_2rxp) (133)
+    1257  I1    ---         m1RXS     ? Number of 1RXS counterparts within a
+                                         distance of 60" (mult_1rxs)
+ 1259-1264  I6    ---         e1RXS     ? Source number of nearest counterpart
+                                         in the 1RXS catalogue (entr_1rxs)
+ 1266-1271  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>      d1RXS     ?=0 Distance to nearest 1RXS counterpart
+                                         (dist_1rxs) (136)
+ 1273-1281  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         RA4deg    1RXS Right ascension (J2000) (RA_1rxs)
+ 1283-1291  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         DE4deg    1RXS Declination (J2000) (DEC_1rxs)
+ 1293-1308  A16   ---         1RXS      Source name in the 1RXS catalogue
+                                         (SRCNAME_1rxs)
+ 1310-1318  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>        CR1RXS    ? Source count rate in the 1RXS
+                                         (RATE_1rxs)
+ 1320-1327  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>        e_CR1RXS  ? Error of RATE_1rxs (RATE<SUB>err</SUB>1rxs)
+ 1329-1340  E12.6 ---         CTS1RXS   ? Background corrected src counts 1RXS
+                                         (CTS_1rxs)
+ 1342-1351  F10.6 ---        e_CTS1RXS  ? Error of CTS_1rxs (CTS<SUB>err</SUB>1rxs)
+ 1353-1356  I4    ---        ExiML1RXS  ? Background corrected src counts 1RXS
+                                         (EXI<SUB>ML</SUB>1rxs)
+ 1358-1362  I5    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>          ExPos1RXS  ? Source exposure time in 1RXS
+                                         (EXPOS_1rxs) (145)
+ 1364-1372  F9.6  ---         HR11RXS   ? <A HREF="#sRM3.5">1RXS Hardness ratio 1 value</A>
+                                         (HR1_1rxs) (5)
+ 1374-1381  F8.6  ---        e_HR11RXS  ? Error of HR1 in the 1RXS (HR1e_1rxs)
+ 1383-1391  F9.6  ---         HR21RXS   ? <A HREF="#sRM3.5">1RXS Hardness ratio 2 value</A>
+                                         (HR2_1rxs) (5)
+ 1393-1400  F8.6  ---        e_HR21RXS  ? Error of HR2 in the 1RXS (HR2e_1rxs)
+ 1402-1403  I2    ---         mVV10     ? Number of counterparts in the Veron
+                                         and Verson Catalogue within the
+                                         distance of 60" (mult_vv10)
+ 1405-1410  I6    ---         eVV10     ? Source number of VV10 nearest
+                                         counterpart (entr_vv10)
+ 1412-1417  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>      dVV10     ?=0 Distance to nearest VV10 counterpart
+                                         (dist_vv10)
+ 1419-1435  A17   ---         VV10      VV10 Catalogue name (NAME_vv10)
+    1437  A1    ---         TypeVV10  [<A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=B/A/Q">B/A/Q</A>] VV10 Object type (Type_vv10)
+ 1439-1444  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>         VmagVV10  ? VV10 V magnitude (Vmag_vv10)
+ 1446-1450  F5.3  ---         zVV10     ? VV10 Redshift (z_vv10)
+ 1452-1457  I6    ---        IndexVV10  ? VV10 Running catalogue number
+                                         (Index_vv10) (157)
+ 1459-1467  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         RA5deg    VV10 Right ascension (J2000) (RA_vv10)
+ 1469-1477  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         DE5deg    VV10 Declination (J2000) (DEC_vv10)
+ 1479-1480  I2    ---         mTYC2     ? Number of the nearest counterpart in
+                                         the Tycho2 Catalogue (mult_tyc2)
+ 1482-1488  I7    ---         eTYC2     ? Source number of nearest Tyc2
+                                         counterpart (entr_tyc2)
+ 1490-1495  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>      dTYC2     ?=0 Distance to nearest Tyc2 counterpart
+                                         (dist_tyc2) (162)
+ 1497-1505  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         RA6deg    Tyc2 Right ascension (J2000) (RA_tyc2)
+ 1507-1515  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         DE6deg    Tyc2 Declination (J2000) (DEC_tyc2)
+ 1517-1523  I7    ---        RecnoTYC2  ? Tyc2 Catalogue number (RecNo_tyc2)
+ 1525-1530  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>         VTmag     ? <A HREF="#sRM3.6">Tyc2 VT magnitude (VTmag_tyc2) (6)</A>
+ 1532-1537  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>         BTmag     ? <A HREF="#sRM3.6">Tyc2 BT magnitude (BTmag_tyc2) (6)</A>
+ 1539-1542  I4    ---         TYC1      ? <A HREF="#sRM3.7">Tyc2 TYC1 number (TYC1_tyc2) (7)</A>
+ 1544-1548  I5    ---         TYC2      ? <A HREF="#sRM3.7">Tyc2 TYC2 number (TYC2_tyc2) (7)</A>
+    1550  I1    ---         TYC3      ? <A HREF="#sRM3.7">Tyc2 TYC3 number (TYC3_tyc2) (7)</A>
+    1552  I1    ---         mBSC      ? Number of counterparts in the
+                                         Catalogue of Bright Stars (BSC)
+                                         within the distance of 300" (mult_bri)
+ 1554-1557  I4    ---         eBSC      ? Source number of nearest BSC
+                                         counterpart (entr_bri)
+ 1559-1564  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>      dBSC      ?=0 Distance to nearest BSC counterpart
+                                         (dist_bri)
+ 1566-1574  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         RA7deg    BSC Right ascension (J2000) (RA_bri)
+ 1576-1584  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         DE7deg    BSC Declination (J2000) (DEC_bri)
+ 1586-1591  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>         VmagBSC   ? BSC V magnitude (Vmag_bri)
+ 1593-1612  A20   ---        SpTypeBSC  BSC spectral type (SpType_bri)
+ 1614-1617  I4    ---         RecnoBSC  ? BSC Record catalogue number
+                                         (RecNo_bri)
+ 1619-1624  I6    ---         HD        ? Henry Draper Catalogue Number (HD_bri)
+    1626  I1    ---         mHMXB     ? Number of counterparts in the Catalog
+                                         of High Mass X-Ray Binaries (HMXBCAT)
+                                         within the distance of 60" (mult_hmxb)
+ 1628-1630  I3    ---         eHMXB     ? Source number of nearest HMXBCAT
+                                           counterpart (entr_hmxb)
+ 1632-1637  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>      dHMXB     ?=0 Distance of nearest HMXBCAT 
+                                         counterpart (dist_hmxb)
+ 1639-1647  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         RA8deg    HMXBCAT Right ascension (J2000)
+                                         (RA_hmxb)
+ 1649-1657  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         DE8deg    HMXBCAT Declination (J2000) (DEC_hmxb)
+ 1659-1679  A21   ---         NameHMXB  HMXBCAT Catalogue name  (Name_hmxb)
+ 1681-1701  A21   ---        Name2HMXB  HMXBCAT Alternative catalogue name
+                                         (Name2_hmxb)
+ 1703-1708  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>         VmagHMXB  ? HMXBCAT V magnitude (Vmag_hmxb)
+    1710  I1    ---         mLMXB     ? Number of counterparts in the Catalog
+                                         of Low Mass X-Ray Binaries (LMXBCAT)
+                                         within the distance of 60" (mult_lmxb)
+ 1712-1714  I3    ---         eLMXB     ? Source number of nearest LMXBCAT
+                                         counterpart (entr_lmxb)
+ 1716-1721  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>      dLMXB     ?=0 Distance to nearest LMXBCAT 
+                                         counterpart (dist_lmxb)
+ 1723-1731  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         RA9deg    LMXBCAT Right ascension (J2000)
+                                         (RA_lmxb)
+ 1733-1741  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         DE9deg    LMXBCAT Declination (J2000) (DEC_lmxb)
+ 1743-1758  A16   ---         NameLMXB  LMXBCAT Catalogue name (Name_lmxb)
+ 1760-1772  A13   ---        Name2LMXB  LMXBCAT Alternative catalogue name
+                                         (Name2_lmxb) (194)
+ 1774-1779  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>         VmagLMXB  ? LMXBCAT V magnitude (Vmag_lmxb)
+ 1781-1782  I2    ---         mATNF     ? Number of counterparts in the Pulsar
+                                         Catalogue (ATNF) within the distance
+                                         of 60" (mult_atnf)
+ 1784-1787  I4    ---         eATNF     ? Source number of nearest ATNF
+                                         counterpart (entr_atnf)
+ 1789-1794  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>      dATNF     ?=0 Distance to nearest ATNF counterpart
+                                         (dist_atnf)
+ 1796-1804  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         RA10deg   ATNF Right ascension (J2000) (RA_atnf)
+ 1806-1814  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         DE10deg   ATNF Declination (J2000) (DEC_atnf)
+ 1816-1831  A16   ---         ATNF      ATNF Pulsar name  (Name_atnf)
+ 1833-1843  A11   ---         TypeATNF  ATNF Pulsar type (Type_atnf)
+ 1845-1865  A21   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>           PerATNF   ATNF Pulsar period  (Period_atnf)
+    1867  I1    ---         mFUH      ? Number of counterparts in the Catalog
+                                         of Variable Sources from Fuhrmeister
+                                         and Schmitt within the distance of 60"
+                                         (mult_fuh)
+ 1869-1872  I4    ---         eFUH      ? Source number of nearest FUH
+                                         counterpart (entr_fuh)
+ 1874-1879  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>      dFUH      ?=0 Distance to nearest FUH counterpart
+                                         (dist_fuh)
+ 1881-1889  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         RA11deg   FUH Right ascension (J2000) (RA_fuh)
+ 1891-1899  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         DE11deg   FUH Declination (J2000) (DEC_fuh)
+ 1901-1904  A4    ---         SeqFUH    FUH Object number (Seq_fuh)
+ 1906-1935  A30   ---         NameFUH   FUH Object name (Name_fuh)
+ 1937-1938  I2    ---         m1SXPS    ? Number of counterparts in Swift 1SXPS
+                                         catalogue within a distance of 120"
+                                         (mult_1sxps)
+ 1940-1945  I6    ---         e1SXPS    ? Source number of nearest 1SXPS
+                                         counterpart (entr_1sxps)
+ 1947-1952  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>      d1SXPS    ?=0 Distance to nearest 1SXPS 
+                                         counterparts (dist_1sxps)
+ 1954-1962  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         RA12deg   1SXPS Right ascension (J2000) (RA_1sxps)
+ 1964-1972  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         DE12deg   1SXPS Declination (J2000) (DEC_1sxps)
+ 1974-1980  I7    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>           Exp1SXPS  ? 1SXPS Source exposure time
+                                         (Expos_1sxps)
+ 1982-1983  I2    ---         Det1SXPS  ? 1SXPS Total(0.3-10keV)-band detection
+                                         flag (DET_1sxps)
+ 1985-1987  I3    ---        Det01SXPS  ? 1SXPS Total(0.3-10keV)-band detection
+                                         flag (DET0_1sxps)
+ 1989-1991  I3    ---        Det11SXPS  ? 1SXPS Soft(0.3-1keV)-band detection
+                                         flag (DET1_1sxps)
+ 1993-1995  I3    ---        Det21SXPS  ? 1SXPS Meduin(2-2keV)-band detection
+                                         flag (DET2_1sxps)
+ 1997-1999  I3    ---        Det31SXPS  ? 1SXPS Hard(2-10keV)-band detection
+                                         flag (DET3_1sxps)
+ 2001-2006  I6    ---         1SXPS     ? Running catalogue number in Swift
+                                         (INDEX_1sxps)
+ 2008-2017  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>        CR01SXPS  ? Swift Total (0.3-10 keV)-band count
+                                         rate (Rate0_1sxps)
+ 2019-2026  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>      e_CR01SXPS  ? Swift Error of Rate0_1sxps
+                                         (ERate0_1sxps)
+ 2028-2030  I3    ---         m1RXH     ? Number of counterparts in the 1RXH
+                                         catalogue within the distance of 120"
+                                         (mult_1rxh)
+ 2032-2036  I5    ---         e1RXH     ? Source number of nearest 1RXH
+                                         counterpart (entr_1rxh)
+ 2038-2043  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>      d1RXH     ?=0 Distance to nearest 1RXH counterpart
+                                         (dist_1rxh)
+ 2045-2053  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         RA13deg   1RXH Right ascension (J2000) (RA_1rxh)
+ 2055-2063  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         DE13deg   1RXH Declination (J2000) (DEC_1rxh)
+ 2065-2085  A21   ---         1RXH      Source name in the 1RXH (SRCNAME_1rxh)
+ 2087-2095  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>        CR1RXH    ? 1RXH Source count rate (CRATE_1rxh)
+ 2097-2104  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>        e_CR1RXH  ? Error of CRATE_1RXH (CRATE<SUB>err</SUB>1rxh)
+ 2106-2111  I6    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>           ETim1RXH  ? 1RXH Source exposure time
+                                         (ExpTime_1rxh)
+ 2113-2117  F5.1  ---         SNR1RXH   ? 1RXH Signal-to-noise ratio (SNR_1rxh)
+    2119  I1    ---         mFlem     ? Number of counterparts in the Catalog
+                                         of White Dwarfs from Flemming within
+                                         the distance of 60"  (mult_flem)
+ 2121-2123  I3    ---         eFlem     ? Source number of nearest Flemming
+                                         counterpart (entr_flem)
+ 2125-2130  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>      dFlem     ?=0 Distance to nearest Flemming 
+                                          counterpart (dist_flem)
+ 2132-2140  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         RA14deg   Flemming Right ascension (J2000)
+                                         (RA_flem)
+ 2142-2150  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         DE14deg   Flemming Declination (J2000) (DEC_flem)
+ 2152-2165  A14   ---         Flem      Source name in the Flemming Catalogue
+                                         (SRCNAME_flem)
+ 2167-2176  A10   ---         TypeFlem  Flemming  Object type (Type_flem)
+    2178  A1    ---         WFCFlem   [Y/N] Flemming Wide Field Camera
+                                         detection?  (WFC_flem)
+ 2180-2185  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>        CRFlem    ? Flemming count rate (Rate_flem)
+ 2187-2194  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>        e_CRFlem  ? Error of the Flemming count rate
+                                         (e<SUB>Rate</SUB>flem)
+    2196  I1    ---         mWD       ? Number of counterparts in the Catalog
+                                         of White Dwarfs within the distance
+                                         of 60 " (mult_wd)
+ 2198-2202  I5    ---         eWD       ? Source number of nearest WD
+                                           counterpart (entr_wd)
+ 2204-2209  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>      dWD       ?=0 Distance to nearest WD counterpart
+                                         (dist_wd)
+ 2211-2219  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         RA15deg   WD Rigth ascension (J2000) (RA_wd)
+ 2221-2229  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         DE15deg   WD Declination (J2000) (DEC_wd)
+ 2231-2240  A10   ---         WD        WD Source name in the Catalogue
+                                         (SRCNAME_wd)
+ 2242-2247  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>         VmagWD    ? WD V-magnitude (Vmag_wd)
+ 2249-2254  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>         VsphotWD  ? WD V mag: multichannel
+                                         spectrophotometry (Vsphot_wd)
+    2256  I1    ---         mSDSS     ? Source number of the nearest
+                                         counterpart in the Sloan Catalogue
+                                         (mult_sdss)
+ 2258-2260  I3    ---         eSDSS     ? Source number of SDSS nearest
+                                         counterpart (entr_sdss)
+ 2262-2267  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>      dSDSS     ?=0 Distance to nearest SDSS counterpart
+                                         (dist_sdss)
+ 2269-2277  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         RA16deg   SDSS Right ascension (J2000) (RA_sdss)
+ 2279-2287  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         DE16deg   SDSS Declination (J2000) (DEC_sdss)
+ 2289-2312  A24   ---         SDSS      SDSS Object name (SDSS_NAME)
+ 2314-2323  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         LambdaS   ? SDSS Latitude in elliptical coordinate
+                                         (LAMBDA_sdss)
+ 2325-2334  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         BetaS     ? SDSS  Longitude in elliptical
+                                         coordinate (BETA_sdss)
+ 2336-2337  I2    ---         m2RXS     ? Number of counterparts in the 2RXS
+                                         catalogue within the distance of 60"
+                                         (mult_2rxs)
+ 2339-2344  I6    ---         e2RXS     ? Source number of 2RXS counterpart
+                                         (entr_2rxs)
+ 2346-2351  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>      d2RXS     ?=0 Distance to 2RXS counterpart 
+                                         (dist_2rxs)
+ 2353-2358  I6    ---         I2RXS     ? Index of the nearest 2RXS counterpart
+                                         (INDEX_2rxs)
+ 2360-2365  I6    ---         Seq2RXS   ? Number of sky field of 2RXS nearest
+                                         counterpart (SEQ<SUB>ID</SUB>2rxs)
+ 2367-2370  I4    ---         IndD2RXS  ? Field detection number of 2RXS nearest
+                                         counterpart (IND<SUB>DET</SUB>2rxs)
+ 2372-2380  F9.2  ---        ExiML2RXS  ? Detection likelihood of 2RXS  nearest
+                                         counterpart (EXI<SUB>ML</SUB>2rxs)
+ 2382-2389  F8.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>        CR2RXS    ? Source count rate of 2RXS nearest
+                                         counterpart (RATE_2rxs)
+ 2391-2399  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         RA17deg   2RXS Right ascension (J2000) (RA_2rxs)
+ 2401-2409  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         DE17deg   2RXS Declination (J2000) (DEC_2rxs)
+ 2411-2412  I2    ---         USKY2rxs  [-1/9]? Sub-field detection cell of
+                                          2RXS nearest counterpart (USKY_2rxs)
+    2414  I1    ---         Flag2rxs  [0/1]? Nearby flag of 2RXS nearest
+                                         counterpart, 0=best (FLAG_2rxs)
+    2416  I1    ---         BkgId     ? Selected background (BKG_id)
+ 2418-2426  F9.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>         Xbkg1     ? X_sky coordinate of background
+                                         center 1 in sky pixel (X<SUB>BKG</SUB>1)
+ 2428-2436  F9.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>         Ybkg1     ? Y_sky coordinate of background
+                                         center 1 in sky pixel (Y<SUB>BKG</SUB>1)
+ 2438-2446  F9.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>         Xbkg2     ? X_sky coordinate of background
+                                         center 2 in sky pixel (X<SUB>BKG</SUB>2)
+ 2448-2456  F9.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>         Ybkg2     ? Y_sky coordinate of background
+                                         center 2 in sky pixel (Y<SUB>BKG</SUB>2)
+ 2458-2466  E9.3 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s/arcmin2" TARGET="explain">ct/s/arcmin2</A> BGR1rxs   ? Background count rate per square
+                                         arcmin from 1RXS (BGR_1rxs)
+ 2468-2479  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s/arcmin2" TARGET="explain">ct/s/arcmin2</A> BGR2rxs  Background count rate per square arcmin
+                                         from 2RXS (BGR_2rxs)
+    2481  I1    ---         Lflag     ? <A HREF="#sRM3.8">Variability flag  0=good,1=bkg</A>
+                                         (LFLAG) (8)
+ 2483-2491  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>        CM6       ? Count rate for light curve with less
+                                         than 6s exposure (CM6)
+ 2493-2501  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>        CD6       ? Standard deviation of light curves
+                                         with less than 6s exposure (CD6)
+ 2503-2514  E12.6 ---         ExVAR6    ? Excess variance for light curves
+                                         with less than 6s exposure
+                                          (EXCESSVAR6)
+ 2516-2527  E12.6 ---         e_ExVAR6  ? Excess variance uncertainty
+                                         (UNCERTAINTY6)
+ 2529-2532  I4    ---         NbinsA    ? Number of data points in the LC
+                                         (NBINS_A)
+ 2534-2537  I4    ---         Nbins6    ? Number of data points with exposures
+                                         times less than 6s (NBINS_6)
+ 2539-2540  I2    ---         Nbins1    ? Number of data points with exposures
+                                         times less than 1s (NBINS_1)
+ 2542-2543  I2    ---         NbinsN    ? Number of data points with exposure
+                                         times greater than 6s (NBINS_N)
+ 2545-2554  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>        Cmin6     ? Minimum count rate for light curves
+                                         with exposure times of less than 6s
+                                         (CMIN6)
+ 2556-2565  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>        Cmax6     ? Maximum count rate for light curves
+                                         with exposure times of less than 6s
+                                         (CMAX6)
+ 2567-2574  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>        e_Cmin6   ? Error of CMIN6 (EMIN6)
+ 2576-2583  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>        e_Cmax6   ? Error of CMAX6 (EMAX6)
+ 2585-2593  F9.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>          CTSlc6    [-]? Number of counts for light curves
+                                         with exposure times of less than 6s
+                                         (CTS_lc6) Not used
+ 2595-2604  F10.6 ---         sigex6    ? Excess variance for light curves with
+                                         exposure times of less than 6s
+                                         (SIGMA_excess6)
+ 2606-2615  F10.6 ---         CM+CD     ? Sum of count rate + standard deviation
+    2617  A1    ---         SPX       [0/1] graphical illustrations from
+                                         spectral fits available in spx 
+                                         subdirectory
+    2619  A1    ---         LCX       [0/1] light curve exists as graphical
+                                         illustration in clx subdirectory
+ 2621-2631  F11.1 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>          ObsClock1  ? Start time of exposure when source is
+                                         within FOV and detector ons
+                                         (OBS<SUB>CLOCK</SUB>1)
+ 2633-2643  F11.1 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>          ObsClock2  ? End time of exposure when source is
+                                         within FOV and detector ons
+                                         (OBS<SUB>CLOCK</SUB>2)
+ 2645-2655  A11 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%22DD-MMM-YYYY%22" TARGET="explain">"DD-MMM-YYYY"</A> Obs.date1  ? Start time of exposure when source is
+                                         within FOV and detector on (OBS<SUB>DATE</SUB>1)
+ 2657-2666  A10   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%22h:m:s%22" TARGET="explain">"h:m:s"</A>    Obs.time1  ? Start time (OBS<SUB>UT</SUB>1)
+ 2668-2678  A11 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%22DD-MMM-YYYY%22" TARGET="explain">"DD-MMM-YYYY"</A> Obs.date2  ? End time of exposure when source
+                                         is within FOV and detector on
+                                         (OBS<SUB>DATE</SUB>2)
+ 2680-2689  A10   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%22h:m:s%22" TARGET="explain">"h:m:s"</A>    Obs.time2  ? End time (OBS<SUB>UT</SUB>2)
+ 2691-2696  I6    ---         ---       ? Running number from total detection
+                                         run (ID_2RXS)
+<HR>
+<A NAME="sRM3.1"><B>Note (1)</B>: Each source has been attributed an IAU name according to the IAU
+  conventions. As this is the second ROSAT catalogue of point sources
+  the prefix 2RXS is given in addition to the coordinate naming convention.
+<A NAME="sRM3.2"><B>Note (2)</B>: Hardness ratio 1 values as calculated from the source counts in the
+  energy channels A (11-41), B (52-201) by: HR_1=(B-A)/(B+A)
+ Hardness ratio 2 values as calculated from the source counts in the
+  energy channels C (52-90), D(91-201) by: HR_2=(D-C)/(D+C)
+<A NAME="sRM3.3"><B>Note (3)</B>: Sub-field detection cell defined in sky coordinates.
+
+<A NAME="sRM3.4"><B>Note (4)</B>: Screening flag (0=good, not equal to 0 = screening flag set)
+
+<A NAME="sRM3.5"><B>Note (5)</B>: 1RXS hardness ratio 1 values have been calculated from the source
+  counts in the energy channels A (11-41), B (52-201) by: HR_1=(B-A)/(B+A)
+  in 1RXS
+ Hardness ratio 2 values have been calculated from the source counts in the
+  energy channels C (52-90), D(91-201) by: HR_2=(D-C)/(D+C) in the 1RXS
+<A NAME="sRM3.6"><B>Note (6)</B>: (cf Note 7 of the Tycho-2 online catalogue description).
+
+<A NAME="sRM3.7"><B>Note (7)</B>: Tyhco 2 name (c.f. Note 1 of the Tycho-2 online catalogue description)
+
+<A NAME="sRM3.8"><B>Note (8)</B>: quality flag for background selection for lightcurves and spectra:
+     0=good, bit 1: sum of CM+CD&lt;0, bit 2: background in masked region
+<HR>
+
+<A NAME="sRM99.2"><B>Acknowledgements</B>:
+   Thomas Boller, bol(at)mpe.mpg.de
+   Frank Haberl, fwh(at)mpe.mpg.de
+   Michael Freyberg, mjf(at)mpe.mpg.de
+================================================================================
+<B>(End)</B>                                        Patricia Vannier [CDS]  23-Mar-2016
+
+</PRE><!-- ....wait for 1 children: %0=3182930 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

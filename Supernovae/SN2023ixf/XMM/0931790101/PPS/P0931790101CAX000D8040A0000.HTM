@@ -1,0 +1,194 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of VIII/40</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Wed Jun 28 17:16:24 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0931790101OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of VIII/40 :<BR>GB6 catalog of radio sources (Gregory+ 1996)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0931790101OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>VIII/40</B>            GB6 catalog of radio sources        (Gregory+ 1996)
+================================================================================
+The GB6 catalog of radio sources
+     Gregory P.C., Scott W.K., Douglas K., Condon J.J.
+    &lt;Astrophys. J. Suppl. Ser. 103, 427 (1996)&gt;
+    =<A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=1996ApJS..103..427G">1996ApJS..103..427G</A>
+================================================================================
+<B>ADC_Keywords</B>: Radio sources
+
+<B>Keywords</B>: catalogs - radio continuum: galaxies - surveys
+
+
+<A NAME="sRM99.1"><B>Abstract</B>:
+    The Green Bank 4.85GHz (lambda~6cm) survey was made with the NRAO
+    seven-beam receiver on the (former) 91m telescope during 1986
+    November and 1987 October. The final set of sky maps covering the
+    declination band 0deg&lt;Dec.&lt;+75deg was constructed with data from
+    both epochs. Its noise and position errors are nearly a factor of
+    2<SUP>(1/2)</SUP> smaller than in the epoch 1987 maps, from which the 87GB
+    catalog <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VIII/14">VIII/14</A> of 54,579 sources stronger than S~25mJy was
+    extracted. Therefore, we used the new maps to make the GB6 catalog of
+    75,162 discrete sources with angular sizes phi&lt;=10.5arcmin and flux
+    densities S&gt;=18mJy. This catalog is available in machine-readable
+    versions with either B1950 or J2000 positions and as a printed book
+    with B1950 positions. The GB6 weighted differential source counts
+    S^(5/2)n(S) between 18 mJy and 7Jy agree well with evolutionary models
+    based on independent data.
+
+<A NAME="sRM11.1"><B>Description</B>:
+    The final set of sky maps from the Green Bank 4.85 GHz survey
+    (Condon J.J., Broderick J.J., Seielstad G.A., Douglas K., &amp;
+    Gregory P.C. in <A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=1994AJ....107.1829C">1994AJ....107.1829C</A>) was used to construct the GB6
+    Catalog of sources stronger than S ~ 18 mJy in the declination range
+    0deg &lt; Dec. &lt; +75deg (Gregory P.C., Scott W.K., Douglas K., &amp;
+    Condon J.J. in <A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=1996ApJS..103..427G">1996ApJS..103..427G</A>). There are two machine-readable
+    versions of the GB6 catalog, with coordinates precessed to B1950
+    (file b1950.dat) and J2000 (file j2000.dat). Each catalog file
+    contains one line per source (75,162 lines each), and the sources are
+    sorted by increasing B1950 or J2000 right ascension.
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.42">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.43">&#215; <A HREF="#sRM2.1">gb6.dat</A>          117    75162   GB6 catalog, merged J2000/B1950
+<A NAME="sRM-F.44">&#215; <A HREF="#sRM2.2">b1950.dat</A>         95    75162   GB6 catalog, B1950 coordinates
+<A NAME="sRM-F.45">&#215; <A HREF="#sRM2.2">j2000.dat</A>         95    75162   GB6 catalog, J2000 coordinates
+<HR>
+
+<A NAME="sRM13.1"><B>See also</B>:
+    <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VIII/14">VIII/14</A> : 87GB Catalog of radio sources (Gregory et al., 1991)
+    <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VIII/38">VIII/38</A> : The PMN Surveys at 4.85GHz (Griffith+ 1993-1996)
+
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.43"> gb6.dat</A>
+<HR>
+   Bytes Format Units   Label     Explanations
+<HR>
+   1-  2  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?h" TARGET="explain">h</A>       RAh       Right ascension (J2000)
+   3-  4  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?min" TARGET="explain">min</A>     RAm       Right ascension (J2000)
+   5-  8  F4.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>       RAs       Right ascension (J2000)
+   9- 12  F4.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>       e_RAs     Uncertainty in R.A.
+      14  A1    ---     DE-       Sign of declination (J2000)
+  15- 16  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEd       Declination (J2000)
+  17- 18  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>  DEm       Declination (J2000)
+  19- 20  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  DEs       Declination (J2000)
+  22- 23  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  e_DEs     Uncertainty in declination
+  25- 29  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     GLAT      Galactic latitude
+  31- 35  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     GLON      Galactic longitude
+  37- 41  I5    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJy" TARGET="explain">mJy</A>     Flux      4.85 GHz peak flux density
+  43- 46  I4    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJy" TARGET="explain">mJy</A>     e_Flux    Uncertainty in peak flux density
+      48  A1    ---     Bflag     [B] <A HREF="#sRM3.1">for sources near the border (1)</A>
+      49  A1    ---     Eflag     [E] for significant extension
+      50  A1    ---     Wflag     [W] for warning (weak source with
+                                        large Zero)
+      51  A1    ---     Cflag     [C] for confusion (near a stronger source)
+  53- 56  F4.2  ---     MajAxis   Normalized FWHM major axis / beam size
+  58- 61  F4.2  ---     MinAxis   Normalized FWHM minor axis / beam size
+  63- 65  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     PA        [-90/90] Fitted major axis position angle
+                                    (degrees east of north)
+  67- 69  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJy" TARGET="explain">mJy</A>     Zero      Local sky level, Z / beam
+  71- 74  I4    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>     Xmap      Map pixel column number (from left)
+  76- 79  I4    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>     Ymap      Map pixel row number (from bottom)
+  81- 91  A11   ---     GB6       <A HREF="#sRM3.2">Name (based on J2000 position) (2)</A>
+  92-102  A11   ---     GB6(B)    <A HREF="#sRM3.2">Name based on B1950 position (2)</A>
+ 103-104  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?h" TARGET="explain">h</A>       RA1950h   Right Ascension B1950 (hours)
+ 105-106  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?min" TARGET="explain">min</A>     RA1950m   Right Ascension B1950 (minutes)
+ 107-110  F4.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>       RA1950s   Right Ascension B1950 (seconds)
+     111  A1    ---     DE1950-   Declination B1950 (sign)
+ 112-113  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DE1950d   Declination B1950 (degrees)
+ 114-115  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>  DE1950m   Declination B1950 (minutes)
+ 116-117  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  DE1950s   Declination B1950 (seconds)
+<HR>
+<A NAME="sRM3.1"><B>Note (1)</B>: The GB6 catalog is the result of merging 288 catalogs,
+    each of which came from a single GB6 image covering about 15X15deg of
+    sky. Sources found near the border of an image are flagged 'B'. The
+    borders of these images overlap, so duplication among sources which
+    appeared in two or more catalogs had to be removed from the final GB6
+    catalog. Normally, the one fit without the 'B' flag was chosen. Thus
+    there are two classes of 'B' sources which remain in the final
+    catalog:
+    (1) All sources near the upper (+75 deg) and lower (0 deg) declination
+    limits of the images.
+    (2) Sources elsewhere that are just at the catalog limit, so the fit
+    was just above the limit near the border of one image and just below
+    the limit in the overlapping image(s).
+<A NAME="sRM3.2"><B>Note (2)</B>: the names are made from the position truncated to the minute
+    in right ascension and arcminute in declination; in case of name
+    collision (sources falling in the same truncated RA/Dec box), a
+    lowercase letter was appended to the name in order of right
+    ascension, according to section 3 of the paper.
+<HR>
+
+<A NAME="sRM2.2"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.44"> b1950.dat</A> <A HREF="#sRM-F.45"> j2000.dat</A>
+<HR>
+   Bytes Format  Units     Label    Explanations
+<HR>
+   1-  2  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?h" TARGET="explain">h</A>         RAh      Right ascension (B1950 or J2000)
+   3-  4  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?min" TARGET="explain">min</A>       RAm      Right ascension
+   5-  8  F4.1   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>         RAs      Right ascension
+   9- 12  F4.1   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>         e_RAs    Uncertainty in R.A.
+      14  A1     ---       DE-      Sign of declination
+  15- 16  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>       DEd      Declination (B1950 or J2000)
+  17- 18  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>    DEm      Declination
+  19- 20  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>    DEs      Declination
+  22- 23  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>    e_DEs    Uncertainty in declination
+  25- 29  F5.1   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>       GLAT     Galactic latitude
+  31- 35  F5.1   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>       GLON     Galactic longitude
+  37- 41  I5     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJy" TARGET="explain">mJy</A>       Flux     4.85 GHz peak flux density
+  43- 46  I4     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJy" TARGET="explain">mJy</A>       e_Flux   Uncertainty in peak flux density
+      48  A1     ---       Bflag    [B] near border, see Note (1) above
+      49  A1     ---       Eflag    [E] for significant extension
+      50  A1     ---       Wflag    [W] for warning (weak source with
+                                        large Zero)
+      51  A1     ---       Cflag    [C] for confusion (near a stronger source)
+  53- 56  F4.2   ---       MajAxis  Normalized FWHM major axis / beam size
+  58- 61  F4.2   ---       MinAxis  Normalized FWHM minor axis / beam size
+  63- 65  I3     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>       PA       [-90/90] Fitted major axis position angle
+                                    (degrees east of north)
+  67- 69  I3     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJy" TARGET="explain">mJy</A>       Zero     Local sky level, Z / beam
+  71- 74  I4     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>       Xmap     Map pixel column number (from left)
+  76- 79  I4     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>       Ymap     Map pixel row number (from bottom)
+  81- 95  A15    ---       Name     Name of source (based on position)
+<HR>
+
+<A NAME="sRM99.2"><B>Remarks</B>:
+   If you would like to order the printed catalog or have any questions,
+   comments, or special requests, please contact Jim Condon by e-mail at
+   Internet address <A HREF="mailto:jcondon@nrao.edu">jcondon@nrao.edu</A>.
+
+<A NAME="sRM99.3"><B>History</B>:
+    The tables b1950.dat and j2000.dat were first published on the AAS
+    AAS CD-ROM series, Volume 6, 1996, directory volume6/apjs/v103/p427;
+    the source names, which were not included on the CD-ROM, were kindly
+    supplied to CDS by Jim Condon (<A HREF="mailto:jcondon@nrao.edu">jcondon@nrao.edu</A>) in December 1996.
+    The merged file (gb6.dat) was generated at CDS, and is in the same
+    order as j2000.dat
+  * 06-Feb-2004: in the file "<B>gb6.dat</B>", the suffix letter used to
+    distinguish sources falling in the same "name box" was converted
+    from its uppercase form to lowercase, in order to comply to
+    section 3 of the paper.
+================================================================================
+<B>(End)</B>                                     Francois Ochsenbein [CDS]  07-Jan-1997
+
+</PRE><!-- ....wait for 1 children: %0=14556 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

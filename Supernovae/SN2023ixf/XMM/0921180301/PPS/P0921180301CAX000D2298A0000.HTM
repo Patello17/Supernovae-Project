@@ -1,0 +1,159 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of II/298</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Sun Jul 23 17:43:44 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0921180301OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of II/298 :<BR>AKARI/FIS All-Sky Survey Point Source Catalogues (ISAS/JAXA, 2010)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0921180301OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>II/298</B>   AKARI/FIS All-Sky Survey Point Source Catalogues  (ISAS/JAXA, 2010)
+================================================================================
+AKARI/FIS All-Sky Survey Bright Source Catalogue Version 1.0
+    Yamamura I., Makiuti S., Ikeda N., Fukuda Y., Oyabu S., Koga T., White G.J.
+    &lt;ISAS/JAXA (2010)&gt;
+    =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2010yCat.2298....0Y">2010yCat.2298....0Y</A>
+================================================================================
+<B>ADC_Keywords</B>: Infrared sources ; Surveys ; Photometry, infrared
+
+<B>Mission_Name</B>: AKARI
+
+
+<A NAME="sRM11.1"><B>Description</B>:
+    The AKARI Infrared Astronomical Satellite observed the whole sky in
+    the far infrared (50-180&#181;m) and the mid-infrared (9 and 18&#181;m)
+    between May 2006 and August 2007 (Murakami et al. <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2007PASJ...59S.369M">2007PASJ...59S.369M</A>)
+
+    The AKARI/FIS All-Sky Survey Bright Source Catalog Version 1.0
+    provides positions and fluxes for 427071 point sources in the 4
+    far-infrared wavelengths centered at 65, 90, 140 and 160&#181;m (see
+    filter characteristics in the "<A HREF="#sRM3.1">Note (1)</A>" section below)
+
+<A NAME="sRM99.1"><B>Recommendation</B>:
+    The users of the catalogue are requested to read the documents
+    carefully before critical discussions of the data. Any questions and
+    comments are appreciated at ISAS Helpdesk (<A HREF="mailto:iris_help@ir.isas.jaxa.jp">iris_help@ir.isas.jaxa.jp</A>)
+
+<A NAME="sRM99.2"><B>Acknowledging AKARI data in publications</B>:
+    Please acknowledge the usage of the AKARI data (details at
+    <A HREF="http://www.ir.isas.jaxa.jp/AKARI/Publications/guideline.html">http://www.ir.isas.jaxa.jp/AKARI/Publications/guideline.html</A>).
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.33">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.34">&#215; <A HREF="#sRM2.1">fis.dat</A>          231   427071   AKARI/FIS All-Sky Survey Bright Source Catalogue
+                                  (Version 1.0)
+<HR>
+
+<A NAME="sRM13.1"><B>See also</B>:
+    <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=II/297">II/297</A> : AKARI/IRC All-Sky Survey Point Source Catalogue (ISAS/JAXA, 2010)
+    <A HREF="http://www.ir.isas.jaxa.jp/AKARI/Observation/PSC/Public/">http://www.ir.isas.jaxa.jp/AKARI/Observation/PSC/Public/</A> : AKARI home page
+    <A HREF="http://darts.isas.jaxa.jp/astro/akari/cas.html">http://darts.isas.jaxa.jp/astro/akari/cas.html</A> : AKARI Archive Server
+
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.34"> fis.dat</A>
+<HR>
+   Bytes Format Units   Label    Explanations
+<HR>
+       1  A1    ---     ---      [0]
+   2- 10  I9    ---     objID    [3000001/3427071] Object ID
+  12- 25  A14   ---     objName  <A HREF="#sRM3.2">AKARI source name (HHMMSSs+DDMMSS) (2)</A>
+  27- 35  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     RAdeg    Right Ascension (J2000)
+  37- 45  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEdeg    Declination (J2000)
+  47- 51  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  errMaj   [6.00] Major axis of position error ellipse
+  53- 57  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  errMin   [6.00] Minor axis of position error ellipse
+  59- 63  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     errPA    [0.0] position angle of error ellipse
+  65- 74  E10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Jy" TARGET="explain">Jy</A>      S65      ?=-<A HREF="#sRM3.1">999.9 Flux density in N60 (1)</A>
+  76- 85  E10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Jy" TARGET="explain">Jy</A>      S90      ?=-<A HREF="#sRM3.1">999.9 Flux density in WIDE-S (1)</A>
+  87- 96  E10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Jy" TARGET="explain">Jy</A>      S140     ?=-<A HREF="#sRM3.1">999.9 Flux density in WIDE-L (1)</A>
+  98-107  E10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Jy" TARGET="explain">Jy</A>      S160     ?=-<A HREF="#sRM3.1">999.9 Flux density in N160 (1)</A>
+ 109-117  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Jy" TARGET="explain">Jy</A>      e_S65    ?=-99.9 uncertainty in N60
+ 119-127  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Jy" TARGET="explain">Jy</A>      e_S90    ?=-99.9 uncertainty in WIDE-S
+ 129-137  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Jy" TARGET="explain">Jy</A>      e_S140   ?=-99.9 uncertainty in WIDE-L
+ 139-147  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Jy" TARGET="explain">Jy</A>      e_S160   ?=-99.9 uncertainty in N160
+     149  I1    ---     q_S65    [0,3] <A HREF="#sRM3.3">quality flag for N60 (3)</A>
+     151  I1    ---     q_S90    [0,3] <A HREF="#sRM3.3">quality flag for WIDE-S (3)</A>
+     153  I1    ---     q_S140   [0,3] <A HREF="#sRM3.3">quality flag for WIDE-L (3)</A>
+     155  I1    ---     q_S160   [0,3] <A HREF="#sRM3.3">quality flag for N160 (3)</A>
+ 157-159  A3    ---     ---      [0]
+     160  A1    ---     f_S65    [0-9A-F] <A HREF="#sRM3.4">Bit flags for N60 (4)</A>
+ 162-164  A3    ---     ---      [0]
+     165  A1    ---     f_S90    [0-9A-F] <A HREF="#sRM3.4">Bit flags for WIDE-S (4)</A>
+ 167-169  A3    ---     ---      [0]
+     170  A1    ---     f_S140   [0-9A-F] <A HREF="#sRM3.4">Bit flags for WIDE-L (4)</A>
+ 172-174  A3    ---     ---      [0]
+     175  A1    ---     f_S160   [0-9A-F] <A HREF="#sRM3.4">Bit flags for N160 (4)</A>
+ 177-180  I4    ---     Ns65     Number of scans with source detection in N60
+ 182-185  I4    ---     Ns90     Number of scans with source detection in WIDE-S
+ 187-190  I4    ---     Ns140    Number of scans with source detection in WIDE-L
+ 192-195  I4    ---     Ns160    Number of scans with source detection in N160
+ 197-200  I4    ---     Np65     Number of possible detections in N60
+ 202-205  I4    ---     Np90     Number of possible detections in WIDE-S
+ 207-210  I4    ---     Np140    Number of possible detections in WIDE-L
+ 212-215  I4    ---     Np160    Number of possible detections in N160
+ 217-218  I2    ---     M65      [0,1]?=-<A HREF="#sRM3.5">1 month confirmation flag in N60 (5)</A>
+ 220-221  I2    ---     M90      [0,1]?=-<A HREF="#sRM3.5">1 month confirmation flag in WIDE-S (5)</A>
+ 223-224  I2    ---     M140     [0,1]?=-<A HREF="#sRM3.5">1 month confirmation flag in WIDE-L (5)</A>
+ 226-227  I2    ---     M160     [0,1]?=-<A HREF="#sRM3.5">1 month confirmation flag in N160 (5)</A>
+ 229-231  I3    ---     Ndens    Number of sources within 5arcmin of source
+<HR>
+<A NAME="sRM3.1"><B>Note (1)</B>: the filter characteristics are:
+     -----------------------------------------------------
+         Filter:     N60    WIDE-S    WIDE-L     N160
+     -----------------------------------------------------
+     Center(um):     65       90       140       160
+      Range(um):    50-80    60-110   110-180   140-180
+       Pixel("):    26.8      26.8     44.2      44.2
+     -----------------------------------------------------
+<A NAME="sRM3.2"><B>Note (2)</B>:
+    The sources should be referred in the literatures by their full name
+    (AKARI-FIS-V1) followed by the letter 'J' and the objName, e.g.
+    AKARI-FIS-V1 J0123498-025805
+<A NAME="sRM3.3"><B>Note (3)</B>: Four-level flux quality indicator:
+    3 = high quality (source confirmed and flux is reliable)
+    2 = source is confirmed but the flux is not reliable (see the flags)
+    1 = the source is not confirmed
+    0 = not observed
+<A NAME="sRM3.4"><B>Note (4)</B>: Bit flags of data quality in hexadecimal:
+      1 = CDS mode used (Correlated Double Sampling used to observe
+          bright sky regions to avoid saturation, e.g. in the inner
+          Galactic plane)
+      2 = flux too low
+      4 = (not used)
+      8 = possibly a 'side-lobe' detection
+      Combined values are represented by the sum, e.g. 9 = 8 + 1 =
+      a possible side-lobe detection in CDS mode.
+<A NAME="sRM3.5"><B>Note (5)</B>: The value is 1 when the source is observed in scans separated by
+     more than one month. This value is independent from hour confirmation
+     and can be 1 even if the source is not confirmed (q_=1); similarly a
+     value of 0 does not mean that the source is unreliable.
+<HR>
+
+<A NAME="sRM99.3"><B>History</B>:
+  * 21-Apr-2010: from the AKARI pages
+    <A HREF="http://www.ir.isas.jaxa.jp/AKARI/Observation/PSC/Public/">http://www.ir.isas.jaxa.jp/AKARI/Observation/PSC/Public/</A>
+================================================================================
+<B>(End)</B>                                   Francois Ochsenbein [CDS]    30-Apr-2010
+
+</PRE><!-- ....wait for 1 children: %0=3182990 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

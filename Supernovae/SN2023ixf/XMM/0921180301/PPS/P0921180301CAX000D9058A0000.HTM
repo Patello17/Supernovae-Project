@@ -1,0 +1,1000 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of IX/58</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Sun Jul 23 17:43:43 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0921180301OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of IX/58 :<BR>2SXPS Swift X-ray telescope point source catalogue (Evans+, 2020)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0921180301OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>IX/58</B>     2SXPS  Swift X-ray telescope point source catalogue     (Evans+, 2020)
+================================================================================
+2SXPS: An improved and expanded Swift X-ray telescope point source catalog.
+    Evans P.A., Page K.L., Osborne J.P., Beardmore A.P., Willingale R.,
+    Burrows D.N., Kennea J.A., Perri M., Capalbi M., Tagliaferri G., Cenko S.B.
+    &lt;Astrophys. J., Suppl. Ser., 247, 54 (2020)&gt;
+   =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2020yCat.9058....0E">2020yCat.9058....0E</A>
+   =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2020ApJS..247...54E">2020ApJS..247...54E</A>
+================================================================================
+<B>ADC_Keywords</B>: X-ray sources ; Surveys
+
+<B>Mission_Name</B>: Swift
+
+<B>Keywords</B>: catalogs - surveys - X-rays: observations - methods: data analysis
+
+
+<A NAME="sRM99.1"><B>Abstract</B>:
+    We present the 2SXPS (Swift-XRT Point Source) catalog, containing
+    206,335 point sources detected by the Swift X-ray Telescope (XRT) in
+    the 0.3-10 keV energy range. This catalog represents a significant
+    improvement over 1SXPS, with double the sky coverage (now
+    3,790deg<SUP>2</SUP>), and several significant improvements in source detection
+    and classification. In particular, we present for the first time
+    techniques to model the effect of stray light - significantly reducing
+    the number of spurious sources detected. These techniques will be very
+    important for future, large effective area X-ray mission such as the
+    forthcoming Athena X-ray observatory. We also present a new model of
+    the XRT point spread function, and a method for correctly localising
+    and characterising piled up sources. We provide light curves - in four
+    energy bands, two hardness ratios and two binning timescales -- for
+    every source, and from these deduce that over 80,000 of the sources in
+    2SXPS are variable in at least one band or hardness ratio. The catalog
+    data can be queried or downloaded via a bespoke web interface at
+    https://www.swift.ac.uk/2SXPS, via HEASARC, or in Vizier (<A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/58">IX/58</A>)
+
+<A NAME="sRM11.1"><B>Description</B>:
+    The 2SXPS catalogue is a point-source catalogue built from all
+    Swift-XRT Photon Counting mode data of at least 50 s in duration
+    gathered prior between 2005 Jan 01 and 2018 August 01. It contains
+    positions, fluxes, spectral details, variability information and a
+    flag indicating the reliability of the detection for 206,335 objects.
+    Various values (e.g. the count rates) are given in 4 bands:
+    Total = 0.3-10 keV
+    Soft = 0.3-1 keV
+    Medium = 1-2 keV
+    Hard = 2-10 keV
+    The source detection was performed in each of these bands
+    independently, and the results combined to give this final catalogue.
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.50">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.51">&#215; <A HREF="#sRM2.1">2sxps.dat</A>       2296   206335   The 2SXPS Catalogue of Swift X-ray telescope
+                                 Point Sources
+<A NAME="sRM-F.53">&#215; <A HREF="#sRM2.1">2sxpscle.dat</A>    2296   146768   The 2SXPS Catalogue of Swift X-ray telescope
+                                 Point Sources "clean" version
+<HR>
+
+<A NAME="sRM13.1"><B>See also</B>:
+    <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/284">I/284</A>          : The USNO-B1.0 Catalog (Monet+ 2003)
+    <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=II/246">II/246</A>         : 2MASS All-Sky Catalog of Point Sources (Cutri+ 2003)
+    <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=II/328">II/328</A>         : AllWISE Data Release (Cutri+ 2013)
+    <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/28">IX/28</A>          : ROSAT HRI Pointed Observations (1RXH) (ROSAT Team, 2000)
+    <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/55">IX/55</A>          : XMM-Newton Serendipitous Source Catalogue 3XMM-DR8
+                                                           (XMM-SSC, 2018)
+    <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/56">IX/56</A>          : 3XMM-DR7s serendipitous source catalogue from stacks
+                                                           (Traulsen+, 2019)
+    <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/53">IX/53</A>          : XMM-Newton slew survey Source Catalogue, version 2.0
+                                                           (XMM-SSC, 2017)
+    <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/43">IX/43</A>          : 1SXPS Swift X-ray telescope point source catalogue
+                                                           (Evans+ 2014)
+    <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/A%2BA/528/A122">J/A+A/528/A122</A> : SwiftFT catalog (Puccetti+, 2011)
+    <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/A%2BA/547/A57">J/A+A/547/A57</A>  : Swift X-ray Telescope Cluster Survey (Tundo+, 2012)
+    <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/A%2BA/551/A142">J/A+A/551/A142</A> : 7 year Swift-XRT point source catalog (1SWXRT)
+                                                           (D'Elia+, 2013)
+    <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/A%2BA/588/A103">J/A+A/588/A103</A> : Second ROSAT all-sky survey (2RXS) source catalog
+                                                           (Boller+, 2016)
+
+    <A HREF="http://www.swift.ac.uk/2SXPS/">http://www.swift.ac.uk/2SXPS/</A> : 2SXPS home page
+    <A HREF="http://www.swift.ac.uk/2SXPS/docs.php">http://www.swift.ac.uk/2SXPS/docs.php</A> : On-line Documentation
+
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.51"> 2sxps.dat</A> <A HREF="#sRM-F.53"> 2sxpscle.dat</A>
+<HR>
+   Bytes Format Units      Label       Explanations
+<HR>
+   1-  6  I6    ---        2SXPS       Numerical unique source identifier
+                                           within 2SXPS (2SXPS_ID)
+   8- 29  A22   ---        IAUName     IAU-format name,
+                                           2SXPS JHHMMSS+-ddmmsss (IAUName)
+  31- 39  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>        RAdeg       Right Ascension (J2000) (RA)
+  41- 49  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>        DEdeg       Declination (J2000) (Decl)
+  51- 54  F4.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>     Err90       Position uncertainty, 90% confidence,
+                                           radial, assumed to be
+                                           Rayleigh-distributed (Err90)
+      56  I1    ---        A           [0/1] Provenance of source astrometry.
+                                           0=Swift star tracker, 1=XRT/2MASS
+                                           astrometry (AstromType)
+  58- 66  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>        GLON        Galactic longitude (l)
+  68- 76  F9.5  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>        GLAT        Galactic latitude (b)
+  78- 83  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>     OffAxis     <A HREF="#sRM3.1">The mean angular distance of the</A>
+                                           source from the XRT boresight in all
+                                           observations within which the source
+                                           was detected (MeanOffAxisAngle) (1)
+  85- 92  F8.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>     DNN         The distance to the closest 2SXPS
+                                           source to this one (NearestNeighbour)
+  94-101  F8.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>     DNNOK       The distance to the closest 2SXPS
+                                           source to this one which is ranked
+                                           Good or Reasonable and has no other
+                                           DetFlag bits set (NearestOKNeighbour)
+ 103-109  I7    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>          t.exp       The total exposure at the source
+                                           location in the catalogue (Exposure)
+ 111-129  A19   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%22datime%22" TARGET="explain">"datime"</A>   t.start1    The UTC date &amp; time of the start of
+                                           the first observation in 2SXPS which
+                                           covered the source location
+                                           (FirstObsDate)
+ 131-149  A19   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%22datime%22" TARGET="explain">"datime"</A>   t.stop1     The UTC date &amp; time of the end of the
+                                           last observation in 2SXPS which
+                                           covered the source location
+                                           (LastObsDate)
+ 151-159  I9    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>         time.start1  <A HREF="#sRM3.2">The time of the start of the first</A>
+                                           observation in 2SXPS which covered
+                                           the source location, in Swift Mission
+                                           Elapsed Time (FirstObsMET) (2)
+ 161-169  I9    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>          time.stop1  <A HREF="#sRM3.2">The time of the end of the last</A>
+                                           observation in 2SXPS which covered
+                                           the source location in, Swift Mission
+                                           Elapsed Time (LastObsMET) (2)
+ 171-189  A19   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%22datime%22" TARGET="explain">"datime"</A>   t.start2    The UTC date &amp; time of the start of
+                                           the first observation in 2SXPS in
+                                           which the source count rate is
+                                           inconsistent with 0 at the 3-sigma
+                                           level (FirstDetDate)
+ 191-209  A19   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%22datime%22" TARGET="explain">"datime"</A>   t.stop2     The UTC date &amp; time of the end of the
+                                           last observation in 2SXPS in which
+                                           the source count rate is inconsistent
+                                           with 0 at the 3-sigma level
+                                           (LastDetDate)
+ 211-219  I9    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>         time.start2  <A HREF="#sRM3.2">The time of the start of the first</A>
+                                           observation in 2SXPS in which the
+                                           source count rate is inconsistent
+                                           with 0 at the 3-sigma level, in Swift
+                                           Mission Elapsed Time (FirstDetMET)(2)
+ 221-229  I9    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>          time.stop2  <A HREF="#sRM3.2">The time of the end of the last</A>
+                                           observation in 2SXPS in which the
+                                           source count rate is inconsistent
+                                           with 0 at the 3-sigma level, in Swift
+                                           Mission Elapsed Time (LastDetMET) (2)
+ 231-249  A19   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%22datime%22" TARGET="explain">"datime"</A>   t.start3    The UTC date &amp; time of the start of
+                                           the first observation in 2SXPS in
+                                           which the source is detected in the
+                                           blind search (FirstBlindDetDate)
+ 251-269  A19   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%22datime%22" TARGET="explain">"datime"</A>   t.stop3     The UTC date &amp; time of the end of the
+                                           last observation in 2SXPS in which
+                                           the source is detected in the blind
+                                           search (LastBlindDetDate)
+ 271-279  I9    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>         time.start3  <A HREF="#sRM3.2">The time of the start of the first</A>
+                                           observation in 2SXPS in which the
+                                           source is detected in the blind
+                                           search, in Swift Mission Elapsed Time
+                                           (FirstBlindDetMET) (2)
+ 281-289  I9    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>          time.stop3  <A HREF="#sRM3.2">The time of the end of the last</A>
+                                           observation in 2SXPS in which the
+                                           source is detected in the blind
+                                           search, in Swift Mission Elapsed Time
+                                           (LastBlindDetMET) (2)
+ 291-294  I4    ---        NObs        The number of observations covering
+                                           this source's position (NumObs)
+ 296-299  I4    ---        NBlind      The number of observations in which
+                                           this source was found in a blind
+                                           search (NumBlindDetObs)
+ 301-304  I4    ---        NDet        The number of observations in which
+                                           this source is detected (NumDetObs)
+ 306-312  I7    ---        NBest       The ID of the 'best' detection
+                                           (BestDetectionID)
+     314  I1    ---        F0          Whether the count-rate in the
+                                           0.3-10keV band is inconsistent with 0
+                                           at the 3-sigma level
+                                           (NonBlindDet_band0)
+     316  I1    ---        F1          Whether the count-rate in the
+                                           0.3-1keV band is inconsistent with 0
+                                           at the 3-sigma level
+                                           (NonBlindDet_band1)
+     318  I1    ---        F2          Whether the count-rate in the 1-2keV
+                                           band is inconsistent with 0 at the
+                                           3-sigma level (NonBlindDet_band2)
+     320  I1    ---        F3          Whether the count-rate in the 2-10keV
+                                           band is inconsistent with 0 at the
+                                           3-sigma level (NonBlindDet_band3)
+ 322-323  I2    ---        Det         <A HREF="#sRM3.3">The final source detection flag</A>
+                                           (DetFlag) (3)
+ 325-326  I2    ---        FField      <A HREF="#sRM3.4">The final fieldFlag for this source</A>
+                                           (FieldFlag) (4)
+ 328-330  I3    ---        Det0        <A HREF="#sRM3.3">The final detection flag the 0.3-10keV</A>
+                                            band (DetFlag_band0) (3)
+ 332-334  I3    ---        Det1        <A HREF="#sRM3.3">The final detection flag the 0.3-1keV</A>
+                                           band (DetFlag_band1) (3)
+ 336-338  I3    ---        Det2        <A HREF="#sRM3.3">The final detection flag in the 1-2keV</A>
+                                           band (DetFlag_band2) (3)
+ 340-342  I3    ---        Det3        <A HREF="#sRM3.3">The final detection flag in the</A>
+                                           2-10keV band (DetFlag_band3) (3)
+ 344-352  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>        Warning     <A HREF="#sRM3.5">The worst optical loading warning from</A>
+                                           all detections of this source (5)
+     354  I1    ---        DetSLW      Whether any detection of this source
+                                           occurred within fitted stray light
+                                           rings (StrayLightWarning)
+     356  I1    ---        DetNBSW     Whether any detection of this source
+                                           occurred within the PSF wings of a
+                                           bright object
+                                           (NearBrightSourceWarning)
+     358  I1    ---        Dup         Whether this source is potentially an
+                                           alias (i.e. duplicate) of another
+                                           source (IsPotentialAlias)
+ 360-536  A177  ---        ONames      The list of other sources which may be
+                                           aliases of this one
+                                           (PotentialAliasList)
+--------------------------------------------------------------------------------
+ 538-545  E8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>       CR0         ? The mean count-rate in the 0.3-10keV
+                                           band (Rate_band0)
+ 547-554  E8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>       E_CR0       ? The 1-sigma positive uncertainty on
+                                           the mean count-rate in the
+                                           0.3-10keV band (Rate<SUB>band0</SUB>pos)
+ 556-564  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>       e_CR0       []? The 1-sigma negative uncertainty
+                                           on the mean count-rate in the
+                                           0.3-10keV band (Rate<SUB>band0</SUB>neg)
+ 566-571  F6.3  ---        HR1         ? The aggregate HR1 hardness ratio of
+                                           the source (HR1)
+ 573-578  F6.4  ---        E_HR1       ? The 1-sigma positive uncertainty on
+                                           the aggregate HR1 hardness ratio of
+                                           the source (HR1_pos)
+ 580-586  F7.4  ---        e_HR1       []? The 1-sigma negative uncertainty
+                                           on the aggregate HR1 hardness ratio
+                                           of the source (HR1_neg)
+ 588-593  F6.3  ---        HR2         ? The aggregate HR2 hardness ratio of
+                                           the source (HR2)
+ 595-600  F6.4  ---        E_HR2       ? The 1-sigma positive uncertainty on
+                                           the aggregate HR2 hardness ratio of
+                                           the source (HR2_pos)
+ 602-608  F7.4  ---        e_HR2       []?  The 1-sigma negative uncertainty
+                                           on the aggregate HR2 hardness ratio
+                                           of the source (HR2_neg)
+ 610-617  E8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>       CR1         ? The mean count-rate in the 0.3-1keV
+                                           band (Rate_band1)
+ 619-626  E8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>       E_CR1       ? The 1-sigma positive uncertainty on
+                                           the mean count-rate in the 0.3-1keV
+                                           band (Rate<SUB>band1</SUB>pos)
+ 628-636  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>       e_CR1       []? The 1-sigma negative uncertainty
+                                           on the mean count-rate in the
+                                           0.3-1keV band (Rate<SUB>band1</SUB>neg)
+ 638-645  E8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>       CR2         ? The mean count-rate in the 1-2keV
+                                           band (Rate_band2)
+ 647-654  E8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>       E_CR2       ? The 1-sigma positive uncertainty on
+                                           the mean count-rate in the
+                                           1-2keV band (Rate<SUB>band2</SUB>pos)
+ 656-664  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>       e_CR2       []? The 1-sigma negative uncertainty
+                                           on the mean count-rate in the
+                                           1-2keV band (Rate<SUB>band2</SUB>neg)
+ 666-673  E8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>       CR3         ? The mean count-rate in the 2-10keV
+                                           band (Rate_band3)
+ 675-682  E8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>       E_CR3       ? The 1-sigma positive uncertainty on
+                                           the mean count-rate in the
+                                           2-10keV band (Rate<SUB>band3</SUB>pos)
+ 684-692  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>       e_CR3       []?  The 1-sigma negative uncertainty
+                                           on the mean count-rate in the
+                                           2-10keV band (Rate<SUB>band3</SUB>neg)
+ 694-700  I7    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>         Ct0         ? The total number of counts in the
+                                           source region in the 0.3-10keV band
+                                           (Counts_band0)
+ 702-708  I7    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>         Ct1         ? The total number of counts in the
+                                           source region in the 0.3-1keV band
+                                           (Counts_band1)
+ 710-716  I7    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>         Ct2         ? The total number of counts in the
+                                           source region in the 1-2keV band
+                                           (Counts_band2)
+ 718-724  I7    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>         Ct3         ? The total number of counts in the
+                                           source region in the 2-10keV band
+                                           (Counts_band3)
+ 726-735  F10.2 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>         bgCt0       ? The total number of background
+                                           counts expected in the source region
+                                           in the 0.3-10keV band
+                                           (BgCounts_band0)
+ 737-746  F10.2 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>         bgCt1       ? The total number of background
+                                           counts expected in the source region
+                                           in the 0.3-1keV band (BgCounts_band1)
+ 748-757  F10.2 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>         bgCt2       ? The total number of background
+                                           counts expected in the source region
+                                           in the 1-2keV band (BgCounts_band2)
+ 759-768  F10.2 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>         bgCt3       ? The total number of background
+                                           counts expected in the source region
+                                           in the 2-10keV band (BgCounts_band3)
+ 770-776  F7.2  ---        CF0         ? The PSF correction factor in the
+                                           0.3-10keV band (RateCF_band0)
+ 778-784  F7.2  ---        CF1         ? The PSF correction factor in the
+                                           0.3-1keV band (RateCF_band1)
+ 786-792  F7.2  ---        CF2         ? The PSF correction factor in the
+                                           1-2keV band (RateCF_band2)
+ 794-800  F7.2  ---        CF3         ? The PSF correction factor in the
+                                           2-10keV band (RateCF_band3)
+ 802-810  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>       FUL0        ? The 3-sigma upper confidence limit
+                                           on the count-rate in the
+                                           0.3-10keV band (UL_band0)
+ 812-820  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>       FUL1        ? The 3-sigma upper confidence limit
+                                           on the count-rate in the
+                                           0.3-1keV band (UL_band1)
+ 822-830  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>       FUL2        ? The 3-sigma upper confidence limit
+                                           on the count-rate in the
+                                           1-2keV band (UL_band2)
+ 832-840  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>       FUL3        ? The 3-sigma upper confidence limit
+                                           on the count-rate in the
+                                           2-10keV band (UL_band3)
+ 842-850  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>       PCR0        ? The peak count-rate in the
+                                           0.3-10keV band (PeakRate_band0)
+ 852-860  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>       E_PCR0      ? The 1-sigma positive uncertainty on
+                                           the peak count-rate in the
+                                           0.3-10keV band (PeakRate<SUB>band0</SUB>pos)
+ 862-871  E10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>       e_PCR0      []?  The 1-sigma negative uncertainty
+                                           on the peak count-rate in the
+                                           0.3-10keV band (PeakRate<SUB>band0</SUB>neg)
+ 873-881  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>       PCR1        ? The peak count-rate in the
+                                           0.3-1keV band (PeakRate_band1)
+ 883-891  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>       E_PCR1      ? The 1-sigma positive uncertainty on
+                                           the peak count-rate in the
+                                           0.3-1keV band (PeakRate<SUB>band1</SUB>pos)
+ 893-902  E10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>       e_PCR1      []? The 1-sigma negative uncertainty
+                                           on the peak count-rate in the
+                                           0.3-1keV band (PeakRate<SUB>band1</SUB>neg)
+ 904-912  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>       PCR2        ? The peak count-rate in the
+                                           1-2keV band (PeakRate_band2)
+ 914-922  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>       E_PCR2      ? The 1-sigma positive uncertainty on
+                                           the peak count-rate in the
+                                           1-2keV band (PeakRate<SUB>band2</SUB>pos)
+ 924-933  E10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>       e_PCR2      []?  The 1-sigma negative uncertainty
+                                           on the peak count-rate in the
+                                           1-2keV band (PeakRate<SUB>band2</SUB>neg)
+ 935-943  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>       PCR3        ? The peak count-rate in the
+                                           2-10keV band (PeakRate_band3)
+ 945-953  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>       E_PCR3      ? The 1-sigma positive uncertainty on
+                                           the peak count-rate in the
+                                           2-10keV band (PeakRate<SUB>band3</SUB>pos)
+ 955-964  E10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>       e_PCR3      []?  The 1-sigma negative uncertainty
+                                           on the peak count-rate in the
+                                           2-10keV band (PeakRate<SUB>band3</SUB>neg)
+ 966-974  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cm-2" TARGET="explain">cm-2</A>       NHg         The Galactic absorption column in the
+                                           direction of the source, from
+                                           Willingale et al (2013)
+                                           (GalacticNH)
+ 976-983  E8.3  ---        PcstS0      ? <A HREF="#sRM3.6">The probability that the source</A>
+                                           count-rate in the 0.3-10keV band does
+                                           not vary between snapshots
+                                           (PvarPchiSnapshot_band0) (6)
+ 985-992  E8.3  ---        PcstS1      ? <A HREF="#sRM3.6">The probability that the source</A>
+                                           count-rate in the 0.3-1keV band does
+                                           not vary between snapshots
+                                           (PvarPchiSnapshot_band1) (6)
+ 994-1001  E8.3  ---        PcstS2      ? <A HREF="#sRM3.6">The probability that the source</A>
+                                           count-rate in the 1-2keV band does
+                                           not vary between snapshots
+                                           (PvarPchiSnapshot_band2) (6)
+ 1003-1010  E8.3  ---        PcstS3      ? <A HREF="#sRM3.6">The probability that the source</A>
+                                           count-rate in the 2-10keV band does
+                                           not vary between snapshots
+                                           (PvarPchiSnapshot_band3) (6)
+ 1012-1019  E8.3  ---        PcstSHR1    ? <A HREF="#sRM3.6">The probability that the source HR1</A>
+                                           hardness ratio does not vary between
+                                           snapshots (PvarPchiSnapshot_HR1) (6)
+ 1021-1028  E8.3  ---        PcstSHR2    ? <A HREF="#sRM3.6">The probability that the source HR2</A>
+                                           hardness ratio does not vary between
+                                           snapshots (PvarPchiSnapshot_HR2) (6)
+ 1030-1037  E8.3  ---        Pcst0       ? <A HREF="#sRM3.6">The probability that the source</A>
+                                           count-rate in the 0.3-10keV band does
+                                           not vary between observations
+                                           (PvarPchiObsID_band0) (6)
+ 1039-1046  E8.3  ---        Pcst1       ? <A HREF="#sRM3.6">The probability that the source</A>
+                                           count-rate in the 0.3-1keV band does
+                                           not vary between observations
+                                           (PvarPchiObsID_band1) (6)
+ 1048-1055  E8.3  ---        Pcst2       ? <A HREF="#sRM3.6">The probability that the source</A>
+                                            count-rate in the 1-2keV band does
+                                            not vary between observations
+                                            (PvarPchiObsID_band2) (6)
+ 1057-1064  E8.3  ---        Pcst3       ? <A HREF="#sRM3.6">The probability that the source</A>
+                                           count-rate in the 2-10keV band does
+                                           not vary between observations
+                                           (PvarPchiObsID_band3) (6)
+ 1066-1073  E8.3  ---        PcstHR1     ? <A HREF="#sRM3.6">The probability that the source HR1</A>
+                                           hardness ratio does not vary between
+                                           observations (PvarPchiObsID_HR1) (6)
+ 1075-1082  E8.3  ---        PcstHR2     ? <A HREF="#sRM3.6">The probability that the source HR2</A>
+                                           hardness ratio does not vary between
+                                           observations (PvarPchiObsID_HR2) (6)
+    1084  I1    ---        Pow         ? <A HREF="#sRM3.7">Which method of determining the</A>
+                                           spectral properties assuming a
+                                           power-law was used (WhichPow) (7)
+    1086  I1    ---        APEC        ? <A HREF="#sRM3.7">Which method of determining the</A>
+                                           spectral properties assuming an APEC
+                                           was used (WhichAPEC) (7)
+--------------------------------------------------------------------------------
+ 1088-1096  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJ/m2/ct" TARGET="explain">mJ/m2/ct</A>   CFO0        ? Energy Conversion Factor from
+                                           0.3-10keV count-rate to 0.3-10keV
+                                           observed flux, assuming a power-law
+                                           spectrum (PowECFO)
+ 1098-1106  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJ/m2/ct" TARGET="explain">mJ/m2/ct</A>   CFU0        ? Energy Conversion Factor from
+                                           0.3-10keV count-rate to 0.3-10keV
+                                           unabsorbed flux, assuming a
+                                           power-law spectrum (PowECFU)
+ 1108-1116  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      FPO0        ? The mean 0.3-10keV observed flux
+                                           assuming a power-law spectrum
+                                           (PowFlux)
+ 1118-1127  E10.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      E_FPO0      ? The 1-sigma positive uncertainty on
+                                           the mean 0.3-10keV observed flux
+                                           assuming a power-law spectrum
+                                           (PowFlux_pos)
+ 1129-1139  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      e_FPO0      []? The 1-sigma negative uncertainty
+                                           on the mean 0.3-10keV observed flux
+                                           assuming a power-law spectrum
+                                           (PowFlux_neg)
+ 1141-1149  E9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      FPU0        ? The mean 0.3-10keV unabsorbed flux
+                                           assuming a power-law spectrum
+                                           (PowUnabsFlux)
+ 1151-1160  E10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      E_FPU0      ? The 1-sigma positive uncertainty on
+                                           the mean 0.3-10keV unabsorbed flux
+                                           assuming a power-law spectrum
+                                           (PowUnabsFlux_pos)
+ 1162-1172  E11.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      e_FPU0      []? The 1-sigma negative uncertainty
+                                           on the mean 0.3-10keV unabsorbed flux
+                                           assuming a power-law spectrum
+                                           (PowUnabsFlux_neg)
+--------------------------------------------------------------------------------
+ 1174-1182  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJ/m2/ct" TARGET="explain">mJ/m2/ct</A>   ECFO0       ? The Energy Conversion Factor from
+                                           0.3-10keV count-rate to 0.3-10keV
+                                           observed flux, assuming an APEC
+                                           spectrum (APECECFO)
+ 1184-1192  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJ/m2/ct" TARGET="explain">mJ/m2/ct</A>   ECFU0       ? The Energy Conversion Factor from
+                                           0.3-10keV count-rate to 0.3-10keV
+                                           unabsorbed flux, assuming an APEC
+                                           spectrum (APECECFU)
+ 1194-1202  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      FAO0        ? The mean 0.3-10keV observed flux
+                                           assuming an APEC spectrum (APECFlux)
+ 1204-1213  E10.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      E_FAO0      ? The 1-sigma positive uncertainty on
+                                           the mean 0.3-10keV observed flux
+                                           assuming an APEC spectrum
+                                           (APECFlux_pos)
+ 1215-1225  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      e_FAO0      []?  The 1-sigma negative uncertainty
+                                           on the mean 0.3-10keV observed flux
+                                           assuming an APEC spectrum
+                                           (APECFlux_neg)
+ 1227-1236  E10.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      FAU0        ? The mean 0.3-10keV unabsorbed flux
+                                           assuming an APEC spectrum
+                                           (APECUnabsFlux)
+ 1238-1248  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      E_FAU0      ? The 1-sigma positive uncertainty on
+                                           the mean 0.3-10keV unabsorbed flux
+                                           assuming an APEC spectrum
+                                           (APECUnabsFlux_pos)
+ 1250-1262  E13.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      e_FAU0      []? The 1-sigma negative uncertainty
+                                           on the mean 0.3-10keV unabsorbed flux
+                                           assuming an APEC spectrum
+                                           (APECUnabsFlux_neg)
+--------------------------------------------------------------------------------
+ 1263-1272  E10.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      FpPO0       ? The peak 0.3-10keV observed flux
+                                           assuming a power-law spectrum
+                                           (PowPeakFlux)
+ 1274-1283  E10.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      E_FpPO0     ? The 1-sigma positive uncertainty on
+                                           the peak 0.3-10keV observed flux
+                                           assuming a power-law spectrum
+                                           (PowPeakFlux_pos)
+ 1285-1295  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      e_FpPO0     []? The 1-sigma negative uncertainty
+                                           on the peak 0.3-10keV observed flux
+                                           assuming a power-law spectrum
+                                           (PowPeakFlux_neg)
+ 1297-1307  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      FpPU0       ? The peak 0.3-10keV unabsorbed flux
+                                           assuming a power-law spectrum
+                                           (PowPeakUnabsFlux)
+ 1309-1319  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      E_FpPU0     ? The 1-sigma positive uncertainty on
+                                           the peak 0.3-10keV unabsorbed flux
+                                           assuming a power-law spectrum
+                                           (PowPeakUnabsFlux_pos)
+ 1321-1332  E12.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      e_FpPU0     []? The 1-sigma negative uncertainty
+                                           on the peak 0.3-10keV unabsorbed flux
+                                           assuming a power-law spectrum
+                                           (PowPeakUnabsFlux_neg)
+--------------------------------------------------------------------------------
+ 1334-1343  E10.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      FpAO0       ? The peak 0.3-10keV observed flux
+                                           assuming an APEC spectrum
+                                           (APECPeakFlux)
+ 1345-1354  E10.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      E_FpAO0     ? The 1-sigma positive uncertainty on
+                                           the peak 0.3-10keV observed flux
+                                           assuming an APEC spectrum
+                                           (APECPeakFlux_pos)
+ 1356-1366  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      e_FpAO0     []? The 1-sigma negative uncertainty
+                                           on the peak 0.3-10keV observed flux
+                                           assuming an APEC spectrum
+                                           (APECPeakFlux_neg)
+ 1368-1378  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      FpAU0       ? The peak 0.3-10keV unabsorbed flux
+                                           assuming an APEC spectrum
+                                           (APECPeakUnabsFlux)
+ 1380-1390  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      E_FpAU0     ? The 1-sigma positive uncertainty on
+                                           the peak 0.3-10keV unabsorbed flux
+                                           assuming an APEC spectrum
+                                           (APECPeakUnabsFlux_pos)
+ 1392-1404  E13.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      e_FpAU0     []? The 1-sigma negative uncertainty
+                                           on the peak 0.3-10keV unabsorbed flux
+                                           assuming an APEC spectrum
+                                           (APECPeakUnabsFlux_neg)
+--------------------------------------------------------------------------------
+ 1405-1413  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJ/m2/ct" TARGET="explain">mJ/m2/ct</A>   CECFO       ? The Energy Conversion Factor from
+                                           0.3-10keV count-rate to 0.3-10keV
+                                           observed flux, assuming the canned
+                                           power-law spectrum (FixedPowECFO)
+ 1415-1423  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJ/m2/ct" TARGET="explain">mJ/m2/ct</A>   CECFU       ? The Energy Conversion Factor from
+                                           0.3-10keV count-rate to 0.3-10keV
+                                           unabsorbed flux, assuming the canned
+                                           power-law spectrum (FixedPowECFU)
+ 1425-1433  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      FCOP0       ? The mean 0.3-10keV observed flux
+                                           assuming the canned power-law
+                                           spectrum (FixedPowFlux)
+ 1435-1444  E10.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      E_FCOP0     ? The 1-sigma positive uncertainty on
+                                           the mean 0.3-10keV observed flux
+                                           assuming the canned power-law
+                                           spectrum (FixedPowFlux_pos)
+ 1446-1456  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      e_FCOP0     []? The 1-sigma negative uncertainty
+                                           on the mean 0.3-10keV observed flux
+                                           assuming the canned power-law
+                                           spectrum (FixedPowFlux_neg)
+ 1458-1466  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      FCUP0       ? The mean 0.3-10keV unabsorbed flux
+                                           assuming the canned power-law
+                                           spectrum (FixedPowUnabsFlux)
+ 1468-1477  E10.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      E_FCUP0     ? The 1-sigma positive uncertainty on
+                                           the mean 0.3-10keV unabsorbed flux
+                                           assuming the canned power-law
+                                           spectrum (FixedPowUnabsFlux_pos)
+ 1479-1489  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      e_FCUP0     []? The 1-sigma negative uncertainty
+                                           on the mean 0.3-10keV unabsorbed flux
+                                           assuming the canned power-law
+                                           spectrum (FixedPowUnabsFlux_neg)
+--------------------------------------------------------------------------------
+ 1491-1499  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJ/m2/ct" TARGET="explain">mJ/m2/ct</A>   AECFO       ? The Energy Conversion Factor from
+                                           0.3-10keV count-rate to 0.3-10keV
+                                           observed flux, assuming the canned
+                                           APEC spectrum (FixedAPECECFO)
+ 1501-1509  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJ/m2/ct" TARGET="explain">mJ/m2/ct</A>   AECFU       ? The Energy Conversion Factor from
+                                           0.3-10keV count-rate to 0.3-10keV
+                                           unabsorbed flux, assuming the canned
+                                           APEC spectrum (FixedAPECECFU)
+ 1511-1519  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      FCAO1       ? The mean 0.3-10keV observed flux
+                                           assuming the canned APEC spectrum
+                                           (FixedAPECFlux)
+ 1521-1530  E10.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      E_FCAO1     ? The 1-sigma positive uncertainty on
+                                           the mean 0.3-10keV observed flux
+                                           assuming the canned APEC spectrum
+                                           (FixedAPECFlux_pos)
+ 1532-1542  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      e_FCAO1     []? The 1-sigma negative uncertainty
+                                           on the mean 0.3-10keV observed flux
+                                           assuming the canned APEC spectrum
+                                           (FixedAPECFlux_neg)
+ 1544-1552  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      FCAU1       ? The mean 0.3-10keV unabsorbed flux
+                                           assuming the canned APEC spectrum
+                                           (FixedAPECUnabsFlux)
+ 1554-1563  E10.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      E_FCAU1     ? The 1-sigma positive uncertainty on
+                                           the mean 0.3-10keV unabsorbed flux
+                                           assuming the canned APEC spectrum
+                                           (FixedAPECUnabsFlux_pos)
+ 1565-1575  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      e_FCAU1     []? The 1-sigma negative uncertainty
+                                           on the mean 0.3-10keV unabsorbed flux
+                                           assuming the canned APEC spectrum
+                                           (FixedAPECUnabsFlux_neg)
+--------------------------------------------------------------------------------
+ 1577-1585  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      PECFO       ? The Energy Conversion Factor from
+                                           0.3-10keV count-rate to 0.3-10keV
+                                           observed flux, assuming the power-law
+                                           spectrum interpolated from the HRs
+                                           (InterpPowECFO)
+ 1587-1595  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      PECFU       ? The Energy Conversion Factor from
+                                           0.3-10keV count-rate to 0.3-10keV
+                                           unabsorbed flux, assuming the
+                                           power-law spectrum interpolated from
+                                           the HRs (InterpPowECFU)
+ 1597-1606  E10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cm-2" TARGET="explain">cm-2</A>       NH1H        ? The hydrogen column density inferred
+                                           assuming the power-law spectrum
+                                           interpolated from the HRs
+                                           (InterpPowNH)
+ 1608-1618  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cm-2" TARGET="explain">cm-2</A>       E_NH1H      []? The 1-sigma positive uncertainty
+                                           on the hydrogen column density
+                                           inferred assuming the power-law
+                                           spectrum interpolated from the HRs
+                                           (InterpPowNH_pos)
+ 1620-1630  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cm-2" TARGET="explain">cm-2</A>       e_NH1H      []? The 1-sigma negative uncertainty
+                                           on the hydrogen column density
+                                           inferred assuming the power-law
+                                           spectrum interpolated from the HRs
+                                           (InterpPowNH_neg)
+ 1632-1641  E10.4 ---        Gam1        ? The spectral photon index inferred
+                                           assuming the power-law spectrum
+                                           interpolated from the HRs
+                                           (InterpPowGamma)
+ 1643-1653  E11.5 ---        E_Gam1      []? The 1-sigma positive uncertainty
+                                           on the spectral photon index inferred
+                                           assuming the power-law spectrum
+                                           interpolated from the HRs
+                                           (InterpPowGamma_pos)
+ 1655-1665  E11.5 ---        e_Gam1      []? The 1-sigma negative uncertainty
+                                           on the spectral photon index inferred
+                                           assuming the power-law spectrum
+                                           interpolated from the HRs
+                                           (InterpPowGamma_neg)
+ 1667-1675  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      FIPO1       ? The mean 0.3-10keV observed flux
+                                           assuming the power-law spectrum
+                                           interpolated from the HRs
+                                           (InterpPowFlux)
+ 1677-1686  E10.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      E_FIPO1     ? The 1-sigma positive uncertainty on
+                                           the mean 0.3-10keV observed flux
+                                           assuming the power-law spectrum
+                                           interpolated from the HRs
+                                           (InterpPowFlux_pos)
+ 1688-1698  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      e_FIPO1     []? The 1-sigma negative uncertainty
+                                           on the mean 0.3-10keV observed flux
+                                           assuming the power-law spectrum
+                                           interpolated from the HRs
+                                           (InterpPowFlux_neg)
+ 1700-1708  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      FIPU1       ? The mean 0.3-10keV unabsorbed flux
+                                           assuming the power-law spectrum
+                                           interpolated from the HRs
+                                           (InterpPowUnabsFlux)
+ 1710-1719  E10.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      E_FIPU1     ? The 1-sigma positive uncertainty on
+                                           the mean 0.3-10keV unabsorbed flux
+                                           assuming the power-law spectrum
+                                           interpolated from the HRs
+                                           (InterpPowUnabsFlux_pos)
+ 1721-1731  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      e_FIPU1     []? The 1-sigma negative uncertainty
+                                           on the mean 0.3-10keV unabsorbed flux
+                                           assuming the power-law spectrum
+                                           interpolated from the HRs
+                                           (InterpPowUnabsFlux_neg)
+--------------------------------------------------------------------------------
+ 1733-1741  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJ/m2/ct" TARGET="explain">mJ/m2/ct</A>   IPECFO      ? The Energy Conversion Factor from
+                                           0.3-10keV count-rate to 0.3-10keV
+                                           observed flux, assuming the APEC
+                                           spectrum interpolated from the HRs
+                                           (InterpAPECECFO)
+ 1743-1751  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJ/m2/ct" TARGET="explain">mJ/m2/ct</A>   IPECFU      ? The Energy Conversion Factor from
+                                           0.3-10keV count-rate to 0.3-10keV
+                                           unabsorbed flux, assuming the APEC
+                                           spectrum interpolated from the HRs
+                                           (InterpAPECECFU)
+ 1753-1762  E10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cm-2" TARGET="explain">cm-2</A>       NH2A        ? The hydrogen column density inferred
+                                           assuming the APEC spectrum
+                                           interpolated from the HRs
+                                           (InterpAPECNH)
+ 1764-1774  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cm-2" TARGET="explain">cm-2</A>       E_NH2A      []? The 1-sigma positive uncertainty
+                                           on the hydrogen column density
+                                           inferred assuming the APEC spectrum
+                                           interpolated from the HRs
+                                           (InterpAPECNH_pos)
+ 1776-1786  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cm-2" TARGET="explain">cm-2</A>       e_NH2A      []? The 1-sigma negative uncertainty
+                                           on the hydrogen column density
+                                           inferred assuming the APEC spectrum
+                                           interpolated from the HRs
+                                           (InterpAPECNH_neg)
+ 1788-1797  E10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?keV" TARGET="explain">keV</A>        kTAH        ? The temperature inferred assuming
+                                           the APEC spectrum interpolated from
+                                           the HRs (InterpAPECkT)
+ 1799-1809  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?keV" TARGET="explain">keV</A>        E_kTAH      []? The 1-sigma positive uncertainty
+                                           on the temperature inferred assuming
+                                           the APEC spectrum interpolated from
+                                           the HRs (InterpAPECkT_pos)
+ 1811-1821  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?keV" TARGET="explain">keV</A>        e_kTAH      []? The 1-sigma negative uncertainty
+                                           on the temperature inferred assuming
+                                           the APEC spectrum interpolated from
+                                           the HRs (InterpAPECkT_neg)
+ 1823-1831  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      FAIO1       ? The mean 0.3-10keV observed flux
+                                           assuming the APEC spectrum
+                                           interpolated from the HRs
+                                           (InterpAPECFlux)
+ 1833-1842  E10.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      E_FAIO1     ? The 1-sigma positive uncertainty on
+                                           the mean 0.3-10keV observed flux
+                                           assuming the APEC spectrum
+                                           interpolated from the HRs
+                                           (InterpAPECFlux_pos)
+ 1844-1854  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      e_FAIO1     []? The 1-sigma negative uncertainty
+                                           on the mean 0.3-10keV observed flux
+                                           assuming the APEC spectrum
+                                           interpolated from the HRs
+                                           (InterpAPECFlux_neg)
+ 1856-1864  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      FAIU1       ? The mean 0.3-10keV unabsorbed flux
+                                           assuming the APEC spectrum
+                                           interpolated from the HRs
+                                           (InterpAPECUnabsFlux)
+ 1866-1875  E10.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      E_FAIU1     ? The 1-sigma positive uncertainty on
+                                           the mean 0.3-10keV unabsorbed flux
+                                           assuming the APEC spectrum
+                                           interpolated from the HRs
+                                           (InterpAPECUnabsFlux_pos)
+ 1877-1887  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      e_FAIU1     []? The 1-sigma negative uncertainty
+                                           on the mean 0.3-10keV unabsorbed flux
+                                           assuming the APEC spectrum
+                                           interpolated from the HRs
+                                           (InterpAPECUnabsFlux_neg)
+--------------------------------------------------------------------------------
+ 1889-1892  F4.2  ---        P1          ? The probability that the HR values
+                                           of this source could be obtained if
+                                           the true spectrum is an absorbed
+                                           power-law (P_pow)
+ 1894-1897  F4.2  ---        P2          ? The probability that the HR values
+                                           of this source could be obtained if
+                                           the true spectrum is an APEC (P_APEC)
+ 1899-1907  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJ/m2/ct" TARGET="explain">mJ/m2/ct</A>   FPECFO      ? The Energy Conversion Factor from
+                                           0.3-10keV count-rate to 0.3-10keV
+                                           observed flux, assuming the power-law
+                                           spectral model fitted to a
+                                           custom-built spectrum (FittedPowECFO)
+ 1909-1917  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJ/m2/ct" TARGET="explain">mJ/m2/ct</A>   FPECFU      ? The Energy Conversion Factor from
+                                           0.3-10keV count-rate to 0.3-10keV
+                                           unabsorbed flux, assuming the
+                                           power-law spectral model fitted to a
+                                           custom-built spectrum (FittedPowECFU)
+ 1919-1928  E10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cm-2" TARGET="explain">cm-2</A>       NH2C        ? The hydrogen column density inferred
+                                           assuming the power-law spectral model
+                                           fitted to a custom-built spectrum
+                                           (FittedPowNH)
+ 1930-1939  E10.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cm-2" TARGET="explain">cm-2</A>       E_NH2C      ? <A HREF="#sRM3.8">The 1-sigma positive uncertainty on</A>
+                                           the hydrogen column density inferred
+                                           assuming the power-law spectral model
+                                           fitted to a custom-built spectrum
+                                           (FittedPowNH_pos) (8)
+ 1941-1952  E12.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cm-2" TARGET="explain">cm-2</A>       e_NH2C      []? <A HREF="#sRM3.8">The 1-sigma negative uncertainty</A>
+                                           on the hydrogen column density
+                                           inferred assuming the power-law
+                                           spectral model fitted to a
+                                           custom-built spectrum
+                                           (FittedPowNH_neg) (8)
+ 1954-1963  E10.4 ---        Gamma       ? The spectral photon index inferred
+                                           assuming the power-law spectral model
+                                           fitted to a custom-built spectrum
+                                           (FittedPowGamma)
+ 1965-1975  E11.5 ---        E_Gamma     []? <A HREF="#sRM3.8">The 1-sigma positive uncertainty</A>
+                                           on the spectral photon index inferred
+                                           assuming the power-law spectral model
+                                           fitted to a custom-built spectrum
+                                           (FittedPowGamma_pos) (8)
+ 1977-1987  E11.5 ---        e_Gamma     []? <A HREF="#sRM3.8">The 1-sigma negative uncertainty</A>
+                                           on the spectral photon index inferred
+                                           assuming the power-law spectral model
+                                           fitted to a custom-built spectrum
+                                           (FittedPowGamma_neg) (8)
+ 1989-1997  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      FPCO0       ? The mean 0.3-10keV observed flux
+                                           assuming the power-law spectral model
+                                           fitted to a custom-built spectrum
+                                           (FittedPowFlux)
+ 1999-2008  E10.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      E_FPCO0     ? <A HREF="#sRM3.8">The 1-sigma positive uncertainty on</A>
+                                           the mean 0.3-10keV observed flux
+                                           assuming the power-law spectral model
+                                           fitted to a custom-built spectrum
+                                           (FittedPowFlux_pos) (8)
+ 2010-2020  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      e_FPCO0     []? <A HREF="#sRM3.8">The 1-sigma negative uncertainty</A>
+                                           on the mean 0.3-10keV observed flux
+                                           assuming the power-law spectral model
+                                           fitted to a custom-built spectrum
+                                           (FittedPowFlux_neg) (8)
+ 2022-2031  E10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      FPCU0       ? The mean 0.3-10keV unabsorbed flux
+                                           assuming the power-law spectral model
+                                           fitted to a custom-built spectrum
+                                           (FittedPowUnabsFlux)
+ 2033-2044  E12.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      E_FPCU0     []? <A HREF="#sRM3.8">The 1-sigma positive uncertainty</A>
+                                           on the mean 0.3-10keV unabsorbed flux
+                                           assuming the power-law spectral model
+                                           fitted to a custom-built spectrum
+                                           (FittedPowUnabsFlux_pos) (8)
+ 2046-2057  E12.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      e_FPCU0     []? <A HREF="#sRM3.8">The 1-sigma negative uncertainty</A>
+                                           on the mean 0.3-10keV unabsorbed flux
+                                           assuming the power-law spectral model
+                                           fitted to a custom-built spectrum
+                                           (FittedPowUnabsFlux_neg) (8)
+ 2059-2065  F7.1  ---        Cstat       ? The C-statistic from the power-law
+                                           spectral fit to the custom-built
+                                           spectrum (FittedPowCstat)
+ 2067-2069  I3    ---        DOF         ? The number of degrees of freedom in
+                                           the power-law spectral fit to the
+                                           custom-built spectrum (FittedPowDOF)
+ 2071-2076  F6.2  ---        chi2r       ? The Churazov-weighted reduced chi<SUP>2</SUP>
+                                           from the power-law spectral fit to
+                                           the custom-built spectrum
+                                           (FittedPowReducedChi2)
+--------------------------------------------------------------------------------
+ 2078-2086  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJ/m2/ct" TARGET="explain">mJ/m2/ct</A>   ACECFO      ? The Energy Conversion Factor from
+                                           0.3-10keV count-rate to 0.3-10keV
+                                           observed flux, assuming the APEC
+                                           spectral model fitted to a
+                                           custom-built spectrum
+                                           (FittedAPECECFO)
+ 2088-2096  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJ/m2/ct" TARGET="explain">mJ/m2/ct</A>   ACECFU      ? The Energy Conversion Factor from
+                                           0.3-10keV count-rate to 0.3-10keV
+                                           unabsorbed flux, assuming the APEC
+                                           spectral model fitted to a
+                                           custom-built spectrum
+                                           (FittedAPECECFU)
+ 2098-2107  E10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cm-2" TARGET="explain">cm-2</A>       NH2AC       ? The hydrogen column density inferred
+                                           assuming the APEC spectral model
+                                           fitted to a custom-built spectrum
+                                           (FittedAPECNH)
+ 2109-2119  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cm-2" TARGET="explain">cm-2</A>       E_NH2AC     []? <A HREF="#sRM3.8">The 1-sigma positive uncertainty</A>
+                                           on the hydrogen column density
+                                           inferred assuming the APEC spectral
+                                           model fitted to a custom-built
+                                           spectrum (FittedAPECNH_pos) (8)
+ 2121-2132  E12.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cm-2" TARGET="explain">cm-2</A>       e_NH2AC     []? <A HREF="#sRM3.8">The 1-sigma negative uncertainty</A>
+                                           on the hydrogen column density
+                                           inferred assuming the APEC spectral
+                                           model fitted to a custom-built
+                                           spectrum  (FittedAPECNH_neg) (8)
+ 2134-2142  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?keV" TARGET="explain">keV</A>        kTAC        ? The temperature inferred assuming
+                                           the APEC spectral model fitted to a
+                                           custom-built spectrum (FittedAPECkT)
+ 2144-2154  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?keV" TARGET="explain">keV</A>        E_kTAC      []? <A HREF="#sRM3.8">The 1-sigma positive uncertainty</A>
+                                           on the temperature inferred assuming
+                                           the APEC spectral model fitted to a
+                                           custom-built spectrum
+                                           (FittedAPECkT_pos) (8)
+ 2156-2166  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?keV" TARGET="explain">keV</A>        e_kTAC      []? <A HREF="#sRM3.8">The 1-sigma negative uncertainty</A>
+                                           on the temperature inferred assuming
+                                           the APEC spectral model fitted to a
+                                           custom-built spectrum
+                                           (FittedAPECkT_neg) (8)
+ 2168-2176  E9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      FACO0       ? The mean 0.3-10keV observed flux
+                                           assuming the APEC spectral model
+                                           fitted to a custom-built spectrum
+                                           (FittedAPECFlux)
+ 2178-2187  E10.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      E_FACO0     ? <A HREF="#sRM3.8">The 1-sigma positive uncertainty on</A>
+                                           the mean 0.3-10keV observed flux
+                                           assuming the APEC spectral model
+                                           fitted to a custom-built spectrum
+                                           (FittedAPECFlux_pos) (8)
+ 2189-2199  E11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      e_FACO0     []? <A HREF="#sRM3.8">The 1-sigma negative uncertainty</A>
+                                           on the mean 0.3-10keV observed flux
+                                           assuming the APEC spectral model
+                                           fitted to a custom-built spectrum
+                                           (FittedAPECFlux_neg) (8)
+ 2201-2210  E10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      FACU0       ? The mean 0.3-10keV unabsorbed flux
+                                           assuming the APEC spectral model
+                                           fitted to a custom-built spectrum
+                                           (FittedAPECUnabsFlux)
+ 2212-2223  E12.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      E_FACU0     []? <A HREF="#sRM3.8">The 1-sigma positive uncertainty</A>
+                                           on the mean 0.3-10keV unabsorbed flux
+                                           assuming the APEC spectral model
+                                           fitted to a custom-built spectrum
+                                           (FittedAPECUnabsFlux_pos) (8)
+ 2225-2236  E12.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mW/m2" TARGET="explain">mW/m2</A>      e_FACU0     []? <A HREF="#sRM3.8">The 1-sigma negative uncertainty</A>
+                                           on the mean 0.3-10keV unabsorbed flux
+                                           assuming the APEC spectral model
+                                           fitted to a custom-built spectrum
+                                           (FittedAPECUnabsFlux_neg) (8)
+ 2238-2245  F8.1  ---        CstatA      ? The C-statistic from the APEC
+                                           spectral fit to the custom-built
+                                           spectrum (FittedAPECCstat)
+ 2247-2249  I3    ---        DOFA        ? The number of degrees of freedom in
+                                           the APEC spectral fit to the
+                                           custom-built spectrum (FittedAPECDOF)
+ 2251-2258  F8.2  ---        chi2rA      ? The Churazov-weighted reduced chi<SUP>2</SUP>
+                                           from the APEC spectral fit to the
+                                           custom-built spectrum
+                                           (FittedAPECReducedChi2)
+--------------------------------------------------------------------------------
+    2260  I1    ---        HasSpec     ? Whether a custom-built spectrum was
+                                           created for this source (HasSpec)
+ 2262-2264  I3    ---        Next        ? The number of external sources found
+                                           to agree spatially with this one at
+                                           the 3-sigma level
+                                           (NumExternalMatches)
+ 2266-2268  I3    ---        Next2       ? The number of external sources found
+                                           to agree spatially with this one at
+                                           the 3-sigma level, excluding 2MASS,
+                                           USNO-B1 and ALLWISE matches
+                                           (NumExternalMatches_slim)
+    2270  I1    ---        ROSHRI      ? Whether the sources is spatially
+                                           within 3 sigma of a source in the
+                                           Rosat HRI catalogue (Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/28">IX/28</A>)
+                                           (MatchInROSHRI)
+    2272  I1    ---        2RXS        ? Whether the sources is spatially
+                                           within 3 sigma of a source in the
+                                           2RXS catalogue (Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/A%2BA/588/A103">J/A+A/588/A103</A>)
+                                           (MatchIn2RXS)
+    2274  I1    ---        3XMMDR8     ? Whether the sources is spatially
+                                           within 3 sigma of a source in the
+                                           3XMM-DR8 catalogue (Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/55">IX/55</A>)
+                                           (MatchIn3XMMDR8)
+    2276  I1    ---        3XMMStack   ? Whether the sources is spatially
+                                           within 3 sigma of a source in the
+                                           3XMM-DR7s (stacked) catalogue
+                                           (Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/56">IX/56</A>) (MatchIn3XMM_Stack)
+    2278  I1    ---        XMMSL2      ? Whether the sources is spatially
+                                           within 3 sigma of a source in the
+                                           XMMSL2 catalogue (Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/53">IX/53</A>)
+                                           (MatchInXMMSL2)
+    2280  I1    ---        SwiftFT     ? Whether the sources is spatially
+                                           within 3 sigma of a source in the
+                                           SwiftFT catalogue
+                                           (Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/A%2BA/528/A122">J/A+A/528/A122</A>)
+                                           (MatchInSwiftFT)
+    2282  I1    ---        1SWXRT      ? Whether the sources is spatially
+                                           within 3 sigma of a source in the
+                                           1SWXRT catalogue
+                                           (Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/A%2BA/551/A142">J/A+A/551/A142</A>)
+                                           (MatchIn1SWXRT)
+    2284  I1    ---        XRTGRB      ? Whether the sources is spatially
+                                           within 3 sigma of an XRT GRB
+                                           afterglow (MatchInXRTGRB)
+    2286  I1    ---        SDSSQSO     ? Whether the sources is spatially
+                                           within 3 sigma of a source in the
+                                           SDSS QSO DR14 catalogue
+                                           (MatchInSDSSQSO)
+    2288  I1    ---        2MASS       ? Whether the sources is spatially
+                                           within 3 sigma of a source in the
+                                           2MASS catalogue (Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=II/246">II/246</A>)
+                                           (MatchIn2MASS)
+    2290  I1    ---        USNOB1      ? Whether the sources is spatially
+                                           within 3 sigma of a source in the
+                                           USNO-B1 catalogue (Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/284">I/284</A>)
+                                           (MatchInUSNOB1)
+    2292  I1    ---        2CSC        ? Whether the sources is spatially
+                                           within 3 sigma of a source in the
+                                           2CSC catalogue (MatchIn2CSC)
+    2294  I1    ---        1SXPS       ? Whether the sources is spatially
+                                           within 3 sigma of a source in the
+                                           1SXPS catalogue (Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/43">IX/43</A>)
+                                           (MatchIn1SXPS)
+    2296  I1    ---        ALLWISE     ? Whether the sources is spatially
+                                           within 3 sigma of a source in the
+                                           ALLWISE catalogue (Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=II/328">II/328</A>)
+                                           (MatchInALLWISE)
+<HR>
+<A NAME="sRM3.1"><B>Note (1)</B>: A value of -1 indicates that the source position was never fully
+   in the field of view.
+<A NAME="sRM3.2"><B>Note (2)</B>: Swift Mission Elapsed Time (MET) is seconds (TT) since
+   2001 Jan 01 00:00:00
+<A NAME="sRM3.3"><B>Note (3)</B>: Detection flags areas follows:
+   0 =  Good
+   1 =  Reasonable
+   2 =  Poor
+  +4 =  The source position is consistent with that of a known extended source
+  +8 =  The source is likely an alias of a badly-fitted piled up source
+ +16 =  The source lies in a region marked as contaminated during the visual
+         screening
+<A NAME="sRM3.4"><B>Note (4)</B>: Field flags are bitwise with the following warnings bits:
+   0 (val=1): Field contains stray light.
+   1 (val=2): Field contains diffuse emission or artifacts.
+   2 (val=4): Field contains stray light that could not be adequately modelled.
+   3 (val=8): Field contains a bright, pile up source which was not properly
+               fitted in some bands.
+<A NAME="sRM3.5"><B>Note (5)</B>: Optical loading occurs when a high flux of optical photons deposits
+   sufficient charge in the XRT to produce spurious X-ray events. See
+   https://www.swift.ac.uk/analysis/xrt/optical_loading.php
+   If this is 0 there is no warning, otherwise there is a nearby optical source
+   brighter than the level at which optical loading becomes a concern; the value
+   indicates how many magnitudes brighter than that level the source is
+<A NAME="sRM3.6"><B>Note (6)</B>: PVAR
+
+<A NAME="sRM3.7"><B>Note (7)</B>: Provenance of the summary spectral fit as follows:
+  0 = fixed spectrum
+  1 = HR-derived
+  2 = fitted spectrum
+<A NAME="sRM3.8"><B>Note (8)</B>: Some of the properties derived from spectral fitting may have error
+  values with the wrong sign, i.e.  positive values for the negative errors and
+  vice versa. These indicated cases where xspec was unable to properly determine
+  the uncertainty on the parameter.
+<HR>
+
+<A NAME="sRM99.2"><B>Acknowledgements</B>:
+     Philip A. Evans, pae9(at)leicester.ac.uk
+================================================================================
+<B>(End)</B> Phil A. Evans [Leicester], Patricia Vannier [CDS]              20-Nov-2019
+
+</PRE><!-- ....wait for 1 children: %0=3182864 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

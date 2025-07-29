@@ -1,0 +1,272 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of B/mk</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Sun Jul 23 17:43:44 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0921180301OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of B/mk :<BR>Catalogue of Stellar Spectral Classifications (Skiff, 2009- )</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0921180301OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>B/mk</B>        Catalogue of Stellar Spectral Classifications     (Skiff, 2009-    )
+================================================================================
+General Catalogue of Stellar Spectral Classifications
+     Skiff B.A.
+    &lt;Lowell Observatory (October 2014)&gt;
+    =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2014yCat....1.2023S">2014yCat....1.2023S</A>
+================================================================================
+<B>ADC_Keywords</B>: Spectral types ; MK spectral classification
+
+
+<A NAME="sRM11.1"><B>Description</B>:
+    This file contains spectral classifications for stars collected from
+    the literature, serving as a continuation of the compilations produced
+    by the Jascheks, by Kennedy, and by Buscombe. The source of each
+    spectral type is indicated by a standard 19-digit bibcode citation.
+    These papers of course should be cited in publication, not this
+    compilation.
+
+    The stars are identified either by the name used in each publication
+    or by a valid SIMBAD identifier. Some effort has been made to
+    determine accurate (~1" or better) coordinates for equinox J2000 (and
+    epoch 2000 if possible), and these serve as a secondary identifier. To
+    the extent possible with current astrometric sources, the components
+    of double stars and stars with composite spectra are shown as separate
+    entries.
+
+    Magnitudes are provided as an indication of brightness, but these data
+    are not necessarily accurate, as they often derive from photographic
+    photometry or rough estimates.
+
+    The file includes only spectral types determined from spectra (viz.
+    line and band strengths or ratios), omitting those determined from
+    photometry (e.g. DDO, Vilnius) or inferred from broadband colors or
+    spectral energy distributions.
+
+    The classifications include MK types as well as types not strictly on
+    the MK system (white dwarfs, Wolf-Rayet, etc), and in addition simple
+    HD-style temperature types. Luminosity classes in the early Mount
+    Wilson style (e.g. 'd' for dwarf, 'g' for giant) and other similar
+    schemes have been converted to modern notation. Since a citation is
+    provided for each entry, the source paper should be consulted for
+    details about classification schemes, spectral dispersion, and
+    instrumentation used.
+
+    System-defining primary MK standard stars are included from the last
+    lists by Morgan and Keenan, and are flagged by a + sign in column 83.
+    The early-type standards comprise the 1973 "dagger standards"
+    (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1973ARA%26A..11...29M">1973ARA&A..11...29M</A>) and stars from the Morgan, Abt, and Tapscott
+    atlas (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1978rmsa.book.....M">1978rmsa.book.....M</A>). Standards from Table I of the Morgan &amp;
+    Abt 'MKA' paper (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1972AJ.....77...35M">1972AJ.....77...35M</A>) not appearing in the two later
+    lists are added. Keenan made continual adjustments to the standards
+    lists up to the time of his death. Thus the late-type standards
+    comprise those marked as high-weight standards in the 1989 Perkins
+    catalogue (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1989ApJS...71..245K">1989ApJS...71..245K</A> = <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=III/150">III/150</A>); the revised S-type
+    standards in collaboration with Boeshaar (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1980ApJS...43..379K">1980ApJS...43..379K</A>); plus
+    the carbon standards and class IIIb 'clump giants' in collaboration
+    with Barnbaum (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1996ApJS..105..419B">1996ApJS..105..419B</A> and <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1999ApJ...518..859K">1999ApJ...518..859K</A>). In
+    addition, I have made use of the final types by Keenan up to January
+    2000 shown at the Ohio State Web site
+    (<A HREF="http://www.astronomy.ohio-state.edu/MKCool">http://www.astronomy.ohio-state.edu/MKCool</A>), accessed in autumn 2003.
+    Though the present file contains all the stars in these lists, only
+    those marked as standards are flagged as such. Garrison's list of MK
+    'anchor points' might also be consulted in this regard
+    (1994mpyp.conf....3G, and
+    <A HREF="http://www.astro.utoronto.ca/~garrison/mkstds.html">http://www.astro.utoronto.ca/~garrison/mkstds.html</A>).
+
+    The catalogue includes for the first time results from many
+    large-scale objective-prism spectral surveys done at Case, Stockholm,
+    Crimea, Abastumani, and elsewhere. The stars in these surveys were
+    usually identified only on charts or by other indirect means, and have
+    been overlooked heretofore because of the difficulty in recovering the
+    stars. More complete results from these separate publications,
+    including notes and identifications, have been made available to the
+    CDS, and are kept at the Lowell Observatory ftp area
+    (<A HREF="ftp://ftp.lowell.edu/pub/bas/starcats">ftp://ftp.lowell.edu/pub/bas/starcats</A>). Not all of these stars are
+    present in SIMBAD.
+
+    As a 'living catalogue', an attempt will be made to keep up with
+    current literature, and to extend the indexing of citations back in
+    time.
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.84">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.85">&#215; <A HREF="#sRM2.1">mktypes.dat</A>      141  1058791   The catalog of MK Spectral Types
+<A NAME="sRM-F.86">&#215; surveyed.txt      96      804   List of surveyed articles
+<HR>
+
+<A NAME="sRM13.1"><B>See also</B>:
+  <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=III/18">III/18</A>  : Stellar Spectra classified in the MK system (Jaschek+, 1963)
+  <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=III/42">III/42</A>  : Selected MK Spectral Types (Jaschek, 1978)
+  <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=III/78">III/78</A>  : MK Classification Catalogue Extension (Kennedy, 1983)
+
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.85"> mktypes.dat</A>
+<HR>
+   Bytes Format Units   Label    Explanations
+<HR>
+   1- 19  A19   ---     Bibcode  Publication Source
+  22- 48  A27   ---     Name     Star name as published or valid
+                                      SIMBAD name (Lortet et al.)
+  50- 51  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?h" TARGET="explain">h</A>       RAh      Right Ascension (J2000) hour
+  53- 54  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?min" TARGET="explain">min</A>     RAm      Right Ascension (J2000) minute
+  56- 60  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>       RAs      [0/60] Right Ascension (J2000) second
+      62  A1    ---     DE-      Declination sign
+  63- 64  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEd      Declination (J2000) degree
+  66- 67  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>  DEm      Declination (J2000) minute
+  69- 72  F4.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  DEs      [0/60] Declination (J2000) second
+      74  A1    ---     rc       <A HREF="#sRM3.1">Source of coordinates (1)</A>
+  76- 80  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Mag      ? Magnitude, see passband in n_Mag
+  81- 82  A2    ---     n_Mag    <A HREF="#sRM3.2">Color passband of magnitude (2)</A>
+      83  A1    ---    n_SpType  [+] if spectral type is an MK standard
+  84-109  A26   ---     SpType   spectral type (MK, HD, or other)
+ 111-141  A31   ---     Remarks  <A HREF="#sRM3.3">Comments (3)</A>
+<HR>
+<A NAME="sRM3.1"><B>Note (1)</B>: sources of astrometry are numbered as follows:
+    A = USNO-A2.0  (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1998USNO2.C......0M">1998USNO2.C......0M</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/252">I/252</A>)
+    B = Bordeaux meridian circle  (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2001A%26A...376..325R">2001A&A...376..325R</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/272">I/272</A>)
+      + PM2000  (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2006A%26A...448.1235D">2006A&A...448.1235D</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/300">I/300</A>)
+    b = USNO-B1.0  (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2003AJ....125..984M">2003AJ....125..984M</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/284">I/284</A>)
+    c = AC2000  (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1998AJ....115.1212U">1998AJ....115.1212U</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/275">I/275</A>)
+    C = Carlsberg CMC11  (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1999yCat.1256.....C">1999yCat.1256.....C</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/256">I/256</A>)
+      + Carlsberg CMC12  (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2002A%26A...395..347E">2002A&A...395..347E</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/282">I/282</A>)
+      + Carlsberg CMC14  (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2005yCat.1304.....C">2005yCat.1304.....C</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/304">I/304</A>)
+      + Carlsberg CMC15  (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2011yCat.1327.....C">2011yCat.1327.....C</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/327">I/327</A>)
+    D = DENIS  (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1999A%26A...349..236E">1999A&A...349..236E</A>, Cat. b/denis)
+    E = Edinburgh SuperCOSMOS  (<A HREF="http://www-wfau.roe.ac.uk/sss/obj.html">http://www-wfau.roe.ac.uk/sss/obj.html</A>)
+    F = USNO-Flagstaff transit circle  (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1999AJ....118.2488S">1999AJ....118.2488S</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/263">I/263</A>)
+    G = GSC-ACT  (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1999yCat.1255.....G">1999yCat.1255.....G</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/255">I/255</A>)
+    g = GSC-2.2  (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2001yCat.1271.....S">2001yCat.1271.....S</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/271">I/271</A>)
+      + GSC-2.3  (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2008AJ....136..735L">2008AJ....136..735L</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/305">I/305</A>)
+    i = IRSF  (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2007PASJ...59..615K">2007PASJ...59..615K</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=II/288">II/288</A>)
+    I = IPHAS DR2 (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2014yCat.2321....0B">2014yCat.2321....0B</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=II/321">II/321</A>)
+    L = LSPM  (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2005AJ....129.1483L">2005AJ....129.1483L</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/298">I/298</A>)
+    M = 2MASS second, all-sky, or 6x releases  (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2006AJ....131.1163S">2006AJ....131.1163S</A>,
+        Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=II/241">II/241</A>, <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=II/246">II/246</A>, <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=II/281">II/281</A>)
+    s = SkyView estimate (&#177;2")
+    S = Sloan Digital Sky Survey DR6,7,8,9 (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2008ApJS..175..297A">2008ApJS..175..297A</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=II/282">II/282</A>)
+    T = all Hipparcos/Tycho-related catalogues, including in approximate
+        order of preference:
+      + Tycho-2    (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2000A%26A...357..367H">2000A&A...357..367H</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/259">I/259</A>)
+      + TDSC       (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2002A%26A...384..180F">2002A&A...384..180F</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/276">I/276</A>)
+      + TRC        (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1998A%26A...335L..65H">1998A&A...335L..65H</A> and <A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1999A%26AS..136..491K">1999A&AS..136..491K</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/250">I/250</A>)
+      + ACT        (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1998AJ....115.2161U">1998AJ....115.2161U</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/246">I/246</A>)
+      + Hipparcos2 (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2007A%26A...474..653V">2007A&A...474..653V</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/311">I/311</A>)
+      + Hipparcos  (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1997HIP...C......0E">1997HIP...C......0E</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/239/hip%5Fmain">I/239/hip_main</A>)
+      + Tycho-1    (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1997HIP...C......0E">1997HIP...C......0E</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/239/tyc%5Fmain">I/239/tyc_main</A>)
+    U = UCAC1, UCAC2, UCAC4, or URAT1  (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2000AJ....120.2131Z">2000AJ....120.2131Z</A>,
+      Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/268">I/268</A>, <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/289">I/289</A>, <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/322">I/322</A>, <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/329">I/329</A>)
+    u = UKIDSS DR6  (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2007MNRAS.379.1599L">2007MNRAS.379.1599L</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=II/316">II/316</A>)
+      + UKIDSS DR7  (Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=II/310">II/310</A>)
+      + UKIDSS DR8  (Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=II/314">II/314</A>)
+      + UKIDSS DR9  (Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=II/319">II/319</A>)
+    W = WISE  (Cutri et al 2011, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=II/311">II/311</A>)
+    Y = Yale SPM  (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1998AJ....116.2556P">1998AJ....116.2556P</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/277">I/277</A>)
+    z = MCPS catalogue  (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2002AJ....123..855Z">2002AJ....123..855Z</A>, Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/AJ/123/855">J/AJ/123/855</A>)
+    - = other  (copied from source paper, derived from x,y coordinates, etc.)
+<A NAME="sRM3.2"><B>Note (2)</B>:  passbands are usually standard Johnson-Cousins BVRI, or
+    photographic equivalents, near-infrared J and K, Sloan-Gunn g or z.
+<A NAME="sRM3.3"><B>Note (3)</B>: comments are often greatly compressed; some common phrases are:
+   brtr       = brighter
+   close pair = nearly-equal pairs usually &lt; 0".5 separation observed together
+   comp       = companion or composite (clear from context)
+   cpm pair   = common proper motion double star
+   DIB        = diffuse interstellar band
+   em         = emission
+   f          = faint
+   fntr       = fainter
+   grp        = group
+   gx         = galaxy
+   ID         = identification
+   interst    = interstellar
+   lg pm      = large proper motion (usually &gt; 0".15 per year)
+   vlg pm     = very large proper motion (&gt; 2" per year)
+   lum        = luminosity (class)
+   max        = maximum (brightness)
+   met, mets  = metals, metallic lines
+   min        = minimum (brightness)
+   nr         = near
+   opt pair   = 'optical' double star, i.e. not common proper motion
+   pec        = peculiar
+   prob       = probably
+   sl         = slight, slightly
+   spec var   = spectrum variable
+   str        = strong
+   uncer      = uncertain
+   var        = variable
+   wk         = weak
+   Nrn        = northern
+   Nmost      = northernmost (and similar)
+   Ern        = eastern
+   Srn        = southern
+   Wrn        = western
+   NErn       = northeastern
+   NWrn       = northwestern
+   SErn       = southeastern
+   SWrn       = southwestern
+<HR>
+
+<A NAME="sRM99.1"><B>Acknowledgements</B>:
+    I have received much help on various aspects of preparing this
+    catalogue from Larry Wasserman (Lowell Obs), Gerard Jasniewicz (CDS),
+    Francois Ochsenbein (CDS), Fabienne Woelfel (CDS), Pascal Dubois (CDS),
+    Jack MacConnell (STScI), Harold Corwin (IPAC), Cameron Reed (Alma College),
+    Brian Mason (USNO), Ernst Paunzen (Univ Wien), Thurburn Barker (PARI),
+    Chris Corbally (Vatican Obs), Richard Gray (Appalachian State Univ),
+    Mati Morel, Chris Watson (AAVSO), John Greaves, Wayne Osborn,
+    Erik Anderson, Bill Buscombe, Billy Bidelman, Nancy Houk, as well
+    as librarians Antoinette Beiser and Lauren Amundson (Lowell Obs),
+    Brenda Corbin (USNO), and Suzanne Laloe (IAP-Paris), plus numerous
+    authors whose work is compiled here.
+
+<A NAME="sRM99.2"><B>History</B>:
+  * 19-May-2003: Prepared by Brian Skiff (Lowell Observatory) (58783 records)
+  * 18-Jul-2003: Several errors corrected by the author (63865 records)
+  * 31-May-2004: Updated and completed version (<A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=III/233A">III/233A</A>, 107968 records)
+  * 06-Jun-2005: Updated and completed version (<A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=III/233B">III/233B</A>, 156824 records)
+  * 23-Oct-2007: Updated (<A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=B/mk">B/mk</A>), now 272640 records
+  * 07-Jan-2008: Updated (<A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=B/mk">B/mk</A>), now 283486 records
+  * 19-Feb-2009: Updated (<A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=B/mk">B/mk</A>), now 333826 records
+  * 14-Jul-2009: Updated (<A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=B/mk">B/mk</A>), now 347592 records
+  * 05-Oct-2009: Updated (<A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=B/mk">B/mk</A>), now 361152 records
+  * 22-Mar-2010: Updated (<A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=B/mk">B/mk</A>), now 423055 records
+  * 28-Dec-2010: Updated (<A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=B/mk">B/mk</A>), now 433169 records
+  * 14-Sep-2011: Updated (<A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=B/mk">B/mk</A>), now 452890 records
+  * 21-Feb-2012: Updated (<A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=B/mk">B/mk</A>), now 534091 records
+  * 17-Jul-2012: Updated (<A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=B/mk">B/mk</A>), now 557746 records
+  * 13-Jan-2013: Updated (<A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=B/mk">B/mk</A>), now 604090 records
+  * 06-May-2013: Updated (<A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=B/mk">B/mk</A>), now 636441 records
+  * 03-Feb-2014: Updated (<A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=B/mk">B/mk</A>), now 657452 records
+  * 04-May-2014: Updated (<A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=B/mk">B/mk</A>), now 682075 records
+  * 21-Oct-2014: Updated (<A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=B/mk">B/mk</A>), now 716029 records
+  * 15-Dec-2014: Updated (<A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=B/mk">B/mk</A>), now 716029 records
+  * 23-Jun-2015: Updated (<A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=B/mk">B/mk</A>), now 760007 records
+  * 02-feb-2016: Updated (<A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=B/mk">B/mk</A>), now 798203 records
+  * 01-aug-2017: Updated (<A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=B/mk">B/mk</A>), now 861868 records
+  * 18-dec-2018: Updated (<A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=B/mk">B/mk</A>), now 888588 records
+  * 06-feb-2020: Updated (<A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=B/mk">B/mk</A>), now 911723 records
+================================================================================
+<B>(End)</B>        Brian Skiff [Lowell Obs.], Francois Ochsenbein [CDS]    21-Oct-2014
+
+</PRE><!-- ....wait for 1 children: %0=3182936 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

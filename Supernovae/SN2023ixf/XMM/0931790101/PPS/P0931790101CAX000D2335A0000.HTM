@@ -1,0 +1,438 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of II/335</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Wed Jun 28 17:16:21 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0931790101OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of II/335 :<BR>Revised catalog of GALEX UV sources (GUVcat_AIS GR6+7) (Bianchi+ 2017)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0931790101OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>II/335</B>  Revised catalog of GALEX UV sources (GUVcat_AIS GR6+7)  (Bianchi+ 2017)
+================================================================================
+Revised catalog of GALEX ultraviolet sources.
+I. The All-Sky Survey: GUVcat_AIS.
+    Bianchi L., Shiao B., Thilker D.
+   &lt;Astrophys. J. Suppl. Ser., 230, 24-24 (2017)&gt;
+   =<A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=2017ApJS..230...24B">2017ApJS..230...24B</A>    (SIMBAD/NED BibCode)
+   =<A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=2014AdSpR..53..900B">2014AdSpR..53..900B</A>
+================================================================================
+<B>ADC_Keywords</B>: Photometry, ultraviolet ; Ultraviolet
+
+<B>Mission_Name</B>: GALEX
+
+<B>Keywords</B>: catalogs; Galaxy: stellar content; stars: AGB and post-AGB;
+          stars: early-type; surveys; ultraviolet: general
+
+<A NAME="sRM99.1"><B>Abstract</B>:
+    The Galaxy Evolution Explorer (GALEX) imaged the sky in two
+    ultraviolet (UV) bands, far-UV (FUV, {lambda}<SUB>eff</SUB>~1528&Aring;), and
+    near-UV (NUV, {lambda}<SUB>eff</SUB>~2310&Aring;), delivering the first
+    comprehensive sky surveys at these wavelengths. The GALEX database
+    contains FUV and NUV images, ~500 million source measurements and over
+    100000 low-resolution UV spectra. The UV surveys are a unique resource
+    for statistical studies of hot stellar objects, z&lt;~2 QSOs,
+    star-forming galaxies, nebulae and the interstellar medium, and
+    provide a roadmap for planning future UV instrumentation and follow-up
+    observing programs. We present science-enhanced, "clean" catalogs of
+    GALEX UV sources, with useful tags to facilitate scientific
+    investigations. The catalogs are an improved and expanded version of
+    our previous catalogs of UV sources (BCScat; Bianchi+, 2011,
+    <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/MNRAS/411/2770">J/MNRAS/411/2770</A> ; <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=II/312">II/312</A> and <A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=2014AdSpR..53..900B">2014AdSpR..53..900B</A>). With respect to
+    BCScat, we have patched 640 fields for which the pipeline had
+    improperly coadded non-overlapping observations, and we provide a
+    version with a larger sky coverage (about 10%) by relaxing the
+    restriction to the central area of the GALEX field to 1.1&#176;
+    diameter (GUVcat<SUB>AIS</SUB>fov055: GUVcat_AIS FOV_radius &lt;0.55&#176;), as
+    well as the cleaner, more restrictive version using only the 1&#176;
+    central portion of each field as in BCScat (GUVcat<SUB>AIS</SUB>fov050:
+    GUVcat_AIS FOV_radius &lt;0.50&#176;). We added new tags to facilitate
+    selection and cleaning of statistical samples for science
+    applications: we flag sources within the footprint of extended objects
+    (nearby galaxies, stellar clusters) so that these regions can be
+    excluded for estimating source density. As in our previous catalogs,
+    in GUVcat duplicate measurements of the same source are removed, so
+    that each astrophysical object has only one entry. Such a
+    unique-source catalog is needed to study the density and distributions
+    of sources, and to match UV sources with catalogs at other
+    wavelengths. The catalog includes all observations from the All-Sky
+    Imaging Survey (AIS), the survey with the largest area coverage, with
+    both FUV and NUV detectors exposed: over 28700 fields, made up of a
+    total of 57000 observations ("visits"). The total area covered, when
+    overlaps are removed and gaps are accounted for, is 24790 square
+    degrees for GUVcat<SUB>AIS</SUB>fov055 (GUVcat<SUB>AIS</SUB>fov055) and 22125 square
+    degrees for (GUVcat<SUB>AIS</SUB>fov050). The total numbers of "unique" AIS
+    sources (eliminating duplicate measurements) are 82,992,086
+    (GUVcat<SUB>AIS</SUB>fov055) and 69,772,677 (GUVcat<SUB>AIS</SUB>fov050). The typical
+    depth of the GUVcat_AIS catalog is FUV=19.9, NUV=20.8 AB mag.
+
+<A NAME="sRM11.1"><B>Description</B>:
+    The Galaxy Evolution Explorer (GALEX) was a NASA Small Explorer
+    mission which imaged the sky in 2 ultraviolet bands, FUV (far-UV) and
+    NUV (near-UV) and provided the first UV sky surveys. It was launched
+    on 2003 April 28 and decommissioned by NASA on 2013 June 28.
+
+    Its characteristics are:
+    --------------------------------------------------------------------
+                            FUV         NUV
+    --------------------------------------------------------------------
+    Bandwidth            1344-1786  1771-2831 (&Aring;)
+    Effective wavelength 1538.6     2315.7    (&Aring;)
+    Astrometry (R&lt;0.6deg)   0.59       0.49   (arcsec)
+    Photometry (1 sigma)    0.05       0.03   (ABmag)
+    Zero point             18.82      20.08   (ABmag)
+    Image resolution        4.2        5.3    (arcsec/pix)
+    Spectral resolution     200       118     ({delta}{lambda}/{lambda})
+    Field of view           1.28       1.24   (deg)
+    --------------------------------------------------------------------
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.80">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.81">&#215; <A HREF="#sRM2.1">galex_ais.sam</A>   1455     1000   Sample of the revised GALEX catalog of UV sources
+                                (GUVcat_AIS) from GR6+7 (82,992,086 sources)
+<A NAME="sRM-F.83">&#215; <A HREF="#sRM2.2">table2.dat</A>       139      381   List of clusters included in the GUVcat footprint
+<A NAME="sRM-F.84">&#215; <A HREF="#sRM2.3">table3.dat</A>       133    15659   List of galaxies larger than 1' included in
+                                the GUVcat footprint
+<A NAME="sRM-F.86">&#215; <A HREF="#sRM2.4">table4.dat</A>       126    29535   List of AIS GALEX fields used to construct
+                                the GUVcat AIS catalog
+<A NAME="sRM-F.88">&#215; <A HREF="#sRM2.5">table5.dat</A>       206     2004   List of AIS eliminated bad coadds, and
+                                their associated visits
+<HR>
+
+<A NAME="sRM13.1"><B>See also</B>:
+ <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=II/312">II/312</A> :  GALEX-DR5 (GR5) sources from AIS and MIS (Bianchi+ 2011)
+ <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/ApJS/173/185">J/ApJS/173/185</A>   : GALEX UV atlas of nearby galaxies (Gil de Paz+, 2007)
+ <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/ApJS/173/572">J/ApJS/173/572</A>   : GALEX/Spitzer photometry in NGC 7331 (Thilker+, 2007)
+ <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/AJ/137/3761">J/AJ/137/3761</A>    : Ultraviolet quasi-stellar objects (Bianchi+, 2009)
+ <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/ApJ/703/614">J/ApJ/703/614</A>    : UV star-forming regions in M31 (Kang+, 2009)
+ <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/ApJ/730/88">J/ApJ/730/88</A>     : Star-forming regions in NGC 6822 from UV (Efremova+, 2011)
+ <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=J/MNRAS/411/2770">J/MNRAS/411/2770</A> : Hot white dwarfs in GALEX-DR5 (Bianchi+, 2011)
+ <A HREF="http://galex.stsci.edu/">http://galex.stsci.edu/</A> : the GALEX database in MAST (STScI)
+ <A HREF="http://dolomiti.pha.jhu.edu/uvsky/">http://dolomiti.pha.jhu.edu/uvsky/</A> : GALEX science catalogs and tools
+ <A HREF="http://www.galex.caltech.edu/">http://www.galex.caltech.edu/</A> : the GALEX home page at Caltech
+
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.81"> galex_ais.sam</A>
+<HR>
+   Bytes Format Units   Label     Explanations
+<HR>
+   1- 10  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     RAdeg     Source's right ascension (J2000) (RA)
+  12- 21  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEdeg     Source's declination (J2000) (DEC)
+  23- 44  A22   ---     Name      GALEX identifier in JHHMMSS.s+DDMMSS format;
+                                  column added by CDS
+  46- 64  I19   ---     objid     GALEX identifier for the source (objid)
+  66- 84  I19   ---     phID      Pointer to photoExtract Table
+                                  (id of original observation on which
+                                  the measurement was taken) (photoextractid)
+  86- 88  A3    ---     Cat       Survey type (always "AIS"
+                                  = All-sky Imaging Survey) (mpstype)
+  90- 99  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     RAfdeg    RA of center of field (avaspra)
+ 101-110  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEfdeg    DE of center of field (avaspdec)
+ 112-117  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>       FUVexp    [30/709] FUV exposure time
+ 119-125  F7.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>       NUVexp    [30/1134] NUV exposure time
+ 127-134  F8.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     GLON      Galactic longitude
+ 136-143  F8.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     GLAT      Galactic latitude
+ 145-149  I5    ---     tile      [50000/50491] Tile number (tilenum)
+ 151-154  I4    ---     img       [33/3172] Image number (img)
+ 156-157  I2    ---     sv        [1/99] Number of subvisit if exposure was
+                                  divided (subvisit)
+ 159-166  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     r.fov     [/0.6] Distance of source from center of
+                                  the field (fov_radius)
+     168  I1    ---     Obs       [1] Observation type (1=multi) (type)
+     170  I1    ---     b         [1/3] bands: 1=NUV, 2=FUV, 3=both (band)
+ 172-177  F6.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     E(B-V)    [0.0007/0.5] E(B-V) Galactic Reddening (from
+                                  Schlegel+ <A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=1998ApJ...500..525S">1998ApJ...500..525S</A> maps) (E_bv)
+     179  I1    ---     Sp?       [0/1] 1 if a spectrum exists (istherespectrum)
+     181  I1    ---     chkf      [0/1] Astrometry check type (chkobj_type)
+ 183-189  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     FUVmag    [10.6/23.8]? GALEX FUV calibrated magnitude
+                                  in AB system (fuv_mag)
+ 191-196  F6.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_FUVmag  [0.001/0.6]? FUV mag error (fuv_magerr)
+ 198-204  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     NUVmag    [9.6/24.5] GALEX NUV calibrated magnitude
+                                  in AB system (nuv_mag)
+ 206-211  F6.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_NUVmag  [0.0007/0.5] NUV mag error (nuv_magerr)
+ 213-219  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     FUV.a     [-8.2/5]? FUV Kron-like elliptical
+                                  aperture magnitude (fuv<SUB>mag</SUB>auto)
+ 221-226  F6.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_FUV.a   [0.001/0.6]? FUV RMS error for AUTO magnitude
+                                  (fuv<SUB>magerr</SUB>auto)
+ 228-235  F8.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     NUV.a     [-10.5/4.4] NUV Kron-like elliptical aperture
+                                  magnitude (nuv<SUB>mag</SUB>auto)
+ 237-242  F6.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_NUV.a   [0.0007/0.5] NUV RMS error for AUTO magnitude
+                                  (nuv<SUB>magerr</SUB>auto)
+ 244-250  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     FUV.4     [-7.2/99]? FUV mag aperture (8 pix diameter)
+                                  (fuv<SUB>mag</SUB>aper_4)
+ 252-260  F9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_FUV.4   [0.002/4911]? FUV mag aperture error (8 pix
+                                  diameter) (fuv<SUB>magerr</SUB>aper_4)
+ 262-268  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     NUV.4     [-7.5/99] NUV mag aperture (8 pix diameter)
+                                  (nuv<SUB>mag</SUB>aper_4)
+ 270-278  F9.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_NUV.4   [0.001/2559] NUV mag aperture error (8 pix
+                                  diameter) (nuv<SUB>magerr</SUB>aper_4)
+ 280-286  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     FUV.6     [-7.4/99]? FUV mag aperture (17 pix diameter)
+                                  (fuv<SUB>mag</SUB>aper_6)
+ 288-297  F10.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_FUV.6   [0.001/37286]? FUV mag aperture error (17 pix
+                                  diameter) (fuv<SUB>magerr</SUB>aper_6)
+ 299-305  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     NUV.6     [-8.3/99] NUV mag aperture (17 pix diameter)
+                                  (nuv<SUB>mag</SUB>aper_6)
+ 307-319  F13.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_NUV.6   [0.001/15473111] NUV mag aperture error (17 pix
+                                  diameter) (nuv<SUB>magerr</SUB>aper_6)
+ 321-323  I3    ---     Fafl      [0/416]? FUV artifact flag (logical OR
+                                  near source) (fuv_artifact)
+ 325-327  I3    ---     Nafl      [0/913] NUV artifact flag (logical OR
+                                  near source) (nuv_artifact)
+ 329-330  I2    ---     Fexf      [0/19]? Extraction flags for FUV band
+                                  (fuv_flags)
+ 332-333  I2    ---     Nexf      [0/51] Extraction flags for NUV band
+                                  (nuv_flags)
+ 335-346  F12.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?uJy" TARGET="explain">uJy</A>     Fflux     [1/201899]? FUV calibrated flux (fuv_flux)
+ 348-358  F11.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?uJy" TARGET="explain">uJy</A>     e_Fflux   [0.5/18719]? FUV flux error (fuv_fluxerr)
+ 360-371  F12.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?uJy" TARGET="explain">uJy</A>     Nflux     [0.6/202886] NUV calibrated flux (nuv_flux)
+ 373-382  F10.5 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?uJy" TARGET="explain">uJy</A>     e_Nflux   [0.2/3649] NUV flux error (nuv_fluxerr)
+ 384-390  F7.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>     FXpos     ? Source position in FUV image
+                                  along x (fuv<SUB>x</SUB>image)
+ 392-398  F7.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>     FYpos     ? Source position in UV image
+                                  along y (fuv<SUB>y</SUB>image)
+ 400-406  F7.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>     NXpos     Source position in NUV image
+                                  along x (nuv<SUB>x</SUB>image)
+ 408-414  F7.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>     NYpos     Source position in NUV image
+                                  along y (nuv<SUB>y</SUB>image)
+ 416-423  F8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>     Fima      ? Source FWHM in FUV assuming a
+                                  gaussian core (fuv<SUB>fwhm</SUB>image)
+ 425-431  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>     Nima      Source FWHM in NUV assuming a
+                                  gaussian core (nuv<SUB>fwhm</SUB>image)
+ 433-441  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     Fr        [-0.2/0.3]? Source FWHM in FUV assuming a
+                                  gaussian core (fuv<SUB>fwhm</SUB>world)
+ 442-450  F9.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     Nr        [-0.1/0.5] Source FWHM in NUV assuming a
+                                  gaussian core (nuv<SUB>fwhm</SUB>world)
+ 451-456  F6.4  ---     nS/G      Star/galaxy classifier from NUV
+                                  (nuv<SUB>class</SUB>star)
+ 458-463  F6.4  ---     fS/G      ? Star/galaxy classifier from FUV
+                                  (fuv<SUB>class</SUB>star)
+ 465-470  F6.4  ---     nell      1-b/a in NUV (nuv_ellipticity)
+ 472-477  F6.4  ---     fell      ? 1-b/a in FUV (fuv_ellipticity)
+ 479-484  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     nPA       Position angle in NUV (nuv<SUB>theta</SUB>j2000)
+ 486-491  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     e_nPA     [-90/] Position angle error in NUV
+                                  (nuv<SUB>errtheta</SUB>j2000)
+ 493-498  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     fPA       ? Position angle in FUV (fuv<SUB>theta</SUB>j2000)
+ 500-505  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     e_fPA     [-90/]? Position angle error in FUV
+                                  (fuv<SUB>errtheta</SUB>j2000)
+ 507-520  E14.2 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>     Fnr       [/965]? <A HREF="#sRM3.4">FUV FWHM IMAGE value from</A>
+                                  -fd-ncat.fits (fuv<SUB>ncat</SUB>fwhm_image) (4)
+ 522-535  E14.2 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>     F3r       [/1.98E7]? <A HREF="#sRM3.4">FUV flux radius</A>
+                                  (fuv<SUB>ncat</SUB>flux<SUB>rad</SUB>3) (4)
+ 537-544  F8.5  ---     Nar       [3.5/13.2] Kron apertures in units of a or b
+                                  (nuv<SUB>kron</SUB>radius)
+ 546-553  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     Narms     [0.0002/0.1] Profile RMS along major axis
+                                  (nuv<SUB>a</SUB>world)
+ 555-562  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     Nbrms     [0.00004/0.06] Profile RMS along minor axis
+                                  (nuv<SUB>b</SUB>world)
+ 564-571  F8.5  ---     Far       [3.5/11]? Kron apertures in units of a or b
+                                  (fuv<SUB>kron</SUB>radius)
+ 573-580  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     Farms     [0.0002/0.06]? Profile RMS along major axis
+                                  (fuv<SUB>a</SUB>world)
+ 582-589  F8.6  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     Fbrms     [0.0001/0.03]? Profile RMS along minor axis
+                                  (fuv<SUB>b</SUB>world)
+ 591-595  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>       NUVw      [0/964] NUV effective exposure (flat-field
+                                  response value) at the source position
+                                  (nuv_weight)
+ 597-601  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>       FUVw      [0/700] FUV effective exposure (fuv_weight)
+ 603-610  E8.6  ---     Prob      ? Probability of the FUVxNUV match (prob)
+ 612-615  F4.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  Sep       [0/7.1]? Separation between FUV and NUV
+                                  position of the source in the same
+                                  observation (sep)
+ 617-620  F4.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  Nerr      [0.4/3.3] Position error of the source in the
+                                  NUV image (nuv_poserr)
+ 622-625  F4.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  Ferr      [0.4/2.4]? Position error of the source in
+                                  the FUV image (fuv_poserr)
+ 627-630  F4.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  Ierr      [0.4/3.4]? Inter-band position error
+                                  (ib_poserr)
+ 632-635  F4.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  Nperr     [0.001/2.8] NUV Poisson position error
+                                  (nuv_pperr)
+ 637-640  F4.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  Fperr     [0.001/1.6]? FUV Poisson position error
+                                  (fuv_pperr)
+     642  A1    ---     CV        [CV] Whether the source comes from a coadd or
+                                  visit (corv)
+ 644-645  I2    ---     G         [-1/1] <A HREF="#sRM3.1">Neighbours rank (grank) (1)</A>
+ 647-648  I2    ---     N         [1/12] Number of sources within 2.5", if this
+                                  is a primary (ngrank)
+ 650-668  I19   ---     primid    objid of the primary (only of use for
+                                  the "plus" catalog) (primgid)
+ 670-908  A239  ---     groupid   objid's of all sources (AIS) within 2.5",
+                                  concatenated by "+" (groupgid)
+ 910-911  I2    ---     Gd        [-1/1] <A HREF="#sRM3.1">as for "G" (grank), but based on</A>
+                                  distance criterion (grankdist) (1)
+ 913-914  I2    ---     Nd        [1/12] as for "N" (ngrank), but based on
+                                  distance criterion (ngrankdist)
+ 916-934  I19   ---     primidd   objid of the closest primary, based on distance
+                                  criterion (primgiddist)
+ 936-1174  A239  ---     groupidd  objid's of all sources (AIS) within 2.5",
+                                  based on distance criterion (groupgiddist)
+ 1176-1414  A239  ---     groupTot  objid's of all sources within 2.5"
+                                  (groupgidtot)
+ 1416-1446  A31   ---     OName     <A HREF="#sRM3.2">Extended object? (if not: "N") (inlargeobj) (2)</A>
+ 1448-1455  F8.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>     Size      [/38740]?=<A HREF="#sRM3.3">0 Size of the extended object</A>
+                                  (largeobjsize) (3)
+<HR>
+<A NAME="sRM3.1"><B>Note (1)</B>: Code for grank as follows:
+  0 = no other sources (from different observations) within 2.5"
+  1 = the best (see text) source of &gt;1 sources within 2.5"
+ -1 = this is a primary but has a better source within 2.5"
+ &gt;1 = this is the nth source within 2.5" of the primary
+<A NAME="sRM3.2"><B>Note (2)</B>: Type of object is included with the name of the extended object:
+          XX:name-of-the-extended-object ; where XX = GA (galaxy),
+          GC (globular cluster), OC (open cluster), SC (other stellar clusters).
+<A NAME="sRM3.3"><B>Note (3)</B>: D25 for galaxies and 2xR<SUB>1</SUB> for stellar clusters.
+
+<A NAME="sRM3.4"><B>Note (4)</B>: Negative values have been replaced by blank values by CDS.
+
+<HR>
+
+<A NAME="sRM2.2"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.83"> table2.dat</A>
+<HR>
+   Bytes Format Units   Label     Explanations
+<HR>
+   1- 15  A15   ---     ID        <A HREF="#sRM3.5">Source identifier (1)</A>
+  17- 26  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     RAdeg     Right Ascension in decimal degrees (J2000)
+  28- 37  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEdeg     Declination in decimal degrees (J2000)
+  39- 48  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     GLON      Galactic longitude in decimal degrees (J2000)
+  50- 59  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     GLAT      Galactic latitude in decimal degrees (J2000)
+  61- 65  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     R1        Angular radius of central part of cluster
+  67- 69  I3    ---     o_R1      Number of optical cluster stars (most
+                                   probable) inside R1
+  71- 75  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     R0        Angular radius of core of cluster
+  77- 79  I3    ---     o_R0      Number of optical cluster stars (most
+                                   probable) inside R0
+  81-131  A51   ---     Class     <A HREF="#sRM3.6">Cluster classification (2)</A>
+     133  A1    ---     Bd        <A HREF="#sRM3.7">Broad type (3)</A>
+     135  A1    ---     St        <A HREF="#sRM3.8">Cluster status (4)</A>
+ 137-139  A3    ---     Type      <A HREF="#sRM3.9">Cluster type (5)</A>
+<HR>
+<A NAME="sRM3.5"><B>Note (1)</B>: Globular clusters listed first, then open clusters, and then
+          star clusters. Data and classification from compilation of cluster
+          catalogs at  <A HREF="http://heasarc.nasa.gov/W3Browse/all/mwsc.html">http://heasarc.nasa.gov/W3Browse/all/mwsc.html</A> (MWSC).
+          NGC, IC or other common designation, as in MWSC compilation
+<A NAME="sRM3.6"><B>Note (2)</B>: HEASARC MWSC classification, based on the value of the
+          Broad type parameter.
+<A NAME="sRM3.7"><B>Note (3)</B>: Flag parameter (from <A HREF="http://heasarc.nasa.gov/W3Browse/all/mwsc.html">http://heasarc.nasa.gov/W3Browse/all/mwsc.html</A>)
+          indicating cluster type.
+    G = globular cluster;
+    O = open cluster ("blank" in the original MWSC compilation);
+    M = moving group;
+    R = remnant cluster;
+    A = association;
+    N = nebulosity/presence of nebulosity.
+<A NAME="sRM3.8"><B>Note (4)</B>: flag parameter set for objects which are not open clusters (from
+          https://heasarc.nasa.gov/W3Browse/all/mwsc.html).
+    C = candidate;
+    O = object.
+<A NAME="sRM3.9"><B>Note (5)</B>: From MWSC.
+    GLO = globular cluster/possible globular cluster;
+    IRC = infrared cluster;
+    ASS = stellar association;
+    REM = Possible cluster remnant;
+    EMB = embedded open cluster/cluster associated with nebulosity.
+<HR>
+
+<A NAME="sRM2.3"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.84"> table3.dat</A>
+<HR>
+   Bytes Format Units       Label   Explanations
+<HR>
+   1- 28  A28   ---         ID      Source identifier
+  30- 31  A2    ---         Type    <A HREF="#sRM3.10">Source type (1)</A>
+  33- 42  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         RAdeg   Right Ascension in decimal degrees (J2000)
+  44- 53  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         DEdeg   Declination in decimal degrees (J2000)
+  55- 64  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         GLON    Galactic longitude
+  66- 75  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         GLAT    Galactic latitude
+  77- 82  I6    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>        v3k     <A HREF="#sRM3.11">Radial velocity (cz) with respect to</A>
+                                     CMB radiation (2)
+  84- 89  I6    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>        vlg     <A HREF="#sRM3.11">Radial velocity (cz) with respect to</A>
+                                     Local Group (2)
+  91- 98  F8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         PosAng  <A HREF="#sRM3.11">Position angle (2)</A>
+ 100-105  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>         Inc     Inclination
+ 107-112  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%5barcmin%5d" TARGET="explain">[arcmin]</A>    D25     D<SUB>25</SUB> diameter in units of arcmin
+ 114-118  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%5barcmin%5d" TARGET="explain">[arcmin]</A>    e_D25   Uncertainty in D25
+ 120-126  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%5b-%5d" TARGET="explain">[-]</A>         R25     Axis ratio (major axis / minor axis)
+ 128-133  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%5b-%5d" TARGET="explain">[-]</A>         e_R25   Uncertainty in R25
+<HR>
+<A NAME="sRM3.10"><B>Note (1)</B>: Type as follows:
+    G = galaxy or quasar;
+    Q = QSO;
+    ? = Extended source of unknown/uncertain nature;
+    M = Multiple galaxy.
+<A NAME="sRM3.11"><B>Note (2)</B>: A -999 indicates a null value.
+
+<HR>
+
+<A NAME="sRM2.4"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.86"> table4.dat</A>
+<HR>
+   Bytes Format Units   Label     Explanations
+<HR>
+   1- 19  A19   ---     ID        Field identifier
+  21- 40 F20.16 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     RAdeg     Center Right Ascension (J2000)
+  42- 61 F20.16 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEdeg     Center Declination (J2000)
+  63- 82 F20.16 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     GLON      Center Galactic longitude
+  84-103 F20.16 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     GLAT      Center Galactic latitude
+ 105-111  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>       FUVexp    FUV exposure time
+ 113-120  F8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>       NUVexp    NUV exposure time
+ 122-126  A5    ---     CorV      <A HREF="#sRM3.12">Observation type (1)</A>
+<HR>
+<A NAME="sRM3.12"><B>Note (1)</B>: Coadd or Visit.
+
+<HR>
+
+<A NAME="sRM2.5"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.88"> table5.dat</A>
+<HR>
+   Bytes Format Units   Label     Explanations
+<HR>
+   1- 19  I19   ---     C-ID      <A HREF="#sRM3.13">Coadd identifier (1)</A>
+  21- 40 F20.16 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     RAdeg     [1/360.1] Coadd center Right Ascension (J2000)
+  42- 61 F20.16 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEdeg     [-89/89] Coadd center Declination  (J2000)
+  63- 82 F20.16 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     C-GLON    Coadd center Galactic longitude
+  84-103 F20.16 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     C-GLAT    Coadd center Galactic latitude
+ 105-111  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>       C-FUVexp  Coadd FUV exposure time
+ 113-119  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>       C-NUVexp  Coadd NUV exposure time
+ 121-139  I19   ---     V-ID      Visit identifier
+ 141-160 F20.16 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     RAVdeg    Visit center Right Ascension (J2000)
+ 162-181 F20.16 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEVdeg    Visit center Declination (J2000)
+ 183-189  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>       V-FUVexp  Visit FUV exposure time
+ 191-197  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>       V-NUVexp  Visit NUV exposure time
+ 199-204  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>  Dist      Angular distance between Coadd
+                                   and Visit observations
+     206  A1    ---     GUVcat    In GUVcat; G=Yes,N=No
+<HR>
+<A NAME="sRM3.13"><B>Note (1)</B>: The 640 badcoadds were included in BCScat, prior to our discovery of
+          the database improper coadding of non-overlapping visits; they are
+          not used in GUVcat, and their corresponding visits with both FUV and
+          NUV exposure times &gt;0 are used instead (1468 out of 2004 total).
+<HR>
+
+<A NAME="sRM99.2"><B>History</B>:
+    Tables 2-5 from electronic version of <A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=2017ApJS..230...24B">2017ApJS..230...24B</A>
+    GALEX GR6+7 downloaded from:
+    <A HREF="http://dolomiti.pha.jhu.edu/uvsky/GUVcat/GUVcat_AIS.html">http://dolomiti.pha.jhu.edu/uvsky/GUVcat/GUVcat_AIS.html</A>
+     (GUVcat<SUB>AIS</SUB>fov055: GUVcat_AIS FOV_radius &lt;0.55&#176;)
+    20-Nov-2018: Insert into VizieR
+    22-May-2019: Column Name added
+================================================================================
+<B>(End)</B>                    Thomas Boch, Emmanuelle Perret [CDS]        07-Aug-2017
+
+</PRE><!-- ....wait for 1 children: %0=14334 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

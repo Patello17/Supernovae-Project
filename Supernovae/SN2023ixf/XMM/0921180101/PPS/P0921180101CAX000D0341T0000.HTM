@@ -1,0 +1,140 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of J/AJ/115/2587</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Wed Jun 28 19:44:28 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0921180101OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of J/AJ/115/2587 :<BR>Einstein IPC database ultrasoft survey (Thompson+ 1998)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0921180101OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>J/AJ/115/2587</B>       Einstein IPC database ultrasoft survey (Thompson+ 1998)
+================================================================================
+Initial results of a comprehensive ultrasoft survey of the Einstein IPC
+database: source list and confirmation of the selection procedure.
+     Thompson R.J., Shelton R.G., Arning C.A.
+    &lt;Astron. J. 115, 2587 (1998)&gt;
+    =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1998AJ....115.2587T">1998AJ....115.2587T</A>
+================================================================================
+<B>ADC_Keywords</B>: X-ray sources
+
+<B>Mission_Name</B>: Einstein
+
+<B>Keywords</B>: binaries: close - pulsars: general - surveys - white dwarfs -
+          X-rays
+
+<A NAME="sRM99.1"><B>Abstract</B>:
+    We have carried out a survey of the entire Einstein IPC database (a
+    total of 5934 sources) to select objects with strong components of
+    ultrasoft X-ray emission (i.e., emission below 0.5keV). The selection
+    criteria are based on ratios of counts within three broad energy bands
+    (i.e., X-ray "colors"). A total of 516 objects have been selected,
+    with 202 (39%) having been identified through correlations with other
+    databases. Of the currently identified objects, 45% are active
+    galactic nuclei, 28% are stellar objects, 6% are "normal" galaxies and
+    galaxy clusters, and the remaining 21% are "nonstellar" Galactic
+    objects such as cataclysmic variables, pulsars, and white dwarfs. We
+    present a discussion of the survey selection procedure, the list of
+    selected sources, and discussions of interesting objects from the
+    aforementioned groups. We discuss the remarkable success of our rather
+    "low resolution" method of estimating spectral shape and present plans
+    for follow-up studies of the as yet unidentified sources.
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.35">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.36">&#215; <A HREF="#sRM2.1">table1.dat</A>        90      516   Source information, Part I
+<A NAME="sRM-F.37">&#215; <A HREF="#sRM2.2">table2.dat</A>        86      516   Source information, Part II
+<HR>
+
+<A NAME="sRM13.1"><B>See also</B>:
+   <A HREF="http://vizier.china-vo.org/viz-bin/VizieR?-source=IX/13">IX/13</A> : The 2E Catalogue (Harris+ 1994)
+
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.36"> table1.dat</A>
+<HR>
+   Bytes Format Units     Label     Explanations
+<HR>
+   1-  5  I5    ---       IPC       IPC number
+   7-  8  I2    ---       Source    Object source number in the field
+  10- 11  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?h" TARGET="explain">h</A>         RAh       Right ascension (J2000.0)
+  13- 14  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?min" TARGET="explain">min</A>       RAm       Right ascension (J2000.0)
+  16- 20  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>         RAs       Right ascension (J2000.0)
+      22  A1    ---       DE-       Declination sign
+  23- 24  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>       DEd       Declination (J2000.0)
+  26- 27  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>    DEm       Declination (J2000.0)
+  29- 33  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>    DEs       Declination (J2000.0)
+  35- 40  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?10-3ct/s" TARGET="explain">10-3ct/s</A> CountRate  Count rate over the 0.2-4keV passband
+  43- 48  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?10-3ct/s" TARGET="explain">10-3ct/s</A> e_CountRate  rms uncertainty on CountRate
+  50- 53  F4.1  ---       S/N       Signal-to-noise ration
+  55- 58  I4    ---       RECO      ? Rib and edge code
+  60- 90  A31   ---       Ident    *<A HREF="#sRM3.1">Identification of optical counterpart</A>
+<HR>
+<A NAME="sRM3.1"><B>Note on Ident</B>: one error corrected, see the "History" section below.
+
+<HR>
+
+<A NAME="sRM2.2"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.37"> table2.dat</A>
+<HR>
+   Bytes Format Units    Label   Explanations
+<HR>
+   1-  5  I5    ---      IPC     IPC number
+   7-  8  I2    ---      Source  Object source number in the field
+  10- 11  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?h" TARGET="explain">h</A>        RAh     Right ascension (J2000.0)
+  13- 14  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?min" TARGET="explain">min</A>      RAm     Right ascension (J2000.0)
+  16- 20  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>        RAs     Right ascension (J2000.0)
+      22  A1    ---      DE-     Declination sign
+  23- 24  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      DEd     Declination (J2000.0)
+  26- 27  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>   DEm     Declination (J2000.0)
+  29- 33  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   DEs     Declination (J2000.0)
+  35- 43  F9.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>       C1      Counts in the low (0.16-0.56keV) colour band
+  45- 52  F8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>       e_C1    rms uncertainty on C1
+  54- 61  F8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>       C2      Counts in the medium (0.56-1.08keV) colour band
+  63- 69  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>       e_C2    rms uncertainty on C2
+  71- 78  F8.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>       C3      Counts in the high (1.08-3.5keV) colour band
+  80- 86  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct" TARGET="explain">ct</A>       e_C3    rms uncertainty on C3
+<HR>
+
+<A NAME="sRM99.2"><B>Table 3</B>: Classes of objects
+-------------------------------------------------------------
+  Class                                      Percentage of
+                                           identified sources
+-------------------------------------------------------------
+  Active galactic nuclei                        45
+  Stellar                                       28
+  Normal galaxies and galaxy clusters            6
+  Cataclysmic variables (AM Herculis stars)      4
+  PG 1159 objects/planetary nebulae              1
+  DA white dwarfs                                9
+  X-ray binaries                                 3
+  Pulsars                                        1
+  T Tauri stars                                  2
+  W UMa variables/symbiotic stars                1
+
+<A NAME="sRM99.3"><B>History</B>: From AJ electronic version
+  * 27-Oct-1999: Corrected SAO number in table1 for source IPC 3727
+    (is SAO 110135, not SAO 10135)
+================================================================================
+<B>(End)</B>                           James Marcout, Patricia Bauer [CDS]  31-Aug-1998
+
+</PRE><!-- ....wait for 1 children: %0=26672 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

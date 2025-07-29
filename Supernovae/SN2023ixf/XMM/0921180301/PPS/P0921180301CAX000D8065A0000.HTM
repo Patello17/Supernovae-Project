@@ -1,0 +1,144 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of VIII/65</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Sun Jul 23 17:43:46 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0921180301OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of VIII/65 :<BR>1.4GHz NRAO VLA Sky Survey (NVSS) (Condon+ 1998)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0921180301OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>VIII/65</B>             1.4GHz NRAO VLA Sky Survey (NVSS)      (Condon+ 1998)
+================================================================================
+The NRAO VLA Sky Survey
+     Condon J.J., Cotton W.D., Greisen E.W., Yin Q.F., Perley R.A.,
+     Taylor G.B., Broderick J.J.
+    &lt;Astron. J. 115, 1693 (1998)&gt;
+    =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1998AJ....115.1693C">1998AJ....115.1693C</A>
+================================================================================
+<B>ADC_Keywords</B>: Radio sources ; Radio continuum ; Surveys
+
+
+<A NAME="sRM11.1"><B>Description</B>:
+    The NRAO VLA Sky Survey (NVSS) is a radio continuum survey covering
+    the sky north of -40&#176; declination at 1.4GHz. The principal data
+    products of the NVSS are a set of 2326 4x4&#176; continuum "cubes" with
+    three planes containing Stokes I, Q, and U images, plus a catalog of
+    almost 2 million discrete sources stronger than a flux density of
+    about 2.5mJy.
+
+    The images all have 45 arcsecond FWHM angular resolution and nearly
+    uniform sensitivity. Their rms brightness fluctuations are
+    approximately 0.45mJy/beam=0.14K (Stokes I) and 0.29mJy/beam=0.09K
+    (Stokes Q and U). The rms uncertainties in right ascension and
+    declination vary from &lt;= ~1arcsecond for the 400,000 sources stronger
+    than 15mJy to 7arcseconds at the survey limit.
+
+    A more detailed description is provided in the printed paper and at the
+    NVSS website at           <A HREF="http://www.cv.nrao.edu/nvss/">http://www.cv.nrao.edu/nvss/</A>
+    where all data products, user software, and updates were released as
+    soon as they were produced and verified.
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.34">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.35">&#215; <A HREF="#sRM2.1">nvss.dat</A>         158  1773484   The NVSS Catalog
+<HR>
+
+<A NAME="sRM13.1"><B>See also</B>:
+    <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VIII/59">VIII/59</A> : the FIRST Survey, version 1999Jul (White+ 1999)
+    <A HREF="http://www.cv.nrao.edu/nvss/">http://www.cv.nrao.edu/nvss/</A> : the NVSS Home Page
+
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.35"> nvss.dat</A>
+<HR>
+   Bytes Format Units    Label   Explanations
+<HR>
+   1-  8  A8    ---      Field   Name of the original survey image field
+                                 from which the component was derived.
+  10- 16  F7.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>      Xpos    X position (RA direction) of the radio source
+  18- 24  F7.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?pix" TARGET="explain">pix</A>      Ypos    Y position (Dec direction) of the radio source
+  26- 39  A14   ---      NVSS    <A HREF="#sRM3.1">Source name (1)</A>
+  41- 42  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?h" TARGET="explain">h</A>        RAh     <A HREF="#sRM3.2">Right Ascension J2000 (hours) (2)</A>
+  44- 45  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?min" TARGET="explain">min</A>      RAm     <A HREF="#sRM3.2">Right Ascension J2000 (minutes) (2)</A>
+  47- 51  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>        RAs     [0,60] <A HREF="#sRM3.2">Right Ascension J2000 (seconds) (2)</A>
+      53  A1    ---      DE-     <A HREF="#sRM3.2">Declination J2000 (sign) (2)</A>
+  54- 55  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      DEd     <A HREF="#sRM3.2">Declination J2000 (degrees) (2)</A>
+  57- 58  I2    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>   DEm     <A HREF="#sRM3.2">Declination J2000 (minutes) (2)</A>
+  60- 63  F4.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   DEs     [0,60] <A HREF="#sRM3.2">Declination J2000 (seconds) (2)</A>
+  65- 69  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>        e_RAs   Mean error on RA
+  71- 74  F4.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   e_DEs   Mean error on Dec
+  76- 83  F8.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJy" TARGET="explain">mJy</A>      S1.4    Integrated 1.4GHz flux density of radio source
+  85- 91  F7.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJy" TARGET="explain">mJy</A>      e_S1.4  Mean error on S1.4
+      93  A1    ---   l_MajAxis  Limit flag on MajAxis
+  94- 98  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  MajAxis  Fitted (deconvolved) major axis of radio source
+     100  A1    ---   l_MinAxis  Limit flag on MinAxis
+ 101-105  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  MinAxis  Fitted (deconvolved) minor axis of radio source
+ 107-111  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      PA      [-90, 90]? Position angle of fitted major axis
+ 113-116  F4.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A> e_MajAxis  ? Mean error on MajAxis
+ 118-121  F4.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A> e_MinAxis  ? Mean error on MinAxis
+ 123-126  F4.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      e_PA    ? Mean error on PA
+ 128-129  A2    ---   f_resFlux  [PS* ] <A HREF="#sRM3.3">Residual Code (3)</A>
+ 131-134  I4    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJy" TARGET="explain">mJy</A>     resFlux  ? <A HREF="#sRM3.3">Peak residual flux, in mJy/beam (3)</A>
+ 136-141  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJy" TARGET="explain">mJy</A>     polFlux  ? Integrated linearly polarized flux density
+ 143-147  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      polPA  *[-90,90]? <A HREF="#sRM3.4">The position angle of polFlux (4)</A>
+ 149-153  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mJy" TARGET="explain">mJy</A>   e_polFlux  ? Mean error on polFlux
+ 155-158  F4.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     e_polPA  ? Mean error on polPA
+<HR>
+<A NAME="sRM3.1"><B>Note (1)</B>:
+    The NVSS Catalog designation is of the form
+        NVSS JHHMMSS+DDMMSS
+    using the standard IAU nomenclature prescription, where NVSS is the
+    catalog acronym, J specifies the coordinate equinox (for J2000)
+    HHMMSS are the hours, minutes, and truncated (not rounded) seconds of
+    right ascension, + or - is the sign of the declination, and DDMMSS are
+    the degrees, arcminutes, and truncated (not rounded) arcseconds of
+    declination. Thus, the NVSS source at equinox J2000.0 coordinates of
+    00h00m00.24s -20d04'49.1" is called NVSS J000000-200449. This name,
+    without the leading "NVSS J" prefix, is reported in the NVSS column.
+    There are four cases where a suffix "a" or "b" have been appended to
+    the name to ensure the naming unicity.
+<A NAME="sRM3.2"><B>Note (2)</B>: Position of the centroid of the fitted radio source,
+    for the epoch of observation (1995&#177;2).
+<A NAME="sRM3.3"><B>Note (3)</B>: High residual values generally indicate complex sources.
+    f_resFlux contains a flag indicating a residual of the fit to the
+    radio source, which can be:
+      P: if the peak flux density residual was high
+      S: if the integrated flux density residual was high
+<A NAME="sRM3.4"><B>Note (4)</B>:
+    polPA is the position angle (N through East) of the "E" vector of the
+    linear polarization if the source was detected (1 sigma) in linear
+    polarization.
+<HR>
+
+<A NAME="sRM99.1"><B>History</B>:
+    The file "<B>nvss.dat</B>" was created from the ascii edition of NVSS as file
+    <A HREF="ftp://ftp.cv.nrao.edu/nvss/CATALOG/NVSSCatalog.text.gz">ftp://ftp.cv.nrao.edu/nvss/CATALOG/NVSSCatalog.text.gz</A>  (27-Sep-2002),
+    provided by the NVSS Catalog's authors.
+    Many of the descriptions enclosed in this ReadMe file were prepared
+    by the HEASARC team at
+    <A HREF="http://heasarc.gsfc.nasa.gov/W3Browse/all/nvss.html">http://heasarc.gsfc.nasa.gov/W3Browse/all/nvss.html</A>
+================================================================================
+<B>(End)</B>                                   Francois Ochsenbein [CDS]    24-Dec-2002
+
+</PRE><!-- ....wait for 1 children: %0=3183104 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

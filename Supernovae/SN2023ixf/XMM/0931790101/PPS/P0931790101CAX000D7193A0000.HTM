@@ -1,0 +1,341 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of VII/193</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Wed Jun 28 17:16:23 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0931790101OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of VII/193 :<BR>The CfA Redshift Catalogue, Version June 1995 (Huchra+ 1995)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0931790101OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>VII/193</B>            The CfA Redshift Catalogue, Version June 1995  (Huchra+ 1995)
+================================================================================
+The CfA Redshift Catalogue, Version June 1995
+     Huchra J.P., Geller M.J., Clemens C.M., Tokarz S.P., Michel A.
+    &lt;Harvard-Smithsonian Center for Astrophysics (1995)&gt;
+================================================================================
+<B>ADC_Keywords</B>: Redshifts
+
+
+<A NAME="sRM99.1"><B>Notice</B>:
+    People who use the redshift catalogues are strongly encouraged to
+    reference both the catalogue version and its accompanying description
+    (e.g. Huchra, J. Geller, M., Clemens, C., Tokarz, S and Michel, A.
+    1992, Bull. Inf. C.D.S. 41, 31) as well as original sources for the
+    galaxy redshifts as given in the file zsource.tex (or zsource.dat)
+
+    If you have any further questions (and are in dire need of answers),
+    address them to John Huchra <A HREF="mailto:huchra@cfa.harvard.edu">huchra@cfa.harvard.edu</A>
+
+<A NAME="sRM11.1"><B>Description</B>:
+    The catalog (files zcat.dat and zbig.dat) incorporates much of the
+    latest velocity data from the Whipple Observatory and other sources as
+    well as velocities from earlier compilations such as the Second
+    Reference Catalogue of de Vaucouleurs, de Vaucouleurs, and Corwin; the
+    Index of Galaxy Spectra of Gisler and Friel, and the Catalogue of
+    Radial Velocities of Galaxies of Palumbo, Tanzella-Nitti, and
+    Vettolani. The data included here are BT magnitudes and a few UGC
+    numbers with increased "accuracy" in the velocity source information.
+
+    The following separate tables contain selected objects
+    from the CfA Redshift Survey:
+
+    - the first CfA Redsdhift Survey (Huchra et al., <A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=1983ApJS...52...89H">1983ApJS...52...89H</A>);
+      this catalogue contains 2395 galaxies, a number slightly smaller
+      than the published number of 2399, since there have been small
+      corrections to the magnitudes for multiple galaxies. This version
+      has had new morphological types added by me as well as POSS
+      diameters measured for those galaxies that were not in the UGC or
+      did not have UGC diameters.
+
+    - the first slice of the second CfA redshift survey
+      (Huchra et al., <A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=1990ApJS...72..433H">1990ApJS...72..433H</A>)
+
+    - the second slice of the CfA redshift survey (Huchra et al.,
+      <A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=1995ApJS...99..391H">1995ApJS...99..391H</A>)
+
+    See the complete description in 'zcom.tex' (in plain TeX),
+    or zcom.txt (plain ascii)
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.52">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.53">&#215; <A HREF="#sRM2.1">zcat.dat</A>         130    57536   The CfA Redshift Catalogue
+<A NAME="sRM-F.54">&#215; <A HREF="#sRM2.2">zbig.dat</A>         108     1202   The list with Large z
+<A NAME="sRM-F.55">&#215; <A HREF="#sRM2.3">zsource.dat</A>      228      825   References of redshifts
+<A NAME="sRM-F.56">&#215; zcom.tex         180      966   Introduction by Huchra et al. in plain TeX
+<A NAME="sRM-F.57">&#215; zsource.tex      278     1150   References of redshifts in plain TeX
+<A NAME="sRM-F.58">&#215; limform.tex       81      384   TeX definitions (\include'd by z*.tex)
+<A NAME="sRM-F.59">&#215; zcom.txt          87      720   Introduction by Huchra et al. in plain ascii
+<A NAME="sRM-F.60">&#215; <A HREF="#sRM2.1">cfa1.dat</A>         130     2395   First CfA Redshift Survey (<A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=1983ApJS...52...89H">1983ApJS...52...89H</A>)
+<A NAME="sRM-F.61">&#215; <A HREF="#sRM2.1">cfa2s1.dat</A>       130     1156   First slice of Second CfA Redshift Survey
+                                   (<A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=1990ApJS...72..433H">1990ApJS...72..433H</A>)
+<A NAME="sRM-F.63">&#215; <A HREF="#sRM2.1">cfa2s2b.dat</A>      130      718  <A HREF="#sRM3.1">*</A>Second slice of CfA Redshift Survey, bright
+<A NAME="sRM-F.64">&#215; <A HREF="#sRM2.1">cfa2s2f.dat</A>      130       77  <A HREF="#sRM3.1">*</A>Second slice of CfA Redshift Survey, faint
+<HR>
+<A NAME="sRM3.1"><B>Note on cfa2s2b.dat, cfa2s2f.dat</B>:
+     the second slice (published in <A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=1995ApJS...99..391H">1995ApJS...99..391H</A>) comes in two
+     parts, the first part are the galaxies brighter than 15.5 (table1)
+     and the second are those that are fainter than 15.5 (table2).
+<HR>
+
+<A NAME="sRM13.1"><B>See also</B>:
+    <A HREF="ftp://fang.harvard.edu/pub/catalogs">ftp://fang.harvard.edu/pub/catalogs</A> : FTP access to CfA original files.
+
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.53"> zcat.dat</A> <A HREF="#sRM-F.53"> cfa*.dat</A>
+<HR>
+   Bytes Format  Units   Label    Explanations
+<HR>
+   1- 11  A11    ---     Name     Source name
+  12- 13  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?h" TARGET="explain">h</A>       RAh      Right Ascension 1950 (hours)
+  14- 15  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?min" TARGET="explain">min</A>     RAm      Right Ascension 1950 (minutes)
+  16- 19  F4.1   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>       RAs      Right Ascension 1950 (seconds)
+      20  A1     ---     DE-      Declination 1950 (sign)
+  21- 22  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEd      Declination 1950 (degrees)
+  23- 24  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>  DEm      Declination 1950 (minutes)
+  25- 26  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  DEs      ? Declination 1950 (seconds)
+  27- 31  F5.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Bmag     ? B magnitude
+  32- 36  I5     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    Vh       ? Heliocentric velocity; redshifts have been
+                                    converted with V = z c, with
+                                    c = 299792.5 km/s
+  37- 39  I3     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?km/s" TARGET="explain">km/s</A>    e_Vh     ? Mean error on Vh
+      40  A1     ---     r_Bmag   <A HREF="#sRM3.2">Source for Bmag              see Note (1)</A>
+  41- 44  I4     ---     zRef     [-901/4900]? <A HREF="#sRM3.3">Source of Vh,   see Note (2)</A>
+  45- 46  I2     ---     Ttype    [-9/40]? <A HREF="#sRM3.4">Morphological Type, see Note (3)</A>
+      47  A1     ---     Btype    [AXB]? <A HREF="#sRM3.4">Bar Type              see Note (3)</A>
+      48  I1     ---     Lclass   [1/9]? <A HREF="#sRM3.4">Luminosity class      see Note (3)</A>
+      49  A1     ---     Struct   [DPRrstT/] <A HREF="#sRM3.4">Structure notes   see Note (3)</A>
+  50- 55  F6.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>  Diam1    ? Diameter   (Note: 0, 1 or 2 decimals)
+  56- 61  F6.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>  Diam2    ? Diameter   (Note: 0, 1 or 2 decimals)
+  62- 67  F6.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     BT       ? BT magnitude
+  68- 73  A6     ---     UGC/ESO  Number from UGC <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/26">VII/26</A> or ESO/Upp <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/34">VII/34</A>
+  74- 79  F6.3   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Mpc" TARGET="explain">Mpc</A>     Dist     ? Distance
+  80- 85  A6     ---     RFN      Plate number, see zcom.tex
+  86-130  A45    ---    Comments  Free-text comment, see zcom.tex
+<HR>
+<A NAME="sRM3.2"><B>Note (1)</B>: see "Photometry and magnitude sources" section below
+
+<A NAME="sRM3.3"><B>Note (2)</B>: references are in file "zsource.dat"; the first two digits
+          (bytes 41-42) indicate the basic sources
+          (see "Basic Radial Velocity Sources" below)
+<A NAME="sRM3.4"><B>Note (3)</B>: See a description in "Morphological types in zcat" section below.
+
+<HR>
+
+<A NAME="sRM99.2"><B>Morphological types in zcat</B>:
+   1. Values of Ttype
+      -9 = QSO/AGN
+      -7 = Unclassified Elliptical
+      -6 = Compact Elliptical
+      -5 = E, and  dwarf E
+      -4 = E/SO
+      -3 = L-, SO-
+      -2 = L, SO
+      -1 = L+, SO+
+       0 = SO/a, SO-a
+       1 = Sa
+       2 = Sab
+       3 = Sb
+       4 = Sbc
+       5 = Sc
+       6 = Scd
+       7 = Sd
+       8 = Sdm
+       9 = Sm, Magellanic Spiral
+      10 = Im, Irr I, Magellanic Irregular, Dwarf Irregular
+      11 = Compact Irregular, Extragalactic HII Region
+      15 = Peculiar, Unclassifiable
+      16 = Irr II
+      20 = S..., Sc-Irr, Unclassified Spiral
+      24 = Open Star Cluster
+      25 = Plate Flaw, Star, etc. misclassified as galaxy!
+      26 = T Tauri star (from IRAS Surveys)
+      27 = Globular Cluster
+      30 = Planetary Nebula
+      31 = Dark Cloud (no object visible on POSS)
+      32 = HII region in external galaxy
+      33 = Reflection Nebulosity
+      40 = Indiv. Comp. of Multiple Nucleus Galaxy
+   2. Bar types in zcat
+       A = A, unbarred
+       X = X, AB, mixed type
+       B = B, Barred
+   3. Peculiarities
+       D = Double or Multiple
+       P = Peculiar
+       R = Outer Ring
+       r = Inner Ring
+       s = S-shaped
+       t = Mixed (Inner ring/S-shaped)
+       T = Pseudo outer ring
+       / = Spindle
+   4. Luminosity Classes (L) (for Spirals and Irregulars)
+       1 I      2 I-II      3 II    4 II-III
+       5 III    6 III-IV    7 IV    8 IV-V     9 V
+
+<A NAME="sRM99.3"><B>Photometry and magnitude sources</B>:
+   0 = Blank   B(0) 1ST Reference Catalogue
+   1 = Zwicky Catalogue
+   2 = Corrected Shapley-Ames
+   3 = Tully and Fisher
+   4 = J. Graham
+   5 = Markarian, other Russian estimates
+   6 = BT - 2ND Reference Catalogue
+   7 = MCG (Vorontsov-Velyaminov))
+   8 = CCD Blue
+   9 = Observers eye estimates (blue)
+   A = Corrected Blue magnitudes from the RC3
+   B = Photoelectric or Photographic blue
+   C = Eye estimates from the Case Low dispersion survey
+   D = Dartmouth Red instrumental
+   d = PDS magnitudes calibrated to Kron-Cousins red
+   G = STScI Guide Star Catalogue (V or J)
+   H = Zwicky Mag for multiple systems split by JPH
+   I = CCD I
+   J = Photographic J, IIIa-J
+   L = SSRS2 Magnitude from L. DaCosta (approx BT)
+   P = PGC magnitude
+   r = Gunn red magnitude
+   R = Photographic of Photoelectric R, IIIa-F, O-98 or 103aE
+   v = Dressler's eye estimate (visual)
+   V = Photographic or Photoelectric V
+   W = CCD V
+
+<A NAME="sRM99.4"><B>Basic Radial Velocity Sources</B>:
+   00 = Blank  2ND REF CAT, de Vaucouleurs et al.
+   01 = Sandage and Tammann (Cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/51">VII/51</A>)
+   02 = Tully and Fisher (Nearby Galaxy Catalog, cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/145">VII/145</A>)
+   03 = Huchra-KPNO, (including Markarian list)
+   04 = Rubin, Ford, Kinmann
+   05 = Other Russian ( Byurakan, Alam-Alta, SAO)
+   06 = Arecibo 21 cm - Salpeter et al., Giovanelli and Haynes
+   07 = Martin
+   08 = German  21cm (Bonn)
+   09 = NRAO, VLA 21cm
+   10 = CTIO
+   11 = KPNO
+   12 = ESO
+   13 = HCO - M. Davis
+   14 = E. Turner
+   15 = Steward Observatory  - Tifft, Gregory
+   16 = Rood, Chincarini, Kinter, Dickel
+   17 = AAT + Mt. Stromlo
+   18 = SAO - 6-meter Karachentsev, Kopylov
+   19 = Texas - McDonald Observatory
+   20 = Mt. Wilson - HMS, Rudnicki, Zwicky
+   21 = Lick
+   22 = French 21sm -- Nancay
+   23 = British Optical -- I.N.T., Herschel Telescope
+   24 = Palomar - Hale Telescope, Mayer telescope
+   25 = Australian 21cm - Parkes
+   26 = Dutch 21cm
+   27 = Mt. Hopkins - CfA Redshift Survey, MMT
+   28 = British 21cm  (Jodrell Bank, etc.)
+   29 = Argentina - Sersic
+   30 = Thuan, Seitzer, Knapp (21-cm dwarf surveys)
+   31 = South Africa - SAAO -- Fairall
+   32 = Arecibo - Sullivan, Bothun, Schommer
+   33 = H.J. Rood - NSSDC Catalog
+   34 = Ohio + Penn State
+   35 = Other Optical (eg.Calar Alto, Wise, Tartu) % LaPalma
+   36 = Las Campanas (100", 40"),Other Southern
+   37 = Palumbo, et al. (Catalogue of Redshifts)
+   38 = ESO-21cm Catalog
+   39 = Brazil - Southern Survey, L. daCosta
+   40 = MIT-Dartmouth-Michigan Surveys (McGraw Hill)
+   41 = Hawaii - CFHT, etc.
+   42 = Dartmouth - Century Survey
+   43 = Davis and Strauss IRAS Sources (Published)
+   44 = Hewitt and Burbidge QSO Catalog
+   45 = Keck
+   46 = Redshiftless entries (discoveries, companions...)
+   47 = QDOT survey references
+   48 = Master file data
+   49 = Bothun, Moulf, published velocities; priv. comm.
+   -9 = SAAO, Menzies; Fairall, Vettolani and DaCosta
+   -8 = Dartmouth, not yet published
+   -7 = CFA, not yet published (Kirshner)
+   -6 = Brazil (L. daCosta) not yet published
+   -5 = Davis and Strauss (IRAS Sources)
+   -4 = Bothun, Mould not yet published (Palomar, Arecibo)
+   -3 = CFA, not yet published (Forman and Jones)
+   -2 = CFA, not yet published   MMT Observations (JPH)
+   -1 = CFA, not yet published  Tillnghast Observations (JPH)
+
+<A NAME="sRM2.2"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.54"> zbig.dat</A>
+<HR>
+   Bytes Format  Units   Label    Explanations
+<HR>
+   1- 11  A11    ---     Name     IAU-like name
+  12- 13  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?h" TARGET="explain">h</A>       RAh      Right Ascension 1950 (hours)
+  14- 15  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?min" TARGET="explain">min</A>     RAm      Right Ascension 1950 (minutes)
+  16- 19  F4.1   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>       RAs      Right Ascension 1950 (seconds)
+      20  A1     ---     DE-      Declination 1950 (sign)
+  21- 22  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEd      Declination 1950 (degrees)
+  23- 24  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>  DEm      Declination 1950 (minutes)
+  25- 26  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  DEs      ? Declination 1950 (seconds)
+  28- 33  F6.4   ---     z        ? Redshift
+  35- 39  F5.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Bmag     ? B magnitude
+      41  A1     ---     r_Bmag   <A HREF="#sRM3.5">Source of Bmag     see Note (1)</A>
+  43- 46  I4     ---     zRef     ? <A HREF="#sRM3.6">Source of z      see Note (2)</A>
+  47- 48  I2     ---     Ttype    [-9/40]? <A HREF="#sRM3.7">Morphological type, see Note (3)</A>
+  55- 67  A13    ---     Notes    These columns may contain either the
+                                  diameters in arcmin, or spectrum ids
+  69-108  A40    ---    Comments  Free-text comments.
+<HR>
+<A NAME="sRM3.5"><B>Note (1)</B>: see "Photometry and magnitude sources" section above
+
+<A NAME="sRM3.6"><B>Note (2)</B>: references are in file "zsource.dat"; the first two digits
+          (bytes 41-42) indicate the basic sources
+          (see "Basic Radial Velocity Sources" above)
+<A NAME="sRM3.7"><B>Note (3)</B>: See a description in "Morphological types in zcat" section above.
+
+<HR>
+
+<A NAME="sRM2.3"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.55"> zsource.dat</A>
+<HR>
+   Bytes Format Units   Label     Explanations
+<HR>
+   1-  4  I4    ---     zRef      [-901/4900] Vh or z reference
+   6-228  A223  ---     Text      Text of reference
+<HR>
+
+<A NAME="sRM99.5"><B>Acknowledgments</B>:
+  This version was kindly provided by John Huchra (<A HREF="mailto:huchra@cfa.harvard.edu">huchra@cfa.harvard.edu</A>);
+  several details of this documentation make use of the previous version
+  of this catalog (numbered <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/164">VII/164</A>) to which Cathy Clemens at CfA,
+  Nancy G. Roman (<A HREF="mailto:nancy.g.roman@adc.gsfc.nasa.gov">nancy.g.roman@adc.gsfc.nasa.gov</A>) and N. Paul Kuin
+  (<A HREF="mailto:kuin@adc.gsfc.nasa.gov">kuin@adc.gsfc.nasa.gov</A>) at ADC participated.
+
+<A NAME="sRM90.1"><B>References</B>:
+  Huchra, J., Davis, M., Latham, D. and Tonry J., =<A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=1983ApJS...52...89H">1983ApJS...52...89H</A>
+  Huchra, J.P., Geller, M.J., de Lapparent, V. and Corwin H.G.Jr,
+    =<A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=1990ApJS...72..433H">1990ApJS...72..433H</A>
+  Huchra, J. Geller, M., Clemens, C., Tokarz, S and Michel, A., 1992
+    Bull. Inf. C.D.S. 41, 31  (<A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=1992BICDS..41...31H">1992BICDS..41...31H</A>)
+  Huchra, J.P., Geller, M.J. and Corwin H.G.Jr,   =<A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=1995ApJS...99..391H">1995ApJS...99..391H</A>
+================================================================================
+<B>(End)</B>                                     Francois Ochsenbein [CDS]  22-Oct-1996
+
+</PRE><!-- ....wait for 1 children: %0=14502 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

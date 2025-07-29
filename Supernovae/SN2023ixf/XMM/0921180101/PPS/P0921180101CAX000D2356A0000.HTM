@@ -1,0 +1,233 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of II/356</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Wed Jun 28 19:44:25 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0921180101OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of II/356 :<BR>XMM-OM Serendipitous Source Survey Catalogue (XMM-SUSS4.1) (Page+ 2019)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0921180101OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>II/356</B>  XMM-OM Serendipitous Source Survey Catalogue (XMM-SUSS4.1) (Page+ 2019)
+================================================================================
+The XMM-Newton Serendipitous Ultraviolet Source Survey catalogue
+    Page M.J., Brindle C., Talavera A., Still M., Rosen S.R., Yershov V.N.,
+    Ziaeepour H., Mason K.O., Cropper M.S., Breeveld A.A., Loiseau N.,
+    Mignani R., Smith A., Murdin P.
+    &lt;Mon. Not. R. Astron. Soc. 426, 903 (2012)&gt;
+    =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2012MNRAS.426..903P">2012MNRAS.426..903P</A>
+    =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2019yCat.2356....0P">2019yCat.2356....0P</A>
+================================================================================
+<B>ADC_Keywords</B>: Surveys ; Ultraviolet ; Photometry
+
+<B>Mission_Name</B>: XMM
+
+<B>Keywords</B>: catalogues, astrometry ; stars: general ; galaxies: photometry ;
+          ultraviolet: general
+
+<A NAME="sRM11.1"><B>Description</B>:
+    SUSS4.1 is a new 2018 release of the XMM OM Serendipitous Ultraviolet
+    Source Survey catalogue. This new release corrects some
+    inconsistencies between IAUNAME and SRCNUM found in the previous
+    release (OM SUSS4).
+
+    The catalogue was compiled for the Optical Monitor instrument on board
+    the ESA XMM Newton observatory. This version, the 4th release of the
+    catalogue, spans the period of observations from 2000 to July 2017.
+
+    A detailed description of the Catalogue can be found at
+    https://www.ucl.ac.uk/mssl/research-projects/2018/dec/xmm-newton. A
+    refereed paper on the first version can be found in Page M.J. et al.
+    (<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=2012MNRAS.426..903P">2012MNRAS.426..903P</A>).
+
+    In addition to covering a larger observation period, the fourth
+    release differs from the previous one in the implementation of a new
+    time dependent sensitivity degradation correction. As in the previous
+    release, sources detected on stacked images are properly flagged.
+
+    All data have been fully processed at the European Space Astronomy
+    Centre (ESAC, Madrid, Spain) by using the XMM Science Analysis
+    Software (SAS) system version 17.0.
+
+    The number of observations (OBSIDs) included in the catalogue is
+    9,749. The total number of entries in this release is 8,176,156. They
+    correspond to 5,503,765 sources, of which 1,035,453 have multiple
+    entries in the source table, corresponding to different observations.
+
+    The Catalogue consists of two tables. The first one (SRCLIST) contains
+    the sources, with positional and photometric data (count rate,
+    magnitude and flux) and quality flags for each measurement.
+
+    In the second table (SUMMARY) we give a summary of the observations
+    from which the sources have been detected and measured.
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.55">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.56">&#215; <A HREF="#sRM2.1">xmmom41s.dat</A>     545  8176156   The XMM-Newton Optical Monitor Serendipitous
+                                     Source Survey Catalogue, Version 4.1
+                                     (XMM-SUSS4.1) "slim" version
+<A NAME="sRM-F.59">&#215; xmmom4_1.fit    2880  1525268   The XMM-Newton Optical Monitor Serendipitous
+                                     Source Survey Catalogue, Version 4.1
+                                     (XMM-SUSS4.1) full version
+<HR>
+
+<A NAME="sRM13.1"><B>See also</B>:
+  https://www.cosmos.esa.int/web/xmm-newton/om-catalogue : XMM-SUSS4.1 Home page
+
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.56"> xmmom41s.dat</A>
+<HR>
+   Bytes Format Units      Label     Explanations
+<HR>
+   1-  5  A5    ---        ---       [XMMOM]
+   7- 23  A17   ---        XMMOM     <A HREF="#sRM3.1">Source name (JHHMMSS.s+DDMMSSa)</A>
+                                      (IAUNAME) (1)
+  24- 27  I4    ---        IDsum     Index in the SUMMARY table for the source
+                                      ObsiD (N_SUMMARY)
+  29- 38  A10   ---        ObsID     Source OBSID number (OBSID)
+  40- 46  I7    ---        ID        Source number in this catalogue (SRCNUM)
+  48- 54  F7.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>     UVW2r     ? Distance to the nearest source,
+                                      UVW2 filter (UVW2_SRCDIST)
+  56- 62  F7.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>     UVM2r     ? Distance to the nearest source,
+                                      UVM2 filter (UVM2_SRCDIST)
+  64- 70  F7.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>     UVM1r     ? Distance to the nearest source,
+                                      UVW1 filter (UVW1_SRCDIST)
+  72- 78  F7.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>     Ur        ? Distance to the nearest source,
+                                      U filter (U_SRCDIST)
+  80- 86  F7.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>     Br        ? Distance to the nearest source,
+                                      B filter (B_SRCDIST)
+  88- 94  F7.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>     Vr        ? Distance to the nearest source,
+                                      V filter (V_SRCDIST)
+  96-105  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>        RAdeg     Source Right Ascension (J2000) (RA)
+ 107-116  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>        DEdeg     Source Declination (J2000) (DEC)
+ 118-122  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>     ePos      Source positional error (POSERR)
+ 124-125  I2    ---        Nobs      Number of observation IDs for this source
+                                      (N_OBSID)
+ 127-134  F8.2  ---       sig(UVW2)  ? Significance in UVW2 (UVW2_SIGNIF)
+ 136-143  F8.2  ---       sig(UVM2)  ? Significance in UVM2 (UVM2_SIGNIF)
+ 145-152  F8.2  ---       sig(UVW1)  ? Significance in UVW1 (UVW1_SIGNIF)
+ 154-161  F8.2  ---        sig(U)    ? Significance in U source (U_SIGNIF)
+ 163-170  F8.2  ---        sig(B)    ? Significance in B (B_SIGNIF)
+ 172-179  F8.2  ---        sig(V)    ? Significance in V (V_SIGNIF)
+ 181-192  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cW/m2/nm" TARGET="explain">cW/m2/nm</A>   F(UVW2)   ? Source flux in XMM-OM/UVW2 filter, in
+                                       erg/cm<SUP>2</SUP>/s/&Aring; (UVW2<SUB>AB</SUB>FLUX)
+ 194-205  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cW/m2/nm" TARGET="explain">cW/m2/nm</A>  e_F(UVW2)  ? Error in F(UVW2) (UVW2<SUB>AB</SUB>FLUX_ERR)
+ 207-218  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cW/m2/nm" TARGET="explain">cW/m2/nm</A>   F(UVM2)   ? Source flux in XMM-OM/UVM2 filter, in
+                                       erg/cm<SUP>2</SUP>/s/&Aring; (UVM2<SUB>AB</SUB>FLUX)
+ 220-231  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cW/m2/nm" TARGET="explain">cW/m2/nm</A>  e_F(UVM2)  ? Error in F(UVM2) (UVM2<SUB>AB</SUB>FLUX_ERR)
+ 233-244  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cW/m2/nm" TARGET="explain">cW/m2/nm</A>   F(UVW1)   ? Source flux in XMM-OM/UVW1 filter, in
+                                       erg/cm<SUP>2</SUP>/s/&Aring; (UVW1<SUB>AB</SUB>FLUX)
+ 246-257  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cW/m2/nm" TARGET="explain">cW/m2/nm</A>  e_F(UVW1)  ? Error in F(UVW1) (UVW1<SUB>AB</SUB>FLUX_ERR)
+ 259-270  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cW/m2/nm" TARGET="explain">cW/m2/nm</A>   F(U)      ? Source flux in XMM-OM/U filter, in
+                                       erg/cm<SUP>2</SUP>/s/&Aring; (U<SUB>AB</SUB>FLUX)
+ 272-283  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cW/m2/nm" TARGET="explain">cW/m2/nm</A>   e_F(U)    ? Error in F(U) (U<SUB>AB</SUB>FLUX_ERR)
+ 285-296  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cW/m2/nm" TARGET="explain">cW/m2/nm</A>   F(B)      ? Source flux in XMM-OM/B filter, in
+                                       erg/cm<SUP>2</SUP>/s/&Aring; (B<SUB>AB</SUB>FLUX)
+ 298-309  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cW/m2/nm" TARGET="explain">cW/m2/nm</A>   e_F(B)    ? Error in F(B) (B<SUB>AB</SUB>FLUX_ERR)
+ 311-322  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cW/m2/nm" TARGET="explain">cW/m2/nm</A>   F(V)      ? Source flux in XMM-OM/V filter, in
+                                       erg/cm<SUP>2</SUP>/s/&Aring; (V<SUB>AB</SUB>FLUX)
+ 324-335  E12.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?cW/m2/nm" TARGET="explain">cW/m2/nm</A>   e_F(V)    ? Error in F(V) (V<SUB>AB</SUB>FLUX_ERR)
+ 337-343  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>        UVW2mAB   ? Source AB magnitude in XMM-OT/UVW2 filter
+                                       (UVW2<SUB>AB</SUB>MAG)
+ 345-351  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>       e_UVW2mAB  ? Error on UVW2mAB (UVW2<SUB>AB</SUB>MAG_ERR)
+ 353-359  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>        UVM2mAB   ? Source AB magnitude in XMM-OT/UVM2 filter
+                                       (UVM2<SUB>AB</SUB>MAG)
+ 361-367  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>       e_UVM2mAB  ? Error on UVM2mAB (UVM2<SUB>AB</SUB>MAG_ERR)
+ 369-375  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>        UVW1mAB   ? Source AB magnitude in XMM-OT/UVW1 filter
+                                       (UVW1<SUB>AB</SUB>MAG)
+ 377-383  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>       e_UVW1mAB  ? Error on UVW1mAB (UVW1<SUB>AB</SUB>MAG_ERR)
+ 385-391  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>        UmAB      ? Source AB magnitude in XMM-OT/U
+                                      (U<SUB>AB</SUB>MAG)
+ 393-399  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>        e_UmAB    ? Error on UmAB (U<SUB>AB</SUB>MAG_ERR)
+ 401-407  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>        BmAB      ? Source AB magnitude in XMM-OT/B
+                                      (B<SUB>AB</SUB>MAG)
+ 409-415  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>        e_BmAB    ? Error on BmAB (B<SUB>AB</SUB>MAG_ERR)
+ 417-423  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>        VmAB      ? Source AB magnitude in XMM-OT/V
+                                      (V<SUB>AB</SUB>MAG)
+ 425-431  F7.4  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>        e_VmAB    ? Error on VmAB (V<SUB>AB</SUB>MAG_ERR)
+ 433-444  A12   ---        q.UVW2    [TF] <A HREF="#sRM3.2">Source quality flag string,</A>
+                                      filter UVW2 (UVW2<SUB>QUALITY</SUB>FLAG_ST) (2)
+ 446-457  A12   ---        q.UVM2    [TF] <A HREF="#sRM3.2">Source quality flag string,</A>
+                                      filter UVM2 (UVM2<SUB>QUALITY</SUB>FLAG_ST) (2)
+ 459-470  A12   ---        q.UVW1    [TF] <A HREF="#sRM3.2">Source quality flag string,</A>
+                                      filter UVW1 (UVW1<SUB>QUALITY</SUB>FLAG_ST) (2)
+ 472-483  A12   ---        q.U       [TF] <A HREF="#sRM3.2">Source quality flag string, filter U</A>
+                                      (U<SUB>QUALITY</SUB>FLAG_ST) (2)
+ 485-496  A12   ---        q.B       [TF] <A HREF="#sRM3.2">Source quality flag string, filter B</A>
+                                      (B<SUB>QUALITY</SUB>FLAG_ST) (2)
+ 498-509  A12   ---        q.V       [TF] <A HREF="#sRM3.2">Source quality flag string, filter V</A>
+                                      (V<SUB>QUALITY</SUB>FLAG_ST) (2)
+     511  I1    ---        xUVW2     [0/1]? <A HREF="#sRM3.3">Source extended flag in filter UVW2</A>
+                                      (UVW2<SUB>EXTENDED</SUB>FLAG) (3)
+     513  I1    ---        xUVM2     [0/1]? <A HREF="#sRM3.3">Source extended flag in filter UVM2</A>
+                                      (UVM2<SUB>EXTENDED</SUB>FLAG) (3)
+     515  I1    ---        xUVW1     [0/1]? <A HREF="#sRM3.3">Source extended flag in filter UVW1</A>
+                                      (UVW1<SUB>EXTENDED</SUB>FLAG) (3)
+     517  I1    ---        xU        [0/1]? <A HREF="#sRM3.3">Source extended flag in filter U</A>
+                                      (U<SUB>EXTENDED</SUB>FLAG) (3)
+     519  I1    ---        xB        [0/1]?  <A HREF="#sRM3.3">Source extended flag in filter B</A>
+                                      (B<SUB>EXTENDED</SUB>FLAG) (3)
+     521  I1    ---        xV        [0/1]? <A HREF="#sRM3.3">Source extended flag in filter V</A>
+                                      (V<SUB>EXTENDED</SUB>FLAG) (3)
+ 523-525  A3    ---        UVW2img   [YES] Source detected in stacked images
+                                      filter UVW2 (UVW2<SUB>SKY</SUB>IMAGE)
+ 527-529  A3    ---        UVM2img   [YES] Source detected in stacked images
+                                      filter UVM2 (UVM2<SUB>SKY</SUB>IMAGE)
+ 531-533  A3    ---        UVW1img   [YES] Source detected in stacked images
+                                      filter UVW1 (UVW1<SUB>SKY</SUB>IMAGE)
+ 535-537  A3    ---        Uimg      [YES] Source detected in stacked images
+                                      filter U (U<SUB>SKY</SUB>IMAGE)
+ 539-541  A3    ---        Bimg      [YES] Source detected in stacked images
+                                      filter B (B<SUB>SKY</SUB>IMAGE)
+ 543-545  A3    ---        Vimg      [YES] SoVrce detected in stacked images
+                                      filter U (V<SUB>SKY</SUB>IMAGE)
+<HR>
+<A NAME="sRM3.1"><B>Note (1)</B>: Sources are designated as "XMMOM JHHMMSS.s+DDMMSSa", conform to
+     the IAU Working Group on Designations (old IAU Commission 5). There are
+     over 1173 non-unique names. The last character is optional, and only
+     used to distinguish sources which otherwise would have the same name.
+<A NAME="sRM3.2"><B>Note (2)</B>: the quality flags are as a set of the corresponding T/F (True/False)
+      characters.
+      1 : T = source on a bad pixel
+      2 : T = source on a readout streak
+      3 : T = source on a smoke-ring
+      4 : T = source on a diffraction spike
+      5 : T = source affected by Mod-8 pattern
+      6 : T = source within the central enhancement
+      7 : T = source lies near a bright source
+      8 : T = source near the edge
+      9 : T = point source within an extended source
+     10 : T = very bight pixel within photometry aperture
+     11 : T = multiple exposure values within photometry aperture
+     12 : T = the source is too bright (rate&gt;0.97ct/frame)
+<A NAME="sRM3.3"><B>Note (3)</B>: the flag is 1 for an extended source and 0 for a point source.
+
+<HR>
+
+<A NAME="sRM99.1"><B>History</B>:
+    From https://www.cosmos.esa.int/web/xmm-newton/xsa#download
+================================================================================
+<B>(End)</B>                                      Patricia Vannier [CDS]    30-Jan-2019
+
+</PRE><!-- ....wait for 1 children: %0=26426 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

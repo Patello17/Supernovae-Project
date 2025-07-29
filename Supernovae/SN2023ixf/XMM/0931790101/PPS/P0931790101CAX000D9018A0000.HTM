@@ -1,0 +1,146 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of IX/18</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Wed Jun 28 17:16:24 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0931790101OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of IX/18 :<BR>EINSTEIN extended source survey (EXSS) (Oppenheimer+ 1997)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0931790101OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>IX/18</B>             EINSTEIN extended source survey (EXSS)     (Oppenheimer+ 1997)
+================================================================================
+A survey of the EINSTEIN IPC Database for extended X-ray sources.
+     Oppenheimer B.R., Helfand D.J., Gaidos E.J.
+    &lt;Astron. J. 113, 2134-2146 (1997)&gt;
+    =<A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=1997AJ....113.2134O">1997AJ....113.2134O</A>       (SIMBAD/NED BibCode)
+================================================================================
+<B>ADC_Keywords</B>: X-ray sources ; Clusters, galaxy ;
+
+<B>Mission_Name</B>: Einstein
+
+
+<A NAME="sRM11.1"><B>Description</B>:
+    This catalog contains sources from data collected by the IPC on board
+    the EINSTEIN Observatory. This survey is designed to find extended
+    sources and diffuse emission rather than point sources. In addition,
+    the source detection algorithm is substantially improved over that
+    used by EMSS. Sources were searched using circular apertures up to
+    6.1arcmin. The catalog contains 1326 extended source candidates at high
+    galactic latitude (|b| &gt; 20&#176;).
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.23">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.24">&#215; <A HREF="#sRM2.1">catalog</A>          328     1325   The EXSS Catalogue
+<HR>
+
+<A NAME="sRM13.1"><B>See also</B>:
+    <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/146">I/146</A> : Positions and Proper Motions (PPM-North)
+    <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/193">I/193</A> : Positions and Proper Motions (PPM-South)
+    <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/208">I/208</A> : Positions and Proper Motions (PPM-90000 Supplement)
+    <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/4">VII/4</A> : Abell and Zwicky Clusters of Galaxies
+    <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/13">IX/13</A> : 2E Catalogue (Harris+ 1994)
+    <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/15">IX/15</A> : Einstein extended medium-sensitivity survey (EMSS)
+    <A HREF="telnet://einline@einline.harvard.edu/">telnet://einline@einline.harvard.edu/</A> : the EINLINE data-base
+
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.24"> catalog</A>
+<HR>
+   Bytes Format Units   Label     Explanations
+<HR>
+   1- 16  A16   ---     Name      !+ EXSS source name
+  19- 27  F9.7  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?rad" TARGET="explain">rad</A>     RArad     Right Ascension (B1950.0)
+  29- 38  F10.7 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?rad" TARGET="explain">rad</A>     DErad     Declination (B1950.0)
+  40- 45  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>    cts1      IPC photon counts per second for detection in
+                                aperture 1 (0.000 = no detection)
+  47- 52  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>    cts2      IPC photon counts per second for detection in
+                                aperture 2 (0.000 = no detection)
+  54- 59  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>    cts3      IPC photon counts per second for detection in
+                                aperture 3 (0.000 = no detection)
+  61- 66  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?ct/s" TARGET="explain">ct/s</A>    cts4      IPC photon counts per second for detection in
+                                aperture 4 (0.000 = no detection)
+  68- 73  F6.2  ---     S/N1      ?=0.00 Signal to noise ratio for aperture 1
+  75- 80  F6.2  ---     S/N2      ?=0.00 Signal to noise ratio for aperture 2
+  82- 87  F6.2  ---     S/N3      ?=0.00 Signal to noise ratio for aperture 3
+  89- 94  F6.2  ---     S/N4      ?=0.00 Signal to noise ratio for aperture 4
+  98-102  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  dRA1      Offset in right ascension of the aperture 1 
+                                 detection from the assumed object position 
+                                 (columns 1 and 2), found through the technique 
+                                 described in the paper
+ 106-110  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  dDE1      Offset in declination for aperture 1
+ 114-118  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  dRA2      Offset in right ascension for aperture 2
+ 122-126  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  dDE2      Offset in declination for aperture 2
+ 130-134  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  dRA3      Offset in right ascension for aperture 3
+ 138-142  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  dDE3      Offset in declination for aperture 3
+ 146-150  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  dRA4      Offset in right ascension for aperture 4
+ 154-158  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  dDE4      Offset in declination for aperture 4
+ 161-166  I6    ---     PPM       ?=-99 Star number from the Positions and
+                                 Proper Motions (PPM) Catalog (<A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/146">I/146</A>,
+                                 <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/193">I/193</A> and <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=I/208">I/208</A>) for the star which
+                                 is identified with the EXSS source.
+ 168-173  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     Vmag      ?=-99.00 V band magnitude of the PPM star
+ 176-181  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  dRA11     ?=-99.00 Right ascension difference between
+                                  PPM and EXSS positions
+ 184-189  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  dDE11     ?=-99.00 Declination difference between the
+                                  PPM and EXSS positions
+ 191-203  A13   ---     EMSS      EMSS source <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=IX/15">IX/15</A> identified with
+                                  the EXSS source
+ 205-208  A4    ---     Typ11     Type of the EMSS source (from EMSS catalog)
+ 211-215  F5.1  ---     S/N11     ?=-99.0 Signal to noise ratio of the EMSS
+                                  source with the EMSS detection algorithm
+ 218-223  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  dRA12     ?=-99.00 Right ascension difference between
+                                  the EMSS and the EXSS positions
+ 226-231  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  dDE12     ?=-99.00 Declination difference between
+                                  the EMSS and the EXSS positions
+ 234-245  A12   ---     ZwCl      Zwicky cluster of galaxies identified with
+                                  the EXSS source (see cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/4">VII/4</A>)
+ 249-253  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  Size      ?=-99.0 Approximate size of the Zwicky
+                                 cluster (from the Zwicky catalog)
+ 256-261  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  dRA13     ?=-99.00 Right ascension difference between
+                                 ZwCl and EXSS positions.
+ 264-269  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  dDE13     ?=-99.00 Declination difference between
+                                 ZwCl and EXSS positions.
+ 273-282  A10   ---     Abell     Abell cluster of galaxies identified with
+                                 the EXSS source (see cat. <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/4">VII/4</A>)
+ 286-291  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  dRA14     ?=-99.00 Right ascension difference between
+                                 Abell and EXSS positions
+ 294-299  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  dDE14     ?=-99.00 Declination difference between
+                                 Abell and EXSS positions
+ 301-304  A4    ---     Typ14     The type of the corresponding source in
+                                 the EINLINE database that is identified
+                                 with the EXSS source
+ 308-313  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  dRA15     ?=-99.00 Right ascension difference between
+                                 EINLINE and EXSS positions
+ 316-321  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  dDE15     ?=-99.00 Declination difference between
+                                 EINLINE and EXSS positions
+ 323-328  F6.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  d2        ?=140.01 The quadratic sum of dRA15 and dDE15
+<HR>
+
+<A NAME="sRM99.1"><B>History</B>:
+  * 27-Aug-1997: From <A HREF="http://astro.caltech.edu/~bro/exss/exss.html">http://astro.caltech.edu/~bro/exss/exss.html</A>
+  * 09-Dec-2005: A few typos in this ReadMe corrected.
+================================================================================
+<B>(End)</B>               Jean-Marie Hameury, Francois Ochsenbein [CDS]    27-Aug-1997
+
+</PRE><!-- ....wait for 1 children: %0=14574 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

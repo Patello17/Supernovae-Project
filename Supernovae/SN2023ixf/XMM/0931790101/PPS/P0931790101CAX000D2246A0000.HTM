@@ -1,0 +1,573 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of II/246</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Wed Jun 28 17:16:22 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0931790101OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of II/246 :<BR>2MASS All-Sky Catalog of Point Sources (Cutri+ 2003)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0931790101OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>II/246</B>              2MASS All-Sky Catalog of Point Sources     (Cutri+ 2003)
+================================================================================
+The 2MASS All-Sky Catalog of Point Sources
+     Cutri R.M., Skrutskie M.F., Van Dyk S., Beichman C.A., Carpenter J.M.,
+     Chester T., Cambresy L., Evans T., Fowler J., Gizis J., Howard E.,
+     Huchra J., Jarrett T., Kopan E.L., Kirkpatrick J.D., Light R.M,
+     Marsh K.A., McCallon H., Schneider S., Stiening R., Sykes M.,
+     Weinberg M., Wheaton W.A., Wheelock S., Zacarias N.
+    &lt;University of Massachusetts and Infrared Processing and Analysis Center
+     (IPAC/California Institute of Technology) (2003)&gt;
+    =<A HREF="http://simbad.harvard.edu/simbad/sim-ref?bibcode=2003yCat.2246....0C">2003yCat.2246....0C</A>
+================================================================================
+<B>ADC_Keywords</B>: Infrared sources ; Photometry, infrared ; Surveys
+
+
+<A NAME="sRM11.1"><B>Description</B>:
+
+    The Two Micron All Sky Survey (2MASS) project is designed to close the
+    gap between our current technical capability and our knowledge of the
+    near-infrared sky. In addition to providing a context for the
+    interpretation of results obtained at infrared and other wavelengths,
+    2MASS will provide direct answers to immediate questions on the
+    large-scale structure of the Milky Way and the Local Universe.
+
+    To achieve these goals, 2MASS is uniformly scanning the entire sky in
+    three near-infrared bands to detect and characterize point sources
+    brighter than about 1 mJy in each band, with signal-to-noise ratio
+    (SNR) greater than 10, using a pixel size of 2.0". This will achieve
+    an 80,000-fold improvement in sensitivity relative to earlier surveys.
+
+    2MASS uses two new, highly-automated 1.3-m telescopes, one at Mt.
+    Hopkins, AZ, and one at CTIO, Chile. Each telescope is equipped with a
+    three-channel camera, each channel consisting of a 256x256 array of
+    HgCdTe detectors, capable of observing the sky simultaneously at J
+    (1.25 &#181;m), H (1.65 &#181;m), and Ks (2.17 &#181;m), to a 3{sigma}
+    limiting sensitivity of 17.1, 16.4 and 15.3mag in the three bands.
+
+    The 2MASS arrays image the sky while the telescopes scan smoothly in
+    declination at a rate of ~1' per second. The 2MASS data "tiles" are 6
+    deg. long in the declination direction and one camera frame (8.5')
+    wide. The camera field-of-view shifts by ~1/6 of a frame in
+    declination from frame-to-frame. The camera images each point on the
+    sky six times for a total integration time of 7.8 s, with sub-pixel
+    "dithering", which improves the ultimate spatial resolution of the
+    final Atlas Images.
+
+    The University of Massachusetts (UMass) is responsible for the overall
+    management of the project, and for developing the infrared cameras and
+    on-site computing systems at both facilities. The Infrared Processing
+    and Analysis Center (IPAC) is responsible for all data processing
+    through the Production Pipeline, and construction and distribution of
+    the data products. The 2MASS project involves the participation of
+    members of the Science Team from several different institutions. The
+    2MASS project is funding by the National Aeronautics and Space
+    Administration (NASA) and the National Science Foundation (NSF).
+
+<A NAME="sRM99.1"><B>Acknowledging 2MASS in publications</B>:
+    Please include the following in any published material that makes use
+    of the 2MASS data products:
+
+    "This publication makes use of data products from the Two Micron All
+    Sky Survey, which is a joint project of the University of Massachusetts
+    and the Infrared Processing and Analysis Center/California Institute of
+    Technology, funded by the National Aeronautics and Space Administration
+    and the National Science Foundation."
+
+File Summary:
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.70">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.71">&#215; <A HREF="#sRM2.1">out.sam</A>          382     1000   2MASS Point Source Catalogue, sample output
+                                (on a total of 470,992,970 sources)
+<HR>
+
+<A NAME="sRM13.1"><B>See also</B>:
+    <A HREF="http://www.ipac.caltech.edu/2mass/">http://www.ipac.caltech.edu/2mass/</A> : 2MASS documentation
+    <A HREF="https://vizier.cds.unistra.fr/viz-bin/VizieR?-source=VII/233">VII/233</A> : The Two Micron All-Sky Survey: Extended sources   (Cutri+ 2003)
+
+
+<A NAME="sRM12.1"><B>Nomenclature Notes</B>:
+    As specified by the IAU recommendations on source nomenclature, the
+    object designation is derived from the J2000 sexagesimal coordinates
+    of the source and has the form HHMMSSss&#177;DDMMSSs, where HH are the
+    hours of right ascension, MM the RA minutes and SSss are the
+    centi-seconds of RA. DD are the degrees in declination, MM are DEC
+    minutes and SSs the declination deci-seconds. Note that both the RA
+    centi-seconds of time and DEC deci-seconds of arc are truncated rather
+    than rounded, per the IAU recommendation.
+
+    Note that when several sources have the same identifier, they are
+    distinguished by a trailing letter: A, B, C, etc...
+
+<A NAME="sRM99.2"><B>Remark on the Byte-by-byte Description</B>:
+    In the Byte-by-byte Description below, the column names differ
+    slightly compared to the original description, mainly to follow the
+    conventions used in the CDS Standaridzed description of catalogues.
+    The original names are written (in parentheses) in the Explanations.
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.71"> out.sam</A>
+<HR>
+   Bytes Format Units    Label    Explanations
+<HR>
+   1- 10  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      RAdeg    (ra) Right ascension (J2000)
+  12- 21  F10.6 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      DEdeg    (dec) Declination (J2000) (dec)
+  23- 26  F4.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   errMaj   (err_maj) Semi-major axis of position 
+                                  error ellipse
+  28- 31  F4.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   errMin   (err_min) Semi-minor axis of position 
+                                  error ellipse
+  33- 35  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      errPA    [0,180] (err_ang) Position angle of error
+                                         ellipse major axis (E of N)
+  37- 53  A17   ---      2MASS    (<A HREF="#sRM3.1">designation) Source designation (1)</A>
+--------------------------------------------------------------------------------
+  55- 60  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      Jmag     ?(<A HREF="#sRM3.2">j_m) J selected default magnitude (2)</A>
+  62- 66  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      Jcmsig   ?(<A HREF="#sRM3.3">j_cmsig) J default magnitude uncertainty (3)</A>
+  68- 72  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_Jmag   ?(<A HREF="#sRM3.4">j_msigcom) J total magnitude uncertainty (4)</A>
+  74- 83  F10.1 ---      Jsnr     ?(j_snr) J Signal-to-noise ratio
+  85- 90  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      Hmag     ?(<A HREF="#sRM3.2">h_m) H selected default magnitude (2)</A>
+  92- 96  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      Hcmsig   ?(<A HREF="#sRM3.3">h_cmsig) H default magnitude uncertainty (3)</A>
+  98-102  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_Hmag   ?(<A HREF="#sRM3.4">h_msigcom) H total magnitude uncertainty (4)</A>
+ 104-113  F10.1 ---      Hsnr     ?(h_snr) H Signal-to-noise ratio
+ 115-120  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      Kmag     ?(<A HREF="#sRM3.2">k_m) K selected default magnitude (2)</A>
+ 122-126  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      Kcmsig   ?(<A HREF="#sRM3.3">k_cmsig) K default magnitude uncertainty (3)</A>
+ 128-132  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      e_Kmag   ?(<A HREF="#sRM3.4">k_msigcom) K total magnitude uncertainty (4)</A>
+ 134-143  F10.1 ---      Ksnr     ?(k_snr) K Signal-to-noise ratio
+--------------------------------------------------------------------------------
+ 145-147  A3    ---      Qflg     (<A HREF="#sRM3.5">ph_qual) JHK Photometric quality flag (5)</A>
+ 149-151  A3    ---      Rflg     (<A HREF="#sRM3.6">rd_flg) Source of JHK default mag (6)</A>
+ 153-155  A3    ---      Bflg     (<A HREF="#sRM3.7">bl_flg) JHK components fit to source (7)</A>
+ 157-159  A3    ---      Cflg     (<A HREF="#sRM3.8">cc_flg) Artifact contamination, confusion (8)</A>
+ 161-166  A6    ---      Ndet     [0-9] <A HREF="#sRM3.9">(ndet) Number of aperture measurements</A>
+                                       (jjhhkk) (9)
+--------------------------------------------------------------------------------
+ 168-172  F5.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   prox     Distance between source and nearest neighbour
+ 174-176  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      pxPA     ? (pxpa) Position angle of vector from source
+                                   to nearest neighbour (E of N)
+ 178-187  I10   ---      pxCntr   (pxcntr) Sequence number of nearest neighbour
+     189  I1    ---      Xflg     [0,2] <A HREF="#sRM3.10">(gal_contam) Extended source</A>
+                                       contamination (10)
+     191  I1    ---      Aflg     [0,1] <A HREF="#sRM3.11">(mp_flg) Association with asteroid</A>
+                                       or comet (11)
+--------------------------------------------------------------------------------
+ 193-202  I10   ---      Cntr     (pts_key) Unique source identifier in catalogue
+     204  A1    ---      Hemis    [ns] (hemis) Hemisphere of observation
+ 206-215  A10   ---      Date     (date) Observation date
+ 217-219  I3    ---      Scan     (scan) Scan number (within date)
+ 221-227  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      GLON     (<A HREF="#sRM3.12">glon) Galactic longitude (12)</A>
+ 229-235  F7.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      GLAT     (<A HREF="#sRM3.12">glat) Galactic latitude (12)</A>
+ 237-242  F6.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   Xscan    (x_scan) Distance of source from focal plane
+                                         centerline
+ 244-255  F12.4 <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?d" TARGET="explain">d</A>        JD       (<A HREF="#sRM3.13">jdate) Julian date of source measurement (13)</A>
+--------------------------------------------------------------------------------
+ 257-262  F6.2  ---      Jpsfchi  ?(j_psfchi) J band reduced chi2 value of fit
+ 264-269  F6.2  ---      Hpsfchi  ?(h_psfchi) H band reduced chi2 value of fit
+ 271-276  F6.2  ---      Kpsfchi  ?(k_psfchi) K band reduced chi2 value of fit
+ 278-283  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      Jstdap   ?(<A HREF="#sRM3.18">j<SUB>m</SUB>stdap) J standard aperture magnitude (18)</A>
+ 285-289  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_Jstdap  ?(j<SUB>msig</SUB>stdap) error on Jstdap
+ 291-296  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      Hstdap   ?(<A HREF="#sRM3.18">h<SUB>m</SUB>stdap) H standard aperture magnitude (18)</A>
+ 298-302  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_Hstdap  ?(h<SUB>msig</SUB>stdap) error on Hstdap
+ 304-309  F6.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      Kstdap   ?(<A HREF="#sRM3.18">k<SUB>m</SUB>stdap) K standard aperture magnitude (18)</A>
+ 311-315  F5.3  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     e_Kstdap  ?(k<SUB>msig</SUB>stdap) error on Kstdap
+--------------------------------------------------------------------------------
+ 317-321  I5    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   edgeNS   (dist<SUB>edge</SUB>ns) Distance from the source to the
+                                  nearest North or South scan edge
+ 323-325  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   edgeEW   (dist<SUB>edge</SUB>ew) Distance from the source to the
+                                  nearest East or West scan edge
+ 327-328  A2    ---      edge     [nsew] (dist<SUB>edge</SUB>flg) flag indicating to which
+                                  edges the edgeNS and edgeEW values refer
+     330  I1    ---      dup      (<A HREF="#sRM3.14">dup_src) Flag indicating duplicate source (14)</A>
+     332  I1    ---      use      (<A HREF="#sRM3.15">use_src) Use source flag (15)</A>
+--------------------------------------------------------------------------------
+     334  A1    ---      opt      [0UT] <A HREF="#sRM3.16">(a) Associated optical source (16)</A>
+ 336-338  F3.1  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>   Dopt     ?(dist_opt) Distance to associated optical
+                                   source
+ 340-342  I3    <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>      PAopt    [0,360]? (phi_opt) position angle from optical
+                                   source to the 2MASS source position
+ 344-348  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      Bmag     ?(b<SUB>m</SUB>opt) Blue magnitude of associated
+                                   optical source
+ 350-354  F5.2  <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>      Rmag     ?(vr<SUB>m</SUB>opt) Visual or red mag of associated
+                                   optical source
+     356  I1    ---      Nopt     (<A HREF="#sRM3.17">nopt_mchs) Number of optical sources</A>
+                                   within 5arcsec (17)
+--------------------------------------------------------------------------------
+ 358-364  I7    ---      extKey   ?(ext_key) Record Identifier in XSC
+ 366-370  I5    ---      scanKey  (scan_key) Record Identifier in the
+                                   Scan Information Table
+ 372-378  I7    ---     coaddKey  (coadd_key) Record Identifier in the
+                                   Atlas Image Data Table
+ 380-382  I3    ---      coadd    (coadd) Sequence number of the Atlas Image
+<HR>
+<A NAME="sRM3.1"><B>Note (1)</B>:  Sexagesimal, equatorial position-based source name in the form:
+           hhmmssss+ddmmsss[ABC...].
+    The full naming convention for 2MASS All-Sky Release PSC sources has
+    the form "2MASS Jhhmmssss+ddmmsss[ABC...]", where "2MASS" indicates
+    that the source is from the All-Sky PSC, "J" indicates the position is
+    J2000, and the optional trailing letters are used to distinguish
+    sources with otherwise duplicate names. The "2MASS J" prefix is not
+    listed explicitly in the designation column.
+<A NAME="sRM3.2"><B>Note (2)</B>: This is the selected "default" magnitude for each band, [JHK].
+    If the source is not detected in the band, this is the 95% confidence
+    upper limit derived from a 4" radius aperture measurement taken at the
+    position of the source on the Atlas Image. The origin of the default
+    magnitude is given by the first character of the Rflg value
+    (Rflg). This column is null if the source is nominally detected in
+    the band, but no useful brightness estimate could be made
+    (Rflg="9").
+<A NAME="sRM3.3"><B>Note (3)</B>: This is the corrected photometric uncertainty [JHK]cmsig for
+    the default magnitude. If Rflg="2", this is the measurement error
+    from the profile-fitting procedure, corrected to be consistent with
+    observed repeatability statistics. If Rflg="1" or "4", this is the
+    RMS of the brightness measured in aperture photometry on the
+    individual frames. If Rflg="3", the uncertainty is derived from the
+    residuals to the 1-d radial profile fit to the unsaturated wings of
+    the bright star.
+
+    If the value is &gt;8.0, it is a flag value indicating that a meaningful
+    uncertainty could not be determined for the source. This column is
+    null if the default magnitude is a 95% confidence upper limit
+    (Rflg="0" or "6") or if the source is not measurable (Rflg="9").
+<A NAME="sRM3.4"><B>Note (4)</B>: Combined, or total photometric uncertainty [JHK]msigcom
+    for the default magnitude in that band. The combined uncertainty is
+    derived from the following relation:
+
+      e_[JHK]mag = sqrt([JHK]cmsig<SUP>2</SUP> + [JHK]<SUB>zperr</SUB><SUP>2</SUP>
+                 + fferr<SUP>2</SUP> + [r1normrms<SUP>2</SUP>])
+
+    where
+
+    cmsig = Corrected band photometric uncertainty
+    zperr = Nightly photometric zero point uncertainty = 0.011 mag
+    fferr = Flat-fielding residual error = 0.005 mags
+    r1normrms = R1 normalization uncertainty = 0.012 mags
+          (applied only for sources with Rflg="1")
+
+    This column is null if the default magnitude is a 95% confidence upper
+    limit (i.e. the source is not detected, or inconsistently deblended in
+    the band).
+<A NAME="sRM3.5"><B>Note (5)</B>: Three character flag, one character per band [JHK],
+    that provides a summary of the net quality of the default photometry
+    in each band, as derived from the Read Flag (Rflg), measurement
+    uncertainties ([jhk]cmsig), scan signal-to-noise ratios ([jhk]snr),
+    frame-detection statistics (Ndet), and profile-fit reduced chi-squared
+    values ([jhk]psfchi). The value for Qflg is set for a band
+    according to the precedence of the table below. For example, a source
+    that is tested and meets the conditions for category "X" is not tested
+    for subsequent qualities.
+
+    X = There is a detection at this location, but no valid brightness
+        estimate can be extracted using any algorithm. Rflg="9" and
+        default magnitude is null.
+
+    U = Upper limit on magnitude. Source is not detected in this band
+        (Rflg="0"), or it is detected, but not resolved in a consistent
+        fashion with other bands (Rflg="6"). A value of Qflg="U"
+        does not necessarily mean that there is no flux detected in this
+        band at the location. Whether or not flux has been detected can
+        be determined from the value of Rflg. When Rflg="0", no flux
+        has been detected. When Rflg="6", flux has been detected at the
+        location where the images were not deblended consistently in all
+        three bands (JHKs).
+
+    F = This category includes Rflg="1" or Rflg="3" sources where a
+        reliable estimate of the photometric error, [jhk]cmsig, could
+        not be determined. The uncertainties reported for these sources
+        in [jhk]cmsig and e_[jhk]mag are flags and have numeric
+        values &gt;8.0.
+
+    E = This category includes detections where the goodness-of-fit
+        quality of the profile-fit photometry was very poor (Rflg=2 and
+        [jhk]psfchi&gt;10.0), or detections where psf fit photometry did
+        not converge and an aperture magnitude is reported (Rflg=4), or
+        detections where the number of frames was too small in relation
+        to the number of frames in which a detection was geometrically
+        possible (Rflg="1" or Rflg="2").
+
+    A = Detections in any brightness regime where valid measurements
+        were made (Rflg="1","2" or "3") with
+          [jhk]snr&gt;10 AND [jhk]cmsig&lt;0.10857.
+
+    B = Detections in any brightness regime where valid measurements
+        were made (Rflg="1","2" or "3") with
+          [jhk]snr&gt;7 AND [jhk]cmsig&lt;0.15510.
+
+    C = Detections in any brightness regime where valid measurements
+        were made (Rflg="1","2" or "3") with
+          [jhk]snr&gt;5 AND [jhk]cmsig&lt;0.21714.
+
+    D = Detections in any brightness regime where valid measurements
+        were made (Rflg="1","2" or "3") with
+          no [jhk]snr OR [jhk]cmsig requirement.
+<A NAME="sRM3.6"><B>Note (6)</B>: The read flag indicates the source of J,H,K "default" magnitudes
+    as a 3-digit integer, where the 1st digit corresponds to the J band,
+    the 2nd to the H band, and the 3rd to the Ks band. Rflg values of
+    "1", "2" or "3" generally indicate the best quality detections,
+    photometry and astrometry (although other quality flags must be
+    considered). Values of "0", "4", "6" and "9" in a band indicate
+    either non-detections, or generally poor quality photometry and
+    positions. The definitions of the Rflg values are:
+
+    0 = Source is not detected in this band. The default magnitude
+        is the 95% confidence upper limit derived from a 4" radius
+        aperture measurement taken at the position of the source on the
+        Atlas Image. The sky background is estimated in an annular region
+        with inner radius of 14" and outer radius of 20".
+
+    1 = The default magnitude is derived from aperture photometry
+        measurements on the 51 ms "Read_1" exposures. The aperture radius
+        is 4", with the sky background measured in an annulus with an
+        inner radius of 14" and an outer radius of 20". Used for sources
+        that saturate one or more of the 1.3s "Read_2" exposures, but are
+        not saturated on at least one of the 51 ms "Read_1" frames.
+
+    2 = The default magnitude is derived from a profile-fitting
+        measurement made on the 1.3 sec "Read_2" exposures. The
+        profile-fit magnitudes are normalized to curve-of-growth
+        corrected aperture magnitudes. This is the most common type in
+        the PSC, and is used for sources that have no saturated pixels in
+        any of the 1.3 sec exposures.
+
+    3 = The default magnitude is derived from a 1-d radial profile
+        fitting measurement made on the 51 ms "Read_1" exposures. Used
+        for very bright sources that saturate all of the 51 ms "Read 1"
+        exposures.
+
+    4 = The default magnitude is derived from curve-of-growth-corrected
+        4" radius aperture photometry measurements on the 1.3 s "Read_2"
+        exposures. This is used for sources that are not saturated in any
+        of the Read_2 frames, but where the profile-fitting measurements
+        fail to converge to a solution. These magnitudes are the same as
+        the standard aperture magnitudes (Jstdap, Hstdap, Kstdap), but
+        when they are the default magnitudes, it generally implies that
+        they are low quality measurements.
+
+    6 = The default magnitude is the 95% confidence upper limit derived
+        from a 4" radius aperture measurement taken at the position of the
+        source on the Atlas Image. The sky background is estimated in an
+        annular region with inner radius of 14" and outer radius of 20".
+        This is used for pairs of sources which are detected and resolved
+        in another band, but are detected and not resolved in this band.
+        This differs from a Rflg="0" because in this case there is a
+        detection of the source in this band, but it is not consistently
+        resolved across all bands.
+
+    9 = The default magnitude is the 95% confidence upper limit derived
+        from a 4" radius aperture measurement taken at the position of the
+        source on the Atlas Image. The sky background is estimated in an
+        annular region with inner radius of 14" and outer radius of 20".
+        This is used for sources that were nominally detected in this
+        band, but which could not have a useful brightness measurement
+        from either profile fitting or aperture photometry. This often
+        occurs in highly confused regions, or very near Tile edges where
+        a significant fraction of the measurement aperture of sky annulus
+        falls off the focal plane.
+<A NAME="sRM3.7"><B>Note (7)</B>: Blend flag. Three character flag, one character per band [JHK],
+    that indicates the number of components that were fit simultaneously
+    when estimating the brightness of a source:
+
+    0 = Source is not detected, or is inconsistently deblended in that
+        band.
+
+    1 = One component was fit to the source in R_2 profile-fitting
+        photometry (Rflg="2"), or default magnitudes are from aperture
+        photometry (Rflg="1" or "4") or saturated star 1-d radial
+        profile-fitting (Rflg="3").
+
+   &gt;1 = More than one component was fit simultaneously during R2
+        profile-fit photometry, where the value of the field is the
+        number of components simultaneously fit. The maximum number of
+        components is 7 in any band for the PSC, so this Bflg is always
+        a three character flag. Multi-component fitting occurs only for
+        profile-fitting, and only when more than one detection is found
+        within ~5". Single detections that are not well-fit by a single
+        PSF are not split.
+<A NAME="sRM3.8"><B>Note (8)</B>: Contamination and confusion flag. Three character flag, one
+    character per band [JHKs], that indicates that the photometry and/or
+    position measurements of a source may be contaminated or biased due to
+    proximity to an image artifact or nearby source of equal or greater
+    brightness. The Cflg in each band is set in hierarchical order
+    according to the following table, in the event a source is affected by
+    more than one artifact or condition:
+
+    p = Persistence. Source may be contaminated by a latent image left
+        by a nearby bright star.
+
+    c = Photometric Confusion. Source photometry is biased by a nearby
+        star that has contaminated the background estimation. This is
+        very common in high source density regions.
+
+    d = Diffraction spike confusion. Source may be contaminated by a
+        diffraction spike from a nearby star.
+
+    s = Electronic stripe. Source measurement may be contaminated by a
+        stripe from a nearby bright star.
+
+    b = Bandmerge confusion. In the process of merging detections in
+        the different bands for this source, there was more than one
+        possible match between the different band components. This occurs
+        in regions of very high source density, or when multiple sources
+        were split in one band but not another.
+
+    0 = Source is unaffected by known artifacts, or is not detected in
+        the band.
+
+    Non-zero values the Cflg in any band is an indicator that the
+    measurements of that source may be contaminated.
+<A NAME="sRM3.9"><B>Note (9)</B>: ndet is a six-character flag, two characters per band [JJHHKsKs],
+    that indicates the number frames on which a source was detected, N,
+    and the number of frames on which the source could have been measured,
+    M. The first digit in the pair for each band, N, gives the number of
+    frames on which there were &gt;3 sigma aperture photometry detections of
+    the source. The second digit for each band, M, gives the number of
+    frames on which aperture measurements were possible. Normally, M=6,
+    (occasionally M=7 because the scanning step size was slightly less
+    than 1/6 of the frame size). M can be &lt;6 if frames are "lost" because:
+    a) there were masked pixels within the source aperture due to cosmic
+    ray detections, noisy pixels, meteor trails, etc, or b) there were
+    saturated pixels within the source aperture. Values of M&lt;6 are not
+    uncommon, but do indicate an effective loss of coverage and
+    sensitivity for a source.
+
+    The values of N and M for a band always pertain to the aperture
+    photometry on the 51 ms "Read_1" exposures if Rflg="1", and to the
+    aperture photometry on the 1.3 s "Read_2" exposures if Rflg="2" or
+    "4". Sources that are saturated on all of the Read_1 frames
+    (Rflg="3") have N=0 because no aperture photometry was possible.
+
+    Sources with signal-to-noise ratios &gt;8-9 should be detected on all
+    available frames. Values of N &lt; M for such sources are an indication
+    of possible loss of measurement integrity. Values of N &lt; M, or even
+    N=0, are normal for fainter sources because they are too faint on
+    individual frames to yield a &gt;3 sigma detection.
+<A NAME="sRM3.10"><B>Note (10)</B>: Extended source "contamination" flag. A value of
+    Xflg="2" indicates that this point source falls within the elliptical
+    boundary of an XSC source defined by the semi-major axis and
+    ellipticity of the 20 mag.arcsec<SUP>-2</SUP> Ks-band elliptical isophote
+    (r_k20fe)+10%, for XSC sources where r_k20fe is &gt;10''. Sources so
+    indicated are often foreground stars superimposed on background
+    galaxies, or sometimes extractions of pieces of the galaxy or nebula.
+    The point source photometry for these sources is probably contaminated
+    by the surrounding structured extended emission. Point sources can
+    still be superimposed on extended sources and remain unflagged if the
+    XSC source shape is not well-described by an ellipse.
+
+    This flag also denotes (Xflg="1") PSC sources that are equivalent to
+    sources in the XSC, but only for XSC sources with r_k20fe is &gt;10''.
+    Since most XSC sources have semi-major axes &lt;10'', Xflg does not
+    identify all PSC sources with exact XSC counterparts. Use the extKey
+    to identify all PSC sources that were found to be resolved relative to
+    a single point-spread function.
+
+    0 = Source does not fall within the elliptical profile of an extended
+        source with semi-major axis &gt;10'', or it is not identified
+        exactly with an XSC source with semi-major axis &gt;10''. However,
+        the source may correspond exactly to a smaller XSC source.
+
+    1 = Source is resolved by 2MASS, and is equivalent to a source in the
+        XSC that has a semi-major axis &gt;10'' in size. Users must refer to
+        the extKey to identify all PSC sources with XSC counterparts.
+
+    2 = Source falls within the elliptical boundary of an XSC source that
+        has a semi-major axis &gt;10'' in size.
+<A NAME="sRM3.11"><B>Note (11)</B>: Minor Planet Flag. Indicates if this source is associated
+    with the predicted position of a known minor planet, comet, planet or
+    planetary satellite. This association does not guarantee that the PSC
+    source is a detection of the solar system object.
+
+    0 = Source is not associated with a known solar system object
+
+    1 = Source is associated with the predicted position of a known
+        solar system object. The name and orbital data for the associated
+        objects are given in the Known Asteroid Detection List, Known
+        Comet Detection List, and Planet and Planetary Satellite
+        Detection List. The associated PSC source is cross-referenced in
+        those Lists via the value of ptsKey.
+<A NAME="sRM3.12"><B>Note (12)</B>:  Galactic coordinate for 2MASS source derived by precessing
+    reconstructed ra and dec to B1950, and performing rotational
+    transformation into lII, bII coordinate system. This coordinate should
+    not be used as an astrometric reference because it has been rounded to
+    0.001 deg.
+<A NAME="sRM3.13"><B>Note (13)</B>: The Julian Date of the source measurement is accurate to
+    &#177;30seconds. This value is extrapolated from the start time of the
+    Survey scan using the difference between the declinations of the
+    source and the first row in the Tile divided by the scanning rate of
+    the telescope (approximately 5sec). The scanning rate of the two 2MASS
+    telescopes was slightly different because of the need to optimize the
+    dithering of images on the arrays.
+<A NAME="sRM3.14"><B>Note (14)</B>: Used in conjunction with the use flag, this numerical flag
+    indicates whether the source falls in a Tile overlap region, and if
+    so, if it was detected multiple times.
+
+    0 = The source does not fall within a Tile overlap region
+        (use="1"), or it falls in an overlap region and there were no
+        sources detected within 2" of its position in the overlapping
+        Tile (use="0").
+
+    1 = The source falls within a Tile overlap region, and there is one
+        source detected within 2" of its position in the overlapping Tile.
+
+   &gt;1 = The source falls within a Tile overlap region, and there are
+        multiple sources detected within 2" of its position in the
+        overlapping Tile, and/or within its own Tile. This implies
+        confusion in the multiple source resolution procedure.
+<A NAME="sRM3.15"><B>Note (15)</B>: Used in conjunction with the dup flag, this numerical flag
+    indicates if a source falls within a Tile overlap region, and whether
+    or not it satisfies the unbiased selection rules for multiple source
+    resolution.
+
+    1 = The source does not fall in a Tile overlap region
+        (dup="0"), or it falls in an overlap region, but lies farther
+        from its scan edge than any apparition of the source in another
+        Tile. A source must have use="1" to be considered part of the
+        sub-Catalog that satisfies the 2MASS Level 1 Science Requirements
+
+    0 = The source falls in a Tile overlap region, but does not have
+        a detection within 2" of its position in any overlapping Tiles.
+        PSC sources with use="0" will always have dup="0". Such
+        objects are usually faint, and thus toggling above and below the
+        detection limits, or may have moved between the scans of the
+        different Tiles.
+<A NAME="sRM3.16"><B>Note (16)</B>: The catalog ID and other association parameters are given for
+    the closest optical match found within 5 arcsec. The ID consists of a
+    single-letter abbreviation for the catalog (e.g., 'T' for Tycho 2, 'U'
+    for USNO-A2.0). '0' means no optical source was found.
+<A NAME="sRM3.17"><B>Note (17)</B>: The optical association information is unreliable for sources
+    with |dec|&gt;86&#176;, because of an error in the 2MASS/USNO-A2.0 position
+    correlation procedure that caused associations to be missed in the
+    vicinity of the equatorial poles. If the source has |dec|&gt;86&#176;, a
+    value of a="0" does not necessarily mean that there is not an optical
+    association within 5 arcsec of the 2MASS position.
+<A NAME="sRM3.18"><B>Note (18)</B>: the standard aperture magnitude is the curve-of-growth corrected
+    average brightness measured in a 4" radius aperture centered on the
+    source position on each of the available 1.3 s "Read_2" frames. The
+    column is empty if the source is not detected in the band (Rflg="0"),
+    or if it is saturated in all of the 1.3 s "Read 2" exposures for the band.
+<HR>
+
+<A NAME="sRM99.3"><B>History</B>:
+  * 10-Jun-2003: this ReadMe document was prepared from the documents at
+    <A HREF="http://www.ipac.caltech.edu/2mass/releases/allsky/doc/sec2_2a.html">http://www.ipac.caltech.edu/2mass/releases/allsky/doc/sec2_2a.html</A>
+================================================================================
+<B>(End)</B>                 Sebastien Derriere, Francois Ochsenbein [CDS]  18-Jun-2003
+
+</PRE><!-- ....wait for 1 children: %0=14454 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->

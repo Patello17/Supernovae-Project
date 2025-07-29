@@ -1,0 +1,323 @@
+<HEAD>
+<TITLE>ACDS V10.0 - Detailed Description of VII/113</TITLE>
+</HEAD>
+<BODY BGCOLOR="#ffffff">
+<A name="top"></A>
+ACDS V10.0 - Wed Jun 28 19:44:27 CEST 2023
+<CENTER><BR>
+<TABLE width=97%><TR>
+<TD ALIGN=LEFT><IMG SRC="P0921180101OBX000CDSLG20000.PNG" ALIGN="middle" ALT="VIZIER logo"></TD>
+<TD ALIGN=CENTER ><H1><BR>Detailed Description of VII/113 :<BR>Catalogued Galaxies + QSOs observed in IRAS Survey, Vers.2 (IPAC 1989)</H1></H1></TD>
+<TD ALIGN=RIGHT><IMG SRC="P0921180101OBX000SSCLG10000.PNG" ALIGN="middle" ALT="XMM logo"></TD>
+</TR></TABLE>
+</CENTER>
+<HR noshade>Note : this is the description file of the original catalog.
+This HTML page corresponds well to the original description, but some minor
+changes in the format may have been introduced in the FITS output
+files in order to allow for arithmetic operations on quantities
+such as coordinates and times. h:m:s and d:m:s units are normally
+converted into degrees, and YYYY-MM-DD into julian days.<BR>
+Similarly, some slight changes may have been introduced in the
+units; the value given in the HTML files supersedes the value indicated in the ReadMe
+file for this catalogue.<BR>
+<!-- Input on stdin  -->
+<!-- cgiprint(v6.9) input options: -pre -tex2 -bib -cat -mail -oglu (definitions included) -->
+<PRE>
+<B>VII/113</B>   Catalogued Galaxies + QSOs observed in IRAS Survey, Vers.2 (IPAC 1989)
+================================================================================
+Catalogued Galaxies and Quasars observed in the IRAS Survey, Version 2
+     Fullmer L., Londsale C.J., IPAC, 1989
+    &lt;JPL D-1932, Version 2, 1989 February&gt;
+    =<A HREF="http://simbad.cds.unistra.fr/simbad/sim-ref?bibcode=1989IRASG....c....F">1989IRASG....c....F</A>
+================================================================================
+<B>ADC_Keywords</B>: Infrared sources ; Galaxy catalogs ; QSOs
+
+<B>Mission_Name</B>: IRAS
+
+
+<A NAME="sRM11.1"><B>Description (from the Introduction of the catalog)</B>:
+    The Infrared Astronomical Satellite (IRAS) surveyed approximately
+    96% of the sky in four infrared wavelength bands centered at 12,
+    25, 60, and 100 um. The IRAS data are presented in catalogs of
+    point sources and small extended sources (&lt;8') as well as in
+    atlases of low resolution spectra and sky-brightness images. The
+    Cataloged Galaxies and Quasars Observed in the IRAS Survey,
+    hereafter referred to as the "Extragalactic Catalog", is the
+    subset of those point source data pertaining to previously known
+    galaxies and quasars. It is intended as a readily accessible
+    compilation of IRAS data for objects appearing in the most
+    widely-used extragalactic catalogs.
+
+    The Extragalactic Catalog contains 11,444 IRAS point sources
+    (IRAS Point Source Catalog, Version 2.0) that can be positionally
+    associated with catalogued galaxies and quasars, including
+    association information of point sources with sources from the
+    IRAS Small Scale Structure Catalog. Section II summarizes
+    important aspects of the IRAS mission and the data processing
+    techniques. Section III describes the organisation of the
+    Extragalactic Catalog and the way in which the associations were
+    made with the various galaxy catalogs. Section IV describes the
+    information given for each entry in the Extragalactic Catalog.
+    Section V presents some preliminary statistics on the contents of
+    the Extragalactic Catalog. Acknowledgments and References are
+    given in Sections VI and VII. The catalog itself comprises Section
+    VIII. Some notes and errata are given in Sections IX and X. A
+    printed and a tape version of the Extragalactic Catalog are
+    available.
+
+<A NAME="sRM99.1"><B>Notice</B>:
+    This file is NOT a complete scientific document for the catalogue;
+    it serves only as a minimal description of the general format and
+    structure of the data files. A copy of "Cataloged Galaxies and
+    Quasars Observed in the IRAS Survey, 2" should be used to answer
+    questions about the data in the IRAS Extragalactic Catalog.
+
+<B>File Summary</B>:
+<HR>
+       FileName      Lrecl  Records   Explanations
+<HR>
+<A NAME="sRM-F.0">&#215;                   80        .   This file
+<A NAME="sRM-F.51">&#215; ReadMe            80        .   This file
+<A NAME="sRM-F.52">&#215; intro.txt         83      675   Excerpt from the published documentation
+<A NAME="sRM-F.53">&#215; <A HREF="#sRM2.1">xcat.dat</A>         134    11444   Point source data
+<A NAME="sRM-F.54">&#215; <A HREF="#sRM2.2">assoc.dat</A>        137    12776   Association Data for Extragalactic Catalog
+<HR>
+
+<A NAME="sRM2.1"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.53"> xcat.dat</A>
+<HR>
+   Bytes Format  Units   Label    Explanations
+<HR>
+   1- 11  A11    ---     IRAS     Source name
+  12- 13  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?h" TARGET="explain">h</A>       RAh      Hours RA, equinox 1950.0, epoch 1983.5
+  15- 16  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?min" TARGET="explain">min</A>     RAm      Minutes RA, equinox 1950.0, epoch 1983.5
+  18- 21  F4.1   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?s" TARGET="explain">s</A>       RAs      Seconds RA, equinox 1950.0, epoch 1983.5
+      23  A1     ---     DE-      Sign of DEC, equinox 1950.0, epoch 1983.5
+  24- 25  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     DEd      Degrees Dec, equinox 1950.0, epoch 1983.5
+  27- 28  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcmin" TARGET="explain">arcmin</A>  DEm      Minutes Dec, equinox 1950.0, epoch 1983.5
+  30- 31  I2     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  DEs      Seconds Dec, equinox 1950.0, epoch 1983.5
+  33- 35  I3     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     GLAT     Galactic latitude
+  37- 39  I3     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A> UncMajor  Uncertainty ellipse semi-major axis
+  40- 42  I3     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A> UncMinor  Uncertainty ellipse semi-minor axis
+  44- 46  I3     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     PosAng   Uncertainty ellipse position angle measured
+                                    East of North between the major axis of the
+                                    ellipse and the local equatorial meridian.
+  47- 48  I2     ---     NHcon    Number of times observed
+  49- 54  F6.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Jy" TARGET="explain">Jy</A>      Fnu_12   Non-color corrected flux density at 12um
+      55  A1     ---    FQual_12  [:L] <A HREF="#sRM3.1">Flux quality at 12um (1)</A>
+  56- 61  F6.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Jy" TARGET="explain">Jy</A>      Fnu_25   Non-color corrected flux density at 25um
+      62  A1     ---    FQual_25  [:L] <A HREF="#sRM3.1">Flux quality at 25um (1)</A>
+  63- 69  F7.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Jy" TARGET="explain">Jy</A>      Fnu_60   Non-color corrected flux density at 60um
+      70  A1     ---    FQual_60  [:L] <A HREF="#sRM3.1">Flux quality at 60um (1)</A>
+  71- 77  F7.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?Jy" TARGET="explain">Jy</A>      Fnu_100  Non-color corrected flux density at 100um
+      78  A1     ---   FQual_100  [:L] <A HREF="#sRM3.1">Flux quality at 100um (1)</A>
+  79- 84  F6.2   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?%5bW/m2%5d" TARGET="explain">[W/m2]</A> log(FIR)  <A HREF="#sRM3.4">Decimal log of far infrared flux (4)</A>
+      85  A1     ---     FQFIR    [:L] <A HREF="#sRM3.1">FIR flux quality (1)</A>
+      86  A1     ---   Relunc_12  [A-F] <A HREF="#sRM3.2">Flux density uncertainty at 12um (2)</A>
+      87  A1     ---   Relunc_25  [A-F] <A HREF="#sRM3.2">Flux density uncertainty at 25um (2)</A>
+      88  A1     ---   Relunc_60  [A-F] <A HREF="#sRM3.2">Flux density uncertainty at 60um (2)</A>
+      89  A1     ---  Relunc_100  [A-F] <A HREF="#sRM3.2">Flux density uncertainty at 100um (2)</A>
+      91  A1     ---     CC_12    [A-N] <A HREF="#sRM3.3">Point source corr. coeff, 12um (3)</A>
+      92  A1     ---     CC_25    [A-N] <A HREF="#sRM3.3">Point source corr. coeff, 25um (3)</A>
+      93  A1     ---     CC_60    [A-N] <A HREF="#sRM3.3">Point source corr. coeff, 25um (3)</A>
+      94  A1     ---     CC_100   [A-N] <A HREF="#sRM3.3">Point source corr. coeff, 100um (3)</A>
+      96  I1     ---     Cirr1    Number of nearby 100 micron only sources
+      97  I1     ---     Cirr2    Ratio of cirrus flux to source flux
+      99  A1     ---     Confuse  [0-9A-F] <A HREF="#sRM3.5">Confusion flag, hex encoded (5)</A>
+     100  I1     ---     PNearH   Number hours-confirmed point sources nearby
+                                     If it exceeds 9, it is set equal to 9.
+     101  I1     ---     PNearW   Number weeks-confirmed point sources nearby
+                                    If it exceeds 9, it is set equal to 9.
+     102  A1     ---     HSDFlag  [0-9A-F] <A HREF="#sRM3.5">High source density bin flag,</A>
+                                    hex encoded (5)
+     104  I1     ---     SES1_12  Number of seconds-confirmed 12um SES
+                                    (Small Extended Sources) nearby
+     105  I1     ---     SES1_25  Number of seconds-confirmed 25um SES nearby
+     106  I1     ---     SES1_60  Number of seconds-confirmed 60um SES nearby
+     107  I1     ---    SES1_100  Number of seconds-confirmed 100um SES nearby
+     108  A1     ---     SES2     [0-9A-F] <A HREF="#sRM3.5">Number of weeks-confirmed SES nearby</A>
+                                    hex encoded (5)
+ 109-110  I2     ---     NSSS     ? Number of associations from SSS
+                                    (Small Scale Structure) catalog
+ 112-121  A10    ---     SSSName  Name of closest SSS association
+ 122-124  I3     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  DisSSS   ? Separation from the SSS source
+ 125-126  I2     ---     NonGal   ? Number of associations from non-galaxy
+                                    catalogs
+     128  A1     ---     IdnGal   [1-9A-J] <A HREF="#sRM3.6">Closest non-galaxy catalog</A>
+                                    association (6)
+ 130-132  I3     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  DSNGal   ? Separation of the non-galaxy source
+ 133-134  I2     ---     NRecs    Number of lines in "assoc" file with IRAS name
+<HR>
+<A NAME="sRM3.1"><B>Note (1)</B>: Flux quality codes are
+    (blank) = high quality;
+        ':' = moderate quality;
+        'L' = upper limit
+<A NAME="sRM3.2"><B>Note (2)</B>: Uncertainties of FIR are coded as follows:
+         A  = from  0 to less than  4%
+         B  = from  4 to less than  8
+         C  = from  8 to less than 12
+         D  = from 12 to less than 16
+         E  = from 16 to less than 20
+         F  = equal to or greater than 20%
+<A NAME="sRM3.3"><B>Note (3)</B>: Correlation Coefficient codes are:
+        A = 100%, B = 99%, C = 98%, ...,
+        M =  88%, N = 87%
+<A NAME="sRM3.4"><B>Note (4)</B>: FIR estimates the flux that would have been measured within
+        an ideal square bandpass 42.5-122.5um; it is a combination of
+        60 and 100 micron fluxes. See Appendix B, printed edition.
+<A NAME="sRM3.5"><B>Note (5)</B>: Hex encoded flags compose the flags of the 4 passbands
+        with masks 1=12um, 2=25um, 4=60um, 8=100um.
+        See Table IV.A.1., printed edition.
+<A NAME="sRM3.6"><B>Note (6)</B>: Codes for non-galaxy id's are in Table IV.A.2., printed edition.
+    Very  brief summary:
+    ------------------------------------------------------------------------
+    1 = SAO                          A = PN (Planetary Nebulae)
+    2 = HR (Bright Star)             B = Parkes HII Survey
+    3 = DO (Dearborn Red *)          C = Bonn HII Survey
+    4 = GCVS (Variable name)         D = CO Velocities Toward HII Regions
+    5 = Wackerling (emission *)      E = LDN (Lynds Dark Nebulae)
+    6 = NSV (Supsected Variables)    F = AFGL (Air Force Geophys. Lab.)
+    7 = CCCS (Cool C*)               G = IRC (2-um Sky Survey)
+    8 = Gliese (nearby *)            H = EIC (Equatorial IR Catalogue)
+    9 = CSS (S*)                     I = IRC improved (Kleinmann+Joyce 1984)
+                                     J = 1Jy (extragalactic sources)
+    ------------------------------------------------------------------------
+<HR>
+
+<A NAME="sRM2.2"><B>Byte-by-byte Description of file</B>: <A HREF="#sRM-F.54"> assoc.dat</A>
+<HR>
+   Bytes Format  Units   Label            Explanations
+<HR>
+   1- 11  A11    ---     IRAS             IRAS source name
+  12- 23  A12    ---     PGCName          Galaxy name from Primary Galaxy Catalog
+                                    (UGC, UGCA, ESO, and CGCG)
+      25  I1     ---     NPGC             ? Number of appearances of PGCName in file
+  26- 30  I5     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  DiamP            ? Major axis diameter
+  33- 35  I3     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  DisPGC           ? Distance from IRAS source
+  37- 39  I3     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     paPGC            [0/360]? Position angle of separation vector
+                                    measured in degrees East of North
+      41  A1     ---     PosFlg           [B-Z] <A HREF="#sRM3.7">Position flag (1)</A>
+      42  A1     ---     MagFlg           [B-Z] <A HREF="#sRM3.7">Magnitude flag (1)</A>
+  44- 47  F4.1   <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?mag" TARGET="explain">mag</A>     MagPGC           ? Magnitude from Primary Galaxy Catalog
+  49- 55  A7     ---     Class            Classification
+  57- 67  A11    ---     MCG              Morphological Catalog of Galaxies (MCG) number
+      69  I1     ---     NMCG             ? Number of appearances of MCG in file
+  71- 74  I4     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  DiamMCG          ? Major axis diameter
+  76- 78  I3     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  DisMCG           ? Distance from IRAS source
+                                    measured in degrees East of North
+  80- 82  I3     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     paMCG            [0/360]? Position angle of separation vector
+  84- 90  A7     ---     NGCIC            NGC or IC identification of Primary Catalog
+                                    or MCG galaxy
+  91- 97  A7     ---     AMDName          ARP, MKN, DDO associations
+      99  I1     ---     NAMD             ? Number of appearances of AMDName in file
+ 101-103  I3     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  DisAMD           ? Distance from IRAS source
+ 105-107  I3     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     paAMD            [0/360]? Position angle of separation vector
+                                    measured in degrees East of North
+ 109-119  A11    ---     VVZName          VCV (Veron-Cetty and Veron 1984),
+                                  VV Verontsov-Velyaminov (Interact. Gal.),
+                                  and Zwicky list associations
+     121  I1     ---     NVVZ             ? Number of appearances of VVZName in file
+ 123-125  I3     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?arcsec" TARGET="explain">arcsec</A>  DisVVZ           ? Distance from IRAS source
+ 127-129  I3     <A HREF="http://vizier.u-strasbg.fr/cgi-bin/Unit?deg" TARGET="explain">deg</A>     paVVZ            [0/360]? Position angle of separation vector
+                                    measured in degrees East of North
+ 131-132  A2     ---     VCVFlg           <A HREF="#sRM3.8">VCV identifier or VV flag (2)</A>
+ 133-137  I5     ---     RecNo            [1/11444]+= Main Data Table record number
+                                    for IRAS source
+<HR>
+<A NAME="sRM3.7"><B>Note (1)</B>: The position and Magnitude flags are described in Section IX.A
+    of the printed edition:
+    B = The right ascension was changed to agree with the printed entry,
+        or with a printed remark.
+    C = The declination was changed to agree with the printed catalog.
+    D = The position comes from the compilation of Dressel and Condon (1976).
+    F = The right ascension was changed to agree with the conversion of
+        printed galactic coordinates.
+    G = The declination was changed to agree with the conversion of
+        printed galactic coordinates.
+    H = The magnitude was changed to agree with the printed version.
+    K = The UGC and CGCG positions disagree, though the magnitudes agree.
+        A combination of inspections of sky survey plates, UGC hardcopy notes,
+        and cross-references using NGC or IC identifications resulted in the
+        verification that the UGC and CGCG names refer to the same object.
+        The UGC position has been adopted.
+    L = As for K, but a better position than that given in either the UGC
+        or CGCG was derived using a sky survey overlay, because neither of
+        the catalogued positions was adequate. This new position should be
+        accurate to about 1'.
+    M = No CGCG object could be found that matched this UGC galaxy in
+        position, although the UGC magnitude is not greater than 15.7.
+        One possible explanation is that the galaxy is contained in
+        one of the Zwicky lists of Selected Compact and Post-Eruptive
+        Galaxies instead of the CGCG.
+    N = A UGC and a CGCG galaxy are found with identical positions but
+        the magnitudes disagree. The CGCG magnitude is brighter than the UGC
+        magnitude by more than 1 magnitude. The UGC magnitude is quoted.
+    P = As for N, except that the magnitudes disagree by less than 1
+        magnitude. The UGC magnitude is given.
+    Q = The UGC and CGCG positions are identical, but the magnitudes
+        disagree because the CGCG magnitude applies to individual members of
+        a pair or group of galaxies, while the UGC magnitude applies to more
+        than one of the members. The UGC magnitude is the one quoted.
+    R = The UGC carries no magnitude so the CGCG magnitude is given.
+    S = As for N, but the UGC magnitude is more than 1 magnitude brighter
+        than the CGCG magnitude. The UGC magnitude is given.
+    T = Similar case to Q except that the UGC and CGCG roles are reversed.
+        The UGC magnitude is given.
+    W = The magnitude listed here for each of the components of a galaxy
+        group is the magnitude given the entire galaxy or galaxy group
+        by the UGC.
+    X = Combination of W and P.
+    Z = The position was changed to agree with the CGCG position because
+        the UGC position was found to be in error.
+<A NAME="sRM3.8"><B>Note (2)</B>: The flags relative to VV and VCV catalogues are described
+    in Section IX.B of the printed edition:
+    A = V10 has the same coordinates as V29 in the Atlas. The UGC name
+        was used to confirm that the coordinate is correct for V29 and
+        erroneous for V10. The UGC position for V10 = UGC 10814 was adopted.
+    B = The V position is substantially different (&gt;400") from positions
+        for the object in other catalogs. The V position has been assumed
+        to be in error because two or more other catalogs agree on a
+        different position. The UGC position has been adopted.
+    C = Same as for B, but the position from the Master List of Non-Stellar
+        Sources (Dixon and Sonneborn 1980; the ML) has been adopted.
+    D = The V position differs from that of the ML for the object.
+        By use of overlays with the sky surveys, it has been established
+        that the V position is in error so the ML position has been adopted.
+    E = Same as for D, except that the ML position is not adequate either
+        so a new position has been derived from the overlay which is
+        accurate to about 1'.
+    S1 = Seyfert type 1 galaxy.
+    S2 = Seyfert type 2 galaxy.
+    S3 = Seyfert type 3 galaxy, or "Liner".
+    S or S? = Probably or possibly a Seyfert.
+    H2 = Galaxy dominated by nuclear HII-regions, or "Starburst" nucleus.
+    BL = BL Lac object.
+    AN = "Active Nucleus". This flag is used when Veron-Cetty and Veron
+        show no type for the object.
+<HR>
+
+<A NAME="sRM99.2"><B>Historical Notes</B>:
+  * From the "Selected Astronomical Catalogs" Vol. 1 CD-ROM (1992)
+    directory          nonstell/galaxies/irasgal
+  * 10-Jan-1995: set to blank the column 103 of file "<B>xcat</B>" which contained
+    the values 0, 1 or 2 (identical to the tens of RAh) for the records:
+    # 1847 = IRAS 03216+7240
+    # 1952 = IRAS 03354+6633
+    # 2018 = IRAS 03434+6757
+    # 3437 = IRAS 07193+2211
+    # 4261 = IRAS 09065+5015
+    # 4325 = IRAS 09133+7431
+    # 5827 = IRAS 11463-6929
+    # 6278 = IRAS 12234+1315
+    # 7150 = IRAS 13317-4517
+    # 9810 = IRAS 19184-7404
+    #10378 = IRAS 21021+0927
+    #11367 = IRAS 23448+0139
+    The explanations of the flags PosFlg, MagFlg and VCVFlg have been added.
+  * 04-Dec-2002: Corrected the units of DisSSS and DSNGal which are
+    arcsec's, not arcmin's ! (thanks to Sally Hales, MRAO Cambridge)
+================================================================================
+<B>(End)</B>                                   Francois Ochsenbein [CDS]    07-Jan-1995
+
+</PRE><!-- ....wait for 1 children: %0=26612 -->
+
+<!-- ....open_pipe(/home/acds/software/glu/glufilter, 1) -->
