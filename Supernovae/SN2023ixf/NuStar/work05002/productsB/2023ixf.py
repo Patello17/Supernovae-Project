@@ -1,30 +1,19 @@
-# Dataset(s) 90902520002
-data_A = "../productsA/nu90902520002A01_sr.pha"
-bkg_data_A = "../productsA/nu90902520002A01_bk.pha"
-arf_A = "../productsA/nu90902520002A01_sr.arf"
-bkg_arf_A = "../productsA/nu90902520002A01_sr.arf"
-rmf_A = "../productsA/nu90902520002A01_sr.rmf"
-bkg_rmf_A = "../productsA/nu90902520002A01_sr.rmf"
-
-data_B = "../productsB/nu90902520002B01_sr.pha"
-bkg_data_B = "../productsB/nu90902520002B01_bk.pha"
-arf_B = "../productsB/nu90902520002B01_sr.arf"
-bkg_arf_B = "../productsB/nu90902520002B01_sr.arf"
-rmf_B = "../productsB/nu90902520002B01_sr.rmf"
-bkg_rmf_B = "../productsB/nu90902520002B01_sr.rmf"
+# Dataset(s) 80902505002
+data = "nu80902505002B01_sr.pha"
+bkg_data = "nu80902505002B01_bk.pha"
+arf = "nu80902505002B01_sr.arf"
+bkg_arf = "nu80902505002B01_sr.arf"
+rmf = "nu80902505002B01_sr.rmf"
+bkg_rmf = "nu80902505002B01_sr.rmf"
 
 # Load and Group Data
-load_pha(1, data_A)
-load_pha(2, data_B)
-load_arf(1, arf_A)
-load_arf(2, arf_B)
-load_rmf(1, rmf_A)
-load_rmf(2, rmf_B)
-notice(0.3,8)
-subtract(1)
-subtract(2)
+load_pha(data)
+load_arf(arf)
+load_rmf(rmf)
+notice(0.3, 8)
+subtract()
 group_counts(1, 15)
-group_counts(2, 15)
+
 
 # Calculate Counts and Count Rate
 data_sum = calc_data_sum()
@@ -33,23 +22,20 @@ data_cnt_rate = calc_data_sum()/get_exposure()
 print("Data Counts Rate =", data_cnt_rate)
 
 set_xsxset("APECROOT", "/home/prayag/Software/ciao-4.17/spectral/modelData/apec_v3.0.9") # Use correct APECROOT
-set_source(1, xstbabs.abs1*(xsvapec.v1+xsgaussian.g1)) # Fit APEC Model
-set_source(2, xstbabs.abs1*(xsvapec.v1+xsgaussian.g1)) # Fit APEC Model
-set_par("g1.Sigma", val=0.2, frozen=True)
-set_par("g1.LineE", val=6.5)
+set_source(1, xstbabs.abs1*xsvapec.v1) # Fit APEC Model
 set_par("abs1.nH", min=0.0767)
-thaw(v1.Fe)
+# thaw(v1.Fe)
 set_xsabund("wilm")
 print("Configured.")
 
 print("Fitting...")
-fit(1, 2)
+fit()
 fres = get_fit_results()
 print(fres)
 print("Fitted.")
 
 print("Getting Confidence...")
-conf(1, 2)
+conf()
 confidence = get_conf_results()
 print("Got Confidence.")
 
@@ -73,7 +59,7 @@ plt.yticks(fontsize=11)
 ax1.lines[0].set_linewidth(4)
 ax1.lines[2].set_color("sandybrown")
 ax1.lines[2].set_linewidth(3)
-plt.title("Swift Data Plot (May 22, 2023)")
+plt.title("NuStar Data Plot (June 17, 2023)")
 # plt.setp(ax1.spines.values(), linewidth=3)
 
 plt.sca(ax2)
@@ -88,9 +74,7 @@ print("Plot Formatted.")
 
 # Get Flux
 print("Calculating Flux...")
-s1 = sample_flux(v1+g1, 0.3, 8, num=1000) # Calculate Uncertainty for Flux
-s2 = sample_flux(g1, 0.3, 8, num=1000) # Calculate Uncertainty for Flux due to Gaussian
-# print(s2)
+s1 = sample_flux(v1, 0.3, 8, num=1000) # Calculate Uncertainty for Flux
 print("Calculated Flux.")
 
 # Save Plot
@@ -103,24 +87,18 @@ print("Saving Data...")
 save_all("results.log", clobber=True) # Saves everything except the flux
 absorbed_fluxes = s1[0]
 unabsorbed_fluxes = s1[1]
-absorbed_guassian_fluxes = s2[0]
-unabsorbed_guassian_fluxes = s2[1]
 
 def format_flux_stats(flux_array):
     return f"{flux_array[0]} +{flux_array[1] - flux_array[0]}, {flux_array[0] - flux_array[2]}"
 
 absorbed_str = format_flux_stats(absorbed_fluxes)
 unabsorbed_str = format_flux_stats(unabsorbed_fluxes)
-absorbed_g_str = format_flux_stats(absorbed_guassian_fluxes)
-unabsorbed_g_str = format_flux_stats(unabsorbed_guassian_fluxes)
 
 # Save flux to file
 with open("results.log", "a") as f: # "a" appends the flux
         f.write("\n######### Calculated Fluxes\n\n")
         f.write(f"Absorbed Flux: {absorbed_str}\n")
         f.write(f"Unabsorbed Flux: {unabsorbed_str}\n")
-        f.write(f"Absorbed Flux (due to Guassian): {absorbed_g_str}\n")
-        f.write(f"Unabsorbed Flux (due to Guassian): {unabsorbed_g_str}\n")
 # Save confidence
         f.write("\n######### Calculated Confidences\n\n")
         f.write(f"{confidence}\n")

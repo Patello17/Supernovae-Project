@@ -1,30 +1,19 @@
 # Dataset(s) 90902520002
-data_A = "../productsA/nu90902520002A01_sr.pha"
-bkg_data_A = "../productsA/nu90902520002A01_bk.pha"
-arf_A = "../productsA/nu90902520002A01_sr.arf"
-bkg_arf_A = "../productsA/nu90902520002A01_sr.arf"
-rmf_A = "../productsA/nu90902520002A01_sr.rmf"
-bkg_rmf_A = "../productsA/nu90902520002A01_sr.rmf"
-
-data_B = "../productsB/nu90902520002B01_sr.pha"
-bkg_data_B = "../productsB/nu90902520002B01_bk.pha"
-arf_B = "../productsB/nu90902520002B01_sr.arf"
-bkg_arf_B = "../productsB/nu90902520002B01_sr.arf"
-rmf_B = "../productsB/nu90902520002B01_sr.rmf"
-bkg_rmf_B = "../productsB/nu90902520002B01_sr.rmf"
+data = "nu90902520002B01_sr.pha"
+bkg_data = "nu90902520002B01_bk.pha"
+arf = "nu90902520002B01_sr.arf"
+bkg_arf = "nu90902520002B01_sr.arf"
+rmf = "nu90902520002B01_sr.rmf"
+bkg_rmf = "nu90902520002B01_sr.rmf"
 
 # Load and Group Data
-load_pha(1, data_A)
-load_pha(2, data_B)
-load_arf(1, arf_A)
-load_arf(2, arf_B)
-load_rmf(1, rmf_A)
-load_rmf(2, rmf_B)
-notice(0.3,8)
-subtract(1)
-subtract(2)
+load_pha(data)
+load_arf(arf)
+load_rmf(rmf)
+notice(0.3, 8)
+subtract()
 group_counts(1, 15)
-group_counts(2, 15)
+
 
 # Calculate Counts and Count Rate
 data_sum = calc_data_sum()
@@ -34,7 +23,6 @@ print("Data Counts Rate =", data_cnt_rate)
 
 set_xsxset("APECROOT", "/home/prayag/Software/ciao-4.17/spectral/modelData/apec_v3.0.9") # Use correct APECROOT
 set_source(1, xstbabs.abs1*(xsvapec.v1+xsgaussian.g1)) # Fit APEC Model
-set_source(2, xstbabs.abs1*(xsvapec.v1+xsgaussian.g1)) # Fit APEC Model
 set_par("g1.Sigma", val=0.2, frozen=True)
 set_par("g1.LineE", val=6.5)
 set_par("abs1.nH", min=0.0767)
@@ -43,13 +31,13 @@ set_xsabund("wilm")
 print("Configured.")
 
 print("Fitting...")
-fit(1, 2)
+fit()
 fres = get_fit_results()
 print(fres)
 print("Fitted.")
 
 print("Getting Confidence...")
-conf(1, 2)
+conf()
 confidence = get_conf_results()
 print("Got Confidence.")
 
@@ -73,7 +61,7 @@ plt.yticks(fontsize=11)
 ax1.lines[0].set_linewidth(4)
 ax1.lines[2].set_color("sandybrown")
 ax1.lines[2].set_linewidth(3)
-plt.title("Swift Data Plot (May 22, 2023)")
+plt.title("NuStar Data Plot (May 22, 2023)")
 # plt.setp(ax1.spines.values(), linewidth=3)
 
 plt.sca(ax2)
