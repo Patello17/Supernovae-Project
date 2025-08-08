@@ -20,12 +20,12 @@ print("Data Counts Rate =", data_cnt_rate)
 
 set_xsxset("APECROOT", "/home/prayag/Software/ciao-4.17/spectral/modelData/apec_v3.0.9") # Use correct APECROOT
 set_source(xstbabs.abs1*(xsvapec.v1+xsgaussian.g1)) # Fit APEC Model + Gaussian
-g1.Sigma=0.2
+set_par("g1.Sigma", val=0.2, frozen=True)
 set_par("abs1.nH", min=0.0767)
-v1.kT = 34
-freeze(v1.kT) # freeze temperature like Chandra 2024 does
+# v1.kT = 34
+# freeze(v1.kT) # freeze temperature like Chandra 2024 does
 set_xsabund("wilm")
-thaw(v1.Fe)
+# thaw(v1.Fe)
 print("Configured.")
 
 print("Fitting...")
@@ -77,33 +77,33 @@ s1 = sample_flux(v1+g1, 0.3, 8, num=1000) # Calculate Uncertainty for Flux
 print("Calculated Flux.")
 
 # Save Plot
-print("Saving Plot...")
-plt.savefig("2023ixf_plot.pdf")
-print("Plot Saved.")
+# print("Saving Plot...")
+# plt.savefig("2023ixf_plot.pdf")
+# print("Plot Saved.")
 
-# Save Data
-print("Saving Data...")
-save_all("results.log", clobber=True) # Saves everything except the flux
-absorbed_fluxes = s1[0]
-unabsorbed_fluxes = s1[1]
+# # Save Data
+# print("Saving Data...")
+# save_all("results.log", clobber=True) # Saves everything except the flux
+# absorbed_fluxes = s1[0]
+# unabsorbed_fluxes = s1[1]
 
-def format_flux_stats(flux_array):
-    return f"{flux_array[0]} +{flux_array[1] - flux_array[0]}, {flux_array[0] - flux_array[2]}"
+# def format_flux_stats(flux_array):
+#     return f"{flux_array[0]} +{flux_array[1] - flux_array[0]}, {flux_array[0] - flux_array[2]}"
 
-absorbed_str = format_flux_stats(absorbed_fluxes)
-unabsorbed_str = format_flux_stats(unabsorbed_fluxes)
+# absorbed_str = format_flux_stats(absorbed_fluxes)
+# unabsorbed_str = format_flux_stats(unabsorbed_fluxes)
 
-# Save flux to file
-with open("results.log", "a") as f: # "a" appends the flux
-        f.write("\n######### Calculated Fluxes\n\n")
-        f.write(f"Absorbed Flux: {absorbed_str}\n")
-        f.write(f"Unabsorbed Flux: {unabsorbed_str}\n")
-# Save confidence
-        f.write("\n######### Calculated Confidences\n\n")
-        f.write(f"{confidence}\n")
-# Save counts and count rate
-        f.write("\n######## Counts and Count Rate\n\n")
-        f.write(f"Counts: {data_sum}\n")
-        f.write(f"Count Rate: {data_cnt_rate}")
+# # Save flux to file
+# with open("results.log", "a") as f: # "a" appends the flux
+#         f.write("\n######### Calculated Fluxes\n\n")
+#         f.write(f"Absorbed Flux: {absorbed_str}\n")
+#         f.write(f"Unabsorbed Flux: {unabsorbed_str}\n")
+# # Save confidence
+#         f.write("\n######### Calculated Confidences\n\n")
+#         f.write(f"{confidence}\n")
+# # Save counts and count rate
+#         f.write("\n######## Counts and Count Rate\n\n")
+#         f.write(f"Counts: {data_sum}\n")
+#         f.write(f"Count Rate: {data_cnt_rate}")
 
-print("Data Saved.")
+# print("Data Saved.")
