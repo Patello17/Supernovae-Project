@@ -20,7 +20,7 @@ load_arf(1, arf_A)
 load_arf(2, arf_B)
 load_rmf(1, rmf_A)
 load_rmf(2, rmf_B)
-notice(0.3,8)
+notice(3, 78.4)
 subtract(1)
 subtract(2)
 group_counts(1, 15)
@@ -60,7 +60,7 @@ set_ylog()
 # plot("fit", 1, "fit", 2)
 plot_fit(color="royalblue")
 # plot_bkg_fit(overplot=True)
-plt.xlim(0.3, 8)
+plt.xlim(3, 78.4)
 plt.ylim(0, 0.015)
 
 fig = plt.gcf()
@@ -88,8 +88,8 @@ print("Plot Formatted.")
 
 # Get Flux
 print("Calculating Flux...")
-s1 = sample_flux(v1+g1, 0.3, 8, num=1000) # Calculate Uncertainty for Flux
-s2 = sample_flux(g1, 0.3, 8, num=1000) # Calculate Uncertainty for Flux due to Gaussian
+s1 = sample_flux(v1+g1, 3, 78.4, num=1000) # Calculate Uncertainty for Flux
+s2 = sample_flux(g1, 3, 78.4, num=1000) # Calculate Uncertainty for Flux due to Gaussian
 # print(s2)
 print("Calculated Flux.")
 

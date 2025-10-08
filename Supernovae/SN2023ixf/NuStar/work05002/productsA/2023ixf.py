@@ -10,9 +10,9 @@ bkg_rmf = "nu80902505002A01_sr.rmf"
 load_pha(data)
 load_arf(arf)
 load_rmf(rmf)
-notice(0.3, 8)
+notice(3, 78.4)
 subtract()
-group_counts(1, 15)
+group_counts(15)
 
 
 # Calculate Counts and Count Rate
@@ -23,7 +23,9 @@ print("Data Counts Rate =", data_cnt_rate)
 
 set_xsxset("APECROOT", "/home/prayag/Software/ciao-4.17/spectral/modelData/apec_v3.0.9") # Use correct APECROOT
 set_source(1, xstbabs.abs1*xsvapec.v1) # Fit APEC Model
+guess()
 set_par("abs1.nH", min=0.0767)
+set_par("v1.Redshift", val=0.0008, frozen=True)
 # thaw(v1.Fe)
 set_xsabund("wilm")
 print("Configured.")
@@ -46,7 +48,7 @@ set_ylog()
 # plot("fit", 1, "fit", 2)
 plot_fit(color="royalblue")
 # plot_bkg_fit(overplot=True)
-plt.xlim(0.3, 8)
+plt.xlim(3, 78.4)
 plt.ylim(0, 0.015)
 
 fig = plt.gcf()
@@ -74,7 +76,7 @@ print("Plot Formatted.")
 
 # Get Flux
 print("Calculating Flux...")
-s1 = sample_flux(v1, 0.3, 8, num=1000) # Calculate Uncertainty for Flux
+s1 = sample_flux(v1, 3, 78.4, num=1000) # Calculate Uncertainty for Flux
 print("Calculated Flux.")
 
 # Save Plot
