@@ -1,0 +1,22 @@
+xsel14010
+read eve lnk-nu90902520004A01_cl.evt
+14010_tmp_nuproducts/
+
+filter pha_cutoff 35 1909
+extract image
+save image 14010_sk.img
+yes
+clear pha_cutoff
+set wmapname X Y
+set xyname X Y
+filter region 14010_tmp_nuproducts/14010_src.reg
+extract spectrum
+save spectrum 14010_sr.pha
+yes
+set binsize 10
+filter pha_cutoff 35 1909
+extract curve exposure=0.0
+save curve 14010_sr.lc
+yes
+quit
+no

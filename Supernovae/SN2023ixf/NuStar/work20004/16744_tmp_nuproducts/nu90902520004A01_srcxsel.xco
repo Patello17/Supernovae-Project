@@ -1,0 +1,22 @@
+xsel16744
+read eve lnk-nu90902520004A01_cl.evt
+16744_tmp_nuproducts/
+
+filter pha_cutoff 35 1909
+extract image
+save image 16744_sk.img
+yes
+clear pha_cutoff
+set wmapname X Y
+set xyname X Y
+filter region 16744_tmp_nuproducts/16744_src.reg
+extract spectrum
+save spectrum 16744_sr.pha
+yes
+set binsize 10
+filter pha_cutoff 35 1909
+extract curve exposure=0.0
+save curve 16744_sr.lc
+yes
+quit
+no
